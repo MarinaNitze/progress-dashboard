@@ -1,31 +1,21 @@
 import React from "react";
-import { graphql } from 'gatsby'
+import { graphql } from "gatsby";
 import Layout from "../components/layout";
-import SEO from "../components/seo";
-import remark from "remark";
-import recommended from "remark-preset-lint-recommended";
-import remarkHtml from "remark-html";
+import Seo from "../components/seo";
 
-function IndexPage({data}) {
-  const content = data.indexPage.frontmatter;
-
+export default function IndexPage({ data }) {
   return (
     <Layout>
-      <SEO
-        keywords={[`progress dashboard`]}
-        title="Progress Dashboard"
-      />
+      <Seo keywords={[`progress dashboard`]} title="Progress Dashboard" />
       <div dangerouslySetInnerHTML={{ __html: data.indexPage.html }}></div>
     </Layout>
   );
 }
 
 export const pageQuery = graphql`
-query IndexTemplate {
-  indexPage: markdownRemark(frontmatter: { templateKey: { eq: "index" } }) {
-    html
+  query IndexTemplate {
+    indexPage: markdownRemark(frontmatter: { templateKey: { eq: "index" } }) {
+      html
+    }
   }
-}
-`
-
-export default IndexPage;
+`;

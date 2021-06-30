@@ -3,7 +3,7 @@ const path = require(`path`);
 module.exports = {
   siteMetadata: {
     title: `Progress Dashboard`,
-    description: ``,
+    description: `A dashboard for child welfare`,
     author: `@bloom-works`,
   },
   plugins: [
@@ -18,20 +18,27 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: path.join(__dirname, `static`, `img`),
+        path: `${__dirname}/static/img`,
       },
     },
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: `gatsby-source-filesystem`,
       options: {
+        name: `pages`,
         path: `${__dirname}/src/pages`,
-        name: "pages",
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `src`,
+        path: `${__dirname}/src/`,
       },
     },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "XXXXXXXX",
+        trackingId: `XXXXXXXX`, // TODO
         head: false,
         anonymize: true,
         pageTransitionDelay: 0,
@@ -48,17 +55,21 @@ module.exports = {
             tableName: `Sheet1`,
             separateNodeType: false, // boolean, default is false, see the documentation on naming conflicts for more information
             separateMapType: false, // boolean, default is false, see the documentation on using markdown and attachments for more information
-          }
-        ]
-      }
+          },
+        ],
+      },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [`gatsby-remark-relative-images`, `gatsby-remark-images`],
+      },
     },
     `gatsby-transformer-sharp`,
-    `gatsby-transformer-remark`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-postcss`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-netlify-cms`,
-    `gatsby-remark-relative-images`,
     `gatsby-plugin-styled-components`,
   ],
 };

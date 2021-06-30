@@ -1,19 +1,17 @@
 import React from "react";
-
 import Layout from "../components/layout";
-import SEO from "../components/seo";
+import Seo from "../components/seo";
 
-function NotFoundPage() {
+export default function NotFoundPage() {
   return (
     <Layout>
-      <SEO title="404: Not found" />
+      <Seo title="404: Not found" />
       <div>
         <h2 className="bg-yellow-400 text-2xl font-bold inline-block my-8 p-3">
-          Looks like this page is a ghost that got abducted by aliens...
+          404
         </h2>
+        <p>Not found</p>
       </div>
     </Layout>
   );
 }
-
-export default NotFoundPage;
