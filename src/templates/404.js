@@ -7,7 +7,7 @@ export default function NotFoundPage() {
     <Layout>
       <Seo title="404: Not found" />
       <div>
-        <h2 className="bg-yellow-400 text-2xl font-bold inline-block my-8 p-3">
+        <h2>
           404
         </h2>
         <p>Not found</p>
