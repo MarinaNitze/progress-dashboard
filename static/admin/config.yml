@@ -10,13 +10,12 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
-      - file: "src/pages/index.md"
-        label: "Home"
+      - label: "Main Page"
         name: "index"
+        file: "src/pages/index.content.yml"
         fields:
-          - {
-              label: "Template Key",
-              name: "templateKey",
-              widget: "hidden",
-              default: "index",
-            }
+          - label: Home
+            name: home
+            widget: object
+            fields:
+              - { label: Title, name: title, widget: string }
