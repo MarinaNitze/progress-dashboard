@@ -2,10 +2,15 @@ import React from "react"
 import { graphql } from 'gatsby'
 
 import Layout from "../components/layout"
+import { SiteData } from "../types/siteMetadata"
+
+type IndexPageProps = {
+  data: SiteData;
+}
 
 const IndexPage = ({
   data: { site }
-}) => {
+}: IndexPageProps) => {
 
   return (
     <Layout>

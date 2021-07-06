@@ -1,8 +1,20 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import { useStaticQuery, graphql } from "gatsby";
 
-function Layout({ hero, title, subtitle, children }) {
-  const data = useStaticQuery(
+type LayoutProps = {
+  children: ReactNode
+}
+
+type MainData = {
+  site: {
+    siteMetadata: {
+      title: string;
+    }
+  }
+}
+
+function Layout({ children }: LayoutProps) {
+  const data: MainData = useStaticQuery(
     graphql`
       query {
         site {

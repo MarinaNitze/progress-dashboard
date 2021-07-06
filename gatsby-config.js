@@ -65,5 +65,6 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-styled-components`,
+    'gatsby-plugin-typescript'
   ],
 };
