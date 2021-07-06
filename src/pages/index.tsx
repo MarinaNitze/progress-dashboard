@@ -1,21 +1,25 @@
-import React from 'react';
-import { graphql } from 'gatsby';
+import React from "react"
+import { graphql } from 'gatsby'
 
-import Layout from '../components/layout';
-import { SiteData } from '../types/siteMetadata';
+import Layout from "../components/layout"
+import { SiteData } from "../types/siteMetadata"
 
 type IndexPageProps = {
   data: SiteData;
-};
-
-export default function IndexPage({ data: { site } }: IndexPageProps) {
-  return (
-    <Layout>
-      <title>{site.siteMetadata.title}</title>
-    </Layout>
-  );
 }
 
+const IndexPage = ({
+  data: { site }
+}: IndexPageProps) => {
+
+  return (
+    <Layout>
+        <title>{site.siteMetadata.title}</title>
+    </Layout>
+  )
+}
+
+export default IndexPage
 export const pageQuery = graphql`
   query indexPageQuery {
     site {
@@ -25,4 +29,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`

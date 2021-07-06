@@ -1,14 +1,20 @@
-import React, { ReactNode } from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
-import { SiteData } from '../types/siteMetadata';
-import SEO from './seo';
+import React, { ReactNode } from "react";
+import { useStaticQuery, graphql } from "gatsby";
 
 type LayoutProps = {
-  children: ReactNode;
-};
+  children: ReactNode
+}
 
-export default function Layout({ children }: LayoutProps) {
-  const data: SiteData = useStaticQuery(
+type MainData = {
+  site: {
+    siteMetadata: {
+      title: string;
+    }
+  }
+}
+
+function Layout({ children }: LayoutProps) {
+  const data: MainData = useStaticQuery(
     graphql`
       query {
         site {
@@ -17,13 +23,14 @@ export default function Layout({ children }: LayoutProps) {
           }
         }
       }
-    `,
+    `
   );
   return (
     <div>
-      <SEO title="Progress Dashboard" />
       <h1>{data.site.siteMetadata.title}</h1>
       <main>{children}</main>
     </div>
   );
 }
+
+export default Layout;
