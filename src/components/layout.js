@@ -1,18 +1,24 @@
-import PropTypes from "prop-types";
 import React from "react";
+import { useStaticQuery, graphql } from "gatsby";
 
 function Layout({ hero, title, subtitle, children }) {
+  const data = useStaticQuery(
+    graphql`
+      query {
+        site {
+          siteMetadata {
+            title
+          }
+        }
+      }
+    `
+  );
   return (
-    <div className="flex flex-col font-sans min-h-screen text-gray-900">
-      <main>
-        {children}
-      </main>
+    <div>
+      <h1>{data.site.siteMetadata.title}</h1>
+      <main>{children}</main>
     </div>
   );
 }
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired
-};
 
 export default Layout;
