@@ -1,6 +1,6 @@
-import { useStaticQuery, graphql } from "gatsby";
-import React from "react";
-import Helmet from "react-helmet";
+import { useStaticQuery, graphql } from 'gatsby';
+import React from 'react';
+import Helmet from 'react-helmet';
 
 type SEOProps = {
   description?: string;
@@ -8,11 +8,11 @@ type SEOProps = {
   meta?: [];
   keywords?: string[];
   title: string;
-}
+};
 
 export default function Seo({
   description,
-  lang = "en",
+  lang = 'en',
   meta = [],
   keywords = [],
   title,
@@ -76,7 +76,7 @@ export default function Seo({
                 name: `keywords`,
                 content: keywords.join(`, `),
               }
-            : []
+            : [],
         )
         .concat(meta)}
       title={title}

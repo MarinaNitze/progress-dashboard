@@ -1,7 +1,7 @@
 export type SiteData = {
-    site: {
-        siteMetadata: {
-            title: string
-        }
-    }
-}
+  site: {
+    siteMetadata: {
+      title: string;
+    };
+  };
+};
