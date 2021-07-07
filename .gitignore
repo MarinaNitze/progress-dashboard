@@ -42,3 +42,12 @@ public
 
 # Mac files
 .DS_Store
+
+# Cypress
+cypress/videos
+cypress/screenshots
+cypress/integration/1-*
+cypress/integration/2-*
+
+# VS Code
+.vscode/
