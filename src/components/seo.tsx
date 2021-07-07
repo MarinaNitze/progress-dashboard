@@ -10,14 +10,6 @@ type SEOProps = {
   title: string;
 };
 
-type SEOProps = {
-  description?: string;
-  lang?: string;
-  meta?: [];
-  keywords?: string[];
-  title: string;
-}
-
 export default function Seo({
   description,
   lang = 'en',
