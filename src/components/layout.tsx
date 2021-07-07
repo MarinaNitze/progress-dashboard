@@ -6,7 +6,7 @@ type LayoutProps = {
   children: ReactNode;
 };
 
-function Layout({ children }: LayoutProps) {
+export default function Layout({ children }: LayoutProps) {
   const data: SiteData = useStaticQuery(
     graphql`
       query {
@@ -25,5 +25,3 @@ function Layout({ children }: LayoutProps) {
     </div>
   );
 }
-
-export default Layout;
