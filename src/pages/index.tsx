@@ -8,15 +8,14 @@ type IndexPageProps = {
   data: SiteData;
 };
 
-const IndexPage = ({ data: { site } }: IndexPageProps) => {
+export default function IndexPage({ data: { site } }: IndexPageProps) {
   return (
     <Layout>
       <title>{site.siteMetadata.title}</title>
     </Layout>
   );
-};
+}
 
-export default IndexPage;
 export const pageQuery = graphql`
   query indexPageQuery {
     site {
