@@ -1,28 +1,13 @@
 import React from 'react';
-import { graphql } from 'gatsby';
 
-import Layout from '../components/layout';
-import { SiteData } from '../types/siteMetadata';
+import Layout from '../components/layout/layout';
 
-type IndexPageProps = {
-  data: SiteData;
-};
-
-export default function IndexPage({ data: { site } }: IndexPageProps) {
+export default function IndexPage() {
   return (
     <Layout>
-      <title>{site.siteMetadata.title}</title>
+      <main>
+        <h1>Report</h1>
+      </main>
     </Layout>
   );
 }
-
-export const pageQuery = graphql`
-  query indexPageQuery {
-    site {
-      siteMetadata {
-        title
-        description
-      }
-    }
-  }
-`;
