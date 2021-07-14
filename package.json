@@ -11,8 +11,7 @@
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests!\" && exit 1",
-    "setup": "npm i --legacy-peer-deps"
+    "test": "echo \"Write tests!\" && exit 1"
   },
   "dependencies": {
     "@types/react": "^17.0.13",
