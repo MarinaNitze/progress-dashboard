@@ -1,9 +1,5 @@
 // Adam Walsh data row
-export type DataAW = {
-  awData: RowAW;
-};
-
-export type RowAW = {
+export type AW = {
   state: string;
   fee: string;
   notary: string;
