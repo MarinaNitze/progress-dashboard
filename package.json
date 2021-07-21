@@ -15,7 +15,11 @@
     "cy:open": "cypress open",
     "cy:run": "cypress run",
     "test:e2e": "start-server-and-test develop http://localhost:8000 cy:open",
-    "test:e2e:ci": "start-server-and-test develop http://localhost:8000 cy:run"
+    "test:e2e:ci": "start-server-and-test develop http://localhost:8000 cy:run",
+    "rebuild-gatsby+storybook": "npm run clean && npm run build",
+    "start-storybook": "NODE_ENV=test start-storybook -p 6006 -s public",
+    "storybook": "npm run rebuild-gatsby+storybook && npm run start-storybook",
+    "build-storybook": "NODE_ENV=production build-storybook"
   },
   "dependencies": {
     "@types/react": "^17.0.13",
@@ -65,11 +69,19 @@
     "url": "https://github.com/Bloom-Works/progress-dashboard/issues"
   },
   "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@storybook/addon-actions": "^6.3.4",
+    "@storybook/addon-essentials": "^6.3.4",
+    "@storybook/addon-links": "^6.3.4",
+    "@storybook/builder-webpack5": "^6.3.4",
+    "@storybook/manager-webpack5": "^6.3.4",
+    "@storybook/react": "^6.3.4",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
     "@types/jest": "^26.0.24",
     "@types/testing-library__jest-dom": "^5.14.0",
     "babel-jest": "^27.0.6",
+    "babel-loader": "^8.2.2",
     "babel-preset-gatsby": "^1.9.0",
     "cypress": "^7.7.0",
     "husky": "^7.0.1",

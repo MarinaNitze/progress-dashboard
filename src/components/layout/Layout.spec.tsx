@@ -3,7 +3,7 @@ import { render } from '@testing-library/react';
 import { SiteData } from '../../types/siteMetadata';
 import { mockStaticData } from '../../../test/test-utils';
 
-import Layout from './layout';
+import Layout from './Layout';
 
 describe('Layout', () => {
   it('renders a header', () => {

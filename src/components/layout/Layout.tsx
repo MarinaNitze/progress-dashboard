@@ -2,8 +2,8 @@ import React, { ReactNode } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import { SiteData } from '../../types/siteMetadata';
 
-import Header from '../header/header';
-import SEO from '../seo/seo';
+import Header from '../header/Header';
+import SEO from '../seo/Seo';
 
 type LayoutProps = {
   children: ReactNode;
