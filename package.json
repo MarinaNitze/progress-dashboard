@@ -16,9 +16,9 @@
     "cy:run": "cypress run",
     "test:e2e": "start-server-and-test develop http://localhost:8000 cy:open",
     "test:e2e:ci": "start-server-and-test develop http://localhost:8000 cy:run",
-    "rebuild-storybook": "npm run clean && npm run build",
+    "rebuild-gatsby+storybook": "npm run clean && npm run build",
     "start-storybook": "NODE_ENV=test start-storybook -p 6006 -s public",
-    "storybook": "npm run rebuild-storybook && npm run start-storybook",
+    "storybook": "npm run rebuild-gatsby+storybook && npm run start-storybook",
     "build-storybook": "NODE_ENV=production build-storybook"
   },
   "dependencies": {

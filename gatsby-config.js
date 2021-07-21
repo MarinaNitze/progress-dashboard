@@ -42,6 +42,21 @@ module.exports = {
         pageTransitionDelay: 0,
       },
     },
+    {
+      resolve: `gatsby-source-airtable`,
+      options: {
+        apiKey: `keyrG4HTxPrE0fKPo`, // may instead specify via env, see below
+        concurrency: 5, // default, see using markdown and attachments for more information
+        tables: [
+          {
+            baseId: `appmONHlYvyKW37rj`,
+            tableName: `Sheet1`,
+            separateNodeType: false, // boolean, default is false, see the documentation on naming conflicts for more information
+            separateMapType: false, // boolean, default is false, see the documentation on using markdown and attachments for more information
+          },
+        ],
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-postcss`,
