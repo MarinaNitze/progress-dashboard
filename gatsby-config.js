@@ -50,7 +50,7 @@ module.exports = {
         apiKey: process.env.AIRTABLE_API_KEY, // may instead specify via env, see below
         tables: [
           {
-            baseId: `appmONHlYvyKW37rj`,
+            baseId: process.env.AIRTABLE_BASE_ID,
             tableName: `AW`,
           },
         ],

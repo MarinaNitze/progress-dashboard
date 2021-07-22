@@ -30,6 +30,7 @@
     "cssnano": "^4.1.11",
     "gatsby": "^3.9.0",
     "gatsby-background-image": "^1.5.3",
+    "gatsby-cli": "^3.10.0",
     "gatsby-image": "^3.8.0",
     "gatsby-plugin-google-analytics": "^3.8.0",
     "gatsby-plugin-image": "^1.7.1",
