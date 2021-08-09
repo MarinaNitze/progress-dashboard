@@ -5,13 +5,13 @@ import { findGeoState } from '../../utils/util';
 
 import Layout from '../../components/layout/Layout';
 
-export default function State({ params }: PageProps) {
+export default function State({ params: { state = '' } }: PageProps) {
   const { statesData } = useDataStates();
 
   return (
     <Layout>
       <p data-cy="state-text">
-        {findGeoState(statesData, params.state.toUpperCase())?.state}
+        {findGeoState(statesData, state.toUpperCase())?.state}
       </p>
     </Layout>
   );
