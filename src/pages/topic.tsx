@@ -5,7 +5,7 @@ import useDataAW from '../hooks/useDataAW';
 export default function Topic() {
   const { awData } = useDataAW();
 
-  console.log(awData.nodes);
+  console.log(awData?.nodes);
 
   return <></>;
 }

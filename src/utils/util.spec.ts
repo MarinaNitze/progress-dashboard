@@ -4,7 +4,7 @@ import { mockDataStates } from '../../test/mockDataStates';
 describe('util functions', () => {
   it('finds valid US state by code', () => {
     const expectedResult = {
-      state: 'Washington',
+      name: 'Washington',
       abbrev: 'Wash.',
       code: 'WA',
     };

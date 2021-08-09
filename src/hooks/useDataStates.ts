@@ -11,7 +11,7 @@ export default function useDataStates() {
           data {
             abbrev
             code
-            state
+            name
           }
         }
       }

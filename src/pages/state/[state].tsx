@@ -11,7 +11,7 @@ export default function State({ params: { state = '' } }: PageProps) {
   return (
     <Layout>
       <p data-cy="state-text">
-        {findGeoState(statesData, state.toUpperCase())?.state}
+        {findGeoState(statesData, state.toUpperCase())?.name}
       </p>
     </Layout>
   );

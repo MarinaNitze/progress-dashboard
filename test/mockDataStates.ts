@@ -1,16 +1,16 @@
 export const mockDataStates = [
   {
-    state: 'Alabama',
+    name: 'Alabama',
     abbrev: 'Ala.',
     code: 'AL',
   },
   {
-    state: 'Alaska',
+    name: 'Alaska',
     abbrev: 'Alaska',
     code: 'AK',
   },
   {
-    state: 'Washington',
+    name: 'Washington',
     abbrev: 'Wash.',
     code: 'WA',
   },
