@@ -5,8 +5,10 @@ import { findGeoState } from '../../utils/util';
 
 import Layout from '../../components/layout/Layout';
 
-export default function State({ params: { state = '' } }: PageProps) {
+export default function State({ params: { state = 'loading' } }: PageProps) {
   const { statesData } = useDataStates();
+
+  if(state === "loading") return <h2>Loading...</h2>
 
   return (
     <Layout>
