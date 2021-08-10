@@ -18,12 +18,23 @@ export default function useDataStates() {
     }
   `);
 
-  const flattenStates = useCallback(
+  const mapStates = useCallback(
     (states: AirtableNodeData<GeoState>) => {
-      return states.map<GeoState>(({ data }) => ({ ...data }));
+      return states.reduce<{ [key: string]: { name: string; abbrev: string } }>(
+        (statesMap, { data }) => {
+          return {
+            ...statesMap,
+            [data.code]: {
+              name: data.name,
+              abbrev: data.abbrev,
+            },
+          };
+        },
+        {},
+      );
     },
     [statesData],
   );
 
-  return { statesData: flattenStates(statesData?.nodes ?? []) };
+  return { statesData: mapStates(statesData?.nodes ?? []) };
 }

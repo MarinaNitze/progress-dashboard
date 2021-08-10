@@ -7,9 +7,10 @@ import useDataStates from './useDataStates';
 
 describe('when rendered', () => {
   it('returns a list of US states', () => {
+    const nodes = [...mockDataStates.map(st => ({ data: { ...st } }))];
     mockStaticData<AirtableData<GeoState>>({
       statesData: {
-        nodes: [...mockDataStates.map(st => ({ data: { ...st } }))],
+        nodes,
       },
     });
     const {
@@ -17,7 +18,17 @@ describe('when rendered', () => {
         current: { statesData },
       },
     } = renderHook(() => useDataStates());
-    const expectedResult = mockDataStates;
+    const expectedResult = nodes.reduce<{
+      [key: string]: { name: string; abbrev: string };
+    }>((statesMap, { data }) => {
+      return {
+        ...statesMap,
+        [data.code]: {
+          name: data.name,
+          abbrev: data.abbrev,
+        },
+      };
+    }, {});
 
     expect(statesData).toStrictEqual(expectedResult);
   });

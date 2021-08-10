@@ -18,8 +18,8 @@ export default function NotFoundPage() {
     <Layout>
       <Seo title="404: Not found" />
       <div>
-        <h2>404</h2>
-        <p>Not found</p>
+        <h2 data-cy="404-heading">404</h2>
+        <p data-cy="404-text">Not found</p>
       </div>
     </Layout>
   );
