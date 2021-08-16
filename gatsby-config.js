@@ -7,6 +7,7 @@ module.exports = {
     author: `@bloom-works`,
   },
   plugins: [
+    'gatsby-plugin-sass',
     {
       resolve: `gatsby-plugin-purgecss`,
       options: {

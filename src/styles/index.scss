@@ -1,0 +1,15 @@
+@import './style.scss';
+
+@import '../../node_modules/uswds/src/stylesheets/theme/uswds-theme-general';
+@import '../../node_modules/uswds/src/stylesheets/theme/_uswds-theme-general.scss';
+@import '../../node_modules/uswds/src/stylesheets/theme/_uswds-theme-typography.scss';
+@import '../../node_modules/uswds/src/stylesheets/theme/_uswds-theme-spacing.scss';
+@import '../../node_modules/uswds/src/stylesheets/theme/_uswds-theme-color.scss';
+@import '../../node_modules/uswds/src/stylesheets/theme/_uswds-theme-utilities.scss';
+
+// Custom theme settings/USWDS overrides go here <-- the settings you defined above
+@import './settings.scss';
+
+@import '../../node_modules/uswds/src/stylesheets/packages/_required.scss';
+
+@import '../../node_modules/uswds/src/stylesheets/uswds.scss';
