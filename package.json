@@ -12,14 +12,16 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "jest",
+    "start-server": "npm start",
     "cy:open": "cypress open",
     "cy:run": "cypress run",
-    "test:e2e": "start-server-and-test develop http://localhost:8000 cy:open",
-    "test:e2e:ci": "start-server-and-test develop http://localhost:8000 cy:run",
+    "test:e2e": "start-server-and-test start-server http://localhost:8000 cy:open",
+    "test:e2e:ci": "start-server-and-test start-server http://localhost:8000 cy:run",
     "rebuild-gatsby+storybook": "npm run clean && npm run build",
     "start-storybook": "NODE_ENV=test start-storybook -p 6006 -s public",
     "storybook": "npm run rebuild-gatsby+storybook && npm run start-storybook",
-    "build-storybook": "NODE_ENV=production build-storybook"
+    "build-storybook": "NODE_ENV=production build-storybook",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@trussworks/react-uswds": "^2.0.0",
