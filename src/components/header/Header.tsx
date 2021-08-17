@@ -1,26 +1,52 @@
-import * as React from 'react';
-import { Link } from 'gatsby';
+import React, { useState, useCallback } from 'react';
+import {
+  Header as HeaderCmp,
+  Title,
+  NavMenuButton,
+  PrimaryNav,
+} from '@trussworks/react-uswds';
 
-type HeaderProps = {
-  siteTitle: string;
-};
+const itemsMenu = [
+  <a href="#one" key="one" className="usa-nav__link">
+    <span>Topics</span>
+  </a>,
+  <a href="#two" key="two" className="usa-nav__link">
+    <span>Recommendations</span>
+  </a>,
+  <a href="#three" key="three" className="usa-nav__link">
+    <span>Compare</span>
+  </a>,
+  <a href="#four" key="four" className="usa-nav__link">
+    <span>Stories</span>
+  </a>,
+  <a href="#five" key="five" className="usa-nav__link">
+    <span>Search</span>
+  </a>,
+];
 
-export default function Header({ siteTitle }: HeaderProps) {
+export default function Header() {
+  const [expanded, setExpanded] = useState(false);
+
+  const onClickExpand = useCallback(() => {
+    setExpanded(prvExpanded => !prvExpanded);
+  }, [setExpanded]);
+
   return (
-    <header>
-      <div>
-        <h1>
-          <Link
-            to="/"
-            style={{
-              color: 'blue',
-              textDecoration: 'none',
-            }}
-          >
-            {siteTitle}
-          </Link>
-        </h1>
-      </div>
-    </header>
+    <>
+      <div className={`usa-overlay ${expanded ? 'is-visible' : ''}`}></div>
+      <HeaderCmp basic>
+        <div className="usa-nav-container">
+          <div className="usa-navbar">
+            <Title>Logo</Title>
+            <NavMenuButton onClick={onClickExpand} label="Menu" />
+          </div>
+          <PrimaryNav
+            items={itemsMenu}
+            mobileExpanded={expanded}
+            onToggleMobileNav={onClickExpand}
+          ></PrimaryNav>
+        </div>
+      </HeaderCmp>
+    </>
   );
 }

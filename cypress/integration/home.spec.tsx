@@ -4,6 +4,6 @@ describe('Home page', () => {
   it('should successfully display text.', () => {
     // first visit the site
     cy.visit('');
-    cy.get('header').should('have.text', 'Progress Dashboard');
+    cy.get('.usa-nav__link').first().should('have.text', 'Topics');
   });
 });
