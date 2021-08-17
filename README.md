@@ -8,6 +8,8 @@ A dashboard for child welfare
 
 Install: `npm ci`
 
+Run: `npm run prepare`
+
 Copy `.env.sample` into a file named `.env` and enter necessary values.
 
 Start dev: `npm start`
