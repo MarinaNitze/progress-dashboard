@@ -3,8 +3,8 @@ $theme-image-path: '../../node_modules/uswds/src/img';
 $theme-show-notifications: false;
 
 /* TYPOGRAPHY */
-$theme-respect-user-font-size: false;
-$theme-root-font-size: 14px;
+$theme-respect-user-font-size: true;
+$theme-root-font-size: 12px;
 $theme-font-path: '../../node_modules/uswds/src/fonts';
 $theme-font-type-sans: 'open-sans';
 $theme-style-body-element: true;
@@ -14,3 +14,8 @@ $theme-grid-container-max-width: 'desktop-lg';
 
 /* COMPONENTS */
 $theme-hero-image: '/hero.png';
+
+/* GENERAL CLASS OVERRIDES */
+.grid-container li.usa-card {
+  list-style-type: none;
+}
