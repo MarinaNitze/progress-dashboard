@@ -8,10 +8,6 @@
   border: 0;
 }
 
-.card ul {
-  list-style-type: none;
-}
-
 .cardContainer.sm {
   padding: 1rem;
 }
