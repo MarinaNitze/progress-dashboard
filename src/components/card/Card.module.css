@@ -1,0 +1,25 @@
+.card {
+  font-family: 'inherit';
+}
+
+.cardContainer {
+  background-color: #f2f2f2;
+  border-radius: 0;
+  border: 0;
+}
+
+.cardContainer.sm {
+  padding: 1rem;
+}
+
+.cardContainer.md {
+  padding: 3rem;
+}
+
+.cardContainer.lg {
+  padding: 4rem 1.5rem;
+}
+
+.noImage {
+  margin-right: 0 !important;
+}
