@@ -1,6 +1,6 @@
 import { GridContainer } from '@trussworks/react-uswds';
 import React from 'react';
-import FeatureContainer from '../components/feature-section/FeatureSection';
+import FeatureSection from '../components/feature-section/FeatureSection';
 
 import Layout from '../components/layout/Layout';
 
@@ -13,7 +13,7 @@ export default function IndexPage() {
             <p>Hero content</p>
           </GridContainer>
         </section>
-        <FeatureContainer />
+        <FeatureSection />
       </main>
     </Layout>
   );

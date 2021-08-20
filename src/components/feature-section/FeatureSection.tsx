@@ -9,7 +9,7 @@ export default function FeatureSection() {
       <section id="test-section-id">
         <GridContainer>
           <h2 className="font-heading-xl margin-y-0">What's new</h2>
-          <p className="">
+          <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Luctus
             massa natoque risus ut porttitor. Urna commodo amet non massa dui
             quis. Id pellentesque purus enim suspendisse et sed gravida enim
