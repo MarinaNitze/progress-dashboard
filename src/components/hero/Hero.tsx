@@ -1,10 +1,32 @@
 import React from 'react';
 
-export default function Hero() {
+type HeroProps = {
+  title: string;
+  description?: string;
+  backgroundImgPath?: string;
+  children?: React.ReactNode;
+};
 
+export default function Hero({
+  title,
+  description,
+  backgroundImgPath,
+  children,
+}: HeroProps) {
   return (
-    <>
-      <h3>Hero Component</h3>
-    </>
-  )
+    <section
+      className="usa-hero"
+      style={{
+        backgroundImage: `url(${backgroundImgPath && backgroundImgPath})`,
+      }}
+    >
+      <div className="usa-grid">
+        <div className="usa-hero-callout usa-section-dark">
+          <h2>{title && title}</h2>
+          <p>{description && description}</p>
+          {children && children}
+        </div>
+      </div>
+    </section>
+  );
 }

@@ -5,11 +5,16 @@ import Hero from './Hero';
 
 describe('Hero', () => {
   it('renders Hero component', () => {
-    const siteTitle = 'Topics';
-    const { getByText } = render(<Hero />);
+    const heroTitle = 'Hero Title';
+    const heroDesctiption = 'Hero Desctiption';
+    const { getByText } = render(
+      <Hero title={heroTitle} description={heroDesctiption} />,
+    );
 
-    const title = getByText(siteTitle);
+    const title = getByText(heroTitle);
+    const description = getByText(heroDesctiption);
 
     expect(title).toBeInTheDocument();
+    expect(description).toBeInTheDocument();
   });
 });

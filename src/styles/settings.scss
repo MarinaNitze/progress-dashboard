@@ -13,7 +13,8 @@ $theme-style-body-element: true;
 $theme-grid-container-max-width: 'desktop-lg';
 
 /* COMPONENTS */
-$theme-hero-image: '/hero.png';
+// $theme-hero-image: '../../static/img/hero.png';
+$theme-hero-image: '';
 
 /* GENERAL CLASS OVERRIDES */
 .grid-container li.usa-card {
