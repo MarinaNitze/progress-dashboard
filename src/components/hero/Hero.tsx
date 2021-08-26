@@ -1,4 +1,5 @@
 import React from 'react';
+import './hero.scss'
 
 type HeroProps = {
   title: string;
@@ -17,14 +18,14 @@ export default function Hero({
     <section
       className="usa-hero"
       style={{
-        backgroundImage: `url(${backgroundImgPath && backgroundImgPath})`,
+        backgroundImage: backgroundImgPath ? `url(${backgroundImgPath})` : "",
       }}
     >
       <div className="usa-grid">
         <div className="usa-hero-callout usa-section-dark">
-          <h2>{title && title}</h2>
-          <p>{description && description}</p>
-          {children && children}
+          <h2>{title}</h2>
+          <p>{description}</p>
+          {children}
         </div>
       </div>
     </section>

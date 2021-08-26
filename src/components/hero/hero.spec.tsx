@@ -6,13 +6,13 @@ import Hero from './Hero';
 describe('Hero', () => {
   it('renders Hero component', () => {
     const heroTitle = 'Hero Title';
-    const heroDesctiption = 'Hero Desctiption';
+    const heroDescription = 'Hero Description';
     const { getByText } = render(
-      <Hero title={heroTitle} description={heroDesctiption} />,
+      <Hero title={heroTitle} description={heroDescription} />,
     );
 
     const title = getByText(heroTitle);
-    const description = getByText(heroDesctiption);
+    const description = getByText(heroDescription);
 
     expect(title).toBeInTheDocument();
     expect(description).toBeInTheDocument();

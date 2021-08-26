@@ -13,12 +13,11 @@ export default function IndexPage() {
           <GridContainer>
             <Hero
               title={'[Playbook Tagline]'}
-              backgroundImgPath={'../../img/hero.png'}
               description={
                 'Quick intro that sets the stage for the site, what people can do, and how to do it.'
               }
             >
-              <p>Hero content</p>
+              <p>Search Component Placeholder</p>
             </Hero>
           </GridContainer>
         </section>
