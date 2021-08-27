@@ -1,0 +1,7 @@
+.usa-hero {
+  // TODO: configure scss so that we can use color variables, like $theme-color-base-ink
+  color: #000 !important;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  padding-left: 4rem;
+}
