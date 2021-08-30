@@ -10,10 +10,12 @@ import { GridProps } from '@trussworks/react-uswds/lib/components/grid/Grid/Grid
 import * as styles from './Card.module.css';
 import './Card.scss';
 
-type CardProps = {
+export type CardProps = {
   heading: string;
-  size?: 'sm' | 'md' | 'lg';
+  layout?: 'topic' | 'sm' | 'md' | 'lg';
   imgPath?: string;
+  linkDestination?: string;
+  linkText?: string;
   children: React.ReactNode;
   gridLayout?: GridProps;
 };
@@ -23,18 +25,18 @@ export default function Card({
   imgPath,
   children,
   gridLayout = { tablet: { col: 12 } },
-  size = 'lg',
+  layout = 'lg',
 }: CardProps) {
   return (
     <CardCmp
       className={styles.card}
       containerProps={{
-        className: `${styles.cardContainer} ${styles[size]}`,
+        className: `${styles.cardContainer} ${styles[layout]}`,
       }}
       layout="flagMediaRight"
       gridLayout={gridLayout}
     >
-      <CardHeader className={size !== 'lg' ? styles.noImage : ''}>
+      <CardHeader className={layout !== 'lg' ? styles.noImage : ''}>
         <h3 className="usa-card__heading">{heading}</h3>
       </CardHeader>
       {imgPath && (
@@ -45,7 +47,7 @@ export default function Card({
           <img src={imgPath} alt="" />
         </CardMedia>
       )}
-      <CardBody className={size !== 'lg' ? styles.noImage : ''}>
+      <CardBody className={layout !== 'lg' ? styles.noImage : ''}>
         {children}
       </CardBody>
     </CardCmp>
