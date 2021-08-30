@@ -1,6 +1,6 @@
 import { GridContainer } from '@trussworks/react-uswds';
 import React from 'react';
-import Features from '../sections/Features'
+import Features from '../sections/Features';
 
 import Layout from '../components/layout/Layout';
 import Hero from '../components/hero/Hero';
