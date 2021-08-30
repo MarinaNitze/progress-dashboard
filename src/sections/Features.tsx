@@ -4,7 +4,6 @@ import { CardGroup, Grid, GridContainer } from '@trussworks/react-uswds';
 import Card, { CardProps } from '../components/card/Card';
 
 export default function FeatureSection() {
-
   // TODO: pull card list from cms
   const cardList: Array<CardProps> = [
     {
@@ -56,16 +55,15 @@ export default function FeatureSection() {
   ];
 
   return (
-      <section id="test-section-id">
-        <GridContainer>
-          <h2 className="font-heading-xl margin-y-0">What's new</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Luctus
-            massa natoque risus ut porttitor. Urna commodo amet non massa dui
-            quis. Id pellentesque purus enim suspendisse et sed gravida enim
-            sed.
-          </p>
-        </GridContainer>
+    <section id="test-section-id">
+      <GridContainer>
+        <h2 className="font-heading-xl margin-y-0">What's new</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Luctus massa
+          natoque risus ut porttitor. Urna commodo amet non massa dui quis. Id
+          pellentesque purus enim suspendisse et sed gravida enim sed.
+        </p>
+      </GridContainer>
 
       <GridContainer>
         <Grid row>
@@ -76,6 +74,6 @@ export default function FeatureSection() {
           </CardGroup>
         </Grid>
       </GridContainer>
-      </section>
+    </section>
   );
 }
