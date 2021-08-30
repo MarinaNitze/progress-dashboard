@@ -1,6 +1,7 @@
 import { GridContainer } from '@trussworks/react-uswds';
 import React from 'react';
 import Features from '../sections/Features';
+import Topics from '../sections/Topics';
 
 import Layout from '../components/layout/Layout';
 import Hero from '../components/hero/Hero';
@@ -22,6 +23,7 @@ export default function IndexPage() {
           </GridContainer>
         </section>
         <Features />
+        <Topics />
       </main>
     </Layout>
   );

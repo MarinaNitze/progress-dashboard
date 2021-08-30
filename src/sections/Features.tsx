@@ -4,6 +4,8 @@ import { CardGroup, Grid, GridContainer } from '@trussworks/react-uswds';
 import Card, { CardProps } from '../components/card/Card';
 
 export default function FeatureSection() {
+
+  // TODO: pull card list from cms
   const cardList: Array<CardProps> = [
     {
       heading: 'Full width feature',
@@ -54,7 +56,6 @@ export default function FeatureSection() {
   ];
 
   return (
-    <>
       <section id="test-section-id">
         <GridContainer>
           <h2 className="font-heading-xl margin-y-0">What's new</h2>
@@ -65,16 +66,16 @@ export default function FeatureSection() {
             sed.
           </p>
         </GridContainer>
-      </section>
+
       <GridContainer>
         <Grid row>
           <CardGroup>
             {cardList.map(c => (
-              <Card {...c} />
+              <Card key={c.heading} {...c} />
             ))}
           </CardGroup>
         </Grid>
       </GridContainer>
-    </>
+      </section>
   );
 }

@@ -16,7 +16,7 @@ export type CardProps = {
   imgPath?: string;
   linkDestination?: string;
   linkText?: string;
-  children: React.ReactNode;
+  children?: React.ReactNode;
   gridLayout?: GridProps;
 };
 
