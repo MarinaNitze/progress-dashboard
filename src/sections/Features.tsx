@@ -3,14 +3,15 @@ import { CardGroup, Grid, GridContainer } from '@trussworks/react-uswds';
 
 import Card, { CardProps } from '../components/card/Card';
 
-export default function FeatureSection() {
+export default function FeatureSection({images} : any) {
   // TODO: pull card list from cms
   const cardList: Array<CardProps> = [
     {
       heading: 'Full width feature',
       layout: 'lg',
-      imgPath:
-        'https://images.unsplash.com/photo-1543596734-951d6f4f052c?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=450&h=600&fit=crop&ixid=eyJhcHBfaWQiOjF9',
+      imgPath: "images/cards/Full-Feature-Img.png",
+      imgAlt: "feature image",
+      images: images,
       linkText: 'CTA',
       linkDestination: '/CTA',
       children: (
@@ -22,27 +23,13 @@ export default function FeatureSection() {
       ),
     },
     {
-      heading: 'Small feature',
-      layout: 'sm',
-      imgPath: '',
-      linkText: '',
-      linkDestination: '',
-      gridLayout: { tablet: { col: 4 } },
-      children: (
-        <p>
-          Smaller impact, themed curated list of new items. Likely linked ULs
-          with possible H4 heading format to cateogorize as needed. Could be
-          repeated to fill a row.
-        </p>
-      ),
-    },
-    {
       heading: 'Medium feature',
       layout: 'md',
-      imgPath: '',
+      imgPath: 'images/cards/Medium-Feature.png',
+      imgAlt: "medium feature",
+      images: images,
       linkText: '',
       linkDestination: '',
-      gridLayout: { tablet: { col: 8 } },
       children: (
         <p>
           Will serve as an intermediate block for when there aren’t a ton of new
@@ -52,6 +39,21 @@ export default function FeatureSection() {
         </p>
       ),
     },
+    {
+      heading: 'Small feature',
+      layout: 'sm',
+      imgPath: '',
+      images: images,
+      linkText: '',
+      linkDestination: '',
+      children: (
+        <p>
+          Smaller impact, themed curated list of new items. Likely linked ULs
+          with possible H4 heading format to cateogorize as needed. Could be
+          repeated to fill a row.
+        </p>
+      ),
+    }
   ];
 
   return (

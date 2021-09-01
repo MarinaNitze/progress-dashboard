@@ -1,9 +1,11 @@
 import React from 'react';
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import {
   Card as CardCmp,
   CardBody,
   CardHeader,
   CardMedia,
+  CardFooter
 } from '@trussworks/react-uswds';
 import { GridProps } from '@trussworks/react-uswds/lib/components/grid/Grid/Grid';
 
@@ -14,27 +16,48 @@ export type CardProps = {
   heading: string;
   layout?: 'topic' | 'sm' | 'md' | 'lg';
   imgPath?: string;
+  imgAlt?: string;
+  images?: any;
   linkDestination?: string;
   linkText?: string;
   children?: React.ReactNode;
-  gridLayout?: GridProps;
 };
+
+const gridLayouts = {
+  topic: { tablet: { col: true } } as GridProps,
+  sm: { tablet: { col: 4 } } as GridProps,
+  md: { tablet: { col: 8 } } as GridProps,
+  lg: { tablet: { col: 12 } } as GridProps
+}
+
+function mediaLayout( layout: string): "flagMediaRight" | "flagDefault" | "standardDefault" {
+  if(layout === "lg") return "flagMediaRight"
+  if(layout === "md") return "flagDefault"
+  return "standardDefault";
+}
 
 export default function Card({
   heading,
   imgPath,
+  imgAlt,
+  images,
+  linkDestination,
+  linkText,
   children,
-  gridLayout = { tablet: { col: 12 } },
   layout = 'lg',
 }: CardProps) {
+
+  const imageNode : any = images && images.edges.find( (img : any) => img.node.relativePath === imgPath)?.node;
+  const image : any = imageNode?.extension === "svg" ? imageNode.publicURL : getImage(imageNode);
+
   return (
     <CardCmp
       className={styles.card}
       containerProps={{
         className: `${styles.cardContainer} ${styles[layout]}`,
       }}
-      layout="flagMediaRight"
-      gridLayout={gridLayout}
+      layout= {mediaLayout(layout)}
+      gridLayout={gridLayouts[layout]}
     >
       <CardHeader className={layout !== 'lg' ? styles.noImage : ''}>
         <h3 className="usa-card__heading">{heading}</h3>
@@ -44,7 +67,7 @@ export default function Card({
           className="flex-align-center"
           imageClass="circle-card margin-x-auto"
         >
-          <img src={imgPath} alt="" />
+          {imageNode?.extension === "svg" ?  <img src={image} alt={imgAlt}/> : <GatsbyImage image={image} alt={imgAlt ?? ""} />}
         </CardMedia>
       )}
       <CardBody className={layout !== 'lg' ? styles.noImage : ''}>

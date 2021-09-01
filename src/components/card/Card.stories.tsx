@@ -17,6 +17,6 @@ const Template: ComponentStory<typeof Card> = args => (
 
 export const Default = Template.bind({});
 Default.args = {
-  size: 'lg',
+  layout: 'lg',
   heading: 'Test heading',
 };

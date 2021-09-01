@@ -3,64 +3,71 @@ import { CardGroup, Grid, GridContainer } from '@trussworks/react-uswds';
 
 import Card, { CardProps } from '../components/card/Card';
 
-export default function TopicsSection() {
+export default function TopicsSection({images} : any) {
   // TODO: pull card list from cms
   const cardList: Array<CardProps> = [
     {
       heading: 'Foster Parent Licensing',
       layout: 'topic',
       imgPath:
-        'https://images.unsplash.com/photo-1543596734-951d6f4f052c?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=450&h=600&fit=crop&ixid=eyJhcHBfaWQiOjF9',
+        'images/cards/Topic-FPL.svg',
+      imgAlt: "Foster Parent Licensing Icon",
+      images,
       linkDestination: '/topic/foster-parent-licensing',
     },
     {
       heading: 'Background Checks',
       layout: 'topic',
       imgPath:
-        'https://images.unsplash.com/photo-1543596734-951d6f4f052c?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=450&h=600&fit=crop&ixid=eyJhcHBfaWQiOjF9',
+        'images/cards/Topic-BC.svg',
+      imgAlt: "Background Checks Icon",
+      images,
       linkDestination: '/topic/background-checks',
     },
     {
       heading: 'Extended Foster Care',
       layout: 'topic',
       imgPath:
-        'https://images.unsplash.com/photo-1543596734-951d6f4f052c?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=450&h=600&fit=crop&ixid=eyJhcHBfaWQiOjF9',
+        'images/cards/Topic-EFC.svg',
+      imgAlt: "Extended Foster Care Icon",
+      images,
       linkDestination: '/CTA',
     },
     {
       heading: 'Family Finding',
       layout: 'topic',
       imgPath:
-        'https://images.unsplash.com/photo-1543596734-951d6f4f052c?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=450&h=600&fit=crop&ixid=eyJhcHBfaWQiOjF9',
+        'images/cards/Topic-FF.svg',
+      imgAlt: "Family Finding Icon",
+      images,
       linkDestination: '/topic/family-finding',
     },
     {
       heading: 'Inquiry management',
       layout: 'topic',
       imgPath:
-        'https://images.unsplash.com/photo-1543596734-951d6f4f052c?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=450&h=600&fit=crop&ixid=eyJhcHBfaWQiOjF9',
+        'images/cards/Topic-IM.svg',
+      imgAlt: "Inquiry Management Icon",
+      images,
       linkDestination: '/topic/inquiry-management',
     },
     {
       heading: 'License Renewal',
       layout: 'topic',
       imgPath:
-        'https://images.unsplash.com/photo-1543596734-951d6f4f052c?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=450&h=600&fit=crop&ixid=eyJhcHBfaWQiOjF9',
+        'images/cards/Topic-LR.svg',
+      imgAlt: "Licensing Renewal Icon",
+      images,
       linkDestination: '/topic/license-renewal',
     },
     {
       heading: 'Recruitment',
       layout: 'topic',
       imgPath:
-        'https://images.unsplash.com/photo-1543596734-951d6f4f052c?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=450&h=600&fit=crop&ixid=eyJhcHBfaWQiOjF9',
+        'images/cards/Topic-Recruitment.svg',
+      imgAlt: "Recruitment Icon",
+      images,
       linkDestination: '/topic/recruitment',
-    },
-    {
-      heading: 'Retention',
-      layout: 'topic',
-      imgPath:
-        'https://images.unsplash.com/photo-1543596734-951d6f4f052c?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=450&h=600&fit=crop&ixid=eyJhcHBfaWQiOjF9',
-      linkDestination: '/topic/retention',
     },
   ];
 
