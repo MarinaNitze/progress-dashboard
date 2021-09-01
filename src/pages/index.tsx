@@ -1,13 +1,13 @@
 import { GridContainer } from '@trussworks/react-uswds';
 import React from 'react';
-import { graphql } from "gatsby"
+import { graphql } from 'gatsby';
 import Features from '../sections/Features';
 import Topics from '../sections/Topics';
 
 import Layout from '../components/layout/Layout';
 import Hero from '../components/hero/Hero';
 
-export default function IndexPage({data} : any) {
+export default function IndexPage({ data }: any) {
   return (
     <Layout>
       <main>
@@ -23,31 +23,26 @@ export default function IndexPage({data} : any) {
             </Hero>
           </GridContainer>
         </section>
-        <Features images={data.cardImages}/>
-        <Topics images={data.cardImages}/>
+        <Features images={data.cardImages} />
+        <Topics images={data.cardImages} />
       </main>
     </Layout>
   );
 }
 
 export const pageQuery = graphql`
- query {
-        cardImages: allFile(
-          filter: { relativeDirectory: { eq: "images/cards" } }
-        ) {
-          edges {
-            node {
-              relativePath
-              childImageSharp {
-                gatsbyImageData(
-                  placeholder: BLURRED
-                  formats: [AUTO, WEBP, AVIF]
-                )
-              }
-              extension
-              publicURL
-            }
+  query {
+    cardImages: allFile(filter: { relativeDirectory: { eq: "images/cards" } }) {
+      edges {
+        node {
+          relativePath
+          childImageSharp {
+            gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
           }
+          extension
+          publicURL
         }
       }
-`
+    }
+  }
+`;

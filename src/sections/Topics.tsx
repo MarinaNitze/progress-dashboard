@@ -3,69 +3,62 @@ import { CardGroup, Grid, GridContainer } from '@trussworks/react-uswds';
 
 import Card, { CardProps } from '../components/card/Card';
 
-export default function TopicsSection({images} : any) {
+export default function TopicsSection({ images }: any) {
   // TODO: pull card list from cms
   const cardList: Array<CardProps> = [
     {
       heading: 'Foster Parent Licensing',
       layout: 'topic',
-      imgPath:
-        'images/cards/Topic-FPL.svg',
-      imgAlt: "Foster Parent Licensing Icon",
+      imgPath: 'images/cards/Topic-FPL.svg',
+      imgAlt: 'Foster Parent Licensing Icon',
       images,
       linkDestination: '/topic/foster-parent-licensing',
     },
     {
       heading: 'Background Checks',
       layout: 'topic',
-      imgPath:
-        'images/cards/Topic-BC.svg',
-      imgAlt: "Background Checks Icon",
+      imgPath: 'images/cards/Topic-BC.svg',
+      imgAlt: 'Background Checks Icon',
       images,
       linkDestination: '/topic/background-checks',
     },
     {
       heading: 'Extended Foster Care',
       layout: 'topic',
-      imgPath:
-        'images/cards/Topic-EFC.svg',
-      imgAlt: "Extended Foster Care Icon",
+      imgPath: 'images/cards/Topic-EFC.svg',
+      imgAlt: 'Extended Foster Care Icon',
       images,
       linkDestination: '/CTA',
     },
     {
       heading: 'Family Finding',
       layout: 'topic',
-      imgPath:
-        'images/cards/Topic-FF.svg',
-      imgAlt: "Family Finding Icon",
+      imgPath: 'images/cards/Topic-FF.svg',
+      imgAlt: 'Family Finding Icon',
       images,
       linkDestination: '/topic/family-finding',
     },
     {
       heading: 'Inquiry management',
       layout: 'topic',
-      imgPath:
-        'images/cards/Topic-IM.svg',
-      imgAlt: "Inquiry Management Icon",
+      imgPath: 'images/cards/Topic-IM.svg',
+      imgAlt: 'Inquiry Management Icon',
       images,
       linkDestination: '/topic/inquiry-management',
     },
     {
       heading: 'License Renewal',
       layout: 'topic',
-      imgPath:
-        'images/cards/Topic-LR.svg',
-      imgAlt: "Licensing Renewal Icon",
+      imgPath: 'images/cards/Topic-LR.svg',
+      imgAlt: 'Licensing Renewal Icon',
       images,
       linkDestination: '/topic/license-renewal',
     },
     {
       heading: 'Recruitment',
       layout: 'topic',
-      imgPath:
-        'images/cards/Topic-Recruitment.svg',
-      imgAlt: "Recruitment Icon",
+      imgPath: 'images/cards/Topic-Recruitment.svg',
+      imgAlt: 'Recruitment Icon',
       images,
       linkDestination: '/topic/recruitment',
     },

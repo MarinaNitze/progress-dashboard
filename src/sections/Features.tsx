@@ -3,14 +3,14 @@ import { CardGroup, Grid, GridContainer } from '@trussworks/react-uswds';
 
 import Card, { CardProps } from '../components/card/Card';
 
-export default function FeatureSection({images} : any) {
+export default function FeatureSection({ images }: any) {
   // TODO: pull card list from cms
   const cardList: Array<CardProps> = [
     {
       heading: 'Full width feature',
       layout: 'lg',
-      imgPath: "images/cards/Full-Feature-Img.png",
-      imgAlt: "feature image",
+      imgPath: 'images/cards/Full-Feature-Img.png',
+      imgAlt: 'feature image',
       images: images,
       linkText: 'CTA',
       linkDestination: '/CTA',
@@ -26,7 +26,7 @@ export default function FeatureSection({images} : any) {
       heading: 'Medium feature',
       layout: 'md',
       imgPath: 'images/cards/Medium-Feature.png',
-      imgAlt: "medium feature",
+      imgAlt: 'medium feature',
       images: images,
       linkText: '',
       linkDestination: '',
@@ -53,7 +53,7 @@ export default function FeatureSection({images} : any) {
           repeated to fill a row.
         </p>
       ),
-    }
+    },
   ];
 
   return (
