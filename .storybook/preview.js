@@ -1,7 +1,6 @@
 import { action } from '@storybook/addon-actions';
 
 import '../src/styles/index.scss';
-import './custom-styles.scss';
 
 // Gatsby's Link overrides:
 // Gatsby Link calls the `enqueue` & `hovering` methods on the global variable ___loader.
