@@ -8,6 +8,7 @@ import {
 import { GridProps } from '@trussworks/react-uswds/lib/components/grid/Grid/Grid';
 
 import * as styles from './Card.module.css';
+import './Card.scss';
 
 type CardProps = {
   heading: string;
