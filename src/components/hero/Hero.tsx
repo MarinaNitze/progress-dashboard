@@ -1,5 +1,5 @@
 import React from 'react';
-import './hero.scss'
+import './hero.scss';
 
 type HeroProps = {
   title: string;
@@ -18,7 +18,7 @@ export default function Hero({
     <section
       className="usa-hero"
       style={{
-        backgroundImage: backgroundImgPath ? `url(${backgroundImgPath})` : "",
+        backgroundImage: backgroundImgPath ? `url(${backgroundImgPath})` : '',
       }}
     >
       <div className="usa-grid">
