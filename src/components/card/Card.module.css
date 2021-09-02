@@ -1,25 +1,34 @@
 .card {
   font-family: 'inherit';
-}
-
-.cardContainer {
-  background-color: #f2f2f2;
   border-radius: 0;
   border: 0;
 }
 
-.cardContainer.sm {
-  padding: 1rem;
+.card .sm {
+  background-color: #fff;
 }
 
-.cardContainer.md {
-  padding: 3rem;
+.card .md {
+  background-color: #f2b039;
 }
 
-.cardContainer.lg {
-  padding: 4rem 1.5rem;
+.card .lg {
+  background-color: #522A10;
+  color: #fff;
 }
 
-.noImage {
-  margin-right: 0 !important;
+.card .topic {
+  background-color: #d9d9d9;
+}
+
+.card .topic img {
+  padding: 2rem;
+}
+
+.image {
+  min-height: 100%;
+}
+
+.icon:hover{
+  background-color: #f2b039;
 }

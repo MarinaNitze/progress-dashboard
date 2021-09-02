@@ -57,30 +57,25 @@ export default function Card({
   return (
     <CardCmp
       className={styles.card}
-      containerProps={{
-        className: `${styles.cardContainer} ${styles[layout]}`,
-      }}
+      containerProps={{className: styles[layout]}}
       layout={mediaLayout(layout)}
       gridLayout={gridLayouts[layout]}
     >
-      <CardHeader className={layout !== 'lg' ? styles.noImage : ''}>
+      <CardHeader className={styles.content}>
         <h3 className="usa-card__heading">{heading}</h3>
       </CardHeader>
       {imgPath && (
-        <CardMedia
-          className="flex-align-center"
-          imageClass="circle-card margin-x-auto"
-        >
+        <CardMedia exdent className={styles.media}>
           {imageNode?.extension === 'svg' ? (
-            <img src={image} alt={imgAlt} />
+            <img className={styles.icon} src={image} alt={imgAlt} />
           ) : (
-            <GatsbyImage image={image} alt={imgAlt ?? ''} />
+            <GatsbyImage className={styles.image} image={image} alt={imgAlt ?? ''} />
           )}
         </CardMedia>
       )}
-      <CardBody className={layout !== 'lg' ? styles.noImage : ''}>
+      {children && <CardBody className={styles.content}>
         {children}
-      </CardBody>
+      </CardBody>}
     </CardCmp>
   );
 }

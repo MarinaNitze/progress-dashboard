@@ -14,3 +14,31 @@ $theme-grid-container-max-width: 'desktop-lg';
 
 /* COMPONENTS */
 $theme-hero-image: '../../static/img/hero.png';
+$theme-card-border-width: 0;
+
+/* GENERAL CLASS OVERRIDES */
+.usa-card__img {
+  background-color: transparent !important;
+}
+
+.usa-card__container {
+  justify-content: space-between;
+}
+
+@media(min-width: 40em){
+
+  .usa-card--flag .usa-card__media {
+    width: 22.5rem !important;
+    align-items: center;
+  }
+
+    .usa-card--flag .usa-card__body, .usa-card--flag .usa-card__footer, .usa-card--flag .usa-card__header {
+    margin-left: 22.5rem !important;
+  }
+
+  .usa-card--flag.usa-card--media-right .usa-card__body, .usa-card--flag.usa-card--media-right .usa-card__footer, .usa-card--flag.usa-card--media-right .usa-card__header {
+    margin-right: 22.5rem !important;
+    margin-left: 0 !important;
+  }
+
+}
