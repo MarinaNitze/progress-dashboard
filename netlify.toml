@@ -1,14 +1,14 @@
 [build]
   command = "npm run build"
   publish = "public"
+[build.environment]
+    CYPRESS_CACHE_FOLDER = "./node_modules/CypressBinary"
+    TERM = "xterm"
+    CI = "1"
 [[plugins]]
   package = "netlify-plugin-cypress"
-  [plugins.inputs]
-    record = false
-    group = 'deployed'
-  [plugins.inputs.postBuild]
-    # run E2E tests against locally built site
-    # before deploying it
+  [plugins.inputs.preBuild]
     enable = true
-    record = false
-    group = 'built'
+    start = 'npm start'
+    wait-on = 'http://localhost:8000/'
+    wait-on-timeout = '75' # seconds
