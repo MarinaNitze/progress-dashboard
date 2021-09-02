@@ -11,4 +11,9 @@
     enable = true
     start = 'npm start'
     wait-on = 'http://localhost:8000/'
-    wait-on-timeout = '75' # seconds
+    wait-on-timeout = '75'
+  [plugins.inputs.postBuild]
+    enable = true
+    spa = true
+  [plugins.inputs]
+    enable = false
