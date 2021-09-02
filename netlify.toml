@@ -1,9 +1,21 @@
 [build]
   command = "npm run build"
   publish = "public"
+[build.environment]
+    CYPRESS_CACHE_FOLDER = "./node_modules/CypressBinary"
+    TERM = "xterm"
+    CI = "1"
 [[plugins]]
   package = "netlify-plugin-cypress"
+  [plugins.inputs.preBuild]
+    enable = true
+    start = 'gatsby develop'
+    wait-on = 'http://localhost:8000'
+    wait-on-timeout = '30' # seconds
+    record = true
+    group = '1: testing develop site'
   [plugins.inputs.postBuild]
     enable = true
-    record = true
     group = 'built'
+  [plugins.inputs]
+    enable = false
