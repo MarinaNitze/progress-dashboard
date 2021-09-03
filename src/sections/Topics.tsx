@@ -71,7 +71,7 @@ export default function TopicsSection({ images }: any) {
   ];
 
   const handleClick = () => {
-    navigate('/topics');
+    navigate('/topic');
   };
 
   return (
@@ -100,9 +100,7 @@ export default function TopicsSection({ images }: any) {
         <Grid row>
           <Button
             type="button"
-            onClick={() => {
-              handleClick;
-            }}
+            onClick={() => handleClick}
           >
             View all Topics
           </Button>

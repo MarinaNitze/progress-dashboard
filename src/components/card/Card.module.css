@@ -20,9 +20,23 @@
   justify-content: center;
 }
 
+.lg .media {
+  border-bottom-right-radius: .5rem;
+  border-top-right-radius: .5rem;
+}
+
+.md .media {
+  border-top-left-radius: .5rem;
+  border-bottom-left-radius: .5rem;
+}
+
 .card .topic {
   background-color: #d9d9d9;
   justify-content: space-around;
+}
+
+.image {
+  border-radius: 1rem;
 }
 
 .card .topic img {
