@@ -1,4 +1,5 @@
 import React from 'react';
+import { navigate } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import {
   Card as CardCmp,
@@ -6,6 +7,7 @@ import {
   CardHeader,
   CardMedia,
   CardFooter,
+  Button,
 } from '@trussworks/react-uswds';
 import { GridProps } from '@trussworks/react-uswds/lib/components/grid/Grid/Grid';
 
@@ -54,23 +56,27 @@ export default function Card({
   const image: any =
     imageNode?.extension === 'svg' ? imageNode.publicURL : getImage(imageNode);
 
+    const handleClick = (destination: string | undefined) => {
+      if (typeof destination === "string" && destination !== "") navigate(destination)
+    }
+
   return (
     <CardCmp
       className={styles.card}
       containerProps={{ className: styles[layout] }}
       layout={mediaLayout(layout)}
       gridLayout={gridLayouts[layout]}
+      onClick={() => handleClick(linkDestination)}
     >
       <CardHeader className={styles.content}>
         <h3 className="usa-card__heading">{heading}</h3>
       </CardHeader>
-      {imgPath && (
+      {imgPath && layout !== "sm" && (
         <CardMedia exdent className={styles.media}>
           {imageNode?.extension === 'svg' ? (
-            <img className={styles.icon} src={image} alt={imgAlt} />
+            <img src={image} alt={imgAlt} />
           ) : (
             <GatsbyImage
-              className={styles.image}
               image={image}
               alt={imgAlt ?? ''}
             />
@@ -78,6 +84,14 @@ export default function Card({
         </CardMedia>
       )}
       {children && <CardBody className={styles.content}>{children}</CardBody>}
+      {layout === "lg" && linkDestination &&
+      <CardFooter>
+          <Button type="button">CTA</Button>
+      </CardFooter>
+        }
+        {layout === "sm" && <CardFooter className={styles.smallFooter}>
+          <GatsbyImage image={image} alt={imgAlt ?? ""}/>
+          </CardFooter>}
     </CardCmp>
   );
 }

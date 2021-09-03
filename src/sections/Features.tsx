@@ -28,8 +28,6 @@ export default function FeatureSection({ images }: any) {
       imgPath: 'images/cards/Medium-Feature.png',
       imgAlt: 'medium feature',
       images: images,
-      linkText: '',
-      linkDestination: '',
       children: (
         <p>
           Will serve as an intermediate block for when there aren’t a ton of new
@@ -42,10 +40,9 @@ export default function FeatureSection({ images }: any) {
     {
       heading: 'Small feature',
       layout: 'sm',
-      imgPath: '',
+      imgPath: 'images/cards/Small-Feature-Footer.png',
+      imgAlt: "small feature",
       images: images,
-      linkText: '',
-      linkDestination: '',
       children: (
         <p>
           Smaller impact, themed curated list of new items. Likely linked ULs

@@ -17,6 +17,18 @@ $theme-hero-image: '../../static/img/hero.png';
 $theme-card-border-width: 0;
 
 /* GENERAL CLASS OVERRIDES */
+.usa-button {
+  background-color: #fe6659 !important;
+  border: 3px solid #fe6659 !important;
+  border-radius: 1rem !important;
+}
+
+.usa-button:hover {
+  background-color: #fff !important;
+  color: #000 !important;
+  border: 3px solid #fe6659 !important;
+}
+
 .usa-card__img {
   background-color: transparent !important;
 }
