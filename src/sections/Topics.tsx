@@ -1,6 +1,11 @@
 import React from 'react';
 import { navigate } from 'gatsby';
-import { CardGroup, Grid, GridContainer, Button } from '@trussworks/react-uswds';
+import {
+  CardGroup,
+  Grid,
+  GridContainer,
+  Button,
+} from '@trussworks/react-uswds';
 
 import Card, { CardProps } from '../components/card/Card';
 
@@ -66,8 +71,8 @@ export default function TopicsSection({ images }: any) {
   ];
 
   const handleClick = () => {
-    navigate("/topics");
-  }
+    navigate('/topics');
+  };
 
   return (
     <section id="test-section-id">
@@ -93,7 +98,14 @@ export default function TopicsSection({ images }: any) {
       </GridContainer>
       <GridContainer>
         <Grid row>
-          <Button type="button" onClick={() => {handleClick}}>View all Topics</Button>
+          <Button
+            type="button"
+            onClick={() => {
+              handleClick;
+            }}
+          >
+            View all Topics
+          </Button>
         </Grid>
       </GridContainer>
     </section>

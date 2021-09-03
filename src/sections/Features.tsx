@@ -41,7 +41,7 @@ export default function FeatureSection({ images }: any) {
       heading: 'Small feature',
       layout: 'sm',
       imgPath: 'images/cards/Small-Feature-Footer.png',
-      imgAlt: "small feature",
+      imgAlt: 'small feature',
       images: images,
       children: (
         <p>

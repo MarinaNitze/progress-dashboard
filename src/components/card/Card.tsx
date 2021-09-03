@@ -56,9 +56,10 @@ export default function Card({
   const image: any =
     imageNode?.extension === 'svg' ? imageNode.publicURL : getImage(imageNode);
 
-    const handleClick = (destination: string | undefined) => {
-      if (typeof destination === "string" && destination !== "") navigate(destination)
-    }
+  const handleClick = (destination: string | undefined) => {
+    if (typeof destination === 'string' && destination !== '')
+      navigate(destination);
+  };
 
   return (
     <CardCmp
@@ -71,27 +72,26 @@ export default function Card({
       <CardHeader className={styles.content}>
         <h3 className="usa-card__heading">{heading}</h3>
       </CardHeader>
-      {imgPath && layout !== "sm" && (
+      {imgPath && layout !== 'sm' && (
         <CardMedia exdent className={styles.media}>
           {imageNode?.extension === 'svg' ? (
             <img src={image} alt={imgAlt} />
           ) : (
-            <GatsbyImage
-              image={image}
-              alt={imgAlt ?? ''}
-            />
+            <GatsbyImage image={image} alt={imgAlt ?? ''} />
           )}
         </CardMedia>
       )}
       {children && <CardBody className={styles.content}>{children}</CardBody>}
-      {layout === "lg" && linkDestination &&
-      <CardFooter>
+      {layout === 'lg' && linkDestination && (
+        <CardFooter>
           <Button type="button">CTA</Button>
-      </CardFooter>
-        }
-        {layout === "sm" && <CardFooter className={styles.smallFooter}>
-          <GatsbyImage image={image} alt={imgAlt ?? ""}/>
-          </CardFooter>}
+        </CardFooter>
+      )}
+      {layout === 'sm' && (
+        <CardFooter className={styles.smallFooter}>
+          <GatsbyImage image={image} alt={imgAlt ?? ''} />
+        </CardFooter>
+      )}
     </CardCmp>
   );
 }
