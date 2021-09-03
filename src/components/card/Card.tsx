@@ -57,7 +57,7 @@ export default function Card({
   return (
     <CardCmp
       className={styles.card}
-      containerProps={{className: styles[layout]}}
+      containerProps={{ className: styles[layout] }}
       layout={mediaLayout(layout)}
       gridLayout={gridLayouts[layout]}
     >
@@ -69,13 +69,15 @@ export default function Card({
           {imageNode?.extension === 'svg' ? (
             <img className={styles.icon} src={image} alt={imgAlt} />
           ) : (
-            <GatsbyImage className={styles.image} image={image} alt={imgAlt ?? ''} />
+            <GatsbyImage
+              className={styles.image}
+              image={image}
+              alt={imgAlt ?? ''}
+            />
           )}
         </CardMedia>
       )}
-      {children && <CardBody className={styles.content}>
-        {children}
-      </CardBody>}
+      {children && <CardBody className={styles.content}>{children}</CardBody>}
     </CardCmp>
   );
 }
