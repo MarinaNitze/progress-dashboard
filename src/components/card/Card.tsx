@@ -77,7 +77,11 @@ export default function Card({
           {imageNode?.extension === 'svg' ? (
             <img src={image} alt={imgAlt} />
           ) : (
-            <GatsbyImage className={styles.image} image={image} alt={imgAlt ?? ''} />
+            <GatsbyImage
+              className={styles.image}
+              image={image}
+              alt={imgAlt ?? ''}
+            />
           )}
         </CardMedia>
       )}

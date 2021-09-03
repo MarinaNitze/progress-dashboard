@@ -98,10 +98,7 @@ export default function TopicsSection({ images }: any) {
       </GridContainer>
       <GridContainer>
         <Grid row>
-          <Button
-            type="button"
-            onClick={() => handleClick}
-          >
+          <Button type="button" onClick={() => handleClick}>
             View all Topics
           </Button>
         </Grid>
