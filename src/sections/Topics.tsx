@@ -77,6 +77,7 @@ export default function TopicsSection({ images }: any) {
   return (
     <section id="test-section-id">
       <GridContainer>
+        <Grid>
         <h2 className="font-heading-xl margin-y-0">Popular Topics</h2>
         <p>
           Scalable cards to highlight curated list of topics. Depending on how
@@ -85,19 +86,15 @@ export default function TopicsSection({ images }: any) {
           capped with a rectangular image, and include a heading. Heading and
           image will be clickable.
         </p>
-      </GridContainer>
-
-      <GridContainer>
-        <Grid row>
+        </Grid>
+        <Grid>
           <CardGroup>
             {cardList.map(c => (
               <Card key={c.heading} {...c} />
             ))}
           </CardGroup>
         </Grid>
-      </GridContainer>
-      <GridContainer>
-        <Grid row>
+        <Grid >
           <Button type="button" onClick={handleClick}>
             View all Topics
           </Button>

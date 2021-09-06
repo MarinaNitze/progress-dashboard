@@ -56,16 +56,13 @@ export default function FeatureSection({ images }: any) {
   return (
     <section id="test-section-id">
       <GridContainer>
-        <h2 className="font-heading-xl margin-y-0">What's new</h2>
+        <Grid>
+                <h2 className="font-heading-xl margin-y-0">What's new</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Luctus massa
           natoque risus ut porttitor. Urna commodo amet non massa dui quis. Id
           pellentesque purus enim suspendisse et sed gravida enim sed.
         </p>
-      </GridContainer>
-
-      <GridContainer>
-        <Grid row>
           <CardGroup>
             {cardList.map(c => (
               <Card key={c.heading} {...c} />

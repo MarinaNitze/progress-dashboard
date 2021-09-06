@@ -1,3 +1,97 @@
+@import "../../styles/settings.scss";
+
 li.usa-card {
   list-style-type: none;
 }
+
+.card {
+  font-family: 'inherit';
+  border-radius: 0;
+  border: 0;
+}
+
+.card .sm {
+  background-color: $white;
+  justify-content: center;
+}
+
+.card .md {
+  background-color: $primary;
+  justify-content: center;
+}
+
+.card .lg {
+  background-color: $info;
+  color: $white;
+  justify-content: center;
+}
+
+.lg .media {
+  border-bottom-right-radius: .5rem;
+  border-top-right-radius: .5rem;
+}
+
+.md .media {
+  border-top-left-radius: .5rem;
+  border-bottom-left-radius: .5rem;
+}
+
+.card .topic {
+  background-color: $light;
+  justify-content: space-around;
+}
+
+.image {
+  border-radius: 1rem;
+}
+
+.card .topic img {
+  height: 3rem;
+}
+
+.topic h3 {
+  font-size: large;
+}
+
+.content {
+  flex: inherit;
+}
+
+.smallFooter {
+  padding: 0;
+}
+
+.topic .content {
+  padding: 1rem;
+  text-align: center;
+  background-color: $primary;
+  height: 100%;
+  border-bottom-left-radius: .5rem;
+  border-bottom-right-radius: .5rem;
+  display: flex;
+  align-items: center;
+}
+
+.media {
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  width: 100%;
+  height: 100%;
+}
+
+.card .topic:hover{
+  background-color: $primary;
+  border-radius: .5rem;
+}
+
+.usa-card__img {
+  background-color: transparent !important;
+}
+
+.usa-card__container {
+  justify-content: space-between;
+}
+

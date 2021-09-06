@@ -11,7 +11,6 @@ import {
 } from '@trussworks/react-uswds';
 import { GridProps } from '@trussworks/react-uswds/lib/components/grid/Grid/Grid';
 
-import * as styles from './Card.module.css';
 import './Card.scss';
 
 export type CardProps = {
@@ -25,12 +24,8 @@ export type CardProps = {
   children?: React.ReactNode;
 };
 
-const gridLayouts = {
-  topic: { tablet: { col: true } } as GridProps,
-  sm: { tablet: { col: 4 } } as GridProps,
-  md: { tablet: { col: 8 } } as GridProps,
-  lg: { tablet: { col: 12 } } as GridProps,
-};
+const gridEntries = [["topic", true], ["sm", 4], ["md", 8], ["lg", 12] ].map( ge => [ge[0], { tablet: { col: ge[1] }} as GridProps]);
+const gridLayouts = Object.fromEntries(gridEntries);
 
 function mediaLayout(
   layout: string,
@@ -56,44 +51,39 @@ export default function Card({
   const image: any =
     imageNode?.extension === 'svg' ? imageNode.publicURL : getImage(imageNode);
 
-  const handleClick = (destination: string | undefined) => {
-    if (typeof destination === 'string' && destination !== '')
-      navigate(destination);
-  };
-
   return (
     <CardCmp
-      className={styles.card}
-      containerProps={{ className: styles[layout] }}
+      className="card"
+      containerProps={{ className: layout }}
       layout={mediaLayout(layout)}
-      gridLayout={gridLayouts[layout]}
-      onClick={() => handleClick(linkDestination)}
+      gridLayout={gridLayouts[layout] as GridProps}
+      onClick={() => { if (linkDestination) navigate(linkDestination) }}
     >
-      <CardHeader className={styles.content}>
+      <CardHeader className="content">
         <h3 className="usa-card__heading">{heading}</h3>
       </CardHeader>
       {imgPath && layout !== 'sm' && (
-        <CardMedia exdent className={styles.media}>
+        <CardMedia exdent className="media">
           {imageNode?.extension === 'svg' ? (
-            <img src={image} alt={imgAlt} />
+            <img src={image} alt={imgAlt ?? heading} />
           ) : (
             <GatsbyImage
-              className={styles.image}
+              className="image"
               image={image}
-              alt={imgAlt ?? ''}
+              alt={imgAlt ?? heading}
             />
           )}
         </CardMedia>
       )}
-      {children && <CardBody className={styles.content}>{children}</CardBody>}
+      {children && <CardBody className="content">{children}</CardBody>}
       {layout === 'lg' && linkDestination && (
         <CardFooter>
           <Button type="button">CTA</Button>
         </CardFooter>
       )}
       {layout === 'sm' && (
-        <CardFooter className={styles.smallFooter}>
-          <GatsbyImage image={image} alt={imgAlt ?? ''} />
+        <CardFooter className="smallFooter">
+          <GatsbyImage image={image} alt={imgAlt ?? heading} />
         </CardFooter>
       )}
     </CardCmp>
