@@ -51,20 +51,21 @@ export default function FeatureSection({ images }: any) {
     },
   ];
 
-  const cardListWithImages = cardList.map( card => {
+  const cardListWithImages = cardList.map(card => {
     const imageNode: any =
-    images &&
-    images.edges.find((img: any) => img.node.relativePath === card.imgPath)?.node;
+      images &&
+      images.edges.find((img: any) => img.node.relativePath === card.imgPath)
+        ?.node;
     const gatsbyImage = getImage(imageNode);
     const image = gatsbyImage && (
-          <GatsbyImage
-              className={card.layout !== "sm" ? "image" : ''}
-              image={gatsbyImage}
-              alt={card.imgAlt ?? card.heading}
-            />
-    )
-    return {...card, image}
-  })
+      <GatsbyImage
+        className={card.layout !== 'sm' ? 'image' : ''}
+        image={gatsbyImage}
+        alt={card.imgAlt ?? card.heading}
+      />
+    );
+    return { ...card, image };
+  });
 
   return (
     <section id="test-section-id">

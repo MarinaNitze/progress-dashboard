@@ -63,16 +63,17 @@ export default function TopicsSection({ images }: any) {
     },
   ];
 
-const cardListWithImages = cardList.map( card => {
+  const cardListWithImages = cardList.map(card => {
     const imageNode: any =
-    images &&
-    images.edges.find((img: any) => img.node.relativePath === card.imgPath)?.node;
+      images &&
+      images.edges.find((img: any) => img.node.relativePath === card.imgPath)
+        ?.node;
     const svgImage = imageNode.publicURL;
     const image = svgImage && (
-          <img src={svgImage} alt={card.imgAlt ?? card.heading} />
-    )
-    return {...card, image}
-  })
+      <img src={svgImage} alt={card.imgAlt ?? card.heading} />
+    );
+    return { ...card, image };
+  });
 
   return (
     <section id="test-section-id">
@@ -95,7 +96,12 @@ const cardListWithImages = cardList.map( card => {
           </CardGroup>
         </Grid>
         <Grid>
-          <Button type="button" onClick={()=>{navigate('/topic')}}>
+          <Button
+            type="button"
+            onClick={() => {
+              navigate('/topic');
+            }}
+          >
             View all Topics
           </Button>
         </Grid>

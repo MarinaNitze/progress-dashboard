@@ -48,7 +48,6 @@ export default function Card({
   children,
   layout = 'lg',
 }: CardProps) {
-
   return (
     <CardCmp
       className="card"
@@ -73,9 +72,9 @@ export default function Card({
           <Button type="button">CTA</Button>
         </CardFooter>
       )}
-      {layout === 'sm' && ( <CardFooter className="smallFooter">
-         {image}
-        </CardFooter>)}
+      {layout === 'sm' && (
+        <CardFooter className="smallFooter">{image}</CardFooter>
+      )}
     </CardCmp>
   );
 }
