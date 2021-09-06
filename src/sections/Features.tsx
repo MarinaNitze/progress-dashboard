@@ -3,8 +3,9 @@ import { CardGroup, Grid, GridContainer } from '@trussworks/react-uswds';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
 import Card, { CardProps } from '../components/card/Card';
+import {CardImagesQuery} from "../../graphql-types"
 
-export default function FeatureSection({ images }: any) {
+export default function FeatureSection({ cardImages }: CardImagesQuery) {
   // TODO: pull card list from cms
   const cardList: Array<CardProps> = [
     {
@@ -53,8 +54,8 @@ export default function FeatureSection({ images }: any) {
 
   const cardListWithImages = cardList.map(card => {
     const imageNode: any =
-      images &&
-      images.edges.find((img: any) => img.node.relativePath === card.imgPath)
+      cardImages &&
+      cardImages.edges.find((img: any) => img.node.relativePath === card.imgPath)
         ?.node;
     const gatsbyImage = getImage(imageNode);
     const image = gatsbyImage && (

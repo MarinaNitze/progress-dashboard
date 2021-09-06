@@ -1,14 +1,13 @@
 import { renderHook } from '@testing-library/react-hooks';
 import { mockDataStates } from '../../test/mockDataStates';
 import { mockStaticData } from '../../test/test-utils';
-import { AirtableData } from '../types/airtable/airtableData';
-import { GeoState } from '../types/airtable/geoState';
+import { StatesDataQuery } from '../../graphql-types';
 import useDataStates from './useDataStates';
 
 describe('when rendered', () => {
   it('returns a list of US states', () => {
     const nodes = [...mockDataStates.map(st => ({ data: { ...st } }))];
-    mockStaticData<AirtableData<GeoState>>({
+    mockStaticData<StatesDataQuery>({
       statesData: {
         nodes,
       },

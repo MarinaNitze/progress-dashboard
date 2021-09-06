@@ -8,8 +8,9 @@ import {
 } from '@trussworks/react-uswds';
 
 import Card, { CardProps } from '../components/card/Card';
+import {CardImagesQuery} from "../../graphql-types"
 
-export default function TopicsSection({ images }: any) {
+export default function TopicsSection({ cardImages }: CardImagesQuery) {
   // TODO: pull card list from cms
   const cardList: Array<CardProps> = [
     {
@@ -65,8 +66,8 @@ export default function TopicsSection({ images }: any) {
 
   const cardListWithImages = cardList.map(card => {
     const imageNode: any =
-      images &&
-      images.edges.find((img: any) => img.node.relativePath === card.imgPath)
+      cardImages &&
+      cardImages.edges.find((img: any) => img.node.relativePath === card.imgPath)
         ?.node;
     const svgImage = imageNode.publicURL;
     const image = svgImage && (

@@ -4,6 +4,8 @@
     "module": "commonjs",
     "lib": ["dom", "es2015", "es2017", "es2019"],
     "jsx": "preserve",
+    "allowJs": true,
+    "moduleResolution": "node",
     "removeComments": false,
     "noEmit": true,
     "isolatedModules": true,
@@ -16,5 +18,5 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
   },
-  "include": ["./src/**/*"]
+  "include": ["./src/**/*", "types"]
 }

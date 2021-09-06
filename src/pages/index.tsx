@@ -4,10 +4,12 @@ import { graphql } from 'gatsby';
 import Features from '../sections/Features';
 import Topics from '../sections/Topics';
 
+import {CardImagesQuery} from "../../graphql-types"
+
 import Layout from '../components/layout/Layout';
 import Hero from '../components/hero/Hero';
 
-export default function IndexPage({ data }: any) {
+const IndexPage: React.FC<{data: CardImagesQuery}> = ({ data }) => {
   return (
     <Layout>
       <main>
@@ -23,15 +25,16 @@ export default function IndexPage({ data }: any) {
             </Hero>
           </GridContainer>
         </section>
-        <Features images={data.cardImages} />
-        <Topics images={data.cardImages} />
+        <Features cardImages={data.cardImages} />
+        <Topics cardImages={data.cardImages} />
       </main>
     </Layout>
   );
 }
+export default IndexPage;
 
 export const pageQuery = graphql`
-  query {
+  query CardImages {
     cardImages: allFile(filter: { relativeDirectory: { eq: "images/cards" } }) {
       edges {
         node {
