@@ -1,6 +1,6 @@
 import { useStaticQuery, graphql } from 'gatsby';
 import { useCallback } from 'react';
-import {StatesDataQuery} from "../../graphql-types"
+import { StatesDataQuery } from '../../graphql-types';
 
 export default function useDataStates() {
   const { statesData } = useStaticQuery<StatesDataQuery>(graphql`
@@ -18,12 +18,12 @@ export default function useDataStates() {
   `);
 
   const mapStates = useCallback(
-    (states: StatesDataQuery["statesData"]["nodes"]) => {
+    (states: StatesDataQuery['statesData']['nodes']) => {
       return states.reduce<{ [key: string]: { name: string; abbrev: string } }>(
         (statesMap, { data }) => {
           return {
             ...statesMap,
-            [data?.code ?? "missing code"]: {
+            [data?.code ?? 'missing code']: {
               name: data?.name ?? '',
               abbrev: data?.abbrev ?? '',
             },

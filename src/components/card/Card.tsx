@@ -55,7 +55,7 @@ export default function Card({
       layout={mediaLayout(layout)}
       gridLayout={gridLayouts[layout] as GridProps}
       onClick={() => {
-        if (linkDestination && layout === "topic") navigate(linkDestination);
+        if (linkDestination && layout === 'topic') navigate(linkDestination);
       }}
     >
       <CardHeader className="content">
@@ -69,7 +69,14 @@ export default function Card({
       {children && <CardBody className="content">{children}</CardBody>}
       {layout === 'lg' && linkDestination ? (
         <CardFooter>
-          <Button type="button" onClick={() => {navigate(linkDestination)}}>{linkText}</Button>
+          <Button
+            type="button"
+            onClick={() => {
+              navigate(linkDestination);
+            }}
+          >
+            {linkText}
+          </Button>
         </CardFooter>
       ) : layout === 'sm' ? (
         <CardFooter className="smallFooter">{image}</CardFooter>

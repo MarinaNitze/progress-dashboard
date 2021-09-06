@@ -4,12 +4,12 @@ import { graphql } from 'gatsby';
 import Features from '../sections/Features';
 import Topics from '../sections/Topics';
 
-import {CardImagesQuery} from "../../graphql-types"
+import { CardImagesQuery } from '../../graphql-types';
 
 import Layout from '../components/layout/Layout';
 import Hero from '../components/hero/Hero';
 
-const IndexPage: React.FC<{data: CardImagesQuery}> = ({ data }) => {
+const IndexPage: React.FC<{ data: CardImagesQuery }> = ({ data }) => {
   return (
     <Layout>
       <main>
@@ -30,7 +30,7 @@ const IndexPage: React.FC<{data: CardImagesQuery}> = ({ data }) => {
       </main>
     </Layout>
   );
-}
+};
 export default IndexPage;
 
 export const pageQuery = graphql`
