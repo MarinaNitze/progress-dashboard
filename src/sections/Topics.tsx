@@ -17,7 +17,6 @@ export default function TopicsSection({ images }: any) {
       layout: 'topic',
       imgPath: 'images/cards/Topic-FPL.svg',
       imgAlt: 'Foster Parent Licensing Icon',
-      images,
       linkDestination: '/topic/foster-parent-licensing',
     },
     {
@@ -25,7 +24,6 @@ export default function TopicsSection({ images }: any) {
       layout: 'topic',
       imgPath: 'images/cards/Topic-BC.svg',
       imgAlt: 'Background Checks Icon',
-      images,
       linkDestination: '/topic/background-checks',
     },
     {
@@ -33,7 +31,6 @@ export default function TopicsSection({ images }: any) {
       layout: 'topic',
       imgPath: 'images/cards/Topic-EFC.svg',
       imgAlt: 'Extended Foster Care Icon',
-      images,
       linkDestination: '/CTA',
     },
     {
@@ -41,7 +38,6 @@ export default function TopicsSection({ images }: any) {
       layout: 'topic',
       imgPath: 'images/cards/Topic-FF.svg',
       imgAlt: 'Family Finding Icon',
-      images,
       linkDestination: '/topic/family-finding',
     },
     {
@@ -49,7 +45,6 @@ export default function TopicsSection({ images }: any) {
       layout: 'topic',
       imgPath: 'images/cards/Topic-IM.svg',
       imgAlt: 'Inquiry Management Icon',
-      images,
       linkDestination: '/topic/inquiry-management',
     },
     {
@@ -57,7 +52,6 @@ export default function TopicsSection({ images }: any) {
       layout: 'topic',
       imgPath: 'images/cards/Topic-LR.svg',
       imgAlt: 'Licensing Renewal Icon',
-      images,
       linkDestination: '/topic/license-renewal',
     },
     {
@@ -65,37 +59,43 @@ export default function TopicsSection({ images }: any) {
       layout: 'topic',
       imgPath: 'images/cards/Topic-Recruitment.svg',
       imgAlt: 'Recruitment Icon',
-      images,
       linkDestination: '/topic/recruitment',
     },
   ];
 
-  const handleClick = () => {
-    navigate('/topic');
-  };
+const cardListWithImages = cardList.map( card => {
+    const imageNode: any =
+    images &&
+    images.edges.find((img: any) => img.node.relativePath === card.imgPath)?.node;
+    const svgImage = imageNode.publicURL;
+    const image = svgImage && (
+          <img src={svgImage} alt={card.imgAlt ?? card.heading} />
+    )
+    return {...card, image}
+  })
 
   return (
     <section id="test-section-id">
       <GridContainer>
         <Grid>
-        <h2 className="font-heading-xl margin-y-0">Popular Topics</h2>
-        <p>
-          Scalable cards to highlight curated list of topics. Depending on how
-          many we have, this may require more than 3 in a single row, but we’ll
-          decide that later. Will allow for several rows as needed. Likely be
-          capped with a rectangular image, and include a heading. Heading and
-          image will be clickable.
-        </p>
+          <h2 className="font-heading-xl margin-y-0">Popular Topics</h2>
+          <p>
+            Scalable cards to highlight curated list of topics. Depending on how
+            many we have, this may require more than 3 in a single row, but
+            we’ll decide that later. Will allow for several rows as needed.
+            Likely be capped with a rectangular image, and include a heading.
+            Heading and image will be clickable.
+          </p>
         </Grid>
         <Grid>
           <CardGroup>
-            {cardList.map(c => (
+            {cardListWithImages.map(c => (
               <Card key={c.heading} {...c} />
             ))}
           </CardGroup>
         </Grid>
-        <Grid >
-          <Button type="button" onClick={handleClick}>
+        <Grid>
+          <Button type="button" onClick={()=>{navigate('/topic')}}>
             View all Topics
           </Button>
         </Grid>
