@@ -67,14 +67,13 @@ export default function Card({
         </CardMedia>
       )}
       {children && <CardBody className="content">{children}</CardBody>}
-      {layout === 'lg' && linkDestination && (
+      {layout === 'lg' && linkDestination ? (
         <CardFooter>
           <Button type="button">CTA</Button>
         </CardFooter>
-      )}
-      {layout === 'sm' && (
+      ) : layout === 'sm' ? (
         <CardFooter className="smallFooter">{image}</CardFooter>
-      )}
+      ) : null}
     </CardCmp>
   );
 }
