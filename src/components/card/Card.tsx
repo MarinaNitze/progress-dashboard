@@ -23,13 +23,7 @@ export type CardProps = {
   children?: React.ReactNode;
 };
 
-const gridEntries = [
-  ['topic', true],
-  ['sm', 4],
-  ['md', 8],
-  ['lg', 12],
-].map(ge => [ge[0], { tablet: { col: ge[1] } } as GridProps]);
-const gridLayouts = Object.fromEntries(gridEntries);
+const gridLayouts  = {topic: true, sm: 4, md: 8, lg: 12};
 
 function mediaLayout(
   layout: string,
@@ -53,7 +47,7 @@ export default function Card({
       className="card"
       containerProps={{ className: layout }}
       layout={mediaLayout(layout)}
-      gridLayout={gridLayouts[layout] as GridProps}
+      gridLayout={ { tablet: { col: gridLayouts[layout] } } as GridProps }
       onClick={() => {
         if (linkDestination && layout === 'topic') navigate(linkDestination);
       }}
