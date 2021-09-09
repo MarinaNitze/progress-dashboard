@@ -2,8 +2,9 @@ import React, { createContext, useEffect, useCallback } from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { Grid, GridContainer } from '@trussworks/react-uswds';
 import { useState, useRef } from '@storybook/addons';
+import { AnchorLinkProps } from 'gatsby-plugin-anchor-links';
 
-import SideAnchorNav, { CustomAnchorLinkProps } from './SideAnchorNav';
+import SideAnchorNav from './SideAnchorNav';
 import content from './section.content.yml';
 
 type ContextState = {
@@ -26,7 +27,7 @@ const RefContext = createContext(bootstrapStoryContext);
 
 const text = content.example.text;
 
-const testItems: CustomAnchorLinkProps = [
+const testItems: AnchorLinkProps[] = [
   {
     to: '/#main',
     title: 'Go to Main',

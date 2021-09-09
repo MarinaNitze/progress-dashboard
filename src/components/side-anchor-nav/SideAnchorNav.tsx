@@ -4,12 +4,8 @@ import { AnchorLink, AnchorLinkProps } from 'gatsby-plugin-anchor-links';
 
 import './SideAnchorNav.scss';
 
-export type CustomAnchorLinkProps = (AnchorLinkProps & {
-  toRef?: React.RefObject<HTMLElement> | null;
-})[];
-
 export type SideAnchorNavProps = {
-  items: CustomAnchorLinkProps;
+  items: AnchorLinkProps[];
 };
 
 export default function SideAnchorNav({ items }: SideAnchorNavProps) {
