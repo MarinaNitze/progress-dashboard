@@ -1,10 +1,9 @@
 import { useStaticQuery, graphql } from 'gatsby';
-import { AirtableData } from '../types/airtable/airtableData';
-import { AW } from '../types/airtable/AW';
+import { AwDataQuery } from '../../graphql-types';
 
 export default function useDataAW() {
-  const { awData } = useStaticQuery<AirtableData<AW>>(graphql`
-    query {
+  const { awData } = useStaticQuery<AwDataQuery>(graphql`
+    query awData {
       awData: allAirtable(filter: { table: { eq: "AW" } }) {
         nodes {
           data {

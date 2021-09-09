@@ -1,53 +1,80 @@
 import React from 'react';
+import { navigate } from 'gatsby';
 import {
   Card as CardCmp,
   CardBody,
   CardHeader,
   CardMedia,
+  CardFooter,
+  Button,
 } from '@trussworks/react-uswds';
 import { GridProps } from '@trussworks/react-uswds/lib/components/grid/Grid/Grid';
 
-import * as styles from './Card.module.css';
 import './Card.scss';
 
-type CardProps = {
+export type CardProps = {
   heading: string;
-  size?: 'sm' | 'md' | 'lg';
+  layout?: 'topic' | 'sm' | 'md' | 'lg';
   imgPath?: string;
-  children: React.ReactNode;
-  gridLayout?: GridProps;
+  imgAlt?: string;
+  image?: React.ReactNode;
+  linkDestination?: string;
+  linkText?: string;
+  children?: React.ReactNode;
 };
+
+const gridLayouts = { topic: true, sm: 4, md: 8, lg: 12 };
+
+function mediaLayout(
+  layout: string,
+): 'flagMediaRight' | 'flagDefault' | 'standardDefault' {
+  if (layout === 'lg') return 'flagMediaRight';
+  if (layout === 'md') return 'flagDefault';
+  return 'standardDefault';
+}
 
 export default function Card({
   heading,
   imgPath,
+  image,
+  linkDestination,
+  linkText,
   children,
-  gridLayout = { tablet: { col: 12 } },
-  size = 'lg',
+  layout = 'lg',
 }: CardProps) {
   return (
     <CardCmp
-      className={styles.card}
-      containerProps={{
-        className: `${styles.cardContainer} ${styles[size]}`,
+      className="card"
+      containerProps={{ className: layout }}
+      layout={mediaLayout(layout)}
+      gridLayout={{ tablet: { col: gridLayouts[layout] } } as GridProps}
+      onClick={() => {
+        if (linkDestination && layout === 'topic') navigate(linkDestination);
       }}
-      layout="flagMediaRight"
-      gridLayout={gridLayout}
     >
-      <CardHeader className={size !== 'lg' ? styles.noImage : ''}>
+      <CardHeader className="content">
         <h3 className="usa-card__heading">{heading}</h3>
       </CardHeader>
-      {imgPath && (
-        <CardMedia
-          className="flex-align-center"
-          imageClass="circle-card margin-x-auto"
-        >
-          <img src={imgPath} alt="" />
+      {imgPath && layout !== 'sm' && (
+        <CardMedia exdent className="media">
+          {image}
         </CardMedia>
       )}
-      <CardBody className={size !== 'lg' ? styles.noImage : ''}>
-        {children}
-      </CardBody>
+      {children && <CardBody className="content">{children}</CardBody>}
+      {layout === 'lg' && linkDestination ? (
+        <CardFooter>
+          <Button
+            type="button"
+            onClick={() => {
+              navigate(linkDestination);
+            }}
+          >
+            {linkText}
+          </Button>
+        </CardFooter>
+      ) : layout === 'sm' ? (
+        <CardFooter className="smallFooter">{image}</CardFooter>
+      ) : null}
     </CardCmp>
   );
 }

@@ -1,13 +1,13 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { SiteData } from '../../types/siteMetadata';
+import { DefaultSeoQueryQuery } from '../../../graphql-types';
 import { mockStaticData } from '../../../test/test-utils';
 
 import Layout from './Layout';
 
 describe('Layout', () => {
   it('renders a header', () => {
-    mockStaticData<SiteData>({
+    mockStaticData<DefaultSeoQueryQuery>({
       site: {
         siteMetadata: {
           title: 'Progress Dashboard',
@@ -26,7 +26,7 @@ describe('Layout', () => {
 
   it(`renders children`, () => {
     const text = `__Hello world__`;
-    mockStaticData<SiteData>({
+    mockStaticData<DefaultSeoQueryQuery>({
       site: {
         siteMetadata: {
           title: 'Progress Dashboard',

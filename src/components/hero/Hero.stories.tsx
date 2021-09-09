@@ -2,7 +2,6 @@ import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 import Hero from './Hero';
-import BackgroundImage from 'gatsby-background-image';
 
 export default {
   title: 'Example/Hero',

@@ -2,6 +2,14 @@
 $theme-image-path: '../../node_modules/uswds/src/img';
 $theme-show-notifications: false;
 
+/* COLORS */
+$primary: #f2b039;
+$secondary: #fe6659;
+$info: #522a10;
+$light: #d9d9d9;
+$white: #fff;
+$dark: #000;
+
 /* TYPOGRAPHY */
 $theme-respect-user-font-size: true;
 $theme-root-font-size: 12px;
@@ -14,3 +22,35 @@ $theme-grid-container-max-width: 'desktop-lg';
 
 /* COMPONENTS */
 $theme-hero-image: '../../static/img/hero.png';
+$theme-card-border-width: 0;
+
+/* GENERAL CLASS OVERRIDES */
+.usa-button {
+  background-color: $secondary !important;
+  border: 3px solid $secondary !important;
+  border-radius: 1rem !important;
+}
+
+.usa-button:hover {
+  background-color: $white !important;
+  color: $dark !important;
+  border: 3px solid $secondary !important;
+}
+
+@media(min-width: 40em){
+
+  .usa-card--flag .usa-card__media {
+    width: 22.5rem !important;
+    align-items: center;
+  }
+
+    .usa-card--flag .usa-card__body, .usa-card--flag .usa-card__footer, .usa-card--flag .usa-card__header {
+    margin-left: 22.5rem !important;
+  }
+
+  .usa-card--flag.usa-card--media-right .usa-card__body, .usa-card--flag.usa-card--media-right .usa-card__footer, .usa-card--flag.usa-card--media-right .usa-card__header {
+    margin-right: 22.5rem !important;
+    margin-left: 0 !important;
+  }
+
+}

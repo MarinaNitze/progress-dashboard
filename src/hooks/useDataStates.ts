@@ -1,11 +1,10 @@
 import { useStaticQuery, graphql } from 'gatsby';
 import { useCallback } from 'react';
-import { AirtableData, AirtableNodeData } from '../types/airtable/airtableData';
-import { GeoState } from '../types/airtable/geoState';
+import { StatesDataQuery } from '../../graphql-types';
 
 export default function useDataStates() {
-  const { statesData } = useStaticQuery<AirtableData<GeoState>>(graphql`
-    query {
+  const { statesData } = useStaticQuery<StatesDataQuery>(graphql`
+    query StatesData {
       statesData: allAirtable(filter: { table: { eq: "States" } }) {
         nodes {
           data {
@@ -19,14 +18,14 @@ export default function useDataStates() {
   `);
 
   const mapStates = useCallback(
-    (states: AirtableNodeData<GeoState>) => {
+    (states: StatesDataQuery['statesData']['nodes']) => {
       return states.reduce<{ [key: string]: { name: string; abbrev: string } }>(
         (statesMap, { data }) => {
           return {
             ...statesMap,
-            [data.code]: {
-              name: data.name,
-              abbrev: data.abbrev,
+            [data?.code ?? 'missing code']: {
+              name: data?.name ?? '',
+              abbrev: data?.abbrev ?? '',
             },
           };
         },
