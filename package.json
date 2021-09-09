@@ -34,6 +34,7 @@
     "gatsby-background-image": "^1.5.3",
     "gatsby-cli": "^3.10.0",
     "gatsby-image": "^3.8.0",
+    "gatsby-plugin-anchor-links": "^1.2.1",
     "gatsby-plugin-google-analytics": "^3.8.0",
     "gatsby-plugin-image": "^1.12.0",
     "gatsby-plugin-manifest": "^3.8.0",
@@ -96,10 +97,12 @@
     "identity-obj-proxy": "^3.0.0",
     "jest": "^27.0.6",
     "jest-styled-components": "^7.0.4",
+    "netlify-plugin-cypress": "^2.2.0",
     "sass-loader": "^10.2.0",
     "sass-resources-loader": "^2.2.4",
     "start-server-and-test": "^1.12.6",
     "style-loader": "^2.0.0",
-    "ts-jest": "^27.0.3"
+    "ts-jest": "^27.0.3",
+    "yaml-loader": "^0.6.0"
   }
 }
