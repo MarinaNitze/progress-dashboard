@@ -24,6 +24,7 @@ const items: AnchorLinkProps[] = [
   {
     to: '#how-programs-are-doing-this',
     title: 'How programs are doing this',
+    className: 'text-wrap-line',
   },
 ];
 
