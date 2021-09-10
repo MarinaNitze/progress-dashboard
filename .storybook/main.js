@@ -41,6 +41,11 @@ module.exports = {
         'sass-loader',
       ],
     });
+    config.module.rules.push({
+      test: /\.ya?ml$/,
+      type: 'json',
+      use: 'yaml-loader',
+    });
     // Transpile Gatsby module because Gatsby includes un-transpiled ES6 code.
     config.module.rules[0].exclude = [/node_modules\/(?!(gatsby)\/)/];
     // use babel-plugin-remove-graphql-queries to remove static queries from components when rendering in storybook

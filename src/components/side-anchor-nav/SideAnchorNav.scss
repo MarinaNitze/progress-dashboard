@@ -1,0 +1,79 @@
+@import '../../styles/settings.scss';
+
+.usa-summary-box.side-nav-summary {
+  background-color: $info;
+  border-radius: 0 1rem 1rem 0;
+  padding: 2rem 1.5rem 2rem 4rem;
+  border: 1px solid $info;
+
+  .usa-sidenav {
+    background-color: $info;
+    border-bottom: none;
+    line-height: 1;
+
+    a:not(.usa-button) {
+      color: $white;
+      font-weight: lighter;
+      &:hover {
+        background-color: $info;
+        color: $white;
+        font-weight: normal;
+      }
+    }
+
+    li {
+      border: none;
+      &:focus {
+        border: 0.25rem solid $secondary;
+      }
+    }
+
+    .text-wrap-line {
+      line-height: 1.3;
+    }
+  }
+
+  .usa-sidenav__item {
+    .active {
+      list-style-type: disc;
+      font-weight: bold;
+      color: $white;
+
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+
+  .usa-summary-box__heading {
+    font-size: 1rem;
+    max-width: 7rem;
+    font-weight: bold;
+    font-family: petrona;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+
+    &:before {
+      content: '·';
+      font-size: 3.5rem;
+      color: $secondary;
+      vertical-align: middle;
+      line-height: 20px;
+      margin-left: -1.7rem;
+      padding-right: 1rem;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 4rem;
+      left: 0;
+      margin-left: 5rem;
+      width: 5.5rem;
+      right: 0;
+      background: $secondary;
+      height: 0.25rem;
+      border-radius: 1rem;
+    }
+  }
+}
