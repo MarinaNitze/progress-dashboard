@@ -6,7 +6,7 @@ import useDataAW from '../hooks/useDataAW';
 import { PageProps } from 'gatsby';
 
 import SideAnchorNav from '../components/side-anchor-nav/SideAnchorNav';
-import content from '../components/side-anchor-nav/section.content.yml';
+import content from '../components/side-anchor-nav/content.yml';
 
 const items: AnchorLinkProps[] = [
   {
@@ -28,7 +28,7 @@ const items: AnchorLinkProps[] = [
   },
 ];
 
-const text = content.example.text;
+const { text } = content.example;
 
 // This is a placeholder component route that will leverage hook into Airtable.
 export default function Topic({ location }: PageProps) {

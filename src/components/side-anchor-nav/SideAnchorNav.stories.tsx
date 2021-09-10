@@ -5,7 +5,7 @@ import { useState, useRef } from '@storybook/addons';
 import { AnchorLinkProps } from 'gatsby-plugin-anchor-links';
 
 import SideAnchorNav from './SideAnchorNav';
-import content from './section.content.yml';
+import content from './content.yml';
 
 type ContextState = {
   [key: string]: React.MutableRefObject<null> | null;
@@ -25,7 +25,7 @@ const bootstrapStoryContext = {
 /* Put references in the context */
 const RefContext = createContext(bootstrapStoryContext);
 
-const text = content.example.text;
+const { text } = content.example;
 
 const testItems: AnchorLinkProps[] = [
   {

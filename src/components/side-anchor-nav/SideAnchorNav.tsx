@@ -1,4 +1,4 @@
-import React, { ReactNode, useEffect, useState } from 'react';
+import React from 'react';
 import { SideNav, SummaryBox } from '@trussworks/react-uswds';
 import { AnchorLink, AnchorLinkProps } from 'gatsby-plugin-anchor-links';
 
@@ -9,15 +9,13 @@ export type SideAnchorNavProps = {
 };
 
 export default function SideAnchorNav({ items }: SideAnchorNavProps) {
-  const [anchors, setAnchors] = useState<ReactNode[]>([]);
-
-  useEffect(() => {
-    setAnchors(items.map(item => <AnchorLink {...item} />));
-  }, [items]);
-
   return (
     <SummaryBox className="side-nav-summary" heading="On this page">
-      <SideNav items={anchors} />
+      <SideNav
+        items={items.map(item => (
+          <AnchorLink {...item} />
+        ))}
+      />
     </SummaryBox>
   );
 }
