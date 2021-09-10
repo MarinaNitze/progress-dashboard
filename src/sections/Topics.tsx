@@ -11,7 +11,7 @@ import Card, { CardProps } from '../components/card/Card';
 import useGatsbyImage from '../hooks/useGatsbyImage';
 import { ImagesQuery } from '../../graphql-types';
 
-export default function TopicsSection(cardImages: ImagesQuery["cardImages"]) {
+export default function TopicsSection(cardImages: ImagesQuery['cardImages']) {
   // TODO: pull card list from cms
   const cardList: Array<CardProps> = [
     {
@@ -66,7 +66,12 @@ export default function TopicsSection(cardImages: ImagesQuery["cardImages"]) {
   ];
 
   const cardListWithImages = cardList.map(card => {
-    const image = useGatsbyImage({images: cardImages, path: card.imgPath ?? "na", layout: card.layout, alt: card.imgAlt})
+    const image = useGatsbyImage({
+      images: cardImages,
+      path: card.imgPath ?? 'na',
+      layout: card.layout,
+      alt: card.imgAlt,
+    });
     return { ...card, image };
   });
 

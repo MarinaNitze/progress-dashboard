@@ -9,8 +9,7 @@ import { ImagesQuery } from '../../graphql-types';
 import Layout from '../components/layout/Layout';
 import Hero from '../components/hero/Hero';
 
-const IndexPage: React.FC<{ data: ImagesQuery }> = ({ data}) => {
-
+const IndexPage: React.FC<{ data: ImagesQuery }> = ({ data }) => {
   return (
     <Layout>
       <main>
@@ -49,7 +48,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    heroImages: allFile(filter: {relativeDirectory: {eq: "images/heros" } }) {
+    heroImages: allFile(filter: { relativeDirectory: { eq: "images/heros" } }) {
       edges {
         node {
           relativePath
