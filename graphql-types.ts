@@ -3022,63 +3022,28 @@ export type AirtableSortInput = {
   order?: Maybe<Array<Maybe<SortOrderEnum>>>;
 };
 
-export type DefaultSeoQueryQueryVariables = Exact<{ [key: string]: never }>;
+export type DefaultSeoQueryQueryVariables = Exact<{ [key: string]: never; }>;
 
-export type DefaultSeoQueryQuery = {
-  site?: Maybe<{
-    siteMetadata?: Maybe<
-      Pick<SiteSiteMetadata, 'title' | 'description' | 'author'>
-    >;
-  }>;
-};
 
-export type AwDataQueryVariables = Exact<{ [key: string]: never }>;
+export type DefaultSeoQueryQuery = { site?: Maybe<{ siteMetadata?: Maybe<Pick<SiteSiteMetadata, 'title' | 'description' | 'author'>> }> };
 
-export type AwDataQuery = {
-  awData: {
-    nodes: Array<{
-      data?: Maybe<
-        Pick<
-          AirtableData,
-          | 'contact_type'
-          | 'electronic_form'
-          | 'email'
-          | 'fax'
-          | 'fee'
-          | 'ink'
-          | 'mail'
-          | 'notary'
-          | 'notes'
-          | 'original_copy'
-          | 'response'
-          | 'response_time'
-          | 'state'
-          | 'typed_or_printed'
-          | 'witness'
-        >
-      >;
-    }>;
-  };
-};
+export type AwDataQueryVariables = Exact<{ [key: string]: never; }>;
 
-export type StatesDataQueryVariables = Exact<{ [key: string]: never }>;
 
-export type StatesDataQuery = {
-  statesData: {
-    nodes: Array<{
-      data?: Maybe<Pick<AirtableData, 'abbrev' | 'code' | 'name'>>;
-    }>;
-  };
-};
+export type AwDataQuery = { awData: { nodes: Array<{ data?: Maybe<Pick<AirtableData, 'contact_type' | 'electronic_form' | 'email' | 'fax' | 'fee' | 'ink' | 'mail' | 'notary' | 'notes' | 'original_copy' | 'response' | 'response_time' | 'state' | 'typed_or_printed' | 'witness'>> }> } };
 
-export type CardImagesQueryVariables = Exact<{ [key: string]: never }>;
+export type StatesDataQueryVariables = Exact<{ [key: string]: never; }>;
 
-export type CardImagesQuery = {
-  cardImages: {
-    edges: Array<{
-      node: Pick<File, 'relativePath' | 'extension' | 'publicURL'> & {
-        childImageSharp?: Maybe<Pick<ImageSharp, 'gatsbyImageData'>>;
-      };
-    }>;
-  };
-};
+
+export type StatesDataQuery = { statesData: { nodes: Array<{ data?: Maybe<Pick<AirtableData, 'abbrev' | 'code' | 'name'>> }> } };
+
+export type ImagesQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+export type ImagesQuery = { cardImages: { edges: Array<{ node: (
+        Pick<File, 'relativePath' | 'extension' | 'publicURL'>
+        & { childImageSharp?: Maybe<Pick<ImageSharp, 'gatsbyImageData'>> }
+      ) }> }, heroImages: { edges: Array<{ node: (
+        Pick<File, 'relativePath' | 'extension'>
+        & { childImageSharp?: Maybe<Pick<ImageSharp, 'gatsbyImageData'>> }
+      ) }> } };

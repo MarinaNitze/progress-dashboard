@@ -1,11 +1,11 @@
 import React from 'react';
 import { CardGroup, Grid, GridContainer } from '@trussworks/react-uswds';
-import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
 import Card, { CardProps } from '../components/card/Card';
-import { CardImagesQuery } from '../../graphql-types';
+import { ImagesQuery } from '../../graphql-types';
+import useGatsbyImage from "../hooks/useGatsbyImage"
 
-export default function FeatureSection({ cardImages }: CardImagesQuery) {
+export default function FeatureSection( cardImages: ImagesQuery["cardImages"]) {
   // TODO: pull card list from cms
   const cardList: Array<CardProps> = [
     {
@@ -53,19 +53,7 @@ export default function FeatureSection({ cardImages }: CardImagesQuery) {
   ];
 
   const cardListWithImages = cardList.map(card => {
-    const imageNode: any =
-      cardImages &&
-      cardImages.edges.find(
-        (img: any) => img.node.relativePath === card.imgPath,
-      )?.node;
-    const gatsbyImage = getImage(imageNode);
-    const image = gatsbyImage && (
-      <GatsbyImage
-        className={card.layout !== 'sm' ? 'image' : ''}
-        image={gatsbyImage}
-        alt={card.imgAlt ?? card.heading}
-      />
-    );
+    const image = useGatsbyImage({images: cardImages, path: card.imgPath ?? "na", layout: card.layout, alt: card.imgAlt})
     return { ...card, image };
   });
 

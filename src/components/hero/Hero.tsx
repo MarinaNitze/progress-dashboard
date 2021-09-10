@@ -1,10 +1,12 @@
 import React from 'react';
 import './hero.scss';
+import '../../images/heros/hero-1.png'
 
 type HeroProps = {
   title: string;
   description?: string;
   backgroundImgPath?: string;
+  backgroundColor?: 'primary' | 'secondary' | 'info' | 'light';
   children?: React.ReactNode;
 };
 
@@ -14,11 +16,13 @@ export default function Hero({
   backgroundImgPath,
   children,
 }: HeroProps) {
+  console.log(backgroundImgPath);
+
   return (
     <section
       className="usa-hero"
       style={{
-        backgroundImage: backgroundImgPath ? `url(${backgroundImgPath})` : '',
+        backgroundImage: "../../images/heros/hero-1.png",
       }}
     >
       <div className="usa-grid">

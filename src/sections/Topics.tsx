@@ -8,9 +8,10 @@ import {
 } from '@trussworks/react-uswds';
 
 import Card, { CardProps } from '../components/card/Card';
-import { CardImagesQuery } from '../../graphql-types';
+import useGatsbyImage from '../hooks/useGatsbyImage';
+import { ImagesQuery } from '../../graphql-types';
 
-export default function TopicsSection({ cardImages }: CardImagesQuery) {
+export default function TopicsSection(cardImages: ImagesQuery["cardImages"]) {
   // TODO: pull card list from cms
   const cardList: Array<CardProps> = [
     {
@@ -65,15 +66,7 @@ export default function TopicsSection({ cardImages }: CardImagesQuery) {
   ];
 
   const cardListWithImages = cardList.map(card => {
-    const imageNode: any =
-      cardImages &&
-      cardImages.edges.find(
-        (img: any) => img.node.relativePath === card.imgPath,
-      )?.node;
-    const svgImage = imageNode.publicURL;
-    const image = svgImage && (
-      <img src={svgImage} alt={card.imgAlt ?? card.heading} />
-    );
+    const image = useGatsbyImage({images: cardImages, path: card.imgPath ?? "na", layout: card.layout, alt: card.imgAlt})
     return { ...card, image };
   });
 
