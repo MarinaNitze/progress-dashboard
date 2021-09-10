@@ -1,11 +1,7 @@
 export type Maybe<T> = T | null;
-export type Exact<T extends { [key: string]: unknown }> = {
-  [K in keyof T]: T[K];
-};
-export type MakeOptional<T, K extends keyof T> = Omit<T, K> &
-  { [SubKey in K]?: Maybe<T[SubKey]> };
-export type MakeMaybe<T, K extends keyof T> = Omit<T, K> &
-  { [SubKey in K]: Maybe<T[SubKey]> };
+export type Exact<T extends { [key: string]: unknown }> = { [K in keyof T]: T[K] };
+export type MakeOptional<T, K extends keyof T> = Omit<T, K> & { [SubKey in K]?: Maybe<T[SubKey]> };
+export type MakeMaybe<T, K extends keyof T> = Omit<T, K> & { [SubKey in K]: Maybe<T[SubKey]> };
 /** All built-in and custom scalars, mapped to their actual values */
 export type Scalars = {
   /** The `ID` scalar type represents a unique identifier, often used to refetch an object or as key for a cache. The ID type appears in a JSON response as a String; however, it is not intended to be human-readable. When expected as an input type, any string (such as `"4"`) or integer (such as `4`) input value will be accepted as an ID. */
@@ -23,6 +19,15 @@ export type Scalars = {
   /** The `JSON` scalar type represents JSON values as specified by [ECMA-404](http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf). */
   JSON: any;
 };
+
+
+
+
+
+
+
+
+
 
 export type File = Node & {
   sourceInstanceName: Scalars['String'];
@@ -72,12 +77,14 @@ export type File = Node & {
   internal: Internal;
 };
 
+
 export type FileModifiedTimeArgs = {
   formatString?: Maybe<Scalars['String']>;
   fromNow?: Maybe<Scalars['Boolean']>;
   difference?: Maybe<Scalars['String']>;
   locale?: Maybe<Scalars['String']>;
 };
+
 
 export type FileAccessTimeArgs = {
   formatString?: Maybe<Scalars['String']>;
@@ -86,12 +93,14 @@ export type FileAccessTimeArgs = {
   locale?: Maybe<Scalars['String']>;
 };
 
+
 export type FileChangeTimeArgs = {
   formatString?: Maybe<Scalars['String']>;
   fromNow?: Maybe<Scalars['Boolean']>;
   difference?: Maybe<Scalars['String']>;
   locale?: Maybe<Scalars['String']>;
 };
+
 
 export type FileBirthTimeArgs = {
   formatString?: Maybe<Scalars['String']>;
@@ -100,6 +109,7 @@ export type FileBirthTimeArgs = {
   locale?: Maybe<Scalars['String']>;
 };
 
+
 export type FileAtimeArgs = {
   formatString?: Maybe<Scalars['String']>;
   fromNow?: Maybe<Scalars['Boolean']>;
@@ -107,12 +117,14 @@ export type FileAtimeArgs = {
   locale?: Maybe<Scalars['String']>;
 };
 
+
 export type FileMtimeArgs = {
   formatString?: Maybe<Scalars['String']>;
   fromNow?: Maybe<Scalars['Boolean']>;
   difference?: Maybe<Scalars['String']>;
   locale?: Maybe<Scalars['String']>;
 };
+
 
 export type FileCtimeArgs = {
   formatString?: Maybe<Scalars['String']>;
@@ -139,6 +151,7 @@ export type Internal = {
   owner: Scalars['String'];
   type: Scalars['String'];
 };
+
 
 export type Directory = Node & {
   sourceInstanceName: Scalars['String'];
@@ -182,12 +195,14 @@ export type Directory = Node & {
   internal: Internal;
 };
 
+
 export type DirectoryModifiedTimeArgs = {
   formatString?: Maybe<Scalars['String']>;
   fromNow?: Maybe<Scalars['Boolean']>;
   difference?: Maybe<Scalars['String']>;
   locale?: Maybe<Scalars['String']>;
 };
+
 
 export type DirectoryAccessTimeArgs = {
   formatString?: Maybe<Scalars['String']>;
@@ -196,12 +211,14 @@ export type DirectoryAccessTimeArgs = {
   locale?: Maybe<Scalars['String']>;
 };
 
+
 export type DirectoryChangeTimeArgs = {
   formatString?: Maybe<Scalars['String']>;
   fromNow?: Maybe<Scalars['Boolean']>;
   difference?: Maybe<Scalars['String']>;
   locale?: Maybe<Scalars['String']>;
 };
+
 
 export type DirectoryBirthTimeArgs = {
   formatString?: Maybe<Scalars['String']>;
@@ -210,6 +227,7 @@ export type DirectoryBirthTimeArgs = {
   locale?: Maybe<Scalars['String']>;
 };
 
+
 export type DirectoryAtimeArgs = {
   formatString?: Maybe<Scalars['String']>;
   fromNow?: Maybe<Scalars['Boolean']>;
@@ -217,12 +235,14 @@ export type DirectoryAtimeArgs = {
   locale?: Maybe<Scalars['String']>;
 };
 
+
 export type DirectoryMtimeArgs = {
   formatString?: Maybe<Scalars['String']>;
   fromNow?: Maybe<Scalars['Boolean']>;
   difference?: Maybe<Scalars['String']>;
   locale?: Maybe<Scalars['String']>;
 };
+
 
 export type DirectoryCtimeArgs = {
   formatString?: Maybe<Scalars['String']>;
@@ -243,6 +263,7 @@ export type Site = Node & {
   children: Array<Node>;
   internal: Internal;
 };
+
 
 export type SiteBuildTimeArgs = {
   formatString?: Maybe<Scalars['String']>;
@@ -294,9 +315,17 @@ export type ImageFormat =
   | 'WEBP'
   | 'AVIF';
 
-export type ImageFit = 'COVER' | 'CONTAIN' | 'FILL' | 'INSIDE' | 'OUTSIDE';
+export type ImageFit =
+  | 'COVER'
+  | 'CONTAIN'
+  | 'FILL'
+  | 'INSIDE'
+  | 'OUTSIDE';
 
-export type ImageLayout = 'FIXED' | 'FULL_WIDTH' | 'CONSTRAINED';
+export type ImageLayout =
+  | 'FIXED'
+  | 'FULL_WIDTH'
+  | 'CONSTRAINED';
 
 export type ImageCropFocus =
   | 'CENTER'
@@ -349,6 +378,7 @@ export type ImageSharp = Node & {
   internal: Internal;
 };
 
+
 export type ImageSharpFixedArgs = {
   width?: Maybe<Scalars['Int']>;
   height?: Maybe<Scalars['Int']>;
@@ -370,6 +400,7 @@ export type ImageSharpFixedArgs = {
   rotate?: Maybe<Scalars['Int']>;
   trim?: Maybe<Scalars['Float']>;
 };
+
 
 export type ImageSharpFluidArgs = {
   maxWidth?: Maybe<Scalars['Int']>;
@@ -395,6 +426,7 @@ export type ImageSharpFluidArgs = {
   srcSetBreakpoints?: Maybe<Array<Maybe<Scalars['Int']>>>;
 };
 
+
 export type ImageSharpGatsbyImageDataArgs = {
   layout?: Maybe<ImageLayout>;
   width?: Maybe<Scalars['Int']>;
@@ -415,6 +447,7 @@ export type ImageSharpGatsbyImageDataArgs = {
   transformOptions?: Maybe<TransformOptions>;
   backgroundColor?: Maybe<Scalars['String']>;
 };
+
 
 export type ImageSharpResizeArgs = {
   width?: Maybe<Scalars['Int']>;
@@ -465,6 +498,7 @@ export type ImageSharpFluid = {
   presentationWidth: Scalars['Int'];
   presentationHeight: Scalars['Int'];
 };
+
 
 export type ImagePlaceholder =
   | 'DOMINANT_COLOR'
@@ -609,6 +643,7 @@ export type SiteBuildMetadata = Node & {
   buildTime?: Maybe<Scalars['Date']>;
 };
 
+
 export type SiteBuildMetadataBuildTimeArgs = {
   formatString?: Maybe<Scalars['String']>;
   fromNow?: Maybe<Scalars['Boolean']>;
@@ -669,6 +704,7 @@ export type Query = {
   allAirtable: AirtableConnection;
 };
 
+
 export type QueryFileArgs = {
   sourceInstanceName?: Maybe<StringQueryOperatorInput>;
   absolutePath?: Maybe<StringQueryOperatorInput>;
@@ -712,12 +748,14 @@ export type QueryFileArgs = {
   internal?: Maybe<InternalFilterInput>;
 };
 
+
 export type QueryAllFileArgs = {
   filter?: Maybe<FileFilterInput>;
   sort?: Maybe<FileSortInput>;
   skip?: Maybe<Scalars['Int']>;
   limit?: Maybe<Scalars['Int']>;
 };
+
 
 export type QueryDirectoryArgs = {
   sourceInstanceName?: Maybe<StringQueryOperatorInput>;
@@ -759,12 +797,14 @@ export type QueryDirectoryArgs = {
   internal?: Maybe<InternalFilterInput>;
 };
 
+
 export type QueryAllDirectoryArgs = {
   filter?: Maybe<DirectoryFilterInput>;
   sort?: Maybe<DirectorySortInput>;
   skip?: Maybe<Scalars['Int']>;
   limit?: Maybe<Scalars['Int']>;
 };
+
 
 export type QuerySiteArgs = {
   buildTime?: Maybe<DateQueryOperatorInput>;
@@ -779,12 +819,14 @@ export type QuerySiteArgs = {
   internal?: Maybe<InternalFilterInput>;
 };
 
+
 export type QueryAllSiteArgs = {
   filter?: Maybe<SiteFilterInput>;
   sort?: Maybe<SiteSortInput>;
   skip?: Maybe<Scalars['Int']>;
   limit?: Maybe<Scalars['Int']>;
 };
+
 
 export type QuerySiteFunctionArgs = {
   functionRoute?: Maybe<StringQueryOperatorInput>;
@@ -800,12 +842,14 @@ export type QuerySiteFunctionArgs = {
   internal?: Maybe<InternalFilterInput>;
 };
 
+
 export type QueryAllSiteFunctionArgs = {
   filter?: Maybe<SiteFunctionFilterInput>;
   sort?: Maybe<SiteFunctionSortInput>;
   skip?: Maybe<Scalars['Int']>;
   limit?: Maybe<Scalars['Int']>;
 };
+
 
 export type QuerySitePageArgs = {
   path?: Maybe<StringQueryOperatorInput>;
@@ -822,12 +866,14 @@ export type QuerySitePageArgs = {
   pluginCreatorId?: Maybe<StringQueryOperatorInput>;
 };
 
+
 export type QueryAllSitePageArgs = {
   filter?: Maybe<SitePageFilterInput>;
   sort?: Maybe<SitePageSortInput>;
   skip?: Maybe<Scalars['Int']>;
   limit?: Maybe<Scalars['Int']>;
 };
+
 
 export type QueryImageSharpArgs = {
   fixed?: Maybe<ImageSharpFixedFilterInput>;
@@ -841,12 +887,14 @@ export type QueryImageSharpArgs = {
   internal?: Maybe<InternalFilterInput>;
 };
 
+
 export type QueryAllImageSharpArgs = {
   filter?: Maybe<ImageSharpFilterInput>;
   sort?: Maybe<ImageSharpSortInput>;
   skip?: Maybe<Scalars['Int']>;
   limit?: Maybe<Scalars['Int']>;
 };
+
 
 export type QuerySitePluginArgs = {
   id?: Maybe<StringQueryOperatorInput>;
@@ -864,12 +912,14 @@ export type QuerySitePluginArgs = {
   packageJson?: Maybe<SitePluginPackageJsonFilterInput>;
 };
 
+
 export type QueryAllSitePluginArgs = {
   filter?: Maybe<SitePluginFilterInput>;
   sort?: Maybe<SitePluginSortInput>;
   skip?: Maybe<Scalars['Int']>;
   limit?: Maybe<Scalars['Int']>;
 };
+
 
 export type QuerySiteBuildMetadataArgs = {
   id?: Maybe<StringQueryOperatorInput>;
@@ -879,12 +929,14 @@ export type QuerySiteBuildMetadataArgs = {
   buildTime?: Maybe<DateQueryOperatorInput>;
 };
 
+
 export type QueryAllSiteBuildMetadataArgs = {
   filter?: Maybe<SiteBuildMetadataFilterInput>;
   sort?: Maybe<SiteBuildMetadataSortInput>;
   skip?: Maybe<Scalars['Int']>;
   limit?: Maybe<Scalars['Int']>;
 };
+
 
 export type QueryAirtableArgs = {
   id?: Maybe<StringQueryOperatorInput>;
@@ -896,6 +948,7 @@ export type QueryAirtableArgs = {
   rowIndex?: Maybe<IntQueryOperatorInput>;
   data?: Maybe<AirtableDataFilterInput>;
 };
+
 
 export type QueryAllAirtableArgs = {
   filter?: Maybe<AirtableFilterInput>;
@@ -1055,21 +1108,26 @@ export type FileConnection = {
   group: Array<FileGroupConnection>;
 };
 
+
 export type FileConnectionDistinctArgs = {
   field: FileFieldsEnum;
 };
+
 
 export type FileConnectionMaxArgs = {
   field: FileFieldsEnum;
 };
 
+
 export type FileConnectionMinArgs = {
   field: FileFieldsEnum;
 };
 
+
 export type FileConnectionSumArgs = {
   field: FileFieldsEnum;
 };
+
 
 export type FileConnectionGroupArgs = {
   skip?: Maybe<Scalars['Int']>;
@@ -1413,7 +1471,9 @@ export type FileSortInput = {
   order?: Maybe<Array<Maybe<SortOrderEnum>>>;
 };
 
-export type SortOrderEnum = 'ASC' | 'DESC';
+export type SortOrderEnum =
+  | 'ASC'
+  | 'DESC';
 
 export type DirectoryConnection = {
   totalCount: Scalars['Int'];
@@ -1427,21 +1487,26 @@ export type DirectoryConnection = {
   group: Array<DirectoryGroupConnection>;
 };
 
+
 export type DirectoryConnectionDistinctArgs = {
   field: DirectoryFieldsEnum;
 };
+
 
 export type DirectoryConnectionMaxArgs = {
   field: DirectoryFieldsEnum;
 };
 
+
 export type DirectoryConnectionMinArgs = {
   field: DirectoryFieldsEnum;
 };
 
+
 export type DirectoryConnectionSumArgs = {
   field: DirectoryFieldsEnum;
 };
+
 
 export type DirectoryConnectionGroupArgs = {
   skip?: Maybe<Scalars['Int']>;
@@ -1648,21 +1713,26 @@ export type SiteConnection = {
   group: Array<SiteGroupConnection>;
 };
 
+
 export type SiteConnectionDistinctArgs = {
   field: SiteFieldsEnum;
 };
+
 
 export type SiteConnectionMaxArgs = {
   field: SiteFieldsEnum;
 };
 
+
 export type SiteConnectionMinArgs = {
   field: SiteFieldsEnum;
 };
 
+
 export type SiteConnectionSumArgs = {
   field: SiteFieldsEnum;
 };
+
 
 export type SiteConnectionGroupArgs = {
   skip?: Maybe<Scalars['Int']>;
@@ -1811,21 +1881,26 @@ export type SiteFunctionConnection = {
   group: Array<SiteFunctionGroupConnection>;
 };
 
+
 export type SiteFunctionConnectionDistinctArgs = {
   field: SiteFunctionFieldsEnum;
 };
+
 
 export type SiteFunctionConnectionMaxArgs = {
   field: SiteFunctionFieldsEnum;
 };
 
+
 export type SiteFunctionConnectionMinArgs = {
   field: SiteFunctionFieldsEnum;
 };
 
+
 export type SiteFunctionConnectionSumArgs = {
   field: SiteFunctionFieldsEnum;
 };
+
 
 export type SiteFunctionConnectionGroupArgs = {
   skip?: Maybe<Scalars['Int']>;
@@ -2068,21 +2143,26 @@ export type SitePageConnection = {
   group: Array<SitePageGroupConnection>;
 };
 
+
 export type SitePageConnectionDistinctArgs = {
   field: SitePageFieldsEnum;
 };
+
 
 export type SitePageConnectionMaxArgs = {
   field: SitePageFieldsEnum;
 };
 
+
 export type SitePageConnectionMinArgs = {
   field: SitePageFieldsEnum;
 };
 
+
 export type SitePageConnectionSumArgs = {
   field: SitePageFieldsEnum;
 };
+
 
 export type SitePageConnectionGroupArgs = {
   skip?: Maybe<Scalars['Int']>;
@@ -2321,21 +2401,26 @@ export type ImageSharpConnection = {
   group: Array<ImageSharpGroupConnection>;
 };
 
+
 export type ImageSharpConnectionDistinctArgs = {
   field: ImageSharpFieldsEnum;
 };
+
 
 export type ImageSharpConnectionMaxArgs = {
   field: ImageSharpFieldsEnum;
 };
 
+
 export type ImageSharpConnectionMinArgs = {
   field: ImageSharpFieldsEnum;
 };
 
+
 export type ImageSharpConnectionSumArgs = {
   field: ImageSharpFieldsEnum;
 };
+
 
 export type ImageSharpConnectionGroupArgs = {
   skip?: Maybe<Scalars['Int']>;
@@ -2495,21 +2580,26 @@ export type SitePluginConnection = {
   group: Array<SitePluginGroupConnection>;
 };
 
+
 export type SitePluginConnectionDistinctArgs = {
   field: SitePluginFieldsEnum;
 };
+
 
 export type SitePluginConnectionMaxArgs = {
   field: SitePluginFieldsEnum;
 };
 
+
 export type SitePluginConnectionMinArgs = {
   field: SitePluginFieldsEnum;
 };
 
+
 export type SitePluginConnectionSumArgs = {
   field: SitePluginFieldsEnum;
 };
+
 
 export type SitePluginConnectionGroupArgs = {
   skip?: Maybe<Scalars['Int']>;
@@ -2688,21 +2778,26 @@ export type SiteBuildMetadataConnection = {
   group: Array<SiteBuildMetadataGroupConnection>;
 };
 
+
 export type SiteBuildMetadataConnectionDistinctArgs = {
   field: SiteBuildMetadataFieldsEnum;
 };
+
 
 export type SiteBuildMetadataConnectionMaxArgs = {
   field: SiteBuildMetadataFieldsEnum;
 };
 
+
 export type SiteBuildMetadataConnectionMinArgs = {
   field: SiteBuildMetadataFieldsEnum;
 };
 
+
 export type SiteBuildMetadataConnectionSumArgs = {
   field: SiteBuildMetadataFieldsEnum;
 };
+
 
 export type SiteBuildMetadataConnectionGroupArgs = {
   skip?: Maybe<Scalars['Int']>;
@@ -2860,21 +2955,26 @@ export type AirtableConnection = {
   group: Array<AirtableGroupConnection>;
 };
 
+
 export type AirtableConnectionDistinctArgs = {
   field: AirtableFieldsEnum;
 };
+
 
 export type AirtableConnectionMaxArgs = {
   field: AirtableFieldsEnum;
 };
 
+
 export type AirtableConnectionMinArgs = {
   field: AirtableFieldsEnum;
 };
 
+
 export type AirtableConnectionSumArgs = {
   field: AirtableFieldsEnum;
 };
+
 
 export type AirtableConnectionGroupArgs = {
   skip?: Maybe<Scalars['Int']>;
@@ -3022,63 +3122,25 @@ export type AirtableSortInput = {
   order?: Maybe<Array<Maybe<SortOrderEnum>>>;
 };
 
-export type DefaultSeoQueryQueryVariables = Exact<{ [key: string]: never }>;
+export type DefaultSeoQueryQueryVariables = Exact<{ [key: string]: never; }>;
 
-export type DefaultSeoQueryQuery = {
-  site?: Maybe<{
-    siteMetadata?: Maybe<
-      Pick<SiteSiteMetadata, 'title' | 'description' | 'author'>
-    >;
-  }>;
-};
 
-export type AwDataQueryVariables = Exact<{ [key: string]: never }>;
+export type DefaultSeoQueryQuery = { site?: Maybe<{ siteMetadata?: Maybe<Pick<SiteSiteMetadata, 'title' | 'description' | 'author'>> }> };
 
-export type AwDataQuery = {
-  awData: {
-    nodes: Array<{
-      data?: Maybe<
-        Pick<
-          AirtableData,
-          | 'contact_type'
-          | 'electronic_form'
-          | 'email'
-          | 'fax'
-          | 'fee'
-          | 'ink'
-          | 'mail'
-          | 'notary'
-          | 'notes'
-          | 'original_copy'
-          | 'response'
-          | 'response_time'
-          | 'state'
-          | 'typed_or_printed'
-          | 'witness'
-        >
-      >;
-    }>;
-  };
-};
+export type AwDataQueryVariables = Exact<{ [key: string]: never; }>;
 
-export type StatesDataQueryVariables = Exact<{ [key: string]: never }>;
 
-export type StatesDataQuery = {
-  statesData: {
-    nodes: Array<{
-      data?: Maybe<Pick<AirtableData, 'abbrev' | 'code' | 'name'>>;
-    }>;
-  };
-};
+export type AwDataQuery = { awData: { nodes: Array<{ data?: Maybe<Pick<AirtableData, 'contact_type' | 'electronic_form' | 'email' | 'fax' | 'fee' | 'ink' | 'mail' | 'notary' | 'notes' | 'original_copy' | 'response' | 'response_time' | 'state' | 'typed_or_printed' | 'witness'>> }> } };
 
-export type CardImagesQueryVariables = Exact<{ [key: string]: never }>;
+export type StatesDataQueryVariables = Exact<{ [key: string]: never; }>;
 
-export type CardImagesQuery = {
-  cardImages: {
-    edges: Array<{
-      node: Pick<File, 'relativePath' | 'extension' | 'publicURL'> & {
-        childImageSharp?: Maybe<Pick<ImageSharp, 'gatsbyImageData'>>;
-      };
-    }>;
-  };
-};
+
+export type StatesDataQuery = { statesData: { nodes: Array<{ data?: Maybe<Pick<AirtableData, 'abbrev' | 'code' | 'name'>> }> } };
+
+export type CardImagesQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+export type CardImagesQuery = { cardImages: { edges: Array<{ node: (
+        Pick<File, 'relativePath' | 'extension' | 'publicURL'>
+        & { childImageSharp?: Maybe<Pick<ImageSharp, 'gatsbyImageData'>> }
+      ) }> } };

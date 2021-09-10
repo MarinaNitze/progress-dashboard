@@ -1,9 +1,8 @@
 import { Grid, GridContainer } from '@trussworks/react-uswds';
 import { AnchorLinkProps } from 'gatsby-plugin-anchor-links';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import Layout from '../components/layout/Layout';
 import useDataAW from '../hooks/useDataAW';
-import { PageProps } from 'gatsby';
 
 import SideAnchorNav from '../components/side-anchor-nav/SideAnchorNav';
 import content from '../components/side-anchor-nav/content.yml';
@@ -31,20 +30,20 @@ const items: AnchorLinkProps[] = [
 const { text } = content.example;
 
 // This is a placeholder component route that will leverage hook into Airtable.
-export default function Topic({ location }: PageProps) {
+export default function Topic() {
   const { awData } = useDataAW();
-  const [anchorLinks, setAnchorLinks] = useState(items);
+  // const [anchorLinks, setAnchorLinks] = useState(items);
 
   console.log(awData?.nodes);
 
-  useEffect(() => {
-    setAnchorLinks(
-      items.map(item => ({
-        className: location.hash.includes(item.to) ? 'active' : '',
-        ...item,
-      })),
-    );
-  }, [location.hash]);
+  // useEffect(() => {
+  //   setAnchorLinks(
+  //     items.map(item => ({
+  //       className: location.hash.includes(item.to) ? 'active' : '',
+  //       ...item,
+  //     })),
+  //   );
+  // }, [location.hash]);
 
   return (
     <Layout>
@@ -53,7 +52,7 @@ export default function Topic({ location }: PageProps) {
           <Grid row gap>
             <Grid className="usa-layout-docs__sidenav" desktop={{ col: 3 }}>
               <nav aria-label="Secondary navigation">
-                <SideAnchorNav items={anchorLinks} />
+                <SideAnchorNav items={items} />
               </nav>
             </Grid>
             <main
