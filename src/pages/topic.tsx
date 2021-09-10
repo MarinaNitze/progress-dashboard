@@ -32,18 +32,7 @@ const { text } = content.example;
 // This is a placeholder component route that will leverage hook into Airtable.
 export default function Topic() {
   const { awData } = useDataAW();
-  // const [anchorLinks, setAnchorLinks] = useState(items);
-
   console.log(awData?.nodes);
-
-  // useEffect(() => {
-  //   setAnchorLinks(
-  //     items.map(item => ({
-  //       className: location.hash.includes(item.to) ? 'active' : '',
-  //       ...item,
-  //     })),
-  //   );
-  // }, [location.hash]);
 
   return (
     <Layout>
