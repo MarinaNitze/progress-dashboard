@@ -11,14 +11,17 @@ li.usa-card {
 }
 
 .card .sm {
+  background-color: $white;
   justify-content: center;
 }
 
 .card .md {
+  background-color: $primary;
   justify-content: center;
 }
 
 .card .lg {
+  background-color: $info;
   color: $white;
   justify-content: center;
 }
@@ -34,6 +37,7 @@ li.usa-card {
 }
 
 .card .topic {
+  background-color: $light;
   justify-content: space-around;
 }
 
