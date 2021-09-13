@@ -19,7 +19,7 @@ export default function Hero({
   return (
     <section className={'usa-hero ' + backgroundColor}>
       <div className="usa-grid">
-        <div className="bgimage">{backgroundImg}</div>
+        <div className="bgImage">{backgroundImg}</div>
         <div className="usa-hero-callout usa-section-dark">
           <h2>{title}</h2>
           <p>{description}</p>
