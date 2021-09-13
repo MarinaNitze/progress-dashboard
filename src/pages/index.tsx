@@ -11,7 +11,10 @@ import Layout from '../components/layout/Layout';
 import Hero from '../components/hero/Hero';
 
 const IndexPage: React.FC<{ data: ImagesQuery }> = ({ data }) => {
-  const heroImage = useGatsbyImage({images: data.heroImages, path: "images/heros/hero-1.png"})
+  const heroImage = useGatsbyImage({
+    images: data.heroImages,
+    path: 'images/heros/hero-1.png',
+  });
 
   return (
     <Layout>
@@ -19,7 +22,7 @@ const IndexPage: React.FC<{ data: ImagesQuery }> = ({ data }) => {
         <section id="test-section-id" className="usa-section">
           <GridContainer>
             <Hero
-              backgroundImg= {heroImage}
+              backgroundImg={heroImage}
               backgroundColor="primary"
               title={'[Playbook Tagline]'}
               description={
