@@ -23,7 +23,7 @@ const IndexPage: React.FC<{ data: ImagesQuery }> = ({ data }) => {
           <GridContainer>
             <Hero
               backgroundImg={heroImage}
-              backgroundColor="primary"
+              backgroundColor="bg-primary"
               title={'[Playbook Tagline]'}
               description={
                 'Quick intro that sets the stage for the site, what people can do, and how to do it.'
