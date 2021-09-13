@@ -15,7 +15,7 @@ Index.args = {
   title: 'Default Title',
   description:
     'This is a sample description for the hero component. Use it wisely.',
-  backgroundColor: "primary",
+  backgroundColor: 'primary',
   // TODO: background images come from graphql how do we get those in stories?
   // backgroundImg: {heroImage},
   children: <p>Search Component (TBD)</p>,
