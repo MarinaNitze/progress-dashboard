@@ -1,14 +1,7 @@
 import React from 'react';
-// import { File, ImageSharp, ImagesQuery } from '../../graphql-types';
 import { ImageSharp } from '../../graphql-types';
-// import { GatsbyImage, getImage, ImageDataLike } from 'gatsby-plugin-image';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import { CardProps } from '../components/card/Card';
-
-// type images = { edges: Array<{ node: (
-//         Pick<File, 'relativePath' | 'extension' | 'publicURL'>
-//         & ImageDataLike
-//       ) }> }
 
 type useGatsbyImageProps = {
   images: any;

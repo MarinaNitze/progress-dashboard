@@ -26,7 +26,7 @@ const IndexPage: React.FC<{ data: ImagesQuery }> = ({ data }) => {
               backgroundColor="primary"
               title={'[Playbook Tagline]'}
               description={
-                'Quick intro that sets the stage for the site, what people can do, and how to do it. Quick intro that sets the stage for the site, what people can do, and how to do it. Quick intro that sets the stage for the site, what people can do, and how to do it. Quick intro that sets the stage for the site, what people can do, and how to do it. Quick intro that sets the stage for the site, what people can do, and how to do it. Quick intro that sets the stage for the site, what people can do, and how to do it. Quick intro that sets the stage for the site, what people can do, and how to do it. Quick intro that sets the stage for the site, what people can do, and how to do it. Quick intro that sets the stage for the site, what people can do, and how to do it. Quick intro that sets the stage for the site, what people can do, and how to do it. Quick intro that sets the stage for the site, what people can do, and how to do it. '
+                'Quick intro that sets the stage for the site, what people can do, and how to do it.'
               }
             >
               <p>Search Component Placeholder</p>
