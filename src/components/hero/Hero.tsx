@@ -1,11 +1,10 @@
 import React from 'react';
 import './hero.scss';
-import '../../images/heros/hero-1.png';
 
 type HeroProps = {
   title: string;
   description?: string;
-  backgroundImgPath?: string;
+  backgroundImg?: React.FC;
   backgroundColor?: 'primary' | 'secondary' | 'info' | 'light';
   children?: React.ReactNode;
 };
@@ -13,24 +12,24 @@ type HeroProps = {
 export default function Hero({
   title,
   description,
-  backgroundImgPath,
+  backgroundImg,
+  backgroundColor,
   children,
 }: HeroProps) {
-  console.log(backgroundImgPath);
-
   return (
     <section
-      className="usa-hero"
-      style={{
-        backgroundImage: '../../images/heros/hero-1.png',
-      }}
+      className={"usa-hero " + backgroundColor}
     >
       <div className="usa-grid">
-        <div className="usa-hero-callout usa-section-dark">
-          <h2>{title}</h2>
-          <p>{description}</p>
-          {children}
-        </div>
+          <div className="bgimage">
+            {backgroundImg}
+                    </div>
+          <div className="usa-hero-callout usa-section-dark">
+            <h2>{title}</h2>
+            <p>{description}</p>
+            {children}
+          </div>
+
       </div>
     </section>
   );

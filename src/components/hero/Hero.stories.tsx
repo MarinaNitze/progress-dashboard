@@ -15,6 +15,6 @@ Index.args = {
   title: 'Default Title',
   description:
     'This is a sample description for the hero component. Use it wisely.',
-  backgroundImgPath: '../../img/hero.png',
+  // backgroundImgPath: '../../img/hero.png',
   children: <p>Search Component (TBD)</p>,
 };

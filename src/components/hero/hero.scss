@@ -5,4 +5,37 @@
   width: 100vw;
   margin-left: calc(50% - 50vw);
   padding-left: 4rem;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.bgImage {
+  background-color: $primary;
+  flex-basis: 40%;
+}
+
+.usa-hero-callout {
+  flex-basis: 60%;
+}
+
+.usa-grid {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.primary {
+  background-color: $primary;
+}
+
+.secondary {
+  background-color: $secondary;
+}
+
+.info {
+  background-color: $info;
+}
+
+.light {
+  background-color: $light;
 }

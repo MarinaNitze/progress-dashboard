@@ -3044,6 +3044,6 @@ export type ImagesQuery = { cardImages: { edges: Array<{ node: (
         Pick<File, 'relativePath' | 'extension' | 'publicURL'>
         & { childImageSharp?: Maybe<Pick<ImageSharp, 'gatsbyImageData'>> }
       ) }> }, heroImages: { edges: Array<{ node: (
-        Pick<File, 'relativePath' | 'extension'>
+        Pick<File, 'relativePath' | 'extension' | 'publicURL'>
         & { childImageSharp?: Maybe<Pick<ImageSharp, 'gatsbyImageData'>> }
       ) }> } };
