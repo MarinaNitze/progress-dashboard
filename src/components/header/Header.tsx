@@ -5,23 +5,16 @@ import {
   NavMenuButton,
   PrimaryNav,
 } from '@trussworks/react-uswds';
+import { Link } from 'gatsby';
+
+import './Header.scss';
 
 const itemsMenu = [
-  <a href="#one" key="one" className="usa-nav__link">
-    <span>Topics</span>
-  </a>,
-  <a href="#two" key="two" className="usa-nav__link">
-    <span>Recommendations</span>
-  </a>,
-  <a href="#three" key="three" className="usa-nav__link">
-    <span>Compare</span>
-  </a>,
-  <a href="#four" key="four" className="usa-nav__link">
-    <span>Stories</span>
-  </a>,
-  <a href="#five" key="five" className="usa-nav__link">
-    <span>Search</span>
-  </a>,
+  <Link to="/topic">Topics</Link>,
+  <Link to="/recommendations">Recommendations</Link>,
+  <Link to="/compare">Compare</Link>,
+  <Link to="/stories">Stories</Link>,
+  <Link to="/search">Search</Link>,
 ];
 
 export default function Header() {
@@ -34,13 +27,14 @@ export default function Header() {
   return (
     <>
       <div className={`usa-overlay ${expanded ? 'is-visible' : ''}`}></div>
-      <HeaderCmp basic>
+      <HeaderCmp className="pd-header" basic>
         <div className="usa-nav-container">
           <div className="usa-navbar">
             <Title>Logo</Title>
             <NavMenuButton onClick={onClickExpand} label="Menu" />
           </div>
           <PrimaryNav
+            className="pd-nav"
             items={itemsMenu}
             mobileExpanded={expanded}
             onToggleMobileNav={onClickExpand}
