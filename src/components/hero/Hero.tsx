@@ -3,7 +3,7 @@ import './hero.scss';
 import { ImageSharp } from '../../../graphql-types';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
-import useGatsbyImages from '../../hooks/useGatsbyImages'
+import useGatsbyImages from '../../hooks/useGatsbyImages';
 
 type HeroProps = {
   title: string;
@@ -22,18 +22,12 @@ export default function Hero({
   backgroundColor,
   children,
 }: HeroProps) {
-
-  const imageNode = path && useGatsbyImages({path})
+  const imageNode = path && useGatsbyImages({ path });
   const gatsbyImage: ImageSharp['gatsbyImageData'] =
-      imageNode && getImage(imageNode.image);
+    imageNode && getImage(imageNode.image);
   const imageComponent = gatsbyImage && (
-        <GatsbyImage
-          className="image"
-          image={gatsbyImage}
-          alt={alt ?? title}
-        />
-      );
-
+    <GatsbyImage className="image" image={gatsbyImage} alt={alt ?? title} />
+  );
 
   return (
     <section className={'usa-hero ' + backgroundColor}>

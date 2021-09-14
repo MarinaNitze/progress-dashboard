@@ -7,7 +7,6 @@ import Layout from '../components/layout/Layout';
 import Hero from '../components/hero/Hero';
 
 const IndexPage: React.FC = () => {
-
   return (
     <Layout>
       <main>
