@@ -66,17 +66,17 @@ export default function useGatsbyImages({
   switch (stub) {
     case 'heros':
       image = heroImages?.edges.find(
-        (edge: any) => edge?.node?.relativePath === path,
+        (edge) => edge?.node?.relativePath === path,
       )?.node;
       break;
     case 'topic':
       image = topicImages?.edges.find(
-        (edge: any) => edge?.node?.relativePath === path,
+        (edge) => edge?.node?.relativePath === path,
       )?.node;
       break;
     case 'featu':
       image = featureImages?.edges.find(
-        (edge: any) => edge?.node?.relativePath === path,
+        (edge) => edge?.node?.relativePath === path,
       )?.node;
       break;
     default:
