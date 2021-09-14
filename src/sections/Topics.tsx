@@ -8,72 +8,60 @@ import {
 } from '@trussworks/react-uswds';
 
 import Card, { CardProps } from '../components/card/Card';
-import useGatsbyImage from '../hooks/useGatsbyImage';
-import { ImagesQuery } from '../../graphql-types';
 
-export default function TopicsSection(cardImages: ImagesQuery['cardImages']) {
+export default function TopicsSection() {
   // TODO: pull card list from cms
   const cardList: Array<CardProps> = [
     {
       heading: 'Foster Parent Licensing',
       layout: 'topic',
-      imgPath: 'images/cards/Topic-FPL.svg',
+      imgPath: 'images/topics/Topic-FPL.svg',
       imgAlt: 'Foster Parent Licensing Icon',
       linkDestination: '/topic/foster-parent-licensing',
     },
     {
       heading: 'Background Checks',
       layout: 'topic',
-      imgPath: 'images/cards/Topic-BC.svg',
+      imgPath: 'images/topics/Topic-BC.svg',
       imgAlt: 'Background Checks Icon',
       linkDestination: '/topic/background-checks',
     },
     {
       heading: 'Extended Foster Care',
       layout: 'topic',
-      imgPath: 'images/cards/Topic-EFC.svg',
+      imgPath: 'images/topics/Topic-EFC.svg',
       imgAlt: 'Extended Foster Care Icon',
       linkDestination: '/CTA',
     },
     {
       heading: 'Family Finding',
       layout: 'topic',
-      imgPath: 'images/cards/Topic-FF.svg',
+      imgPath: 'images/topics/Topic-FF.svg',
       imgAlt: 'Family Finding Icon',
       linkDestination: '/topic/family-finding',
     },
     {
       heading: 'Inquiry management',
       layout: 'topic',
-      imgPath: 'images/cards/Topic-IM.svg',
+      imgPath: 'images/topics/Topic-IM.svg',
       imgAlt: 'Inquiry Management Icon',
       linkDestination: '/topic/inquiry-management',
     },
     {
       heading: 'License Renewal',
       layout: 'topic',
-      imgPath: 'images/cards/Topic-LR.svg',
+      imgPath: 'images/topics/Topic-LR.svg',
       imgAlt: 'Licensing Renewal Icon',
       linkDestination: '/topic/license-renewal',
     },
     {
       heading: 'Recruitment',
       layout: 'topic',
-      imgPath: 'images/cards/Topic-Recruitment.svg',
+      imgPath: 'images/topics/Topic-Recruitment.svg',
       imgAlt: 'Recruitment Icon',
       linkDestination: '/topic/recruitment',
     },
   ];
-
-  const cardListWithImages = cardList.map(card => {
-    const image = useGatsbyImage({
-      images: cardImages,
-      path: card.imgPath ?? 'na',
-      layout: card.layout,
-      alt: card.imgAlt,
-    });
-    return { ...card, image };
-  });
 
   return (
     <section id="test-section-id">
@@ -90,7 +78,7 @@ export default function TopicsSection(cardImages: ImagesQuery['cardImages']) {
         </Grid>
         <Grid>
           <CardGroup>
-            {cardListWithImages.map(c => (
+            {cardList.map(c => (
               <Card key={c.heading} {...c} />
             ))}
           </CardGroup>

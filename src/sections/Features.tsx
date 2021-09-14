@@ -2,16 +2,14 @@ import React from 'react';
 import { CardGroup, Grid, GridContainer } from '@trussworks/react-uswds';
 
 import Card, { CardProps } from '../components/card/Card';
-import { ImagesQuery } from '../../graphql-types';
-import useGatsbyImage from '../hooks/useGatsbyImage';
 
-export default function FeatureSection(cardImages: ImagesQuery['cardImages']) {
+export default function FeatureSection() {
   // TODO: pull card list from cms
   const cardList: Array<CardProps> = [
     {
       heading: 'Full width feature',
       layout: 'lg',
-      imgPath: 'images/cards/Full-Feature-Img.png',
+      imgPath: 'images/features/Full-Feature-Img.png',
       imgAlt: 'feature image',
       linkText: 'CTA',
       linkDestination: '/CTA',
@@ -26,7 +24,7 @@ export default function FeatureSection(cardImages: ImagesQuery['cardImages']) {
     {
       heading: 'Medium feature',
       layout: 'md',
-      imgPath: 'images/cards/Medium-Feature.png',
+      imgPath: 'images/features/Medium-Feature.png',
       imgAlt: 'medium feature',
       children: (
         <p>
@@ -40,7 +38,7 @@ export default function FeatureSection(cardImages: ImagesQuery['cardImages']) {
     {
       heading: 'Small feature',
       layout: 'sm',
-      imgPath: 'images/cards/Small-Feature-Footer.png',
+      imgPath: 'images/features/Small-Feature-Footer.png',
       imgAlt: 'small feature',
       children: (
         <p>
@@ -51,16 +49,6 @@ export default function FeatureSection(cardImages: ImagesQuery['cardImages']) {
       ),
     },
   ];
-
-  const cardListWithImages = cardList.map(card => {
-    const image = useGatsbyImage({
-      images: cardImages,
-      path: card.imgPath ?? 'na',
-      layout: card.layout,
-      alt: card.imgAlt,
-    });
-    return { ...card, image };
-  });
 
   return (
     <section id="test-section-id">
@@ -74,7 +62,7 @@ export default function FeatureSection(cardImages: ImagesQuery['cardImages']) {
             sed.
           </p>
           <CardGroup>
-            {cardListWithImages.map(c => (
+            {cardList.map(c => (
               <Card key={c.heading} {...c} />
             ))}
           </CardGroup>
