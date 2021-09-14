@@ -2,7 +2,7 @@ import { HeroAndCardImagesQuery } from '../../graphql-types';
 import { useStaticQuery, graphql } from 'gatsby';
 
 type useGatsbyImageResponse = {
-  [key: string]: any
+  [key: string]: any;
 };
 
 export default function useGatsbyImages(): useGatsbyImageResponse {
@@ -55,14 +55,17 @@ export default function useGatsbyImages(): useGatsbyImageResponse {
       }
     `);
 
-  const images = [heroImages, topicImages, featureImages].reduce( (acc, images) => {
-    images?.edges.forEach( edge => {
-      const path : string = edge.node.relativePath
-      acc[path] = edge.node
-      return acc
-    })
-    return acc
-  }, {} as useGatsbyImageResponse )
+  const images = [heroImages, topicImages, featureImages].reduce(
+    (acc, images) => {
+      images?.edges.forEach(edge => {
+        const path: string = edge.node.relativePath;
+        acc[path] = edge.node;
+        return acc;
+      });
+      return acc;
+    },
+    {} as useGatsbyImageResponse,
+  );
 
-  return images ;
+  return images;
 }
