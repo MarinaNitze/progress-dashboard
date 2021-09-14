@@ -11,13 +11,15 @@ import {
 import { GridProps } from '@trussworks/react-uswds/lib/components/grid/Grid/Grid';
 
 import './Card.scss';
+import useGatsbyImages from '../../hooks/useGatsbyImages';
+import { ImageSharp } from '../../../graphql-types';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
 export type CardProps = {
   heading: string;
   layout?: 'topic' | 'sm' | 'md' | 'lg';
   imgPath?: string;
   imgAlt?: string;
-  image?: React.ReactNode;
   linkDestination?: string;
   linkText?: string;
   children?: React.ReactNode;
@@ -36,12 +38,31 @@ function mediaLayout(
 export default function Card({
   heading,
   imgPath,
-  image,
+  imgAlt,
   linkDestination,
   linkText,
   children,
   layout = 'lg',
 }: CardProps) {
+  let image;
+  const imageNode = imgPath && useGatsbyImages()[imgPath];
+  if (imageNode && imageNode.extension === 'svg') {
+    const svgImage = imageNode.publicURL;
+    image = svgImage && (
+      <img src={svgImage} alt={imgAlt ?? heading + ' image'} />
+    );
+  } else {
+    const gatsbyImage: ImageSharp['gatsbyImageData'] =
+      imageNode && getImage(imageNode);
+    image = gatsbyImage && (
+      <GatsbyImage
+        className="image"
+        image={gatsbyImage}
+        alt={imgAlt ?? heading + ' image'}
+      />
+    );
+  }
+
   return (
     <CardCmp
       className="card"
