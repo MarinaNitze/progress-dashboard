@@ -1,17 +1,11 @@
 import { HeroAndCardImagesQuery } from '../../graphql-types';
 import { useStaticQuery, graphql } from 'gatsby';
 
-type useGatsbyImageProps = {
-  path: string;
-};
-
 type useGatsbyImageResponse = {
-  image: any;
+  [key: string]: any
 };
 
-export default function useGatsbyImages({
-  path,
-}: useGatsbyImageProps): useGatsbyImageResponse {
+export default function useGatsbyImages(): useGatsbyImageResponse {
   const { heroImages, topicImages, featureImages } =
     useStaticQuery<HeroAndCardImagesQuery>(graphql`
       query HeroAndCardImages {
@@ -61,28 +55,14 @@ export default function useGatsbyImages({
       }
     `);
 
-  const stub = path.slice(7, 12);
-  let image;
-  switch (stub) {
-    case 'heros':
-      image = heroImages?.edges.find(
-        edge => edge?.node?.relativePath === path,
-      )?.node;
-      break;
-    case 'topic':
-      image = topicImages?.edges.find(
-        edge => edge?.node?.relativePath === path,
-      )?.node;
-      break;
-    case 'featu':
-      image = featureImages?.edges.find(
-        edge => edge?.node?.relativePath === path,
-      )?.node;
-      break;
-    default:
-      image = heroImages?.edges[0]?.node;
-      break;
-  }
+  const images = [heroImages, topicImages, featureImages].reduce( (acc, images) => {
+    images?.edges.forEach( edge => {
+      const path : string = edge.node.relativePath
+      acc[path] = edge.node
+      return acc
+    })
+    return acc
+  }, {} as useGatsbyImageResponse )
 
-  return { image };
+  return images ;
 }

@@ -45,15 +45,15 @@ export default function Card({
   layout = 'lg',
 }: CardProps) {
   let image;
-  const imageNode = imgPath && useGatsbyImages({ path: imgPath });
-  if (imageNode && imageNode.image.extension === 'svg') {
-    const svgImage = imageNode.image.publicURL;
+  const imageNode = imgPath && useGatsbyImages()[imgPath];
+  if (imageNode && imageNode.extension === 'svg') {
+    const svgImage = imageNode.publicURL;
     image = svgImage && (
       <img src={svgImage} alt={imgAlt ?? heading + ' image'} />
     );
   } else {
     const gatsbyImage: ImageSharp['gatsbyImageData'] =
-      imageNode && getImage(imageNode.image);
+      imageNode && getImage(imageNode);
     image = gatsbyImage && (
       <GatsbyImage
         className="image"

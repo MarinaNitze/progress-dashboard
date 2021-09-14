@@ -22,9 +22,9 @@ export default function Hero({
   backgroundColor,
   children,
 }: HeroProps) {
-  const imageNode = path && useGatsbyImages({ path });
+  const imageNode = path && useGatsbyImages()[path];
   const gatsbyImage: ImageSharp['gatsbyImageData'] =
-    imageNode && getImage(imageNode.image);
+    imageNode && getImage(imageNode);
   const imageComponent = gatsbyImage && (
     <GatsbyImage className="image" image={gatsbyImage} alt={alt ?? title} />
   );
