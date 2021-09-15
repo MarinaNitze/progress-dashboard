@@ -4,6 +4,12 @@ home:
     heroTitle: Playbook Tagline
     heroBackgroundColor: primary
     heroImage: ../images/heros/hero-home.png
+    Title: Playbook Tagline
+    content: Not sure what to search for? Check out our thing that helps you get
+      there whatever that is.
+    BackgroundColor: primary
+    Image: ../images/heros/hero-home.png
+    imgAlt: Hero image
   features:
     whatsNew: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Luctus massa
       natoque risus ut porttitor. Urna commodo amet non massa dui quis. Id
@@ -16,6 +22,8 @@ home:
       Image: ../images/features/Full-Feature-Img.png
       BackgroundColor: info
       cta: CTA
+      title: Full width feature
+      imgAlt: full width feature image
     mediumFeature:
       Header: Medium feature
       Content: Will serve as an intermediate block for when there aren’t a ton of new
@@ -24,6 +32,8 @@ home:
         Image is optional, but wouldn’t be full width/background.
       Image: ../images/features/Medium-Feature.png
       BackgroundColor: primary
+      title: Medium feature
+      imgAlt: medium feature image
     smallFeature:
       Header: Small feature
       Content: Smaller impact, themed curated list of new items. Likely linked ULs
@@ -31,6 +41,8 @@ home:
         repeated to fill a row.
       Image: ../images/features/Small-Feature-Footer.png
       BackgroundColor: white
+      title: Small feature
+      imgAlt: small feature image
   mission:
     title: Our mission test
     backgroundColor: light
@@ -41,3 +53,4 @@ home:
       create a public, actionable record of practices that can be easily
       replicated and scaled by others. If you’re interested in joining our team,
       read our membership requirements.
+    imgAlt: mission image
