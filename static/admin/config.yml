@@ -7,6 +7,26 @@ local_backend: true
 media_folder: src/images
 
 collections:
+  - name: "topics"
+    label: "Topics"
+    folder: "src/pages/content/topics"
+    create: true
+    slug: "index"
+    path: "{{title}}/index"
+    fields:
+      - { label: "Title for url", name: "title", widget: "string" }
+      - label: "Hero"
+        name: "hero"
+        widget: "object"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - {label: "Image", name: "image", widget: "image", media_folder: "/src/images/heros", allow_multiple: false, }
+          - { label: "Background Color", name: "backgroundColor", widget: "select", options: ["primary", "secondary", "info", "light", "white"], default: ["primary"]}
+          - { label: "Image Alt Text", name: "imgAlt", widget: "string" }
+      - { label: "Icon", name: "image", widget: image, media_folder: "/src/images/topics", allow_multiple: false, }
+      - { label: "About this topic", name: "about", widget: "markdown"}
+      - { label: "Why this matters", name: "why", widget: "markdown"}
+      - { label: "What we can do", name: "what", widget: "markdown"}
   - name: "pages"
     label: "Pages"
     files:
@@ -61,6 +81,15 @@ collections:
                     - {label: "Image", name: "image", widget: "image", media_folder: "../images/features",  allow_multiple: false}
                     - { label: "Image Alt Text", name: "imgAlt", widget: "string" }
                     - {label: "Layout", name: "layout", widget: "select", options: ["topic", "lg", "md", "sm"], default: ["sm"]}
+              - label: "Topics"
+                name: "topics"
+                widget: "relation"
+                collection: "topics"
+                multiple: true
+                min: 1
+                max: 7
+                value_field: "title"
+                search_fields: ["title"]
               - label: "Our mission"
                 name: "mission"
                 widget: "object"
