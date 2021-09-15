@@ -35,3 +35,9 @@ home:
     title: Our mission test
     backgroundColor: light
     image: ../images/heros/mission.png
+    content: This Playbook is the result of a collaboration between states at the
+      cutting edge of this work and New America’s Public Interest Technology
+      team, in partnership with Foster America and Think of Us. Our goal is to
+      create a public, actionable record of practices that can be easily
+      replicated and scaled by others. If you’re interested in joining our team,
+      read our membership requirements.
