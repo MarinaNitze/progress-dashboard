@@ -32,6 +32,6 @@ home:
       Image: ../images/features/Small-Feature-Footer.png
       BackgroundColor: white
   mission:
-    title: Our mission
+    title: Our mission test
     backgroundColor: light
     image: ../images/heros/mission.png
