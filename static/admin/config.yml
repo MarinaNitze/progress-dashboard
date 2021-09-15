@@ -2,7 +2,7 @@ backend:
   name: github
   repo: Bloom-Works/progress-dashboard
   branch: feature/netlify-cms
-  local_backend: true
+local_backend: true
 
 media_folder: src/images
 
