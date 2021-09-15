@@ -22,6 +22,7 @@ home:
       imgAlt: full width feature image
       link: cta
       linkText: cta
+      layout: lg
     mediumFeature:
       content: Will serve as an intermediate block for when there aren’t a ton of new
         updates, but we still want to make an impact visually, but not compete
@@ -30,6 +31,7 @@ home:
       image: ../images/features/Medium-Feature.png
       title: Medium feature
       imgAlt: medium feature image
+      layout: md
     smallFeature:
       content: Smaller impact, themed curated list of new items. Likely linked ULs
         with possible H4 heading format to cateogorize as needed. Could be
@@ -37,6 +39,7 @@ home:
       image: ../images/features/Small-Feature-Footer.png
       title: Small feature
       imgAlt: small feature image
+      layout: sm
   mission:
     title: Our mission test
     backgroundColor: light
