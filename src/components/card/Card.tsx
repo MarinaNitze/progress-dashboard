@@ -17,7 +17,6 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
 export type CardProps = {
   title: string;
-  backgroundColor: string;
   layout?: 'topic' | 'sm' | 'md' | 'lg';
   image?: string;
   imgAlt?: string;

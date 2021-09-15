@@ -42,7 +42,6 @@ collections:
                     - {label: "Content", name: "content", widget: "markdown"}
                     - {label: "Image", name: "image", widget: "image", media_folder: "../images/features",  allow_multiple: false}
                     - { label: "Image Alt Text", name: "imgAlt", widget: "string" }
-                    - { label: "Background Color", name: "backgroundColor", widget: "select", options: ["primary", "secondary", "info", "light", "white"], default: ["primary"]}
                     - { label: "Link", name: "link", widget: "string"}
                     - {label: "Link Text", name: "linkText", widget: string}
                     - {label: "Layout", name: "layout", widget: "select", options: ["topic", "lg", "md", "sm"], default: ["lg"]}
@@ -56,7 +55,6 @@ collections:
                     - {label: "Link Text", name: "linkText", widget: string}
                     - {label: "Image", name: "image", widget: "image", media_folder: "../images/features",  allow_multiple: false}
                     - { label: "Image Alt Text", name: "imgAlt", widget: "string" }
-                    - { label: "Background Color", name: "backgroundColor", widget: "select", options: ["primary", "secondary", "info", "light", "white"], default: ["primary"]}
                     - {label: "Layout", name: "layout", widget: "select", options: ["topic", "lg", "md", "sm"], default: ["md"]}
                   - label: "Small Feature"
                     name: "smallFeature"
@@ -68,7 +66,6 @@ collections:
                     - {label: "Link Text", name: "linkText", widget: string}
                     - {label: "Image", name: "image", widget: "image", media_folder: "../images/features",  allow_multiple: false}
                     - { label: "Image Alt Text", name: "imgAlt", widget: "string" }
-                    - { label: "Background Color", name: "backgroundColor", widget: "select", options: ["primary", "secondary", "info", "light", "white"], default: ["primary"]}
                     - {label: "Layout", name: "layout", widget: "select", options: ["topic", "lg", "md", "sm"], default: ["sm"]}
               - label: "Our mission"
                 name: "mission"

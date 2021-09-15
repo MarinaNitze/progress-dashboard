@@ -9,7 +9,6 @@ describe('Card', () => {
     const { getByText } = render(
       <Card
         title="Content Header"
-        backgroundColor="primary"
         content={contentBody}
       />,
     );

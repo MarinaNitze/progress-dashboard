@@ -15,7 +15,6 @@ export default function TopicsSection() {
     {
       title: 'Foster Parent Licensing',
       layout: 'topic',
-      backgroundColor: 'light',
       image: '../images/topics/Topic-FPL.svg',
       imgAlt: 'Foster Parent Licensing Icon',
       link: '/topic/foster-parent-licensing',
@@ -23,7 +22,6 @@ export default function TopicsSection() {
     {
       title: 'Background Checks',
       layout: 'topic',
-      backgroundColor: 'light',
       image: '../images/topics/Topic-BC.svg',
       imgAlt: 'Background Checks Icon',
       link: '/topic/background-checks',
@@ -31,7 +29,6 @@ export default function TopicsSection() {
     {
       title: 'Extended Foster Care',
       layout: 'topic',
-      backgroundColor: 'light',
       image: '../images/topics/Topic-EFC.svg',
       imgAlt: 'Extended Foster Care Icon',
       link: '/CTA',
@@ -39,7 +36,6 @@ export default function TopicsSection() {
     {
       title: 'Family Finding',
       layout: 'topic',
-      backgroundColor: 'light',
       image: '../images/topics/Topic-FF.svg',
       imgAlt: 'Family Finding Icon',
       link: '/topic/family-finding',
@@ -47,7 +43,6 @@ export default function TopicsSection() {
     {
       title: 'Inquiry management',
       layout: 'topic',
-      backgroundColor: 'light',
       image: '../images/topics/Topic-IM.svg',
       imgAlt: 'Inquiry Management Icon',
       link: '/topic/inquiry-management',
@@ -55,7 +50,6 @@ export default function TopicsSection() {
     {
       title: 'License Renewal',
       layout: 'topic',
-      backgroundColor: 'light',
       image: '../images/topics/Topic-LR.svg',
       imgAlt: 'Licensing Renewal Icon',
       link: '/topic/license-renewal',
@@ -63,7 +57,6 @@ export default function TopicsSection() {
     {
       title: 'Recruitment',
       layout: 'topic',
-      backgroundColor: 'light',
       image: '../images/topics/Topic-Recruitment.svg',
       imgAlt: 'Recruitment Icon',
       link: '/topic/recruitment',
