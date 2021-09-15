@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback, useRef } from 'react';
 import {
   Header as HeaderCmp,
   Title,
@@ -7,6 +7,7 @@ import {
 } from '@trussworks/react-uswds';
 import { Link } from 'gatsby';
 
+import useScrollDirection from '../../hooks/useScrollDirection';
 import './Header.scss';
 
 const itemsMenu = [
@@ -19,6 +20,8 @@ const itemsMenu = [
 
 export default function Header() {
   const [expanded, setExpanded] = useState(false);
+  const scrollRef = useRef(0);
+  const direction = useScrollDirection(scrollRef);
 
   const onClickExpand = useCallback(() => {
     setExpanded(prvExpanded => !prvExpanded);
@@ -27,7 +30,10 @@ export default function Header() {
   return (
     <>
       <div className={`usa-overlay ${expanded ? 'is-visible' : ''}`}></div>
-      <HeaderCmp className="pd-header" basic>
+      <HeaderCmp
+        className={`pd-header ${direction === 'up' ? 'sticky-nav z-top' : ''}`}
+        basic
+      >
         <div className="usa-nav-container">
           <div className="usa-navbar">
             <Title>Logo</Title>
