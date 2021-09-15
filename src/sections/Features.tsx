@@ -6,13 +6,14 @@ import Card, { CardProps } from '../components/card/Card';
 import content from '../pages/index.content.yml';
 
 type featuresProps = {
-  largeFeature: CardProps,
-  mediumFeature: CardProps,
-  smallFeature: CardProps,
-}
+  largeFeature: CardProps;
+  mediumFeature: CardProps;
+  smallFeature: CardProps;
+};
 
 export default function FeatureSection() {
-  const {largeFeature, mediumFeature, smallFeature}: featuresProps = content.home.features
+  const { largeFeature, mediumFeature, smallFeature }: featuresProps =
+    content.home.features;
   // console.log(features)
   // TODO: pull card list from cms
   // const largeFeature = Object.assign({}, features.largeFeature, {layout: 'lg'})

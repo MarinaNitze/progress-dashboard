@@ -19,7 +19,6 @@ home:
         button — tbd)
       image: ../images/features/Full-Feature-Img.png
       backgroundColor: info
-      link: CTA
       title: Full width feature
       imgAlt: full width feature image
       link: cta
