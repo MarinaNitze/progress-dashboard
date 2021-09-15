@@ -1,6 +1,8 @@
 backend:
   name: github
   repo: Bloom-Works/progress-dashboard
+  branch: feature/netlify-cms
+  local_backend: true
 
 media_folder: src/images
 
@@ -22,7 +24,7 @@ collections:
                 fields:
                   - { label: "Hero Title", name: "heroTitle", widget: "string" }
                   - { label: "Hero Background Color", name: "heroBackgroundColor", widget: "select", options: ["primary", "secondary", "info", "light", "white"], default: ["primary"]}
-                  - {label: "Hero Image", name: "heroImage", widget: "image", media_folder: "./heros", allow_multiple: false, }
+                  - {label: "Hero Image", name: "heroImage", widget: "image", media_folder: "../images/heros", allow_multiple: false, }
               - label: "Features"
                 name: "features"
                 widget: "object"
@@ -34,7 +36,7 @@ collections:
                     fields:
                     - {label: "Header", name: "Header", widget: "string"}
                     - {label: "Content", name: "Content", widget: "markdown"}
-                    - {label: "Image", name: "Image", widget: "image", media_folder: "./features",  allow_multiple: false}
+                    - {label: "Image", name: "Image", widget: "image", media_folder: "../images/features",  allow_multiple: false}
                     - { label: "Background Color", name: "BackgroundColor", widget: "select", options: ["primary", "secondary", "info", "light", "white"], default: ["primary"]}
                     - { label: "CTA", name: "cta", widget: "string"}
                   - label: "Medium  Feature"
@@ -43,7 +45,7 @@ collections:
                     fields:
                     - {label: "Header", name: "Header", widget: "string"}
                     - {label: "Content", name: "Content", widget: "markdown"}
-                    - {label: "Image", name: "Image", widget: "image", media_folder: "./features",  allow_multiple: false}
+                    - {label: "Image", name: "Image", widget: "image", media_folder: "../images/features",  allow_multiple: false}
                     - { label: "Background Color", name: "BackgroundColor", widget: "select", options: ["primary", "secondary", "info", "light", "white"], default: ["primary"]}
                   - label: "Small Feature"
                     name: "smallFeature"
@@ -51,7 +53,7 @@ collections:
                     fields:
                     - {label: "Header", name: "Header", widget: "string"}
                     - {label: "Content", name: "Content", widget: "markdown"}
-                    - {label: "Image", name: "Image", widget: "image", media_folder: "./features",  allow_multiple: false}
+                    - {label: "Image", name: "Image", widget: "image", media_folder: "../images/features",  allow_multiple: false}
                     - { label: "Background Color", name: "BackgroundColor", widget: "select", options: ["primary", "secondary", "info", "light", "white"], default: ["primary"]}
               - label: "Our mission"
                 name: "mission"
@@ -59,4 +61,4 @@ collections:
                 fields:
                   - { label: "Title", name: "title", widget: "string" }
                   - { label: "Background Color", name: "backgroundColor", widget: "select", options: ["primary", "secondary", "info", "light", "white"], default: ["primary"]}
-                  - {label: "Image", name: "image", widget: "image", media_folder: "./heros", allow_multiple: false, }
+                  - {label: "Image", name: "image", widget: "image", media_folder: "../images/heros", allow_multiple: false, }
