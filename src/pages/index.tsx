@@ -5,11 +5,11 @@ import Topics from '../sections/Topics';
 
 import Layout from '../components/layout/Layout';
 import Hero from '../components/hero/Hero';
-import content from "./index.content.yml";
+import content from './index.content.yml';
 
 const IndexPage: React.FC = () => {
-const {hero} = content.home;
-console.log(hero)
+  const { hero } = content.home;
+  console.log(hero);
 
   return (
     <Layout>
@@ -21,9 +21,7 @@ console.log(hero)
               alt={hero?.imgAlt}
               backgroundColor={hero?.backgroundColor}
               title={hero?.title}
-              description={
-                hero?.content
-              }
+              description={hero?.content}
             >
               <p>Search Component Placeholder</p>
             </Hero>

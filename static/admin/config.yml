@@ -22,10 +22,10 @@ collections:
                 name: "hero"
                 widget: "object"
                 fields:
-                  - { label: "Title", name: "Title", widget: "string" }
+                  - { label: "Title", name: "title", widget: "string" }
                   - { label: "Content", name: "content", widget: "markdown" }
-                  - { label: "Background Color", name: "BackgroundColor", widget: "select", options: ["primary", "secondary", "info", "light", "white"], default: ["primary"]}
-                  - {label: "Image", name: "Image", widget: "image", media_folder: "../images/heros", allow_multiple: false, }
+                  - { label: "Background Color", name: "backgroundColor", widget: "select", options: ["primary", "secondary", "info", "light", "white"], default: ["primary"]}
+                  - {label: "Image", name: "image", widget: "image", media_folder: "../images/heros", allow_multiple: false, }
                   - { label: "Image Alt Text", name: "imgAlt", widget: "string" }
               - label: "Features"
                 name: "features"
@@ -37,29 +37,29 @@ collections:
                     widget: "object"
                     fields:
                     - {label: "Title", name: "title", widget: "string"}
-                    - {label: "Content", name: "Content", widget: "markdown"}
-                    - {label: "Image", name: "Image", widget: "image", media_folder: "../images/features",  allow_multiple: false}
+                    - {label: "Content", name: "content", widget: "markdown"}
+                    - {label: "Image", name: "image", widget: "image", media_folder: "../images/features",  allow_multiple: false}
                     - { label: "Image Alt Text", name: "imgAlt", widget: "string" }
-                    - { label: "Background Color", name: "BackgroundColor", widget: "select", options: ["primary", "secondary", "info", "light", "white"], default: ["primary"]}
+                    - { label: "Background Color", name: "backgroundColor", widget: "select", options: ["primary", "secondary", "info", "light", "white"], default: ["primary"]}
                     - { label: "CTA", name: "cta", widget: "string"}
                   - label: "Medium  Feature"
                     name: "mediumFeature"
                     widget: "object"
                     fields:
                     - {label: "Title", name: "title", widget: "string"}
-                    - {label: "Content", name: "Content", widget: "markdown"}
-                    - {label: "Image", name: "Image", widget: "image", media_folder: "../images/features",  allow_multiple: false}
+                    - {label: "Content", name: "content", widget: "markdown"}
+                    - {label: "Image", name: "image", widget: "image", media_folder: "../images/features",  allow_multiple: false}
                     - { label: "Image Alt Text", name: "imgAlt", widget: "string" }
-                    - { label: "Background Color", name: "BackgroundColor", widget: "select", options: ["primary", "secondary", "info", "light", "white"], default: ["primary"]}
+                    - { label: "Background Color", name: "backgroundColor", widget: "select", options: ["primary", "secondary", "info", "light", "white"], default: ["primary"]}
                   - label: "Small Feature"
                     name: "smallFeature"
                     widget: "object"
                     fields:
                     - {label: "Title", name: "title", widget: "string"}
-                    - {label: "Content", name: "Content", widget: "markdown"}
-                    - {label: "Image", name: "Image", widget: "image", media_folder: "../images/features",  allow_multiple: false}
+                    - {label: "Content", name: "content", widget: "markdown"}
+                    - {label: "Image", name: "image", widget: "image", media_folder: "../images/features",  allow_multiple: false}
                     - { label: "Image Alt Text", name: "imgAlt", widget: "string" }
-                    - { label: "Background Color", name: "BackgroundColor", widget: "select", options: ["primary", "secondary", "info", "light", "white"], default: ["primary"]}
+                    - { label: "Background Color", name: "backgroundColor", widget: "select", options: ["primary", "secondary", "info", "light", "white"], default: ["primary"]}
               - label: "Our mission"
                 name: "mission"
                 widget: "object"
