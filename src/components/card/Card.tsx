@@ -23,7 +23,7 @@ export type CardProps = {
   imgAlt?: string;
   link?: string;
   linkText?: string;
-  children?: React.ReactNode;
+  content?: string;
 };
 
 const gridLayouts = { topic: true, sm: 4, md: 8, lg: 12 };
@@ -42,7 +42,7 @@ export default function Card({
   imgAlt,
   link,
   linkText,
-  children,
+  content,
   layout = 'lg',
 }: CardProps) {
   let imageComponent;
@@ -82,7 +82,7 @@ export default function Card({
           {imageComponent}
         </CardMedia>
       )}
-      {children && <CardBody className="content">{children}</CardBody>}
+      {content && <CardBody className="content">{content}</CardBody>}
       {layout === 'lg' && link ? (
         <CardFooter>
           <Button

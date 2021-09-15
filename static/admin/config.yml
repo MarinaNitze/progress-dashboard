@@ -27,8 +27,8 @@ collections:
                   - { label: "Background Color", name: "backgroundColor", widget: "select", options: ["primary", "secondary", "info", "light", "white"], default: ["primary"]}
                   - {label: "Image", name: "image", widget: "image", media_folder: "../images/heros", allow_multiple: false, }
                   - { label: "Image Alt Text", name: "imgAlt", widget: "string" }
-                  - { label: "Link", name: "link", widget: "string"}
-                  - {label: "Link Text", name: "linkText", widget: string}
+                  - { label: "Link", name: "link", widget: "string", required: false}
+                  - {label: "Link Text", name: "linkText", widget: string, required: false}
               - label: "Features"
                 name: "features"
                 widget: "object"
@@ -45,7 +45,7 @@ collections:
                     - { label: "Background Color", name: "backgroundColor", widget: "select", options: ["primary", "secondary", "info", "light", "white"], default: ["primary"]}
                     - { label: "Link", name: "link", widget: "string"}
                     - {label: "Link Text", name: "linkText", widget: string}
-                    - {label: "Layout", name: "layout", widget: "hidden", default: "lg"}
+                    - {label: "Layout", name: "layout", widget: "select", options: ["topic", "lg", "md", "sm"], default: ["lg"]}
                   - label: "Medium  Feature"
                     name: "mediumFeature"
                     widget: "object"
@@ -57,7 +57,7 @@ collections:
                     - {label: "Image", name: "image", widget: "image", media_folder: "../images/features",  allow_multiple: false}
                     - { label: "Image Alt Text", name: "imgAlt", widget: "string" }
                     - { label: "Background Color", name: "backgroundColor", widget: "select", options: ["primary", "secondary", "info", "light", "white"], default: ["primary"]}
-                    - {label: "Layout", name: "layout", widget: "hidden", default: "lg"}
+                    - {label: "Layout", name: "layout", widget: "select", options: ["topic", "lg", "md", "sm"], default: ["md"]}
                   - label: "Small Feature"
                     name: "smallFeature"
                     widget: "object"
@@ -69,15 +69,15 @@ collections:
                     - {label: "Image", name: "image", widget: "image", media_folder: "../images/features",  allow_multiple: false}
                     - { label: "Image Alt Text", name: "imgAlt", widget: "string" }
                     - { label: "Background Color", name: "backgroundColor", widget: "select", options: ["primary", "secondary", "info", "light", "white"], default: ["primary"]}
-                    - {label: "Layout", name: "layout", widget: "hidden", default: "lg"}
+                    - {label: "Layout", name: "layout", widget: "select", options: ["topic", "lg", "md", "sm"], default: ["sm"]}
               - label: "Our mission"
                 name: "mission"
                 widget: "object"
                 fields:
                   - { label: "Title", name: "title", widget: "string" }
                   - { label: "Content", name: "content", widget: "markdown" }
-                  - { label: "Link", name: "link", widget: "string"}
-                  - {label: "Link Text", name: "linkText", widget: string}
+                  - { label: "Link", name: "link", widget: "string", required: false}
+                  - {label: "Link Text", name: "linkText", widget: string, required: false}
                   - {label: "Image", name: "image", widget: "image", media_folder: "../images/heros", allow_multiple: false, }
                   - { label: "Image Alt Text", name: "imgAlt", widget: "string" }
                   - { label: "Background Color", name: "backgroundColor", widget: "select", options: ["primary", "secondary", "info", "light", "white"], default: ["primary"]}
