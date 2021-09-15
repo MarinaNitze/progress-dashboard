@@ -11,13 +11,19 @@ li.usa-card {
 }
 
 .card .sm {
-  background-color: $white;
   justify-content: center;
 }
 
+.primary {
+  background-color: $white;
+}
+
 .card .md {
-  background-color: $primary;
   justify-content: center;
+}
+
+.primary {
+  background-color: $primary;
 }
 
 .card .lg {

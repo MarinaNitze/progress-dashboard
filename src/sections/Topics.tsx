@@ -13,53 +13,60 @@ export default function TopicsSection() {
   // TODO: pull card list from cms
   const cardList: Array<CardProps> = [
     {
-      heading: 'Foster Parent Licensing',
+      title: 'Foster Parent Licensing',
       layout: 'topic',
-      imgPath: 'images/topics/Topic-FPL.svg',
+      backgroundColor: 'light',
+      image: 'images/topics/Topic-FPL.svg',
       imgAlt: 'Foster Parent Licensing Icon',
-      linkDestination: '/topic/foster-parent-licensing',
+      link: '/topic/foster-parent-licensing',
     },
     {
-      heading: 'Background Checks',
+      title: 'Background Checks',
       layout: 'topic',
-      imgPath: 'images/topics/Topic-BC.svg',
+      backgroundColor: 'light',
+      image: 'images/topics/Topic-BC.svg',
       imgAlt: 'Background Checks Icon',
-      linkDestination: '/topic/background-checks',
+      link: '/topic/background-checks',
     },
     {
-      heading: 'Extended Foster Care',
+      title: 'Extended Foster Care',
       layout: 'topic',
-      imgPath: 'images/topics/Topic-EFC.svg',
+      backgroundColor: 'light',
+      image: 'images/topics/Topic-EFC.svg',
       imgAlt: 'Extended Foster Care Icon',
-      linkDestination: '/CTA',
+      link: '/CTA',
     },
     {
-      heading: 'Family Finding',
+      title: 'Family Finding',
       layout: 'topic',
-      imgPath: 'images/topics/Topic-FF.svg',
+      backgroundColor: 'light',
+      image: 'images/topics/Topic-FF.svg',
       imgAlt: 'Family Finding Icon',
-      linkDestination: '/topic/family-finding',
+      link: '/topic/family-finding',
     },
     {
-      heading: 'Inquiry management',
+      title: 'Inquiry management',
       layout: 'topic',
-      imgPath: 'images/topics/Topic-IM.svg',
+      backgroundColor: 'light',
+      image: 'images/topics/Topic-IM.svg',
       imgAlt: 'Inquiry Management Icon',
-      linkDestination: '/topic/inquiry-management',
+      link: '/topic/inquiry-management',
     },
     {
-      heading: 'License Renewal',
+      title: 'License Renewal',
       layout: 'topic',
-      imgPath: 'images/topics/Topic-LR.svg',
+      backgroundColor: 'light',
+      image: 'images/topics/Topic-LR.svg',
       imgAlt: 'Licensing Renewal Icon',
-      linkDestination: '/topic/license-renewal',
+      link: '/topic/license-renewal',
     },
     {
-      heading: 'Recruitment',
+      title: 'Recruitment',
       layout: 'topic',
-      imgPath: 'images/topics/Topic-Recruitment.svg',
+      backgroundColor: 'light',
+      image: 'images/topics/Topic-Recruitment.svg',
       imgAlt: 'Recruitment Icon',
-      linkDestination: '/topic/recruitment',
+      link: '/topic/recruitment',
     },
   ];
 
@@ -79,7 +86,7 @@ export default function TopicsSection() {
         <Grid>
           <CardGroup>
             {cardList.map(c => (
-              <Card key={c.heading} {...c} />
+              <Card key={c.title} {...c} />
             ))}
           </CardGroup>
         </Grid>

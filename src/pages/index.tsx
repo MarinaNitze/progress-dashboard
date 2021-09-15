@@ -9,7 +9,6 @@ import content from './index.content.yml';
 
 const IndexPage: React.FC = () => {
   const { hero } = content.home;
-  console.log(hero);
 
   return (
     <Layout>
@@ -17,11 +16,11 @@ const IndexPage: React.FC = () => {
         <section id="test-section-id" className="usa-section cwp-section">
           <GridContainer>
             <Hero
-              path="images/heros/hero-home.png"
+              path={hero?.image.slice(3)}
               alt={hero?.imgAlt}
               backgroundColor={hero?.backgroundColor}
               title={hero?.title}
-              description={hero?.content}
+              content={hero?.content}
             >
               <p>Search Component Placeholder</p>
             </Hero>

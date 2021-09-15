@@ -7,7 +7,7 @@ describe('Card', () => {
   it('renders card', () => {
     const contentBody = 'Content body';
     const { getByText } = render(
-      <Card heading="Content Header">
+      <Card title="Content Header" backgroundColor="primary">
         <p>Content body</p>
       </Card>,
     );
