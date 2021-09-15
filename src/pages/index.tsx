@@ -5,8 +5,12 @@ import Topics from '../sections/Topics';
 
 import Layout from '../components/layout/Layout';
 import Hero from '../components/hero/Hero';
+import content from "./index.content.yml";
 
 const IndexPage: React.FC = () => {
+const {hero} = content.home;
+console.log(hero)
+
   return (
     <Layout>
       <main className="cwp-main">
@@ -14,11 +18,11 @@ const IndexPage: React.FC = () => {
           <GridContainer>
             <Hero
               path="images/heros/hero-home.png"
-              alt="Hero Image"
-              backgroundColor="primary"
-              title={'[Playbook Tagline]'}
+              alt={hero?.imgAlt}
+              backgroundColor={hero?.backgroundColor}
+              title={hero?.title}
               description={
-                'Quick intro that sets the stage for the site, what people can do, and how to do it.'
+                hero?.content
               }
             >
               <p>Search Component Placeholder</p>
