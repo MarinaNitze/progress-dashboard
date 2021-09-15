@@ -7,6 +7,8 @@ home:
     backgroundColor: primary
     image: ../images/heros/hero-home.png
     imgAlt: Hero image
+    link: hero
+    linkText: hero link
   features:
     whatsNew: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Luctus massa
       natoque risus ut porttitor. Urna commodo amet non massa dui quis. Id
@@ -20,6 +22,8 @@ home:
       link: CTA
       title: Full width feature
       imgAlt: full width feature image
+      link: cta
+      linkText: cta
     mediumFeature:
       content: Will serve as an intermediate block for when there aren’t a ton of new
         updates, but we still want to make an impact visually, but not compete
@@ -29,6 +33,8 @@ home:
       backgroundColor: primary
       title: Medium feature
       imgAlt: medium feature image
+      link: medium link
+      linkText: medium link text
     smallFeature:
       content: Smaller impact, themed curated list of new items. Likely linked ULs
         with possible H4 heading format to cateogorize as needed. Could be
@@ -37,6 +43,8 @@ home:
       backgroundColor: white
       title: Small feature
       imgAlt: small feature image
+      link: small link
+      linkText: small link text
   mission:
     title: Our mission test
     backgroundColor: light
@@ -48,3 +56,5 @@ home:
       replicated and scaled by others. If you’re interested in joining our team,
       read our membership requirements.
     imgAlt: mission image
+    link: mission link
+    linkText: mission link text
