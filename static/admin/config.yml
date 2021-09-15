@@ -1,10 +1,8 @@
 backend:
   name: github
   repo: Bloom-Works/progress-dashboard
-  branch: production
 
-media_folder: static/img
-public_folder: /img
+media_folder: src/images
 
 collections:
   - name: "pages"
@@ -14,8 +12,51 @@ collections:
         name: "index"
         file: "src/pages/index.content.yml"
         fields:
-          - label: Home
-            name: home
-            widget: object
+          - label: "Home"
+            name: "home"
+            widget: "object"
             fields:
-              - { label: Title, name: title, widget: string }
+              - label: "Hero"
+                name: "hero"
+                widget: "object"
+                fields:
+                  - { label: "Hero Title", name: "heroTitle", widget: "string" }
+                  - { label: "Hero Background Color", name: "heroBackgroundColor", widget: "select", options: ["primary", "secondary", "info", "light", "white"], default: ["primary"]}
+                  - {label: "Hero Image", name: "heroImage", widget: "image", media_folder: "./heros", allow_multiple: false, }
+              - label: "Features"
+                name: "features"
+                widget: "object"
+                fields:
+                  - { label: "What's new", name: "whatsNew", widget: "markdown"}
+                  - label: "Large Feature"
+                    name: "largeFeature"
+                    widget: "object"
+                    fields:
+                    - {label: "Header", name: "Header", widget: "string"}
+                    - {label: "Content", name: "Content", widget: "markdown"}
+                    - {label: "Image", name: "Image", widget: "image", media_folder: "./features",  allow_multiple: false}
+                    - { label: "Background Color", name: "BackgroundColor", widget: "select", options: ["primary", "secondary", "info", "light", "white"], default: ["primary"]}
+                    - { label: "CTA", name: "cta", widget: "string"}
+                  - label: "Medium  Feature"
+                    name: "mediumFeature"
+                    widget: "object"
+                    fields:
+                    - {label: "Header", name: "Header", widget: "string"}
+                    - {label: "Content", name: "Content", widget: "markdown"}
+                    - {label: "Image", name: "Image", widget: "image", media_folder: "./features",  allow_multiple: false}
+                    - { label: "Background Color", name: "BackgroundColor", widget: "select", options: ["primary", "secondary", "info", "light", "white"], default: ["primary"]}
+                  - label: "Small Feature"
+                    name: "smallFeature"
+                    widget: "object"
+                    fields:
+                    - {label: "Header", name: "Header", widget: "string"}
+                    - {label: "Content", name: "Content", widget: "markdown"}
+                    - {label: "Image", name: "Image", widget: "image", media_folder: "./features",  allow_multiple: false}
+                    - { label: "Background Color", name: "BackgroundColor", widget: "select", options: ["primary", "secondary", "info", "light", "white"], default: ["primary"]}
+              - label: "Our mission"
+                name: "mission"
+                widget: "object"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Background Color", name: "backgroundColor", widget: "select", options: ["primary", "secondary", "info", "light", "white"], default: ["primary"]}
+                  - {label: "Image", name: "image", widget: "image", media_folder: "./heros", allow_multiple: false, }
