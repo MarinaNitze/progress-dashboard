@@ -12,11 +12,7 @@ const headerLinks = [
   },
 ];
 
-describe('when useScrollDirection rendered', () => {
-  afterAll(() => {
-    jest.resetAllMocks();
-  });
-
+describe('when useHeaderLinks rendered', () => {
   it('should contain two links', () => {
     const { result } = renderHook(() => useHeaderLinks(headerLinks));
 
