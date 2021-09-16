@@ -1,10 +1,9 @@
 import React, { ReactNode } from 'react';
 import Header from '../header/Header';
-import { HeaderLinks } from '../header/useHeaderLinks';
 
 import SEO from '../seo/Seo';
 
-const headerLinks: HeaderLinks = [
+const headerLinks = [
   {
     to: '/topic',
     text: 'Topics',

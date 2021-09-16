@@ -5,9 +5,9 @@ import {
   PrimaryNav,
 } from '@trussworks/react-uswds';
 import useGatsbyImages from '../../hooks/useGatsbyImages';
-import useHeaderLinks, { HeaderLinks } from './useHeaderLinks';
 import useScrollDirection from '../../hooks/useScrollDirection';
-import { navigate } from 'gatsby-link';
+import { GatsbyLinkProps, navigate } from 'gatsby-link';
+import { Link } from 'gatsby';
 
 import './Header.scss';
 
@@ -15,12 +15,18 @@ type HeaderProps = {
   headerLinks: HeaderLinks;
 };
 
+type HeaderLinks = (GatsbyLinkProps<unknown> & {
+  iconPath?: string;
+  iconClassname?: string;
+  iconAlt?: string;
+  text: string;
+})[];
+
 export default function Header({ headerLinks }: HeaderProps) {
   const [expanded, setExpanded] = useState(false);
   const scrollRef = useRef(0);
   const direction = useScrollDirection(scrollRef);
   const svgLogo = useGatsbyImages()['images/header/cwp-logo.svg'];
-  const { renderHeaderLinks } = useHeaderLinks(headerLinks);
 
   const onClickExpand = useCallback(() => {
     setExpanded(prvExpanded => !prvExpanded);
@@ -28,7 +34,22 @@ export default function Header({ headerLinks }: HeaderProps) {
 
   const onClickNavigateHome = useCallback(() => {
     navigate('/');
-  }, []);
+  }, [navigate]);
+
+  const renderHeaderLinks = useCallback(() => {
+    return headerLinks.map(link => (
+      <Link to={link.to}>
+        {link.text}
+        {link.iconPath && (
+          <img
+            className={link.iconClassname}
+            src={useGatsbyImages()[link.iconPath].publicURL}
+            alt={link.iconAlt}
+          />
+        )}
+      </Link>
+    ));
+  }, [headerLinks]);
 
   return (
     <>

@@ -1,10 +1,9 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import { HeaderLinks } from './useHeaderLinks';
 
 import Header from './Header';
 
-const headerLinks: HeaderLinks = [
+const headerLinks = [
   {
     to: '/topic',
     text: 'Topics',
