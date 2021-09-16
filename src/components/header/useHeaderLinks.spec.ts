@@ -17,7 +17,7 @@ describe('when useScrollDirection rendered', () => {
     jest.resetAllMocks();
   });
 
-  it('should default scroll to "down"', () => {
+  it('should contain two links', () => {
     const { result } = renderHook(() => useHeaderLinks(headerLinks));
 
     const links = result.current.renderHeaderLinks();

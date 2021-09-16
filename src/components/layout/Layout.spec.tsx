@@ -16,16 +16,8 @@ describe('Layout', () => {
           title: 'Progress Dashboard',
         },
       },
+      // This is mapped to property name in the test-utils mocked images
       ...mockImageData(),
-    });
-
-    jest.mock('../../hooks/useGatsbyImages', () => {
-      return jest.fn(() => ({
-        // This is mapped to property name in the test-utils mocked images
-        'images/header/search.svg': {
-          publicURL: '/static/188086bb11fd11789d6bd9a30a11abfb/cwp-logo.svg',
-        },
-      }));
     });
   });
 
