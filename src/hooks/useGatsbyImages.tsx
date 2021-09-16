@@ -6,7 +6,7 @@ type useGatsbyImageResponse = {
 };
 
 export default function useGatsbyImages(): useGatsbyImageResponse {
-  const { heroImages, topicImages, featureImages } =
+  const { heroImages, topicImages, featureImages, headerImages } =
     useStaticQuery<HeroAndCardImagesQuery>(graphql`
       query HeroAndCardImages {
         heroImages: allFile(
@@ -52,10 +52,21 @@ export default function useGatsbyImages(): useGatsbyImageResponse {
             }
           }
         }
+        headerImages: allFile(
+          filter: { relativeDirectory: { eq: "images/header" } }
+        ) {
+          edges {
+            node {
+              relativePath
+              extension
+              publicURL
+            }
+          }
+        }
       }
     `);
 
-  const images = [heroImages, topicImages, featureImages].reduce(
+  const images = [heroImages, topicImages, featureImages, headerImages].reduce(
     (acc, images) => {
       images?.edges.forEach(edge => {
         const path: string = edge.node.relativePath;

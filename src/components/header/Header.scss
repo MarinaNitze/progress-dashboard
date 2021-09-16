@@ -1,0 +1,52 @@
+@import '../../styles/settings.scss';
+
+.usa-header.cwp-header {
+  background-color: $primary;
+  border-bottom: 0.2rem solid $white;
+  a {
+    color: $header-text;
+    font-size: 1.125rem;
+  }
+
+  .usa-nav.cwp-nav {
+    padding: 1rem 0 1rem 0.5rem;
+  }
+
+  .cwp-logo {
+    vertical-align: super;
+    margin: auto;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .search-icon {
+    padding-left: 0.5rem;
+    margin: auto;
+  }
+
+  @media (max-width: 800px) {
+    &.sticky-nav {
+      position: sticky;
+      top: 0px;
+    }
+
+    .usa-nav.cwp-nav {
+      padding: 1rem;
+    }
+  }
+
+  @media (min-width: 64em) {
+    .usa-nav-container {
+      max-width: 90%;
+    }
+
+    .usa-nav__primary-item {
+      margin: 0 1rem 0 1rem;
+    }
+  }
+
+  .usa-menu-btn {
+    background-color: $secondary;
+  }
+}

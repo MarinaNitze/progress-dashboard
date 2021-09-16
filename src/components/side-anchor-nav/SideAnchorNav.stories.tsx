@@ -1,4 +1,4 @@
-import React, { createContext, useEffect, useCallback } from 'react';
+import React, { createContext, useEffect } from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { Grid, GridContainer } from '@trussworks/react-uswds';
 import { useState, useRef } from '@storybook/addons';
@@ -54,12 +54,12 @@ const Template: ComponentStory<typeof SideAnchorNav> = () => {
   const thirdRef = useRef(null);
   const [anchorLinks, setAnchorLinks] = useState(testItems);
 
-  const go = useCallback((toRef: React.RefObject<HTMLElement> | null) => {
+  const go = (toRef: React.RefObject<HTMLElement> | null) => {
     if (toRef?.current) {
       window.scrollTo(0, toRef.current.offsetTop);
       toRef.current.focus();
     }
-  }, []);
+  };
 
   useEffect(() => {
     const refs = [mainRef, secondRef, thirdRef];

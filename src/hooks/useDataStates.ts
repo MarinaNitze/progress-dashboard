@@ -1,5 +1,4 @@
 import { useStaticQuery, graphql } from 'gatsby';
-import { useCallback } from 'react';
 import { StatesDataQuery } from '../../graphql-types';
 
 export default function useDataStates() {
@@ -17,23 +16,20 @@ export default function useDataStates() {
     }
   `);
 
-  const mapStates = useCallback(
-    (states: StatesDataQuery['statesData']['nodes']) => {
-      return states.reduce<{ [key: string]: { name: string; abbrev: string } }>(
-        (statesMap, { data }) => {
-          return {
-            ...statesMap,
-            [data?.code ?? 'missing code']: {
-              name: data?.name ?? '',
-              abbrev: data?.abbrev ?? '',
-            },
-          };
-        },
-        {},
-      );
-    },
-    [statesData],
-  );
+  const mapStates = (states: StatesDataQuery['statesData']['nodes']) => {
+    return states.reduce<{ [key: string]: { name: string; abbrev: string } }>(
+      (statesMap, { data }) => {
+        return {
+          ...statesMap,
+          [data?.code ?? 'missing code']: {
+            name: data?.name ?? '',
+            abbrev: data?.abbrev ?? '',
+          },
+        };
+      },
+      {},
+    );
+  };
 
   return { statesData: mapStates(statesData?.nodes ?? []) };
 }
