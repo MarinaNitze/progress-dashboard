@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import {
   Header as HeaderCmp,
   NavMenuButton,
@@ -28,9 +28,9 @@ export default function Header({ headerLinks }: HeaderProps) {
   const direction = useScrollDirection(scrollRef);
   const svgLogo = useGatsbyImages()['images/header/cwp-logo.svg'];
 
-  const onClickExpand = useCallback(() => {
+  const onClickExpand = () => {
     setExpanded(prvExpanded => !prvExpanded);
-  }, [setExpanded]);
+  };
 
   const onClickNavigateHome = () => {
     navigate('/');
