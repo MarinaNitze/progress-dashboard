@@ -32,24 +32,22 @@ export default function Header({ headerLinks }: HeaderProps) {
     setExpanded(prvExpanded => !prvExpanded);
   }, [setExpanded]);
 
-  const onClickNavigateHome = useCallback(() => {
+  const onClickNavigateHome = () => {
     navigate('/');
-  }, [navigate]);
-
-  const renderHeaderLinks = () => {
-    return headerLinks.map(link => (
-      <Link to={link.to}>
-        {link.text}
-        {link.iconPath && (
-          <img
-            className={link.iconClassname}
-            src={useGatsbyImages()[link.iconPath].publicURL}
-            alt={link.iconAlt}
-          />
-        )}
-      </Link>
-    ));
   };
+
+  const renderHeaderLinks = headerLinks.map(link => (
+    <Link to={link.to}>
+      {link.text}
+      {link.iconPath && (
+        <img
+          className={link.iconClassname}
+          src={useGatsbyImages()[link.iconPath].publicURL}
+          alt={link.iconAlt}
+        />
+      )}
+    </Link>
+  ));
 
   return (
     <>
@@ -70,7 +68,7 @@ export default function Header({ headerLinks }: HeaderProps) {
           </div>
           <PrimaryNav
             className="cwp-nav"
-            items={renderHeaderLinks()}
+            items={renderHeaderLinks}
             mobileExpanded={expanded}
             onToggleMobileNav={onClickExpand}
           ></PrimaryNav>
