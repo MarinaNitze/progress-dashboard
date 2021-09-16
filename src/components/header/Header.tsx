@@ -36,19 +36,6 @@ export default function Header({ headerLinks }: HeaderProps) {
     navigate('/');
   };
 
-  const renderHeaderLinks = headerLinks.map(link => (
-    <Link to={link.to}>
-      {link.text}
-      {link.iconPath && (
-        <img
-          className={link.iconClassname}
-          src={useGatsbyImages()[link.iconPath].publicURL}
-          alt={link.iconAlt}
-        />
-      )}
-    </Link>
-  ));
-
   return (
     <>
       <div className={`usa-overlay ${expanded ? 'is-visible' : ''}`}></div>
@@ -68,7 +55,18 @@ export default function Header({ headerLinks }: HeaderProps) {
           </div>
           <PrimaryNav
             className="cwp-nav"
-            items={renderHeaderLinks}
+            items={headerLinks.map(link => (
+              <Link to={link.to}>
+                {link.text}
+                {link.iconPath && (
+                  <img
+                    className={link.iconClassname}
+                    src={useGatsbyImages()[link.iconPath].publicURL}
+                    alt={link.iconAlt}
+                  />
+                )}
+              </Link>
+            ))}
             mobileExpanded={expanded}
             onToggleMobileNav={onClickExpand}
           ></PrimaryNav>
