@@ -7,9 +7,9 @@ import {
 import useGatsbyImages from '../../hooks/useGatsbyImages';
 import useHeaderLinks, { HeaderLinks } from './useHeaderLinks';
 import useScrollDirection from '../../hooks/useScrollDirection';
+import { navigate } from 'gatsby-link';
 
 import './Header.scss';
-import { navigate } from 'gatsby-link';
 
 type HeaderProps = {
   headerLinks: HeaderLinks;
