@@ -36,7 +36,7 @@ export default function Header({ headerLinks }: HeaderProps) {
     navigate('/');
   }, [navigate]);
 
-  const renderHeaderLinks = useCallback(() => {
+  const renderHeaderLinks = () => {
     return headerLinks.map(link => (
       <Link to={link.to}>
         {link.text}
@@ -49,7 +49,7 @@ export default function Header({ headerLinks }: HeaderProps) {
         )}
       </Link>
     ));
-  }, [headerLinks]);
+  };
 
   return (
     <>
