@@ -1,15 +1,28 @@
 @import '../../styles/settings.scss';
 
-.usa-header.pd-header {
+.usa-header.cwp-header {
   background-color: $primary;
   border-bottom: 0.2rem solid $white;
   a {
-    color: #333240;
+    color: $header-text;
     font-size: 1.125rem;
   }
 
-  .usa-nav.pd-nav {
+  .usa-nav.cwp-nav {
     padding: 1rem 0 1rem 0.5rem;
+  }
+
+  .cwp-logo {
+    vertical-align: super;
+    margin: auto;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .search-icon {
+    padding-left: 0.5rem;
+    margin: auto;
   }
 
   @media (max-width: 800px) {
@@ -18,7 +31,7 @@
       top: 0px;
     }
 
-    .usa-nav.pd-nav {
+    .usa-nav.cwp-nav {
       padding: 1rem;
     }
   }

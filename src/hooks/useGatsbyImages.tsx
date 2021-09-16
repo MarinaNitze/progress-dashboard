@@ -6,56 +6,65 @@ type useGatsbyImageResponse = {
 };
 
 export default function useGatsbyImages(): useGatsbyImageResponse {
-  const { heroImages, topicImages, featureImages } =
-    useStaticQuery<HeroAndCardImagesQuery>(graphql`
-      query HeroAndCardImages {
-        heroImages: allFile(
-          filter: { relativeDirectory: { eq: "images/heros" } }
-        ) {
-          edges {
-            node {
-              relativePath
-              childImageSharp {
-                gatsbyImageData(
-                  placeholder: BLURRED
-                  formats: [AUTO, WEBP, AVIF]
-                )
-              }
-              extension
+  const {
+    heroImages,
+    topicImages,
+    featureImages,
+    headerImages,
+  } = useStaticQuery<HeroAndCardImagesQuery>(graphql`
+    query HeroAndCardImages {
+      heroImages: allFile(
+        filter: { relativeDirectory: { eq: "images/heros" } }
+      ) {
+        edges {
+          node {
+            relativePath
+            childImageSharp {
+              gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
             }
-          }
-        }
-        featureImages: allFile(
-          filter: { relativeDirectory: { eq: "images/features" } }
-        ) {
-          edges {
-            node {
-              relativePath
-              childImageSharp {
-                gatsbyImageData(
-                  placeholder: BLURRED
-                  formats: [AUTO, WEBP, AVIF]
-                )
-              }
-              extension
-            }
-          }
-        }
-        topicImages: allFile(
-          filter: { relativeDirectory: { eq: "images/topics" } }
-        ) {
-          edges {
-            node {
-              relativePath
-              extension
-              publicURL
-            }
+            extension
           }
         }
       }
-    `);
+      featureImages: allFile(
+        filter: { relativeDirectory: { eq: "images/features" } }
+      ) {
+        edges {
+          node {
+            relativePath
+            childImageSharp {
+              gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
+            }
+            extension
+          }
+        }
+      }
+      topicImages: allFile(
+        filter: { relativeDirectory: { eq: "images/topics" } }
+      ) {
+        edges {
+          node {
+            relativePath
+            extension
+            publicURL
+          }
+        }
+      }
+      headerImages: allFile(
+        filter: { relativeDirectory: { eq: "images/header" } }
+      ) {
+        edges {
+          node {
+            relativePath
+            extension
+            publicURL
+          }
+        }
+      }
+    }
+  `);
 
-  const images = [heroImages, topicImages, featureImages].reduce(
+  const images = [heroImages, topicImages, featureImages, headerImages].reduce(
     (acc, images) => {
       images?.edges.forEach(edge => {
         const path: string = edge.node.relativePath;

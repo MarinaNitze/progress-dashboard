@@ -9,6 +9,7 @@ $info: #522a10;
 $light: #d9d9d9;
 $white: #fff;
 $dark: #000;
+$header-text: #333240;
 
 /* TYPOGRAPHY */
 $theme-respect-user-font-size: true;
@@ -37,20 +38,37 @@ $theme-card-border-width: 0;
   border: 3px solid $secondary !important;
 }
 
-@media(min-width: 40em){
-
+@media (min-width: 40em) {
   .usa-card--flag .usa-card__media {
     width: 22.5rem !important;
     align-items: center;
   }
 
-    .usa-card--flag .usa-card__body, .usa-card--flag .usa-card__footer, .usa-card--flag .usa-card__header {
+  .usa-card--flag .usa-card__body,
+  .usa-card--flag .usa-card__footer,
+  .usa-card--flag .usa-card__header {
     margin-left: 22.5rem !important;
   }
 
-  .usa-card--flag.usa-card--media-right .usa-card__body, .usa-card--flag.usa-card--media-right .usa-card__footer, .usa-card--flag.usa-card--media-right .usa-card__header {
+  .usa-card--flag.usa-card--media-right .usa-card__body,
+  .usa-card--flag.usa-card--media-right .usa-card__footer,
+  .usa-card--flag.usa-card--media-right .usa-card__header {
     margin-right: 22.5rem !important;
     margin-left: 0 !important;
   }
 
+  main.cwp-main {
+    border-top: none;
+    .usa-section.cwp-section {
+      padding-top: 0;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  main.cwp-main {
+    .usa-section.cwp-section {
+      padding-top: 0;
+    }
+  }
 }

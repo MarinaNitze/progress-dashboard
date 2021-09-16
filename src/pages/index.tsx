@@ -9,8 +9,8 @@ import Hero from '../components/hero/Hero';
 const IndexPage: React.FC = () => {
   return (
     <Layout>
-      <main>
-        <section id="test-section-id" className="usa-section">
+      <main className="cwp-main">
+        <section id="test-section-id" className="usa-section cwp-section">
           <GridContainer>
             <Hero
               path="images/heros/hero-home.png"
