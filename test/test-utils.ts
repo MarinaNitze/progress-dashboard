@@ -51,6 +51,16 @@ export const mockImageData = () => ({
       },
     ],
   },
+  footerImages: {
+    edges: [
+      {
+        node: {
+          extension: 'png',
+          relativePath: 'images/footer/foster-america.png',
+        },
+      },
+    ],
+  },
 });
 
 export const mockStaticData = <T = unknown>(data: T) =>

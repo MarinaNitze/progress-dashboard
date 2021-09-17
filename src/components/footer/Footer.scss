@@ -1,0 +1,59 @@
+.cwp-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 7rem;
+
+  .coop-container {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    .coop-text {
+      font-family: Petrona;
+      font-weight: bold;
+      font-size: 14px;
+    }
+    .logo-area {
+      display: flex;
+    }
+
+    .logo-img {
+      align-self: center;
+      &:not(first) {
+        margin-right: 2rem;
+        height: fit-content;
+      }
+    }
+  }
+
+  .cr-section {
+    align-self: flex-end;
+  }
+}
+
+@media (max-width: 800px) {
+  .cwp-footer {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 0;
+
+    .coop-container {
+      width: 100%;
+    }
+
+    .coop-text {
+      align-self: center;
+    }
+
+    .logo-area {
+      margin-right: 0;
+    }
+
+    .logo-img {
+      margin: 1rem;
+    }
+
+    .cr-section {
+      align-self: center;
+    }
+  }
+}
