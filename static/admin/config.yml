@@ -1,7 +1,7 @@
 backend:
   name: 'github'
   repo: 'Bloom-Works/progress-dashboard'
-  branch: 'main'
+  branch: 'feature/netlify-cms'
 publish_mode: 'editorial_workflow'
 
 media_folder: 'src/images'
@@ -32,7 +32,7 @@ collections:
               name: 'backgroundColor',
               widget: 'select',
               options: ['primary', 'secondary', 'info', 'light', 'white'],
-              default: ['primary'],
+              default: ['light'],
             }
           - { label: 'Image Alt Text', name: 'imgAlt', widget: 'string' }
       - {
@@ -41,10 +41,58 @@ collections:
           widget: image,
           media_folder: '/src/images/topics',
           allow_multiple: false,
+          hint: 'Must be an svg file type',
+          pattern:
+            [
+              '/.svg$/g',
+              'Detected file type was not .svg. File type must be .svg',
+            ],
         }
       - { label: 'About this topic', name: 'about', widget: 'markdown' }
       - { label: 'Why this matters', name: 'why', widget: 'markdown' }
       - { label: 'What we can do', name: 'what', widget: 'markdown' }
+      - { label: 'layout', name: 'layout', widget: 'hidden', default: 'topic' }
+  - name: 'recommendations'
+    label: 'Recommendations'
+    folder: 'src/pages/content/recommendations'
+    create: true
+    slug: 'index'
+    path: '{{title}}/index'
+    fields:
+      - { label: 'Title for url', name: 'title', widget: 'string' }
+      - { label: 'Title for heading', name: 'heading', widget: 'string' }
+      - {
+          label: 'About this recommendation',
+          name: 'about',
+          widget: 'markdown',
+        }
+      - { label: 'How to do this', name: 'how', widget: 'markdown' }
+      - {
+          label: 'Costs',
+          name: 'costs',
+          widget: 'list',
+          hint: 'Enter costs as comma-separated values',
+        }
+      - {
+          label: 'Benefits',
+          name: 'benefits',
+          widget: 'list',
+          hint: 'Enter benefits as comma-separated values',
+        }
+      - { label: 'Outcome Data', name: 'outcome', widget: 'markdown' }
+      - label: "Who's doing this"
+        name: 'who'
+        widget: 'object'
+        fields:
+          - {
+              label: 'Number of States & Territories',
+              name: 'number',
+              widget: 'number',
+              value_type: 'int',
+              max: 54,
+            }
+          - { label: 'Map Image', name: 'image', widget: 'image' }
+      - { label: 'Get inspiration', name: 'inspiration', widget: 'markdown' }
   - name: 'pages'
     label: 'Pages'
     files:
@@ -65,10 +113,8 @@ collections:
                   - {
                       label: 'Background Color',
                       name: 'backgroundColor',
-                      widget: 'select',
-                      options:
-                        ['primary', 'secondary', 'info', 'light', 'white'],
-                      default: ['primary'],
+                      widget: 'hidden',
+                      default: 'primary',
                     }
                   - {
                       label: 'Image',
@@ -118,9 +164,8 @@ collections:
                       - {
                           label: 'Layout',
                           name: 'layout',
-                          widget: 'select',
-                          options: ['topic', 'lg', 'md', 'sm'],
-                          default: ['lg'],
+                          widget: 'hidden',
+                          default: 'lg',
                         }
                   - label: 'Medium  Feature'
                     name: 'mediumFeature'
@@ -147,9 +192,8 @@ collections:
                       - {
                           label: 'Layout',
                           name: 'layout',
-                          widget: 'select',
-                          options: ['topic', 'lg', 'md', 'sm'],
-                          default: ['md'],
+                          widget: 'hidden',
+                          default: 'md',
                         }
                   - label: 'Small Feature'
                     name: 'smallFeature'
@@ -176,9 +220,8 @@ collections:
                       - {
                           label: 'Layout',
                           name: 'layout',
-                          widget: 'select',
-                          options: ['topic', 'lg', 'md', 'sm'],
-                          default: ['sm'],
+                          widget: 'hidden',
+                          default: 'sm',
                         }
               - label: 'Topics'
                 name: 'topics'
@@ -210,8 +253,6 @@ collections:
                   - {
                       label: 'Background Color',
                       name: 'backgroundColor',
-                      widget: 'select',
-                      options:
-                        ['primary', 'secondary', 'info', 'light', 'white'],
-                      default: ['primary'],
+                      widget: 'hidden',
+                      default: 'light',
                     }
