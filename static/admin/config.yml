@@ -1,101 +1,217 @@
 backend:
-  name: "github"
-  repo: "Bloom-Works/progress-dashboard"
-  branch: "main"
-publish_mode: "editorial_workflow"
+  name: 'github'
+  repo: 'Bloom-Works/progress-dashboard'
+  branch: 'main'
+publish_mode: 'editorial_workflow'
 
-media_folder: "src/images"
+media_folder: 'src/images'
 
 collections:
-  - name: "topics"
-    label: "Topics"
-    folder: "src/pages/content/topics"
+  - name: 'topics'
+    label: 'Topics'
+    folder: 'src/pages/content/topics'
     create: true
-    slug: "index"
-    path: "{{title}}/index"
+    slug: 'index'
+    path: '{{title}}/index'
     fields:
-      - { label: "Title for url", name: "title", widget: "string" }
-      - label: "Hero"
-        name: "hero"
-        widget: "object"
+      - { label: 'Title for url', name: 'title', widget: 'string' }
+      - label: 'Hero'
+        name: 'hero'
+        widget: 'object'
         fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - {label: "Image", name: "image", widget: "image", media_folder: "/src/images/heros", allow_multiple: false, }
-          - { label: "Background Color", name: "backgroundColor", widget: "select", options: ["primary", "secondary", "info", "light", "white"], default: ["primary"]}
-          - { label: "Image Alt Text", name: "imgAlt", widget: "string" }
-      - { label: "Icon", name: "image", widget: image, media_folder: "/src/images/topics", allow_multiple: false, }
-      - { label: "About this topic", name: "about", widget: "markdown"}
-      - { label: "Why this matters", name: "why", widget: "markdown"}
-      - { label: "What we can do", name: "what", widget: "markdown"}
-  - name: "pages"
-    label: "Pages"
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - {
+              label: 'Image',
+              name: 'image',
+              widget: 'image',
+              media_folder: '/src/images/heros',
+              allow_multiple: false,
+            }
+          - {
+              label: 'Background Color',
+              name: 'backgroundColor',
+              widget: 'select',
+              options: ['primary', 'secondary', 'info', 'light', 'white'],
+              default: ['primary'],
+            }
+          - { label: 'Image Alt Text', name: 'imgAlt', widget: 'string' }
+      - {
+          label: 'Icon',
+          name: 'image',
+          widget: image,
+          media_folder: '/src/images/topics',
+          allow_multiple: false,
+        }
+      - { label: 'About this topic', name: 'about', widget: 'markdown' }
+      - { label: 'Why this matters', name: 'why', widget: 'markdown' }
+      - { label: 'What we can do', name: 'what', widget: 'markdown' }
+  - name: 'pages'
+    label: 'Pages'
     files:
-      - label: "Main Page"
-        name: "index"
-        file: "src/pages/index.content.yml"
+      - label: 'Main Page'
+        name: 'index'
+        file: 'src/pages/index.content.yml'
         fields:
-          - label: "Home"
-            name: "home"
-            widget: "object"
+          - label: 'Home'
+            name: 'home'
+            widget: 'object'
             fields:
-              - label: "Hero"
-                name: "hero"
-                widget: "object"
+              - label: 'Hero'
+                name: 'hero'
+                widget: 'object'
                 fields:
-                  - { label: "Title", name: "title", widget: "string" }
-                  - { label: "Content", name: "content", widget: "markdown" }
-                  - { label: "Background Color", name: "backgroundColor", widget: "select", options: ["primary", "secondary", "info", "light", "white"], default: ["primary"]}
-                  - {label: "Image", name: "image", widget: "image", media_folder: "../images/heros", allow_multiple: false, }
-                  - { label: "Image Alt Text", name: "imgAlt", widget: "string" }
-              - label: "Features"
-                name: "features"
-                widget: "object"
+                  - { label: 'Title', name: 'title', widget: 'string' }
+                  - { label: 'Content', name: 'content', widget: 'markdown' }
+                  - {
+                      label: 'Background Color',
+                      name: 'backgroundColor',
+                      widget: 'select',
+                      options:
+                        ['primary', 'secondary', 'info', 'light', 'white'],
+                      default: ['primary'],
+                    }
+                  - {
+                      label: 'Image',
+                      name: 'image',
+                      widget: 'image',
+                      media_folder: '../images/heros',
+                      allow_multiple: false,
+                    }
+                  - {
+                      label: 'Image Alt Text',
+                      name: 'imgAlt',
+                      widget: 'string',
+                    }
+              - label: 'Features'
+                name: 'features'
+                widget: 'object'
                 fields:
-                  - { label: "What's new", name: "whatsNew", widget: "markdown"}
-                  - label: "Large Feature"
-                    name: "largeFeature"
-                    widget: "object"
+                  - {
+                      label: "What's new",
+                      name: 'whatsNew',
+                      widget: 'markdown',
+                    }
+                  - label: 'Large Feature'
+                    name: 'largeFeature'
+                    widget: 'object'
                     fields:
-                    - {label: "Title", name: "title", widget: "string"}
-                    - {label: "Content", name: "content", widget: "markdown"}
-                    - {label: "Image", name: "image", widget: "image", media_folder: "../images/features",  allow_multiple: false}
-                    - { label: "Image Alt Text", name: "imgAlt", widget: "string" }
-                    - { label: "Link", name: "link", widget: "string"}
-                    - {label: "Link Text", name: "linkText", widget: string}
-                    - {label: "Layout", name: "layout", widget: "select", options: ["topic", "lg", "md", "sm"], default: ["lg"]}
-                  - label: "Medium  Feature"
-                    name: "mediumFeature"
-                    widget: "object"
+                      - { label: 'Title', name: 'title', widget: 'string' }
+                      - {
+                          label: 'Content',
+                          name: 'content',
+                          widget: 'markdown',
+                        }
+                      - {
+                          label: 'Image',
+                          name: 'image',
+                          widget: 'image',
+                          media_folder: '../images/features',
+                          allow_multiple: false,
+                        }
+                      - {
+                          label: 'Image Alt Text',
+                          name: 'imgAlt',
+                          widget: 'string',
+                        }
+                      - { label: 'Link', name: 'link', widget: 'string' }
+                      - { label: 'Link Text', name: 'linkText', widget: string }
+                      - {
+                          label: 'Layout',
+                          name: 'layout',
+                          widget: 'select',
+                          options: ['topic', 'lg', 'md', 'sm'],
+                          default: ['lg'],
+                        }
+                  - label: 'Medium  Feature'
+                    name: 'mediumFeature'
+                    widget: 'object'
                     fields:
-                    - {label: "Title", name: "title", widget: "string"}
-                    - {label: "Content", name: "content", widget: "markdown"}
-                    - {label: "Image", name: "image", widget: "image", media_folder: "../images/features",  allow_multiple: false}
-                    - { label: "Image Alt Text", name: "imgAlt", widget: "string" }
-                    - {label: "Layout", name: "layout", widget: "select", options: ["topic", "lg", "md", "sm"], default: ["md"]}
-                  - label: "Small Feature"
-                    name: "smallFeature"
-                    widget: "object"
+                      - { label: 'Title', name: 'title', widget: 'string' }
+                      - {
+                          label: 'Content',
+                          name: 'content',
+                          widget: 'markdown',
+                        }
+                      - {
+                          label: 'Image',
+                          name: 'image',
+                          widget: 'image',
+                          media_folder: '../images/features',
+                          allow_multiple: false,
+                        }
+                      - {
+                          label: 'Image Alt Text',
+                          name: 'imgAlt',
+                          widget: 'string',
+                        }
+                      - {
+                          label: 'Layout',
+                          name: 'layout',
+                          widget: 'select',
+                          options: ['topic', 'lg', 'md', 'sm'],
+                          default: ['md'],
+                        }
+                  - label: 'Small Feature'
+                    name: 'smallFeature'
+                    widget: 'object'
                     fields:
-                    - {label: "Title", name: "title", widget: "string"}
-                    - {label: "Content", name: "content", widget: "markdown"}
-                    - {label: "Image", name: "image", widget: "image", media_folder: "../images/features",  allow_multiple: false}
-                    - { label: "Image Alt Text", name: "imgAlt", widget: "string" }
-                    - {label: "Layout", name: "layout", widget: "select", options: ["topic", "lg", "md", "sm"], default: ["sm"]}
-              - label: "Topics"
-                name: "topics"
-                widget: "relation"
-                collection: "topics"
+                      - { label: 'Title', name: 'title', widget: 'string' }
+                      - {
+                          label: 'Content',
+                          name: 'content',
+                          widget: 'markdown',
+                        }
+                      - {
+                          label: 'Image',
+                          name: 'image',
+                          widget: 'image',
+                          media_folder: '../images/features',
+                          allow_multiple: false,
+                        }
+                      - {
+                          label: 'Image Alt Text',
+                          name: 'imgAlt',
+                          widget: 'string',
+                        }
+                      - {
+                          label: 'Layout',
+                          name: 'layout',
+                          widget: 'select',
+                          options: ['topic', 'lg', 'md', 'sm'],
+                          default: ['sm'],
+                        }
+              - label: 'Topics'
+                name: 'topics'
+                widget: 'relation'
+                collection: 'topics'
                 multiple: true
                 min: 1
                 max: 7
-                value_field: "title"
-                search_fields: ["title"]
-              - label: "Our mission"
-                name: "mission"
-                widget: "object"
+                value_field: 'title'
+                search_fields: ['title']
+              - label: 'Our mission'
+                name: 'mission'
+                widget: 'object'
                 fields:
-                  - { label: "Title", name: "title", widget: "string" }
-                  - { label: "Content", name: "content", widget: "markdown" }
-                  - {label: "Image", name: "image", widget: "image", media_folder: "../images/heros", allow_multiple: false, }
-                  - { label: "Image Alt Text", name: "imgAlt", widget: "string" }
-                  - { label: "Background Color", name: "backgroundColor", widget: "select", options: ["primary", "secondary", "info", "light", "white"], default: ["primary"]}
+                  - { label: 'Title', name: 'title', widget: 'string' }
+                  - { label: 'Content', name: 'content', widget: 'markdown' }
+                  - {
+                      label: 'Image',
+                      name: 'image',
+                      widget: 'image',
+                      media_folder: '../images/heros',
+                      allow_multiple: false,
+                    }
+                  - {
+                      label: 'Image Alt Text',
+                      name: 'imgAlt',
+                      widget: 'string',
+                    }
+                  - {
+                      label: 'Background Color',
+                      name: 'backgroundColor',
+                      widget: 'select',
+                      options:
+                        ['primary', 'secondary', 'info', 'light', 'white'],
+                      default: ['primary'],
+                    }

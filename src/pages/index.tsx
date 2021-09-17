@@ -13,18 +13,20 @@ const IndexPage: React.FC = () => {
   return (
     <Layout>
       <main className="cwp-main">
-        <section id="test-section-id" className="usa-section cwp-section">
-          <GridContainer>
-            <Hero
-              path={hero?.image.slice(3)}
-              alt={hero?.imgAlt}
-              backgroundColor={hero?.backgroundColor}
-              title={hero?.title}
-              content={hero?.content}
-            >
-              <p>Search Component Placeholder</p>
-            </Hero>
-          </GridContainer>
+        <section id="test-section-id" className="usa-section">
+          {hero && (
+            <GridContainer>
+              <Hero
+                path={hero.image.slice(3)}
+                alt={hero.imgAlt}
+                backgroundColor={hero.backgroundColor}
+                title={hero.title}
+                content={hero.content}
+              >
+                <p>Search Component Placeholder</p>
+              </Hero>
+            </GridContainer>
+          )}
         </section>
         <Features />
         <Topics />
