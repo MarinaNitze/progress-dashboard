@@ -4,27 +4,27 @@ import useGatsbyImages from '../../hooks/useGatsbyImages';
 
 import './Footer.scss';
 
+const paths = [
+  {
+    path: 'images/footer/foster-america-logo.png',
+    altText: 'Foster America logo',
+  },
+  {
+    path: 'images/footer/new-america-logo.png',
+    altText: 'New America logo',
+  },
+  {
+    path: 'images/footer/thinkofus-logo.png',
+    altText: 'Thinkofus logo',
+  },
+  {
+    path: 'images/footer/bloom-works-logo.png',
+    altText: 'Bloom Works logo',
+  },
+];
+
 export default function Footer() {
   const imageMap = useGatsbyImages();
-
-  const paths = [
-    {
-      path: 'images/footer/foster-america-logo.png',
-      altText: 'Foster America logo',
-    },
-    {
-      path: 'images/footer/new-america-logo.png',
-      altText: 'New America logo',
-    },
-    {
-      path: 'images/footer/thinkofus-logo.png',
-      altText: 'Thinkofus logo',
-    },
-    {
-      path: 'images/footer/bloom-works-logo.png',
-      altText: 'Bloom Works logo',
-    },
-  ];
 
   const getYear = () => {
     return new Date().getFullYear();
