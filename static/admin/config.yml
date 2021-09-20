@@ -14,7 +14,12 @@ collections:
     slug: 'index'
     path: '{{title}}/index'
     fields:
-      - { label: 'Title for url', name: 'title', widget: 'string', hint: 'Use dashes (-) instead of spaces ( ) to separate words.'  }
+      - {
+          label: 'Title for url',
+          name: 'title',
+          widget: 'string',
+          hint: 'Use dashes (-) instead of spaces ( ) to separate words.',
+        }
       - label: 'Hero'
         name: 'hero'
         widget: 'object'
@@ -59,7 +64,12 @@ collections:
     slug: 'index'
     path: '{{title}}/index'
     fields:
-      - { label: 'Title for url', name: 'title', widget: 'string', hint: 'Use dashes (-) instead of spaces ( ) to separate words.' }
+      - {
+          label: 'Title for url',
+          name: 'title',
+          widget: 'string',
+          hint: 'Use dashes (-) instead of spaces ( ) to separate words.',
+        }
       - { label: 'Title for heading', name: 'heading', widget: 'string' }
       - {
           label: 'About this recommendation',
@@ -72,16 +82,21 @@ collections:
           name: 'costs',
           widget: 'list',
           field: { label: 'Cost', name: 'cost', widget: 'string' },
-          summary: '{{fields.cost}}'
+          summary: '{{fields.cost}}',
         }
       - {
           label: 'Benefits',
           name: 'benefits',
           widget: 'list',
           field: { label: 'Benefit', name: 'benefit', widget: 'string' },
-          summary: '{{fields.benefit}}'
+          summary: '{{fields.benefit}}',
         }
-      - { label: 'Outcome Data', name: 'outcome', widget: 'markdown', required: false }
+      - {
+          label: 'Outcome Data',
+          name: 'outcome',
+          widget: 'markdown',
+          required: false,
+        }
       - label: "Who's doing this"
         name: 'who'
         widget: 'object'
@@ -94,7 +109,12 @@ collections:
               max: 54,
             }
           - { label: 'Map Image', name: 'image', widget: 'image' }
-      - { label: 'Get inspiration', name: 'inspiration', widget: 'markdown', required: false }
+      - {
+          label: 'Get inspiration',
+          name: 'inspiration',
+          widget: 'markdown',
+          required: false,
+        }
   - name: 'pages'
     label: 'Pages'
     files:
@@ -225,15 +245,24 @@ collections:
                           widget: 'hidden',
                           default: 'sm',
                         }
-              - label: 'Topics'
-                name: 'topics'
-                widget: 'relation'
-                collection: 'topics'
-                multiple: true
-                min: 1
-                max: 7
-                value_field: 'title'
-                search_fields: ['title']
+              - label: 'Topic Section'
+                name: 'topicSection'
+                widget: 'object'
+                fields:
+                  - {
+                      label: 'Popular Topics',
+                      name: 'popularTopics',
+                      widget: 'markdown',
+                    }
+                  - label: 'Topics'
+                    name: 'topics'
+                    widget: 'relation'
+                    collection: 'topics'
+                    multiple: true
+                    min: 1
+                    max: 7
+                    value_field: 'title'
+                    search_fields: ['title']
               - label: 'Our mission'
                 name: 'mission'
                 widget: 'object'
