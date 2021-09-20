@@ -16,13 +16,13 @@ import { ImageSharp } from '../../../graphql-types';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
 export type CardProps = {
-  heading: string;
+  title: string;
   layout?: 'topic' | 'sm' | 'md' | 'lg';
-  imgPath?: string;
+  image?: string;
   imgAlt?: string;
-  linkDestination?: string;
+  link?: string;
   linkText?: string;
-  children?: React.ReactNode;
+  content?: string;
 };
 
 const gridLayouts = { topic: true, sm: 4, md: 8, lg: 12 };
@@ -36,29 +36,29 @@ function mediaLayout(
 }
 
 export default function Card({
-  heading,
-  imgPath,
+  title,
+  image,
   imgAlt,
-  linkDestination,
+  link,
   linkText,
-  children,
+  content,
   layout = 'lg',
 }: CardProps) {
-  let image;
-  const imageNode = imgPath && useGatsbyImages()[imgPath];
+  let imageComponent;
+  const imageNode = image && useGatsbyImages()[image.slice(3)];
   if (imageNode && imageNode.extension === 'svg') {
     const svgImage = imageNode.publicURL;
-    image = svgImage && (
-      <img src={svgImage} alt={imgAlt ?? heading + ' image'} />
+    imageComponent = svgImage && (
+      <img src={svgImage} alt={imgAlt ?? title + ' image'} />
     );
   } else {
     const gatsbyImage: ImageSharp['gatsbyImageData'] =
       imageNode && getImage(imageNode);
-    image = gatsbyImage && (
+    imageComponent = gatsbyImage && (
       <GatsbyImage
         className="image"
         image={gatsbyImage}
-        alt={imgAlt ?? heading + ' image'}
+        alt={imgAlt ?? title + ' image'}
       />
     );
   }
@@ -70,31 +70,31 @@ export default function Card({
       layout={mediaLayout(layout)}
       gridLayout={{ tablet: { col: gridLayouts[layout] } } as GridProps}
       onClick={() => {
-        if (linkDestination && layout === 'topic') navigate(linkDestination);
+        if (link && layout === 'topic') navigate(link);
       }}
     >
       <CardHeader className="content">
-        <h3 className="usa-card__heading">{heading}</h3>
+        <h3 className="usa-card__heading">{title}</h3>
       </CardHeader>
-      {imgPath && layout !== 'sm' && (
+      {image && layout !== 'sm' && (
         <CardMedia exdent className="media">
-          {image}
+          {imageComponent}
         </CardMedia>
       )}
-      {children && <CardBody className="content">{children}</CardBody>}
-      {layout === 'lg' && linkDestination ? (
+      {content && <CardBody className="content">{content}</CardBody>}
+      {layout === 'lg' && link ? (
         <CardFooter>
           <Button
             type="button"
             onClick={() => {
-              navigate(linkDestination);
+              navigate(link);
             }}
           >
             {linkText}
           </Button>
         </CardFooter>
       ) : layout === 'sm' ? (
-        <CardFooter className="smallFooter">{image}</CardFooter>
+        <CardFooter className="smallFooter">{imageComponent}</CardFooter>
       ) : null}
     </CardCmp>
   );

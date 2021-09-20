@@ -7,7 +7,7 @@ import useGatsbyImages from '../../hooks/useGatsbyImages';
 
 type HeroProps = {
   title: string;
-  description?: string;
+  content?: string;
   path?: string;
   alt?: string;
   backgroundColor?: 'primary' | 'secondary' | 'info' | 'light';
@@ -16,7 +16,7 @@ type HeroProps = {
 
 export default function Hero({
   title,
-  description,
+  content,
   path,
   alt,
   backgroundColor,
@@ -35,7 +35,7 @@ export default function Hero({
         <div className="bgImage">{imageComponent}</div>
         <div className="usa-hero-callout usa-section-dark">
           <h2>{title}</h2>
-          <p>{description}</p>
+          <p>{content}</p>
           {children}
         </div>
       </div>

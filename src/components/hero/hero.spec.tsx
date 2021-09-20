@@ -8,7 +8,7 @@ describe('Hero', () => {
     const heroTitle = 'Hero Title';
     const heroDescription = 'Hero Description';
     const { getByText } = render(
-      <Hero title={heroTitle} description={heroDescription} />,
+      <Hero title={heroTitle} content={heroDescription} />,
     );
 
     const title = getByText(heroTitle);
