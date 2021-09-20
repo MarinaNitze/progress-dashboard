@@ -1,4 +1,3 @@
-import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import React from 'react';
 import useGatsbyImages from '../../hooks/useGatsbyImages';
 
@@ -6,19 +5,19 @@ import './Footer.scss';
 
 const paths = [
   {
-    path: 'images/footer/foster-america-logo.png',
+    path: 'images/footer/foster-america-logo.svg',
     altText: 'Foster America logo',
   },
   {
-    path: 'images/footer/new-america-logo.png',
+    path: 'images/footer/new-america-logo.svg',
     altText: 'New America logo',
   },
   {
-    path: 'images/footer/thinkofus-logo.png',
+    path: 'images/footer/thinkofus-logo.svg',
     altText: 'Thinkofus logo',
   },
   {
-    path: 'images/footer/bloom-works-logo.png',
+    path: 'images/footer/bloom-works-logo.svg',
     altText: 'Bloom Works logo',
   },
 ];
@@ -32,25 +31,27 @@ export default function Footer() {
 
   return (
     <footer className="cwp-footer">
-      <div className="coop-container">
+      <section className="coop-container">
         <p className="coop-text">Made in cooperation with</p>
-        <div className="logo-area">
-          {paths.map(
-            (logo, i) =>
-              logo && (
-                <GatsbyImage
-                  key={`partner-logo-${i}`}
-                  className="logo-img"
-                  image={getImage(imageMap[logo.path])!}
-                  alt={logo?.altText ?? `partner logo ${i}`}
-                />
-              ),
-          )}
-        </div>
-      </div>
-      <div className="cr-section">
-        <p>© {getYear()} [WHO?]</p>
-      </div>
+        <section className="footer-content">
+          <div className="logo-area">
+            {paths.map(
+              (logo, i) =>
+                logo && (
+                  <img
+                    key={`partner-logo-${i}`}
+                    className="logo-img"
+                    src={imageMap[logo.path].publicURL}
+                    alt={logo?.altText ?? `partner logo ${i}`}
+                  />
+                ),
+            )}
+          </div>
+          <div className="cr-section">
+            <p>© {getYear()} [WHO?]</p>
+          </div>
+        </section>
+      </section>
     </footer>
   );
 }

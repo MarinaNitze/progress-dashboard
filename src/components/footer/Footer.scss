@@ -6,27 +6,31 @@
   .coop-container {
     display: flex;
     flex-direction: column;
-    width: 35%;
+    flex-grow: 2;
+
     .coop-text {
       font-family: Petrona;
       font-weight: bold;
       font-size: 14px;
     }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
     .logo-area {
       display: flex;
     }
 
     .logo-img {
       align-self: center;
+      max-height: 2.5rem;
       &:not(first) {
         margin-right: 2rem;
-        height: fit-content;
       }
     }
-  }
-
-  .cr-section {
-    align-self: flex-end;
   }
 }
 
@@ -38,6 +42,16 @@
 
     .coop-container {
       width: 100%;
+
+      .logo-img {
+        margin: 1rem;
+        max-height: 1rem;
+      }
+
+      .footer-content {
+        display: flex;
+        flex-direction: column;
+      }
     }
 
     .coop-text {
@@ -46,10 +60,6 @@
 
     .logo-area {
       margin-right: 0;
-    }
-
-    .logo-img {
-      margin: 1rem;
     }
 
     .cr-section {
