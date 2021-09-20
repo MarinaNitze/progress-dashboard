@@ -1,5 +1,6 @@
 import React, { ReactNode } from 'react';
 import Header from '../header/Header';
+import Footer from '../footer/Footer';
 
 import SEO from '../seo/Seo';
 
@@ -38,6 +39,7 @@ export default function Layout({ children }: LayoutProps) {
       <SEO title="Progress Dashboard" />
       <Header headerLinks={headerLinks} />
       {children}
+      <Footer />
     </div>
   );
 }

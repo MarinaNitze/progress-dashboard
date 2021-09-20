@@ -26,7 +26,8 @@ export default function Header({ headerLinks }: HeaderProps) {
   const [expanded, setExpanded] = useState(false);
   const scrollRef = useRef(0);
   const direction = useScrollDirection(scrollRef);
-  const svgLogo = useGatsbyImages()['images/header/cwp-logo.svg'];
+  const imageMap = useGatsbyImages();
+  const svgLogo = imageMap['images/header/cwp-logo.svg'];
 
   const onClickExpand = () => {
     setExpanded(prvExpanded => !prvExpanded);
@@ -61,7 +62,7 @@ export default function Header({ headerLinks }: HeaderProps) {
                 {link.iconPath && (
                   <img
                     className={link.iconClassname}
-                    src={useGatsbyImages()[link.iconPath].publicURL}
+                    src={imageMap[link.iconPath].publicURL}
                     alt={link.iconAlt}
                   />
                 )}

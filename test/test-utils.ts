@@ -51,6 +51,38 @@ export const mockImageData = () => ({
       },
     ],
   },
+  footerImages: {
+    edges: [
+      {
+        node: {
+          extension: 'svg',
+          publicURL: '/static/test/bloom-works-logo.svg',
+          relativePath: 'images/footer/bloom-works-logo.svg',
+        },
+      },
+      {
+        node: {
+          extension: 'svg',
+          publicURL: '/static/test/thinkofus-logo.svg',
+          relativePath: 'images/footer/thinkofus-logo.svg',
+        },
+      },
+      {
+        node: {
+          extension: 'svg',
+          publicURL: '/static/test/new-america-logo.svg',
+          relativePath: 'images/footer/new-america-logo.svg',
+        },
+      },
+      {
+        node: {
+          extension: 'svg',
+          publicURL: '/static/test/foster-america-logo.svg',
+          relativePath: 'images/footer/foster-america-logo.svg',
+        },
+      },
+    ],
+  },
 });
 
 export const mockStaticData = <T = unknown>(data: T) =>
