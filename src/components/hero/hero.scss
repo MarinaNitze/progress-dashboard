@@ -1,4 +1,4 @@
-@import "../../styles/settings.scss";
+@import '../../styles/settings.scss';
 
 .usa-hero {
   color: $dark;
@@ -20,8 +20,14 @@
 
 .usa-grid {
   display: flex;
-  flex-direction: row-reverse;
   align-items: center;
+
+  &.left {
+    flex-direction: row;
+  }
+  &.right {
+    flex-direction: row-reverse;
+  }
 }
 
 .primary {

@@ -8,7 +8,7 @@ import Hero from '../components/hero/Hero';
 import content from './index.content.yml';
 
 const IndexPage: React.FC = () => {
-  const { hero } = content.home;
+  const { hero, mission } = content.home;
 
   return (
     <Layout>
@@ -30,6 +30,20 @@ const IndexPage: React.FC = () => {
         </section>
         <Features />
         <Topics />
+        {mission && (
+          <GridContainer>
+            <Hero
+              path={mission.image.slice(3)}
+              alt={mission.imgAlt}
+              backgroundColor={mission.backgroundColor}
+              title={mission.title}
+              content={mission.content}
+              imageAlign="left"
+            >
+              <p>Content</p>
+            </Hero>
+          </GridContainer>
+        )}
       </main>
     </Layout>
   );

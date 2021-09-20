@@ -11,6 +11,7 @@ type HeroProps = {
   path?: string;
   alt?: string;
   backgroundColor?: 'primary' | 'secondary' | 'info' | 'light';
+  imageAlign?: 'left' | 'right';
   children?: React.ReactNode;
 };
 
@@ -20,6 +21,7 @@ export default function Hero({
   path,
   alt,
   backgroundColor,
+  imageAlign = 'right',
   children,
 }: HeroProps) {
   const imageNode = path && useGatsbyImages()[path];
@@ -31,7 +33,7 @@ export default function Hero({
 
   return (
     <section className={'usa-hero ' + backgroundColor}>
-      <div className="usa-grid">
+      <div className={`usa-grid ${imageAlign === 'left' ? 'left' : 'right'}`}>
         <div className="bgImage">{imageComponent}</div>
         <div className="usa-hero-callout usa-section-dark">
           <h2>{title}</h2>
