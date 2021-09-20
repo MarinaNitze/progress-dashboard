@@ -14,7 +14,7 @@ collections:
     slug: 'index'
     path: '{{title}}/index'
     fields:
-      - { label: 'Title for url', name: 'title', widget: 'string' }
+      - { label: 'Title for url', name: 'title', widget: 'string', hint: 'Use dashes (-) instead of spaces ( ) to separate words.'  }
       - label: 'Hero'
         name: 'hero'
         widget: 'object'
@@ -59,7 +59,7 @@ collections:
     slug: 'index'
     path: '{{title}}/index'
     fields:
-      - { label: 'Title for url', name: 'title', widget: 'string' }
+      - { label: 'Title for url', name: 'title', widget: 'string', hint: 'Use dashes (-) instead of spaces ( ) to separate words.' }
       - { label: 'Title for heading', name: 'heading', widget: 'string' }
       - {
           label: 'About this recommendation',
@@ -71,15 +71,17 @@ collections:
           label: 'Costs',
           name: 'costs',
           widget: 'list',
-          hint: 'Enter costs as comma-separated values',
+          field: { label: 'Cost', name: 'cost', widget: 'string' },
+          summary: '{{fields.cost}}'
         }
       - {
           label: 'Benefits',
           name: 'benefits',
           widget: 'list',
-          hint: 'Enter benefits as comma-separated values',
+          field: { label: 'Benefit', name: 'benefit', widget: 'string' },
+          summary: '{{fields.benefit}}'
         }
-      - { label: 'Outcome Data', name: 'outcome', widget: 'markdown' }
+      - { label: 'Outcome Data', name: 'outcome', widget: 'markdown', required: false }
       - label: "Who's doing this"
         name: 'who'
         widget: 'object'
@@ -92,7 +94,7 @@ collections:
               max: 54,
             }
           - { label: 'Map Image', name: 'image', widget: 'image' }
-      - { label: 'Get inspiration', name: 'inspiration', widget: 'markdown' }
+      - { label: 'Get inspiration', name: 'inspiration', widget: 'markdown', required: false }
   - name: 'pages'
     label: 'Pages'
     files:
