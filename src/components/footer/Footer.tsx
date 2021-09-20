@@ -7,27 +7,24 @@ import './Footer.scss';
 export default function Footer() {
   const imageMap = useGatsbyImages();
 
-  const fosterAmericaImg = imageMap['images/footer/foster-america-logo.png'];
-  const newAmericaImg = imageMap['images/footer/new-america-logo.png'];
-  const thinkofusImg = imageMap['images/footer/thinkofus-logo.png'];
-  const bloomWorksImg = imageMap['images/footer/bloom-works-logo.png'];
-
-  const faLogo = fosterAmericaImg && {
-    ...getImage(fosterAmericaImg),
-    altText: 'Foster America logo',
-  };
-  const naLogo = newAmericaImg && {
-    ...getImage(newAmericaImg),
-    altText: 'New America logo',
-  };
-  const touLogo = thinkofusImg && {
-    ...getImage(thinkofusImg),
-    altText: 'Thinkofus logo',
-  };
-  const bwLogo = bloomWorksImg && {
-    ...getImage(bloomWorksImg),
-    altText: 'Bloom Works logo',
-  };
+  const paths = [
+    {
+      path: 'images/footer/foster-america-logo.png',
+      altText: 'Foster America logo',
+    },
+    {
+      path: 'images/footer/new-america-logo.png',
+      altText: 'New America logo',
+    },
+    {
+      path: 'images/footer/thinkofus-logo.png',
+      altText: 'Thinkofus logo',
+    },
+    {
+      path: 'images/footer/bloom-works-logo.png',
+      altText: 'Bloom Works logo',
+    },
+  ];
 
   const getYear = () => {
     return new Date().getFullYear();
@@ -38,13 +35,13 @@ export default function Footer() {
       <div className="coop-container">
         <p className="coop-text">Made in cooperation with</p>
         <div className="logo-area">
-          {[faLogo, naLogo, touLogo, bwLogo].map(
+          {paths.map(
             (logo, i) =>
               logo && (
                 <GatsbyImage
                   key={`partner-logo-${i}`}
                   className="logo-img"
-                  image={logo}
+                  image={getImage(imageMap[logo.path])!}
                   alt={logo?.altText ?? `partner logo ${i}`}
                 />
               ),
