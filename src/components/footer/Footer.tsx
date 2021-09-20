@@ -35,17 +35,14 @@ export default function Footer() {
         <p className="coop-text">Made in cooperation with</p>
         <section className="footer-content">
           <div className="logo-area">
-            {paths.map(
-              (logo, i) =>
-                logo && (
-                  <img
-                    key={`partner-logo-${i}`}
-                    className="logo-img"
-                    src={imageMap[logo.path].publicURL}
-                    alt={logo?.altText ?? `partner logo ${i}`}
-                  />
-                ),
-            )}
+            {paths.map(({ path, altText }, i) => (
+              <img
+                key={`${path}-${altText}`}
+                className="logo-img"
+                src={imageMap[path].publicURL}
+                alt={altText ?? `partner logo ${i}`}
+              />
+            ))}
           </div>
           <div className="cr-section">
             <p>© {getYear()} [WHO?]</p>
