@@ -21,7 +21,7 @@ home:
       title: Full width feature
       imgAlt: full width feature image
       link: cta
-      linkText: cta
+      linkText: CTA
       layout: lg
     mediumFeature:
       content: Will serve as an intermediate block for when there aren’t a ton of new
@@ -54,6 +54,6 @@ home:
   topics:
     - test title
   topicSection:
-    popularTopics: Popular topics
+    popularTopics: test topic
     topics:
       - test title
