@@ -9,10 +9,11 @@ type featuresProps = {
   largeFeature: CardProps;
   mediumFeature: CardProps;
   smallFeature: CardProps;
+  whatsNew: CardProps;
 };
 
 export default function FeatureSection() {
-  const { largeFeature, mediumFeature, smallFeature }: featuresProps =
+  const { largeFeature, mediumFeature, smallFeature, whatsNew }: featuresProps =
     content.home.features;
 
   return (
@@ -20,12 +21,7 @@ export default function FeatureSection() {
       <GridContainer>
         <Grid>
           <h2 className="font-heading-xl margin-y-0">What's new</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Luctus
-            massa natoque risus ut porttitor. Urna commodo amet non massa dui
-            quis. Id pellentesque purus enim suspendisse et sed gravida enim
-            sed.
-          </p>
+          <p>{whatsNew}</p>
           <CardGroup>
             <Card key={largeFeature.title} {...largeFeature} />
             <Card key={mediumFeature.title} {...mediumFeature} />
