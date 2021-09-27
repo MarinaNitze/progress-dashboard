@@ -1,27 +1,32 @@
 import React from 'react';
+import ReactMarkdown from 'react-markdown';
 import { CardGroup, Grid, GridContainer } from '@trussworks/react-uswds';
 
 import Card, { CardProps } from '../components/card/Card';
 
 import content from '../pages/index.content.yml';
 
-type featuresProps = {
+type featureContent = {
   largeFeature: CardProps;
   mediumFeature: CardProps;
   smallFeature: CardProps;
-  whatsNew: CardProps;
+  whatsNew: string;
 };
 
 export default function FeatureSection() {
-  const { largeFeature, mediumFeature, smallFeature, whatsNew }: featuresProps =
-    content.home.features;
+  const {
+    largeFeature,
+    mediumFeature,
+    smallFeature,
+    whatsNew,
+  }: featureContent = content.home.features;
 
   return (
     <section id="test-section-id">
       <GridContainer>
         <Grid>
           <h2 className="font-heading-xl margin-y-0">What's new</h2>
-          <p>{whatsNew}</p>
+          {whatsNew && <ReactMarkdown>{whatsNew}</ReactMarkdown>}
           <CardGroup>
             <Card key={largeFeature.title} {...largeFeature} />
             <Card key={mediumFeature.title} {...mediumFeature} />
