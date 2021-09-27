@@ -10,10 +10,9 @@ home:
     link: hero
     linkText: hero link
   features:
-    whatsNew: >-
-      # Heading
-
-      **Lorem ipsum dolor sit amet**, consectetur adipiscing elit. Luctus massa natoque risus ut porttitor. Urna commodo amet non massa dui quis. Id pellentesque purus enim suspendisse et sed gravida enim sed.
+    whatsNew: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Luctus massa
+      natoque risus ut porttitor. Urna commodo amet non massa dui quis. Id
+      pellentesque purus enim suspendisse et sed gravida enim sed.
     largeFeature:
       content: This will be for “showcase” items — large releases/updates. Will likely
         feature an image along with heading, body copy, and link (either text or
