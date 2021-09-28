@@ -30,3 +30,23 @@
     }
   }
 }
+
+@media (max-width: 800px) {
+  .cwp-main .mission-hero {
+    .usa-hero-callout.usa-section-dark {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 2rem;
+    }
+
+    .usa-grid {
+      flex-direction: column;
+    }
+
+    .mission-title {
+      align-self: center;
+      padding: 0;
+    }
+  }
+}
