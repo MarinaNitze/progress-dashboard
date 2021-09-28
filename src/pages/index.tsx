@@ -2,13 +2,15 @@ import { GridContainer } from '@trussworks/react-uswds';
 import React from 'react';
 import Features from '../sections/Features';
 import Topics from '../sections/Topics';
+import ReactMarkdown from 'react-markdown';
 
 import Layout from '../components/layout/Layout';
 import Hero from '../components/hero/Hero';
 import content from './index.content.yml';
+import './home.scss';
 
 const IndexPage: React.FC = () => {
-  const { hero } = content.home;
+  const { hero, mission } = content.home;
 
   return (
     <Layout>
@@ -30,6 +32,20 @@ const IndexPage: React.FC = () => {
         </section>
         <Features />
         <Topics />
+        {mission && (
+          <Hero
+            path={mission.image.slice(3)}
+            alt={mission.imgAlt}
+            className="mission-hero"
+            backgroundColor={mission.backgroundColor}
+            imageAlign="left"
+          >
+            <h2 className="mission-title">{mission.title}</h2>
+            <ReactMarkdown className="mission-content">
+              {mission.content}
+            </ReactMarkdown>
+          </Hero>
+        )}
       </main>
     </Layout>
   );

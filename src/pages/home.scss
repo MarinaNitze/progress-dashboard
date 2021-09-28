@@ -1,0 +1,52 @@
+@import '../styles/settings.scss';
+
+.cwp-main .mission-hero {
+  padding-left: 0;
+
+  .usa-grid {
+    align-items: start;
+  }
+
+  .usa-hero-callout.usa-section-dark {
+    padding-right: calc(60% - 50vw);
+  }
+
+  .mission-content {
+    font-size: 1.5rem;
+    font-weight: 200;
+  }
+
+  .mission-title {
+    display: inline-flex;
+    flex-direction: column;
+    color: $header-text;
+    font-family: Petrona;
+    font-size: 2.375rem;
+    padding-left: 1rem;
+
+    &:after {
+      @include vertical-line;
+      width: auto;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .cwp-main .mission-hero {
+    .usa-hero-callout.usa-section-dark {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 2rem;
+    }
+
+    .usa-grid {
+      flex-direction: column;
+    }
+
+    .mission-title {
+      align-self: center;
+      padding: 0;
+    }
+  }
+}

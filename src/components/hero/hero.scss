@@ -1,4 +1,4 @@
-@import "../../styles/settings.scss";
+@import '../../styles/settings.scss';
 
 .usa-hero {
   color: $dark;
@@ -10,7 +10,6 @@
 }
 
 .bgImage {
-  background-color: $primary;
   flex-basis: 40%;
 }
 
@@ -20,8 +19,11 @@
 
 .usa-grid {
   display: flex;
-  flex-direction: row-reverse;
   align-items: center;
+
+  &.right {
+    flex-direction: row-reverse;
+  }
 }
 
 .primary {

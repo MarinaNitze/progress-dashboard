@@ -50,7 +50,7 @@
     font-size: 1rem;
     max-width: 7rem;
     font-weight: bold;
-    font-family: petrona;
+    font-family: Petrona;
     padding-left: 1rem;
     padding-bottom: 1rem;
 
@@ -65,16 +65,11 @@
     }
 
     &:after {
-      content: '';
+      @include vertical-line;
       position: absolute;
-      top: 4rem;
-      left: 0;
       margin-left: 5rem;
       width: 5.5rem;
-      right: 0;
-      background: $secondary;
-      height: 0.25rem;
-      border-radius: 1rem;
+      top: 4rem;
     }
   }
 }
