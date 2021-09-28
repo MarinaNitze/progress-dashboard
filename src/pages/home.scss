@@ -11,12 +11,18 @@
     padding-right: calc(60% - 50vw);
   }
 
+  .mission-content {
+    font-size: 1.5rem;
+    font-weight: 200;
+  }
+
   .mission-title {
     display: inline-flex;
     flex-direction: column;
     color: $header-text;
     font-family: Petrona;
     font-size: 2.375rem;
+    padding-left: 1rem;
 
     &:after {
       @include vertical-line;

@@ -2,6 +2,7 @@ import { GridContainer } from '@trussworks/react-uswds';
 import React from 'react';
 import Features from '../sections/Features';
 import Topics from '../sections/Topics';
+import ReactMarkdown from 'react-markdown';
 
 import Layout from '../components/layout/Layout';
 import Hero from '../components/hero/Hero';
@@ -40,7 +41,9 @@ const IndexPage: React.FC = () => {
             imageAlign="left"
           >
             <h2 className="mission-title">{mission.title}</h2>
-            <p>{mission.content}</p>
+            <ReactMarkdown className="mission-content">
+              {mission.content}
+            </ReactMarkdown>
           </Hero>
         )}
       </main>
