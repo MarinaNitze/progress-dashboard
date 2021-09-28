@@ -18,4 +18,5 @@ Index.args = {
     'This is a sample description for the hero component. Use it wisely.',
   backgroundColor: 'primary',
   children: <p>Search Component (TBD)</p>,
+  alt: 'hero-home-image',
 };

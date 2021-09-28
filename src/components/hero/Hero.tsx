@@ -5,12 +5,16 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
 import useGatsbyImages from '../../hooks/useGatsbyImages';
 
+type BackgroundColorOptions = 'primary' | 'secondary' | 'info' | 'light';
+
 type HeroProps = {
-  title: string;
+  title?: string;
   content?: string;
   path?: string;
-  alt?: string;
-  backgroundColor?: 'primary' | 'secondary' | 'info' | 'light';
+  alt: string;
+  className?: string;
+  backgroundColor?: BackgroundColorOptions;
+  imageBackgroundColor?: BackgroundColorOptions;
   imageAlign?: 'left' | 'right';
   children?: React.ReactNode;
 };
@@ -20,7 +24,9 @@ export default function Hero({
   content,
   path,
   alt,
-  backgroundColor,
+  className,
+  backgroundColor = 'primary',
+  imageBackgroundColor = backgroundColor,
   imageAlign = 'right',
   children,
 }: HeroProps) {
@@ -28,15 +34,21 @@ export default function Hero({
   const gatsbyImage: ImageSharp['gatsbyImageData'] =
     imageNode && getImage(imageNode);
   const imageComponent = gatsbyImage && (
-    <GatsbyImage className="image" image={gatsbyImage} alt={alt ?? title} />
+    <GatsbyImage className="image" image={gatsbyImage} alt={alt} />
   );
 
   return (
-    <section className={'usa-hero ' + backgroundColor}>
-      <div className={`usa-grid ${imageAlign === 'left' ? 'left' : 'right'}`}>
-        <div className="bgImage">{imageComponent}</div>
+    <section
+      className={`usa-hero ${
+        className ? `${className} ` : ''
+      } ${backgroundColor}`}
+    >
+      <div className={`usa-grid ${imageAlign === 'left' ? '' : 'right'}`}>
+        <div className={`bgImage ${imageBackgroundColor}`}>
+          {imageComponent}
+        </div>
         <div className="usa-hero-callout usa-section-dark">
-          <h2>{title}</h2>
+          {title && <h2>{title}</h2>}
           <p>{content}</p>
           {children}
         </div>

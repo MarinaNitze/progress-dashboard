@@ -6,6 +6,7 @@ import Topics from '../sections/Topics';
 import Layout from '../components/layout/Layout';
 import Hero from '../components/hero/Hero';
 import content from './index.content.yml';
+import './home.scss';
 
 const IndexPage: React.FC = () => {
   const { hero, mission } = content.home;
@@ -31,18 +32,16 @@ const IndexPage: React.FC = () => {
         <Features />
         <Topics />
         {mission && (
-          <GridContainer>
-            <Hero
-              path={mission.image.slice(3)}
-              alt={mission.imgAlt}
-              backgroundColor={mission.backgroundColor}
-              title={mission.title}
-              content={mission.content}
-              imageAlign="left"
-            >
-              <p>Content</p>
-            </Hero>
-          </GridContainer>
+          <Hero
+            path={mission.image.slice(3)}
+            alt={mission.imgAlt}
+            className="mission-hero"
+            backgroundColor={mission.backgroundColor}
+            imageAlign="left"
+          >
+            <h2 className="mission-title">{mission.title}</h2>
+            <p>{mission.content}</p>
+          </Hero>
         )}
       </main>
     </Layout>

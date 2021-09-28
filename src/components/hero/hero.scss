@@ -10,7 +10,6 @@
 }
 
 .bgImage {
-  background-color: $primary;
   flex-basis: 40%;
 }
 
@@ -22,9 +21,6 @@
   display: flex;
   align-items: center;
 
-  &.left {
-    flex-direction: row;
-  }
   &.right {
     flex-direction: row-reverse;
   }

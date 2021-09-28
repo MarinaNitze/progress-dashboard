@@ -72,3 +72,13 @@ $theme-card-border-width: 0;
     }
   }
 }
+
+/* MIXINS */
+@mixin vertical-line {
+  content: '';
+  left: 0;
+  right: 0;
+  background: $secondary;
+  height: 0.25rem;
+  border-radius: 1rem;
+}
