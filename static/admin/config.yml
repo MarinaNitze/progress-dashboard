@@ -48,10 +48,7 @@ collections:
           allow_multiple: false,
           hint: 'Must be an svg file type',
           pattern:
-            [
-              '/.svg$/g',
-              'Detected file type was not .svg. File type must be .svg',
-            ],
+            ['svg', 'Detected file type was not .svg. File type must be .svg'],
         }
       - { label: 'About this topic', name: 'about', widget: 'markdown' }
       - { label: 'Why this matters', name: 'why', widget: 'markdown' }
