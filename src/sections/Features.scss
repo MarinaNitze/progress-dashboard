@@ -1,0 +1,15 @@
+@import '../styles/settings.scss';
+
+.features-title {
+  display: inline-flex;
+  flex-direction: column;
+
+  &:after {
+    @include vertical-line;
+    width: auto;
+  }
+}
+
+.lg-feature {
+  min-height: 20rem;
+}

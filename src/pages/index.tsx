@@ -1,4 +1,3 @@
-import { GridContainer } from '@trussworks/react-uswds';
 import React from 'react';
 import Features from '../sections/Features';
 import Topics from '../sections/Topics';
@@ -15,19 +14,17 @@ const IndexPage: React.FC = () => {
   return (
     <Layout>
       <main className="cwp-main">
-        <section id="test-section-id" className="usa-section">
+        <section id="test-section-id" className="cwp-hero">
           {hero && (
-            <GridContainer>
-              <Hero
-                path={hero.image.slice(3)}
-                alt={hero.imgAlt}
-                backgroundColor={hero.backgroundColor}
-                title={hero.title}
-                content={hero.content}
-              >
-                <p>Search Component Placeholder</p>
-              </Hero>
-            </GridContainer>
+            <Hero
+              path={hero.image.slice(3)}
+              alt={hero.imgAlt}
+              backgroundColor={hero.backgroundColor}
+              title={hero.title}
+              content={hero.content}
+            >
+              <p>Search Component Placeholder</p>
+            </Hero>
           )}
         </section>
         <Features />

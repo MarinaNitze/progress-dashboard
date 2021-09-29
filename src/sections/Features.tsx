@@ -3,6 +3,7 @@ import ReactMarkdown from 'react-markdown';
 import { CardGroup, Grid, GridContainer } from '@trussworks/react-uswds';
 
 import Card, { CardProps } from '../components/card/Card';
+import './Features.scss';
 
 import content from '../pages/index.content.yml';
 
@@ -25,10 +26,16 @@ export default function FeatureSection() {
     <section id="test-section-id">
       <GridContainer>
         <Grid>
-          <h2 className="font-heading-xl margin-y-0">What's new</h2>
+          <h2 className="font-heading-xl margin-y-0 features-title">
+            What's new
+          </h2>
           {whatsNew && <ReactMarkdown>{whatsNew}</ReactMarkdown>}
           <CardGroup>
-            <Card key={largeFeature.title} {...largeFeature} />
+            <Card
+              key={largeFeature.title}
+              className="lg-feature"
+              {...largeFeature}
+            />
             <Card key={mediumFeature.title} {...mediumFeature} />
             <Card key={smallFeature.title} {...smallFeature} />
           </CardGroup>

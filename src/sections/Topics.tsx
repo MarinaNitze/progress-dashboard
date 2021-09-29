@@ -8,6 +8,7 @@ import {
 } from '@trussworks/react-uswds';
 
 import Card, { CardProps } from '../components/card/Card';
+import './Topics.scss';
 
 export default function TopicsSection() {
   // TODO: pull card list from cms
@@ -64,10 +65,12 @@ export default function TopicsSection() {
   ];
 
   return (
-    <section id="test-section-id">
+    <section className="topics-section" id="test-section-id">
       <GridContainer>
         <Grid>
-          <h2 className="font-heading-xl margin-y-0">Popular Topics</h2>
+          <h2 className="font-heading-xl margin-y-0 topics-title">
+            Popular Topics
+          </h2>
           <p>
             Scalable cards to highlight curated list of topics. Depending on how
             many we have, this may require more than 3 in a single row, but

@@ -1,52 +1,82 @@
 @import '../styles/settings.scss';
 
-.cwp-main .mission-hero {
-  padding-left: 0;
-
-  .usa-grid {
-    align-items: start;
+.cwp-main {
+  .cwp-hero {
+    padding-bottom: 5rem;
   }
 
-  .usa-hero-callout.usa-section-dark {
-    padding-right: calc(60% - 50vw);
+  .usa-hero.primary {
+    padding-left: 0;
   }
 
-  .mission-content {
-    font-size: 1.5rem;
-    font-weight: 200;
+  .primary {
+    .usa-hero-callout {
+      flex-basis: 50%;
+    }
   }
 
-  .mission-title {
-    display: inline-flex;
-    flex-direction: column;
-    color: $header-text;
-    font-family: Petrona;
-    font-size: 2.375rem;
-    padding-left: 1rem;
+  .mission-hero {
+    padding-left: 0;
 
-    &:after {
-      @include vertical-line;
-      width: auto;
+    .usa-grid {
+      align-items: start;
+    }
+
+    .usa-hero-callout.usa-section-dark {
+      padding-right: calc(60% - 50vw);
+    }
+
+    .mission-content {
+      font-size: 1.5rem;
+      font-weight: 200;
+    }
+
+    .mission-title {
+      display: inline-flex;
+      flex-direction: column;
+      color: $header-text;
+      font-family: Petrona;
+      font-size: 2.375rem;
+      padding-left: 1rem;
+
+      &:after {
+        @include vertical-line;
+        width: auto;
+      }
     }
   }
 }
 
 @media (max-width: 800px) {
-  .cwp-main .mission-hero {
-    .usa-hero-callout.usa-section-dark {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 0 2rem;
-    }
-
+  .cwp-main {
     .usa-grid {
-      flex-direction: column;
+      &.right {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+
+        .usa-hero-callout.usa-section-dark {
+          padding: 0 2rem;
+        }
+      }
     }
 
-    .mission-title {
-      align-self: center;
-      padding: 0;
+    .mission-hero {
+      .usa-hero-callout.usa-section-dark {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 2rem;
+      }
+
+      .usa-grid {
+        flex-direction: column;
+      }
+
+      .mission-title {
+        align-self: center;
+        padding: 0;
+      }
     }
   }
 }
