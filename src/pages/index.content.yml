@@ -60,7 +60,19 @@ home:
   topics:
     - test title
   topicSection:
-    popularTopics: test topic
+    popularTopics: "Scalable cards to highlight curated list of topics. Depending on
+      how\r
+
+      \            many we have, this may require more than 3 in a single
+      row, but\r
+
+      \            we’ll decide that later. Will allow for several rows as
+      needed.\r
+
+      \            Likely be capped with a rectangular image, and include
+      a heading.\r
+
+      \            Heading and image will be clickable."
     topics:
       - background-checks
       - fostering-parent-licensing
