@@ -33,11 +33,20 @@ export default function FeatureSection() {
           <CardGroup>
             <Card
               key={largeFeature.title}
+              dataCy="lg-feature-home"
               className="lg-feature"
               {...largeFeature}
             />
-            <Card key={mediumFeature.title} {...mediumFeature} />
-            <Card key={smallFeature.title} {...smallFeature} />
+            <Card
+              dataCy="md-feature-home"
+              key={mediumFeature.title}
+              {...mediumFeature}
+            />
+            <Card
+              dataCy="sm-feature-home"
+              key={smallFeature.title}
+              {...smallFeature}
+            />
           </CardGroup>
         </Grid>
       </GridContainer>

@@ -24,6 +24,7 @@ export type CardProps = {
   linkText?: string;
   content?: string;
   className?: string;
+  dataCy?: string;
 };
 
 const gridLayouts = { topic: true, sm: 4, md: 8, lg: 12 };
@@ -44,6 +45,7 @@ export default function Card({
   linkText,
   content,
   className,
+  dataCy,
   layout = 'lg',
 }: CardProps) {
   let imageComponent;
@@ -67,6 +69,7 @@ export default function Card({
 
   return (
     <CardCmp
+      data-cy={dataCy ?? ''}
       className={`card ${className ?? ''}`}
       containerProps={{ className: layout }}
       layout={mediaLayout(layout)}

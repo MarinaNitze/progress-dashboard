@@ -88,6 +88,7 @@ export default function TopicsSection() {
         </Grid>
         <Grid>
           <Button
+            data-cy="topics-button-home"
             type="button"
             onClick={() => {
               navigate('/topic');

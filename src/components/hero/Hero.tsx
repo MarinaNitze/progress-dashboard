@@ -16,6 +16,7 @@ type HeroProps = {
   backgroundColor?: BackgroundColorOptions;
   imageBackgroundColor?: BackgroundColorOptions;
   imageAlign?: 'left' | 'right';
+  dataCy?: string;
   children?: React.ReactNode;
 };
 
@@ -28,6 +29,7 @@ export default function Hero({
   backgroundColor = 'primary',
   imageBackgroundColor = backgroundColor,
   imageAlign = 'right',
+  dataCy,
   children,
 }: HeroProps) {
   const imageNode = path && useGatsbyImages()[path];
@@ -39,6 +41,7 @@ export default function Hero({
 
   return (
     <section
+      data-cy={dataCy ?? ''}
       className={`usa-hero ${
         className ? `${className} ` : ''
       } ${backgroundColor}`}

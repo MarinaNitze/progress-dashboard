@@ -31,6 +31,7 @@ const IndexPage: React.FC = () => {
         <Topics />
         {mission && (
           <Hero
+            dataCy="mission-hero-home"
             path={mission.image.slice(3)}
             alt={mission.imgAlt}
             className="mission-hero"
