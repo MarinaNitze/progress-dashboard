@@ -34,7 +34,6 @@ export default function FeatureSection() {
             <Card
               key={largeFeature.title}
               dataCy="lg-feature-home"
-              className="lg-feature"
               {...largeFeature}
             />
             <Card
