@@ -11,12 +11,23 @@
 
   .primary {
     .usa-hero-callout {
-      flex-basis: 50%;
+      flex-basis: unset;
+      margin: auto;
+      padding-left: 5rem;
+    }
+
+    .bgImage {
+      flex-basis: unset;
+      margin-left: auto;
     }
   }
 
   .mission-hero {
     padding-left: 0;
+
+    a {
+      color: inherit;
+    }
 
     .usa-grid {
       align-items: start;
