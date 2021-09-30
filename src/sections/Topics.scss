@@ -1,0 +1,21 @@
+@import '../styles/settings.scss';
+
+.topics-section {
+  padding: 5rem 0;
+
+  .topics-title {
+    display: inline-flex;
+    flex-direction: column;
+
+    &:after {
+      @include vertical-line;
+      width: auto;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .topics-section {
+    padding: 3rem 0;
+  }
+}

@@ -30,6 +30,7 @@ $theme-card-border-width: 0;
   background-color: $secondary !important;
   border: 3px solid $secondary !important;
   border-radius: 1rem !important;
+  color: $dark;
 }
 
 .usa-button:hover {
@@ -54,7 +55,7 @@ $theme-card-border-width: 0;
   .usa-card--flag.usa-card--media-right .usa-card__footer,
   .usa-card--flag.usa-card--media-right .usa-card__header {
     margin-right: 22.5rem !important;
-    margin-left: 0 !important;
+    margin-left: 2rem !important;
   }
 
   main.cwp-main {
