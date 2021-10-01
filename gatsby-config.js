@@ -37,6 +37,13 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/pages/content/topics`,
+        name: `topics`,
+      },
+    },
+    {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: `XXXXXXXX`, // TODO
@@ -70,5 +77,6 @@ module.exports = {
     `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-anchor-links`,
+    `gatsby-transformer-remark`,
   ],
 };

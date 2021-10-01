@@ -49,6 +49,7 @@
     "gatsby-plugin-ts": "^3.0.0",
     "gatsby-source-airtable": "^2.2.0",
     "gatsby-source-filesystem": "^3.9.0",
+    "gatsby-transformer-remark": "^4.11.0",
     "gatsby-transformer-sharp": "^3.9.0",
     "gbimage-bridge": "^0.1.4",
     "netlify-cms-app": "^2.15.20",

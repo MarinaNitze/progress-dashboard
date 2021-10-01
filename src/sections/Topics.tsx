@@ -1,5 +1,6 @@
 import React from 'react';
-import { navigate } from 'gatsby';
+import { navigate, graphql, useStaticQuery } from 'gatsby';
+import ReactMarkdown from 'react-markdown';
 import {
   CardGroup,
   Grid,
@@ -9,60 +10,45 @@ import {
 
 import Card, { CardProps } from '../components/card/Card';
 import './Topics.scss';
+import content from '../pages/index.content.yml';
+import { TopicsQuery } from '../../graphql-types';
 
 export default function TopicsSection() {
-  // TODO: pull card list from cms
-  const cardList: Array<CardProps> = [
-    {
-      title: 'Foster Parent Licensing',
-      layout: 'topic',
-      image: '../images/topics/Topic-FPL.svg',
-      imgAlt: 'Foster Parent Licensing Icon',
-      link: '/topic/foster-parent-licensing',
-    },
-    {
-      title: 'Background Checks',
-      layout: 'topic',
-      image: '../images/topics/Topic-BC.svg',
-      imgAlt: 'Background Checks Icon',
-      link: '/topic/background-checks',
-    },
-    {
-      title: 'Extended Foster Care',
-      layout: 'topic',
-      image: '../images/topics/Topic-EFC.svg',
-      imgAlt: 'Extended Foster Care Icon',
-      link: '/CTA',
-    },
-    {
-      title: 'Family Finding',
-      layout: 'topic',
-      image: '../images/topics/Topic-FF.svg',
-      imgAlt: 'Family Finding Icon',
-      link: '/topic/family-finding',
-    },
-    {
-      title: 'Inquiry management',
-      layout: 'topic',
-      image: '../images/topics/Topic-IM.svg',
-      imgAlt: 'Inquiry Management Icon',
-      link: '/topic/inquiry-management',
-    },
-    {
-      title: 'License Renewal',
-      layout: 'topic',
-      image: '../images/topics/Topic-LR.svg',
-      imgAlt: 'Licensing Renewal Icon',
-      link: '/topic/license-renewal',
-    },
-    {
-      title: 'Recruitment',
-      layout: 'topic',
-      image: '../images/topics/Topic-Recruitment.svg',
-      imgAlt: 'Recruitment Icon',
-      link: '/topic/recruitment',
-    },
-  ];
+  const { topics }: TopicsQuery = useStaticQuery(graphql`
+    query Topics {
+      topics: allMarkdownRemark(
+        filter: { fileAbsolutePath: { regex: "content/topics/" } }
+      ) {
+        edges {
+          node {
+            frontmatter {
+              title
+              hero {
+                title
+                image
+                backgroundColor
+                imgAlt
+              }
+              image
+              layout
+            }
+          }
+        }
+      }
+    }
+  `);
+
+  const { topicSection } = content.home;
+  const popularTopics = topics.edges.filter(topic =>
+    topicSection.topics.includes(topic?.node?.frontmatter?.title),
+  );
+  const cardList = popularTopics.map(topic => ({
+    title: topic?.node?.frontmatter?.hero?.title ?? 'na',
+    layout: topic?.node?.frontmatter?.layout ?? 'topic',
+    image: topic?.node?.frontmatter?.image ?? 'na',
+    imgAlt: topic?.node?.frontmatter?.hero?.title + ' icon' ?? 'na',
+    link: 'topic/' + topic?.node?.frontmatter?.title ?? 'na',
+  })) as CardProps[];
 
   return (
     <section className="topics-section" id="test-section-id">
@@ -71,13 +57,7 @@ export default function TopicsSection() {
           <h2 className="font-heading-xl margin-y-0 topics-title">
             Popular Topics
           </h2>
-          <p>
-            Scalable cards to highlight curated list of topics. Depending on how
-            many we have, this may require more than 3 in a single row, but
-            we’ll decide that later. Will allow for several rows as needed.
-            Likely be capped with a rectangular image, and include a heading.
-            Heading and image will be clickable.
-          </p>
+          <ReactMarkdown>{topicSection.popularTopics ?? ''}</ReactMarkdown>
         </Grid>
         <Grid>
           <CardGroup>

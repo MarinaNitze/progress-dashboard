@@ -84,7 +84,7 @@ export default function useGatsbyImages(): useGatsbyImageResponse {
     headerImages,
     footerImages,
   ].reduce((acc, images) => {
-    images?.edges.forEach(edge => {
+    images?.edges.forEach((edge: any) => {
       const path: string = edge.node.relativePath;
       acc[path] = edge.node;
       return acc;
