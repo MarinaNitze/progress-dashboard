@@ -11,10 +11,9 @@ collections:
     label: 'Topics'
     file: 'src/pages/content/topics.content.yml'
     fields:
-      - { label: 'Page title', name: 'title', widget: 'string' }
       - {
           label: 'Title for url',
-          name: 'url',
+          name: 'title',
           widget: 'string',
           hint: 'Use dashes (-) instead of spaces ( ) to separate words.',
         }
