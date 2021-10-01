@@ -1,5 +1,6 @@
 ---
 title: recruitment
+url: recruitment
 hero:
   backgroundColor: info
   title: Recruitment
