@@ -1,5 +1,6 @@
 ---
-title: inquiry-management
+title: inquiryManagement
+url: inquiry-management
 hero:
   backgroundColor: info
   title: Inquiry Management
