@@ -1,5 +1,6 @@
 ---
-title: license-renewal
+title: licenseRenewal
+url: license-renewal
 hero:
   backgroundColor: info
   title: License Renewal
