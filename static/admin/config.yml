@@ -9,14 +9,12 @@ media_folder: 'src/images'
 collections:
   - name: 'topics'
     label: 'Topics'
-    folder: 'src/pages/content/topics'
-    create: true
-    slug: 'index'
-    path: '{{title}}/index'
+    file: 'src/pages/topics.content.yml'
     fields:
+      - { label: 'Page title', name: 'title', widget: 'string' }
       - {
           label: 'Title for url',
-          name: 'title',
+          name: 'url',
           widget: 'string',
           hint: 'Use dashes (-) instead of spaces ( ) to separate words.',
         }
@@ -48,10 +46,7 @@ collections:
           allow_multiple: false,
           hint: 'Must be an svg file type',
           pattern:
-            [
-              '/.svg$/g',
-              'Detected file type was not .svg. File type must be .svg',
-            ],
+            ['.svg', 'Detected file type was not .svg. File type must be .svg'],
         }
       - { label: 'About this topic', name: 'about', widget: 'markdown' }
       - { label: 'Why this matters', name: 'why', widget: 'markdown' }
