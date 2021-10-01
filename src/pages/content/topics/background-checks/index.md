@@ -1,5 +1,5 @@
 ---
-title: background-checks
+title: backgroundChecks
 hero:
   backgroundColor: info
   title: Background Checks
