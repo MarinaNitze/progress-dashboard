@@ -57,12 +57,17 @@ collections:
       - { label: 'Why this matters', name: 'why', widget: 'markdown' }
       - { label: 'What we can do', name: 'what', widget: 'markdown' }
       - { label: 'layout', name: 'layout', widget: 'hidden', default: 'topic' }
+      - label: 'Recommendations'
+        name: 'recommendations'
+        collection: 'recommendations'
+        widget: 'relation'
+        multiple: true,
+        max: 5,
+        value_field: 'title'
+        search_fields: ['title']
   - name: 'recommendations'
     label: 'Recommendations'
-    folder: 'src/pages/content/recommendations'
-    create: true
-    slug: 'index'
-    path: '{{title}}/index'
+    file: 'src/pages/content/recommendations.content.yml'
     fields:
       - {
           label: 'Title for url',
