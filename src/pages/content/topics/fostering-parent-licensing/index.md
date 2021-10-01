@@ -1,5 +1,6 @@
 ---
-title: fostering-parent-licensing
+title: fosteringParentLicensing
+url: fostering-parent-licensing
 hero:
   backgroundColor: info
   title: Fostering Parent Licensing
