@@ -1,5 +1,6 @@
 ---
-title: family-finding
+title: familyFinding
+url: family-finding
 hero:
   backgroundColor: info
   title: Family Finding
