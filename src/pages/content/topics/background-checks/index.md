@@ -1,6 +1,9 @@
 ---
+title: backgroundChecks
+why: Background Checks
+what: Background Checks
 pageTitle: backgroundChecks
-title: background-checks
+url: background-checks
 hero:
   backgroundColor: info
   title: Background Checks
@@ -8,7 +11,5 @@ hero:
   imgAlt: Background Checks Icon
 image: /src/images/topics/Topic-BC.svg
 about: Background Checks
-why: Background Checks
-what: Background Checks
 layout: topic
 ---
