@@ -9,7 +9,7 @@ media_folder: 'src/images'
 collections:
   - name: 'topics'
     label: 'Topics'
-    file: 'src/pages/topics.content.yml'
+    file: 'src/pages/content/topics.content.yml'
     fields:
       - { label: 'Page title', name: 'title', widget: 'string' }
       - {
