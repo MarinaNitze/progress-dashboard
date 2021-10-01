@@ -1,5 +1,6 @@
 ---
-title: extended-foster-care
+title: extendedFosterCare
+url: extended-foster-care
 hero:
   backgroundColor: info
   title: Extended Foster Care
