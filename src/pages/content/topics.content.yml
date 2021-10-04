@@ -25,3 +25,16 @@ topic:
     what: Background Checks
     recommendations:
       - electronicBackgroundCheck
+  - hero:
+      backgroundColor: primary
+      title: Extended Foster Care
+      image: /src/images/heros/hero-home.png
+      imgAlt: Extended Foster Care
+    layout: topic
+    title: extended-foster-care
+    image: /src/images/topics/Topic-EFC.svg
+    about: Extended Foster Care
+    why: Extended Foster Care
+    what: Extended Foster Care
+    recommendations:
+      - electronicBackgroundCheck
