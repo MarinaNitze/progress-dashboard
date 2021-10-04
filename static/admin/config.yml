@@ -79,6 +79,7 @@ collections:
                 multiple: true
                 value_field: 'title'
                 search_fields: ['title']
+                file: 'src/pages/content/recommendations.content.yml'
       - name: 'recommendations'
         label: 'Recommendations'
         file: 'src/pages/content/recommendations.content.yml'
