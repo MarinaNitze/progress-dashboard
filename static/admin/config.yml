@@ -106,7 +106,7 @@ collections:
                     search_fields: ['title']
       - name: 'recommendations'
         label: 'Recommendations'
-        folder: 'src/pages/content/recommendations'
+        file: 'src/pages/content/recommendations.content.yml'
         create: true
         slug: 'index'
         path: '{{title}}/index'
