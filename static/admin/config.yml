@@ -74,7 +74,7 @@ collections:
                 }
               - label: 'Recommendations'
                 name: 'recommendations'
-                collection: 'recommendations'
+                collection: 'recommendationsAndTopics'
                 widget: 'relation'
                 multiple: true
                 value_field: 'recommendationsAndTopics.recommentations.*.title'
@@ -287,7 +287,7 @@ collections:
                   - label: 'Topics'
                     name: 'topics'
                     widget: 'relation'
-                    collection: 'topics'
+                    collection: 'recommendationsAndTopics'
                     multiple: true
                     min: 1
                     max: 7
