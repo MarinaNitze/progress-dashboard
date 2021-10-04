@@ -69,8 +69,8 @@ collections:
             name: 'recommendations'
             collection: 'recommendations'
             widget: 'relation'
-            multiple: true,
-            max: 5,
+            multiple: true
+            max: 5
             value_field: 'title'
             search_fields: ['title']
       - name: 'recommendations'
