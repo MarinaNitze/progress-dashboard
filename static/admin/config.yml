@@ -292,8 +292,7 @@ collections:
                     min: 1
                     max: 7
                     value_field: 'topics.*.title'
-                    search_fields: ['topics']
-                    file: 'src/pages/content/topics.content.yml'
+                    search_fields: ['topics.*.title']
               - label: 'Our mission'
                 name: 'mission'
                 widget: 'object'
