@@ -77,8 +77,8 @@ collections:
                 collection: 'recommendationsAndTopics'
                 widget: 'relation'
                 multiple: true
-                value_field: 'recommendationsAndTopics.recommentations.*.title'
-                search_fields: ['recommendationsAndTopics.recommentations']
+                value_field: 'recommendations.*.title'
+                search_fields: ['recommendations']
                 file: 'src/pages/content/recommendations.content.yml'
       - name: 'recommendations'
         label: 'Recommendations'
@@ -291,8 +291,8 @@ collections:
                     multiple: true
                     min: 1
                     max: 7
-                    value_field: 'recommendationsAndTopics.topics.*.title'
-                    search_fields: ['recommendationsAndTopics.topics']
+                    value_field: 'topics.*.title'
+                    search_fields: ['topics']
                     file: 'src/pages/content/topics.content.yml'
               - label: 'Our mission'
                 name: 'mission'
