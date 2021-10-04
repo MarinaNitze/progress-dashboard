@@ -7,8 +7,8 @@ publish_mode: 'editorial_workflow'
 media_folder: 'src/images'
 
 collections:
-  - label: 'Topics Collection'
-    name: 'topicsCollection'
+  - label: 'Recommendations and Topics'
+    name: 'recommendationsAndTopics'
     files:
       - label: 'Topics'
         name: 'topics'
@@ -67,78 +67,73 @@ collections:
               - { label: 'Why this matters', name: 'why', widget: 'markdown' }
               - { label: 'What we can do', name: 'what', widget: 'markdown' }
               - {
-                  label: 'Recommendations',
-                  name: 'recommendations',
-                  collection: 'recommendations',
-                  widget: 'relation',
-                  multiple: true,
-                  value_field: 'title',
-                  search_fields: ['title'],
-                }
-              - {
                   label: 'layout',
                   name: 'layout',
                   widget: 'hidden',
                   default: 'topic',
                 }
-  - name: 'recommendations'
-    label: 'Recommendations'
-    folder: 'src/pages/content/recommendations'
-    create: true
-    slug: 'index'
-    path: '{{title}}/index'
-    fields:
-      - {
-          label: 'Title for url',
-          name: 'title',
-          widget: 'string',
-          hint: 'Use dashes (-) instead of spaces ( ) to separate words.',
-        }
-      - { label: 'Title for heading', name: 'heading', widget: 'string' }
-      - {
-          label: 'About this recommendation',
-          name: 'about',
-          widget: 'markdown',
-        }
-      - { label: 'How to do this', name: 'how', widget: 'markdown' }
-      - {
-          label: 'Costs',
-          name: 'costs',
-          widget: 'list',
-          field: { label: 'Cost', name: 'cost', widget: 'string' },
-          summary: '{{fields.cost}}',
-        }
-      - {
-          label: 'Benefits',
-          name: 'benefits',
-          widget: 'list',
-          field: { label: 'Benefit', name: 'benefit', widget: 'string' },
-          summary: '{{fields.benefit}}',
-        }
-      - {
-          label: 'Outcome Data',
-          name: 'outcome',
-          widget: 'markdown',
-          required: false,
-        }
-      - label: "Who's doing this"
-        name: 'who'
-        widget: 'object'
+              - label: 'Recommendations'
+                name: 'recommendations'
+                collection: 'recommendations'
+                widget: 'relation'
+                multiple: true
+                value_field: 'title'
+                search_fields: ['title']
+      - name: 'recommendations'
+        label: 'Recommendations'
+        file: 'src/pages/content/recommendations.content.yml'
         fields:
           - {
-              label: 'Number of States & Territories',
-              name: 'number',
-              widget: 'number',
-              value_type: 'int',
-              max: 54,
+              label: 'Title for url',
+              name: 'title',
+              widget: 'string',
+              hint: 'Use dashes (-) instead of spaces ( ) to separate words.',
             }
-          - { label: 'Map Image', name: 'image', widget: 'image' }
-      - {
-          label: 'Get inspiration',
-          name: 'inspiration',
-          widget: 'markdown',
-          required: false,
-        }
+          - { label: 'Title for heading', name: 'heading', widget: 'string' }
+          - {
+              label: 'About this recommendation',
+              name: 'about',
+              widget: 'markdown',
+            }
+          - { label: 'How to do this', name: 'how', widget: 'markdown' }
+          - {
+              label: 'Costs',
+              name: 'costs',
+              widget: 'list',
+              field: { label: 'Cost', name: 'cost', widget: 'string' },
+              summary: '{{fields.cost}}',
+            }
+          - {
+              label: 'Benefits',
+              name: 'benefits',
+              widget: 'list',
+              field: { label: 'Benefit', name: 'benefit', widget: 'string' },
+              summary: '{{fields.benefit}}',
+            }
+          - {
+              label: 'Outcome Data',
+              name: 'outcome',
+              widget: 'markdown',
+              required: false,
+            }
+          - label: "Who's doing this"
+            name: 'who'
+            widget: 'object'
+            fields:
+              - {
+                  label: 'Number of States & Territories',
+                  name: 'number',
+                  widget: 'number',
+                  value_type: 'int',
+                  max: 54,
+                }
+              - { label: 'Map Image', name: 'image', widget: 'image' }
+          - {
+              label: 'Get inspiration',
+              name: 'inspiration',
+              widget: 'markdown',
+              required: false,
+            }
   - name: 'pages'
     label: 'Pages'
     files:
