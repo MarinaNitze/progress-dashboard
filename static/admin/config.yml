@@ -77,8 +77,8 @@ collections:
                 collection: 'recommendations'
                 widget: 'relation'
                 multiple: true
-                value_field: 'title'
-                search_fields: ['title']
+                value_field: 'recommendations.title'
+                search_fields: ['recommendations.title']
                 file: 'src/pages/content/recommendations.content.yml'
       - name: 'recommendations'
         label: 'Recommendations'
@@ -291,8 +291,8 @@ collections:
                     multiple: true
                     min: 1
                     max: 7
-                    value_field: 'title'
-                    search_fields: ['title']
+                    value_field: 'topics.title'
+                    search_fields: ['topics.title']
                     file: 'src/pages/content/topics.content.yml'
               - label: 'Our mission'
                 name: 'mission'
