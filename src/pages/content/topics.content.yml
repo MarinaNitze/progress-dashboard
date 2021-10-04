@@ -1,0 +1,92 @@
+topic:
+  - hero:
+      backgroundColor: primary
+      title: Foster Parent Licensing
+      image: /src/images/heros/hero-home.png
+      imgAlt: foster-parent-licensing
+    layout: topic
+    title: foster-parent-licensing
+    image: /src/images/topics/Topic-FPL.svg
+    about: Foster Parent Licensing
+    why: Foster Parent Licensing
+    what: Foster Parent Licensing
+    recommendations:
+      - electronicBackgroundCheck
+  - hero:
+      backgroundColor: primary
+      title: Background Checks
+      image: /src/images/heros/hero-home.png
+      imgAlt: background checks
+    layout: topic
+    title: background-checks
+    image: /src/images/topics/Topic-BC.svg
+    about: Background Checks
+    why: Background Checks
+    what: Background Checks
+    recommendations:
+      - electronicBackgroundCheck
+  - hero:
+      backgroundColor: primary
+      title: Extended Foster Care
+      image: /src/images/heros/hero-home.png
+      imgAlt: Extended Foster Care
+    layout: topic
+    title: extended-foster-care
+    image: /src/images/topics/Topic-EFC.svg
+    about: Extended Foster Care
+    why: Extended Foster Care
+    what: Extended Foster Care
+    recommendations:
+      - electronicBackgroundCheck
+  - hero:
+      backgroundColor: primary
+      title: Family Finding
+      image: /src/images/heros/hero-home.png
+      imgAlt: Family Finding
+    layout: topic
+    title: family-finding
+    image: /src/images/topics/Topic-FF.svg
+    about: Family Finding
+    why: Family Finding
+    what: Family Finding
+    recommendations:
+      - electronicBackgroundCheck
+  - hero:
+      backgroundColor: primary
+      title: Inquiry Management
+      image: /src/images/heros/hero-home.png
+      imgAlt: Inquiry Management
+    layout: topic
+    title: inquiry-management
+    image: /src/images/topics/Topic-IM.svg
+    about: Inquiry Management
+    why: Inquiry Management
+    what: Inquiry Management
+    recommendations:
+      - electronicBackgroundCheck
+  - hero:
+      backgroundColor: primary
+      title: License Renewal
+      image: /src/images/heros/hero-home.png
+      imgAlt: License Renewal
+    layout: topic
+    title: license-renewal
+    image: /src/images/topics/Topic-LR.svg
+    about: License Renewal
+    why: License Renewal
+    what: License Renewal
+    recommendations:
+      - electronicBackgroundCheck
+  - hero:
+      backgroundColor: primary
+      title: Recruitment
+      image: /src/images/heros/hero-home.png
+      imgAlt: Recruitment
+    layout: topic
+    title: recruitment
+    image: /src/images/topics/Topic-Recruitment.svg
+    about: Recruitment
+    why: Recruitment
+    what: Recruitment
+    recommendations:
+      - electronicBackgroundCheck
