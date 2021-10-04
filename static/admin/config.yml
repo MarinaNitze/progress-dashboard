@@ -7,138 +7,161 @@ publish_mode: 'editorial_workflow'
 media_folder: 'src/images'
 
 collections:
-  - label: 'Topics Collection'
-    name: 'topicsCollection'
+  - label: 'Recommendations and Topics'
+    name: 'recommendationsAndTopics'
     files:
-      - label: 'Topics'
-        name: 'topics'
-        file: 'src/pages/content/topics.content.yml'
-        fields:
-          - label: 'Topic'
-            name: 'topic'
-            widget: 'list'
-            summary: '{{fields.title}}'
+      - label: 'Topics Collection'
+        name: 'topicsCollection'
+        files:
+          - label: 'Topics'
+            name: 'topics'
+            file: 'src/pages/content/topics.content.yml'
             fields:
-              - {
-                  label: 'Title for url',
-                  name: 'title',
-                  widget: 'string',
-                  hint: 'Use dashes (-) instead of spaces ( ) to separate words.',
-                }
-              - label: 'Hero'
-                name: 'hero'
-                widget: 'object'
+              - label: 'Topic'
+                name: 'topic'
+                widget: 'list'
+                summary: '{{fields.title}}'
                 fields:
-                  - { label: 'Title', name: 'title', widget: 'string' }
                   - {
-                      label: 'Image',
-                      name: 'image',
-                      widget: 'image',
-                      media_folder: '/src/images/heros',
-                      allow_multiple: false,
-                    }
-                  - {
-                      label: 'Background Color',
-                      name: 'backgroundColor',
-                      widget: 'select',
-                      options:
-                        ['primary', 'secondary', 'info', 'light', 'white'],
-                      default: ['light'],
-                    }
-                  - {
-                      label: 'Image Alt Text',
-                      name: 'imgAlt',
+                      label: 'Title for url',
+                      name: 'title',
                       widget: 'string',
+                      hint: 'Use dashes (-) instead of spaces ( ) to separate words.',
                     }
-              - {
-                  label: 'Icon',
-                  name: 'image',
-                  widget: image,
-                  media_folder: '/src/images/topics',
-                  allow_multiple: false,
-                  hint: 'Must be an svg file type',
-                  pattern:
-                    [
-                      '.svg',
-                      'Detected file type was not .svg. File type must be .svg',
-                    ],
-                }
-              - { label: 'About this topic', name: 'about', widget: 'markdown' }
-              - { label: 'Why this matters', name: 'why', widget: 'markdown' }
-              - { label: 'What we can do', name: 'what', widget: 'markdown' }
-              - {
-                  label: 'Recommendations',
-                  name: 'recommendations',
-                  collection: 'recommendations',
-                  widget: 'relation',
-                  multiple: true,
-                  value_field: 'title',
-                  search_fields: ['title'],
-                }
-              - {
-                  label: 'layout',
-                  name: 'layout',
-                  widget: 'hidden',
-                  default: 'topic',
-                }
-  - name: 'recommendations'
-    label: 'Recommendations'
-    folder: 'src/pages/content/recommendations'
-    create: true
-    slug: 'index'
-    path: '{{title}}/index'
-    fields:
-      - {
-          label: 'Title for url',
-          name: 'title',
-          widget: 'string',
-          hint: 'Use dashes (-) instead of spaces ( ) to separate words.',
-        }
-      - { label: 'Title for heading', name: 'heading', widget: 'string' }
-      - {
-          label: 'About this recommendation',
-          name: 'about',
-          widget: 'markdown',
-        }
-      - { label: 'How to do this', name: 'how', widget: 'markdown' }
-      - {
-          label: 'Costs',
-          name: 'costs',
-          widget: 'list',
-          field: { label: 'Cost', name: 'cost', widget: 'string' },
-          summary: '{{fields.cost}}',
-        }
-      - {
-          label: 'Benefits',
-          name: 'benefits',
-          widget: 'list',
-          field: { label: 'Benefit', name: 'benefit', widget: 'string' },
-          summary: '{{fields.benefit}}',
-        }
-      - {
-          label: 'Outcome Data',
-          name: 'outcome',
-          widget: 'markdown',
-          required: false,
-        }
-      - label: "Who's doing this"
-        name: 'who'
-        widget: 'object'
+                  - label: 'Hero'
+                    name: 'hero'
+                    widget: 'object'
+                    fields:
+                      - { label: 'Title', name: 'title', widget: 'string' }
+                      - {
+                          label: 'Image',
+                          name: 'image',
+                          widget: 'image',
+                          media_folder: '/src/images/heros',
+                          allow_multiple: false,
+                        }
+                      - {
+                          label: 'Background Color',
+                          name: 'backgroundColor',
+                          widget: 'select',
+                          options:
+                            ['primary', 'secondary', 'info', 'light', 'white'],
+                          default: ['light'],
+                        }
+                      - {
+                          label: 'Image Alt Text',
+                          name: 'imgAlt',
+                          widget: 'string',
+                        }
+                  - {
+                      label: 'Icon',
+                      name: 'image',
+                      widget: image,
+                      media_folder: '/src/images/topics',
+                      allow_multiple: false,
+                      hint: 'Must be an svg file type',
+                      pattern:
+                        [
+                          '.svg',
+                          'Detected file type was not .svg. File type must be .svg',
+                        ],
+                    }
+                  - {
+                      label: 'About this topic',
+                      name: 'about',
+                      widget: 'markdown',
+                    }
+                  - {
+                      label: 'Why this matters',
+                      name: 'why',
+                      widget: 'markdown',
+                    }
+                  - {
+                      label: 'What we can do',
+                      name: 'what',
+                      widget: 'markdown',
+                    }
+                  - {
+                      label: 'Recommendations',
+                      name: 'recommendations',
+                      collection: 'recommendations',
+                      widget: 'relation',
+                      multiple: true,
+                      value_field: 'title',
+                      search_fields: ['title'],
+                    }
+                  - {
+                      label: 'layout',
+                      name: 'layout',
+                      widget: 'hidden',
+                      default: 'topic',
+                    }
+                  - label: 'Recommendations'
+                    name: 'recommendations'
+                    collection: 'recommendations'
+                    widget: 'relation'
+                    multiple: true
+                    max: 5
+                    value_field: 'title'
+                    search_fields: ['title']
+      - name: 'recommendations'
+        label: 'Recommendations'
+        folder: 'src/pages/content/recommendations'
+        create: true
+        slug: 'index'
+        path: '{{title}}/index'
         fields:
           - {
-              label: 'Number of States & Territories',
-              name: 'number',
-              widget: 'number',
-              value_type: 'int',
-              max: 54,
+              label: 'Title for url',
+              name: 'title',
+              widget: 'string',
+              hint: 'Use dashes (-) instead of spaces ( ) to separate words.',
             }
-          - { label: 'Map Image', name: 'image', widget: 'image' }
-      - {
-          label: 'Get inspiration',
-          name: 'inspiration',
-          widget: 'markdown',
-          required: false,
-        }
+          - { label: 'Title for heading', name: 'heading', widget: 'string' }
+          - {
+              label: 'About this recommendation',
+              name: 'about',
+              widget: 'markdown',
+            }
+          - { label: 'How to do this', name: 'how', widget: 'markdown' }
+          - {
+              label: 'Costs',
+              name: 'costs',
+              widget: 'list',
+              field: { label: 'Cost', name: 'cost', widget: 'string' },
+              summary: '{{fields.cost}}',
+            }
+          - {
+              label: 'Benefits',
+              name: 'benefits',
+              widget: 'list',
+              field: { label: 'Benefit', name: 'benefit', widget: 'string' },
+              summary: '{{fields.benefit}}',
+            }
+          - {
+              label: 'Outcome Data',
+              name: 'outcome',
+              widget: 'markdown',
+              required: false,
+            }
+          - label: "Who's doing this"
+            name: 'who'
+            widget: 'object'
+            fields:
+              - {
+                  label: 'Number of States & Territories',
+                  name: 'number',
+                  widget: 'number',
+                  value_type: 'int',
+                  max: 54,
+                }
+              - { label: 'Map Image', name: 'image', widget: 'image' }
+          - {
+              label: 'Get inspiration',
+              name: 'inspiration',
+              widget: 'markdown',
+              required: false,
+            }
   - name: 'pages'
     label: 'Pages'
     files:
