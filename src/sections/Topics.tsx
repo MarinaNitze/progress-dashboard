@@ -8,19 +8,34 @@ import {
   Button,
 } from '@trussworks/react-uswds';
 
-import Card, { CardProps } from '../components/card/Card';
+import Card from '../components/card/Card';
 import './Topics.scss';
 
 import content from '../pages/content/topics.content.yml';
 import mainPageContent from '../pages/index.content.yml';
 
 type topicContent = {
-  topic: CardProps[];
+  hero: {
+    backgroundColor: 'primary' | 'secondary' | 'info' | 'light' | 'white';
+    title: 'string';
+    image: 'string';
+    imgAlt: 'string';
+  };
+  layout: 'topic';
+  title: 'string';
+  image: 'string';
+  about: 'string';
+  why: 'string';
+  what: 'string';
+  recommendations: Array<string>;
 };
 
 export default function TopicsSection() {
-  const { topic }: topicContent = content;
-  const { topicsSection } = mainPageContent.home.topicSection;
+  const topics: topicContent[] = content.topics;
+  const { topicSection } = mainPageContent.home;
+  const selectedTopics: topicContent[] = topicSection.topics.map((title: any) =>
+    topics.find(t => t.title === title),
+  );
 
   return (
     <section className="topics-section" id="test-section-id">
@@ -29,11 +44,11 @@ export default function TopicsSection() {
           <h2 className="font-heading-xl margin-y-0 topics-title">
             Popular Topics
           </h2>
-          <ReactMarkdown>{topicsSection.popularTopics}</ReactMarkdown>
+          <ReactMarkdown>{topicSection.popularTopics}</ReactMarkdown>
         </Grid>
         <Grid>
           <CardGroup>
-            {topic.map((t: any) => (
+            {selectedTopics.map(t => (
               <Card
                 key={t.title}
                 link={'/topic/' + t.title}
