@@ -66,10 +66,10 @@ home:
       be capped with a rectangular image, and include a heading.\r Heading and
       image will be clickable."
     topics:
-      - fosteringParentLicensing
-      - backgroundChecks
-      - extendedFosterCare
-      - familyFinding
-      - inquiryManagement
-      - licenseRenewal
       - recruitment
+      - background-checks
+      - extended-foster-care
+      - foster-parent-licensing
+      - inquiry-management
+      - family-finding
+      - license-renewal
