@@ -1,5 +1,11 @@
-title: electronicBackground
 heading: Electronic Background
+costs:
+  - Budget for implementation
+  - Budget for maintenance
+  - Changes to forms or workflow
+  - Staffing increase or reallocation
+  - Training for staff
+inspiration: Get inspiration
 about: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisi,
   sollicitudin pharetra, commodo aliquet eu a gravida quis varius. Etiam sit
   orci, in risus elit. Interdum at tristique pellentesque dolor facilisis tempor
@@ -12,17 +18,6 @@ how: >-
   * Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices elit hendrerit id amet. At egestas viverra nam vel nunc ut sagittis. Senectus aliquam at nec purus. Egestas tempor, pellentesque porttitor convallis dignissim venenatis sagittis.
 
   * Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices elit hendrerit id amet. At egestas viverra nam vel nunc ut sagittis. Senectus aliquam at nec purus. Egestas tempor, pellentesque porttitor convallis dignissim venenatis sagittis.
-costs:
-  - Budget for implementation
-  - Budget for maintenance
-  - Changes to forms or workflow
-  - Staffing increase or reallocation
-  - Training for staff
-benefits:
-  - Lower costs
-  - Fewer errors
-  - Improved safety
-  - Time saved (staff or process)
 outcome: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
@@ -34,7 +29,30 @@ outcome: >-
   * Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices elit hendrerit id amet.
 
   * Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices elit hendrerit id amet.
+title: electronicBackground
+recommendations:
+  - heading: Accept background check electronically
+    costs:
+      - Budget for implementation
+    inspiration: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    about: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisi,
+      sollicitudin pharetra, commodo aliquet eu a gravida quis varius. Etiam sit
+      orci, in risus elit. Interdum at tristique pellentesque dolor facilisis
+      tempor ipsum. Pulvinar a ut posuere vitae amet praesent. Auctor lorem quis
+      tellus venenatis varius nisi lacinia ut. Ornare ut sit etiam quisque.
+    how: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    outcome: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    title: electronicBackgroundCheck
+    benefits:
+      - Lower costs
+    who:
+      number: 49
+      image: /src/images/us-map.png
+benefits:
+  - Lower costs
+  - Fewer errors
+  - Improved safety
+  - Time saved (staff or process)
 who:
   image: /src/images/us-map.png
   number: 50
-inspiration: Get inspiration
