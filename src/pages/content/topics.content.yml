@@ -1,4 +1,4 @@
-topics:
+topic:
   - hero:
       backgroundColor: primary
       title: Foster Parent Licensing
@@ -90,3 +90,26 @@ topics:
     what: Recruitment
     recommendations:
       - electronicBackgroundCheck
+topics:
+  - hero:
+      backgroundColor: primary
+      title: Foster Parent Licensing
+      image: /src/images/heros/hero-home.png
+      imgAlt: foster-parent-licensing
+    layout: topic
+    title: Foster Parent Licensing
+    image: /src/images/topics/Topic-BC.svg
+    about: Foster Parent Licensing
+    why: Foster Parent Licensing
+    what: Foster Parent Licensing
+  - hero:
+      backgroundColor: primary
+      title: Test Content
+      imgAlt: test-content
+      image: /src/images/heros/hero-home.png
+    layout: topic
+    title: test-content
+    image: /src/images/topics/Topic-BC.svg
+    about: test
+    why: test
+    what: test
