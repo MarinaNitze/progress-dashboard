@@ -80,11 +80,12 @@ collections:
                 value_field: 'recommendations.*.title'
                 search_fields: ['recommendations']
                 file: 'src/pages/content/recommendations.content.yml'
+                required: false
       - name: 'recommendations'
         label: 'Recommendations'
         file: 'src/pages/content/recommendations.content.yml'
         fields:
-          - label: 'Recommendation'
+          - label: 'Recommendations'
             name: 'recommendations'
             widget: 'list'
             summary: '{{fields.title}}'
