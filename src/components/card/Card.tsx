@@ -47,7 +47,8 @@ export default function Card({
   layout = 'lg',
 }: CardProps) {
   let imageComponent;
-  const imageNode = image && useGatsbyImages()[image.slice(3)];
+  const imageNode =
+    image && useGatsbyImages()[image.slice(image[0] === '.' ? 3 : 5)];
   if (imageNode && imageNode.extension === 'svg') {
     const svgImage = imageNode.publicURL;
     imageComponent = svgImage && (
