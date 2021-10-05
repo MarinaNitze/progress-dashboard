@@ -102,6 +102,9 @@ topics:
     about: Foster Parent Licensing
     why: Foster Parent Licensing
     what: Foster Parent Licensing
+    recommendations:
+      - electronicBackgroundCheck
+      - backgroundCheckForm
   - hero:
       backgroundColor: primary
       title: Test Content
