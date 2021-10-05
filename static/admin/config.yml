@@ -10,11 +10,11 @@ collections:
   - label: 'Recommendations and Topics'
     name: 'recommendationsAndTopics'
     files:
-      - label: 'Topics'
-        name: 'topics'
+      - label: 'Topics Collection'
+        name: 'topicsCollection'
         file: 'src/pages/content/topics.content.yml'
         fields:
-          - label: 'Topic'
+          - label: 'Topics'
             name: 'topics'
             widget: 'list'
             summary: '{{fields.title}}'
@@ -78,11 +78,11 @@ collections:
                 widget: 'relation'
                 multiple: true
                 value_field: 'recommendations.*.title'
-                search_fields: ['recommendations']
-                file: 'src/pages/content/recommendations.content.yml'
+                search_fields: ['recommendations.*.title']
+                file: 'recommendationsCollection'
                 required: false
-      - name: 'recommendations'
-        label: 'Recommendations'
+      - name: 'recommendationsCollection'
+        label: 'Recommendations Collection'
         file: 'src/pages/content/recommendations.content.yml'
         fields:
           - label: 'Recommendations'
@@ -294,7 +294,7 @@ collections:
                     max: 7
                     value_field: 'topics.*.title'
                     search_fields: ['topics.*.title']
-                    file: 'topics'
+                    file: 'topicsCollection'
               - label: 'Our mission'
                 name: 'mission'
                 widget: 'object'
