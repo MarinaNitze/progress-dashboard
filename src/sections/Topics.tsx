@@ -10,23 +10,22 @@ import {
 
 import Card from '../components/card/Card';
 import './Topics.scss';
-
 import content from '../pages/content/topics.content.yml';
 import mainPageContent from '../pages/index.content.yml';
 
 type topicContent = {
   hero: {
     backgroundColor: 'primary' | 'secondary' | 'info' | 'light' | 'white';
-    title: 'string';
-    image: 'string';
-    imgAlt: 'string';
+    title: string;
+    image: string;
+    imgAlt: string;
   };
   layout: 'topic';
-  title: 'string';
-  image: 'string';
-  about: 'string';
-  why: 'string';
-  what: 'string';
+  title: string;
+  image: string;
+  about: string;
+  why: string;
+  what: string;
   recommendations: Array<string>;
 };
 
@@ -48,10 +47,10 @@ export default function TopicsSection() {
         </Grid>
         <Grid>
           <CardGroup>
-            {selectedTopics.map(t => (
+            {selectedTopics.map((t: any) => (
               <Card
                 key={t.title}
-                link={'/topic/' + t.title}
+                link={`/topic/${t.title}`}
                 layout="topic"
                 image={t.image}
                 imgAlt={t.title + ' icon'}
