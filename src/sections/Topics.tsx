@@ -47,7 +47,7 @@ export default function TopicsSection() {
         </Grid>
         <Grid>
           <CardGroup>
-            {selectedTopics.map((t: any) => (
+            {selectedTopics.map(t => (
               <Card
                 key={t.title}
                 link={`/topic/${t.title}`}
