@@ -97,8 +97,8 @@ topics:
       image: /src/images/heros/hero-home.png
       imgAlt: foster-parent-licensing
     layout: topic
-    title: Foster Parent Licensing
-    image: /src/images/topics/Topic-BC.svg
+    title: foster-parent-licensing
+    image: /src/images/topics/Topic-FPL.svg
     about: Foster Parent Licensing
     why: Foster Parent Licensing
     what: Foster Parent Licensing
