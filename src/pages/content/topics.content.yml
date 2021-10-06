@@ -142,6 +142,8 @@ topics:
     about: Family Finding
     why: Family Finding
     what: Family Finding
+    recommendations:
+      - backgroundCheckForm
   - hero:
       backgroundColor: primary
       title: Inquiry Management
@@ -153,6 +155,8 @@ topics:
     about: Inquiry Management
     why: Inquiry Management
     what: Inquiry Management
+    recommendations:
+      - electronicBackgroundCheck
   - hero:
       backgroundColor: primary
       title: License Renewal
@@ -164,6 +168,8 @@ topics:
     about: License Renewal
     why: License Renewal
     what: License Renewal
+    recommendations:
+      - electronicBackgroundCheck
   - hero:
       backgroundColor: primary
       title: Recruitment
@@ -175,3 +181,5 @@ topics:
     about: Recruitment
     why: Recruitment
     what: Recruitment
+    recommendations:
+      - electronicBackgroundCheck
