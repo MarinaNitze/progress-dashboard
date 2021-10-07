@@ -72,7 +72,7 @@ export default function State({ params: { topic } }: PageProps) {
                     {items[0].title}
                   </h2>
                   <ReactMarkdown className="section-content">
-                    {selectedTopic?.about}
+                    {selectedTopic.about}
                   </ReactMarkdown>
                 </section>
               </Grid>
@@ -84,7 +84,7 @@ export default function State({ params: { topic } }: PageProps) {
                     {items[1].title}
                   </h2>
                   <ReactMarkdown className="section-content">
-                    {selectedTopic?.why}
+                    {selectedTopic.why}
                   </ReactMarkdown>
                 </section>
               </Grid>
@@ -96,7 +96,7 @@ export default function State({ params: { topic } }: PageProps) {
                     {items[2].title}
                   </h2>
                   <ReactMarkdown className="section-content">
-                    {selectedTopic?.what}
+                    {selectedTopic.what}
                   </ReactMarkdown>
                 </section>
               </Grid>
