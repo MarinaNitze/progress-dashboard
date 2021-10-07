@@ -5,7 +5,12 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
 import useGatsbyImages from '../../hooks/useGatsbyImages';
 
-type BackgroundColorOptions = 'primary' | 'secondary' | 'info' | 'light';
+type BackgroundColorOptions =
+  | 'primary'
+  | 'secondary'
+  | 'info'
+  | 'light'
+  | 'white';
 
 type HeroProps = {
   title?: string;
