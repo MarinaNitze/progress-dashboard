@@ -1,0 +1,35 @@
+@import '../../styles/settings.scss';
+
+.cwp-topic {
+  display: block;
+  margin-left: 0;
+  margin-right: 0;
+  max-width: none;
+  padding-left: 0;
+}
+
+.cwp-main {
+  margin-top: 2rem;
+  margin-left: 4rem;
+}
+
+  .section-title {
+    display: inline-flex;
+    flex-direction: column;
+    font-family: Petrona;
+
+    &:after {
+      @include vertical-line;
+      width: auto;
+    }
+  }
+
+  .section-content {
+    font-family: Petrona;
+  }
+
+@media (min-width: 64em) {
+  .cwp-topic {
+    display: flex;
+  }
+}
