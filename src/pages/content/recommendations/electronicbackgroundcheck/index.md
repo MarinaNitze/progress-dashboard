@@ -21,7 +21,7 @@ costs:
 benefits:
   - Lower costs
   - Fewer errors
-  - "Improved safety "
+  - 'Improved safety '
   - Time saved (staff or process)
 outcome: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -37,5 +37,5 @@ outcome: >-
 who:
   number: 43
   image: us-map.png
-inspiration: "* External link 1"
+inspiration: '* External link 1'
 ---
