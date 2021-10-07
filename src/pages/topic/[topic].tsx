@@ -17,6 +17,7 @@ export default function State({ params: { topic } }: PageProps) {
   const addHash = (title: string, url: string) => {
     window.history.replaceState(null, title, url);
   };
+  const itemFilterKey = ['about', 'why', 'what', 'recommendations'];
   const items: AnchorLinkProps[] = [
     {
       to: `/topic/${selectedTopic?.title}#about-this-topic`,
@@ -40,7 +41,15 @@ export default function State({ params: { topic } }: PageProps) {
       onAnchorLinkClick: () =>
         addHash('How programs are doing this', '#how-programs-are-doing-this'),
     },
-  ];
+  ].filter(
+    (_it, index) =>
+      !!(
+        selectedTopic &&
+        selectedTopic[
+          itemFilterKey[index] as 'about' | 'what' | 'why' | 'recommendations'
+        ]
+      ),
+  );
 
   return (
     <Layout>
