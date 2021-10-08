@@ -1,0 +1,46 @@
+@import '../../styles/settings.scss';
+
+.usa-table {
+  &.cwp-table {
+    width: 100%;
+
+    :not(td) {
+      font-family: Petrona;
+    }
+
+    thead {
+      border-bottom: solid 0.15rem $light;
+    }
+    td {
+      border: 0;
+
+      &:not(:last-child) {
+        border-right: solid 0.05rem $light;
+      }
+    }
+
+    tr {
+      border-top: 0;
+      border-bottom: 0;
+    }
+
+    th {
+      border: 0;
+
+      .sort-icon {
+        float: right;
+        max-width: 0.8rem;
+        cursor: pointer;
+
+        &.desc {
+          transform: rotate(180deg);
+        }
+
+        &.disabled {
+          filter: invert(100%);
+          cursor: not-allowed;
+        }
+      }
+    }
+  }
+}

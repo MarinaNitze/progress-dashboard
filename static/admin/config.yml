@@ -146,6 +146,12 @@ collections:
                   widget: 'markdown',
                   required: false,
                 }
+              - {
+                  label: 'Summary',
+                  name: 'summary',
+                  widget: 'markdown',
+                  required: false,
+                }
   - name: 'pages'
     label: 'Pages'
     files:
