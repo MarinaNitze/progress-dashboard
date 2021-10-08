@@ -1,6 +1,7 @@
 export type Recommendation = {
   about: string;
-  benefits: string;
+  benefits: Array<string>;
+  costs: Array<string>;
   heading: string;
   how: string;
   inspiration: string;

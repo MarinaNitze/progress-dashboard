@@ -1,0 +1,45 @@
+@import '../../styles/settings.scss';
+
+.cwp-recommendation {
+  display: block;
+  margin-left: 0;
+  margin-right: 0;
+  max-width: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.cwp-main {
+  margin-top: 2rem;
+  margin-left: 4em;
+  margin-right: 4rem;
+}
+
+  .section-title {
+    display: inline-flex;
+    flex-direction: column;
+    font-family: Petrona;
+
+    &:after {
+      @include vertical-line;
+      width: auto;
+    }
+  }
+
+  .section-content {
+    font-family: Petrona;
+  }
+
+@media (min-width: 64em) {
+  .cwp-recommendation {
+    display: flex;
+
+    .usa-layout-docs__sidenav {
+      margin-right: 2rem
+    }
+
+    .cwp-main {
+      margin-left: 2rem;
+    }
+  }
+}

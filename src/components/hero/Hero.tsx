@@ -16,7 +16,7 @@ type HeroProps = {
   title?: string;
   content?: string;
   path?: string;
-  alt: string;
+  alt?: string;
   className?: string;
   backgroundColor?: BackgroundColorOptions;
   imageBackgroundColor?: BackgroundColorOptions;
@@ -41,7 +41,11 @@ export default function Hero({
   const gatsbyImage: ImageSharp['gatsbyImageData'] =
     imageNode && getImage(imageNode);
   const imageComponent = gatsbyImage && (
-    <GatsbyImage className="image" image={gatsbyImage} alt={alt} />
+    <GatsbyImage
+      className="image"
+      image={gatsbyImage}
+      alt={alt ?? `${title}-icon`}
+    />
   );
 
   return (
