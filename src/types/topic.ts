@@ -1,4 +1,4 @@
-export type topicContent = {
+export type Topic = {
   hero: {
     backgroundColor: 'primary' | 'secondary' | 'info' | 'light' | 'white';
     title: string;

@@ -8,16 +8,16 @@ import {
   Button,
 } from '@trussworks/react-uswds';
 
-import { topicContent } from '../types/topic';
+import { Topic } from '../types/topic';
 import Card from '../components/card/Card';
 import './Topics.scss';
 import content from '../pages/content/topics.content.yml';
 import mainPageContent from '../pages/index.content.yml';
 
 export default function TopicsSection() {
-  const topics: topicContent[] = content.topics;
+  const topics: Topic[] = content.topics;
   const { topicSection } = mainPageContent.home;
-  const selectedTopics: topicContent[] = topicSection.topics.map((title: any) =>
+  const selectedTopics: Topic[] = topicSection.topics.map((title: any) =>
     topics.find(t => t.title === title),
   );
 
