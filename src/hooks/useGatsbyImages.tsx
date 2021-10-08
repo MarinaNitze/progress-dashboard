@@ -6,7 +6,7 @@ type useGatsbyImageResponse = {
 };
 
 export default function useGatsbyImages(): useGatsbyImageResponse {
-  const { heroImages, topicImages, featureImages, headerImages, footerImages } =
+  const { heroImages, topicImages, featureImages, headerImages, footerImages, recommendationImages } =
     useStaticQuery<HeroAndCardImagesQuery>(graphql`
       query HeroAndCardImages {
         heroImages: allFile(
@@ -27,6 +27,22 @@ export default function useGatsbyImages(): useGatsbyImageResponse {
         }
         featureImages: allFile(
           filter: { relativeDirectory: { eq: "images/features" } }
+        ) {
+          edges {
+            node {
+              relativePath
+              childImageSharp {
+                gatsbyImageData(
+                  placeholder: BLURRED
+                  formats: [AUTO, WEBP, AVIF]
+                )
+              }
+              extension
+            }
+          }
+        }
+        recommendationImages: allFile(
+          filter: { relativeDirectory: { eq: "images/recommendations" } }
         ) {
           edges {
             node {
@@ -83,6 +99,7 @@ export default function useGatsbyImages(): useGatsbyImageResponse {
     featureImages,
     headerImages,
     footerImages,
+    recommendationImages,
   ].reduce((acc, images) => {
     images?.edges.forEach(edge => {
       const path: string = edge.node.relativePath;

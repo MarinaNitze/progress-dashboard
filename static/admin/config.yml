@@ -139,7 +139,7 @@ collections:
                       value_type: 'int',
                       max: 54,
                     }
-                  - { label: 'Map Image', name: 'image', widget: 'image' }
+                  - { label: 'Map Image', name: 'image', widget: 'image',  media_folder: '../images/recommendations', }
               - {
                   label: 'Get inspiration',
                   name: 'inspiration',

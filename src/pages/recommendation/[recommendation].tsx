@@ -11,13 +11,25 @@ import Hero from '../../components/hero/Hero';
 import SideAnchorNav from '../../components/side-anchor-nav/SideAnchorNav';
 import useGatsbyImages from '../../hooks/useGatsbyImages';
 import './recommendation.scss';
+import { ImageSharp } from '../../../graphql-types';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
 export default function State({ params: { recommendation } }: PageProps) {
   const costsIcon = useGatsbyImages()['images/topics/icon-costs.svg'].publicURL;
   const benefitsIcon =
     useGatsbyImages()['images/topics/icon-benefits.svg'].publicURL;
-  const topics: recommendationContent[] = content.recommendations;
-  const selectedRecommendation = topics.find(t => t.title === recommendation);
+  const recommendations: recommendationContent[] = content.recommendations;
+  const selectedRecommendation = recommendations.find(t => t.title === recommendation);
+  const imageNode = selectedRecommendation?.who?.image && useGatsbyImages()[selectedRecommendation.who.image.slice(5)];
+  const gatsbyImage: ImageSharp['gatsbyImageData'] =
+    imageNode && getImage(imageNode);
+  const imageComponent = gatsbyImage && (
+    <GatsbyImage
+      className="image"
+      image={gatsbyImage}
+      alt={`${selectedRecommendation?.title}-who-is-doing-this`}
+    />
+  );
   const addHash = (title: string, url: string) => {
     window.history.replaceState(null, title, url);
   };
@@ -53,6 +65,11 @@ export default function State({ params: { recommendation } }: PageProps) {
       title: "Who's doing this",
       onAnchorLinkClick: () => addHash("Who's doing this", '#whos-doing-this'),
     },
+    {
+      to: `/recommendation/${selectedRecommendation?.title}#inspiration`,
+      title: "Get Inspiration",
+      onAnchorLinkClick: () => addHash("Who's doing this", '#inspiration'),
+    },
   ].filter(
     (_it, index) =>
       !!(
@@ -65,6 +82,7 @@ export default function State({ params: { recommendation } }: PageProps) {
             | 'benefits'
             | 'outcome'
             | 'who'
+            | 'inspiration'
         ]
       ),
   );
@@ -134,7 +152,7 @@ export default function State({ params: { recommendation } }: PageProps) {
                       </h4>
                       <ul>
                         {selectedRecommendation.benefits.map(ben => (
-                          <li>{ben}</li>
+                          <li key={ben}>{ben}</li>
                         ))}
                       </ul>
                     </Grid>
@@ -152,7 +170,7 @@ export default function State({ params: { recommendation } }: PageProps) {
                         className={selectedRecommendation?.costs && 'divider'}
                       >
                         {selectedRecommendation.costs.map(cost => (
-                          <li>{cost}</li>
+                          <li key={cost}>{cost}</li>
                         ))}
                       </ul>
                     </Grid>
@@ -178,7 +196,6 @@ export default function State({ params: { recommendation } }: PageProps) {
                   <h3 className="font-heading-xl margin-y-0 section-title">
                     {items[4].title}
                   </h3>
-                  {/* todo: get image */}
                   {selectedRecommendation.who.number && (
                     <>
                       <h4>{selectedRecommendation.who.number} of 54</h4>
@@ -189,7 +206,17 @@ export default function State({ params: { recommendation } }: PageProps) {
                     </>
                   )}
                   {selectedRecommendation.who.image &&
-                    selectedRecommendation.who.image}
+                    imageComponent}
+                </section>
+              </Grid>
+            )}
+            {selectedRecommendation?.inspiration && (
+              <Grid id="inspiration">
+                <section>
+                  <h3 className="font-heading-xl margin-y-0 section-title">
+                    {items[5].title}
+                  </h3>
+                  <ReactMarkdown>{selectedRecommendation.inspiration}</ReactMarkdown>
                 </section>
               </Grid>
             )}

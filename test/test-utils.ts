@@ -22,6 +22,16 @@ export const mockImageData = () => ({
       },
     ],
   },
+  recommendationImages: {
+    edges: [
+      {
+        node: {
+          extension: 'png',
+          relativePath: 'images/recommendations/us-map.png',
+        },
+      },
+    ],
+  },
   topicImages: {
     edges: [
       {
