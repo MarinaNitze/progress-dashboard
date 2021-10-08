@@ -9,9 +9,13 @@ import content from '../content/recommendations.content.yml';
 import { recommendationContent } from '../../utils/util';
 import Hero from '../../components/hero/Hero';
 import SideAnchorNav from '../../components/side-anchor-nav/SideAnchorNav';
+import useGatsbyImages from '../../hooks/useGatsbyImages';
 import './recommendation.scss';
 
 export default function State({ params: { recommendation } }: PageProps) {
+  const costsIcon = useGatsbyImages()['images/topics/icon-costs.svg'].publicURL;
+  const benefitsIcon =
+    useGatsbyImages()['images/topics/icon-benefits.svg'].publicURL;
   const topics: recommendationContent[] = content.recommendations;
   const selectedRecommendation = topics.find(t => t.title === recommendation);
   const addHash = (title: string, url: string) => {
@@ -89,9 +93,9 @@ export default function State({ params: { recommendation } }: PageProps) {
             {selectedRecommendation?.about && (
               <Grid id="about-this-recommendation">
                 <section>
-                  <h2 className="font-heading-xl margin-y-0 section-title">
+                  <h3 className="font-heading-xl margin-y-0 section-title">
                     {items[0].title}
-                  </h2>
+                  </h3>
                   <ReactMarkdown className="section-content">
                     {selectedRecommendation.about}
                   </ReactMarkdown>
@@ -101,9 +105,9 @@ export default function State({ params: { recommendation } }: PageProps) {
             {selectedRecommendation?.how && (
               <Grid id="how-to-do-this">
                 <section>
-                  <h2 className="font-heading-xl margin-y-0 section-title">
+                  <h3 className="font-heading-xl margin-y-0 section-title">
                     {items[1].title}
-                  </h2>
+                  </h3>
                   <ReactMarkdown className="section-content">
                     {selectedRecommendation.how}
                   </ReactMarkdown>
@@ -114,16 +118,20 @@ export default function State({ params: { recommendation } }: PageProps) {
               selectedRecommendation?.benefits) && (
               <Grid id="anticipated-costs-and-benefits">
                 <section>
-                  <h2 className="font-heading-xl margin-y-0 section-title">
+                  <h3 className="font-heading-xl margin-y-0 section-title">
                     {items[2].title}
-                  </h2>
-                  {/* todo: format as table or something else? */}
+                  </h3>
                   <Grid row>
                     <Grid desktop={{ col: 6 }}>
-                      <h5 className="cab-header">
-                        Costs
+                      <h4 className="cab">
+                        <img
+                          className="icon"
+                          src={costsIcon}
+                          alt="costs icon"
+                        />{' '}
+                        <span className="cab-heading">Costs</span>
                         <hr />
-                      </h5>
+                      </h4>
                       <ul>
                         {selectedRecommendation.benefits.map(ben => (
                           <li>{ben}</li>
@@ -131,10 +139,15 @@ export default function State({ params: { recommendation } }: PageProps) {
                       </ul>
                     </Grid>
                     <Grid desktop={{ col: 6 }}>
-                      <h5 className="cab-header">
-                        Benefits
+                      <h4 className="cab">
+                        <img
+                          className="icon"
+                          src={benefitsIcon}
+                          alt="benefits icon"
+                        />{' '}
+                        <span className="cab-heading">Benefits</span>
                         <hr />
-                      </h5>
+                      </h4>
                       <ul
                         className={selectedRecommendation?.costs && 'divider'}
                       >
@@ -150,9 +163,9 @@ export default function State({ params: { recommendation } }: PageProps) {
             {selectedRecommendation?.outcome && (
               <Grid id="outcome-data">
                 <section>
-                  <h2 className="font-heading-xl margin-y-0 section-title">
-                    {items[1].title}
-                  </h2>
+                  <h3 className="font-heading-xl margin-y-0 section-title">
+                    {items[3].title}
+                  </h3>
                   <ReactMarkdown className="section-content">
                     {selectedRecommendation.outcome}
                   </ReactMarkdown>
@@ -162,9 +175,9 @@ export default function State({ params: { recommendation } }: PageProps) {
             {selectedRecommendation?.who && (
               <Grid id="whos-doing-this">
                 <section>
-                  <h2 className="font-heading-xl margin-y-0 section-title">
-                    {items[1].title}
-                  </h2>
+                  <h3 className="font-heading-xl margin-y-0 section-title">
+                    {items[4].title}
+                  </h3>
                   {/* todo: get image */}
                   {selectedRecommendation.who.number && (
                     <>

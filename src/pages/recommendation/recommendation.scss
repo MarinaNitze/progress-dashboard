@@ -1,5 +1,9 @@
 @import '../../styles/settings.scss';
 
+body {
+  font-family: Petrona;
+}
+
 .cwp-recommendation {
   display: block;
   margin-left: 0;
@@ -26,15 +30,19 @@
     }
   }
 
-  .cab-header {
+  .cab {
+    .cab-heading {
+      vertical-align: text-top;
+      padding-left: 5px;
+    }
     &:after {
       @include vertical-line;
       width: auto;
     }
   }
 
-  .section-content {
-    font-family: Petrona;
+  .section-content, h4, li {
+    font-family: Petrona !important;
   }
 
   li {
@@ -42,7 +50,7 @@
   }
 
   hr {
-    border: 1px solid $light;
+    border: 2px solid $light;
   }
 
 @media (min-width: 64em) {
