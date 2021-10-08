@@ -26,8 +26,23 @@
     }
   }
 
+  .cab-header {
+    &:after {
+      @include vertical-line;
+      width: auto;
+    }
+  }
+
   .section-content {
     font-family: Petrona;
+  }
+
+  li {
+    list-style-type: none;
+  }
+
+  hr {
+    border: 1px solid $light;
   }
 
 @media (min-width: 64em) {
@@ -41,5 +56,11 @@
     .cwp-main {
       margin-left: 2rem;
     }
+
+      .divider {
+        border-left: 1px solid $light;
+        padding-top: 1.5rem;
+        margin-top: -1.5rem;
+      }
   }
 }

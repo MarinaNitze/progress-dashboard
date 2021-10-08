@@ -118,8 +118,20 @@ export default function State({ params: { recommendation } }: PageProps) {
                     {items[2].title}
                   </h2>
                   {/* todo: format as table or something else? */}
-                  {selectedRecommendation.costs}
-                  {selectedRecommendation.benefits}
+                  <Grid row>
+                    <Grid desktop={{ col: 6 }}>
+                      <h5 className="cab-header">Costs<hr/></h5>
+                      <ul>
+                        {selectedRecommendation.benefits.map( ben => (<li>{ben}</li>))}
+                      </ul>
+                    </Grid>
+                    <Grid desktop={{ col: 6 }}>
+                      <h5 className="cab-header">Benefits<hr/></h5>
+                      <ul className={selectedRecommendation?.costs && "divider"}>
+                        {selectedRecommendation.costs.map( cost => (<li>{cost}</li>))}
+                      </ul>
+                    </Grid>
+                  </Grid>
                 </section>
               </Grid>
             )}
