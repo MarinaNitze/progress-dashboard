@@ -6,7 +6,7 @@ import { AnchorLinkProps } from 'gatsby-plugin-anchor-links';
 
 import Layout from '../../components/layout/Layout';
 import content from '../content/topics.content.yml';
-import { topicContent } from '../../utils/util';
+import { topicContent } from '../../types/topic';
 import Hero from '../../components/hero/Hero';
 import SideAnchorNav from '../../components/side-anchor-nav/SideAnchorNav';
 import './topic.scss';

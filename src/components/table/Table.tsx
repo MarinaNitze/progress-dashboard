@@ -21,8 +21,8 @@ type TableProps<T = any> = {
 };
 
 export default function Table({ columns, data, dataCy }: TableProps) {
-  const sortIcon = useGatsbyImages()['images/topics/icon-sort-down.svg']
-    .publicURL;
+  const sortIcon =
+    useGatsbyImages()['images/topics/icon-sort-down.svg'].publicURL;
   const { items, requestSort, columnMap } = useSortData(
     data,
     columns.reduce<Map<string, Direction>>(
