@@ -120,15 +120,27 @@ export default function State({ params: { recommendation } }: PageProps) {
                   {/* todo: format as table or something else? */}
                   <Grid row>
                     <Grid desktop={{ col: 6 }}>
-                      <h5 className="cab-header">Costs<hr/></h5>
+                      <h5 className="cab-header">
+                        Costs
+                        <hr />
+                      </h5>
                       <ul>
-                        {selectedRecommendation.benefits.map( ben => (<li>{ben}</li>))}
+                        {selectedRecommendation.benefits.map(ben => (
+                          <li>{ben}</li>
+                        ))}
                       </ul>
                     </Grid>
                     <Grid desktop={{ col: 6 }}>
-                      <h5 className="cab-header">Benefits<hr/></h5>
-                      <ul className={selectedRecommendation?.costs && "divider"}>
-                        {selectedRecommendation.costs.map( cost => (<li>{cost}</li>))}
+                      <h5 className="cab-header">
+                        Benefits
+                        <hr />
+                      </h5>
+                      <ul
+                        className={selectedRecommendation?.costs && 'divider'}
+                      >
+                        {selectedRecommendation.costs.map(cost => (
+                          <li>{cost}</li>
+                        ))}
                       </ul>
                     </Grid>
                   </Grid>
