@@ -19,8 +19,12 @@ export default function State({ params: { recommendation } }: PageProps) {
   const benefitsIcon =
     useGatsbyImages()['images/topics/icon-benefits.svg'].publicURL;
   const recommendations: recommendationContent[] = content.recommendations;
-  const selectedRecommendation = recommendations.find(t => t.title === recommendation);
-  const imageNode = selectedRecommendation?.who?.image && useGatsbyImages()[selectedRecommendation.who.image.slice(5)];
+  const selectedRecommendation = recommendations.find(
+    t => t.title === recommendation,
+  );
+  const imageNode =
+    selectedRecommendation?.who?.image &&
+    useGatsbyImages()[selectedRecommendation.who.image.slice(5)];
   const gatsbyImage: ImageSharp['gatsbyImageData'] =
     imageNode && getImage(imageNode);
   const imageComponent = gatsbyImage && (
@@ -67,7 +71,7 @@ export default function State({ params: { recommendation } }: PageProps) {
     },
     {
       to: `/recommendation/${selectedRecommendation?.title}#inspiration`,
-      title: "Get Inspiration",
+      title: 'Get Inspiration',
       onAnchorLinkClick: () => addHash("Who's doing this", '#inspiration'),
     },
   ].filter(
@@ -205,8 +209,7 @@ export default function State({ params: { recommendation } }: PageProps) {
                       </p>
                     </>
                   )}
-                  {selectedRecommendation.who.image &&
-                    imageComponent}
+                  {selectedRecommendation.who.image && imageComponent}
                 </section>
               </Grid>
             )}
@@ -216,7 +219,9 @@ export default function State({ params: { recommendation } }: PageProps) {
                   <h3 className="font-heading-xl margin-y-0 section-title">
                     {items[5].title}
                   </h3>
-                  <ReactMarkdown>{selectedRecommendation.inspiration}</ReactMarkdown>
+                  <ReactMarkdown>
+                    {selectedRecommendation.inspiration}
+                  </ReactMarkdown>
                 </section>
               </Grid>
             )}
