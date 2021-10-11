@@ -139,7 +139,18 @@ collections:
                       value_type: 'int',
                       max: 54,
                     }
-                  - { label: 'Map Image', name: 'image', widget: 'image' }
+                  - {
+                      label: 'Map Image',
+                      name: 'image',
+                      widget: 'image',
+                      media_folder: '../images/recommendations',
+                    }
+                  - {
+                      label: 'What are people doing',
+                      name: 'what',
+                      widget: 'markdown',
+                      required: false,
+                    }
               - {
                   label: 'Get inspiration',
                   name: 'inspiration',
@@ -147,8 +158,14 @@ collections:
                   required: false,
                 }
               - {
-                  label: 'Summary',
-                  name: 'summary',
+                  label: 'Summary for topic',
+                  name: 'summaryForTopic',
+                  widget: 'markdown',
+                  required: false,
+                }
+              - {
+                  label: "What's Needed",
+                  name: 'need',
                   widget: 'markdown',
                   required: false,
                 }

@@ -25,6 +25,10 @@ li.usa-card {
   color: $white;
   justify-content: center;
   min-height: 20rem;
+
+  h3 {
+    color: $white;
+  }
 }
 
 .lg .media {
@@ -51,7 +55,7 @@ li.usa-card {
 }
 
 .topic h3 {
-  font-size: large;
+  font-size: 1.3vw;
 }
 
 .content {
@@ -71,6 +75,7 @@ li.usa-card {
   border-bottom-right-radius: 0.5rem;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .media {

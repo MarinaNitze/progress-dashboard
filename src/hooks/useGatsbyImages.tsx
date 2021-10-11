@@ -6,76 +6,89 @@ type useGatsbyImageResponse = {
 };
 
 export default function useGatsbyImages(): useGatsbyImageResponse {
-  const { heroImages, topicImages, featureImages, headerImages, footerImages } =
-    useStaticQuery<HeroAndCardImagesQuery>(graphql`
-      query HeroAndCardImages {
-        heroImages: allFile(
-          filter: { relativeDirectory: { eq: "images/heros" } }
-        ) {
-          edges {
-            node {
-              relativePath
-              childImageSharp {
-                gatsbyImageData(
-                  placeholder: BLURRED
-                  formats: [AUTO, WEBP, AVIF]
-                )
-              }
-              extension
+  const {
+    heroImages,
+    topicImages,
+    featureImages,
+    headerImages,
+    footerImages,
+    recommendationImages,
+  } = useStaticQuery<HeroAndCardImagesQuery>(graphql`
+    query HeroAndCardImages {
+      heroImages: allFile(
+        filter: { relativeDirectory: { eq: "images/heros" } }
+      ) {
+        edges {
+          node {
+            relativePath
+            childImageSharp {
+              gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
             }
-          }
-        }
-        featureImages: allFile(
-          filter: { relativeDirectory: { eq: "images/features" } }
-        ) {
-          edges {
-            node {
-              relativePath
-              childImageSharp {
-                gatsbyImageData(
-                  placeholder: BLURRED
-                  formats: [AUTO, WEBP, AVIF]
-                )
-              }
-              extension
-            }
-          }
-        }
-        topicImages: allFile(
-          filter: { relativeDirectory: { eq: "images/topics" } }
-        ) {
-          edges {
-            node {
-              relativePath
-              extension
-              publicURL
-            }
-          }
-        }
-        headerImages: allFile(
-          filter: { relativeDirectory: { eq: "images/header" } }
-        ) {
-          edges {
-            node {
-              relativePath
-              extension
-              publicURL
-            }
-          }
-        }
-        footerImages: allFile(
-          filter: { relativeDirectory: { eq: "images/footer" } }
-        ) {
-          edges {
-            node {
-              relativePath
-              extension
-              publicURL
-            }
+            extension
           }
         }
       }
-    `);
+      featureImages: allFile(
+        filter: { relativeDirectory: { eq: "images/features" } }
+      ) {
+        edges {
+          node {
+            relativePath
+            childImageSharp {
+              gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
+            }
+            extension
+          }
+        }
+      }
+      recommendationImages: allFile(
+        filter: { relativeDirectory: { eq: "images/recommendations" } }
+      ) {
+        edges {
+          node {
+            relativePath
+            childImageSharp {
+              gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
+            }
+            extension
+          }
+        }
+      }
+      topicImages: allFile(
+        filter: { relativeDirectory: { eq: "images/topics" } }
+      ) {
+        edges {
+          node {
+            relativePath
+            extension
+            publicURL
+          }
+        }
+      }
+      headerImages: allFile(
+        filter: { relativeDirectory: { eq: "images/header" } }
+      ) {
+        edges {
+          node {
+            relativePath
+            extension
+            publicURL
+          }
+        }
+      }
+      footerImages: allFile(
+        filter: { relativeDirectory: { eq: "images/footer" } }
+      ) {
+        edges {
+          node {
+            relativePath
+            extension
+            publicURL
+          }
+        }
+      }
+    }
+  `);
 
   const images = [
     heroImages,
@@ -83,6 +96,7 @@ export default function useGatsbyImages(): useGatsbyImageResponse {
     featureImages,
     headerImages,
     footerImages,
+    recommendationImages,
   ].reduce((acc, images) => {
     images?.edges.forEach(edge => {
       const path: string = edge.node.relativePath;

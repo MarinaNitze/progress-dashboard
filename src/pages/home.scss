@@ -1,6 +1,4 @@
 @import '../styles/settings.scss';
-
-.cwp-main {
   .cwp-hero {
     padding-bottom: 5rem;
   }
@@ -55,11 +53,9 @@
         width: auto;
       }
     }
-  }
 }
 
 @media (max-width: 800px) {
-  .cwp-main {
     .usa-grid {
       &.right {
         display: flex;
@@ -93,5 +89,4 @@
         padding: 0;
       }
     }
-  }
 }

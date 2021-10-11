@@ -53,7 +53,7 @@ export default function State({ params: { topic } }: PageProps) {
 
   return (
     <Layout>
-      <section id="test-section-id" className="cwp-hero">
+      <section id="test-section-id">
         {selectedTopic?.hero && (
           <Hero
             path={selectedTopic.hero.image.slice(5)}
@@ -71,7 +71,7 @@ export default function State({ params: { topic } }: PageProps) {
         <Grid
           className="usa-layout-docs__main usa-prose usa-layout-docs"
           id="main-content"
-          desktop={{ col: 9 }}
+          desktop={{ col: 12 }}
         >
           <main className="cwp-main">
             {selectedTopic?.about && (
