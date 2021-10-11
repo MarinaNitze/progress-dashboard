@@ -9,7 +9,6 @@
   position: sticky;
   top: 0;
 
-
   .usa-sidenav {
     background-color: $info;
     border-bottom: none;
@@ -75,5 +74,16 @@
       width: 5.5rem;
       top: 4rem;
     }
+  }
+}
+
+.usa-layout-docs__sidenav {
+  padding-top: 0;
+}
+
+@media (min-width: 64em) {
+  .usa-summary-box.side-nav-summary {
+    max-width: 20rem;
+    min-width: 15rem;
   }
 }

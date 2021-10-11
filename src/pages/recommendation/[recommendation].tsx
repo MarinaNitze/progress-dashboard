@@ -6,7 +6,7 @@ import { AnchorLinkProps } from 'gatsby-plugin-anchor-links';
 
 import Layout from '../../components/layout/Layout';
 import content from '../content/recommendations.content.yml';
-import { recommendationContent } from '../../utils/util';
+import { Recommendation } from '../../types/recommendation';
 import Hero from '../../components/hero/Hero';
 import SideAnchorNav from '../../components/side-anchor-nav/SideAnchorNav';
 import useGatsbyImages from '../../hooks/useGatsbyImages';
@@ -18,7 +18,7 @@ export default function State({ params: { recommendation } }: PageProps) {
   const costsIcon = useGatsbyImages()['images/topics/icon-costs.svg'].publicURL;
   const benefitsIcon =
     useGatsbyImages()['images/topics/icon-benefits.svg'].publicURL;
-  const recommendations: recommendationContent[] = content.recommendations;
+  const recommendations: Recommendation[] = content.recommendations;
   const selectedRecommendation = recommendations.find(
     t => t.title === recommendation,
   );
@@ -102,14 +102,14 @@ export default function State({ params: { recommendation } }: PageProps) {
         )}
       </section>
       <GridContainer className="cwp-recommendation">
-        <Grid className="usa-layout-docs__sidenav" desktop={{ col: 3 }}>
+        <Grid desktop={{ col: 3 }}>
           <SideAnchorNav items={items} />
         </Grid>
 
         <Grid
           className="usa-layout-docs__main usa-prose usa-layout-docs"
           id="main-content"
-          desktop={{ col: 9 }}
+          desktop={{ col: 12 }}
         >
           <main className="cwp-main">
             {selectedRecommendation?.about && (
