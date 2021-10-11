@@ -18,15 +18,13 @@ type TableProps<T> = {
 };
 
 export default function Table<T>({ columns, data, dataCy }: TableProps<T>) {
-  const sortIcon = useGatsbyImages()['images/topics/icon-sort-down.svg']
-    .publicURL;
+  const sortIcon =
+    useGatsbyImages()['images/topics/icon-sort-down.svg'].publicURL;
   const { items, requestSort, columnMap } = useSortData<T>(
     data,
     columns.reduce<Map<keyof T, Direction>>(
       (map, col) =>
-        col.sortable
-          ? map.set(col.dataKey as keyof T, Direction.Ascending)
-          : map,
+        col.sortable ? map.set(col.dataKey, Direction.Ascending) : map,
       new Map(),
     ),
   );
@@ -46,13 +44,11 @@ export default function Table<T>({ columns, data, dataCy }: TableProps<T>) {
                 data-cy={`${dataKey}-sort-column-icon`}
                 key={`${dataKey}-sort-column-icon`}
                 className={`sort-icon ${
-                  columnMap.get(dataKey as keyof T) === Direction.Descending
-                    ? 'desc'
-                    : ''
+                  columnMap.get(dataKey) === Direction.Descending ? 'desc' : ''
                 } ${sortable ? '' : 'disabled'}`}
                 src={sortIcon}
                 alt={`${dataKey}-sort-column-icon`}
-                onClick={() => requestSort(dataKey as keyof T)}
+                onClick={() => requestSort(dataKey)}
               />
             </th>
           ))}
