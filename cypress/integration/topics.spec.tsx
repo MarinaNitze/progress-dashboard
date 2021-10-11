@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 
 describe('Topics page', () => {
-  it('should successfully navigate to Washington state page', () => {
+  it('should successfully navigate to topics page', () => {
     cy.visit('/topic/extended-foster-care');
 
     cy.get('[data-cy=about-this-topic]').contains('h2', 'About this topic');
