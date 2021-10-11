@@ -37,7 +37,14 @@ export default function State({ params: { recommendation } }: PageProps) {
   const addHash = (title: string, url: string) => {
     window.history.replaceState(null, title, url);
   };
-  const itemFilterKey: (keyof Recommendation)[] = ['about', 'how', 'costs', 'benefits', 'outcome', 'who'];
+  const itemFilterKey: (keyof Recommendation)[] = [
+    'about',
+    'how',
+    'costs',
+    'benefits',
+    'outcome',
+    'who',
+  ];
   const items: AnchorLinkProps[] = [
     {
       to: `/recommendation/${selectedRecommendation?.title}#about-this-recommendation`,
@@ -77,10 +84,7 @@ export default function State({ params: { recommendation } }: PageProps) {
   ].filter(
     (_it, index) =>
       !!(
-        selectedRecommendation &&
-        selectedRecommendation[
-          itemFilterKey[index]
-        ]
+        selectedRecommendation && selectedRecommendation[itemFilterKey[index]]
       ),
   );
 
