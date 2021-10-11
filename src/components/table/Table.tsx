@@ -10,10 +10,6 @@ export type TableHeading<T> = {
   heading?: string;
   renderCellContent?: (rowData: T) => JSX.Element;
 };
-export type TableData<T = unknown, K = keyof T> = {
-  dataKey: K;
-  value: T;
-};
 
 type TableProps<T> = {
   columns: TableHeading<T>[];
@@ -63,7 +59,7 @@ export default function Table<T>({ columns, data, dataCy }: TableProps<T>) {
         </tr>
       </thead>
       <tbody>
-        {items.map((row: any, key: any) => (
+        {items.map((row, key) => (
           <tr key={`${key}-row`}>
             {columns.map(col => (
               <td key={`${col.dataKey}-cell`}>
