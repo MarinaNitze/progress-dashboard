@@ -210,6 +210,11 @@ export default function State({ params: { recommendation } }: PageProps) {
                     </>
                   )}
                   {selectedRecommendation.who.image && imageComponent}
+                  {selectedRecommendation.who.what && (
+                    <ReactMarkdown className="section-content">
+                      {selectedRecommendation.who.what}
+                    </ReactMarkdown>
+                  )}
                 </section>
               </Grid>
             )}

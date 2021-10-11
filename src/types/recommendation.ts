@@ -11,5 +11,6 @@ export type Recommendation = {
   who: {
     image: string;
     number: number;
+    what: string;
   };
 };

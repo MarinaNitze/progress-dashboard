@@ -145,6 +145,12 @@ collections:
                       widget: 'image',
                       media_folder: '../images/recommendations',
                     }
+                  - {
+                      label: 'What are people doing',
+                      name: 'what',
+                      widget: 'markdown',
+                      required: false,
+                    }
               - {
                   label: 'Get inspiration',
                   name: 'inspiration',
