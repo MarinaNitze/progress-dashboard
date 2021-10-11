@@ -152,6 +152,12 @@ collections:
                   widget: 'markdown',
                   required: false,
                 }
+              - {
+                  label: "What's Needed",
+                  name: 'need',
+                  widget: 'markdown',
+                  required: false,
+                }
   - name: 'pages'
     label: 'Pages'
     files:

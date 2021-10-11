@@ -6,13 +6,13 @@ import { AnchorLinkProps } from 'gatsby-plugin-anchor-links';
 
 import Layout from '../../components/layout/Layout';
 import content from '../content/topics.content.yml';
-import { topicContent } from '../../utils/util';
+import { Topic } from '../../types/topic';
 import Hero from '../../components/hero/Hero';
 import SideAnchorNav from '../../components/side-anchor-nav/SideAnchorNav';
 import './topic.scss';
 
 export default function State({ params: { topic } }: PageProps) {
-  const topics: topicContent[] = content.topics;
+  const topics: Topic[] = content.topics;
   const selectedTopic = topics.find(t => t.title === topic);
   const addHash = (title: string, url: string) => {
     window.history.replaceState(null, title, url);
