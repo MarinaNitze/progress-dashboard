@@ -158,8 +158,8 @@ collections:
                   required: false,
                 }
               - {
-                  label: 'Summary',
-                  name: 'summary',
+                  label: 'Summary for topic',
+                  name: 'summaryForTopic',
                   widget: 'markdown',
                   required: false,
                 }
