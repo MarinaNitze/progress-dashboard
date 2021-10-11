@@ -4,30 +4,33 @@ import useSortData, { Direction } from '../../hooks/useSortData';
 
 import './Table.scss';
 
-export type TableHeading<T = any> = {
-  dataKey: T;
+export type TableHeading<T> = {
+  dataKey: keyof T;
   sortable?: boolean;
   heading?: string;
+  renderCellContent?: (rowData: T) => JSX.Element;
 };
 export type TableData<T = unknown, K = keyof T> = {
   dataKey: K;
   value: T;
 };
 
-type TableProps<T = any> = {
-  columns: TableHeading[];
+type TableProps<T> = {
+  columns: TableHeading<T>[];
   data: T[];
   dataCy?: string;
 };
 
-export default function Table({ columns, data, dataCy }: TableProps) {
-  const sortIcon =
-    useGatsbyImages()['images/topics/icon-sort-down.svg'].publicURL;
-  const { items, requestSort, columnMap } = useSortData(
+export default function Table<T>({ columns, data, dataCy }: TableProps<T>) {
+  const sortIcon = useGatsbyImages()['images/topics/icon-sort-down.svg']
+    .publicURL;
+  const { items, requestSort, columnMap } = useSortData<T>(
     data,
-    columns.reduce<Map<string, Direction>>(
+    columns.reduce<Map<keyof T, Direction>>(
       (map, col) =>
-        col.sortable ? map.set(col.dataKey, Direction.Ascending) : map,
+        col.sortable
+          ? map.set(col.dataKey as keyof T, Direction.Ascending)
+          : map,
       new Map(),
     ),
   );
@@ -47,21 +50,27 @@ export default function Table({ columns, data, dataCy }: TableProps) {
                 data-cy={`${dataKey}-sort-column-icon`}
                 key={`${dataKey}-sort-column-icon`}
                 className={`sort-icon ${
-                  columnMap.get(dataKey) === Direction.Descending ? 'desc' : ''
+                  columnMap.get(dataKey as keyof T) === Direction.Descending
+                    ? 'desc'
+                    : ''
                 } ${sortable ? '' : 'disabled'}`}
                 src={sortIcon}
                 alt={`${dataKey}-sort-column-icon`}
-                onClick={() => requestSort(dataKey)}
+                onClick={() => requestSort(dataKey as keyof T)}
               />
             </th>
           ))}
         </tr>
       </thead>
       <tbody>
-        {items.map((row, key) => (
+        {items.map((row: any, key: any) => (
           <tr key={`${key}-row`}>
             {columns.map(col => (
-              <td key={`${row[col.dataKey]}-cell`}>{row[col.dataKey]}</td>
+              <td key={`${col.dataKey}-cell`}>
+                {col.renderCellContent !== undefined
+                  ? col.renderCellContent(row)
+                  : row[col.dataKey]}
+              </td>
             ))}
           </tr>
         ))}

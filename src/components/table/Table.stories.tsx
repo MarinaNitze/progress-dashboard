@@ -2,10 +2,9 @@ import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 import Table, { TableHeading } from './Table';
+import { Recommendation } from '../../types/recommendation';
 
-type TableKeys = 'summary' | 'title' | 'about';
-
-const columns: TableHeading<TableKeys>[] = [
+const columns: TableHeading<any>[] = [
   {
     dataKey: 'summary',
     sortable: true,
@@ -23,7 +22,7 @@ const columns: TableHeading<TableKeys>[] = [
   },
 ];
 
-const data = [
+const data: Partial<Recommendation>[] = [
   {
     about: 'Content1',
     summary: 'Start the background check process early',

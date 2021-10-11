@@ -1,11 +1,10 @@
 import { renderHook } from '@testing-library/react-hooks';
 import { TableHeading } from '../components/table/Table';
+import { Recommendation } from '../types/recommendation';
 
 import useSortData, { Direction } from './useSortData';
 
-type TableKeys = 'summary' | 'title' | 'about';
-
-const data = [
+const data: Partial<Recommendation>[] = [
   {
     about: 'Content1',
     summary: 'Start the background check process early',
@@ -23,7 +22,7 @@ const data = [
   },
 ];
 
-const columns: TableHeading<TableKeys>[] = [
+const columns: TableHeading<Recommendation>[] = [
   {
     dataKey: 'summary',
     sortable: true,
@@ -48,7 +47,7 @@ describe('when useSortData rendered', () => {
     } = renderHook(() =>
       useSortData(
         data,
-        columns.reduce<Map<string, Direction>>(
+        columns.reduce<Map<keyof Recommendation, Direction>>(
           (map, val) =>
             val.sortable ? map.set(val.dataKey, Direction.Ascending) : map,
           new Map(),
