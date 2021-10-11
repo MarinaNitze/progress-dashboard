@@ -60,7 +60,7 @@ export default function Hero({
           {imageComponent}
         </div>
         <div className="usa-hero-callout usa-section-dark">
-          {title && <h2>{title}</h2>}
+          {title && imageAlign === 'left' ? <h2>{title}</h2> : <h1>{title}</h1>}
           <p>{content}</p>
           {children}
         </div>
