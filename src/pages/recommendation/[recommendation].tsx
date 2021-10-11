@@ -90,7 +90,7 @@ export default function State({ params: { recommendation } }: PageProps) {
 
   return (
     <Layout>
-      <section id="test-section-id" className="cwp-hero">
+      <section id="test-section-id">
         {selectedRecommendation?.heading && (
           <Hero
             backgroundColor={'white'}

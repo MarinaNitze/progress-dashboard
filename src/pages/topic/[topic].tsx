@@ -53,7 +53,7 @@ export default function State({ params: { topic } }: PageProps) {
 
   return (
     <Layout>
-      <section id="test-section-id" className="cwp-hero">
+      <section id="test-section-id">
         {selectedTopic?.hero && (
           <Hero
             path={selectedTopic.hero.image.slice(5)}
