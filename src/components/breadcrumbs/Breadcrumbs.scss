@@ -1,0 +1,23 @@
+.breadcrumb {
+  margin-top: 3.063rem;
+  margin-bottom: 2.75rem;
+  display: inline-flex;
+}
+
+.breadcrumb-item {
+  font-size: 0.75rem;
+}
+
+.breadcrumb-item a {
+  text-decoration: none;
+  color: #000000;
+}
+
+li.breadcrumb-item.active {
+  font-weight: 700;
+  text-indent: 0.3rem;
+}
+
+li.breadcrumb-item.active::before {
+  content: '  > ';
+}

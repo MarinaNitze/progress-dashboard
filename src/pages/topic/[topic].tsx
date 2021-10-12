@@ -10,6 +10,7 @@ import { Topic } from '../../types/topic';
 import Hero from '../../components/hero/Hero';
 import SideAnchorNav from '../../components/side-anchor-nav/SideAnchorNav';
 import './topic.scss';
+import Breadcrumbs from '../../components/breadcrumbs/Breadcrumbs';
 
 export default function State({ params: { topic } }: PageProps) {
   const topics: Topic[] = content.topics;
@@ -63,6 +64,7 @@ export default function State({ params: { topic } }: PageProps) {
           />
         )}
       </section>
+      <Breadcrumbs crumbLabel={selectedTopic?.hero.title} />
       <GridContainer className="cwp-topic">
         <Grid className="usa-layout-docs__sidenav" desktop={{ col: 3 }}>
           <SideAnchorNav items={items} />
