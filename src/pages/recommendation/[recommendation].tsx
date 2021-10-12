@@ -101,7 +101,7 @@ export default function State({ params: { recommendation } }: PageProps) {
       </section>
       <Breadcrumbs
         crumbLabel={selectedRecommendation?.title}
-        pages="recommendations"
+        page="recommendation"
       />
       <GridContainer className="cwp-recommendation">
         <Grid desktop={{ col: 3 }}>

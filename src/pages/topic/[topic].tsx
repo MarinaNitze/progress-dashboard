@@ -64,7 +64,7 @@ export default function State({ params: { topic } }: PageProps) {
           />
         )}
       </section>
-      <Breadcrumbs crumbLabel={selectedTopic?.hero.title} pages="topics" />
+      <Breadcrumbs crumbLabel={selectedTopic?.hero.title} page="topic" />
       <GridContainer className="cwp-topic">
         <Grid className="usa-layout-docs__sidenav" desktop={{ col: 3 }}>
           <SideAnchorNav items={items} />

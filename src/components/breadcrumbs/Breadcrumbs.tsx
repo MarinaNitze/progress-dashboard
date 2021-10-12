@@ -9,10 +9,10 @@ import './Breadcrumbs.scss';
 
 type BreadcrumbProps = {
   crumbLabel?: string;
-  pages?: string;
+  page?: string;
 };
 
-export default function Breadcrumbs({ crumbLabel, pages }: BreadcrumbProps) {
+export default function Breadcrumbs({ crumbLabel, page }: BreadcrumbProps) {
   return (
     <div className="breadcrumb">
       {crumbLabel ? (
@@ -21,7 +21,7 @@ export default function Breadcrumbs({ crumbLabel, pages }: BreadcrumbProps) {
             <BreadcrumbLink href="/">Home</BreadcrumbLink>
           </Breadcrumb>
           <Breadcrumb>
-            <BreadcrumbLink href={`/${pages}`}>All {pages}</BreadcrumbLink>
+            <BreadcrumbLink href={`/${page}`}>{page}</BreadcrumbLink>
           </Breadcrumb>
           <Breadcrumb>
             <Breadcrumb current>{crumbLabel}</Breadcrumb>
