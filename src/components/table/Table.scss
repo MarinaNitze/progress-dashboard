@@ -13,9 +13,15 @@
     }
     td {
       border: 0;
+      font-family: $theme-font-type-sans;
 
       &:not(:last-child) {
         border-right: solid 0.05rem $light;
+      }
+
+      .recLink {
+        color: $link-text;
+        font-family: $theme-font-type-sans;
       }
     }
 
@@ -31,9 +37,11 @@
         float: right;
         max-width: 0.8rem;
         cursor: pointer;
+        padding-top: 0.5rem;
 
         &.desc {
           transform: rotate(180deg);
+          padding-bottom: 0.5rem;
         }
 
         &.disabled {

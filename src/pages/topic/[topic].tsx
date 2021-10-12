@@ -3,13 +3,42 @@ import React from 'react';
 import { Grid, GridContainer } from '@trussworks/react-uswds';
 import ReactMarkdown from 'react-markdown';
 import { AnchorLinkProps } from 'gatsby-plugin-anchor-links';
-
 import Layout from '../../components/layout/Layout';
-import content from '../content/topics.content.yml';
 import { Topic } from '../../types/topic';
 import Hero from '../../components/hero/Hero';
 import SideAnchorNav from '../../components/side-anchor-nav/SideAnchorNav';
+import Table, { TableHeading } from '../../components/table/Table';
+import { Recommendation } from '../../types/recommendation';
+import { Link } from 'gatsby';
+
+import content from '../content/topics.content.yml';
+import recContent from '../content/recommendations.content.yml';
 import './topic.scss';
+
+const recommendations: Recommendation[] = recContent.recommendations;
+
+const columns: TableHeading<Recommendation>[] = [
+  {
+    dataKey: 'heading',
+    sortable: true,
+    heading: 'Recommendations',
+    renderCellContent: ({ heading, title }) => (
+      <Link className="recLink" to={`/recommendation/${title}`}>
+        {heading}
+      </Link>
+    ),
+  },
+  {
+    dataKey: 'need',
+    sortable: false,
+    heading: `What's needed (Time/Cost)`,
+  },
+  {
+    dataKey: 'title',
+    sortable: false,
+    heading: 'Case study',
+  },
+];
 
 export default function State({ params: { topic } }: PageProps) {
   const topics: Topic[] = content.topics;
@@ -17,7 +46,12 @@ export default function State({ params: { topic } }: PageProps) {
   const addHash = (title: string, url: string) => {
     window.history.replaceState(null, title, url);
   };
-  const itemFilterKey = ['about', 'why', 'what', 'recommendations'];
+  const itemFilterKey: (keyof Topic)[] = [
+    'about',
+    'why',
+    'what',
+    'recommendations',
+  ];
   const items: AnchorLinkProps[] = [
     {
       to: `/topic/${selectedTopic?.title}#about-this-topic`,
@@ -42,13 +76,7 @@ export default function State({ params: { topic } }: PageProps) {
         addHash('How programs are doing this', '#how-programs-are-doing-this'),
     },
   ].filter(
-    (_it, index) =>
-      !!(
-        selectedTopic &&
-        selectedTopic[
-          itemFilterKey[index] as 'about' | 'what' | 'why' | 'recommendations'
-        ]
-      ),
+    (_it, index) => !!(selectedTopic && selectedTopic[itemFilterKey[index]]),
   );
 
   return (
@@ -75,7 +103,7 @@ export default function State({ params: { topic } }: PageProps) {
         >
           <main className="cwp-main">
             {selectedTopic?.about && (
-              <Grid id="about-this-topic">
+              <Grid data-cy="about-this-topic">
                 <section>
                   <h2 className="font-heading-xl margin-y-0 section-title">
                     {items[0].title}
@@ -87,7 +115,7 @@ export default function State({ params: { topic } }: PageProps) {
               </Grid>
             )}
             {selectedTopic?.why && (
-              <Grid id="why-this-matters">
+              <Grid data-cy="why-this-matters">
                 <section>
                   <h2 className="font-heading-xl margin-y-0 section-title">
                     {items[1].title}
@@ -99,7 +127,7 @@ export default function State({ params: { topic } }: PageProps) {
               </Grid>
             )}
             {selectedTopic?.what && (
-              <Grid id="what-we-can-do">
+              <Grid data-cy="what-we-can-do">
                 <section>
                   <h2 className="font-heading-xl margin-y-0 section-title">
                     {items[2].title}
@@ -110,6 +138,18 @@ export default function State({ params: { topic } }: PageProps) {
                 </section>
               </Grid>
             )}
+            <Grid>
+              <section>
+                <Table
+                  dataCy="topic-recommendation-table"
+                  data={recommendations.map(rec => ({
+                    ...rec,
+                    need: 'Content',
+                  }))}
+                  columns={columns}
+                />
+              </section>
+            </Grid>
           </main>
         </Grid>
       </GridContainer>

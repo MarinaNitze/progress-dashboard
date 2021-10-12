@@ -5,13 +5,14 @@ export enum Direction {
   Descending = 'desc',
 }
 
-type ColumnKeyMap = Map<string, Direction>;
-
-export default function useSortData(items: any[], columnMapKeys: ColumnKeyMap) {
+export default function useSortData<T>(
+  items: T[],
+  columnMapKeys: Map<keyof T, Direction>,
+) {
   const [columnMap, setColumnMap] = useState(columnMapKeys);
   const [sortableItems, setSortableItems] = useState(items);
 
-  const sortedItems = (key: string) => {
+  const sortedItems = (key: keyof T) => {
     return [...items].sort((a, b) => {
       if (a[key] < b[key]) {
         return columnMap.get(key) === Direction.Ascending ? -1 : 1;
@@ -23,7 +24,7 @@ export default function useSortData(items: any[], columnMapKeys: ColumnKeyMap) {
     });
   };
 
-  const requestSort = (key: string) => {
+  const requestSort = (key: keyof T) => {
     if (columnMap.has(key)) {
       setSortableItems(sortedItems(key));
       setColumnMap(map =>

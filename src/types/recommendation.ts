@@ -6,6 +6,7 @@ export type Recommendation = {
   how: string;
   inspiration: string;
   outcome: string;
+  need: string;
   summary: string;
   title: string;
   who: {

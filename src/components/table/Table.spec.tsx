@@ -3,10 +3,9 @@ import { render } from '@testing-library/react';
 
 import Table, { TableHeading } from './Table';
 import { mockGatsbyImageData } from '../../../test/test-utils';
+import { Recommendation } from '../../types/recommendation';
 
-type TableKeys = 'summary' | 'about';
-
-const columns: TableHeading<TableKeys>[] = [
+const columns: TableHeading<Partial<Recommendation>>[] = [
   {
     dataKey: 'about',
     sortable: false,
@@ -19,7 +18,7 @@ const columns: TableHeading<TableKeys>[] = [
   },
 ];
 
-const data = [
+const data: Partial<Recommendation>[] = [
   {
     about: 'test-about-1',
     summary: 'test-summary-1',
