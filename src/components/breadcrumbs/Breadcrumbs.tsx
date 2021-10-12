@@ -15,7 +15,7 @@ type BreadcrumbProps = {
 export default function Breadcrumbs({ crumbLabel, page }: BreadcrumbProps) {
   return (
     <div className="breadcrumb">
-      {crumbLabel ? (
+      {crumbLabel || page ? (
         <BreadcrumbBar>
           <Breadcrumb>
             <BreadcrumbLink href="/">Home</BreadcrumbLink>
