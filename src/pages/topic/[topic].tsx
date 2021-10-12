@@ -145,7 +145,6 @@ export default function State({ params: { topic } }: PageProps) {
                   data={recommendations.map(rec => ({
                     ...rec,
                     need: 'Content',
-                    title: 'Title/URL',
                   }))}
                   columns={columns}
                 />
