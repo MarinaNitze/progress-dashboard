@@ -8,26 +8,26 @@ import {
 import './Breadcrumbs.scss';
 
 type BreadcrumbProps = {
-  crumbLabel?: string;
-  page?: string;
+  crumbLabel: 'topic' | 'recommendation' | string | undefined;
+  page?: string | undefined;
 };
 
 export default function Breadcrumbs({ crumbLabel, page }: BreadcrumbProps) {
   return (
     <div className="breadcrumb">
-      {crumbLabel || page ? (
-        <BreadcrumbBar>
-          <Breadcrumb>
-            <BreadcrumbLink href="/">Home</BreadcrumbLink>
-          </Breadcrumb>
+      <BreadcrumbBar>
+        <Breadcrumb>
+          <BreadcrumbLink href="/">Home</BreadcrumbLink>
+        </Breadcrumb>
+        {page ? (
           <Breadcrumb>
             <BreadcrumbLink href={`/${page}`}>{page}</BreadcrumbLink>
           </Breadcrumb>
-          <Breadcrumb>
-            <Breadcrumb current>{crumbLabel}</Breadcrumb>
-          </Breadcrumb>
-        </BreadcrumbBar>
-      ) : null}
+        ) : (
+          <></>
+        )}
+        <Breadcrumb current>{crumbLabel}</Breadcrumb>
+      </BreadcrumbBar>
     </div>
   );
 }
