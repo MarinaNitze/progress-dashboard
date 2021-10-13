@@ -14,6 +14,7 @@ import { Link } from 'gatsby';
 import content from '../content/topics.content.yml';
 import recContent from '../content/recommendations.content.yml';
 import './topic.scss';
+import Breadcrumbs from '../../components/breadcrumbs/Breadcrumbs';
 
 const columns: TableHeading<Recommendation>[] = [
   {
@@ -90,6 +91,7 @@ export default function State({ params: { topic } }: PageProps) {
           />
         )}
       </section>
+      <Breadcrumbs crumbLabel={selectedTopic?.hero.title} page="topic" />
       <GridContainer className="cwp-topic">
         <Grid className="usa-layout-docs__sidenav" desktop={{ col: 3 }}>
           <SideAnchorNav items={items} />

@@ -1,0 +1,13 @@
+.breadcrumb {
+  margin: 1rem;
+  font-size: 0.75rem;
+}
+
+.breadcrumb a:first-child {
+  color: #000000;
+  text-transform: capitalize;
+}
+
+li.usa-breadcrumb__list-item.usa-current {
+  font-weight: 700;
+}

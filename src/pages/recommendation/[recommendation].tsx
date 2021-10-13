@@ -13,6 +13,7 @@ import useGatsbyImages from '../../hooks/useGatsbyImages';
 import './recommendation.scss';
 import { ImageSharp } from '../../../graphql-types';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import Breadcrumbs from '../../components/breadcrumbs/Breadcrumbs';
 
 export default function State({ params: { recommendation } }: PageProps) {
   const costsIcon = useGatsbyImages()['images/topics/icon-costs.svg'].publicURL;
@@ -98,6 +99,10 @@ export default function State({ params: { recommendation } }: PageProps) {
           />
         )}
       </section>
+      <Breadcrumbs
+        crumbLabel={selectedRecommendation?.title}
+        page="recommendation"
+      />
       <GridContainer className="cwp-recommendation">
         <Grid desktop={{ col: 3 }}>
           <SideAnchorNav items={items} />
