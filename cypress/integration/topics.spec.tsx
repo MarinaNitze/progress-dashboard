@@ -10,6 +10,11 @@ describe('Topics page', () => {
 
     cy.get('[data-cy=what-we-can-do]').contains('h2', 'What we can do');
 
+    cy.get('[data-cy=how-programs-are-doing-this]').contains(
+      'h2',
+      'How programs are doing this',
+    );
+
     cy.get('[data-cy=topic-recommendation-table]').contains(
       'tr',
       'Recommendations',

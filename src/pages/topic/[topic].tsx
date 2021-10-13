@@ -15,8 +15,6 @@ import content from '../content/topics.content.yml';
 import recContent from '../content/recommendations.content.yml';
 import './topic.scss';
 
-const recommendations: Recommendation[] = recContent.recommendations;
-
 const columns: TableHeading<Recommendation>[] = [
   {
     dataKey: 'heading',
@@ -42,6 +40,7 @@ const columns: TableHeading<Recommendation>[] = [
 
 export default function State({ params: { topic } }: PageProps) {
   const topics: Topic[] = content.topics;
+  const recommendations: Recommendation[] = recContent.recommendations;
   const selectedTopic = topics.find(t => t.title === topic);
   const addHash = (title: string, url: string) => {
     window.history.replaceState(null, title, url);
@@ -103,7 +102,7 @@ export default function State({ params: { topic } }: PageProps) {
         >
           <main className="cwp-main">
             {selectedTopic?.about && (
-              <Grid data-cy="about-this-topic">
+              <Grid data-cy="about-this-topic" id="about-this-topic">
                 <section>
                   <h2 className="font-heading-xl margin-y-0 section-title">
                     {items[0].title}
@@ -115,7 +114,7 @@ export default function State({ params: { topic } }: PageProps) {
               </Grid>
             )}
             {selectedTopic?.why && (
-              <Grid data-cy="why-this-matters">
+              <Grid data-cy="why-this-matters" id="why-this-matters">
                 <section>
                   <h2 className="font-heading-xl margin-y-0 section-title">
                     {items[1].title}
@@ -127,7 +126,7 @@ export default function State({ params: { topic } }: PageProps) {
               </Grid>
             )}
             {selectedTopic?.what && (
-              <Grid data-cy="what-we-can-do">
+              <Grid data-cy="what-we-can-do" id="what-we-can-do">
                 <section>
                   <h2 className="font-heading-xl margin-y-0 section-title">
                     {items[2].title}
@@ -138,17 +137,29 @@ export default function State({ params: { topic } }: PageProps) {
                 </section>
               </Grid>
             )}
-            <Grid>
-              <section>
-                <Table
-                  dataCy="topic-recommendation-table"
-                  data={recommendations.map(rec => ({
-                    ...rec,
-                    need: 'Content',
-                  }))}
-                  columns={columns}
-                />
-              </section>
+            <Grid
+              data-cy="how-programs-are-doing-this"
+              id="how-programs-are-doing-this"
+            >
+              {selectedTopic?.recommendations && (
+                <section>
+                  <h2 className="font-heading-xl margin-y-0 section-title">
+                    {items[3].title}
+                  </h2>
+                  <Table
+                    dataCy="topic-recommendation-table"
+                    data={recommendations.filter(rec => {
+                      if (selectedTopic.recommendations.includes(rec.title)) {
+                        return {
+                          ...rec,
+                          need: 'Content',
+                        };
+                      }
+                    })}
+                    columns={columns}
+                  />
+                </section>
+              )}
             </Grid>
           </main>
         </Grid>
