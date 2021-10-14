@@ -226,9 +226,30 @@ topics:
     layout: topic
     title: family-finding
     image: /src/images/topics/Topic-FF.svg
-    about: Family Finding
-    why: Family Finding
-    what: Family Finding
+    about: "**Children do better when they’re placed with family members or other
+      known adults., But identifying and connecting with extended family members
+      can be a challenge for foster care programs.**"
+    why: >-
+      Children can’t have too many adults who care about them. A strong support
+      system of adults supports young people’s resiliency and long term health
+      and well-being. 
+
+
+      But most youth enter foster care with more connections than they leave with.
+    what: >-
+      **Ask young people.** Children often have more supportive people in their
+      lives than you — or they — realize. And the ways you ask children about
+      their networks can get different results. For example, try questions like,
+      “If you were stuck and needed a ride, who would you call?” 
+
+
+      **Use social media and other locator tools.** Some business models rely on the ability to find and connect people who may know each other. You can use these tools, like credit bureaus and social media sites, in your search for a child’s family. 
+
+
+      **Try the “snowball method.”** The “snowball method” is when you ask one contact for more contacts. Each time you connect with someone in a child’s life, ask them for suggestions of other people to contact. 
+
+
+      **Document as you go.** Support networks can get complicated. Find a template that works for you — like a genogram — and keep it up to date as you identify more connections.
     recommendations:
       - electronicBackgroundCheck
   - hero:
