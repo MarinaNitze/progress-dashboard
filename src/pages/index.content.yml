@@ -1,47 +1,42 @@
 home:
   title: Progress Dashboard
   hero:
-    title: Playbook Tagline
-    content: Not sure what to search for? Check out our thing that helps you get
-      there whatever that is.
+    title: "Learning faster. Together. "
+    content: I'd like more information about
     backgroundColor: primary
     image: ../images/heros/hero-home.png
     imgAlt: Hero image
     link: hero
     linkText: hero link
   features:
-    whatsNew:
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Luctus massa
+    whatsNew: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Luctus massa
       natoque risus ut porttitor. Urna commodo amet non massa dui quis. Id
       pellentesque purus enim suspendisse et sed gravida enim sed.
     largeFeature:
-      content:
-        This will be for “showcase” items — large releases/updates. Will likely
-        feature an image along with heading, body copy, and link (either text or
-        button — tbd)
+      content: "**Inconsistencies in how we conduct background checks are putting
+        children at risk. To solve this problem, we need to approach it from
+        both sides — how we fulfill background check requests and how we make
+        these requests.**"
       image: ../images/features/Full-Feature-Img.png
-      title: Full width feature
+      title: Let’s improve out-of-state background checks (“Adam Walsh checks”).
       imgAlt: full width feature image
       link: cta
-      linkText: CTA
+      linkText: Find out how
       layout: lg
     mediumFeature:
-      content:
-        Will serve as an intermediate block for when there aren’t a ton of new
-        updates, but we still want to make an impact visually, but not compete
-        with the main feature. These would need heading, body copy, and link.
-        Image is optional, but wouldn’t be full width/background.
+      content: "**Children do better when they’re placed with family members or other
+        known adults. But identifying and connecting with extended family
+        members can be a challenge for foster care programs.**"
       image: ../images/features/Medium-Feature.png
-      title: Medium feature
+      title: Get tips on how to find family and kin.
       imgAlt: medium feature image
       layout: md
     smallFeature:
-      content:
-        Smaller impact, themed curated list of new items. Likely linked ULs
-        with possible H4 heading format to cateogorize as needed. Could be
-        repeated to fill a row.
+      content: "**Keeping track of a youth’s connections can get complicated, and a
+        genogram offers a helpful, visual solution. See key relationships easily
+        and start identifying possible additions.**"
       image: ../images/features/Small-Feature-Footer.png
-      title: Small feature
+      title: Make a genogram.
       imgAlt: small feature image
       layout: sm
   mission:
@@ -62,8 +57,7 @@ home:
       If you’re interested in joining our team, read our membership requirements.
     imgAlt: mission image
   topicSection:
-    popularTopics:
-      "Scalable cards to highlight curated list of topics. Depending on
+    popularTopics: "Scalable cards to highlight curated list of topics. Depending on
       how\r many we have, this may require more than 3 in a single row, but\r
       we’ll decide that later. Will allow for several rows as needed.\r Likely
       be capped with a rectangular image, and include a heading.\r Heading and
