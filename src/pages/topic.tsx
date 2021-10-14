@@ -12,10 +12,11 @@ import './home.scss';
 
 // this import and usage in a src/pages file is necessary for graphql-types to run properly
 import useGatsbyImages from '../hooks/useGatsbyImages';
+import Breadcrumbs from '../components/breadcrumbs/Breadcrumbs';
 
 export default function Topic() {
   const searchIcon =
-    useGatsbyImages()['images/topics/icon-costs.svg'].publicURL;
+    useGatsbyImages()['images/header/search.svg'].publicURL;
   const [input, setInput] = useState('');
   const [topics, setTopics] = useState(content.topics as TopicType[]);
 
@@ -43,6 +44,7 @@ export default function Topic() {
           title="All Topics"
         />
       </section>
+      <Breadcrumbs crumbLabel="All Topics" />
       <section aria-label="Big search component">
         <form
           className="usa-search usa-search--big"
@@ -52,6 +54,7 @@ export default function Topic() {
           <label className="usa-sr-only" htmlFor="topic-search">
             Search
           </label>
+
           <input
             className="usa-input"
             id="topic-search"
@@ -61,7 +64,7 @@ export default function Topic() {
             value={input}
             onChange={handleInput}
           />
-          <img className="icon" src={searchIcon} alt="search icon" />
+          <img className="search-icon" src={searchIcon} alt="search icon" />
         </form>
       </section>
       <section className="topics-section" id="test-section-id">
@@ -69,31 +72,7 @@ export default function Topic() {
           <Grid desktop={{ col: 12 }}>
             <CardGroup className="all-topics">
               {topics.map(t => (
-                <Grid desktop={{ col: 3 }}>
-                  <Card
-                    key={t.title}
-                    link={`/topic/${t.title}`}
-                    layout="topic"
-                    image={t.image}
-                    imgAlt={t.title + ' icon'}
-                    title={t.hero.title}
-                  />
-                </Grid>
-              ))}
-              {topics.map(t => (
-                <Grid desktop={{ col: 3 }}>
-                  <Card
-                    key={t.title}
-                    link={`/topic/${t.title}`}
-                    layout="topic"
-                    image={t.image}
-                    imgAlt={t.title + ' icon'}
-                    title={t.hero.title}
-                  />
-                </Grid>
-              ))}
-              {topics.map(t => (
-                <Grid desktop={{ col: 3 }}>
+                <Grid widescreen={{col: 2}} desktop={{ col: 3 }} tablet={{col: 4}} >
                   <Card
                     key={t.title}
                     link={`/topic/${t.title}`}
