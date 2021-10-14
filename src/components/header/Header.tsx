@@ -57,7 +57,7 @@ export default function Header({ headerLinks }: HeaderProps) {
           <PrimaryNav
             className="cwp-nav"
             items={headerLinks.map(link => (
-              <Link to={link.to}>
+              <Link className="font-family-body text-bold" to={link.to}>
                 {link.text}
                 {link.iconPath && (
                   <img
