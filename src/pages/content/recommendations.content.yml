@@ -26,47 +26,35 @@ recommendations:
     who:
       number: 13
       image: ../images/recommendations/screen-shot-2021-10-14-at-5.09.30-pm.png
-  - heading: Bring background check forms to orientation
+  - heading: Complete background check forms to orientation
     costs:
-      - Budget for implementation
-      - Budget for maintenance
-      - Changes to forms or workflow
-      - Staffing increase or reallocation
-      - Training for staff
-    inspiration: |-
-      * External link 1
-      * External link 2
-      * External link 3
-      * External link 4
-    about: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisi,
-      sollicitudin pharetra, commodo aliquet eu a gravida quis varius. Etiam sit
-      orci, in risus elit. Interdum at tristique pellentesque dolor facilisis
-      tempor ipsum. Pulvinar a ut posuere vitae amet praesent. Auctor lorem quis
-      tellus venenatis varius nisi lacinia ut. Ornare ut sit etiam quisque.
+      - Staff time at orientation
+    inspiration: ""
+    about: "**The process and timeframe for out-of-state abuse and neglect registry
+      checks — commonly called Adam Walsh checks — vary quite a bit from state
+      to state. To get foster families approved faster, start out-of-state
+      background checks early.**"
     how: >-
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      * Ask prospective foster families if they’ve lived out-of-state during
+      your initial meeting with them — or even before, when you can.
 
+      * Find the relevant Adam Walsh/out-of-state background check forms, either in your state or county’s Adam Walsh database or on the other state’s website.
 
-      * Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices elit hendrerit id amet. At egestas viverra nam vel nunc ut sagittis. Senectus aliquam at nec purus. Egestas tempor, pellentesque porttitor convallis dignissim venenatis sagittis.
+      * Take a laptop to orientation for people interested in being foster parents and help them fill out online background check forms.
 
-      * Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices elit hendrerit id amet. At egestas viverra nam vel nunc ut sagittis. Senectus aliquam at nec purus. Egestas tempor, pellentesque porttitor convallis dignissim venenatis sagittis.
-    outcome: >-
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      * Take paper background check forms and make sure people understand how to fill them out.
 
-
-      * Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices elit hendrerit id amet.
-
-      * Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices elit hendrerit id amet.
-
-      * Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices elit hendrerit id amet.
-
-      * Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices elit hendrerit id amet.
+      * If any of the background check forms require notarization, arrange for a volunteer notary to attend orientation and sign off on multiple forms at once.
+    outcome: "**We’re still collecting concrete data. But we believe that this will
+      shorten the time it takes to approve foster families who’ve lived out of
+      state.**"
     title: backgroundCheckForm
     benefits:
-      - Lower costs
-      - Fewer errors
-      - "Improved safety "
-      - Time saved (staff or process)
+      - Higher completion rates and greater caregiver satisfaction if they can
+        discuss the form with a case worker before submitting
+      - Ability to correct errors in real-time
+      - Eliminates the need to follow-up for forms
     who:
-      number: 48
+      number: -3
       image: /src/images/recommendations/us-map.png
+      what: Frederick County, MD
