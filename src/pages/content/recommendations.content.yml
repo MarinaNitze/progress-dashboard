@@ -1,7 +1,7 @@
 recommendations:
   - heading: Accept background check electronically
     costs:
-      - Budget for implementation
+      - Costs to create a fillable PDF or electronic form
     inspiration: "**[Ohio's electronic portal for background check
       requests](https://jfs.ohio.gov/ocf/childprotectiveservices.stm)**"
     about: "**To speed up the process and reduce application costs, offer ways for
@@ -16,54 +16,382 @@ recommendations:
       * Make your request form computer friendly. Turn your current form into a fillable PDF, Google form, or a standard Microsoft Word document. Paper forms have to be completed and scanned, creating additional barriers to submitting them — and then for reading them.
 
       * Provide an online portal for accepting background check requests the next time your agency updates the website.
-    outcome: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    title: electronicBackgroundCheck
+    outcome: ""
+    title: electronic-background-check
     benefits:
-      - Lower costs
+      - Faster processing of foster parent licenses
+      - Increased legibility when typed
+      - Increased accuracy if the digital form confirms required fields
+      - Ability to offer in multiple languages
     who:
       number: 13
-      image: /src/images/us-map.png
-  - heading: Bring background check forms to orientation
+      image: ../images/recommendations/screen-shot-2021-10-14-at-5.09.30-pm.png
+  - heading: Complete background check forms to orientation
     costs:
-      - Budget for implementation
-      - Budget for maintenance
-      - Changes to forms or workflow
-      - Staffing increase or reallocation
-      - Training for staff
-    inspiration: |-
-      * External link 1
-      * External link 2
-      * External link 3
-      * External link 4
-    about: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisi,
-      sollicitudin pharetra, commodo aliquet eu a gravida quis varius. Etiam sit
-      orci, in risus elit. Interdum at tristique pellentesque dolor facilisis
-      tempor ipsum. Pulvinar a ut posuere vitae amet praesent. Auctor lorem quis
-      tellus venenatis varius nisi lacinia ut. Ornare ut sit etiam quisque.
+      - Staff time at orientation
+    inspiration: ""
+    about: "**The process and timeframe for out-of-state abuse and neglect registry
+      checks — commonly called Adam Walsh checks — vary quite a bit from state
+      to state. To get foster families approved faster, start out-of-state
+      background checks early.**"
     how: >-
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      * Ask prospective foster families if they’ve lived out-of-state during
+      your initial meeting with them — or even before, when you can.
 
+      * Find the relevant Adam Walsh/out-of-state background check forms, either in your state or county’s Adam Walsh database or on the other state’s website.
 
-      * Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices elit hendrerit id amet. At egestas viverra nam vel nunc ut sagittis. Senectus aliquam at nec purus. Egestas tempor, pellentesque porttitor convallis dignissim venenatis sagittis.
+      * Take a laptop to orientation for people interested in being foster parents and help them fill out online background check forms.
 
-      * Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices elit hendrerit id amet. At egestas viverra nam vel nunc ut sagittis. Senectus aliquam at nec purus. Egestas tempor, pellentesque porttitor convallis dignissim venenatis sagittis.
-    outcome: >-
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      * Take paper background check forms and make sure people understand how to fill them out.
 
-
-      * Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices elit hendrerit id amet.
-
-      * Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices elit hendrerit id amet.
-
-      * Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices elit hendrerit id amet.
-
-      * Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices elit hendrerit id amet.
-    title: backgroundCheckForm
+      * If any of the background check forms require notarization, arrange for a volunteer notary to attend orientation and sign off on multiple forms at once.
+    outcome: "**We’re still collecting concrete data. But we believe that this will
+      shorten the time it takes to approve foster families who’ve lived out of
+      state.**"
+    title: background-check-form
     benefits:
-      - Lower costs
-      - Fewer errors
-      - "Improved safety "
-      - Time saved (staff or process)
+      - Higher completion rates and greater caregiver satisfaction if they can
+        discuss the form with a case worker before submitting
+      - Ability to correct errors in real-time
+      - Eliminates the need to follow-up for forms
     who:
-      number: 48
+      number: -3
       image: /src/images/recommendations/us-map.png
+      what: Frederick County, MD
+  - heading: Use social media to find family members
+    costs:
+      - Social media training
+      - Employee time
+    inspiration: "**Michigan has social media sites listed on their [Diligent Search
+      checklist](http://www.michigan.gov/documents/dhs/DHS-0991_480683_7.dot)**"
+    about: >-
+      Social media is widely used across cultural, geographic, and economic
+      groups. This makes social media a powerful and unique tool for finding
+      family members of youth in foster care. 
+
+
+      Other people-finding tools — like credit searches — have limited databases. For example, you have to have a credit history to appear in most of them.
+    how: >-
+      Search popular social media sites like Facebook for known family members,
+      such as a youth’s parents or older siblings. From there, look through
+      public messages, photos, and friend lists to identify additional
+      connections and message them. 
+
+
+      Before you start using social media for family finding, create a policy to guide staff. Cover topics like:
+
+
+      * **Limiting accounts** — Provide official shared work accounts or have staff create  accounts that they only use for work. Don’t allow workers to use their personal accounts for family finding.  
+
+      * **Confidentiality** — Don’t share private information through social media messages. Just as you would leave a generic voicemail when trying to identify kin, encourage social media contacts to reach out to you directly for follow-up.
+
+      * **Respecting family privacy** — If a public child welfare account were to “friend” a possible family member, that would publicly reveal that the family member is having an interaction with child welfare. Workers should not update profiles, post public messages, or “friend” other accounts when using official work accounts for family finding. 
+
+      * **Making staffing decisions** — Decide if a central team will conduct social media family finding activities, or if all workers will be granted access. There are pros and cons to both approaches.
+
+      * **Unblocking social media sites** — Management may have to meet with IT to have certain social media sites unblocked from the network.
+    outcome: "**New Mexico increased initial kinship placements from 3% to 40% in
+      one year by shifting to practices that included using social media to
+      identify kin.**"
+    title: use-social-media
+    benefits:
+      - Find more kin who can take placement and/or serve as lifelong support
+        for vulnerable youth
+      - Find some kin your agency would not otherwise find
+      - Avoid placing children in general foster care who have kinship placement
+        options
+    who:
+      number: 5
+      image: ../images/recommendations/screen-shot-2021-10-14-at-5.09.30-pm.png
+      what: >-
+        ### Rhode Island
+
+
+        Rhode Island’s family finding team uses “DCYF” in place of worker last names on social media to protect worker privacy.
+
+
+        ### Michigan
+
+
+        Michigan has social media sites listed on their [Diligent Search checklist](http://www.michigan.gov/documents/dhs/DHS-0991_480683_7.dot).
+
+
+        ### New Mexico
+
+
+        New Mexico encourages workers to create second, separate social media accounts under their name that they use exclusively for work.
+
+
+        ### Virginia
+
+
+        Virginia’s central family-finding social media accounts are called “Virginia Family Finding 1” (and 2, and 3) to protect worker privacy.
+
+
+        ### Washington State
+
+
+        Washington State is updating its policies to allow more workers to use social media.
+
+
+        ### Other
+
+
+        * Some counties in Ohio and California
+  - heading: Ask about connections repeatedly over time
+    title: ask-about-connections
+    about: >-
+      The beginning of foster care is a difficult and emotional time for
+      children and their families. Both children and adults may be too stressed
+      or afraid to share a complete list of connections during an initial
+      meeting. 
+
+
+      Reduce the risk that children will permanently lose important connections by checking in regularly about their networks. Different timing and questions often uncover more connections. And when children are in foster care for a while, they may also develop new relationships with people who can provide vital support. 
+
+
+      Invite youth and the known adults in their lives — like birth parents, family, other kin, and even foster parents — multiple times to share a list of supportive connections.
+    how: >-
+      ## How to do this
+
+
+      * Review the list of known connections at recurring planning meetings. Ask all participants if they can think of anyone who is missing.
+
+      * Try different approaches for learning about connections, like: Who picks you up from school? Who would you call if you got locked out of your home? Who did you see at your last family gathering? Who do you miss?
+    costs:
+      - A few minutes of time
+    benefits:
+      - Find more kin who can take placement and/or serve as lifelong support
+        for vulnerable youth
+      - Find some kin faster than if agency workers have to search for them
+        independently
+    who:
+      number: 4
+      image: ../images/recommendations/screen-shot-2021-10-14-at-5.09.30-pm.png
+      what: >-
+        ### Michigan
+
+
+        Michigan’s policy: “The relative search must begin prior to the child’s removal from the home and continues until legal permanency for the child has been achieved or case closure… Caseworkers must pursue the identification and notification of relatives and document the initial and ongoing efforts in the investigation report and each case service plan.”
+
+
+        ### Ohio
+
+
+        Ohio is developing a new quality hearing court guide that includes prompting for the identification of missing supportive adults. It will guide the judge or magistrate to ask participants about whether relatives have been explored, pursued, and where they are in the process. It will also prompt courts to ask about kinship placement and whether the caregiver is linked with training, services and financial support.
+
+
+        ### Rhode Island
+
+
+        Rhode Island connects with foster youth in group homes over Zoom meetings to ask about supportive connections.
+
+
+        ### Virginia
+
+
+        Virginia’s policy is to ask about supportive adults annually and at every placement change.
+
+
+        ### Washington State
+
+
+        In Washington State, every Family Team Decision Meeting includes asking participants to identify supportive connections.
+  - title: ask-about-supportive-adults
+    heading: Ask youth about supportive adults
+    about: >-
+      Youth are often placed in general foster care or in group homes when they
+      have placement options with adults they already know and trust.
+
+
+      Ask youth, both at initial removal and at regular intervals afterwards, about the supportive adults in their lives. Even young children may be able to tell you about the important people in their lives.
+    how: >-
+      * Supervisors of child welfare workers can make it a practice to regularly
+      ask, “What did the youth say?”
+
+      * Ask youth about their supportive connections at every placement change, and at regular intervals — annually, for example.
+
+      * Phrase inquiries carefully so that young people don’t feel like they have to supply a placement option or they will be homeless. Helpful prompts include: “Who came to your last family gathering?” and “Who would you call if you needed a ride home from school?”
+
+      * Help youth stay connected to supportive adults, even when they’re not a placement option. Create opportunities for regular phone calls, visits, or other contact.
+    costs:
+      - Training for staff to ask youth in effective, trauma-informed ways
+    benefits:
+      - Find more kin who can take placement and/or serve as lifelong support
+        for vulnerable youth
+      - Find some kin faster than if agency workers have to search for them
+        independently
+      - Avoid placing children in general foster care who have kinship placement
+        options
+    outcome: "**New Mexico increased initial kinship placements from 3% to 40% in
+      one year by shifting to youth-focused practices that include asking youth
+      about their supportive connections.**"
+    who:
+      number: 1
+      image: ../images/recommendations/screen-shot-2021-10-14-at-5.09.30-pm.png
+      what: >-
+        ### Indiana
+
+
+        Indiana is piloting a practice of asking child welfare workers for a youth’s input whenever they call the placement desk.
+
+
+        ### New Mexico
+
+
+        New Mexico increased initial kinship placements from 3% to 40% in one year by shifting to youth-focused practices that include asking youth about their supportive connections.
+
+
+        ### Rhode Island
+
+
+        During the COVID-19 pandemic, Rhode Island set up a Zoom meeting with each group home facility, and met with each youth one on one to discuss their placement options. They were able to move many youth from group homes into kinship placements as a result.
+
+
+        ### Other:
+
+
+        Fairfax County, VA
+
+
+        Fairfax County, Virginia conducts family finding for youth annually, and at every placement change.
+  - heading: Ask family members for more family members
+    title: ask-family-members-for-more-family-members
+    about: >-
+      When you connect with a youth’s kin, make it a point to always ask them if
+      they know of other potential kin, whether they may be current connections
+      to the child or family members that they haven’t yet met.
+
+
+      Children can’t have too many adults who care about them. Most youth enter foster care with more connections than they leave with. Making sure to ask kin you know about to help identify additional kin, especially if children are too young to share on their own, can create a broader supportive network.
+    how: >-
+      * Make it a standard practice to ask kin about other kin during initial
+      and ongoing kin contacts
+
+      * Add a question like, “Are there other connections that we should know about?” to any kinship-finding form letters or standard messages.
+
+      * Ask supportive adults who attend planning meetings if there are others who should be in attendance.
+    costs:
+      - None
+    benefits:
+      - Find more kin who can take placement and/or serve as lifelong support
+        for vulnerable youth
+      - Find some kin faster than if agency workers have to search for them
+        independently
+    who:
+      number: 2
+      image: ../images/recommendations/screen-shot-2021-10-14-at-5.09.30-pm.png
+      what: >-
+        ### California
+
+
+        In California, all supportive adults at every Child and Family Team meeting are explicitly asked if they know of any other kin who should be included.
+
+
+        ### Michigan
+
+
+        Michigan explicitly asks identified kin to share the names of more kin on their Relative Notification Form
+    inspiration: "**Download Michigan’s Relative Notification form [on their list of
+      Foster Care
+      Forms](https://www.michigan.gov/mdhhs/0,5885,7-339-71551_7199_54039---,00\
+      .html).**"
+  - heading: Establish a dedicated family-finding team
+    costs:
+      - FTE salaries (which may be able to be repurposed from other areas)
+    inspiration: >-
+      At least one of our child welfare system members uses and recommends each
+      of these tools for finding relatives of youth in foster care. The tools
+      work best when coupled with a genogram.
+
+
+      * [Accurint](https://www.accurint.com/): LexisNexis tool for searching records.
+
+      * [TLOxp (The Last One)](https://www.tlo.com/): Records search tool from TransUnion, one of the 3 credit bureaus. 
+
+      * [Find a Grave](https://www.findagrave.com/): This tool can be helpful for completing genograms. 
+
+      * **[Facebook](https://www.facebook.com/):** Look at public photos, posts, and friend lists to find family members.
+    about: >-
+      Effective family-finding requires a specialized skill set, from being
+      savvy with social media to engaging newfound kin without scaring them. Not
+      every case worker has these skills, and most already have demanding
+      workloads. 
+
+
+      A small team dedicated to finding family will help:
+
+
+      * Free up case workers for other tasks
+
+      * Test out promising new strategies and standardize effective practices 
+
+      * Save money on subscription-based family-finding tools
+
+
+      Form a dedicated family-finding team for your child welfare system, instead of relying on individual case workers to find kin for the children on their caseload.
+    how: >-
+      * Create a new team or department for family finding.
+
+      * Charge this new team with specific tasks, like:
+
+        * Using family-finding toolsMaking initial contacts with potential kin
+        * Establishing plans for staying in touch with kin
+        * Searching for more kin at regular intervals
+        * Prioritizing kin searches for children who are currently placed with non-kin
+      * Put processes in place to ensure regular communication and collaboration across teams. Even with a dedicated team, finding kin is still everyone’s responsibility. Other case workers, planning meeting attendees, and young people are all resources for identifying and locating more kin.
+    outcome: Member systems with dedicated family-finding teams report
+      higher-than-average rates of kin placement.
+    title: establish-a-dedicated-family-finding-team
+    benefits:
+      - Find more kin who can take placement and/or serve as lifelong support
+        for vulnerable youth
+      - Dedicated team can develop skills like social media searching that are
+        otherwise hard to develop across your entire workforce
+      - Find kin faster
+    who:
+      number: 2
+      image: ../images/recommendations/screen-shot-2021-10-14-at-5.09.30-pm.png
+  - title: make-a-genogram
+    heading: Make a genogram
+    about: "**Keeping track of a youth’s connections can get complicated, and a
+      genogram offers a helpful, visual solution. By organizing existing
+      contacts using a genogram, you can see key relationships easily and start
+      identifying possible additions.**"
+    how: >-
+      You can use a genogram tool like the ones we list below or simply a blank
+      piece of paper or dry-erase board. Here are some tips:
+
+
+      * Start making a family tree to show a child’s connections. 
+
+      * Include all important connections, even if they aren’t legal or blood relatives.
+
+      * Use the tree to generate new leads and to keep track of your contacts and progress.
+
+      * [The Extreme Family Finding Project](https://www.fosteradopt.org/family-permanency/extreme-family-finding/) — which has a 95% success rate — recommends a genogram have at least 150-200 people on it.
+    costs:
+      - Genogram software (optional, but helpful)
+    benefits:
+      - Find more kin who can take placement and/or serve as lifelong support
+        for vulnerable youth
+      - Find some kin your agency would not otherwise find
+      - Makes it easy for multiple workers to collaborate on a child’s
+        supportive network, and to follow up with those connections over time
+    who:
+      number: 4
+      image: ../images/recommendations/screen-shot-2021-10-14-at-5.09.30-pm.png
+    inspiration: >-
+      At least one of our child welfare system members recommends each of these
+      tools for mapping out and finding relatives of youth in foster care:
+
+
+      * [FamilyEcho](https://www.familyecho.com/)
+
+      * [GenoPro](https://genopro.com/)
+
+      * [Free Word genogram templates](https://www.mywordtemplates.org/printables/template399.html)
+
+      * [Rhode Island’s Excel genogram template](https://www.childwelfareplaybook.com/assets/GENOGRAM.xlsx)
+
+      * [Michigan Genogram Templates](https://www.childwelfareplaybook.com/assets/Genogram_MI.pdf)
