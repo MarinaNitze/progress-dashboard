@@ -15,8 +15,7 @@ import useGatsbyImages from '../hooks/useGatsbyImages';
 import Breadcrumbs from '../components/breadcrumbs/Breadcrumbs';
 
 export default function Topic() {
-  const searchIcon =
-    useGatsbyImages()['images/header/search.svg'].publicURL;
+  const searchIcon = useGatsbyImages()['images/header/search.svg'].publicURL;
   const [input, setInput] = useState('');
   const [topics, setTopics] = useState(content.topics as TopicType[]);
 
@@ -72,7 +71,11 @@ export default function Topic() {
           <Grid desktop={{ col: 12 }}>
             <CardGroup className="all-topics">
               {topics.map(t => (
-                <Grid widescreen={{col: 2}} desktop={{ col: 3 }} tablet={{col: 4}} >
+                <Grid
+                  widescreen={{ col: 2 }}
+                  desktop={{ col: 3 }}
+                  tablet={{ col: 4 }}
+                >
                   <Card
                     key={t.title}
                     link={`/topic/${t.title}`}
