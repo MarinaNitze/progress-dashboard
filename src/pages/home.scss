@@ -55,6 +55,31 @@
     }
 }
 
+.usa-search {
+  margin-top: 1rem;
+  margin-left: 2rem;
+
+  .search-icon {
+    background-color: $light;
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .usa-input {
+    border-top: 0;
+    border-left: 0;
+    border-bottom: 2px solid $dark;
+    width: 60%;
+    max-width: 60%;
+  }
+
+  .usa-input:focus{
+    outline-color: $light;
+  }
+}
+
 @media (max-width: 800px) {
     .usa-grid {
       &.right {
@@ -88,5 +113,10 @@
         align-self: center;
         padding: 0;
       }
+    }
+
+    .usa-search {
+      margin-left: 0rem;
+      padding-right: 2rem;
     }
 }
