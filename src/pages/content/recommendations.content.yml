@@ -2,19 +2,26 @@ recommendations:
   - heading: Accept background check electronically
     costs:
       - Budget for implementation
-    inspiration: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    about: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisi,
-      sollicitudin pharetra, commodo aliquet eu a gravida quis varius. Etiam sit
-      orci, in risus elit. Interdum at tristique pellentesque dolor facilisis
-      tempor ipsum. Pulvinar a ut posuere vitae amet praesent. Auctor lorem quis
-      tellus venenatis varius nisi lacinia ut. Ornare ut sit etiam quisque.
-    how: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    inspiration: "**[Ohio's electronic portal for background check
+      requests](https://jfs.ohio.gov/ocf/childprotectiveservices.stm)**"
+    about: "**To speed up the process and reduce application costs, offer ways for
+      people to submit background check requests electronically. When people
+      submit requests by mail, this leads to longer wait times and more
+      opportunity for clerical mistakes.**"
+    how: >-
+      * Create a secure, generic email address for receiving requests instead of
+      using an individual’s account. This provides a consistent process that
+      won’t be disrupted by staff transition or vacation time.
+
+      * Make your request form computer friendly. Turn your current form into a fillable PDF, Google form, or a standard Microsoft Word document. Paper forms have to be completed and scanned, creating additional barriers to submitting them — and then for reading them.
+
+      * Provide an online portal for accepting background check requests the next time your agency updates the website.
     outcome: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
     title: electronicBackgroundCheck
     benefits:
       - Lower costs
     who:
-      number: 49
+      number: 13
       image: /src/images/us-map.png
   - heading: Bring background check forms to orientation
     costs:
@@ -55,7 +62,7 @@ recommendations:
     benefits:
       - Lower costs
       - Fewer errors
-      - 'Improved safety '
+      - "Improved safety "
       - Time saved (staff or process)
     who:
       number: 48
