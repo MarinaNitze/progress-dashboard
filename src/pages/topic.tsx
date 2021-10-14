@@ -75,6 +75,7 @@ export default function Topic() {
                   widescreen={{ col: 2 }}
                   desktop={{ col: 3 }}
                   tablet={{ col: 4 }}
+                  key={`${t.title}-grid`}
                 >
                   <Card
                     key={t.title}
