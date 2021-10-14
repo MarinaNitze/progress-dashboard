@@ -1,7 +1,7 @@
 recommendations:
   - heading: Accept background check electronically
     costs:
-      - Budget for implementation
+      - Costs to create a fillable PDF or electronic form
     inspiration: "**[Ohio's electronic portal for background check
       requests](https://jfs.ohio.gov/ocf/childprotectiveservices.stm)**"
     about: "**To speed up the process and reduce application costs, offer ways for
@@ -16,13 +16,16 @@ recommendations:
       * Make your request form computer friendly. Turn your current form into a fillable PDF, Google form, or a standard Microsoft Word document. Paper forms have to be completed and scanned, creating additional barriers to submitting them — and then for reading them.
 
       * Provide an online portal for accepting background check requests the next time your agency updates the website.
-    outcome: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    outcome: ""
     title: electronicBackgroundCheck
     benefits:
-      - Lower costs
+      - Faster processing of foster parent licenses
+      - Increased legibility when typed
+      - Increased accuracy if the digital form confirms required fields
+      - Ability to offer in multiple languages
     who:
       number: 13
-      image: /src/images/us-map.png
+      image: ../images/recommendations/screen-shot-2021-10-14-at-5.09.30-pm.png
   - heading: Bring background check forms to orientation
     costs:
       - Budget for implementation
