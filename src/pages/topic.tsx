@@ -1,67 +1,110 @@
-import { Grid, GridContainer } from '@trussworks/react-uswds';
-import { AnchorLinkProps } from 'gatsby-plugin-anchor-links';
-import React from 'react';
+import { CardGroup, Grid, GridContainer } from '@trussworks/react-uswds';
+import React, { useState } from 'react';
+
+import Card from '../components/card/Card';
+import Hero from '../components/hero/Hero';
 import Layout from '../components/layout/Layout';
-import useDataAW from '../hooks/useDataAW';
 
-import SideAnchorNav from '../components/side-anchor-nav/SideAnchorNav';
-import content from '../components/side-anchor-nav/content.yml';
+import { Topic as TopicType } from '../types/topic';
+import content from './content/topics.content.yml';
 
-const items: AnchorLinkProps[] = [
-  {
-    to: '#about-this-topic',
-    title: 'About this topic',
-  },
-  {
-    to: '#why-this-matters',
-    title: 'Why this matters',
-  },
-  {
-    to: '#what-we-can-do',
-    title: 'What we can do',
-  },
-  {
-    to: '#how-programs-are-doing-this',
-    title: 'How programs are doing this',
-    className: 'text-wrap-line',
-  },
-];
+import './home.scss';
 
-const { text } = content.example;
+// this import and usage in a src/pages file is necessary for graphql-types to run properly
+import useGatsbyImages from '../hooks/useGatsbyImages';
 
-// This is a placeholder component route that will leverage hook into Airtable.
 export default function Topic() {
-  const { awData } = useDataAW();
-  console.log(awData?.nodes);
+  const searchIcon =
+    useGatsbyImages()['images/topics/icon-costs.svg'].publicURL;
+  const [input, setInput] = useState('');
+  const [topics, setTopics] = useState(content.topics as TopicType[]);
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e?.preventDefault();
+  };
+
+  const handleInput = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setInput(e?.currentTarget.value);
+    const filteredTopics = content.topics.filter((topic: TopicType) =>
+      topic.hero.title
+        .toLowerCase()
+        .includes(e?.currentTarget.value.toLowerCase()),
+    );
+    setTopics(filteredTopics);
+  };
 
   return (
     <Layout>
-      <section className="usa-section">
-        <GridContainer>
-          <Grid row gap>
-            <Grid className="usa-layout-docs__sidenav" desktop={{ col: 3 }}>
-              <nav aria-label="Secondary navigation">
-                <SideAnchorNav items={items} />
-              </nav>
-            </Grid>
-            <main
-              className="usa-layout-docs__main desktop:grid-col-9 usa-prose usa-layout-docs"
-              id="main-content"
-            >
-              <h3 id="about-this-topic">About this topic</h3>
-              <p>{text}</p>
-
-              <h3 id="why-this-matters">Why this matters</h3>
-              <p>{text}</p>
-
-              <h3 id="what-we-can-do">What we can do</h3>
-              <p>{text}</p>
-
-              <h3 id="how-programs-are-doing-this">
-                How programs are doing this
-              </h3>
-              <p>{text}</p>
-            </main>
+      <section id="test-section-id">
+        <Hero
+          path="images/heros/hero-home.png"
+          alt="All topics hero image"
+          backgroundColor="dark"
+          title="All Topics"
+        />
+      </section>
+      <section aria-label="Big search component">
+        <form
+          className="usa-search usa-search--big"
+          role="search"
+          onSubmit={handleSubmit}
+        >
+          <label className="usa-sr-only" htmlFor="topic-search">
+            Search
+          </label>
+          <input
+            className="usa-input"
+            id="topic-search"
+            type="search"
+            name="search"
+            placeholder="Search topics"
+            value={input}
+            onChange={handleInput}
+          />
+          <img className="icon" src={searchIcon} alt="search icon" />
+        </form>
+      </section>
+      <section className="topics-section" id="test-section-id">
+        <GridContainer className="all-topics">
+          <Grid desktop={{ col: 12 }}>
+            <CardGroup className="all-topics">
+              {topics.map(t => (
+                <Grid desktop={{ col: 3 }}>
+                  <Card
+                    key={t.title}
+                    link={`/topic/${t.title}`}
+                    layout="topic"
+                    image={t.image}
+                    imgAlt={t.title + ' icon'}
+                    title={t.hero.title}
+                  />
+                </Grid>
+              ))}
+              {topics.map(t => (
+                <Grid desktop={{ col: 3 }}>
+                  <Card
+                    key={t.title}
+                    link={`/topic/${t.title}`}
+                    layout="topic"
+                    image={t.image}
+                    imgAlt={t.title + ' icon'}
+                    title={t.hero.title}
+                  />
+                </Grid>
+              ))}
+              {topics.map(t => (
+                <Grid desktop={{ col: 3 }}>
+                  <Card
+                    key={t.title}
+                    link={`/topic/${t.title}`}
+                    layout="topic"
+                    image={t.image}
+                    imgAlt={t.title + ' icon'}
+                    title={t.hero.title}
+                  />
+                </Grid>
+              ))}
+            </CardGroup>
           </Grid>
         </GridContainer>
       </section>

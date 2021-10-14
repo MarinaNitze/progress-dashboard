@@ -26,6 +26,10 @@
   }
 }
 
+.white-text h1{
+  color: white;
+}
+
 .primary {
   background-color: $primary;
 }
@@ -40,4 +44,8 @@
 
 .light {
   background-color: $light;
+}
+
+.dark {
+  background-color: $dark;
 }

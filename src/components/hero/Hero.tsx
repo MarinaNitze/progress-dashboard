@@ -10,7 +10,8 @@ type BackgroundColorOptions =
   | 'secondary'
   | 'info'
   | 'light'
-  | 'white';
+  | 'white'
+  | 'dark';
 
 type HeroProps = {
   title?: string;
@@ -59,7 +60,11 @@ export default function Hero({
         <div className={`bgImage ${imageBackgroundColor}`}>
           {imageComponent}
         </div>
-        <div className="usa-hero-callout usa-section-dark">
+        <div
+          className={`usa-hero-callout usa-section-dark${
+            backgroundColor === 'dark' && ' white-text'
+          }`}
+        >
           {title && imageAlign === 'left' ? <h2>{title}</h2> : <h1>{title}</h1>}
           <p>{content}</p>
           {children}

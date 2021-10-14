@@ -55,6 +55,17 @@
     }
 }
 
+.usa-search {
+  margin-top: 1rem;
+  margin-left: 2rem;
+
+  .usa-input {
+    border-top: 0;
+    border-left: 0;
+    border-bottom: 2px solid $dark;
+  }
+}
+
 @media (max-width: 800px) {
     .usa-grid {
       &.right {
@@ -88,5 +99,9 @@
         align-self: center;
         padding: 0;
       }
+    }
+
+    .usa-search {
+      margin-left: 0rem;
     }
 }
