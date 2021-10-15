@@ -94,6 +94,7 @@ export default function State({ params: { recommendation } }: PageProps) {
       <section id="test-section-id">
         {selectedRecommendation?.heading && (
           <Hero
+            className="recommendation-hero"
             backgroundColor={'white'}
             title={selectedRecommendation.heading}
           />
@@ -129,7 +130,7 @@ export default function State({ params: { recommendation } }: PageProps) {
             {selectedRecommendation?.how && (
               <Grid id="how-to-do-this">
                 <section>
-                  <h2 className="font-heading-xl margin-y-0 section-title">
+                  <h2 className="font-heading-xl section-title">
                     {items[1].title}
                   </h2>
                   <ReactMarkdown className="section-content">
@@ -142,7 +143,7 @@ export default function State({ params: { recommendation } }: PageProps) {
               selectedRecommendation?.benefits) && (
               <Grid id="anticipated-costs-and-benefits">
                 <section>
-                  <h2 className="font-heading-xl margin-y-0 section-title">
+                  <h2 className="font-heading-xl section-title">
                     {items[2].title}
                   </h2>
                   <Grid row>
@@ -187,7 +188,7 @@ export default function State({ params: { recommendation } }: PageProps) {
             {selectedRecommendation?.outcome && (
               <Grid id="outcome-data">
                 <section>
-                  <h2 className="font-heading-xl margin-y-0 section-title">
+                  <h2 className="font-heading-xl section-title">
                     {items[3].title}
                   </h2>
                   <ReactMarkdown className="section-content">
@@ -199,7 +200,7 @@ export default function State({ params: { recommendation } }: PageProps) {
             {selectedRecommendation?.who && (
               <Grid id="whos-doing-this">
                 <section>
-                  <h2 className="font-heading-xl margin-y-0 section-title">
+                  <h2 className="font-heading-xl section-title">
                     {items[4].title}
                   </h2>
                   {selectedRecommendation.who.number && (
