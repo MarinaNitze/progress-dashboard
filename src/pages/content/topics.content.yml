@@ -242,6 +242,7 @@ topics:
       Start background checks early. Submit out-of-state requests as early as possible in your process. Review licensing worker checklists and move this step towards the top of the list.
     recommendations:
       - electronic-background-check
+      - background-check-form
   - hero:
       backgroundColor: primary
       title: Extended Foster Care
