@@ -257,11 +257,11 @@ topics:
       - electronicBackgroundCheck
   - hero:
       backgroundColor: primary
-      title: Family Finding
+      title: Finding family members
       image: /src/images/heros/hero-home.png
       imgAlt: Family Finding
     layout: topic
-    title: family-finding
+    title: finding-family-members
     image: /src/images/topics/Topic-FF.svg
     about: "**Children do better when they’re placed with family members or other
       known adults., But identifying and connecting with extended family members
@@ -288,7 +288,12 @@ topics:
 
       **Document as you go.** Support networks can get complicated. Find a template that works for you — like a genogram — and keep it up to date as you identify more connections.
     recommendations:
-      - electronicBackgroundCheck
+      - establish-a-dedicated-family-finding-team
+      - ask-family-members-for-more-family-members
+      - ask-about-connections
+      - ask-about-supportive-adults
+      - use-social-media
+      - make-a-genogram
   - hero:
       backgroundColor: primary
       title: Inquiry Management
