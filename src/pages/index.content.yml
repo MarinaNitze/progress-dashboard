@@ -42,7 +42,7 @@ home:
   mission:
     title: Our mission
     backgroundColor: light
-    image: ../images/heros/mission.png
+    image: ../images/heros/mission-fam-bg.png
     content: >-
       We’re working with experts from across the country to identify and
       document practical, scalable strategies for improving child welfare.
