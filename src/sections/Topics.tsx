@@ -14,11 +14,15 @@ import './Topics.scss';
 import content from '../pages/content/topics.content.yml';
 import mainPageContent from '../pages/index.content.yml';
 
+type TopicSection = {
+  topicSection: { topics: string[]; popularTopics: string };
+};
+
 export default function TopicsSection() {
   const topics: Topic[] = content.topics;
-  const { topicSection } = mainPageContent.home;
-  const selectedTopics: Topic[] = topicSection.topics.map((title: any) =>
-    topics.find(t => t.title === title),
+  const { topicSection }: TopicSection = mainPageContent.home;
+  const selectedTopics = topics.filter(({ title }) =>
+    topicSection.topics.includes(title),
   );
 
   return (
