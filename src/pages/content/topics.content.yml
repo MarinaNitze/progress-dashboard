@@ -194,7 +194,7 @@ topics:
       - backgroundCheckForm
   - hero:
       backgroundColor: primary
-      title: Improving out-of-state background checks (“Adam Walsh checks”)
+      title: Background Checks
       image: /src/images/heros/hero-home.png
       imgAlt: background checks
     layout: topic
