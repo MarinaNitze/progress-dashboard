@@ -19,49 +19,65 @@ body {
   margin-right: 4rem;
 }
 
-  .section-title {
-    display: inline-flex;
-    flex-direction: column;
-    font-family: Petrona;
+.section-title {
+  display: inline-flex;
+  flex-direction: column;
+  font-family: Petrona;
 
-    &:after {
-      @include vertical-line;
-      width: auto;
-    }
+  &:after {
+    @include vertical-line;
+    width: auto;
   }
+}
 
-  .cab {
-    .cab-heading {
-      vertical-align: text-top;
-      padding-left: 5px;
-      font-size: 1.3rem;
-    }
-    &:after {
-      @include vertical-line;
-      width: auto;
-    }
+.cab {
+  .cab-heading {
+    vertical-align: text-top;
+    padding-left: 5px;
+    font-size: 1.3rem;
   }
+  &:after {
+    @include vertical-line;
+    width: auto;
+  }
+}
 
-  .section-content, h4, li {
-    font-family: Petrona !important;
-  }
+.section-content,
+h4,
+li {
+  font-family: Petrona !important;
+}
 
-  li {
-    list-style-type: none;
-  }
+.cost-benefit-table li {
+  list-style-type: none;
+}
 
-  hr {
-    border: 2px solid $light;
+.section-content li {
+  list-style-type: none;
+  font-size: 1.3rem;
+
+  &:before {
+    content: '\2022';
+    color: $secondary;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
   }
+}
+
+hr {
+  border: 2px solid $light;
+}
 
 @media (min-width: 64em) {
   .cwp-recommendation {
     display: flex;
 
-      .divider {
-        border-left: 1px solid $light;
-        padding-top: 1.5rem;
-        margin-top: -1.5rem;
-      }
+    .divider {
+      border-left: 1px solid $light;
+      padding-top: 1.5rem;
+      margin-top: -1.5rem;
+    }
   }
 }

@@ -18,7 +18,7 @@ import Breadcrumbs from '../../components/breadcrumbs/Breadcrumbs';
 export default function State({ params: { recommendation } }: PageProps) {
   const costsIcon = useGatsbyImages()['images/topics/icon-costs.svg'].publicURL;
   const benefitsIcon =
-    useGatsbyImages()['images/topics/icon-benefits.svg'].publicURL;
+  useGatsbyImages()['images/topics/icon-benefits.svg'].publicURL;
   const recommendations: Recommendation[] = content.recommendations;
   const selectedRecommendation = recommendations.find(
     t => t.title === recommendation,
@@ -141,7 +141,7 @@ export default function State({ params: { recommendation } }: PageProps) {
             {(selectedRecommendation?.costs ||
               selectedRecommendation?.benefits) && (
               <Grid id="anticipated-costs-and-benefits">
-                <section>
+                <section className="cost-benefit-table">
                   <h2 className="font-heading-xl margin-y-0 section-title">
                     {items[2].title}
                   </h2>
