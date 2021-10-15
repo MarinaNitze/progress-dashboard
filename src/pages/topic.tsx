@@ -37,6 +37,7 @@ export default function Topic() {
     <Layout>
       <section id="test-section-id">
         <Hero
+          className="cwp-topic-hero"
           path="images/heros/hero-home.png"
           alt="All topics hero image"
           backgroundColor="dark"
