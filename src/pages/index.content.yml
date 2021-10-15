@@ -20,7 +20,7 @@ home:
       image: ../images/features/babies-med-feature.png
       title: Let’s improve out-of-state background checks (“Adam Walsh checks”).
       imgAlt: full width feature image
-      link: https://progress-dashboard.netlify.app/out-of-state-background-checks
+      link: https://progress-dashboard.netlify.app/recommendations/out-of-state-background-checks
       linkText: Find out how
       layout: lg
     mediumFeature:
