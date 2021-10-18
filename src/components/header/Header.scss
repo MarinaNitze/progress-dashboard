@@ -2,7 +2,7 @@
 
 .usa-header.cwp-header {
   background-color: $primary;
-  border-bottom: 0.2rem solid $white;
+  border-bottom: 0.1rem solid $white;
   a {
     color: $header-text;
     font-size: 1.125rem;
@@ -15,8 +15,18 @@
   .cwp-logo {
     vertical-align: super;
     margin: auto;
+    max-height: 2.8125rem;
+
     &:hover {
       cursor: pointer;
+      background-image: linear-gradient(
+        to right,
+        $secondary 0%,
+        $secondary 100%
+      );
+      background-repeat: repeat-x;
+      background-position: 0 100%;
+      background-size: 100% 3px;
     }
   }
 

@@ -69,7 +69,8 @@ topics:
       pellentesque pulvinar pellentesque habitant morbi tristique senectus. Quis
       lectus nulla at volutpat diam. Lacus laoreet non curabitur gravida arcu ac
       tortor.
-    why: Foster Parent Licensing Lorem ipsum dolor sit amet, consectetur adipiscing
+    why:
+      Foster Parent Licensing Lorem ipsum dolor sit amet, consectetur adipiscing
       elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
       Sapien eget mi proin sed libero. Imperdiet nulla malesuada pellentesque
       elit eget gravida cum. Donec et odio pellentesque diam volutpat commodo
@@ -142,7 +143,8 @@ topics:
       pharetra massa massa ultricies. Scelerisque mauris pellentesque pulvinar
       pellentesque habitant morbi tristique senectus. Quis lectus nulla at
       volutpat diam. Lacus laoreet non curabitur gravida arcu ac tortor.
-    what: Foster Parent Licensing Lorem ipsum dolor sit amet, consectetur adipiscing
+    what:
+      Foster Parent Licensing Lorem ipsum dolor sit amet, consectetur adipiscing
       elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
       Sapien eget mi proin sed libero. Imperdiet nulla malesuada pellentesque
       elit eget gravida cum. Donec et odio pellentesque diam volutpat commodo
@@ -194,13 +196,14 @@ topics:
       - backgroundCheckForm
   - hero:
       backgroundColor: primary
-      title: Improving out-of-state background checks (“Adam Walsh checks”)
+      title: Background Checks
       image: /src/images/heros/hero-home.png
       imgAlt: background checks
     layout: topic
     title: out-of-state-background-checks
     image: /src/images/topics/Topic-BC.svg
-    about: Child welfare programs are required to check the child abuse and neglect
+    about:
+      Child welfare programs are required to check the child abuse and neglect
       registry in each state that a potential foster parent has lived in during
       the past 5 years. This is called the “Adam Walsh check” after the 2006 act
       that requires it. Programs must also do this for anyone else in the home
@@ -218,7 +221,8 @@ topics:
 
       We can eliminate these inefficiencies. But to solve this problem, we need to approach it from both sides — how we fulfill background check requests and how we make these requests.
     what: >-
-      ## Make it easier for people to request background checks from your state.
+      **Make it easier for people to request background checks from your
+      state.**
 
 
       Don’t charge a fee. It’s so difficult for some states to issue a check to another state — even for a few dollars — that many licensing workers report paying these fees out of their own pockets. The vast majority of states don’t charge any fees.
@@ -233,7 +237,7 @@ topics:
       Respond to all requests. Without a response, the requestor doesn’t know whether the applicant passed the check or if the request was lost.
 
 
-      ## Improve your process for requesting out-of-state background checks.
+      **Improve your process for requesting out-of-state background checks.**
 
 
       Collect information early. Ask whether applicants and the other adults in their household lived in other states in the last 5 years as early as possible in the process. For example, if your application process includes a “mini” application or a “pre-application” form, ask there. 
@@ -264,9 +268,10 @@ topics:
     layout: topic
     title: finding-family-members
     image: /src/images/topics/Topic-FF.svg
-    about: "**Children do better when they’re placed with family members or other
+    about:
+      '**Children do better when they’re placed with family members or other
       known adults., But identifying and connecting with extended family members
-      can be a challenge for foster care programs.**"
+      can be a challenge for foster care programs.**'
     why: >-
       Children can’t have too many adults who care about them. A strong support
       system of adults supports young people’s resiliency and long term health

@@ -44,6 +44,10 @@ li.usa-card {
 .card .topic {
   background-color: $light;
   justify-content: space-around;
+
+  .usa-card__img {
+    overflow: visible;
+  }
 }
 
 .image {
