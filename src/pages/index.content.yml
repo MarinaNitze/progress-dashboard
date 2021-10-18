@@ -14,31 +14,28 @@ home:
       natoque risus ut porttitor. Urna commodo amet non massa dui quis. Id
       pellentesque purus enim suspendisse et sed gravida enim sed.
     largeFeature:
-      content:
-        '**Inconsistencies in how we conduct background checks are putting
+      content: Inconsistencies in how we conduct background checks are putting
         children at risk. To solve this problem, we need to approach it from
         both sides — how we fulfill background check requests and how we make
-        these requests.**'
+        these requests.
       image: ../images/features/feature-babies.png
       title: Let’s improve out-of-state background checks (“Adam Walsh checks”).
       imgAlt: full width feature image
-      link: /recommendations/out-of-state-background-checks
+      link: /topics/out-of-state-background-checks
       linkText: Find out how
       layout: lg
     mediumFeature:
-      content:
-        '**Children do better when they’re placed with family members or other
+      content: Children do better when they’re placed with family members or other
         known adults. But identifying and connecting with extended family
-        members can be a challenge for foster care programs.**'
+        members can be a challenge for foster care programs.
       image: ../images/features/Medium-Feature.png
       title: Get tips on how to find family and kin.
       imgAlt: medium feature image
       layout: md
     smallFeature:
-      content:
-        '**Keeping track of a youth’s connections can get complicated, and a
+      content: Keeping track of a youth’s connections can get complicated, and a
         genogram offers a helpful, visual solution. See key relationships easily
-        and start identifying possible additions.**'
+        and start identifying possible additions.
       image: ../images/features/Small-Feature-Footer.png
       title: Make a genogram.
       imgAlt: small feature image
