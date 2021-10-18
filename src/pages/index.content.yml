@@ -21,7 +21,7 @@ home:
       image: ../images/features/feature-babies.png
       title: Let’s improve out-of-state background checks (“Adam Walsh checks”).
       imgAlt: full width feature image
-      link: /recommendations/out-of-state-background-checks
+      link: /topics/out-of-state-background-checks
       linkText: Find out how
       layout: lg
     mediumFeature:

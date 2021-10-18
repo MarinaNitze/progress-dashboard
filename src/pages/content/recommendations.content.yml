@@ -2,13 +2,12 @@ recommendations:
   - heading: Accept background check electronically
     costs:
       - Costs to create a fillable PDF or electronic form
-    inspiration: "**[Ohio's electronic portal for background check
-      requests](https://jfs.ohio.gov/ocf/childprotectiveservices.stm)**"
-    about:
-      '**To speed up the process and reduce application costs, offer ways for
+    inspiration: "[Ohio's electronic portal for background check
+      requests](https://jfs.ohio.gov/ocf/childprotectiveservices.stm)"
+    about: To speed up the process and reduce application costs, offer ways for
       people to submit background check requests electronically. When people
       submit requests by mail, this leads to longer wait times and more
-      opportunity for clerical mistakes.**'
+      opportunity for clerical mistakes.
     how: >-
       * Create a secure, generic email address for receiving requests instead of
       using an individual’s account. This provides a consistent process that
@@ -27,15 +26,14 @@ recommendations:
     who:
       number: 13
       image: ../images/recommendations/screen-shot-2021-10-14-at-5.09.30-pm.png
-  - heading: Complete background check forms to orientation
+  - heading: Complete background check forms at orientation
     costs:
       - Staff time at orientation
-    inspiration: ''
-    about:
-      '**The process and timeframe for out-of-state abuse and neglect registry
+    inspiration: ""
+    about: The process and timeframe for out-of-state abuse and neglect registry
       checks — commonly called Adam Walsh checks — vary quite a bit from state
       to state. To get foster families approved faster, start out-of-state
-      background checks early.**'
+      background checks early.
     how: >-
       * Ask prospective foster families if they’ve lived out-of-state during
       your initial meeting with them — or even before, when you can.
@@ -47,10 +45,9 @@ recommendations:
       * Take paper background check forms and make sure people understand how to fill them out.
 
       * If any of the background check forms require notarization, arrange for a volunteer notary to attend orientation and sign off on multiple forms at once.
-    outcome:
-      '**We’re still collecting concrete data. But we believe that this will
+    outcome: We’re still collecting concrete data. But we believe that this will
       shorten the time it takes to approve foster families who’ve lived out of
-      state.**'
+      state.
     title: background-check-form
     benefits:
       - Higher completion rates and greater caregiver satisfaction if they can
@@ -58,16 +55,15 @@ recommendations:
       - Ability to correct errors in real-time
       - Eliminates the need to follow-up for forms
     who:
-      number: -3
-      image: /src/images/recommendations/us-map.png
+      number: ""
+      image: ""
       what: Frederick County, MD
   - heading: Use social media to find family members
     costs:
       - Social media training
       - Employee time
-    inspiration:
-      '**Michigan has social media sites listed on their [Diligent Search
-      checklist](http://www.michigan.gov/documents/dhs/DHS-0991_480683_7.dot)**'
+    inspiration: Michigan has social media sites listed on their [Diligent Search
+      checklist](http://www.michigan.gov/documents/dhs/DHS-0991_480683_7.dot)
     about: >-
       Social media is widely used across cultural, geographic, and economic
       groups. This makes social media a powerful and unique tool for finding
@@ -94,10 +90,9 @@ recommendations:
       * **Making staffing decisions** — Decide if a central team will conduct social media family finding activities, or if all workers will be granted access. There are pros and cons to both approaches.
 
       * **Unblocking social media sites** — Management may have to meet with IT to have certain social media sites unblocked from the network.
-    outcome:
-      '**New Mexico increased initial kinship placements from 3% to 40% in
-      one year by shifting to practices that included using social media to
-      identify kin.**'
+    outcome: New Mexico increased initial kinship placements from 3% to 40% in one
+      year by shifting to practices that included using social media to identify
+      kin.
     title: use-social-media
     benefits:
       - Find more kin who can take placement and/or serve as lifelong support
@@ -228,10 +223,9 @@ recommendations:
         independently
       - Avoid placing children in general foster care who have kinship placement
         options
-    outcome:
-      '**New Mexico increased initial kinship placements from 3% to 40% in
-      one year by shifting to youth-focused practices that include asking youth
-      about their supportive connections.**'
+    outcome: New Mexico increased initial kinship placements from 3% to 40% in one
+      year by shifting to youth-focused practices that include asking youth
+      about their supportive connections.
     who:
       number: 1
       image: ../images/recommendations/screen-shot-2021-10-14-at-5.09.30-pm.png
@@ -298,11 +292,9 @@ recommendations:
 
 
         Michigan explicitly asks identified kin to share the names of more kin on their Relative Notification Form
-    inspiration:
-      "**Download Michigan’s Relative Notification form [on their list of
+    inspiration: Download Michigan’s Relative Notification form [on their list of
       Foster Care
-      Forms](https://www.michigan.gov/mdhhs/0,5885,7-339-71551_7199_54039---,00\
-      .html).**"
+      Forms](https://www.michigan.gov/mdhhs/0,5885,7-339-71551_7199_54039---,00.html).
   - heading: Establish a dedicated family-finding team
     costs:
       - FTE salaries (which may be able to be repurposed from other areas)
@@ -361,10 +353,10 @@ recommendations:
       image: ../images/recommendations/screen-shot-2021-10-14-at-5.09.30-pm.png
   - title: make-a-genogram
     heading: Make a genogram
-    about: '**Keeping track of a youth’s connections can get complicated, and a
+    about: Keeping track of a youth’s connections can get complicated, and a
       genogram offers a helpful, visual solution. By organizing existing
       contacts using a genogram, you can see key relationships easily and start
-      identifying possible additions.**'
+      identifying possible additions.
     how: >-
       You can use a genogram tool like the ones we list below or simply a blank
       piece of paper or dry-erase board. Here are some tips:
