@@ -4,7 +4,7 @@ home:
     title: 'Learning faster. Together. '
     content: I'd like more information about
     backgroundColor: primary
-    image: ../images/heros/hero-home.png
+    image: ../images/heros/hero-baby.png
     imgAlt: Hero image
     link: hero
     linkText: hero link
@@ -19,10 +19,10 @@ home:
         children at risk. To solve this problem, we need to approach it from
         both sides — how we fulfill background check requests and how we make
         these requests.**'
-      image: ../images/features/babies-med-feature.png
+      image: ../images/features/feature-babies.png
       title: Let’s improve out-of-state background checks (“Adam Walsh checks”).
       imgAlt: full width feature image
-      link: https://progress-dashboard.netlify.app/recommendations/out-of-state-background-checks
+      link: /recommendations/out-of-state-background-checks
       linkText: Find out how
       layout: lg
     mediumFeature:
@@ -46,7 +46,7 @@ home:
   mission:
     title: Our mission
     backgroundColor: light
-    image: ../images/heros/mission.png
+    image: ../images/heros/mission-fam-bg.png
     content: >-
       We’re working with experts from across the country to identify and
       document practical, scalable strategies for improving child welfare.

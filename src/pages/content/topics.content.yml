@@ -196,7 +196,7 @@ topics:
       - backgroundCheckForm
   - hero:
       backgroundColor: primary
-      title: Improving out-of-state background checks (“Adam Walsh checks”)
+      title: Background Checks
       image: /src/images/heros/hero-home.png
       imgAlt: background checks
     layout: topic
@@ -221,7 +221,8 @@ topics:
 
       We can eliminate these inefficiencies. But to solve this problem, we need to approach it from both sides — how we fulfill background check requests and how we make these requests.
     what: >-
-      ## Make it easier for people to request background checks from your state.
+      **Make it easier for people to request background checks from your
+      state.**
 
 
       Don’t charge a fee. It’s so difficult for some states to issue a check to another state — even for a few dollars — that many licensing workers report paying these fees out of their own pockets. The vast majority of states don’t charge any fees.
@@ -236,7 +237,7 @@ topics:
       Respond to all requests. Without a response, the requestor doesn’t know whether the applicant passed the check or if the request was lost.
 
 
-      ## Improve your process for requesting out-of-state background checks.
+      **Improve your process for requesting out-of-state background checks.**
 
 
       Collect information early. Ask whether applicants and the other adults in their household lived in other states in the last 5 years as early as possible in the process. For example, if your application process includes a “mini” application or a “pre-application” form, ask there. 
