@@ -15,8 +15,18 @@
   .cwp-logo {
     vertical-align: super;
     margin: auto;
+    max-height: 2.8125rem;
+
     &:hover {
       cursor: pointer;
+      background-image: linear-gradient(
+        to right,
+        $secondary 0%,
+        $secondary 100%
+      );
+      background-repeat: repeat-x;
+      background-position: 0 100%;
+      background-size: 100% 3px;
     }
   }
 
