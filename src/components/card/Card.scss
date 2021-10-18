@@ -29,6 +29,10 @@ li.usa-card {
   h3 {
     color: $white;
   }
+
+  p {
+    color: $white
+  }
 }
 
 .lg .media {
@@ -56,6 +60,10 @@ li.usa-card {
 
 .card .topic img {
   height: 3rem;
+}
+
+.lg h3, .md h3, .sm h3 {
+  font-size: 1.75rem;
 }
 
 .topic h3 {

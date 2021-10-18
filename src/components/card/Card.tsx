@@ -8,6 +8,7 @@ import {
   CardFooter,
   Button,
 } from '@trussworks/react-uswds';
+import ReactMarkdown from 'react-markdown';
 import { GridProps } from '@trussworks/react-uswds/lib/components/grid/Grid/Grid';
 
 import './Card.scss';
@@ -85,7 +86,11 @@ export default function Card({
           {imageComponent}
         </CardMedia>
       )}
-      {content && <CardBody className="content">{content}</CardBody>}
+      {content && (
+        <CardBody className="content">
+          <ReactMarkdown>{content}</ReactMarkdown>
+        </CardBody>
+      )}
       {layout === 'lg' && link ? (
         <CardFooter>
           <Button

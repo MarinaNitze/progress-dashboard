@@ -1,7 +1,7 @@
 home:
   title: Progress Dashboard
   hero:
-    title: "Learning faster. Together. "
+    title: 'Learning faster. Together. '
     content: I'd like more information about
     backgroundColor: primary
     image: ../images/heros/hero-baby.png
@@ -9,14 +9,15 @@ home:
     link: hero
     linkText: hero link
   features:
-    whatsNew: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Luctus massa
+    whatsNew:
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Luctus massa
       natoque risus ut porttitor. Urna commodo amet non massa dui quis. Id
       pellentesque purus enim suspendisse et sed gravida enim sed.
     largeFeature:
-      content: Inconsistencies in how we conduct background checks are putting
+      content: 'Inconsistencies in how we conduct background checks are putting
         children at risk. To solve this problem, we need to approach it from
         both sides — how we fulfill background check requests and how we make
-        these requests.
+        these requests.'
       image: ../images/features/feature-babies.png
       title: Let’s improve out-of-state background checks (“Adam Walsh checks”).
       imgAlt: full width feature image
@@ -24,7 +25,8 @@ home:
       linkText: Find out how
       layout: lg
     mediumFeature:
-      content: Children do better when they’re placed with family members or other
+      content:
+        Children do better when they’re placed with family members or other
         known adults. But identifying and connecting with extended family
         members can be a challenge for foster care programs. [Learn
         more](https://progress-dashboard.netlify.app/topic/finding-family-members).
@@ -60,7 +62,8 @@ home:
       This playbook is the result of a collaboration between states at the cutting edge of child welfare and [New America’s Public Interest Technology team](https://www.newamerica.org/pit/), in partnership with [Foster America](https://www.foster-america.org/) and [Think of Us](https://www.thinkof-us.org/).
     imgAlt: mission image
   topicSection:
-    popularTopics: "Scalable cards to highlight curated list of topics. Depending on
+    popularTopics:
+      "Scalable cards to highlight curated list of topics. Depending on
       how\r many we have, this may require more than 3 in a single row, but\r
       we’ll decide that later. Will allow for several rows as needed.\r Likely
       be capped with a rectangular image, and include a heading.\r Heading and
