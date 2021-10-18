@@ -52,7 +52,7 @@ export default function State({ params: { topic } }: PageProps) {
     'what',
     'recommendations',
   ];
-  const items: AnchorLinkProps[] = [
+  const allItems: AnchorLinkProps[] = [
     {
       to: `/topic/${selectedTopic?.title}#about-this-topic`,
       title: 'About this topic',
@@ -75,7 +75,9 @@ export default function State({ params: { topic } }: PageProps) {
       onAnchorLinkClick: () =>
         addHash('How programs are doing this', '#how-programs-are-doing-this'),
     },
-  ].filter(
+  ];
+
+  const items: AnchorLinkProps[] = allItems.filter(
     (_it, index) => !!(selectedTopic && selectedTopic[itemFilterKey[index]]),
   );
 
@@ -107,7 +109,7 @@ export default function State({ params: { topic } }: PageProps) {
               <Grid data-cy="about-this-topic" id="about-this-topic">
                 <section>
                   <h2 className="font-heading-xl margin-y-0 section-title">
-                    {items[0].title}
+                    {allItems[0].title}
                   </h2>
                   <ReactMarkdown className="section-content">
                     {selectedTopic.about}
@@ -119,7 +121,7 @@ export default function State({ params: { topic } }: PageProps) {
               <Grid data-cy="why-this-matters" id="why-this-matters">
                 <section>
                   <h2 className="font-heading-xl margin-y-0 section-title">
-                    {items[1].title}
+                    {allItems[1].title}
                   </h2>
                   <ReactMarkdown className="section-content">
                     {selectedTopic.why}
@@ -131,7 +133,7 @@ export default function State({ params: { topic } }: PageProps) {
               <Grid data-cy="what-we-can-do" id="what-we-can-do">
                 <section>
                   <h2 className="font-heading-xl margin-y-0 section-title">
-                    {items[2].title}
+                    {allItems[2].title}
                   </h2>
                   <ReactMarkdown className="section-content">
                     {selectedTopic.what}
@@ -146,7 +148,7 @@ export default function State({ params: { topic } }: PageProps) {
               {selectedTopic?.recommendations && (
                 <section>
                   <h2 className="font-heading-xl margin-y-0 section-title">
-                    {items[3].title}
+                    {allItems[3].title}
                   </h2>
                   <Table
                     dataCy="topic-recommendation-table"
