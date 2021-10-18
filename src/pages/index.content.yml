@@ -27,7 +27,7 @@ home:
       content: Children do better when they’re placed with family members or other
         known adults. But identifying and connecting with extended family
         members can be a challenge for foster care programs. [Learn
-        more.](https://progress-dashboard.netlify.app/topic/finding-family-members)
+        more](https://progress-dashboard.netlify.app/topic/finding-family-members).
       image: ../images/features/Medium-Feature.png
       title: Get tips on how to find family and kin.
       imgAlt: medium feature image
@@ -36,7 +36,7 @@ home:
       content: Keeping track of a youth’s connections can get complicated, and a
         genogram offers a helpful, visual solution. See key relationships easily
         and start identifying possible additions. [Learn
-        more.](https://progress-dashboard.netlify.app/recommendation/make-a-genogram)
+        more](https://progress-dashboard.netlify.app/recommendation/make-a-genogram).
       image: ../images/features/Small-Feature-Footer.png
       title: Make a genogram.
       imgAlt: small feature image
