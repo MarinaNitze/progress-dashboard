@@ -42,11 +42,11 @@ export default function State({ params: { recommendation } }: PageProps) {
     'about',
     'how',
     'costs',
-    'benefits',
     'outcome',
     'who',
+    'inspiration',
   ];
-  const items: AnchorLinkProps[] = [
+  const allItems: AnchorLinkProps[] = [
     {
       to: `/recommendation/${selectedRecommendation?.title}#about-this-recommendation`,
       title: 'About this recommendation',
@@ -82,12 +82,18 @@ export default function State({ params: { recommendation } }: PageProps) {
       title: 'Get Inspiration',
       onAnchorLinkClick: () => addHash("Who's doing this", '#inspiration'),
     },
-  ].filter(
-    (_it, index) =>
-      !!(
-        selectedRecommendation && selectedRecommendation[itemFilterKey[index]]
-      ),
-  );
+  ];
+
+  const items: AnchorLinkProps[] = allItems.filter((_it, index) => {
+    if (itemFilterKey[index] === 'costs')
+      return !!(
+        selectedRecommendation &&
+        (selectedRecommendation['costs'] || selectedRecommendation['benefits'])
+      );
+    return !!(
+      selectedRecommendation && selectedRecommendation[itemFilterKey[index]]
+    );
+  });
 
   return (
     <Layout>
@@ -119,7 +125,7 @@ export default function State({ params: { recommendation } }: PageProps) {
               <Grid id="about-this-recommendation">
                 <section>
                   <h2 className="font-heading-xl margin-y-0 section-title">
-                    {items[0].title}
+                    {allItems[0].title}
                   </h2>
                   <ReactMarkdown className="section-content">
                     {selectedRecommendation.about}
@@ -131,7 +137,7 @@ export default function State({ params: { recommendation } }: PageProps) {
               <Grid id="how-to-do-this">
                 <section>
                   <h2 className="font-heading-xl section-title">
-                    {items[1].title}
+                    {allItems[1].title}
                   </h2>
                   <ReactMarkdown className="section-content">
                     {selectedRecommendation.how}
@@ -144,7 +150,7 @@ export default function State({ params: { recommendation } }: PageProps) {
               <Grid id="anticipated-costs-and-benefits">
                 <section>
                   <h2 className="font-heading-xl section-title">
-                    {items[2].title}
+                    {allItems[2].title}
                   </h2>
                   <Grid row>
                     <Grid desktop={{ col: 6 }}>
@@ -189,7 +195,7 @@ export default function State({ params: { recommendation } }: PageProps) {
               <Grid id="outcome-data">
                 <section>
                   <h2 className="font-heading-xl section-title">
-                    {items[3].title}
+                    {allItems[3].title}
                   </h2>
                   <ReactMarkdown className="section-content">
                     {selectedRecommendation.outcome}
@@ -201,7 +207,7 @@ export default function State({ params: { recommendation } }: PageProps) {
               <Grid id="whos-doing-this">
                 <section>
                   <h2 className="font-heading-xl section-title">
-                    {items[4].title}
+                    {allItems[4].title}
                   </h2>
                   {selectedRecommendation.who.number && (
                     <>
@@ -225,7 +231,7 @@ export default function State({ params: { recommendation } }: PageProps) {
               <Grid id="inspiration">
                 <section>
                   <h2 className="font-heading-xl margin-y-0 section-title">
-                    {items[5].title}
+                    {allItems[5].title}
                   </h2>
                   <ReactMarkdown>
                     {selectedRecommendation.inspiration}

@@ -16,7 +16,7 @@ recommendations:
       * Make your request form computer friendly. Turn your current form into a fillable PDF, Google form, or a standard Microsoft Word document. Paper forms have to be completed and scanned, creating additional barriers to submitting them — and then for reading them.
 
       * Provide an online portal for accepting background check requests the next time your agency updates the website.
-    outcome: ""
+    outcome: ''
     title: electronic-background-check
     benefits:
       - Faster processing of foster parent licenses

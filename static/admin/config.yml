@@ -138,14 +138,14 @@ collections:
                       widget: 'number',
                       value_type: 'int',
                       max: 54,
-                      required: false
+                      required: false,
                     }
                   - {
                       label: 'Map Image',
                       name: 'image',
                       widget: 'image',
                       media_folder: '../images/recommendations',
-                      required: false
+                      required: false,
                     }
                   - {
                       label: 'What are people doing',
