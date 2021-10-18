@@ -8,7 +8,7 @@ import Hero from '../components/hero/Hero';
 import content from './index.content.yml';
 import './home.scss';
 
-const IndexPage: React.FC = () => {
+const IndexPage = () => {
   const { hero, mission } = content.home;
 
   return (
