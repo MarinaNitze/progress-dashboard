@@ -26,14 +26,14 @@ recommendations:
     who:
       number: 13
       image: ../images/recommendations/screen-shot-2021-10-14-at-5.09.30-pm.png
-  - heading: Complete background check forms to orientation
+  - heading: Complete background check forms at orientation
     costs:
       - Staff time at orientation
     inspiration: ""
-    about: "**The process and timeframe for out-of-state abuse and neglect registry
+    about: The process and timeframe for out-of-state abuse and neglect registry
       checks — commonly called Adam Walsh checks — vary quite a bit from state
       to state. To get foster families approved faster, start out-of-state
-      background checks early.**"
+      background checks early.
     how: >-
       * Ask prospective foster families if they’ve lived out-of-state during
       your initial meeting with them — or even before, when you can.
@@ -45,9 +45,9 @@ recommendations:
       * Take paper background check forms and make sure people understand how to fill them out.
 
       * If any of the background check forms require notarization, arrange for a volunteer notary to attend orientation and sign off on multiple forms at once.
-    outcome: "**We’re still collecting concrete data. But we believe that this will
+    outcome: We’re still collecting concrete data. But we believe that this will
       shorten the time it takes to approve foster families who’ve lived out of
-      state.**"
+      state.
     title: background-check-form
     benefits:
       - Higher completion rates and greater caregiver satisfaction if they can
@@ -55,8 +55,8 @@ recommendations:
       - Ability to correct errors in real-time
       - Eliminates the need to follow-up for forms
     who:
-      number: -3
-      image: /src/images/recommendations/us-map.png
+      number: ""
+      image: ""
       what: Frederick County, MD
   - heading: Use social media to find family members
     costs:
