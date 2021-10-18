@@ -69,8 +69,7 @@ topics:
       pellentesque pulvinar pellentesque habitant morbi tristique senectus. Quis
       lectus nulla at volutpat diam. Lacus laoreet non curabitur gravida arcu ac
       tortor.
-    why:
-      Foster Parent Licensing Lorem ipsum dolor sit amet, consectetur adipiscing
+    why: Foster Parent Licensing Lorem ipsum dolor sit amet, consectetur adipiscing
       elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
       Sapien eget mi proin sed libero. Imperdiet nulla malesuada pellentesque
       elit eget gravida cum. Donec et odio pellentesque diam volutpat commodo
@@ -143,8 +142,7 @@ topics:
       pharetra massa massa ultricies. Scelerisque mauris pellentesque pulvinar
       pellentesque habitant morbi tristique senectus. Quis lectus nulla at
       volutpat diam. Lacus laoreet non curabitur gravida arcu ac tortor.
-    what:
-      Foster Parent Licensing Lorem ipsum dolor sit amet, consectetur adipiscing
+    what: Foster Parent Licensing Lorem ipsum dolor sit amet, consectetur adipiscing
       elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
       Sapien eget mi proin sed libero. Imperdiet nulla malesuada pellentesque
       elit eget gravida cum. Donec et odio pellentesque diam volutpat commodo
@@ -195,15 +193,14 @@ topics:
       - electronicBackgroundCheck
       - backgroundCheckForm
   - hero:
-      backgroundColor: primary
+      backgroundColor: info
       title: Background Checks
-      image: /src/images/heros/hero-home.png
+      image: /src/images/heros/background-checks.jpg
       imgAlt: background checks
     layout: topic
     title: out-of-state-background-checks
     image: /src/images/topics/Topic-BC.svg
-    about:
-      Child welfare programs are required to check the child abuse and neglect
+    about: Child welfare programs are required to check the child abuse and neglect
       registry in each state that a potential foster parent has lived in during
       the past 5 years. This is called the “Adam Walsh check” after the 2006 act
       that requires it. Programs must also do this for anyone else in the home
@@ -268,10 +265,9 @@ topics:
     layout: topic
     title: finding-family-members
     image: /src/images/topics/Topic-FF.svg
-    about:
-      '**Children do better when they’re placed with family members or other
+    about: "**Children do better when they’re placed with family members or other
       known adults., But identifying and connecting with extended family members
-      can be a challenge for foster care programs.**'
+      can be a challenge for foster care programs.**"
     why: >-
       Children can’t have too many adults who care about them. A strong support
       system of adults supports young people’s resiliency and long term health
