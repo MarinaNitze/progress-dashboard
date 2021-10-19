@@ -42,13 +42,26 @@
   }
 }
 
-.section-content,
-h4 {
-  font-family: Petrona !important;
+.cost-benefit-table li {
+  list-style-type: none;
 }
 
-li {
+.cost-benefit-table li:not(:last-child) {
+  margin-bottom: .5rem;
+}
+
+.section-content li {
   list-style-type: none;
+  font-size: 1.3rem;
+
+  &:before {
+    content: '\2022';
+    color: $secondary;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
 }
 
 hr {

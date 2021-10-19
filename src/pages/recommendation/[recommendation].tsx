@@ -148,7 +148,7 @@ export default function State({ params: { recommendation } }: PageProps) {
             {(selectedRecommendation?.costs ||
               selectedRecommendation?.benefits) && (
               <Grid id="anticipated-costs-and-benefits">
-                <section>
+                <section className="cost-benefit-table">
                   <h2 className="font-heading-xl section-title">
                     {allItems[2].title}
                   </h2>
