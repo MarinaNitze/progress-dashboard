@@ -18,7 +18,7 @@ import Breadcrumbs from '../../components/breadcrumbs/Breadcrumbs';
 export default function State({ params: { recommendation } }: PageProps) {
   const costsIcon = useGatsbyImages()['images/topics/icon-costs.svg'].publicURL;
   const benefitsIcon =
-  useGatsbyImages()['images/topics/icon-benefits.svg'].publicURL;
+    useGatsbyImages()['images/topics/icon-benefits.svg'].publicURL;
   const recommendations: Recommendation[] = content.recommendations;
   const selectedRecommendation = recommendations.find(
     t => t.title === recommendation,
