@@ -193,7 +193,7 @@ topics:
       - electronicBackgroundCheck
       - backgroundCheckForm
   - hero:
-      backgroundColor: info
+      backgroundColor: light
       title: Background Checks
       image: /src/images/heros/background-checks.jpg
       imgAlt: background checks
