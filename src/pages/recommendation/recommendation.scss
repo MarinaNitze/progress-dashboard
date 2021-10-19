@@ -46,6 +46,10 @@
   list-style-type: none;
 }
 
+.cost-benefit-table li:not(:last-child) {
+  margin-bottom: .5rem;
+}
+
 .section-content li {
   list-style-type: none;
   font-size: 1.3rem;

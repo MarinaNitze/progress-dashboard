@@ -52,3 +52,7 @@ li {
   font-weight: Regular;
   color: #333240;
 }
+
+li:not(:last-child) {
+  margin-bottom: 1rem;
+}
