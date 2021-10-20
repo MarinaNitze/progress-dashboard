@@ -87,7 +87,8 @@ topics:
     layout: topic
     title: finding-family-members
     image: /src/images/topics/Topic-FF.svg
-    about: Children do better when they’re placed with family members or other known
+    about:
+      Children do better when they’re placed with family members or other known
       adults., But identifying and connecting with extended family members can
       be a challenge for foster care programs.
     why: >-

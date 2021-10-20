@@ -10,13 +10,11 @@
 }
 
 .cwp-topic-hero .gatsby-image-wrapper img {
-  max-height: 21.5rem;
+  max-height: 345px;
 }
 
 .cwp-main {
-  margin-top: 2rem;
-  margin-left: 4em;
-  margin-right: 4rem;
+  margin: 2rem 0;
 }
 
 .section-title {
@@ -31,6 +29,9 @@
 }
 
 @media (min-width: 64em) {
+  .cwp-main {
+    margin: 2rem 4rem;
+  }
   .cwp-topic {
     display: flex;
   }

@@ -16,12 +16,13 @@ const IndexPage = () => {
       <section id="test-section-id" className="cwp-hero">
         {hero && (
           <Hero
+            className="cwp-home-hero"
             path={hero.image.slice(3)}
             alt={hero.imgAlt}
             backgroundColor={hero.backgroundColor}
             title={hero.title}
-            content={hero.content}
           >
+            <ReactMarkdown>{hero.content}</ReactMarkdown>
             <p>Search Component Placeholder</p>
           </Hero>
         )}
@@ -37,8 +38,8 @@ const IndexPage = () => {
             className="mission-hero"
             backgroundColor={mission.backgroundColor}
             imageAlign="left"
+            title={mission.title}
           >
-            <h2 className="mission-title">{mission.title}</h2>
             <ReactMarkdown className="mission-content">
               {mission.content}
             </ReactMarkdown>

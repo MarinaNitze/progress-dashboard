@@ -4,17 +4,19 @@
   color: $dark;
   width: 100vw;
   margin-left: calc(50% - 50vw);
-  padding-left: 4rem;
+  padding-left: 5rem;
   padding-top: 0;
   padding-bottom: 0;
 }
 
 .bgImage {
-  flex-basis: 40%;
+  flex-basis: unset;
+  margin-left: auto;
 }
 
 .usa-hero-callout {
-  flex-basis: 60%;
+  flex-basis: unset;
+  padding-right: 1rem;
 }
 
 .usa-grid {
