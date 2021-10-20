@@ -164,8 +164,8 @@ export default function State({ params: { recommendation } }: PageProps) {
                         <hr />
                       </h3>
                       <ul>
-                        {selectedRecommendation.benefits.map(ben => (
-                          <li key={ben}>{ben}</li>
+                        {selectedRecommendation.costs.map(cost => (
+                          <li key={cost}>{cost}</li>
                         ))}
                       </ul>
                     </Grid>
@@ -182,8 +182,8 @@ export default function State({ params: { recommendation } }: PageProps) {
                       <ul
                         className={selectedRecommendation?.costs && 'divider'}
                       >
-                        {selectedRecommendation.costs.map(cost => (
-                          <li key={cost}>{cost}</li>
+                        {selectedRecommendation.benefits.map(benefit => (
+                          <li key={benefit}>{benefit}</li>
                         ))}
                       </ul>
                     </Grid>
