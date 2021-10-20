@@ -25,7 +25,7 @@ export default function State({ params: { recommendation } }: PageProps) {
   );
   const imageNode =
     selectedRecommendation?.who?.image &&
-    useGatsbyImages()[selectedRecommendation.who.image.slice(5)];
+    useGatsbyImages()[selectedRecommendation.who.image.slice(3)];
   const gatsbyImage: ImageSharp['gatsbyImageData'] =
     imageNode && getImage(imageNode);
   const imageComponent = gatsbyImage && (
