@@ -14,9 +14,7 @@
 }
 
 .cwp-main {
-  margin-top: 2rem;
-  margin-left: 4em;
-  margin-right: 4rem;
+  margin: 2rem 4rem;
 }
 
 .section-title {
@@ -69,6 +67,10 @@ hr {
 }
 
 @media (min-width: 64em) {
+  .cwp-main {
+    margin: 2rem 0;
+  }
+
   .cwp-recommendation {
     display: flex;
 

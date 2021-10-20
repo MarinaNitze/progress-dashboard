@@ -86,6 +86,7 @@ export default function State({ params: { topic } }: PageProps) {
       <section id="test-section-id">
         {selectedTopic?.hero && (
           <Hero
+            className="cwp-topic-hero"
             path={selectedTopic.hero.image.slice(5)}
             alt={selectedTopic.hero.imgAlt}
             backgroundColor={selectedTopic.hero.backgroundColor}

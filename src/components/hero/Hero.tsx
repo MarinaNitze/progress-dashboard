@@ -15,7 +15,6 @@ type BackgroundColorOptions =
 
 type HeroProps = {
   title?: string;
-  content?: string;
   path?: string;
   alt?: string;
   className?: string;
@@ -28,7 +27,6 @@ type HeroProps = {
 
 export default function Hero({
   title,
-  content,
   path,
   alt,
   className,
@@ -66,7 +64,6 @@ export default function Hero({
           }`}
         >
           {title && imageAlign === 'left' ? <h2>{title}</h2> : <h1>{title}</h1>}
-          <p>{content}</p>
           {children}
         </div>
       </div>

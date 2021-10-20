@@ -16,7 +16,7 @@ recommendations:
       * Make your request form computer friendly. Turn your current form into a fillable PDF, Google form, or a standard Microsoft Word document. Paper forms have to be completed and scanned, creating additional barriers to submitting them — and then for reading them.
 
       * Provide an online portal for accepting background check requests the next time your agency updates the website.
-    outcome: ""
+    outcome: ''
     title: electronic-background-check
     benefits:
       - Faster processing of foster parent licenses
@@ -29,7 +29,7 @@ recommendations:
   - heading: Complete background check forms at orientation
     costs:
       - Staff time at orientation
-    inspiration: ""
+    inspiration: ''
     about: The process and timeframe for out-of-state abuse and neglect registry
       checks — commonly called Adam Walsh checks — vary quite a bit from state
       to state. To get foster families approved faster, start out-of-state
@@ -55,14 +55,15 @@ recommendations:
       - Ability to correct errors in real-time
       - Eliminates the need to follow-up for forms
     who:
-      number: ""
-      image: ""
+      number: ''
+      image: ''
       what: Frederick County, MD
   - heading: Use social media to find family members
     costs:
       - Social media training
       - Employee time
-    inspiration: Michigan has social media sites listed on their [Diligent Search
+    inspiration:
+      Michigan has social media sites listed on their [Diligent Search
       checklist](http://www.michigan.gov/documents/dhs/DHS-0991_480683_7.dot)
     about: >-
       Social media is widely used across cultural, geographic, and economic
@@ -90,7 +91,8 @@ recommendations:
       * **Making staffing decisions** — Decide if a central team will conduct social media family finding activities, or if all workers will be granted access. There are pros and cons to both approaches.
 
       * **Unblocking social media sites** — Management may have to meet with IT to have certain social media sites unblocked from the network.
-    outcome: New Mexico increased initial kinship placements from 3% to 40% in one
+    outcome:
+      New Mexico increased initial kinship placements from 3% to 40% in one
       year by shifting to practices that included using social media to identify
       kin.
     title: use-social-media
@@ -223,7 +225,8 @@ recommendations:
         independently
       - Avoid placing children in general foster care who have kinship placement
         options
-    outcome: New Mexico increased initial kinship placements from 3% to 40% in one
+    outcome:
+      New Mexico increased initial kinship placements from 3% to 40% in one
       year by shifting to youth-focused practices that include asking youth
       about their supportive connections.
     who:
@@ -292,7 +295,8 @@ recommendations:
 
 
         Michigan explicitly asks identified kin to share the names of more kin on their Relative Notification Form
-    inspiration: Download Michigan’s Relative Notification form [on their list of
+    inspiration:
+      Download Michigan’s Relative Notification form [on their list of
       Foster Care
       Forms](https://www.michigan.gov/mdhhs/0,5885,7-339-71551_7199_54039---,00.html).
   - heading: Establish a dedicated family-finding team

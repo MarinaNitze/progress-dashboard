@@ -4,14 +4,13 @@
   }
 
   .usa-hero.primary {
-    padding-left: 0;
+    padding-left: 5rem;
+    max-height: 500px;
   }
 
   .primary {
     .usa-hero-callout {
       flex-basis: unset;
-      margin: auto;
-      padding-left: 5rem;
     }
 
     .bgImage {
@@ -31,8 +30,17 @@
       align-items: start;
     }
 
+    .bgImage {
+        flex-basis: auto;
+        margin-left: 0;
+      }
+      .usa-hero-callout {
+        flex-basis: auto;
+        max-width: 60%;
+      }
+
     .usa-hero-callout.usa-section-dark {
-      padding-right: calc(60% - 50vw);
+      padding-right: 1rem;
     }
 
     .mission-content {
@@ -40,12 +48,10 @@
       font-weight: 200;
     }
 
-    .mission-title {
+    h2 {
       display: inline-flex;
       flex-direction: column;
       color: $header-text;
-      font-family: Petrona;
-      font-size: 2.375rem;
       padding-left: 1rem;
 
       &:after {
@@ -81,6 +87,7 @@
 }
 
 @media (max-width: 800px) {
+
     .usa-grid {
       &.right {
         display: flex;
@@ -89,10 +96,6 @@
 
         .usa-hero-callout.usa-section-dark {
           padding: 0 2rem;
-        }
-
-        .bgImage {
-          display: none;
         }
       }
     }
@@ -119,4 +122,22 @@
       margin-left: 0rem;
       padding-right: 2rem;
     }
+
+            .bgImage {
+          display: none;
+        }
+
+        .usa-hero {
+          width: auto;
+          margin: 0;
+          padding: 0 1rem;
+
+        .usa-hero-callout {
+          max-width: 100%;
+        }
+
+          h2 {
+            margin: 1rem 0;
+          }
+        }
 }

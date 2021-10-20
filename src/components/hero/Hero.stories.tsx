@@ -14,8 +14,6 @@ export const Index = Template.bind({});
 Index.args = {
   title: 'Default Title',
   path: 'images/heros/hero-home.png',
-  content:
-    'This is a sample description for the hero component. Use it wisely.',
   backgroundColor: 'primary',
   children: <p>Search Component (TBD)</p>,
   alt: 'hero-home-image',
