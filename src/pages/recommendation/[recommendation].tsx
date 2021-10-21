@@ -211,8 +211,10 @@ export default function State({ params: { recommendation } }: PageProps) {
                   </h2>
                   {selectedRecommendation.who.number && (
                     <>
-                      <h3>{selectedRecommendation.who.number} of 54</h3>
                       <p>
+                        <strong>
+                          {selectedRecommendation.who.number} of 54
+                        </strong>{' '}
                         states and territories have implemented this
                         recommendation.
                       </p>
