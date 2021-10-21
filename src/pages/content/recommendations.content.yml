@@ -147,7 +147,7 @@ recommendations:
         independently
     who:
       number: 5
-      image: ../images/recommendations/screen-shot-2021-10-14-at-5.09.30-pm.png
+      image: ../images/recommendations/ask_often.png
       what: >-
         ### What they're doing
 
@@ -195,34 +195,19 @@ recommendations:
       year by shifting to youth-focused practices that include asking youth
       about their supportive connections.
     who:
-      number: 1
-      image: ../images/recommendations/screen-shot-2021-10-14-at-5.09.30-pm.png
+      number: 3
+      image: ../images/recommendations/ask_youth_about_family.png
       what: >-
-        ### Indiana
+        ### What they're doing
 
 
-        Indiana is piloting a practice of asking child welfare workers for a youth’s input whenever they call the placement desk.
+        * **Indiana** is piloting a practice of asking child welfare workers for a youth’s input whenever they call the placement desk.
 
+        * **New Mexico** increased initial kinship placements from 3% to 40% in one year by shifting to youth-focused practices that include asking youth about their supportive connections.
 
-        ### New Mexico
+        * During the COVID-19 pandemic, **Rhode Island** set up a Zoom meeting with each group home facility, and met with each youth one on one to discuss their placement options. They were able to move many youth from group homes into kinship placements as a result.
 
-
-        New Mexico increased initial kinship placements from 3% to 40% in one year by shifting to youth-focused practices that include asking youth about their supportive connections.
-
-
-        ### Rhode Island
-
-
-        During the COVID-19 pandemic, Rhode Island set up a Zoom meeting with each group home facility, and met with each youth one on one to discuss their placement options. They were able to move many youth from group homes into kinship placements as a result.
-
-
-        ### Other:
-
-
-        Fairfax County, VA
-
-
-        Fairfax County, Virginia conducts family finding for youth annually, and at every placement change.
+        * Other: Fairfax County, Virginia conducts family finding for youth annually, and at every placement change.
   - heading: Ask family members for more family members
     title: ask-family-members-for-more-family-members
     about: >-
