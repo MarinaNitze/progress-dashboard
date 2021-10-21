@@ -26,9 +26,7 @@ export default function FeatureSection() {
     <section id="test-section-id">
       <GridContainer>
         <Grid>
-          <h2 className="font-heading-xl margin-y-0 features-title">
-            What's new
-          </h2>
+          <h2 className="margin-y-0 features-title">What's new</h2>
           {whatsNew && <ReactMarkdown>{whatsNew}</ReactMarkdown>}
           <CardGroup>
             <Card

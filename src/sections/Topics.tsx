@@ -29,9 +29,7 @@ export default function TopicsSection() {
     <section className="topics-section" id="test-section-id">
       <GridContainer>
         <Grid>
-          <h2 className="font-heading-xl margin-y-0 topics-title">
-            Popular Topics
-          </h2>
+          <h2 className="margin-y-0 topics-title">Popular topics</h2>
           <ReactMarkdown>{topicSection.popularTopics}</ReactMarkdown>
         </Grid>
         <Grid>

@@ -20,7 +20,6 @@
 .section-title {
   display: inline-flex;
   flex-direction: column;
-  font-family: Petrona;
 
   &:after {
     @include vertical-line;
