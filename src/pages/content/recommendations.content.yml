@@ -25,7 +25,7 @@ recommendations:
       - Ability to offer in multiple languages
     who:
       number: 13
-      image: ../images/recommendations/screen-shot-2021-10-14-at-5.09.30-pm.png
+      image: ../images/recommendations/electronic-bg-checks.png
   - heading: Complete background check forms at orientation
     costs:
       - Staff time at orientation
@@ -132,10 +132,8 @@ recommendations:
 
       Invite youth and the known adults in their lives — like birth parents, family, other kin, and even foster parents — multiple times to share a list of supportive connections.
     how: >-
-      ## How to do this
-
-
-      * Review the list of known connections at recurring planning meetings. Ask all participants if they can think of anyone who is missing.
+      * Review the list of known connections at recurring planning meetings. Ask
+      all participants if they can think of anyone who is missing.
 
       * Try different approaches for learning about connections, like: Who picks you up from school? Who would you call if you got locked out of your home? Who did you see at your last family gathering? Who do you miss?
     costs:
@@ -279,7 +277,8 @@ recommendations:
 
       * Charge this new team with specific tasks, like:
 
-        * Using family-finding toolsMaking initial contacts with potential kin
+        * Using family-finding tools
+        * Making initial contacts with potential kin
         * Establishing plans for staying in touch with kin
         * Searching for more kin at regular intervals
         * Prioritizing kin searches for children who are currently placed with non-kin
