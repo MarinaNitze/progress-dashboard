@@ -153,14 +153,13 @@ export default function State({ params: { topic } }: PageProps) {
                   </h2>
                   <Table
                     dataCy="topic-recommendation-table"
-                    data={recommendations.filter(rec => {
-                      if (selectedTopic.recommendations.includes(rec.title)) {
-                        return {
-                          ...rec,
-                          need: 'Content',
-                        };
-                      }
-                    })}
+                    data={recommendations.reduce<Recommendation[]>(
+                      (prev, rec) =>
+                        selectedTopic.recommendations.includes(rec.title)
+                          ? [...prev, { ...rec, title: '' }]
+                          : prev,
+                      [],
+                    )}
                     columns={columns}
                   />
                 </section>
