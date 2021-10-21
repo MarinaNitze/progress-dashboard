@@ -16,7 +16,7 @@ recommendations:
       * Make your request form computer friendly. Turn your current form into a fillable PDF, Google form, or a standard Microsoft Word document. Paper forms have to be completed and scanned, creating additional barriers to submitting them — and then for reading them.
 
       * Provide an online portal for accepting background check requests the next time your agency updates the website.
-    outcome: ''
+    outcome: ""
     title: electronic-background-check
     benefits:
       - Faster processing of foster parent licenses
@@ -29,7 +29,7 @@ recommendations:
   - heading: Complete background check forms at orientation
     costs:
       - Staff time at orientation
-    inspiration: ''
+    inspiration: ""
     about: The process and timeframe for out-of-state abuse and neglect registry
       checks — commonly called Adam Walsh checks — vary quite a bit from state
       to state. To get foster families approved faster, start out-of-state
@@ -55,16 +55,15 @@ recommendations:
       - Ability to correct errors in real-time
       - Eliminates the need to follow-up for forms
     who:
-      number: ''
-      image: ''
+      number: ""
+      image: ""
       what: Frederick County, MD
   - heading: Use social media to find family members
     costs:
       - Social media training
       - Employee time
-    inspiration:
-      Michigan has social media sites listed on their [Diligent Search
-      checklist](http://www.michigan.gov/documents/dhs/DHS-0991_480683_7.dot)
+    inspiration: "[Diligent Search
+      checklist](http://www.michigan.gov/documents/dhs/DHS-0991_480683_7.dot)"
     about: >-
       Social media is widely used across cultural, geographic, and economic
       groups. This makes social media a powerful and unique tool for finding
@@ -91,8 +90,7 @@ recommendations:
       * **Making staffing decisions** — Decide if a central team will conduct social media family finding activities, or if all workers will be granted access. There are pros and cons to both approaches.
 
       * **Unblocking social media sites** — Management may have to meet with IT to have certain social media sites unblocked from the network.
-    outcome:
-      New Mexico increased initial kinship placements from 3% to 40% in one
+    outcome: New Mexico increased initial kinship placements from 3% to 40% in one
       year by shifting to practices that included using social media to identify
       kin.
     title: use-social-media
@@ -106,40 +104,20 @@ recommendations:
       number: 5
       image: ../images/recommendations/use_social_media.png
       what: >-
-        ### Rhode Island
+        ### What they're doing
 
 
-        Rhode Island’s family finding team uses “DCYF” in place of worker last names on social media to protect worker privacy.
+        * **Rhode Island**’s family finding team uses “DCYF” in place of worker last names on social media to protect worker privacy.
 
+        * **Michigan** has social media sites listed on their [Diligent Search checklist](http://www.michigan.gov/documents/dhs/DHS-0991_480683_7.dot).
 
-        ### Michigan
+        * **New Mexico** encourages workers to create second, separate social media accounts under their name that they use exclusively for work.
 
+        * **Virginia**’s central family-finding social media accounts are called “Virginia Family Finding 1” (and 2, and 3) to protect worker privacy.
 
-        Michigan has social media sites listed on their [Diligent Search checklist](http://www.michigan.gov/documents/dhs/DHS-0991_480683_7.dot).
+        * **Washington State** is updating its policies to allow more workers to use social media.
 
-
-        ### New Mexico
-
-
-        New Mexico encourages workers to create second, separate social media accounts under their name that they use exclusively for work.
-
-
-        ### Virginia
-
-
-        Virginia’s central family-finding social media accounts are called “Virginia Family Finding 1” (and 2, and 3) to protect worker privacy.
-
-
-        ### Washington State
-
-
-        Washington State is updating its policies to allow more workers to use social media.
-
-
-        ### Other
-
-
-        * Some counties in Ohio and California
+        * Some counties in **Ohio** and **California**, but it's not done state-wide at this time.
   - heading: Ask about connections repeatedly over time
     title: ask-about-connections
     about: >-
@@ -168,37 +146,21 @@ recommendations:
       - Find some kin faster than if agency workers have to search for them
         independently
     who:
-      number: 4
-      image: ../images/recommendations/screen-shot-2021-10-14-at-5.09.30-pm.png
+      number: 5
+      image: ../images/recommendations/ask_often.png
       what: >-
-        ### Michigan
+        ### What they're doing
 
 
-        Michigan’s policy: “The relative search must begin prior to the child’s removal from the home and continues until legal permanency for the child has been achieved or case closure… Caseworkers must pursue the identification and notification of relatives and document the initial and ongoing efforts in the investigation report and each case service plan.”
+        * **Michigan**’s policy: “The relative search must begin prior to the child’s removal from the home and continues until legal permanency for the child has been achieved or case closure… Caseworkers must pursue the identification and notification of relatives and document the initial and ongoing efforts in the investigation report and each case service plan.”
 
+        * **Ohio** is developing a new quality hearing court guide that includes prompting for the identification of missing supportive adults. It will guide the judge or magistrate to ask participants about whether relatives have been explored, pursued, and where they are in the process. It will also prompt courts to ask about kinship placement and whether the caregiver is linked with training, services and financial support.
 
-        ### Ohio
+        * **Rhode Island** connects with foster youth in group homes over Zoom meetings to ask about supportive connections.
 
+        * **Virginia**’s policy is to ask about supportive adults annually and at every placement change.
 
-        Ohio is developing a new quality hearing court guide that includes prompting for the identification of missing supportive adults. It will guide the judge or magistrate to ask participants about whether relatives have been explored, pursued, and where they are in the process. It will also prompt courts to ask about kinship placement and whether the caregiver is linked with training, services and financial support.
-
-
-        ### Rhode Island
-
-
-        Rhode Island connects with foster youth in group homes over Zoom meetings to ask about supportive connections.
-
-
-        ### Virginia
-
-
-        Virginia’s policy is to ask about supportive adults annually and at every placement change.
-
-
-        ### Washington State
-
-
-        In Washington State, every Family Team Decision Meeting includes asking participants to identify supportive connections.
+        * In **Washington State**, every Family Team Decision Meeting includes asking participants to identify supportive connections.
   - title: ask-about-supportive-adults
     heading: Ask youth about supportive adults
     about: >-
@@ -225,39 +187,23 @@ recommendations:
         independently
       - Avoid placing children in general foster care who have kinship placement
         options
-    outcome:
-      New Mexico increased initial kinship placements from 3% to 40% in one
+    outcome: New Mexico increased initial kinship placements from 3% to 40% in one
       year by shifting to youth-focused practices that include asking youth
       about their supportive connections.
     who:
-      number: 1
-      image: ../images/recommendations/screen-shot-2021-10-14-at-5.09.30-pm.png
+      number: 3
+      image: ../images/recommendations/ask_youth_about_family.png
       what: >-
-        ### Indiana
+        ### What they're doing
 
 
-        Indiana is piloting a practice of asking child welfare workers for a youth’s input whenever they call the placement desk.
+        * **Indiana** is piloting a practice of asking child welfare workers for a youth’s input whenever they call the placement desk.
 
+        * **New Mexico** increased initial kinship placements from 3% to 40% in one year by shifting to youth-focused practices that include asking youth about their supportive connections.
 
-        ### New Mexico
+        * During the COVID-19 pandemic, **Rhode Island** set up a Zoom meeting with each group home facility, and met with each youth one on one to discuss their placement options. They were able to move many youth from group homes into kinship placements as a result.
 
-
-        New Mexico increased initial kinship placements from 3% to 40% in one year by shifting to youth-focused practices that include asking youth about their supportive connections.
-
-
-        ### Rhode Island
-
-
-        During the COVID-19 pandemic, Rhode Island set up a Zoom meeting with each group home facility, and met with each youth one on one to discuss their placement options. They were able to move many youth from group homes into kinship placements as a result.
-
-
-        ### Other:
-
-
-        Fairfax County, VA
-
-
-        Fairfax County, Virginia conducts family finding for youth annually, and at every placement change.
+        * Other: Fairfax County, Virginia conducts family finding for youth annually, and at every placement change.
   - heading: Ask family members for more family members
     title: ask-family-members-for-more-family-members
     about: >-
@@ -283,20 +229,15 @@ recommendations:
         independently
     who:
       number: 2
-      image: ../images/recommendations/screen-shot-2021-10-14-at-5.09.30-pm.png
+      image: ../images/recommendations/ask_family_about_family.png
       what: >-
-        ### California
+        ### What they're doing
 
 
-        In California, all supportive adults at every Child and Family Team meeting are explicitly asked if they know of any other kin who should be included.
+        * In **California**, all supportive adults at every Child and Family Team meeting are explicitly asked if they know of any other kin who should be included.
 
-
-        ### Michigan
-
-
-        Michigan explicitly asks identified kin to share the names of more kin on their Relative Notification Form
-    inspiration:
-      Download Michigan’s Relative Notification form [on their list of
+        * **Michigan** explicitly asks identified kin to share the names of more kin on their Relative Notification Form
+    inspiration: Download Michigan’s Relative Notification form [on their list of
       Foster Care
       Forms](https://www.michigan.gov/mdhhs/0,5885,7-339-71551_7199_54039---,00.html).
   - heading: Establish a dedicated family-finding team
@@ -354,7 +295,7 @@ recommendations:
       - Find kin faster
     who:
       number: 2
-      image: ../images/recommendations/screen-shot-2021-10-14-at-5.09.30-pm.png
+      image: ../images/recommendations/establish_family_finding_team.png
   - title: make-a-genogram
     heading: Make a genogram
     about: Keeping track of a youth’s connections can get complicated, and a
@@ -383,7 +324,7 @@ recommendations:
         supportive network, and to follow up with those connections over time
     who:
       number: 4
-      image: ../images/recommendations/screen-shot-2021-10-14-at-5.09.30-pm.png
+      image: ../images/recommendations/genogram.png
     inspiration: >-
       At least one of our child welfare system members recommends each of these
       tools for mapping out and finding relatives of youth in foster care:
