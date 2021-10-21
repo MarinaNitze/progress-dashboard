@@ -213,7 +213,7 @@ export default function State({ params: { recommendation } }: PageProps) {
                     <>
                       <h3>{selectedRecommendation.who.number} of 54</h3>
                       <p>
-                        states and territories have implimented this
+                        states and territories have implemented this
                         recommendation.
                       </p>
                     </>
