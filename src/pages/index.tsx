@@ -1,10 +1,10 @@
 import React from 'react';
-import Features from '../sections/Features';
-import Topics from '../sections/Topics';
 import ReactMarkdown from 'react-markdown';
 
 import Layout from '../components/layout/Layout';
 import Hero from '../components/hero/Hero';
+import Features from '../sections/Features';
+import Topics from '../sections/Topics';
 import content from './index.content.yml';
 import './home.scss';
 
