@@ -154,10 +154,10 @@ export default function State({ params: { topic } }: PageProps) {
                   <Table
                     dataCy="topic-recommendation-table"
                     data={recommendations.reduce<Recommendation[]>(
-                      (prev, rec) =>
+                      (acc, rec) =>
                         selectedTopic.recommendations.includes(rec.title)
-                          ? [...prev, rec]
-                          : prev,
+                          ? [...acc, rec]
+                          : acc,
                       [],
                     )}
                     columns={columns}
