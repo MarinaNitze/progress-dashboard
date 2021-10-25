@@ -51,7 +51,6 @@
     h2 {
       display: inline-flex;
       flex-direction: column;
-      padding-left: 1rem;
 
       &:after {
         @include vertical-line;

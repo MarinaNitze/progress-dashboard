@@ -109,7 +109,7 @@ export default function State({ params: { topic } }: PageProps) {
             {selectedTopic?.about && (
               <Grid data-cy="about-this-topic" id="about-this-topic">
                 <section>
-                  <h2 className="font-heading-xl margin-y-0 section-title">
+                  <h2 className="margin-y-0 section-title">
                     {allItems[0].title}
                   </h2>
                   <ReactMarkdown className="section-content">
@@ -121,9 +121,7 @@ export default function State({ params: { topic } }: PageProps) {
             {selectedTopic?.why && (
               <Grid data-cy="why-this-matters" id="why-this-matters">
                 <section>
-                  <h2 className="font-heading-xl margin-y-0 section-title">
-                    {allItems[1].title}
-                  </h2>
+                  <h2 className="section-title">{allItems[1].title}</h2>
                   <ReactMarkdown className="section-content">
                     {selectedTopic.why}
                   </ReactMarkdown>
@@ -133,9 +131,7 @@ export default function State({ params: { topic } }: PageProps) {
             {selectedTopic?.what && (
               <Grid data-cy="what-we-can-do" id="what-we-can-do">
                 <section>
-                  <h2 className="font-heading-xl margin-y-0 section-title">
-                    {allItems[2].title}
-                  </h2>
+                  <h2 className="section-title">{allItems[2].title}</h2>
                   <ReactMarkdown className="section-content">
                     {selectedTopic.what}
                   </ReactMarkdown>
@@ -148,9 +144,7 @@ export default function State({ params: { topic } }: PageProps) {
             >
               {selectedTopic?.recommendations && (
                 <section>
-                  <h2 className="font-heading-xl margin-y-0 section-title">
-                    {allItems[3].title}
-                  </h2>
+                  <h2 className="section-title">{allItems[3].title}</h2>
                   <Table
                     dataCy="topic-recommendation-table"
                     data={recommendations.filter(rec => {
