@@ -81,6 +81,17 @@ export default function Seo({
         .concat(meta)}
       title={title}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
-    ></Helmet>
+    >
+      <link rel="preconnect" href="https://fonts.googleapis.com"></link>
+      <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossOrigin="true"
+      ></link>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Petrona:wght@400;700;900&display=swap"
+        rel="stylesheet"
+      ></link>
+    </Helmet>
   );
 }

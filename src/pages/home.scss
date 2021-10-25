@@ -51,9 +51,6 @@
     h2 {
       display: inline-flex;
       flex-direction: column;
-      margin-top: 2rem;
-      color: $header-text;
-      padding-left: 1rem;
 
       &:after {
         @include vertical-line;
