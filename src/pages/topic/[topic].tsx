@@ -6,6 +6,7 @@ import { AnchorLinkProps } from 'gatsby-plugin-anchor-links';
 import Layout from '../../components/layout/Layout';
 import { Topic } from '../../types/topic';
 import Hero from '../../components/hero/Hero';
+import Breadcrumbs from '../../components/breadcrumbs/Breadcrumbs';
 import SideAnchorNav from '../../components/side-anchor-nav/SideAnchorNav';
 import Table, { TableHeading } from '../../components/table/Table';
 import { Recommendation } from '../../types/recommendation';
@@ -14,7 +15,6 @@ import { Link } from 'gatsby';
 import content from '../content/topics.content.yml';
 import recContent from '../content/recommendations.content.yml';
 import './topic.scss';
-import Breadcrumbs from '../../components/breadcrumbs/Breadcrumbs';
 
 const columns: TableHeading<Recommendation>[] = [
   {

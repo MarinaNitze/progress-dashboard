@@ -2,6 +2,27 @@
 $theme-image-path: '../../node_modules/uswds/src/img';
 $theme-show-notifications: false;
 
+$theme-utility-breakpoints: (
+  // 160px:
+  "card": false,
+  // 240px:
+  "card-lg": false,
+  // 320px:
+  "mobile": false,
+  // 480px:
+  "mobile-lg": true,
+  // 640px:
+  "tablet": true,
+  // 800px:
+  "tablet-lg": true,
+  // 1024px:
+  "desktop": true,
+  // 1200px:
+  "desktop-lg": true,
+  // 1400px:
+  "widescreen": false
+);
+
 /* COLORS */
 $primary: #f2b039;
 $secondary: #fe6659;

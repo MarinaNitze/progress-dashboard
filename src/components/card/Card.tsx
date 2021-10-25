@@ -27,7 +27,10 @@ export type CardProps = {
   dataCy?: string;
 };
 
-const gridLayouts = { topic: true, sm: 4, md: 8, lg: 12 };
+const gridLayouts = {
+  tabletLg: { topic: true, sm: 6, md: 12, lg: 12 },
+  desktopLg: { topic: true, sm: 4, md: 8, lg: 12 },
+};
 
 function mediaLayout(
   layout: string,
@@ -73,7 +76,12 @@ export default function Card({
       className="card"
       containerProps={{ className: layout }}
       layout={mediaLayout(layout)}
-      gridLayout={{ tablet: { col: gridLayouts[layout] } } as GridProps}
+      gridLayout={
+        {
+          tabletLg: { col: gridLayouts.tabletLg[layout] },
+          desktopLg: { col: gridLayouts.desktopLg[layout] },
+        } as GridProps
+      }
       onClick={() => {
         if (link && layout === 'topic') navigate(link);
       }}

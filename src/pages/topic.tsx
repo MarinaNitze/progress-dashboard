@@ -1,9 +1,8 @@
-import { CardGroup, Grid, GridContainer } from '@trussworks/react-uswds';
 import React, { useState } from 'react';
-
-import Card from '../components/card/Card';
-import Hero from '../components/hero/Hero';
+import { CardGroup, Grid, GridContainer } from '@trussworks/react-uswds';
 import Layout from '../components/layout/Layout';
+import Hero from '../components/hero/Hero';
+import Card from '../components/card/Card';
 
 import { Topic as TopicType } from '../types/topic';
 import content from './content/topics.content.yml';

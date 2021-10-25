@@ -8,12 +8,13 @@ import Layout from '../../components/layout/Layout';
 import content from '../content/recommendations.content.yml';
 import { Recommendation } from '../../types/recommendation';
 import Hero from '../../components/hero/Hero';
+import Breadcrumbs from '../../components/breadcrumbs/Breadcrumbs';
 import SideAnchorNav from '../../components/side-anchor-nav/SideAnchorNav';
 import useGatsbyImages from '../../hooks/useGatsbyImages';
-import './recommendation.scss';
 import { ImageSharp } from '../../../graphql-types';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
-import Breadcrumbs from '../../components/breadcrumbs/Breadcrumbs';
+
+import './recommendation.scss';
 
 export default function State({ params: { recommendation } }: PageProps) {
   const costsIcon = useGatsbyImages()['images/topics/icon-costs.svg'].publicURL;
