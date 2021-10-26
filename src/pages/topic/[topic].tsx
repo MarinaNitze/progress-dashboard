@@ -33,7 +33,7 @@ const columns: TableHeading<Recommendation>[] = [
     heading: `What's needed (Time/Cost)`,
   },
   {
-    dataKey: 'title',
+    dataKey: 'case',
     sortable: false,
     heading: 'Case study',
   },
@@ -147,14 +147,13 @@ export default function State({ params: { topic } }: PageProps) {
                   <h2 className="section-title">{allItems[3].title}</h2>
                   <Table
                     dataCy="topic-recommendation-table"
-                    data={recommendations.filter(rec => {
-                      if (selectedTopic.recommendations.includes(rec.title)) {
-                        return {
-                          ...rec,
-                          need: 'Content',
-                        };
-                      }
-                    })}
+                    data={recommendations.reduce<Recommendation[]>(
+                      (acc, rec) =>
+                        selectedTopic.recommendations.includes(rec.title)
+                          ? [...acc, rec]
+                          : acc,
+                      [],
+                    )}
                     columns={columns}
                   />
                 </section>
