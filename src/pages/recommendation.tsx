@@ -14,7 +14,9 @@ import './home.scss';
 export default function Recommendation() {
   const searchIcon = useGatsbyImages()['images/header/search.svg'].publicURL;
   const [input, setInput] = useState('');
-  const [recommendations, setRecommendations] = useState(content.recommendations as RecommendationType[]);
+  const [recommendations, setRecommendations] = useState(
+    content.recommendations as RecommendationType[],
+  );
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e?.preventDefault();
@@ -22,15 +24,16 @@ export default function Recommendation() {
 
   const handleInput = (e: React.ChangeEvent<HTMLInputElement>) => {
     setInput(e?.currentTarget.value);
-    const filteredRecommendations = content.recommendations.filter((recommendation: RecommendationType) =>
-      recommendation.heading
-        .toLowerCase()
-        .includes(e?.currentTarget.value.toLowerCase()),
+    const filteredRecommendations = content.recommendations.filter(
+      (recommendation: RecommendationType) =>
+        recommendation.heading
+          .toLowerCase()
+          .includes(e?.currentTarget.value.toLowerCase()),
     );
     setRecommendations(filteredRecommendations);
   };
 
-   return (
+  return (
     <Layout>
       <section id="test-section-id">
         <Hero
@@ -65,10 +68,9 @@ export default function Recommendation() {
         </form>
       </section>
       <section className="recommendations-section" id="test-section-id">
-        {recommendations.map( rec => {
-          return (
-            <p key={rec.title}>{rec.heading}</p>
-        )})}
+        {recommendations.map(rec => {
+          return <p key={rec.title}>{rec.heading}</p>;
+        })}
       </section>
     </Layout>
   );
