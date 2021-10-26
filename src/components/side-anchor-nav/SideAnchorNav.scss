@@ -18,7 +18,10 @@
       color: $white;
       font-weight: lighter;
       &:hover {
+        background-color: $info;
         color: $secondary;
+        font-weight: normal;
+        text-decoration: underline;
       }
     }
 
@@ -41,7 +44,7 @@
       color: $white;
 
       &:hover {
-        color: $white;
+        color: $secondary;
       }
     }
   }

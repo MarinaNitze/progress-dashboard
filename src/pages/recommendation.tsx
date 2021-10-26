@@ -33,17 +33,19 @@ export default function Recommendation() {
     setRecommendations(filteredRecommendations);
   };
 
-  const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
+  const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
   type alphabetRecType = {
-    letter: string,
-    recs: RecommendationType[]
-  }
+    letter: string;
+    recs: RecommendationType[];
+  };
   const reduceRecsAlphabet = () => {
-    return alphabet.reduce( (acc: alphabetRecType[], char) => {
-      const recs = recommendations.filter( rec => rec.heading[0].toUpperCase() === char)
-      return [...acc, {letter: char, recs}]
-    }, [])
-  }
+    return alphabet.reduce((acc: alphabetRecType[], char) => {
+      const recs = recommendations.filter(
+        rec => rec.heading[0].toUpperCase() === char,
+      );
+      return [...acc, { letter: char, recs }];
+    }, []);
+  };
 
   return (
     <Layout>
@@ -58,42 +60,53 @@ export default function Recommendation() {
       </section>
       <Breadcrumbs crumbLabel="All Recommendations" />
       <main className="cwp-recommendations-main">
-      <section aria-label="Big search component">
-        <form
-          className="usa-search usa-search--big"
-          role="search"
-          onSubmit={handleSubmit}
-        >
-          <label className="usa-sr-only" htmlFor="recommendation-search">
-            Search
-          </label>
+        <section aria-label="Big search component">
+          <form
+            className="usa-search usa-search--big"
+            role="search"
+            onSubmit={handleSubmit}
+          >
+            <label className="usa-sr-only" htmlFor="recommendation-search">
+              Search
+            </label>
 
-          <input
-            className="usa-input"
-            id="recommendation-search"
-            type="search"
-            name="search"
-            placeholder="Search recommendations"
-            value={input}
-            onChange={handleInput}
-          />
-          <img className="search-icon" src={searchIcon} alt="search icon" />
-        </form>
-      </section>
-      <section className="recommendations-section" id="test-section-id">
-        {reduceRecsAlphabet().map(alphabetRec => {
-          return alphabetRec.recs.length > 0 && (
-            <section id={`${alphabetRec.letter}-section`} key={alphabetRec.letter}>
-            <h2>{alphabetRec.letter}</h2>
-            <ul>
-              {alphabetRec.recs.map( rec => {
-                return <li key={rec.title}><a href={`/recommendation/${rec.title}`}>{rec.heading}</a></li>
-              })}
-            </ul>
-            </section>
-          )
-        })}
-      </section>
+            <input
+              className="usa-input"
+              id="recommendation-search"
+              type="search"
+              name="search"
+              placeholder="Search recommendations"
+              value={input}
+              onChange={handleInput}
+            />
+            <img className="search-icon" src={searchIcon} alt="search icon" />
+          </form>
+        </section>
+        <section className="recommendations-section" id="test-section-id">
+          {reduceRecsAlphabet().map(alphabetRec => {
+            return (
+              alphabetRec.recs.length > 0 && (
+                <section
+                  id={`${alphabetRec.letter}-section`}
+                  key={alphabetRec.letter}
+                >
+                  <h2>{alphabetRec.letter}</h2>
+                  <ul>
+                    {alphabetRec.recs.map(rec => {
+                      return (
+                        <li key={rec.title}>
+                          <a href={`/recommendation/${rec.title}`}>
+                            {rec.heading}
+                          </a>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </section>
+              )
+            );
+          })}
+        </section>
       </main>
     </Layout>
   );

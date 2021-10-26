@@ -1,6 +1,5 @@
 .breadcrumb {
   margin: 1rem 1rem 1rem 5rem;
-  font-size: 0.75rem;
 }
 
 .breadcrumb a:first-child {
@@ -12,8 +11,12 @@ li.usa-breadcrumb__list-item.usa-current {
   font-weight: 700;
 }
 
+.crumb {
+  font-size: 0.875rem;
+}
+
 @media (max-width: 800px) {
   .breadcrumb {
-    margin: 1rem;
+    display: none;
   }
 }

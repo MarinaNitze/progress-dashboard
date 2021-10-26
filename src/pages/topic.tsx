@@ -46,53 +46,53 @@ export default function Topic() {
       </section>
       <Breadcrumbs crumbLabel="All Topics" />
       <main className="cwp-topics-main">
-      <section aria-label="Big search component">
-        <form
-          className="usa-search usa-search--big"
-          role="search"
-          onSubmit={handleSubmit}
-        >
-          <label className="usa-sr-only" htmlFor="topic-search">
-            Search
-          </label>
+        <section aria-label="Big search component">
+          <form
+            className="usa-search usa-search--big"
+            role="search"
+            onSubmit={handleSubmit}
+          >
+            <label className="usa-sr-only" htmlFor="topic-search">
+              Search
+            </label>
 
-          <input
-            className="usa-input"
-            id="topic-search"
-            type="search"
-            name="search"
-            placeholder="Search topics"
-            value={input}
-            onChange={handleInput}
-          />
-          <img className="search-icon" src={searchIcon} alt="search icon" />
-        </form>
-      </section>
-      <section className="topics-section" id="test-section-id">
-        <GridContainer className="all-topics">
-          <Grid desktop={{ col: 12 }}>
-            <CardGroup className="all-topics">
-              {topics.map(t => (
-                <Grid
-                  widescreen={{ col: 2 }}
-                  desktop={{ col: 3 }}
-                  tablet={{ col: 4 }}
-                  key={`${t.title}-grid`}
-                >
-                  <Card
-                    key={t.title}
-                    link={`/topic/${t.title}`}
-                    layout="topic"
-                    image={t.image}
-                    imgAlt={t.title + ' icon'}
-                    title={t.hero.title}
-                  />
-                </Grid>
-              ))}
-            </CardGroup>
-          </Grid>
-        </GridContainer>
-      </section>
+            <input
+              className="usa-input"
+              id="topic-search"
+              type="search"
+              name="search"
+              placeholder="Search topics"
+              value={input}
+              onChange={handleInput}
+            />
+            <img className="search-icon" src={searchIcon} alt="search icon" />
+          </form>
+        </section>
+        <section className="topics-section" id="test-section-id">
+          <GridContainer className="all-topics">
+            <Grid desktop={{ col: 12 }}>
+              <CardGroup className="all-topics">
+                {topics.map(t => (
+                  <Grid
+                    widescreen={{ col: 2 }}
+                    desktop={{ col: 3 }}
+                    tablet={{ col: 4 }}
+                    key={`${t.title}-grid`}
+                  >
+                    <Card
+                      key={t.title}
+                      link={`/topic/${t.title}`}
+                      layout="topic"
+                      image={t.image}
+                      imgAlt={t.title + ' icon'}
+                      title={t.hero.title}
+                    />
+                  </Grid>
+                ))}
+              </CardGroup>
+            </Grid>
+          </GridContainer>
+        </section>
       </main>
     </Layout>
   );
