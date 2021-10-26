@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
-import Hero from '../components/hero/Hero';
 import Layout from '../components/layout/Layout';
+import Hero from '../components/hero/Hero';
 import Breadcrumbs from '../components/breadcrumbs/Breadcrumbs';
 
 import { Recommendation as RecommendationType } from '../types/recommendation';
@@ -33,6 +33,18 @@ export default function Recommendation() {
     setRecommendations(filteredRecommendations);
   };
 
+  const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
+  type alphabetRecType = {
+    letter: string,
+    recs: RecommendationType[]
+  }
+  const reduceRecsAlphabet = () => {
+    return alphabet.reduce( (acc: alphabetRecType[], char) => {
+      const recs = recommendations.filter( rec => rec.heading[0].toUpperCase() === char)
+      return [...acc, {letter: char, recs}]
+    }, [])
+  }
+
   return (
     <Layout>
       <section id="test-section-id">
@@ -45,6 +57,7 @@ export default function Recommendation() {
         />
       </section>
       <Breadcrumbs crumbLabel="All Recommendations" />
+      <main className="cwp-recommendations-main">
       <section aria-label="Big search component">
         <form
           className="usa-search usa-search--big"
@@ -68,10 +81,20 @@ export default function Recommendation() {
         </form>
       </section>
       <section className="recommendations-section" id="test-section-id">
-        {recommendations.map(rec => {
-          return <p key={rec.title}>{rec.heading}</p>;
+        {reduceRecsAlphabet().map(alphabetRec => {
+          return alphabetRec.recs.length > 0 && (
+            <section id={`${alphabetRec.letter}-section`} key={alphabetRec.letter}>
+            <h2>{alphabetRec.letter}</h2>
+            <ul>
+              {alphabetRec.recs.map( rec => {
+                return <li key={rec.title}><a href={`/recommendation/${rec.title}`}>{rec.heading}</a></li>
+              })}
+            </ul>
+            </section>
+          )
         })}
       </section>
+      </main>
     </Layout>
   );
 }

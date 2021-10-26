@@ -58,3 +58,17 @@ li {
 li:not(:last-child) {
   margin-bottom: 1rem;
 }
+
+a {
+  font-size: 1.3rem;
+  font-weight: 300;
+  text-decoration: underline;
+  color: #05447E;
+  line-height: 1.45;
+  margin-bottom: 1rem;
+}
+
+a:hover {
+ font-weight: 700;
+ color: #FE6659;
+}

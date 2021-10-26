@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { CardGroup, Grid, GridContainer } from '@trussworks/react-uswds';
-import Card from '../components/card/Card';
-import Hero from '../components/hero/Hero';
+
 import Layout from '../components/layout/Layout';
+import Hero from '../components/hero/Hero';
 import Breadcrumbs from '../components/breadcrumbs/Breadcrumbs';
+import Card from '../components/card/Card';
 
 import { Topic as TopicType } from '../types/topic';
 import content from './content/topics.content.yml';
@@ -44,6 +45,7 @@ export default function Topic() {
         />
       </section>
       <Breadcrumbs crumbLabel="All Topics" />
+      <main className="cwp-topics-main">
       <section aria-label="Big search component">
         <form
           className="usa-search usa-search--big"
@@ -91,6 +93,7 @@ export default function Topic() {
           </Grid>
         </GridContainer>
       </section>
+      </main>
     </Layout>
   );
 }
