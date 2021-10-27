@@ -10,7 +10,7 @@ const headerLinks = [
     text: 'Topics',
   },
   {
-    to: '/recommendations',
+    to: '/recommendation',
     text: 'Recommendations',
   },
   {

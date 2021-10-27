@@ -16,17 +16,23 @@ export default function Breadcrumbs({ crumbLabel, page }: BreadcrumbProps) {
   return (
     <div className="breadcrumb">
       <BreadcrumbBar>
-        <Breadcrumb>
-          <BreadcrumbLink href="/">Home</BreadcrumbLink>
+        <Breadcrumb className="crumb">
+          <BreadcrumbLink className="crumb" href="/">
+            Home
+          </BreadcrumbLink>
         </Breadcrumb>
         {page ? (
-          <Breadcrumb>
-            <BreadcrumbLink href={`/${page}`}>{page}</BreadcrumbLink>
+          <Breadcrumb className="crumb">
+            <BreadcrumbLink className="crumb" href={`/${page}`}>
+              {page}
+            </BreadcrumbLink>
           </Breadcrumb>
         ) : (
           <></>
         )}
-        <Breadcrumb current>{crumbLabel}</Breadcrumb>
+        <Breadcrumb className="crumb" current>
+          {crumbLabel}
+        </Breadcrumb>
       </BreadcrumbBar>
     </div>
   );

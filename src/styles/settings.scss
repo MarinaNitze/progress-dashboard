@@ -80,6 +80,10 @@ $theme-card-border-width: 0;
     margin-left: 2rem !important;
   }
 
+.usa-nav__primary .usa-nav__primary-item a:hover {
+  text-decoration: underline;
+}
+
   main.cwp-main {
     border-top: none;
     .usa-section.cwp-section {

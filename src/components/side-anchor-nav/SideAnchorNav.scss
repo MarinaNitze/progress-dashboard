@@ -12,15 +12,13 @@
   .usa-sidenav {
     background-color: $info;
     border-bottom: none;
-    line-height: 1;
 
     a:not(.usa-button) {
       color: $white;
-      font-weight: lighter;
       &:hover {
         background-color: $info;
-        color: $white;
-        font-weight: normal;
+        color: $secondary;
+        text-decoration: underline;
       }
     }
 
@@ -43,7 +41,7 @@
       color: $white;
 
       &:hover {
-        color: $white;
+        color: $secondary;
       }
     }
   }

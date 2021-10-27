@@ -13,7 +13,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 900;
   color: #333240;
   line-height: 1.125;
@@ -43,7 +43,7 @@ h4 {
 
 p {
   font-size: 1.3rem;
-  font-weight: 400;
+  font-weight: 300;
   color: #333240;
   line-height: 1.45;
   margin-bottom: 1rem;
@@ -51,10 +51,22 @@ p {
 
 li {
   font-size: 1.3rem;
-  font-weight: 400;
+  font-weight: 300;
   color: #333240;
 }
 
 li:not(:last-child) {
   margin-bottom: 1rem;
+}
+
+a {
+  font-size: 1.3rem;
+  font-weight: 300;
+  text-decoration: none;
+  color: #05447E;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #FE6659;
 }

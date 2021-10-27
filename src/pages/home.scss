@@ -1,6 +1,19 @@
 @import '../styles/settings.scss';
+
   .cwp-hero {
     padding-bottom: 5rem;
+  }
+
+  .cwp-topic-hero {
+    h1 {
+      word-wrap: break-word;
+    }
+  }
+
+  .home {
+    h2 {
+      font-size: 2.5rem;
+    }
   }
 
   .usa-hero.primary {
@@ -61,7 +74,6 @@
 
 .usa-search {
   margin-top: 1rem;
-  margin-left: 2rem;
 
   .search-icon {
     background-color: $light;
@@ -81,6 +93,43 @@
 
   .usa-input:focus{
     outline-color: $light;
+  }
+}
+
+.cwp-topics-main {
+  max-width: 90%;
+  margin-left: 5%;
+}
+
+.cwp-recommendations-main {
+  max-width: 90%;
+  margin-left: 5%;
+  h2 {
+      display: inline-flex;
+      flex-direction: column;
+
+      &:after {
+        @include vertical-line;
+        width: auto;
+      }
+    }
+
+  ul {
+    padding-inline-start: 0;
+  }
+
+  li {
+      list-style-type: none;
+  }
+
+}
+
+@media (max-width: 1100px) {
+  .usa-search {
+      .usa-input {
+        width: 100%;
+        max-width: 100%;
+      }
   }
 }
 
