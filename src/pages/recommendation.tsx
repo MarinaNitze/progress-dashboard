@@ -11,12 +11,16 @@ import useGatsbyImages from '../hooks/useGatsbyImages';
 
 import './home.scss';
 
+type alphabetRecType = {
+  letter: string;
+  recs: RecommendationType[];
+};
+
 export default function Recommendation() {
   const searchIcon = useGatsbyImages()['images/header/search.svg'].publicURL;
   const [input, setInput] = useState('');
-  const [recommendations, setRecommendations] = useState(
-    content.recommendations as RecommendationType[],
-  );
+  const OgRecommendations: RecommendationType[] = content.recommendations;
+  const [recommendations, setRecommendations] = useState(OgRecommendations);
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e?.preventDefault();
@@ -24,22 +28,17 @@ export default function Recommendation() {
 
   const handleInput = (e: React.ChangeEvent<HTMLInputElement>) => {
     setInput(e?.currentTarget.value);
-    const filteredRecommendations = content.recommendations.filter(
-      (recommendation: RecommendationType) =>
-        recommendation.heading
-          .toLowerCase()
-          .includes(e?.currentTarget.value.toLowerCase()),
+    const filteredRecommendations = OgRecommendations.filter(recommendation =>
+      recommendation.heading
+        .toLowerCase()
+        .includes(e?.currentTarget.value.toLowerCase()),
     );
     setRecommendations(filteredRecommendations);
   };
 
   const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
-  type alphabetRecType = {
-    letter: string;
-    recs: RecommendationType[];
-  };
   const reduceRecsAlphabet = () => {
-    return alphabet.reduce((acc: alphabetRecType[], char) => {
+    return alphabet.reduce<alphabetRecType[]>((acc, char) => {
       const recs = recommendations.filter(
         rec => rec.heading[0].toUpperCase() === char,
       );

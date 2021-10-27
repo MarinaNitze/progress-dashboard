@@ -13,7 +13,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 900;
   color: #333240;
   line-height: 1.125;
@@ -62,13 +62,11 @@ li:not(:last-child) {
 a {
   font-size: 1.3rem;
   font-weight: 300;
-  text-decoration: underline;
+  text-decoration: none;
   color: #05447E;
-  line-height: 1.45;
-  margin-bottom: 1rem;
 }
 
 a:hover {
- font-weight: 700;
- color: #FE6659;
+  text-decoration: underline;
+  color: #FE6659;
 }

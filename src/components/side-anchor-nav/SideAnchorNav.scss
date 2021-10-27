@@ -12,15 +12,12 @@
   .usa-sidenav {
     background-color: $info;
     border-bottom: none;
-    line-height: 1;
 
     a:not(.usa-button) {
       color: $white;
-      font-weight: lighter;
       &:hover {
         background-color: $info;
         color: $secondary;
-        font-weight: normal;
         text-decoration: underline;
       }
     }

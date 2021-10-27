@@ -27,7 +27,7 @@ const IndexPage = () => {
           </Hero>
         )}
       </section>
-      <main className="cwp-main">
+      <main className="cwp-main home">
         <Features />
         <Topics />
         {mission && (
