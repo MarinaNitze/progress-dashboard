@@ -38,7 +38,7 @@ export default function Topic() {
       <section id="test-section-id">
         <Hero
           className="cwp-topic-hero"
-          path="images/heros/hero-home.png"
+          path="images/heros/all-topics.jpg"
           alt="All topics hero image"
           backgroundColor="dark"
           title="All Topics"
