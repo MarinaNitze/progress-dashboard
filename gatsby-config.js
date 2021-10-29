@@ -1,6 +1,7 @@
 require(`dotenv`).config({ path: `.env` });
 
 module.exports = {
+  pathPrefix: process.env.PATH_PREFIX,
   siteMetadata: {
     title: `Progress Dashboard`,
     description: `A dashboard for child welfare`,
@@ -59,6 +60,14 @@ module.exports = {
             tableName: `States`,
           },
         ],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-s3`,
+      options: {
+        bucketName: 'progress-dashboard',
+        protocol: 'http',
+        hostname: 'progress-dashboard.s3-website-us-east-1.amazonaws.com',
       },
     },
     `gatsby-plugin-ts`,
