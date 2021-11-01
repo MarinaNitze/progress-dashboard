@@ -31,7 +31,7 @@ jobs:
           AWS_ACCESS_KEY_ID: ${{ secrets.DEPLOY_PREVIEW_KEY }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.DEPLOY_PREVIEW_SECRET }}
           AWS_REGION: 'us-east-1'
-        run: aws s3api create-bucket --bucket progress-dashboard-preview-${{ github.event.number }} && aws s3 website s3://progress-dashboard-preview-${{ github.event.number }}/ --index-document index.html --error-document 404.html
+        run: aws s3api create-bucket --bucket progress-dashboard-preview-${{ github.event.number }} --acl public-read-write && aws s3 website s3://progress-dashboard-preview-${{ github.event.number }}/ --index-document index.html --error-document 404.html
       - name: Deploy
         if: success()
         uses: jakejarvis/s3-sync-action@master
