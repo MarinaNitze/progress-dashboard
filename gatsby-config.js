@@ -1,7 +1,6 @@
 require(`dotenv`).config({ path: `.env` });
 
 module.exports = {
-  pathPrefix: process.env.PATH_PREFIX,
   siteMetadata: {
     title: `Progress Dashboard`,
     description: `A dashboard for child welfare`,

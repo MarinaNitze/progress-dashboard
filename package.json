@@ -6,7 +6,7 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "build": "gatsby build --prefix-paths",
+    "build": "gatsby build",
     "deploy": "npm run -n \"-r dotenv/config\" && npm run build && gatsby-plugin-s3 deploy",
     "deploy-bloom": "AWS_PROFILE=bloom npm run deploy",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,yml}\"",
