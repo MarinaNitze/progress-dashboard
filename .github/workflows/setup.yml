@@ -1,7 +1,7 @@
 name: Create bucket for preview
 on:
   pull_request:
-    types: [opened]
+    types: [opened, reopened]
 jobs:
   deploy:
     runs-on: ubuntu-latest
