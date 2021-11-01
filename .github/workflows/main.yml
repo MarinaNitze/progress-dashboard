@@ -32,12 +32,11 @@ jobs:
         with:
           args: --delete
         env:
-          AWS_S3_BUCKET: progress-dashboard # Could also come from github secrets
+          AWS_S3_BUCKET: progress-dashboard-preview-${{ github.event.number }} # Could also come from github secrets
           AWS_ACCESS_KEY_ID: ${{ secrets.DEPLOY_PREVIEW_KEY }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.DEPLOY_PREVIEW_SECRET }}
           AWS_REGION: 'us-east-1'
           SOURCE_DIR: 'public'
-          DEST_DIR: preview/${{ github.event.number }}
       - name: Set success deployment status
         if: success()
         uses: pbrandone/create-status-action@master
@@ -45,7 +44,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           state: success
           description: Deploy preview ready!
-          url: http://progress-dashboard.s3-website-us-east-1.amazonaws.com/preview/${{ github.event.number }}
+          url: http://progress-dashboard-preview-${{ github.event.number }}.s3-website-us-east-1.amazonaws.com/
           context: Deploy Preview URL
       - name: Set failed deployment status
         if: failure()
