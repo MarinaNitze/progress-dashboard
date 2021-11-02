@@ -7,7 +7,7 @@
   "private": false,
   "scripts": {
     "build": "gatsby build",
-    "deploy": "npm run -n \"-r dotenv/config\" && npm run build && gatsby-plugin-s3 deploy",
+    "deploy": "npm run -n \"-r dotenv/config\" && npm run build && gatsby-plugin-s3 deploy --yes && aws cloudfront create-invalidation --distribution-id EMN2XEDCELM98 --paths \"/*\"",
     "deploy-bloom": "AWS_PROFILE=bloom npm run deploy",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,yml}\"",
     "start": "gatsby develop",
