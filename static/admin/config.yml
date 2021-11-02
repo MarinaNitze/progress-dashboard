@@ -2,6 +2,7 @@ backend:
   name: 'github'
   repo: 'Bloom-Works/progress-dashboard'
   branch: 'main'
+  base_url:  'https://ws9psj582g.execute-api.us-east-1.amazonaws.com/default/ServerlessOauthPortalForNetlifyCms__redirect'
 publish_mode: 'editorial_workflow'
 
 media_folder: 'src/images'

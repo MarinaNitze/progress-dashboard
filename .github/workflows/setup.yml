@@ -10,7 +10,7 @@ jobs:
       - name: create-json
         uses: jsdaniell/create-json@1.1.2
         with:
-          name: "bucket-policy.json"
+          name: 'bucket-policy.json'
           json: '{"Statement": [{"Sid": "PublicRead","Effect": "Allow","Principal": "*", "Action": ["s3:GetObject", "s3:GetObjectVersion"],"Resource": ["arn:aws:s3:::progress-dashboard-preview-${{ github.event.number }}/*"]}]}'
       - name: Create bucket
         env:
