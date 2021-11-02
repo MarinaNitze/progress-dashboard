@@ -1,56 +1,15 @@
-name: Deploy Preview
-on: pull_request
+name: Deploy Main
+on:
+  push:
+    branches:
+      - main
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - name: Cache npm
-        uses: actions/cache@v1
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
-      - name: Set deployment status
-        uses: pbrandone/create-status-action@master
-        with:
-          token: ${{ secrets.BLOOM_GIT_TOKEN }}
-          state: pending
-          description: Preparing deploy preview
-          context: Deploy Preview URL
-      - name: Install
-        run: npm ci
-      - name: Build
+      - name: Sync bucket
         env:
-          AIRTABLE_API_KEY: ${{ secrets.AIRTABLE_API_KEY }}
-          AIRTABLE_BASE_ID: ${{ secrets.AIRTABLE_BASE_ID }}
-        run: npm run build
-      - name: Deploy
-        if: success()
-        uses: jakejarvis/s3-sync-action@master
-        with:
-          args: --delete
-        env:
-          AWS_S3_BUCKET: progress-dashboard-preview-${{ github.event.number }} # Could also come from github secrets
           AWS_ACCESS_KEY_ID: ${{ secrets.DEPLOY_PREVIEW_KEY }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.DEPLOY_PREVIEW_SECRET }}
           AWS_REGION: 'us-east-1'
-          SOURCE_DIR: 'public'
-      - name: Set success deployment status
-        if: success()
-        uses: pbrandone/create-status-action@master
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          state: success
-          description: Deploy preview ready!
-          url: http://progress-dashboard-preview-${{ github.event.number }}.s3-website-us-east-1.amazonaws.com/
-          context: Deploy Preview URL
-      - name: Set failed deployment status
-        if: failure()
-        uses: pbrandone/create-status-action@master
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          state: failure
-          description: Failed to deploy preview
-          context: Deploy Preview URL
+        run: npm run deploy

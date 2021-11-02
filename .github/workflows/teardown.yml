@@ -3,7 +3,7 @@ on:
   pull_request:
     types: [closed]
 jobs:
-  deploy:
+  teardown:
     runs-on: ubuntu-latest
     steps:
       - name: Delete bucket
