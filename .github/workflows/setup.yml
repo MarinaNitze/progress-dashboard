@@ -14,4 +14,5 @@ jobs:
         run: |
           aws s3api create-bucket --bucket progress-dashboard-preview-${{ github.event.number }} --acl public-read-write
           aws s3 website s3://progress-dashboard-preview-${{ github.event.number }}/ --index-document index.html --error-document 404.html
-          aws s3api put-bucket-policy --bucket progress-dashboard-preview-${{ github.event.number }} --policy <<EOF {"Statement":[{      "Sid":"PublicRead","Effect":"Allow","Principal": "*","Action":["s3:GetObject","s3:GetObjectVersion"],"Resource":["arn:aws:s3:::progress-dashboard-preview-${{ github.event.number }}/*"]}]}
+          ls
+          aws s3api put-bucket-policy --bucket progress-dashboard-preview-${{ github.event.number }} --policy file://bucket-policy.json
