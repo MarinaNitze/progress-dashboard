@@ -2,7 +2,7 @@ backend:
   name: 'github'
   repo: 'Bloom-Works/progress-dashboard'
   branch: 'main'
-  site_domain: http://progress-dashboard-preview-131.s3-website-us-east-1.amazonaws.com
+  site_domain: https://d2qmza6uxmapzy.cloudfront.net
   base_url: 'https://ws9psj582g.execute-api.us-east-1.amazonaws.com'
   auth_endpoint: default/ServerlessOauthPortalForNetlifyCms__redirect
 publish_mode: 'editorial_workflow'
