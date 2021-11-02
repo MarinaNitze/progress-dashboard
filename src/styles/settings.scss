@@ -4,23 +4,23 @@ $theme-show-notifications: false;
 
 $theme-utility-breakpoints: (
   // 160px:
-  "card": false,
+  'card': false,
   // 240px:
-  "card-lg": false,
+  'card-lg': false,
   // 320px:
-  "mobile": false,
+  'mobile': false,
   // 480px:
-  "mobile-lg": true,
+  'mobile-lg': true,
   // 640px:
-  "tablet": true,
+  'tablet': true,
   // 800px:
-  "tablet-lg": true,
+  'tablet-lg': true,
   // 1024px:
-  "desktop": true,
+  'desktop': true,
   // 1200px:
-  "desktop-lg": true,
+  'desktop-lg': true,
   // 1400px:
-  "widescreen": false
+  'widescreen': false
 );
 
 /* COLORS */
@@ -80,12 +80,13 @@ $theme-card-border-width: 0;
     margin-left: 2rem !important;
   }
 
-.usa-nav__primary .usa-nav__primary-item a:hover {
-  text-decoration: underline;
-}
+  .usa-nav__primary .usa-nav__primary-item a:hover {
+    text-decoration: underline;
+  }
 
   main.cwp-main {
     border-top: none;
+    margin: 2rem 5rem !important;
     .usa-section.cwp-section {
       padding-top: 0;
     }
@@ -108,5 +109,5 @@ $theme-card-border-width: 0;
   background: $secondary;
   height: 0.25rem;
   border-radius: 1rem;
-  margin-top: .35em;
+  margin-top: 0.35em;
 }
