@@ -1,5 +1,5 @@
 function getScript(mess, content) {
-    return `<html><body><script>
+  return `<html><body><script>
     (function() {
         function receiveMessage(e) {
         console.log('authorization:github:${mess}:${JSON.stringify(content)}')
@@ -15,4 +15,4 @@ function getScript(mess, content) {
     </script></body></html>`;
 }
 
-exports.getScript = getScript
+exports.getScript = getScript;
