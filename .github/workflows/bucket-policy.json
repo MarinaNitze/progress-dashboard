@@ -4,10 +4,7 @@
       "Sid": "PublicRead",
       "Effect": "Allow",
       "Principal": "*",
-      "Action": [
-        "s3:GetObject",
-        "s3:GetObjectVersion"
-      ],
+      "Action": ["s3:GetObject", "s3:GetObjectVersion"],
       "Resource": [
         "arn:aws:s3:::progress-dashboard-preview-${{ github.event.number }}/*"
       ]

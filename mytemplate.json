@@ -1,21 +1,21 @@
 {
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Effect": "Allow",
-            "Principal": {
-                "AWS": "arn:aws:iam::<ARN>:role/<NAME>_source_role"
-            },
-            "Action": "s3:ListBucket",
-            "Resource": "arn:aws:s3:::<NAME>_source_bucket"
-        },
-        {
-            "Effect": "Allow",
-            "Principal": {
-                "AWS": "arn:aws:iam::<ARN>:role/<NAME>_source_role"
-            },
-            "Action": "s3:GetObject",
-            "Resource": "arn:aws:s3:::<NAME>_source_bucket/*"
-        }
-    ]
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Principal": {
+        "AWS": "arn:aws:iam::<ARN>:role/<NAME>_source_role"
+      },
+      "Action": "s3:ListBucket",
+      "Resource": "arn:aws:s3:::<NAME>_source_bucket"
+    },
+    {
+      "Effect": "Allow",
+      "Principal": {
+        "AWS": "arn:aws:iam::<ARN>:role/<NAME>_source_role"
+      },
+      "Action": "s3:GetObject",
+      "Resource": "arn:aws:s3:::<NAME>_source_bucket/*"
+    }
+  ]
 }
