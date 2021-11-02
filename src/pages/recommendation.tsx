@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'gatsby';
 
 import Layout from '../components/layout/Layout';
 import Hero from '../components/hero/Hero';
@@ -94,9 +95,9 @@ export default function Recommendation() {
                     {alphabetRec.recs.map(rec => {
                       return (
                         <li key={rec.title}>
-                          <a href={`/recommendation/${rec.title}`}>
+                          <Link to={`/recommendation/${rec.title}`}>
                             {rec.heading}
-                          </a>
+                          </Link>
                         </li>
                       );
                     })}

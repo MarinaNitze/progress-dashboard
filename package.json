@@ -7,6 +7,8 @@
   "private": false,
   "scripts": {
     "build": "gatsby build",
+    "deploy": "npm run -n \"-r dotenv/config\" && npm run build && gatsby-plugin-s3 deploy --yes && aws cloudfront create-invalidation --distribution-id EMN2XEDCELM98 --paths \"/*\"",
+    "deploy-bloom": "AWS_PROFILE=bloom npm run deploy",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,yml}\"",
     "start": "gatsby develop",
     "serve": "gatsby serve",
@@ -43,6 +45,7 @@
     "gatsby-plugin-postcss": "^4.8.0",
     "gatsby-plugin-purgecss": "^6.0.2",
     "gatsby-plugin-react-helmet": "^4.9.0",
+    "gatsby-plugin-s3": "^0.3.8",
     "gatsby-plugin-sass": "^4.11.0",
     "gatsby-plugin-sharp": "^3.9.0",
     "gatsby-plugin-styled-components": "^4.9.0",

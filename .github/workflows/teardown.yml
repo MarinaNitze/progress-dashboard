@@ -1,0 +1,16 @@
+name: Delete bucket after closing
+on:
+  pull_request:
+    types: [closed]
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Delete bucket
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.DEPLOY_PREVIEW_KEY }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.DEPLOY_PREVIEW_SECRET }}
+          AWS_REGION: 'us-east-1'
+        run: |
+          aws s3 rm s3://progress-dashboard-preview-${{ github.event.number }} --recursive
+          aws s3 rb s3://progress-dashboard-preview-${{ github.event.number }} --force
