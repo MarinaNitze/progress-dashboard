@@ -3,7 +3,7 @@ on:
   pull_request:
     types: [opened, reopened]
 jobs:
-  deploy:
+  setup:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
