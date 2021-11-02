@@ -16,4 +16,4 @@ jobs:
           aws s3api create-bucket --bucket progress-dashboard-preview-${{ github.event.number }} --acl public-read-write
           aws s3 website s3://progress-dashboard-preview-${{ github.event.number }}/ --index-document index.html --error-document 404.html
           echo $(ls)
-          aws s3api put-bucket-policy --bucket progress-dashboard-preview-${{ github.event.number }} --policy file://${{ github.workspace }}/.github/workflows/bucket-policy.json
+          aws s3api put-bucket-policy --bucket progress-dashboard-preview-${{ github.event.number }} --policy file://.github/workflows/bucket-policy.json
