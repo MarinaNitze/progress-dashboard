@@ -24,7 +24,7 @@ recommendations:
       - Increased accuracy if the digital form confirms required fields
       - Ability to offer in multiple languages
     who:
-      number: 13
+      number: 10
       image: ../images/recommendations/electronic-bg-checks-1-.png
   - heading: Complete background check forms at orientation
     costs:
