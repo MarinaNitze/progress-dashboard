@@ -21,8 +21,7 @@ topics:
     layout: topic
     title: out-of-state-background-checks
     image: /src/images/topics/Topic-BC.svg
-    about:
-      Child welfare programs are required to check the child abuse and neglect
+    about: Child welfare programs are required to check the child abuse and neglect
       registry in each state that a potential foster parent has lived in during
       the past 5 years. This is called the “Adam Walsh check” after the 2006 act
       that requires it. Programs must also do this for anyone else in the home
@@ -40,29 +39,29 @@ topics:
 
       We can eliminate these inefficiencies. But to solve this problem, we need to approach it from both sides — how we fulfill background check requests and how we make these requests.
     what: >-
-      **Make it easier for people to request background checks from your
+      ### **Make it easier for people to request background checks from your
       state.**
 
 
-      Don’t charge a fee. It’s so difficult for some states to issue a check to another state — even for a few dollars — that many licensing workers report paying these fees out of their own pockets. The vast majority of states don’t charge any fees.
+      **Don’t charge a fee.** It’s so difficult for some states to issue a check to another state — even for a few dollars — that many licensing workers report paying these fees out of their own pockets. The vast majority of states don’t charge any fees.
 
 
-      Don’t require a notarized signature. It’s very difficult for a social worker to gather all household applicants together at one time to visit a notary. The vast majority of states don’t require a notarized signature.
+      **Don’t require a notarized signature.** It’s very difficult for a social worker to gather all household applicants together at one time to visit a notary. The vast majority of states don’t require a notarized signature.
 
 
-      Accept requests electronically. Whether you build an online portal or process email requests, this will allow you to process requests more efficiently. See the foster care programs that already do this. 
+      **Accept requests electronically.** Whether you build an online portal or process email requests, this will allow you to process requests more efficiently. See the foster care programs that already do this. 
 
 
-      Respond to all requests. Without a response, the requestor doesn’t know whether the applicant passed the check or if the request was lost.
+      **Respond to all requests.** Without a response, the requestor doesn’t know whether the applicant passed the check or if the request was lost.
 
 
-      **Improve your process for requesting out-of-state background checks.**
+      ### **Improve your process for requesting out-of-state background checks.**
 
 
-      Collect information early. Ask whether applicants and the other adults in their household lived in other states in the last 5 years as early as possible in the process. For example, if your application process includes a “mini” application or a “pre-application” form, ask there. 
+      **Collect information early.** Ask whether applicants and the other adults in their household lived in other states in the last 5 years as early as possible in the process. For example, if your application process includes a “mini” application or a “pre-application” form, ask there. 
 
 
-      Start background checks early. Submit out-of-state requests as early as possible in your process. Review licensing worker checklists and move this step towards the top of the list.
+      **Start background checks early.** Submit out-of-state requests as early as possible in your process. Review licensing worker checklists and move this step towards the top of the list.
     recommendations:
       - electronic-background-check
       - background-check-form
@@ -87,8 +86,7 @@ topics:
     layout: topic
     title: finding-family-members
     image: /src/images/topics/Topic-FF.svg
-    about:
-      Children do better when they’re placed with family members or other known
+    about: Children do better when they’re placed with family members or other known
       adults., But identifying and connecting with extended family members can
       be a challenge for foster care programs.
     why: >-
