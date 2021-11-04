@@ -51,6 +51,8 @@ li.usa-card {
 
   .usa-card__img {
     overflow: visible;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
 
@@ -97,11 +99,6 @@ li.usa-card {
 .card .topic:hover {
   background-color: $primary;
   border-radius: 0.5rem;
-}
-
-.usa-card__media.usa-card__media--exdent.media {
-  padding-top: 50px;
-  padding-bottom: 50px;
 }
 
 .usa-card__img {
