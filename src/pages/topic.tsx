@@ -73,13 +73,7 @@ export default function Topic() {
             <Grid>
               <CardGroup>
                 {topics.map(t => (
-                  <Grid
-                    className="ind-topics"
-                    widescreen={{ col: 2 }}
-                    desktop={{ col: 3 }}
-                    tablet={{ col: 4 }}
-                    key={`${t.title}-grid`}
-                  >
+                  <Grid className="ind-topics">
                     <Card
                       key={t.title}
                       link={`/topic/${t.title}`}
