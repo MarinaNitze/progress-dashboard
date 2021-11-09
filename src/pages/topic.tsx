@@ -70,10 +70,11 @@ export default function Topic() {
         </section>
         <section className="topics-section" id="test-section-id">
           <GridContainer className="all-topics">
-            <Grid desktop={{ col: 12 }}>
-              <CardGroup className="all-topics">
+            <Grid>
+              <CardGroup>
                 {topics.map(t => (
                   <Grid
+                    className="ind-topics"
                     widescreen={{ col: 2 }}
                     desktop={{ col: 3 }}
                     tablet={{ col: 4 }}

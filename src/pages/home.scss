@@ -123,12 +123,20 @@
   }
 }
 
+.ind-topics {
+  width: 33%;
+}
+
 @media (max-width: 1100px) {
   .usa-search {
     .usa-input {
       width: 100%;
       max-width: 100%;
     }
+  }
+  .ind-topics {
+    width: 100%;
+    margin: 0 auto;
   }
 }
 
@@ -184,5 +192,8 @@
     h2 {
       margin: 1rem 0;
     }
+  }
+  .ind-topics {
+    width: 100%;
   }
 }
