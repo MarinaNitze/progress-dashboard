@@ -14,13 +14,13 @@ $theme-utility-breakpoints: (
   // 640px:
   'tablet': true,
   // 800px:
-  'tablet-lg': true,
+  'tablet-lg': false,
   // 1024px:
   'desktop': true,
   // 1200px:
-  'desktop-lg': true,
+  'desktop-lg': false,
   // 1400px:
-  'widescreen': false
+  'widescreen': true
 );
 
 /* COLORS */

@@ -69,25 +69,19 @@ export default function Topic() {
           </form>
         </section>
         <section className="topics-section" id="test-section-id">
-          <GridContainer className="all-topics">
-            <Grid desktop={{ col: 12 }}>
-              <CardGroup className="all-topics">
+          <GridContainer>
+            <Grid>
+              <CardGroup>
                 {topics.map(t => (
-                  <Grid
-                    widescreen={{ col: 2 }}
-                    desktop={{ col: 3 }}
-                    tablet={{ col: 4 }}
-                    key={`${t.title}-grid`}
-                  >
-                    <Card
-                      key={t.title}
-                      link={`/topic/${t.title}`}
-                      layout="topic"
-                      image={t.image}
-                      imgAlt={t.title + ' icon'}
-                      title={t.hero.title}
-                    />
-                  </Grid>
+                  <Card
+                    className="tablet:grid-col-4 desktop:grid-col-3 widescreen:grid-col-2"
+                    key={t.title}
+                    link={`/topic/${t.title}`}
+                    layout="topic"
+                    image={t.image}
+                    imgAlt={t.title + ' icon'}
+                    title={t.hero.title}
+                  />
                 ))}
               </CardGroup>
             </Grid>
