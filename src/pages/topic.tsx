@@ -74,7 +74,7 @@ export default function Topic() {
               <CardGroup>
                 {topics.map(t => (
                   <Card
-                    className="tablet:grid-col-4 desktop:grid-col-3 widescreen:grid-col-2"
+                    className="tablet:grid-col-4 desktop:grid-col-3 desktop-lg:grid-col-3 widescreen:grid-col-2"
                     key={t.title}
                     link={`/topic/${t.title}`}
                     layout="topic"
