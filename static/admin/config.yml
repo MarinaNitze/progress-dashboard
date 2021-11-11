@@ -75,14 +75,25 @@ collections:
                   widget: 'hidden',
                   default: 'topic',
                 }
-              - label: 'Recommendations'
-                name: 'recommendations'
-                collection: 'recommendationsAndTopics'
+              - {
+                  label: 'Recommendations',
+                  name: 'recommendations',
+                  collection: 'recommendationsTopicsTags',
+                  widget: 'relation',
+                  multiple: true,
+                  value_field: 'recommendations.*.title',
+                  search_fields: ['recommendations.*.title'],
+                  file: 'recommendationsCollection',
+                  required: false,
+                }
+              - label: 'Tags'
+                name: 'tags'
+                collection: 'recommendationsTopicsTags'
                 widget: 'relation'
                 multiple: true
-                value_field: 'recommendations.*.title'
-                search_fields: ['recommendations.*.title']
-                file: 'recommendationsCollection'
+                value_field: 'tags.*.title'
+                search_fields: ['tags.*.title']
+                file: 'tagsCollection'
                 required: false
       - name: 'recommendationsCollection'
         label: 'Recommendations Collection'
@@ -174,6 +185,15 @@ collections:
                   widget: 'markdown',
                   required: false,
                 }
+              - label: 'Tags'
+                name: 'tags'
+                collection: 'recommendationsTopicsTags'
+                widget: 'relation'
+                multiple: true
+                value_field: 'tags.*.title'
+                search_fields: ['tags.*.title']
+                file: 'tagsCollection'
+                required: false
       - label: 'Tags Collection'
         name: 'tagsCollection'
         file: 'src/pages/content/tags.content.yml'
