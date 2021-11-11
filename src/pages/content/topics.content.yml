@@ -156,3 +156,8 @@ topics:
     what: Recruitment
     recommendations:
       - electronicBackgroundCheck
+tags:
+  - title: tag1
+  - title: tag2
+  - title: tag3
+  - title: tag4
