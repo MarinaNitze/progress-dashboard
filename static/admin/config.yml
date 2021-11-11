@@ -10,8 +10,8 @@ publish_mode: 'editorial_workflow'
 media_folder: 'src/images'
 
 collections:
-  - label: 'Recommendations and Topics'
-    name: 'recommendationsAndTopics'
+  - label: 'Recommendations, Topics, and Tags'
+    name: 'recommendationsTopicsTags'
     files:
       - label: 'Topics Collection'
         name: 'topicsCollection'
