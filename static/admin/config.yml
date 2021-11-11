@@ -10,8 +10,8 @@ publish_mode: 'editorial_workflow'
 media_folder: 'src/images'
 
 collections:
-  - label: 'Recommendations and Topics'
-    name: 'recommendationsAndTopics'
+  - label: 'Recommendations, Topics, and Tags'
+    name: 'recommendationsTopicsTags'
     files:
       - label: 'Topics Collection'
         name: 'topicsCollection'
@@ -174,6 +174,16 @@ collections:
                   widget: 'markdown',
                   required: false,
                 }
+      - label: 'Tags Collection'
+        name: 'tagsCollection'
+        file: 'src/pages/content/tags.content.yml'
+        fields:
+          - label: 'Tags'
+            name: 'tags'
+            widget: 'list'
+            summary: '{{fields.title}}'
+            fields:
+              - { label: 'Title', name: 'title', widget: 'string' }
   - name: 'pages'
     label: 'Pages'
     files:
