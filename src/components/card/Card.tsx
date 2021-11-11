@@ -29,8 +29,8 @@ export type CardProps = {
 };
 
 const gridLayouts = {
-  tabletLg: { topic: true, sm: 6, md: 12, lg: 12 },
-  desktopLg: { topic: true, sm: 4, md: 8, lg: 12 },
+  tablet: { topic: true, sm: 6, md: 12, lg: 12 },
+  desktop: { topic: true, sm: 4, md: 8, lg: 12 },
 };
 
 function mediaLayout(
@@ -80,8 +80,8 @@ export default function Card({
       layout={mediaLayout(layout)}
       gridLayout={
         {
-          tabletLg: { col: gridLayouts.tabletLg[layout] },
-          desktopLg: { col: gridLayouts.desktopLg[layout] },
+          tablet: { col: gridLayouts.tablet[layout] },
+          desktop: { col: gridLayouts.desktop[layout] },
         } as GridProps
       }
       onClick={() => {
