@@ -1,0 +1,76 @@
+@import '../../styles/settings.scss';
+
+.searchInput {
+  //   margin-top: 20px;
+  display: flex;
+}
+
+.search input {
+  background-color: white;
+  border: 0;
+  font-size: 21px;
+  padding: 15px;
+  height: 58px;
+  width: 580px;
+}
+
+.search input:focus {
+  outline: $white;
+}
+
+.searchIcon {
+  height: 58px;
+  font-size: 18px;
+  background-color: $secondary;
+  display: flex;
+  padding-left: 15px;
+  padding-right: 15px;
+  place-items: center;
+  font-family: inherit;
+}
+
+.searchIcon svg {
+  font-size: 30px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.searchResult {
+  margin-top: 5px;
+  width: 300px;
+  height: 150px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.searchResult::-webkit-scrollbar {
+  display: none;
+}
+
+.searchResult .resultItem {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.resultItem p {
+  margin-left: 10px;
+}
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: lightgrey;
+}
+
+#clearBtn {
+  cursor: pointer;
+  // height: 40px;
+  // background-color: $secondary;
+  // display: flex;
+  // place-items: center;
+}
