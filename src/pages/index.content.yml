@@ -1,10 +1,10 @@
 home:
   title: Progress Dashboard
   hero:
-    title: 'Learning faster. Together. '
-    content: I'd like more information about
+    title: "Learning faster. Together. "
+    content: I'd like more information regarding
     backgroundColor: primary
-    image: ../images/heros/hero-baby.png
+    image: ../images/heros/homepage-hero-sm.png
     imgAlt: Hero image
     link: hero
     linkText: hero link
@@ -22,8 +22,7 @@ home:
       linkText: Find out how
       layout: lg
     mediumFeature:
-      content:
-        Children do better when they’re placed with family members or other
+      content: Children do better when they’re placed with family members or other
         known adults. But identifying and connecting with extended family
         members can be a challenge for foster care programs. [Learn
         more](https://progress-dashboard.netlify.app/topic/finding-family-members).
