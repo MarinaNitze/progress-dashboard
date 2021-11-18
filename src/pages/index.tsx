@@ -7,10 +7,15 @@ import Hero from '../components/hero/Hero';
 import Features from '../sections/Features';
 import Topics from '../sections/Topics';
 import content from './index.content.yml';
+
 import './home.scss';
 
 const IndexPage = () => {
   const { hero, mission } = content.home;
+
+  // const pull_data = (data: string[]) => {
+  //   console.log(data);
+  // };
 
   return (
     <Layout>
@@ -24,17 +29,7 @@ const IndexPage = () => {
             title={hero.title}
           >
             <ReactMarkdown>{hero.content}</ReactMarkdown>
-            <Search
-              placeholder="Search the playbook"
-              data={[
-                'Siri',
-                'Alexa is here',
-                'Google is awesome',
-                'Facebook',
-                'Twitter',
-                'Linkedin',
-              ]}
-            />
+            <Search />
             <p>
               Not sure what to search for? Check out our thing that helps you
               get there whatever that is.

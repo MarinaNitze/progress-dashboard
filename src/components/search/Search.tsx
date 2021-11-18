@@ -1,66 +1,88 @@
 import React, { useState } from 'react';
+import { Link } from 'gatsby';
 
-import SearchIcon from '@mui/icons-material/Search';
-import CloseIcon from '@mui/icons-material/Close';
+import { Topic as TopicType } from '../../types/topic';
+import TopicContent from '../../pages/content/topics.content.yml';
+
+import { Recommendation as RecommendationType } from '../../types/recommendation';
+import RecommendationContent from '../../pages/content/recommendations.content.yml';
 
 import './Search.scss';
 
-type SearchProps = {
-  placeholder: string;
-  data: string[];
-};
+import useGatsbyImages from '../../hooks/useGatsbyImages';
 
-export default function Search({ placeholder, data }: SearchProps) {
+export default function Search() {
+  const searchIcon = useGatsbyImages()['images/header/search.svg'].publicURL;
   const [searchTerm, setSearchTerm] = useState('');
-  const [filteredData, setFilteredData] = useState<Array<string>>([]);
+  const [topics, setTopics] = useState(TopicContent.topics as TopicType[]);
+  const allRecommendations: RecommendationType[] =
+    RecommendationContent.recommendations;
+  const [recommendations, setRecommendations] = useState(allRecommendations);
 
   const handleFilter = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const searchWord = e.target.value;
+    const searchWord = e?.target.value;
     setSearchTerm(searchWord);
-    const newFilter = data.filter(value =>
-      value.toLowerCase().includes(searchWord.toLocaleLowerCase()),
-    );
 
-    if (searchWord === '') {
-      setFilteredData([]);
+    if (searchTerm === '') {
+      setTopics([]);
+      setRecommendations([]);
     } else {
-      setFilteredData(newFilter);
+      const filteredTopics = TopicContent.topics.filter((topic: TopicType) =>
+        topic.hero.title.toLowerCase().includes(searchTerm.toLocaleLowerCase()),
+      );
+      const filteredRecommendations = allRecommendations.filter(
+        recommendation =>
+          recommendation.heading
+            .toLowerCase()
+            .includes(searchTerm.toLocaleLowerCase()),
+      );
+      setTopics(filteredTopics);
+      setRecommendations(filteredRecommendations);
+      console.log('filteredTopics', filteredTopics);
+      console.log('filteredRecs', filteredRecommendations);
     }
   };
 
-  const clearInput = () => {
-    setFilteredData([]);
-    setSearchTerm('');
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
   };
+
+  // const clearInput = () => {
+  //   setfilteredTopicResult([]);
+  //   setSearchTerm('');
+  // };
 
   return (
     <section className="search">
-      <div className="searchInput">
-        <input
-          type="text"
-          placeholder={placeholder}
-          value={searchTerm}
-          onChange={handleFilter}
-        />
-        <div className="searchIcon">
-          {filteredData.length === 0 ? (
-            <>
-              <div>Search</div> <SearchIcon />
-            </>
-          ) : (
-            <CloseIcon id="clearBtn" onClick={clearInput} />
-          )}
+      <form onSubmit={handleSubmit}>
+        <div className="searchInput">
+          <input
+            type="text"
+            placeholder="Search the playbook"
+            value={searchTerm}
+            onChange={handleFilter}
+            aria-label="Search"
+          />
+          <button className="searchIcon">
+            Search
+            <img src={searchIcon} alt="search icon" />
+          </button>
         </div>
-      </div>
-      {filteredData.length != 0 && (
-        <div className="searchResult">
-          {filteredData.slice(0, 15).map(item => (
-            <a className="resultItem" href="/" target="_blank">
-              <p>{item}</p>
-            </a>
-          ))}
-        </div>
-      )}
+        {searchTerm.length !== 0 && (
+          <div className="searchResult">
+            {topics.slice(0, 15).map(topic => (
+              <Link className="resultItem" to="/">
+                <p>{topic.hero.title}</p>
+              </Link>
+            ))}
+            {recommendations.slice(0, 15).map(recommendation => (
+              <Link className="resultItem" to="/">
+                <p>{recommendation.heading}</p>
+              </Link>
+            ))}
+          </div>
+        )}
+      </form>
     </section>
   );
 }
