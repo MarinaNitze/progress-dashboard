@@ -13,10 +13,6 @@ import './home.scss';
 const IndexPage = () => {
   const { hero, mission } = content.home;
 
-  // const pull_data = (data: string[]) => {
-  //   console.log(data);
-  // };
-
   return (
     <Layout>
       <section id="test-section-id" className="cwp-hero">
