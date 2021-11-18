@@ -47,11 +47,6 @@ export default function Search() {
     e.preventDefault();
   };
 
-  // const clearInput = () => {
-  //   setfilteredTopicResult([]);
-  //   setSearchTerm('');
-  // };
-
   return (
     <section className="search">
       <form onSubmit={handleSubmit}>
