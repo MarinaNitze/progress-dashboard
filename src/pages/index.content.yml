@@ -4,7 +4,7 @@ home:
     title: "Learning faster. Together. "
     content: I'd like more information regarding
     backgroundColor: primary
-    image: ../images/heros/homepage-hero-sm.png
+    image: ../images/heros/homepage-hero-sm-1-.png
     imgAlt: Hero image
     link: hero
     linkText: hero link
