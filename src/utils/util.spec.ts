@@ -7,6 +7,8 @@ describe('util functions', () => {
       name: 'Washington',
       abbrev: 'Wash.',
       code: 'WA',
+      admin: 'State',
+      population: 7614893,
     };
 
     expect(findGeoState(mockDataStates, 'WA')).toStrictEqual(expectedResult);

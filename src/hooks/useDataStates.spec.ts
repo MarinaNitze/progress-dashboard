@@ -18,13 +18,20 @@ describe('when rendered', () => {
       },
     } = renderHook(() => useDataStates());
     const expectedResult = nodes.reduce<{
-      [key: string]: { name: string; abbrev: string };
+      [key: string]: {
+        name: string;
+        abbrev: string;
+        population: string | number;
+        admin: string;
+      };
     }>((statesMap, { data }) => {
       return {
         ...statesMap,
-        [data.code]: {
-          name: data.name,
-          abbrev: data.abbrev,
+        [data?.code ?? 'missing code']: {
+          name: data?.name ?? '',
+          abbrev: data?.abbrev ?? '',
+          population: data?.population ?? '',
+          admin: data?.admin ?? '',
         },
       };
     }, {});
