@@ -66,12 +66,20 @@ export default function Search() {
         {searchTerm.length !== 0 && (
           <div className="searchResult">
             {topics.slice(0, 15).map(topic => (
-              <Link className="resultItem" to="/">
+              <Link
+                key={topic.title}
+                className="resultItem"
+                to={`/${topic.title}`}
+              >
                 <p>{topic.hero.title}</p>
               </Link>
             ))}
             {recommendations.slice(0, 15).map(recommendation => (
-              <Link className="resultItem" to="/">
+              <Link
+                key={recommendation.heading}
+                className="resultItem"
+                to={`/${recommendation.heading}`}
+              >
                 <p>{recommendation.heading}</p>
               </Link>
             ))}
