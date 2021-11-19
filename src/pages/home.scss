@@ -158,6 +158,15 @@
   }
 }
 
+.thin-hr {
+  border: 1px solid $not-implemented-text;
+  margin-bottom: 2rem;
+}
+
+.total {
+  font-weight: 400;
+}
+
 @media (max-width: 1100px) {
   .usa-search {
     .usa-input {

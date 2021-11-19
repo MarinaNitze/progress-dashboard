@@ -5,33 +5,35 @@ import {
   Form,
   Fieldset,
   Label,
+  CardGroup,
 } from '@trussworks/react-uswds';
+import useGatsbyImages from '../hooks/useGatsbyImages';
 import Select from 'react-select';
 
 import Layout from '../components/layout/Layout';
 import Hero from '../components/hero/Hero';
 import Breadcrumbs from '../components/breadcrumbs/Breadcrumbs';
-// import Card from '../components/card/Card';
+import Card from '../components/card/Card';
 
 import useDataPractices from '../hooks/useDataPractices';
 
 import './home.scss';
-// import useGatsbyImages from '../hooks/useGatsbyImages';
 
 export default function Compare() {
-  const practiceDataByState = useDataPractices().practicesData;
+  const implementedSvg = useGatsbyImages()['images/compare/implemented.svg'].publicURL;
+  const implementedIcon = <img className="implemented-icon" src={implementedSvg} alt="implemented"/>
+  const practiceDataByState = useDataPractices().practicesData.sort( (a,b) => {
+      const textA = a.name;
+      const textB = b.name;
+      return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
+    });
   const [adminFilter, setAdminFilter] = useState('');
   const [popFilter, setPopFilter] = useState('');
   const [recFilter, setRecFilter] = useState<readonly any[]>(['']);
   const [filteredPractices, setFilteredPractices] =
     useState(practiceDataByState);
-  // const searchIcon = useGatsbyImages()['images/header/search.svg'].publicURL;
-
-  console.log('practices: ', practiceDataByState);
-  console.log('filtered', filteredPractices);
 
   useEffect(() => {
-    // filter practiceDataByState with filters and call setFilteredPractices
     const filterByPop = (practice: typeof practiceDataByState[0]) => {
       const pop =
         typeof practice.population === 'string'
@@ -57,7 +59,11 @@ export default function Compare() {
           filter === '',
       );
     };
-    const filteredPracticesWithUpdatedFilters = practiceDataByState.filter(
+    const filteredPracticesWithUpdatedFilters = practiceDataByState.sort( (a,b) => {
+      const textA = a.name;
+      const textB = b.name;
+      return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
+    }).filter(
       practice => {
         const aFilter =
           adminFilter === undefined ||
@@ -102,6 +108,11 @@ export default function Compare() {
       label: 'Accepts electronic requests',
     },
   ];
+
+  const createContent = (stateData: typeof practiceDataByState[0]) =>
+    (<ul>{stateData.practices.map( p => (<li key={p.practiceName} className={p.bool ? "implemented" : "not-implemented"}>{p.bool ? implementedIcon : ''} {p.practiceName}</li>
+    ))}</ul>)
+
 
   return (
     <Layout>
@@ -192,17 +203,25 @@ export default function Compare() {
                 </div>
               </Fieldset>
             </Form>
+            <hr className="thin-hr"/>
           </section>
           <section className="compare-section">
             <Grid>
-              <ul>
+                <p className="total">{filteredPractices.length} total results</p>
+                <CardGroup>
                 {filteredPractices.map(fp => (
-                  <li key={fp.code}>
-                    {fp.name}: {fp.population}: {fp.admin}
-                  </li>
+                  <Card
+                    key={fp.code}
+                    title={fp.name}
+                    content={createContent(fp)}
+                    layout="compare"
+                    className="compare-width"
+                    image={`/src/images/compare/${fp.practices.filter( p => p.bool).length}Of5.svg`}
+                    imgAlt={`${fp.practices.filter( p => p.bool).length} out of 5`}
+                  />
                 ))}
-              </ul>
-            </Grid>
+                </CardGroup>
+                </Grid>
           </section>
         </GridContainer>
       </main>

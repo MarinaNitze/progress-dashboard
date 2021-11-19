@@ -113,3 +113,40 @@ li.usa-card {
 .usa-card:last-child {
   margin-bottom: 1rem;
 }
+
+.compare {
+  border: 1px solid $light !important;
+  ul {
+    list-style: none;
+    padding-inline-start: 0;
+  }
+
+  .implemented-icon {
+    margin-left: -1.5rem;
+  }
+
+  .not-implemented {
+    padding-left: 1.5rem;
+    color: $not-implemented-text;
+  }
+
+  .implemented {
+    padding-left: 1.5rem;
+  }
+  .usa-card{
+    width: 15rem;
+  }
+  .usa-card__header {
+    padding-bottom: 0;
+  }
+  h3{
+    font-size: 1.3rem;
+    text-align: center;
+  }
+}
+
+@media (min-width: 64em){
+  .compare-width {
+      width: 20% !important;
+  }
+}
