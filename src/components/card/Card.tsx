@@ -78,7 +78,7 @@ export default function Card({
       className={`card ${className ?? ''} `}
       containerProps={{ className: layout }}
       layout={mediaLayout(layout)}
-      headerFirst={layout === "compare" ? true : false}
+      headerFirst={layout === 'compare' ? true : false}
       gridLayout={
         {
           tablet: { col: gridLayouts.tablet[layout] },
@@ -99,7 +99,11 @@ export default function Card({
       )}
       {content && (
         <CardBody className="content">
-          {typeof content === "string" ? <ReactMarkdown>{content}</ReactMarkdown> : content}
+          {typeof content === 'string' ? (
+            <ReactMarkdown>{content}</ReactMarkdown>
+          ) : (
+            content
+          )}
         </CardBody>
       )}
       {layout === 'lg' && link ? (

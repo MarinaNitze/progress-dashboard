@@ -13,7 +13,7 @@ export default function useGatsbyImages(): useGatsbyImageResponse {
     headerImages,
     footerImages,
     recommendationImages,
-    compareImages
+    compareImages,
   } = useStaticQuery<HeroAndCardImagesQuery>(graphql`
     query HeroAndCardImages {
       heroImages: allFile(

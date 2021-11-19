@@ -20,13 +20,16 @@ import useDataPractices from '../hooks/useDataPractices';
 import './home.scss';
 
 export default function Compare() {
-  const implementedSvg = useGatsbyImages()['images/compare/implemented.svg'].publicURL;
-  const implementedIcon = <img className="implemented-icon" src={implementedSvg} alt="implemented"/>
-  const practiceDataByState = useDataPractices().practicesData.sort( (a,b) => {
-      const textA = a.name;
-      const textB = b.name;
-      return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
-    });
+  const implementedSvg =
+    useGatsbyImages()['images/compare/implemented.svg'].publicURL;
+  const implementedIcon = (
+    <img className="implemented-icon" src={implementedSvg} alt="implemented" />
+  );
+  const practiceDataByState = useDataPractices().practicesData.sort((a, b) => {
+    const textA = a.name;
+    const textB = b.name;
+    return textA < textB ? -1 : textA > textB ? 1 : 0;
+  });
   const [adminFilter, setAdminFilter] = useState('');
   const [popFilter, setPopFilter] = useState('');
   const [recFilter, setRecFilter] = useState<readonly any[]>(['']);
@@ -59,12 +62,13 @@ export default function Compare() {
           filter === '',
       );
     };
-    const filteredPracticesWithUpdatedFilters = practiceDataByState.sort( (a,b) => {
-      const textA = a.name;
-      const textB = b.name;
-      return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
-    }).filter(
-      practice => {
+    const filteredPracticesWithUpdatedFilters = practiceDataByState
+      .sort((a, b) => {
+        const textA = a.name;
+        const textB = b.name;
+        return textA < textB ? -1 : textA > textB ? 1 : 0;
+      })
+      .filter(practice => {
         const aFilter =
           adminFilter === undefined ||
           adminFilter === '' ||
@@ -77,8 +81,7 @@ export default function Compare() {
           filterByRec(practice);
 
         return aFilter && pFilter && rFilter;
-      },
-    );
+      });
 
     setFilteredPractices(filteredPracticesWithUpdatedFilters);
   }, [adminFilter, popFilter, recFilter]);
@@ -109,10 +112,18 @@ export default function Compare() {
     },
   ];
 
-  const createContent = (stateData: typeof practiceDataByState[0]) =>
-    (<ul>{stateData.practices.map( p => (<li key={p.practiceName} className={p.bool ? "implemented" : "not-implemented"}>{p.bool ? implementedIcon : ''} {p.practiceName}</li>
-    ))}</ul>)
-
+  const createContent = (stateData: typeof practiceDataByState[0]) => (
+    <ul>
+      {stateData.practices.map(p => (
+        <li
+          key={p.practiceName}
+          className={p.bool ? 'implemented' : 'not-implemented'}
+        >
+          {p.bool ? implementedIcon : ''} {p.practiceName}
+        </li>
+      ))}
+    </ul>
+  );
 
   return (
     <Layout>
@@ -203,12 +214,12 @@ export default function Compare() {
                 </div>
               </Fieldset>
             </Form>
-            <hr className="thin-hr"/>
+            <hr className="thin-hr" />
           </section>
           <section className="compare-section">
             <Grid>
-                <p className="total">{filteredPractices.length} total results</p>
-                <CardGroup>
+              <p className="total">{filteredPractices.length} total results</p>
+              <CardGroup>
                 {filteredPractices.map(fp => (
                   <Card
                     key={fp.code}
@@ -216,12 +227,16 @@ export default function Compare() {
                     content={createContent(fp)}
                     layout="compare"
                     className="compare-width"
-                    image={`/src/images/compare/${fp.practices.filter( p => p.bool).length}Of5.svg`}
-                    imgAlt={`${fp.practices.filter( p => p.bool).length} out of 5`}
+                    image={`/src/images/compare/${
+                      fp.practices.filter(p => p.bool).length
+                    }Of5.svg`}
+                    imgAlt={`${
+                      fp.practices.filter(p => p.bool).length
+                    } out of 5`}
                   />
                 ))}
-                </CardGroup>
-                </Grid>
+              </CardGroup>
+            </Grid>
           </section>
         </GridContainer>
       </main>
