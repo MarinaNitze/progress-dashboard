@@ -1,11 +1,13 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
 
+import Search from '../components/search/Search';
 import Layout from '../components/layout/Layout';
 import Hero from '../components/hero/Hero';
 import Features from '../sections/Features';
 import Topics from '../sections/Topics';
 import content from './index.content.yml';
+
 import './home.scss';
 
 const IndexPage = () => {
@@ -23,7 +25,11 @@ const IndexPage = () => {
             title={hero.title}
           >
             <ReactMarkdown>{hero.content}</ReactMarkdown>
-            <p>Search Component Placeholder</p>
+            <Search />
+            <p>
+              Not sure what to search for? Check out our thing that helps you
+              get there whatever that is.
+            </p>
           </Hero>
         )}
       </section>
