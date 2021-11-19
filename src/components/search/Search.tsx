@@ -38,8 +38,6 @@ export default function Search() {
       );
       setTopics(filteredTopics);
       setRecommendations(filteredRecommendations);
-      console.log('filteredTopics', filteredTopics);
-      console.log('filteredRecs', filteredRecommendations);
     }
   };
 
