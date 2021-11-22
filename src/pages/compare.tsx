@@ -21,7 +21,7 @@ import './home.scss';
 
 export default function Compare() {
   const implementedSvg =
-    useGatsbyImages()['images/compare/implemented.svg'].publicURL;
+    useGatsbyImages()['images/compare/implementedMedium.svg'].publicURL;
   const implementedIcon = (
     <img className="implemented-icon" src={implementedSvg} alt="implemented" />
   );
@@ -207,6 +207,7 @@ export default function Compare() {
                     isMulti
                     id="rec"
                     name="rec"
+                    checked
                     options={recOptions}
                     value={recFilter}
                     onChange={handleRecFilter}

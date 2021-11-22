@@ -116,9 +116,21 @@ li.usa-card {
 
 .compare {
   border: 1px solid $light !important;
+  .media {
+    padding: .5rem 0;
+  }
+  .content {
+    padding-top: .5rem;;
+  }
   ul {
     list-style: none;
     padding-inline-start: 0;
+    li {
+      font-size: 1rem;
+    }
+    li:not(:last-child) {
+      margin-bottom: .5rem;
+    }
   }
 
   .implemented-icon {
