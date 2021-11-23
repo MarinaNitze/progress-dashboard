@@ -8,8 +8,8 @@ import {
   CardGroup,
 } from '@trussworks/react-uswds';
 import useGatsbyImages from '../hooks/useGatsbyImages';
-import Select from '../components/select/Select'
-import { Option } from 'react-select'
+import Select from '../components/select/Select';
+import { Option } from 'react-select';
 
 import Layout from '../components/layout/Layout';
 import Hero from '../components/hero/Hero';
@@ -31,8 +31,14 @@ export default function Compare() {
     const textB = b.name;
     return textA < textB ? -1 : textA > textB ? 1 : 0;
   });
-  const [adminFilter, setAdminFilter] = useState<typeof Option>({value: '', label: 'Either'});
-  const [popFilter, setPopFilter] = useState<typeof Option>({value: '', label: 'Any'});
+  const [adminFilter, setAdminFilter] = useState<typeof Option>({
+    value: '',
+    label: 'Either',
+  });
+  const [popFilter, setPopFilter] = useState<typeof Option>({
+    value: '',
+    label: 'Any',
+  });
   const [recFilter, setRecFilter] = useState<readonly any[]>(['']);
   const [filteredPractices, setFilteredPractices] =
     useState(practiceDataByState);
@@ -75,7 +81,9 @@ export default function Compare() {
           adminFilter.value === '' ||
           adminFilter.value.includes(practice.admin);
         const pFilter =
-          popFilter === undefined || popFilter.value === '' || filterByPop(practice);
+          popFilter === undefined ||
+          popFilter.value === '' ||
+          filterByPop(practice);
         const rFilter =
           recFilter === undefined ||
           recFilter?.length === 0 ||
@@ -96,14 +104,14 @@ export default function Compare() {
   const handleRecFilter = (option: readonly any[]) => {
     setRecFilter(option);
   };
-  const adminOptions =[
-        { value: '', label: 'Either' },
+  const adminOptions = [
+    { value: '', label: 'Either' },
     { value: 'County', label: 'County' },
     { value: 'State', label: 'State' },
   ];
-  const popOptions =[
-            { value: "", label: 'Any' },
-    { value: "0", label: 'Less than 2.5 Million' },
+  const popOptions = [
+    { value: '', label: 'Any' },
+    { value: '0', label: 'Less than 2.5 Million' },
     { value: '2500000', label: '2.5 Million - 7.5 Million' },
     { value: '7500000', label: 'Greater than 7.5 Million' },
   ];
@@ -179,12 +187,12 @@ export default function Compare() {
                     value={adminFilter}
                     handleChange={handleAdminFilter}
                   />
-                  </div>
+                </div>
               </Fieldset>
               <Fieldset>
                 <div className="select single">
                   <Label htmlFor="pop">Population</Label>
-                                    <Select
+                  <Select
                     isMulti={false}
                     id="pop"
                     name="pop"
