@@ -8,7 +8,8 @@ import {
   CardGroup,
 } from '@trussworks/react-uswds';
 import useGatsbyImages from '../hooks/useGatsbyImages';
-import Select from 'react-select';
+import Select from '../components/select/Select'
+import { Option } from 'react-select'
 
 import Layout from '../components/layout/Layout';
 import Hero from '../components/hero/Hero';
@@ -30,8 +31,8 @@ export default function Compare() {
     const textB = b.name;
     return textA < textB ? -1 : textA > textB ? 1 : 0;
   });
-  const [adminFilter, setAdminFilter] = useState('');
-  const [popFilter, setPopFilter] = useState('');
+  const [adminFilter, setAdminFilter] = useState<typeof Option>({value: '', label: 'Either'});
+  const [popFilter, setPopFilter] = useState<typeof Option>({value: '', label: 'Any'});
   const [recFilter, setRecFilter] = useState<readonly any[]>(['']);
   const [filteredPractices, setFilteredPractices] =
     useState(practiceDataByState);
@@ -42,9 +43,9 @@ export default function Compare() {
         typeof practice.population === 'string'
           ? parseInt(practice.population)
           : practice.population;
-      if (popFilter === '0') {
+      if (popFilter.value === '0') {
         return pop < 2500000;
-      } else if (popFilter === '2500000') {
+      } else if (popFilter.value === '2500000') {
         return pop >= 2500000 && pop < 7500000;
       } else {
         return pop >= 7500000;
@@ -71,10 +72,10 @@ export default function Compare() {
       .filter(practice => {
         const aFilter =
           adminFilter === undefined ||
-          adminFilter === '' ||
-          adminFilter.includes(practice.admin);
+          adminFilter.value === '' ||
+          adminFilter.value.includes(practice.admin);
         const pFilter =
-          popFilter === undefined || popFilter === '' || filterByPop(practice);
+          popFilter === undefined || popFilter.value === '' || filterByPop(practice);
         const rFilter =
           recFilter === undefined ||
           recFilter?.length === 0 ||
@@ -86,17 +87,26 @@ export default function Compare() {
     setFilteredPractices(filteredPracticesWithUpdatedFilters);
   }, [adminFilter, popFilter, recFilter]);
 
-  const handleAdminFilter = (event: React.ChangeEvent<HTMLSelectElement>) => {
-    const value = event.target.value;
-    setAdminFilter(value);
+  const handleAdminFilter = (option: typeof Option) => {
+    setAdminFilter(option);
   };
-  const handlePopFilter = (event: React.ChangeEvent<HTMLSelectElement>) => {
-    const value = event.target.value;
-    setPopFilter(value);
+  const handlePopFilter = (option: typeof Option) => {
+    setPopFilter(option);
   };
   const handleRecFilter = (option: readonly any[]) => {
     setRecFilter(option);
   };
+  const adminOptions =[
+        { value: '', label: 'Either' },
+    { value: 'County', label: 'County' },
+    { value: 'State', label: 'State' },
+  ];
+  const popOptions =[
+            { value: "", label: 'Any' },
+    { value: "0", label: 'Less than 2.5 Million' },
+    { value: '2500000', label: '2.5 Million - 7.5 Million' },
+    { value: '7500000', label: 'Greater than 7.5 Million' },
+  ];
 
   const recOptions = [
     { value: 'No witnesses', label: 'No witnesses' },
@@ -161,56 +171,39 @@ export default function Compare() {
               <Fieldset>
                 <div className="select single">
                   <Label htmlFor="admin">Administration</Label>
-                  <select
+                  <Select
+                    isMulti={false}
                     id="admin"
                     name="admin"
+                    selectOptions={adminOptions}
                     value={adminFilter}
-                    onChange={event => {
-                      handleAdminFilter(event);
-                    }}
-                    placeholder="Select one"
-                  >
-                    <option disabled={true} value="">
-                      Select one
-                    </option>
-                    <option value="">Either</option>
-                    <option value="County">County</option>
-                    <option value="State">State</option>
-                  </select>
-                </div>
+                    handleChange={handleAdminFilter}
+                  />
+                  </div>
               </Fieldset>
               <Fieldset>
                 <div className="select single">
                   <Label htmlFor="pop">Population</Label>
-                  <select
+                                    <Select
+                    isMulti={false}
                     id="pop"
                     name="pop"
+                    selectOptions={popOptions}
                     value={popFilter}
-                    onChange={event => {
-                      handlePopFilter(event);
-                    }}
-                  >
-                    <option disabled={true} value="">
-                      Select any
-                    </option>
-                    <option value="">Any</option>
-                    <option value="0">Less than 2.5 Million</option>
-                    <option value="2500000">2.5 Million - 7.5 Million</option>
-                    <option value="7500000">Greater than 7.5 Million</option>
-                  </select>
+                    handleChange={handlePopFilter}
+                  />
                 </div>
               </Fieldset>
               <Fieldset>
                 <div className="select multi">
                   <Label htmlFor="rec">Recommendations</Label>
                   <Select
-                    isMulti
+                    isMulti={true}
                     id="rec"
                     name="rec"
-                    checked
-                    options={recOptions}
+                    selectOptions={recOptions}
                     value={recFilter}
-                    onChange={handleRecFilter}
+                    handleChange={handleRecFilter}
                   />
                 </div>
               </Fieldset>

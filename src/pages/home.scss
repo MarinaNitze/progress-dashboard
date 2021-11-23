@@ -5,6 +5,7 @@
 }
 
 .cwp-topic-hero {
+  min-height: 18.75rem;
   h1 {
     word-wrap: break-word;
   }
@@ -152,7 +153,9 @@
     display: flex;
     align-items: flex-end;
   }
-
+  #pop, #admin {
+    min-width: 10rem;
+  }
   #rec {
     min-width: 15rem;
   }
