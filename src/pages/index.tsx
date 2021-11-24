@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import ReactMarkdown from 'react-markdown';
 
 import Search from '../components/search/Search';
@@ -26,7 +26,11 @@ const IndexPage = () => {
             title={hero.title}
           >
             <ReactMarkdown>{hero.content}</ReactMarkdown>
-            <Search home searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+            <Search
+              home
+              searchTerm={searchTerm}
+              setSearchTerm={setSearchTerm}
+            />
           </Hero>
         )}
       </section>

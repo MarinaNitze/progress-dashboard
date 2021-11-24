@@ -101,6 +101,18 @@
   max-width: 90%;
   margin-left: 5%;
 }
+.cwp-search-main {
+  max-width: 90%;
+  margin-left: 5%;
+  h2 {
+    font-size: 1.625rem;
+    color: $link-text;
+    border-bottom: 1px solid $link-text;
+    width: fit-content;
+    line-height: 1.25rem;
+    margin-bottom: 0;
+  }
+}
 
 .cwp-recommendations-main {
   max-width: 90%;
@@ -114,6 +126,7 @@
       width: auto;
     }
   }
+
 
   ul {
     padding-inline-start: 0;

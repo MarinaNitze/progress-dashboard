@@ -15,9 +15,13 @@ type SearchProps = {
   home?: boolean;
   searchTerm: string;
   setSearchTerm: React.Dispatch<React.SetStateAction<string>>;
-}
+};
 
-export default function Search({home = false, searchTerm, setSearchTerm}: SearchProps) {
+export default function Search({
+  home = false,
+  searchTerm,
+  setSearchTerm,
+}: SearchProps) {
   const searchIcon = useGatsbyImages()['images/header/search.svg'].publicURL;
   const [topics, setTopics] = useState(TopicContent.topics as TopicType[]);
   const [recommendations, setRecommendations] = useState(
@@ -51,7 +55,7 @@ export default function Search({home = false, searchTerm, setSearchTerm}: Search
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    navigate("/search", {state: {searchTerm: searchTerm}})
+    navigate('/search', { state: { searchTerm: searchTerm } });
   };
 
   return (
@@ -65,36 +69,37 @@ export default function Search({home = false, searchTerm, setSearchTerm}: Search
             onChange={handleFilter}
             aria-label="Search"
           />
-          <button className="searchIcon" type='submit'>
+          <button className="searchIcon" type="submit">
             Search
             <img src={searchIcon} alt="search icon" />
           </button>
         </div>
         {searchTerm.length !== 0 && (
           <div className="searchResult">
-            {home && topics
-              .map(topic => (
-                <Link
-                  key={topic.title}
-                  className="resultItem"
-                  to={`/topic/${topic.title}`}
-                >
-                  <p>{topic.hero.title}</p>
-                </Link>
-              ))
-              .concat(
-                recommendations.map(recommendation => (
+            {home &&
+              topics
+                .map(topic => (
                   <Link
-                    key={recommendation.title}
+                    key={topic.title}
                     className="resultItem"
-                    to={`/recommendation/${recommendation.title}`}
+                    to={`/topic/${topic.title}`}
                   >
-                    <p>{recommendation.heading}</p>
+                    <p>{topic.hero.title}</p>
                   </Link>
-                )),
-              )
-              .sort((a, b) => ((a?.key ?? '') > (b?.key ?? '') ? 1 : -1))
-              .slice(0, 7)}
+                ))
+                .concat(
+                  recommendations.map(recommendation => (
+                    <Link
+                      key={recommendation.title}
+                      className="resultItem"
+                      to={`/recommendation/${recommendation.title}`}
+                    >
+                      <p>{recommendation.heading}</p>
+                    </Link>
+                  )),
+                )
+                .sort((a, b) => ((a?.key ?? '') > (b?.key ?? '') ? 1 : -1))
+                .slice(0, 7)}
           </div>
         )}
       </form>
