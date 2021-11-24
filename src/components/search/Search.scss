@@ -14,6 +14,7 @@
   border: 0;
   border-radius: 1.5rem;
   font-size: 1.3rem;
+  font-weight: 300;
   height: 3.6rem;
   width: 100%;
   padding: 0.3rem 0.3rem 0.3rem 1.6rem;
@@ -27,7 +28,7 @@
 .searchIcon {
   z-index: 10;
   border: none;
-  border-radius: 1.5rem;
+  border-radius: 0 1.5rem 1.5rem 0;
   position: absolute;
   right: 0rem;
   height: 3.6rem;
@@ -51,12 +52,11 @@
 
 .searchResult {
   margin-top: 0.3rem;
-  width: 18.8rem;
-  height: 9.4rem;
+  width: 83%;
+  margin-left: 2%;
   background-color: $white;
   box-shadow: rgba(0, 0, 0, 0.35) 0rem 0.3rem 0.9rem;
-  overflow: hidden;
-  overflow-y: auto;
+  position:absolute;
 }
 
 .searchResult::-webkit-scrollbar {

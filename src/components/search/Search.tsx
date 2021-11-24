@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'gatsby';
 
 import { Topic as TopicType } from '../../types/topic';
@@ -15,23 +15,23 @@ export default function Search() {
   const searchIcon = useGatsbyImages()['images/header/search.svg'].publicURL;
   const [searchTerm, setSearchTerm] = useState('');
   const [topics, setTopics] = useState(TopicContent.topics as TopicType[]);
-  const allRecommendations: RecommendationType[] =
-    RecommendationContent.recommendations;
-  const [recommendations, setRecommendations] = useState(allRecommendations);
+  const [recommendations, setRecommendations] = useState(RecommendationContent.recommendations as RecommendationType[]);
 
   const handleFilter = (e: React.ChangeEvent<HTMLInputElement>) => {
     const searchWord = e?.target.value;
     setSearchTerm(searchWord);
+  }
 
-    if (searchTerm === '') {
+  useEffect( ()=> {
+        if (searchTerm === '') {
       setTopics([]);
       setRecommendations([]);
     } else {
       const filteredTopics = TopicContent.topics.filter((topic: TopicType) =>
         topic.hero.title.toLowerCase().includes(searchTerm.toLocaleLowerCase()),
       );
-      const filteredRecommendations = allRecommendations.filter(
-        recommendation =>
+      const filteredRecommendations = RecommendationContent.recommendations.filter(
+        (recommendation: RecommendationType) =>
           recommendation.heading
             .toLowerCase()
             .includes(searchTerm.toLocaleLowerCase()),
@@ -39,7 +39,7 @@ export default function Search() {
       setTopics(filteredTopics);
       setRecommendations(filteredRecommendations);
     }
-  };
+  }, [searchTerm])
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -63,24 +63,27 @@ export default function Search() {
         </div>
         {searchTerm.length !== 0 && (
           <div className="searchResult">
-            {topics.slice(0, 15).map(topic => (
+            {topics.map(topic => (
               <Link
                 key={topic.title}
                 className="resultItem"
-                to={`/${topic.title}`}
+                to={`/topic/${topic.title}`}
               >
                 <p>{topic.hero.title}</p>
               </Link>
-            ))}
-            {recommendations.slice(0, 15).map(recommendation => (
+            ))
+            .concat( recommendations.map(recommendation => (
               <Link
-                key={recommendation.heading}
+                key={recommendation.title}
                 className="resultItem"
-                to={`/${recommendation.heading}`}
+                to={`/recommendation/${recommendation.title}`}
               >
                 <p>{recommendation.heading}</p>
               </Link>
-            ))}
+            )))
+            .sort((a, b) => ((a?.key ?? '') > (b?.key ?? '')) ? 1 : -1)
+            .slice(0,7)
+            }
           </div>
         )}
       </form>
