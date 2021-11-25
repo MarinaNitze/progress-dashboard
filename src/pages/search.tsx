@@ -18,7 +18,7 @@ type TypeFilter = 'all' | 'topics' | 'recommendations';
 
 export default function Search({ location }: PageProps) {
   const state = location.state as { searchTerm: string };
-  const [searchTerm, setSearchTerm] = useState(state.searchTerm ?? '');
+  const [searchTerm, setSearchTerm] = useState(state?.searchTerm ?? '');
   const [typeFilter, setTypeFilter] = useState<TypeFilter>('all');
 
   const formatTopic = (topic: TopicType) => (
