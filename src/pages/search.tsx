@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link, PageProps } from 'gatsby';
 import Layout from '../components/layout/Layout';
 import Hero from '../components/hero/Hero';
-import SearchComponent from '../components/search/Search';
+import SearchComponent from '../components/search/SearchComponent';
 import { Button, ButtonGroup } from '@trussworks/react-uswds';
 
 import { Topic as TopicType } from '../types/topic';

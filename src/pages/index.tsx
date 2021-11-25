@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import ReactMarkdown from 'react-markdown';
 
-import Search from '../components/search/Search';
+import Search from '../components/search/SearchComponent';
 import Layout from '../components/layout/Layout';
 import Hero from '../components/hero/Hero';
 import Features from '../sections/Features';
