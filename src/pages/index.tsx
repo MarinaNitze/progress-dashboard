@@ -26,10 +26,6 @@ const IndexPage = () => {
           >
             <ReactMarkdown>{hero.content}</ReactMarkdown>
             <Search />
-            <p>
-              Not sure what to search for? Check out our thing that helps you
-              get there whatever that is.
-            </p>
           </Hero>
         )}
       </section>
