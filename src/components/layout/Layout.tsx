@@ -18,10 +18,6 @@ const headerLinks = [
     text: 'Compare',
   },
   {
-    to: '/stories',
-    text: 'Stories',
-  },
-  {
     to: '/search',
     text: 'Search',
     iconPath: 'images/header/search.svg',
