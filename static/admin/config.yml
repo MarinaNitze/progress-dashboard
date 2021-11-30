@@ -247,6 +247,7 @@ collections:
                       label: "What's new",
                       name: 'whatsNew',
                       widget: 'markdown',
+                      required: false,
                     }
                   - label: 'Large Feature'
                     name: 'largeFeature'
@@ -342,6 +343,7 @@ collections:
                       label: 'Popular Topics',
                       name: 'popularTopics',
                       widget: 'markdown',
+                      required: false,
                     }
                   - label: 'Topics'
                     name: 'topics'
