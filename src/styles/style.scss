@@ -49,6 +49,10 @@ p {
   margin-bottom: 1rem;
 }
 
+p strong {
+  font-weight: 700;
+}
+
 li {
   font-size: 1.3rem;
   font-weight: 300;
@@ -63,10 +67,10 @@ a {
   font-size: 1.3rem;
   font-weight: 300;
   text-decoration: none;
-  color: #05447E;
+  color: #05447e;
 }
 
 a:hover {
   text-decoration: underline;
-  color: #FE6659;
+  color: #fe6659;
 }
