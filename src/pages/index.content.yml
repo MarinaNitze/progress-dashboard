@@ -9,7 +9,7 @@ home:
     link: hero
     linkText: hero link
   features:
-    whatsNew: \[Description text to be added]
+    whatsNew: ""
     largeFeature:
       content: Inconsistencies in how we conduct background checks are putting
         children at risk. To solve this problem, we need to approach it from
@@ -58,7 +58,7 @@ home:
       This playbook is the result of a collaboration between states at the cutting edge of child welfare and [New America’s Public Interest Technology team](https://www.newamerica.org/pit/), in partnership with [Foster America](https://www.foster-america.org/) and [Think of Us](https://www.thinkof-us.org/).
     imgAlt: mission image
   topicSection:
-    popularTopics: \[Description text to be added]
+    popularTopics: ""
     topics:
       - recruitment
       - background-checks
