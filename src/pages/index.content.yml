@@ -9,7 +9,7 @@ home:
     link: hero
     linkText: hero link
   features:
-    whatsNew: \[Description text to be added]
+    whatsNew: ""
     largeFeature:
       content: Inconsistencies in how we conduct background checks are putting
         children at risk. To solve this problem, we need to approach it from
