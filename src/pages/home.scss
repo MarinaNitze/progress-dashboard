@@ -112,12 +112,18 @@
     line-height: 1.25rem;
     margin-bottom: 0;
   }
+  p {
+    margin-block-start: 0;
+  }
 }
 
 .filters {
   padding-top: 2rem;
   max-width: 90%;
   margin-left: 5%;
+  li {
+    padding-right: 1.5rem;
+  }
   .usa-button {
     background-color: inherit !important;
     border: none !important;
