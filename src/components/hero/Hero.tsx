@@ -41,7 +41,6 @@ export default function Hero({
     imageNode && getImage(imageNode);
   const imageComponent = gatsbyImage && (
     <GatsbyImage
-      className="image"
       image={gatsbyImage}
       alt={alt ?? `${title}-icon`}
     />
