@@ -216,7 +216,6 @@ export default function Compare() {
                 </div>
               </Fieldset>
             </Form>
-            <hr className="thin-hr" />
           </section>
           <section className="compare-section">
             <Grid>
