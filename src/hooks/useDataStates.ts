@@ -10,6 +10,8 @@ export default function useDataStates() {
             abbrev
             code
             name
+            population
+            admin
           }
         }
       }
@@ -17,18 +19,24 @@ export default function useDataStates() {
   `);
 
   const mapStates = (states: StatesDataQuery['statesData']['nodes']) => {
-    return states.reduce<{ [key: string]: { name: string; abbrev: string } }>(
-      (statesMap, { data }) => {
-        return {
-          ...statesMap,
-          [data?.code ?? 'missing code']: {
-            name: data?.name ?? '',
-            abbrev: data?.abbrev ?? '',
-          },
-        };
-      },
-      {},
-    );
+    return states.reduce<{
+      [key: string]: {
+        name: string;
+        abbrev: string;
+        population: string | number;
+        admin: string;
+      };
+    }>((statesMap, { data }) => {
+      return {
+        ...statesMap,
+        [data?.code ?? 'missing code']: {
+          name: data?.name ?? '',
+          abbrev: data?.abbrev ?? '',
+          population: data?.population ?? '',
+          admin: data?.admin ?? '',
+        },
+      };
+    }, {});
   };
 
   return { statesData: mapStates(statesData?.nodes ?? []) };

@@ -68,6 +68,24 @@ export const mockImageData = () => ({
       },
     ],
   },
+  compareImages: {
+    edges: [
+      {
+        node: {
+          extension: 'svg',
+          publicURL: '/static/188086bb11fd11789d6bd9a30a11abfb/cwp-logo.svg',
+          relativePath: 'images/compare/1Of5.svg',
+        },
+      },
+      {
+        node: {
+          extension: 'svg',
+          publicURL: '/static/188086bb11fd11789d6bd9a30a11abfb/search.svg',
+          relativePath: 'images/compare/1Of5.svg',
+        },
+      },
+    ],
+  },
   footerImages: {
     edges: [
       {

@@ -4,3 +4,4 @@ declare module '*.yml' {
 }
 
 declare module '*.module.css';
+declare module 'react-select';

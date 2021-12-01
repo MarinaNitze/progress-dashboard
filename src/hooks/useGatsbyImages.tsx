@@ -13,6 +13,7 @@ export default function useGatsbyImages(): useGatsbyImageResponse {
     headerImages,
     footerImages,
     recommendationImages,
+    compareImages,
   } = useStaticQuery<HeroAndCardImagesQuery>(graphql`
     query HeroAndCardImages {
       heroImages: allFile(
@@ -87,6 +88,17 @@ export default function useGatsbyImages(): useGatsbyImageResponse {
           }
         }
       }
+      compareImages: allFile(
+        filter: { relativeDirectory: { eq: "images/compare" } }
+      ) {
+        edges {
+          node {
+            relativePath
+            extension
+            publicURL
+          }
+        }
+      }
     }
   `);
 
@@ -97,6 +109,7 @@ export default function useGatsbyImages(): useGatsbyImageResponse {
     headerImages,
     footerImages,
     recommendationImages,
+    compareImages,
   ].reduce((acc, images) => {
     images?.edges.forEach(edge => {
       const path: string = edge.node.relativePath;

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import { navigate } from 'gatsby';
 import {
   Card as CardCmp,
@@ -18,19 +18,19 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
 export type CardProps = {
   title: string;
-  layout?: 'topic' | 'sm' | 'md' | 'lg';
+  layout?: 'topic' | 'sm' | 'md' | 'lg' | 'compare';
   image?: string;
   imgAlt?: string;
   link?: string;
   linkText?: string;
-  content?: string;
+  content?: string | ReactElement;
   dataCy?: string;
   className?: string;
 };
 
 const gridLayouts = {
-  tablet: { topic: true, sm: 6, md: 12, lg: 12 },
-  desktop: { topic: true, sm: 4, md: 8, lg: 12 },
+  tablet: { topic: true, sm: 6, md: 12, lg: 12, compare: 3 },
+  desktop: { topic: true, sm: 4, md: 8, lg: 12, compare: 2 },
 };
 
 function mediaLayout(
@@ -75,9 +75,10 @@ export default function Card({
   return (
     <CardCmp
       data-cy={dataCy ?? ''}
-      className={`card ${className && className} `}
+      className={`card ${className ?? ''} `}
       containerProps={{ className: layout }}
       layout={mediaLayout(layout)}
+      headerFirst={layout === 'compare' ? true : false}
       gridLayout={
         {
           tablet: { col: gridLayouts.tablet[layout] },
@@ -98,7 +99,11 @@ export default function Card({
       )}
       {content && (
         <CardBody className="content">
-          <ReactMarkdown>{content}</ReactMarkdown>
+          {typeof content === 'string' ? (
+            <ReactMarkdown>{content}</ReactMarkdown>
+          ) : (
+            content
+          )}
         </CardBody>
       )}
       {layout === 'lg' && link ? (
