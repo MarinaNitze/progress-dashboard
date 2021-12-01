@@ -40,11 +40,7 @@ export default function Hero({
   const gatsbyImage: ImageSharp['gatsbyImageData'] =
     imageNode && getImage(imageNode);
   const imageComponent = gatsbyImage && (
-    <GatsbyImage
-      className="image"
-      image={gatsbyImage}
-      alt={alt ?? `${title}-icon`}
-    />
+    <GatsbyImage image={gatsbyImage} alt={alt ?? `${title}-icon`} />
   );
 
   return (

@@ -52,3 +52,23 @@
 .dark {
   background-color: $dark;
 }
+
+.cwp-search-hero {
+  padding-bottom: 2rem;
+
+  .usa-hero-callout {
+    width: 44rem;
+    h1 {
+      margin-bottom: .5rem;
+    }
+  }
+}
+
+
+@media (max-width: 64em) {
+.cwp-search-hero {
+  .usa-hero-callout {
+    width: 100%;
+  }
+}
+}

@@ -101,6 +101,44 @@
   max-width: 90%;
   margin-left: 5%;
 }
+.cwp-search-main {
+  max-width: 90%;
+  margin-left: 5%;
+  h2 {
+    font-size: 1.625rem;
+    color: $link-text;
+    border-bottom: 1px solid $link-text;
+    width: fit-content;
+    line-height: 1.25rem;
+    margin-bottom: 0;
+  }
+  p {
+    margin-block-start: 0;
+  }
+}
+
+.filters {
+  padding-top: 2rem;
+  max-width: 90%;
+  margin-left: 5%;
+  li {
+    padding-right: 1.5rem;
+  }
+  .usa-button {
+    background-color: inherit !important;
+    border: none !important;
+    padding: 0 0 .25rem .25rem;
+    border-radius: 0 !important;
+  }
+  .usa-button:hover {
+      color: $secondary !important;
+      border-bottom: 4px solid $secondary !important;
+    }
+  .active {
+    color: $secondary;
+    border-bottom: 4px solid $secondary !important;
+  }
+}
 
 .cwp-recommendations-main {
   max-width: 90%;
@@ -114,6 +152,7 @@
       width: auto;
     }
   }
+
 
   ul {
     padding-inline-start: 0;

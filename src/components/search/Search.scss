@@ -12,8 +12,9 @@
 
 .search input {
   border: 0;
-  border-radius: 1.5rem;
+  border-radius: 1.5rem 0 0 1.5rem;
   font-size: 1.3rem;
+  font-weight: 300;
   height: 3.6rem;
   width: 100%;
   padding: 0.3rem 0.3rem 0.3rem 1.6rem;
@@ -27,16 +28,16 @@
 .searchIcon {
   z-index: 10;
   border: none;
-  border-radius: 1.5rem;
-  position: absolute;
+  border-radius: 0 1.5rem 1.5rem 0;
+  position: relative;
   right: 0rem;
   height: 3.6rem;
   font-size: 1.1rem;
   font-weight: 600;
   background-color: $secondary;
   display: flex;
-  padding-left: 0.9rem;
-  padding-right: 0.9rem;
+  padding-left: 1.5rem;
+  padding-right:1.5rem;
   place-items: center;
   color: $dark;
 }
@@ -51,12 +52,11 @@
 
 .searchResult {
   margin-top: 0.3rem;
-  width: 18.8rem;
-  height: 9.4rem;
+  width: 81.5%;
+  margin-left: 2%;
   background-color: $white;
   box-shadow: rgba(0, 0, 0, 0.35) 0rem 0.3rem 0.9rem;
-  overflow: hidden;
-  overflow-y: auto;
+  position:absolute;
 }
 
 .searchResult::-webkit-scrollbar {
@@ -84,4 +84,11 @@ a:hover {
 
 #clearBtn {
   cursor: pointer;
+}
+
+.cwp-search-hero {
+  form {
+    border: 1px solid $dark;
+    border-radius: 1.5rem;
+  }
 }
