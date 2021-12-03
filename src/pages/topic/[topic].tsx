@@ -27,16 +27,16 @@ const columns: TableHeading<Recommendation>[] = [
       </Link>
     ),
   },
-  {
-    dataKey: 'need',
-    sortable: false,
-    heading: `What's needed (Time/Cost)`,
-  },
-  {
-    dataKey: 'case',
-    sortable: false,
-    heading: 'Case study',
-  },
+  // {
+  //   dataKey: 'need',
+  //   sortable: false,
+  //   heading: `What's needed (Time/Cost)`,
+  // },
+  // {
+  //   dataKey: 'case',
+  //   sortable: false,
+  //   heading: 'Case study',
+  // },
 ];
 
 export default function State({ params: { topic } }: PageProps) {
