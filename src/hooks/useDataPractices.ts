@@ -99,5 +99,7 @@ export default function useDataPractices() {
     return practicesByState;
   };
 
-  return { practicesData: mapPracticesByState(practicesData?.nodes ?? []) };
+  const practicesByState = mapPracticesByState(practicesData?.nodes ?? []);
+
+  return { practicesByState, rawPractices: practicesData };
 }
