@@ -6,7 +6,7 @@ import { AnchorLinkProps } from 'gatsby-plugin-anchor-links';
 
 import Layout from '../../components/layout/Layout';
 import content from '../content/recommendations.content.yml';
-import { Recommendation as RecommendationType } from '../../types/recommendation';
+import { Recommendation } from '../../types/recommendation';
 import Hero from '../../components/hero/Hero';
 import Breadcrumbs from '../../components/breadcrumbs/Breadcrumbs';
 import SideAnchorNav from '../../components/side-anchor-nav/SideAnchorNav';
@@ -16,13 +16,11 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
 import './recommendation.scss';
 
-export default function Recommendation({
-  params: { recommendation },
-}: PageProps) {
+export default function State({ params: { recommendation } }: PageProps) {
   const costsIcon = useGatsbyImages()['images/topics/icon-costs.svg'].publicURL;
   const benefitsIcon =
     useGatsbyImages()['images/topics/icon-benefits.svg'].publicURL;
-  const recommendations: RecommendationType[] = content.recommendations;
+  const recommendations: Recommendation[] = content.recommendations;
   const selectedRecommendation = recommendations.find(
     t => t.title === recommendation,
   );
@@ -41,7 +39,7 @@ export default function Recommendation({
   const addHash = (title: string, url: string) => {
     window.history.replaceState(null, title, url);
   };
-  const itemFilterKey: (keyof RecommendationType)[] = [
+  const itemFilterKey: (keyof Recommendation)[] = [
     'about',
     'how',
     'costs',
