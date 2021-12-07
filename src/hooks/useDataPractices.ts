@@ -72,7 +72,7 @@ export default function useDataPractices() {
 
   const states = useDataStates();
   const boolValue = (topic: string, value: any) => {
-    if (topic === 'Adam Walsh') {
+    if (topic === 'Background Checks') {
       return value === 'Fully Implemented' ? true : false;
     }
     return false;
@@ -99,5 +99,7 @@ export default function useDataPractices() {
     return practicesByState;
   };
 
-  return { practicesData: mapPracticesByState(practicesData?.nodes ?? []) };
+    const practicesByState = mapPracticesByState(practicesData?.nodes ?? []);
+
+  return { practicesByState, rawPractices: practicesData };
 }
