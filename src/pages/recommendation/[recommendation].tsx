@@ -16,7 +16,9 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
 import './recommendation.scss';
 
-export default function Recommendation({ params: { recommendation } }: PageProps) {
+export default function Recommendation({
+  params: { recommendation },
+}: PageProps) {
   const costsIcon = useGatsbyImages()['images/topics/icon-costs.svg'].publicURL;
   const benefitsIcon =
     useGatsbyImages()['images/topics/icon-benefits.svg'].publicURL;

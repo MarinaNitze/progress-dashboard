@@ -32,7 +32,7 @@ export default function Compare({ params: { compare } }: PageProps) {
   const practiceDataByState = practicesByState
     .reduce<typeof practicesByState>((acc, state) => {
       const filteredPractices = state.practices.filter(
-        practice => practice.topic === compare
+        practice => practice.topic === compare,
       );
       return [...acc, Object.assign(state, { practices: filteredPractices })];
     }, [])
