@@ -52,7 +52,7 @@ export default function Recommendation() {
       <section id="test-section-id">
         <Hero
           className="cwp-topic-hero"
-          path="images/heros/hero-home.png"
+          path="images/heros/all-recs.jpg"
           alt="All recommendation hero image"
           backgroundColor="dark"
           title="All Recommendations"
