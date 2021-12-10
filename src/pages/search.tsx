@@ -15,8 +15,6 @@ import './home.scss';
 import { formatForSearchPage, formatSearchFilter } from '../utils/util';
 import { TypeFilter } from '../types/typeFilter';
 
-
-
 export default function Search({ location }: PageProps) {
   const state = location.state as { searchTerm: string };
   const [searchTerm, setSearchTerm] = useState(state?.searchTerm ?? '');
@@ -105,7 +103,12 @@ export default function Search({ location }: PageProps) {
         <div className="filters">
           <ButtonGroup type="default">
             {['all', 'topics', 'recommendations'].map(filter =>
-              formatSearchFilter(searchedTAndR as  (TopicType | RecommendationType)[], filter as TypeFilter, typeFilter, setTypeFilter),
+              formatSearchFilter(
+                searchedTAndR as (TopicType | RecommendationType)[],
+                filter as TypeFilter,
+                typeFilter,
+                setTypeFilter,
+              ),
             )}
           </ButtonGroup>
         </div>
