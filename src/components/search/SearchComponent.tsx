@@ -88,6 +88,7 @@ export default function Search({
                   </Link>
                 ))
                 .concat(
+                  // combining topic and recommendation arrays into a single array despite their different source and data formats
                   recommendations.map(recommendation => (
                     <Link
                       key={recommendation.title}
@@ -98,7 +99,9 @@ export default function Search({
                     </Link>
                   )),
                 )
+                // sorting the array of topics and recommendations alphabetically by title
                 .sort((a, b) => ((a?.key ?? '') > (b?.key ?? '') ? 1 : -1))
+                // limiting results to just 7 for design requirements
                 .slice(0, 7)}
           </div>
         )}
