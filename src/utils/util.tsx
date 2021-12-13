@@ -1,3 +1,4 @@
+import React from 'react';
 import { Topic as TopicType } from '../types/topic';
 import { Recommendation as RecommendationType } from '../types/recommendation';
 import { Link } from 'gatsby';
@@ -16,26 +17,34 @@ type GeoState = {
 export const findGeoState = (statesGeoData: GeoState[], stateCode: string) =>
   statesGeoData.find(({ code }) => stateCode === code) ?? null;
 
-export const formatForSearchPage = (
-  content: TopicType | RecommendationType,
-  type: string,
-) => (
+const formatForSearchPage = (content: TopicType | RecommendationType) => (
   <div key={content.title}>
     <Link
-      to={`/${type === 'topic' ? 'topic' : 'recommendation'}/${content.title}`}
+      to={`/${
+        Object.keys(content).includes('layout') ? 'topic' : 'recommendation'
+      }/${content.title}`}
     >
       <h2>
-        {type === 'topic'
+        {Object.keys(content).includes('layout')
           ? (content as TopicType).hero.title
           : (content as RecommendationType).heading}
       </h2>
     </Link>
     <span>
-      <strong>{type === 'topic' ? 'Topic' : 'Recommendation'}</strong>
+      <strong>
+        {Object.keys(content).includes('layout') ? 'Topic' : 'Recommendation'}
+      </strong>
     </span>
     <ReactMarkdown>{content.about}</ReactMarkdown>
   </div>
 );
+
+export const formatAndSortSearchResults = (
+  topicsAndRecommendations: (TopicType | RecommendationType)[],
+) =>
+  topicsAndRecommendations
+    .map(topicOrRec => formatForSearchPage(topicOrRec))
+    .sort((a, b) => ((a?.key ?? '') > (b?.key ?? '') ? 1 : -1));
 
 export const formatSearchFilter = (
   data: (TopicType | RecommendationType)[],
