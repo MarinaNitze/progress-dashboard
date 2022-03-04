@@ -37,8 +37,7 @@ export default function Compare({ params: { compare } }: PageProps) {
     <img className="implemented-icon" src={implementedSvg} alt="implemented" />
   );
 
-  const arrowSvg =
-    useGatsbyImages()['images/compare/up-arrow.svg'].publicURL;
+  const arrowSvg = useGatsbyImages()['images/compare/up-arrow.svg'].publicURL;
   const arrowDownIcon = (
     <img className="arrow-icon" src={arrowSvg} alt="arrow" />
   );
@@ -169,27 +168,33 @@ export default function Compare({ params: { compare } }: PageProps) {
               className={p.bool ? 'implemented' : 'not-implemented'}
             >
               {p.bool ? implementedIcon : ''}{' '}
-              <Link to={PRACTICE_LINK_MAP[p.practiceName]}>{p.practiceName}</Link>
+              <Link to={PRACTICE_LINK_MAP[p.practiceName]}>
+                {p.practiceName}
+              </Link>
             </li>
           ))}
         </ul>
       </div>
-    )
+    );
   };
 
-  const createCardPlaceholderContent = (stateData: typeof practiceDataByState[0]) => {
-    const implementedPracticesCount = stateData.practices.filter(p => p.bool).length;;
+  const createCardPlaceholderContent = (
+    stateData: typeof practiceDataByState[0],
+  ) => {
+    const implementedPracticesCount = stateData.practices.filter(
+      p => p.bool,
+    ).length;
     return (
-      <div className='centered'>
+      <div className="centered">
         {!!implementedPracticesCount ? implementedIcon : ''}
         {` ${implementedPracticesCount} of 5 implemented`}
       </div>
-    )
-  }
+    );
+  };
 
-  // Default state: undefined. 
+  // Default state: undefined.
   // When bool = true, force hide all
-  // when bool = false, force show all 
+  // when bool = false, force show all
   const [hideAll, setHideAll] = useState<boolean | undefined>(undefined);
 
   return (
@@ -256,7 +261,6 @@ export default function Compare({ params: { compare } }: PageProps) {
                     selectOptions={popOptions}
                     value={popFilter}
                     handleChange={handlePopFilter}
-
                   />
                 </div>
               </Fieldset>
@@ -278,10 +282,16 @@ export default function Compare({ params: { compare } }: PageProps) {
           <section className="compare-section">
             <Grid>
               <div className="row">
-                <p className="total">{filteredPractices.length} total results</p>
+                <p className="total">
+                  {filteredPractices.length} total results
+                </p>
                 <div className="column">
-                  <button onClick={() => setHideAll(true)}>Hide all recommendations {arrowUpIcon}</button>
-                  <button onClick={() => setHideAll(false)}>Show all recommendations {arrowDownIcon}</button>
+                  <button onClick={() => setHideAll(true)}>
+                    Hide all recommendations {arrowUpIcon}
+                  </button>
+                  <button onClick={() => setHideAll(false)}>
+                    Show all recommendations {arrowDownIcon}
+                  </button>
                 </div>
               </div>
               <CardGroup>

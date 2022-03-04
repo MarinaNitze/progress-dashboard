@@ -85,7 +85,7 @@ export default function Card({
     if (typeof forceHide === 'boolean') {
       setIsHidden(forceHide);
     }
-  }, [forceHide])
+  }, [forceHide]);
 
   return (
     <CardCmp
@@ -114,17 +114,23 @@ export default function Card({
       )}
       {content && (
         <CardBody className="content">
-          {isHidden 
-            ? (placeholderHiddenContent ?? '')
-            : typeof content === 'string' 
-              ? <ReactMarkdown>{content}</ReactMarkdown> 
-              : content
-           }
-          
-          { // Only include show/hide button if text is provided
-          showText && hideText 
-            ? <button onClick={() => setIsHidden(h => !h)}>{isHidden ? showText : hideText}</button>
-            : ''
+          {isHidden ? (
+            placeholderHiddenContent ?? ''
+          ) : typeof content === 'string' ? (
+            <ReactMarkdown>{content}</ReactMarkdown>
+          ) : (
+            content
+          )}
+
+          {
+            // Only include show/hide button if text is provided
+            showText && hideText ? (
+              <button onClick={() => setIsHidden(h => !h)}>
+                {isHidden ? showText : hideText}
+              </button>
+            ) : (
+              ''
+            )
           }
         </CardBody>
       )}
