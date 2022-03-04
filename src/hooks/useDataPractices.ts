@@ -3,6 +3,13 @@ import { PracticesDataQuery } from '../../graphql-types';
 import useDataStates from './useDataStates';
 import { stateCode } from '../types/stateCode';
 
+export type Practice =
+  | 'No witnesses'
+  | 'No fee'
+  | 'No notary'
+  | 'General inbox for receiving requests'
+  | 'Accepts electronic requests';
+
 export default function useDataPractices() {
   const { practicesData } = useStaticQuery<PracticesDataQuery>(graphql`
     query PracticesData {
@@ -89,7 +96,7 @@ export default function useDataPractices() {
         population: states.statesData[key].population,
         admin: states.statesData[key].admin,
         practices: practices.map(p => ({
-          practiceName: p.data?.Name,
+          practiceName: p.data?.Name as Practice,
           topic: p.data?.Topic,
           value: p.data?.[key as stateCode],
           bool: boolValue(p.data?.Topic ?? '', p.data?.[key as stateCode]),

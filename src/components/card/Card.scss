@@ -126,7 +126,9 @@ li.usa-card {
     list-style: none;
     padding-inline-start: 0;
     li {
-      font-size: 1rem;
+      a {
+        font-size: 1rem;
+      }
     }
     li:not(:last-child) {
       margin-bottom: .5rem;

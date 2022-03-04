@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { PageProps } from 'gatsby';
+import { Link, PageProps } from 'gatsby';
 import {
   Grid,
   GridContainer,
@@ -17,9 +17,18 @@ import Hero from '../../components/hero/Hero';
 import Breadcrumbs from '../../components/breadcrumbs/Breadcrumbs';
 import Card from '../../components/card/Card';
 
-import useDataPractices from '../../hooks/useDataPractices';
+import useDataPractices, { Practice } from '../../hooks/useDataPractices';
 
 import '../home.scss';
+
+const PRACTICE_LINK_MAP: Record<Practice, string> = {
+  'No witnesses': '/topic/out-of-state-background-checks#what-we-can-do',
+  'No fee': '/topic/out-of-state-background-checks#what-we-can-do',
+  'No notary': '/topic/out-of-state-background-checks#what-we-can-do',
+  'General inbox for receiving requests':
+    '/topic/out-of-state-background-checks#what-we-can-do',
+  'Accepts electronic requests': '/recommendation/electronic-background-check',
+};
 
 export default function Compare({ params: { compare } }: PageProps) {
   const implementedSvg =
@@ -54,11 +63,11 @@ export default function Compare({ params: { compare } }: PageProps) {
     useState(practiceDataByState);
 
   useEffect(() => {
-    const filterByPop = (practice: typeof practiceDataByState[0]) => {
+    const filterByPop = (state: typeof practiceDataByState[0]) => {
       const pop =
-        typeof practice.population === 'string'
-          ? parseInt(practice.population)
-          : practice.population;
+        typeof state.population === 'string'
+          ? parseInt(state.population)
+          : state.population;
       if (popFilter.value === '0') {
         return pop < 2500000;
       } else if (popFilter.value === '2500000') {
@@ -68,36 +77,37 @@ export default function Compare({ params: { compare } }: PageProps) {
       }
     };
 
-    const filterByRec = (practice: typeof practiceDataByState[0]) => {
-      const practiceArr = practice.practices
+    const filterByRec = (state: typeof practiceDataByState[0]) => {
+      const practiceArr = state.practices
         .filter(p => p.bool)
         .map(p => p.practiceName);
       return recFilter?.every(
         filter =>
-          practiceArr.includes(filter.value) ||
           filter.value === '' ||
-          filter === '',
+          filter === '' ||
+          practiceArr.includes(filter.value),
       );
     };
+
     const filteredPracticesWithUpdatedFilters = practiceDataByState
       .sort((a, b) => {
         const textA = a.name;
         const textB = b.name;
         return textA < textB ? -1 : textA > textB ? 1 : 0;
       })
-      .filter(practice => {
+      .filter(state => {
         const aFilter =
           adminFilter === undefined ||
           adminFilter.value === '' ||
-          adminFilter.value.includes(practice.admin);
+          adminFilter.value.includes(state.admin);
         const pFilter =
           popFilter === undefined ||
           popFilter.value === '' ||
-          filterByPop(practice);
+          filterByPop(state);
         const rFilter =
           recFilter === undefined ||
           recFilter?.length === 0 ||
-          filterByRec(practice);
+          filterByRec(state);
 
         return aFilter && pFilter && rFilter;
       });
@@ -126,7 +136,7 @@ export default function Compare({ params: { compare } }: PageProps) {
     { value: '7500000', label: 'Greater than 7.5 Million' },
   ];
 
-  const recOptions = [
+  const recOptions: { value: Practice; label: string }[] = [
     { value: 'No witnesses', label: 'No witnesses' },
     { value: 'No fee', label: 'No fee' },
     { value: 'No notary', label: 'No notary' },
@@ -140,14 +150,15 @@ export default function Compare({ params: { compare } }: PageProps) {
     },
   ];
 
-  const createContent = (stateData: typeof practiceDataByState[0]) => (
+  const createCardContent = (stateData: typeof practiceDataByState[0]) => (
     <ul>
       {stateData.practices.map(p => (
         <li
           key={p.practiceName}
           className={p.bool ? 'implemented' : 'not-implemented'}
         >
-          {p.bool ? implementedIcon : ''} {p.practiceName}
+          {p.bool ? implementedIcon : ''}{' '}
+          <Link to={PRACTICE_LINK_MAP[p.practiceName]}>{p.practiceName}</Link>
         </li>
       ))}
     </ul>
@@ -171,10 +182,18 @@ export default function Compare({ params: { compare } }: PageProps) {
                 View and compare which states and territories in the U.S. have
                 implemented our recommendations for Out of State Background
                 (Adam Walsh) Checks:{' '}
-                <strong>
-                  no witnesses, no fee, no notary, general inboxes for receiving
-                  requests, and accept electronic requests
-                </strong>
+                <Link to={PRACTICE_LINK_MAP['No witnesses']}>no witnesses</Link>
+                , <Link to={PRACTICE_LINK_MAP['No fee']}>no fee</Link>,{' '}
+                <Link to={PRACTICE_LINK_MAP['No notary']}>no notary</Link>,{' '}
+                <Link
+                  to={PRACTICE_LINK_MAP['General inbox for receiving requests']}
+                >
+                  general inboxes for receiving requests
+                </Link>
+                ,{' '}
+                <Link to={PRACTICE_LINK_MAP['Accepts electronic requests']}>
+                  and accept electronic requests
+                </Link>
                 .
               </p>
               <h2 className="features-title">State by State Compare</h2>
@@ -235,7 +254,7 @@ export default function Compare({ params: { compare } }: PageProps) {
                   <Card
                     key={fp.code}
                     title={fp.name}
-                    content={createContent(fp)}
+                    content={createCardContent(fp)}
                     layout="compare"
                     className="compare-width"
                     image={`/src/images/compare/${
