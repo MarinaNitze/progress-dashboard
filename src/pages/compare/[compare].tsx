@@ -37,6 +37,15 @@ export default function Compare({ params: { compare } }: PageProps) {
     <img className="implemented-icon" src={implementedSvg} alt="implemented" />
   );
 
+  const arrowSvg =
+    useGatsbyImages()['images/compare/up-arrow.svg'].publicURL;
+  const arrowDownIcon = (
+    <img className="arrow-icon" src={arrowSvg} alt="arrow" />
+  );
+  const arrowUpIcon = (
+    <img className="arrow-icon rotate-180" src={arrowSvg} alt="arrow" />
+  );
+
   const practicesByState = useDataPractices().practicesByState;
   const practiceDataByState = practicesByState
     .reduce<typeof practicesByState>((acc, state) => {
@@ -150,19 +159,38 @@ export default function Compare({ params: { compare } }: PageProps) {
     },
   ];
 
-  const createCardContent = (stateData: typeof practiceDataByState[0]) => (
-    <ul>
-      {stateData.practices.map(p => (
-        <li
-          key={p.practiceName}
-          className={p.bool ? 'implemented' : 'not-implemented'}
-        >
-          {p.bool ? implementedIcon : ''}{' '}
-          <Link to={PRACTICE_LINK_MAP[p.practiceName]}>{p.practiceName}</Link>
-        </li>
-      ))}
-    </ul>
-  );
+  const createCardContent = (stateData: typeof practiceDataByState[0]) => {
+    return (
+      <div>
+        <ul>
+          {stateData.practices.map(p => (
+            <li
+              key={p.practiceName}
+              className={p.bool ? 'implemented' : 'not-implemented'}
+            >
+              {p.bool ? implementedIcon : ''}{' '}
+              <Link to={PRACTICE_LINK_MAP[p.practiceName]}>{p.practiceName}</Link>
+            </li>
+          ))}
+        </ul>
+      </div>
+    )
+  };
+
+  const createCardPlaceholderContent = (stateData: typeof practiceDataByState[0]) => {
+    const implementedPracticesCount = stateData.practices.filter(p => p.bool).length;;
+    return (
+      <div className='centered'>
+        {!!implementedPracticesCount ? implementedIcon : ''}
+        {` ${implementedPracticesCount} of 5 implemented`}
+      </div>
+    )
+  }
+
+  // Default state: undefined. 
+  // When bool = true, force hide all
+  // when bool = false, force show all 
+  const [hideAll, setHideAll] = useState<boolean | undefined>(undefined);
 
   return (
     <Layout>
@@ -228,6 +256,7 @@ export default function Compare({ params: { compare } }: PageProps) {
                     selectOptions={popOptions}
                     value={popFilter}
                     handleChange={handlePopFilter}
+
                   />
                 </div>
               </Fieldset>
@@ -248,13 +277,20 @@ export default function Compare({ params: { compare } }: PageProps) {
           </section>
           <section className="compare-section">
             <Grid>
-              <p className="total">{filteredPractices.length} total results</p>
+              <div className="row">
+                <p className="total">{filteredPractices.length} total results</p>
+                <div className="column">
+                  <button onClick={() => setHideAll(true)}>Hide all recommendations {arrowUpIcon}</button>
+                  <button onClick={() => setHideAll(false)}>Show all recommendations {arrowDownIcon}</button>
+                </div>
+              </div>
               <CardGroup>
                 {filteredPractices.map(fp => (
                   <Card
                     key={fp.code}
                     title={fp.name}
                     content={createCardContent(fp)}
+                    placeholderHiddenContent={createCardPlaceholderContent(fp)}
                     layout="compare"
                     className="compare-width"
                     image={`/src/images/compare/${
@@ -263,6 +299,9 @@ export default function Compare({ params: { compare } }: PageProps) {
                     imgAlt={`${
                       fp.practices.filter(p => p.bool).length
                     } out of 5`}
+                    forceHide={hideAll}
+                    showText={<>Show recommendations</>}
+                    hideText={<>Hide recommendations</>}
                   />
                 ))}
               </CardGroup>

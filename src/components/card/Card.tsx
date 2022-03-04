@@ -1,4 +1,4 @@
-import React, { ReactElement } from 'react';
+import React, { ReactElement, useEffect, useState } from 'react';
 import { navigate } from 'gatsby';
 import {
   Card as CardCmp,
@@ -24,6 +24,10 @@ export type CardProps = {
   link?: string;
   linkText?: string;
   content?: string | ReactElement;
+  placeholderHiddenContent?: string | ReactElement;
+  showText?: string | ReactElement;
+  hideText?: string | ReactElement;
+  forceHide?: boolean | undefined;
   dataCy?: string;
   className?: string;
 };
@@ -49,6 +53,10 @@ export default function Card({
   link,
   linkText,
   content,
+  placeholderHiddenContent,
+  showText,
+  hideText,
+  forceHide,
   dataCy,
   layout = 'lg',
 }: CardProps) {
@@ -71,6 +79,13 @@ export default function Card({
       />
     );
   }
+
+  const [isHidden, setIsHidden] = useState(forceHide ?? true);
+  useEffect(() => {
+    if (typeof forceHide === 'boolean') {
+      setIsHidden(forceHide);
+    }
+  }, [forceHide])
 
   return (
     <CardCmp
@@ -99,11 +114,18 @@ export default function Card({
       )}
       {content && (
         <CardBody className="content">
-          {typeof content === 'string' ? (
-            <ReactMarkdown>{content}</ReactMarkdown>
-          ) : (
-            content
-          )}
+          {isHidden 
+            ? (placeholderHiddenContent ?? '')
+            : typeof content === 'string' 
+              ? <ReactMarkdown>{content}</ReactMarkdown> 
+              : content
+           }
+          
+          { // Only include show/hide button if text is provided
+          showText && hideText 
+            ? <button onClick={() => setIsHidden(h => !h)}>{isHidden ? showText : hideText}</button>
+            : ''
+          }
         </CardBody>
       )}
       {layout === 'lg' && link ? (

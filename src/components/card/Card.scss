@@ -96,6 +96,27 @@ li.usa-card {
   height: 100%;
 }
 
+.compare-section {
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .column {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1rem;
+      font-size: 1.25rem;
+    }
+  }
+
+  img.arrow-icon {
+    margin: 0 .5rem;
+    &.rotate-180 {
+      transform: rotate(180deg);
+    }
+  }
+}
+
 .card .topic:hover {
   background-color: $primary;
   border-radius: 0.5rem;
@@ -107,11 +128,7 @@ li.usa-card {
 
 .usa-card__container {
   justify-content: space-between;
-}
-
-.usa-card,
-.usa-card:last-child {
-  margin-bottom: 1rem;
+  height: auto;
 }
 
 .compare {
@@ -119,19 +136,36 @@ li.usa-card {
   .media {
     padding: .5rem 0;
   }
+
   .content {
     padding-top: .5rem;;
-  }
-  ul {
-    list-style: none;
-    padding-inline-start: 0;
-    li {
-      a {
-        font-size: 1rem;
+    button {
+      // make button wider so text fits on one line
+      width: 130%;
+      margin-left: -15%;
+      text-align: center;
+      margin-top: 1rem;
+      text-decoration: underline;
+    }
+
+    .centered {
+      width: 120%;
+      margin-left: -10%;
+      text-align: center;
+      .implemented-icon {
+        margin-left: 0;
       }
     }
-    li:not(:last-child) {
-      margin-bottom: .5rem;
+
+    ul {
+      list-style: none;
+      padding-inline-start: 0;
+      li {
+        margin-bottom: .5rem;
+        a {
+          font-size: 1rem;
+        }
+      }
     }
   }
 
@@ -152,6 +186,7 @@ li.usa-card {
   }
   .usa-card__header {
     padding-bottom: 0;
+    height: 3.5rem;
   }
   h3{
     font-size: 1.3rem;
