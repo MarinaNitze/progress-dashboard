@@ -101,10 +101,13 @@ li.usa-card {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media (max-width: 480px) {
+      flex-direction: column-reverse;
+    }
     .column {
       display: flex;
       flex-direction: column;
-      margin-bottom: 1rem;
+      margin: 1rem 0;
       font-size: 1.25rem;
     }
   }
@@ -128,10 +131,15 @@ li.usa-card {
 
 .usa-card__container {
   justify-content: space-between;
-  height: auto;
+}
+
+.usa-card,
+.usa-card:last-child {
+  margin-bottom: 1rem;
 }
 
 .compare {
+  height: auto;
   border: 1px solid $light !important;
   .media {
     padding: .5rem 0;
@@ -143,6 +151,10 @@ li.usa-card {
       // make button wider so text fits on one line
       width: 130%;
       margin-left: -15%;
+      @media (max-width: 480px) {
+        width: 100%;
+        margin-left: 0;
+      }
       text-align: center;
       margin-top: 1rem;
       text-decoration: underline;

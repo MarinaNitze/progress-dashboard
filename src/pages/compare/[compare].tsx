@@ -310,6 +310,7 @@ export default function Compare({ params: { compare } }: PageProps) {
                       fp.practices.filter(p => p.bool).length
                     } out of 5`}
                     forceHide={hideAll}
+                    defaultHidden={true}
                     showText={<>Show recommendations</>}
                     hideText={<>Hide recommendations</>}
                   />

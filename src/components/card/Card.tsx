@@ -28,13 +28,14 @@ export type CardProps = {
   showText?: string | ReactElement;
   hideText?: string | ReactElement;
   forceHide?: boolean | undefined;
+  defaultHidden?: boolean;
   dataCy?: string;
   className?: string;
 };
 
 const gridLayouts = {
-  tablet: { topic: true, sm: 6, md: 12, lg: 12, compare: 3 },
-  desktop: { topic: true, sm: 4, md: 8, lg: 12, compare: 2 },
+  tablet: { topic: true, sm: 6, md: 12, lg: 12, compare: 4 },
+  desktop: { topic: true, sm: 4, md: 8, lg: 12, compare: 3 },
 };
 
 function mediaLayout(
@@ -57,6 +58,7 @@ export default function Card({
   showText,
   hideText,
   forceHide,
+  defaultHidden = false,
   dataCy,
   layout = 'lg',
 }: CardProps) {
@@ -80,7 +82,7 @@ export default function Card({
     );
   }
 
-  const [isHidden, setIsHidden] = useState(forceHide ?? true);
+  const [isHidden, setIsHidden] = useState(forceHide ?? defaultHidden);
   useEffect(() => {
     if (typeof forceHide === 'boolean') {
       setIsHidden(forceHide);

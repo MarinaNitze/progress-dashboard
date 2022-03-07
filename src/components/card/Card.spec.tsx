@@ -4,7 +4,7 @@ import { render } from '@testing-library/react';
 import Card from './Card';
 
 describe('Card', () => {
-  it('renders card with content hidden by default', () => {
+  it('renders card with content showing by default', () => {
     const content = 'Content';
     const { queryByText } = render(
       <Card title="Content Header" content={content} />,
@@ -12,10 +12,21 @@ describe('Card', () => {
 
     const contentEl = queryByText(content);
 
+    expect(contentEl).toBeInTheDocument();
+  });
+
+  it('renders card with content hidden when defaultHidden = true', () => {
+    const content = 'Content';
+    const { queryByText } = render(
+      <Card title="Content Header" content={content} defaultHidden={true} />,
+    );
+
+    const contentEl = queryByText(content);
+
     expect(contentEl).not.toBeInTheDocument();
   });
 
-  it('renders placeholder content when provided by default', () => {
+  it('renders card with placeholder showing when provided and defaultHidden= true', () => {
     const content = 'Content';
     const placeholder = 'Content when hidden';
     const { queryByText } = render(
@@ -23,6 +34,7 @@ describe('Card', () => {
         title="Content Header"
         content={content}
         placeholderHiddenContent={placeholder}
+        defaultHidden={true}
       />,
     );
 
@@ -50,5 +62,24 @@ describe('Card', () => {
 
     expect(placeholderEl).not.toBeInTheDocument();
     expect(contentEl).toBeInTheDocument();
+  });
+
+  it('renders card with content hidden when forceHide = true', () => {
+    const content = 'Content';
+    const placeholder = 'Content when hidden';
+    const { queryByText } = render(
+      <Card
+        title="Content Header"
+        content={content}
+        placeholderHiddenContent={placeholder}
+        forceHide={true}
+      />,
+    );
+
+    const contentEl = queryByText(content);
+    const placeholderEl = queryByText(placeholder);
+
+    expect(placeholderEl).toBeInTheDocument();
+    expect(contentEl).not.toBeInTheDocument();
   });
 });
