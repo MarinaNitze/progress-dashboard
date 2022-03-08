@@ -17,6 +17,12 @@
     margin: auto;
     max-height: 2.8125rem;
 
+    content: url('../../images/header/cwp-logo.svg');
+    @media (max-width: 480px) {
+      content: url('../../images/header/cwp-logo-mobile.svg');
+      margin-top: 1rem;
+    }
+
     &:hover {
       cursor: pointer;
       background-image: linear-gradient(
@@ -41,8 +47,104 @@
       top: 0px;
     }
 
+    .usa-navbar {
+      .usa-menu-btn {
+        background-color: $primary;
+        font-size: 1.125rem;
+        color: $header-text;
+        font-weight: bold;
+        text-transform: none;
+    
+        .menu-button {
+          img {
+            margin: 0 .5rem;
+          }
+          &.close {
+            background-color: black;
+            border-radius: 10px;
+            color: white;
+            background-color: $header-text;
+            padding: 0.25rem 0.5rem 0.25rem 0.25rem;
+            &.search {
+              padding: 0.25rem 0.25rem 0.25rem 0.5rem;
+            }
+          }
+        }
+      }
+    
+    }
+
     .usa-nav.cwp-nav {
       padding: 1rem;
+      height: fit-content;
+      width: 80%;
+      top: 3rem;
+      left: 0;
+      right: auto;
+      background-color: $info;
+      animation: none !important;
+
+      &.search-nav {
+        width: 100%;
+
+        .usa-search {
+          padding: 0;
+        }
+
+        .usa-input {
+          background: $info;
+          border-color: white;
+          color: white;
+        }
+
+        // Hide "clear" button in edge/chrome 
+        input[type=text]::-ms-clear {  display: none; width : 0; height: 0; }
+        input[type=text]::-ms-reveal {  display: none; width : 0; height: 0; }
+        input[type="search"]::-webkit-search-decoration,
+        input[type="search"]::-webkit-search-cancel-button,
+        input[type="search"]::-webkit-search-results-button,
+        input[type="search"]::-webkit-search-results-decoration { display: none; }
+        // end 
+        
+        .usa-button {
+          background-color: $info !important;
+          border-bottom: 2px solid white !important;
+          border-top: none!important;
+          border-left: none !important;
+          border-right: none !important;
+          border-radius: 0 !important;
+        }
+      }
+
+      // We dont want additional close button in menu nav overlay
+      .usa-nav__close {
+        display: none;
+      }
+
+      .menu-title {
+        font-family: Petrona;
+        border-bottom: 1px solid white;
+        font-size: 1.5rem;
+        color: white;
+      }
+
+      .usa-nav__primary-item {
+        border-top: none;
+        margin-left: -1rem;
+        margin-bottom: 1rem;
+      }
+
+      a {
+        color: $white;
+      }
+
+      .search {
+        width: 100%;
+      }
+    }
+
+    .usa-navbar {
+      justify-content: space-between;
     }
   }
 
@@ -52,11 +154,12 @@
     }
 
     .usa-nav__primary-item {
-      margin: 0 1rem 0 1rem;
+      margin: 0 1rem;
+      border-top: none;
     }
   }
 
   .usa-menu-btn {
-    background-color: $secondary;
+    background-color: $primary;
   }
 }

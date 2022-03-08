@@ -1,11 +1,11 @@
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 import {
   Header as HeaderCmp,
   NavMenuButton,
   PrimaryNav,
+  Search,
 } from '@trussworks/react-uswds';
 import useGatsbyImages from '../../hooks/useGatsbyImages';
-import useScrollDirection from '../../hooks/useScrollDirection';
 import { GatsbyLinkProps, navigate } from 'gatsby-link';
 import { Link } from 'gatsby';
 
@@ -23,40 +23,85 @@ type HeaderLinks = (GatsbyLinkProps<unknown> & {
 })[];
 
 export default function Header({ headerLinks }: HeaderProps) {
-  const [expanded, setExpanded] = useState(false);
-  const scrollRef = useRef(0);
-  const direction = useScrollDirection(scrollRef);
+  const [showMenu, setShowMenu] = useState(false);
+  const [showSearch, setShowSearch] = useState(false);
   const imageMap = useGatsbyImages();
-  const svgLogo = imageMap['images/header/cwp-logo.svg'];
 
-  const onClickExpand = () => {
-    setExpanded(prvExpanded => !prvExpanded);
+  const onClickShowMenu = () => {
+    setShowSearch(false);
+    setShowMenu(prevShowMenu => !prevShowMenu);
   };
 
-  const onClickNavigateHome = () => {
-    navigate('/');
+  const onClickShowSearch = () => {
+    setShowMenu(false);
+    setShowSearch(prevShowSearch => !prevShowSearch);
   };
+
+  const submitSearch = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const searchTerm = (e.target as any)[0].value;
+    navigate('/search', { state: { searchTerm } });
+  };
+
+  // Change header links based on how menu is being displayed:
+  // If screen size > 800px, then we're in full width view so all links should be included
+  // else, if showSearch, then set header links to empty array ()
+  // else, filter out search link to get desired mobile menu items
+  const filteredHeaderLinks =
+    window.innerWidth > 800
+      ? headerLinks
+      : showSearch
+      ? []
+      : headerLinks.filter(h => h.text !== 'Search');
 
   return (
     <>
-      <div className={`usa-overlay ${expanded ? 'is-visible' : ''}`}></div>
-      <HeaderCmp
-        className={`cwp-header ${direction === 'up' ? 'sticky-nav z-top' : ''}`}
-        basic
-      >
+      <HeaderCmp className={`cwp-header sticky-nav z-top`} basic>
         <div className="usa-nav-container">
           <div className="usa-navbar">
-            <img
-              onClick={onClickNavigateHome}
-              className="cwp-logo"
-              src={svgLogo.publicURL}
-              alt="cwp-logo"
+            <NavMenuButton
+              onClick={onClickShowMenu}
+              label={
+                <div className={`menu-button ${showMenu ? 'close' : ''}`}>
+                  <img
+                    src={
+                      showMenu
+                        ? imageMap['images/header/close.svg'].publicURL
+                        : imageMap['images/header/menu-mobile.svg'].publicURL
+                    }
+                  />
+                  Menu
+                </div>
+              }
             />
-            <NavMenuButton onClick={onClickExpand} label="Menu" />
+            <Link to="/">
+              <img
+                className="cwp-logo"
+                alt="cwp-logo"
+                // instead of src property, content set in CSS to easily swap for mobile
+              />
+            </Link>
+            <NavMenuButton
+              onClick={onClickShowSearch}
+              label={
+                <div
+                  className={`menu-button search ${showSearch ? 'close' : ''}`}
+                >
+                  Search
+                  <img
+                    src={
+                      showSearch
+                        ? imageMap['images/header/close.svg'].publicURL
+                        : imageMap['images/header/search.svg'].publicURL
+                    }
+                  />
+                </div>
+              }
+            />
           </div>
           <PrimaryNav
-            className="cwp-nav"
-            items={headerLinks.map(link => (
+            className={`cwp-nav ${showSearch ? 'search-nav' : ''}`}
+            items={filteredHeaderLinks.map(link => (
               <Link className="font-family-body text-bold" to={link.to}>
                 {link.text}
                 {link.iconPath && (
@@ -68,9 +113,32 @@ export default function Header({ headerLinks }: HeaderProps) {
                 )}
               </Link>
             ))}
-            mobileExpanded={expanded}
-            onToggleMobileNav={onClickExpand}
-          ></PrimaryNav>
+            mobileExpanded={showMenu || showSearch}
+            onToggleMobileNav={() => {
+              setShowMenu(false);
+              setShowSearch(false);
+            }}
+          >
+            {
+              // Add a menu title to the mobile menu nav overlay
+              showMenu ? (
+                <div className="menu-title">child welfare playbook</div>
+              ) : (
+                ''
+              )
+            }
+            {
+              // Add search bar element to otherwise empty mobile search nav overlay
+              showSearch ? (
+                <Search
+                  placeholder="Search the playbook"
+                  onSubmit={submitSearch}
+                />
+              ) : (
+                ''
+              )
+            }
+          </PrimaryNav>
         </div>
       </HeaderCmp>
     </>

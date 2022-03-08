@@ -66,6 +66,13 @@ export const mockImageData = () => ({
           relativePath: 'images/header/search.svg',
         },
       },
+      {
+        node: {
+          extension: 'svg',
+          publicURL: '/static/188086bb11fd11789d6bd9a30a11abfb/menu-mobile.svg',
+          relativePath: 'images/header/menu-mobile.svg',
+        },
+      },
     ],
   },
   compareImages: {
