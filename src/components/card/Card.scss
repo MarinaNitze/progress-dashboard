@@ -140,7 +140,7 @@ li.usa-card {
       width: 120%;
       margin-left: -10%;
       text-align: center;
-      .implemented-icon {
+      .implemented-icon, .partial-icon {
         margin-left: 0;
       }
     }
@@ -159,6 +159,10 @@ li.usa-card {
 
   .implemented-icon {
     margin-left: -1.5rem;
+  }
+  .partial-icon {
+    margin-left: -1.5rem;
+    height: 15px;
   }
 
   .not-implemented {

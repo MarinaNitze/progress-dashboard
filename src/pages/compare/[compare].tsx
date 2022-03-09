@@ -20,18 +20,21 @@ import Card from '../../components/card/Card';
 import useDataPractices, {
   Practice,
   Topic,
+  Value,
 } from '../../hooks/useDataPractices';
 
 import '../home.scss';
 import './compare.scss';
 
 const PRACTICE_LINK_MAP: Record<Practice, string> = {
+  // Background checks
   'No witnesses': '/topic/out-of-state-background-checks#what-we-can-do',
   'No fee': '/topic/out-of-state-background-checks#what-we-can-do',
   'No notary': '/topic/out-of-state-background-checks#what-we-can-do',
   'General inbox for receiving requests':
     '/topic/out-of-state-background-checks#what-we-can-do',
   'Accepts electronic requests': '/recommendation/electronic-background-check',
+  // Family finding (NOTE: these links are made-up placeholders)
   'Social media': '/topic/social-media',
   'Ongoing activity': '/topic/ongoing-activity',
   'Senior staff sign-off': '/topic/senior-staff-sign-off',
@@ -103,7 +106,7 @@ export default function Compare({ params: { compare } }: PageProps) {
 
     const filterByRec = (state: typeof practiceDataByState[0]) => {
       const practiceArr = state.practices
-        .filter(p => p.bool)
+        .filter(p => p.value === Value.partial || p.value === Value.full)
         .map(p => p.practiceName);
       return recFilter?.every(
         filter =>
@@ -166,8 +169,16 @@ export default function Compare({ params: { compare } }: PageProps) {
 
   const implementedSvg =
     useGatsbyImages()['images/compare/implementedMedium.svg'].publicURL;
+  const partialSvg = useGatsbyImages()['images/compare/partial.svg'].publicURL;
   const implementedIcon = (
     <img className="implemented-icon" src={implementedSvg} alt="implemented" />
+  );
+  const partialIcon = (
+    <img
+      className="partial-icon"
+      src={partialSvg}
+      alt="partially implemented"
+    />
   );
   const createCardContent = (stateData: typeof practiceDataByState[0]) => {
     return (
@@ -176,9 +187,17 @@ export default function Compare({ params: { compare } }: PageProps) {
           {stateData.practices.map(p => (
             <li
               key={p.practiceName}
-              className={p.bool ? 'implemented' : 'not-implemented'}
+              className={
+                p.value === Value.full || p.value === Value.partial
+                  ? 'implemented'
+                  : 'not-implemented'
+              }
             >
-              {p.bool ? implementedIcon : ''}{' '}
+              {p.value === Value.full
+                ? implementedIcon
+                : p.value === Value.partial
+                ? partialIcon
+                : ''}{' '}
               <Link to={PRACTICE_LINK_MAP[p.practiceName]}>
                 {p.practiceName}
               </Link>
@@ -192,13 +211,23 @@ export default function Compare({ params: { compare } }: PageProps) {
   const createCardPlaceholderContent = (
     stateData: typeof practiceDataByState[0],
   ) => {
-    const implementedPracticesCount = stateData.practices.filter(
-      p => p.bool,
+    const fullyImplementedCount = stateData.practices.filter(
+      p => p.value === Value.full,
     ).length;
+    const partiallyImplementedCount = stateData.practices.filter(
+      p => p.value === Value.partial,
+    ).length;
+
     return (
       <div className="centered">
-        {!!implementedPracticesCount ? implementedIcon : ''}
-        {` ${implementedPracticesCount} of ${topicPractices.length} implemented`}
+        {!!fullyImplementedCount
+          ? implementedIcon
+          : !!partiallyImplementedCount
+          ? partialIcon
+          : ''}
+        {` ${fullyImplementedCount + partiallyImplementedCount} of ${
+          topicPractices.length
+        } implemented or in progress`}
       </div>
     );
   };
@@ -208,6 +237,7 @@ export default function Compare({ params: { compare } }: PageProps) {
   // when bool = false, force show all
   const [hideAll, setHideAll] = useState<boolean | undefined>(undefined);
 
+  console.log(filteredPractices);
   return (
     <Layout>
       <section id="hero-section">
@@ -321,10 +351,12 @@ export default function Compare({ params: { compare } }: PageProps) {
                     layout="compare"
                     className="compare-width"
                     image={`/src/images/compare/${
-                      fp.practices.filter(p => p.bool).length
+                      fp.practices.filter(p => p.value === 'Fully Implemented')
+                        .length
                     }Of${topicPractices.length}.svg`}
                     imgAlt={`${
-                      fp.practices.filter(p => p.bool).length
+                      fp.practices.filter(p => p.value === 'Fully Implemented')
+                        .length
                     } out of ${topicPractices.length}`}
                     forceHide={hideAll}
                     defaultHidden={true}
