@@ -72,6 +72,7 @@
   h2 {
     display: inline-flex;
     flex-direction: column;
+    margin-top: 2.75rem;
 
     &:after {
       @include vertical-line;
@@ -226,7 +227,7 @@
     }
 
     h2 {
-      margin: 1rem 0;
+      margin: 2rem 0;
     }
   }
 }
