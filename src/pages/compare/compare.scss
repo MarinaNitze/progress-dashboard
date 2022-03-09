@@ -1,0 +1,103 @@
+@import '../../styles/settings.scss';
+
+.compare-section {
+  .row {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin: 2rem 0 1rem 0;
+    font-size: 1.25rem;
+    @media (max-width: 480px) {
+      flex-direction: column-reverse;
+    }
+
+    .total {
+      font-weight: 400;
+    }
+
+    .show-hide-title {
+      font-family: Petrona;
+      font-weight: 800;
+    }
+
+    .flex-start {
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    .mobile-col {
+      @media (max-width: 800px) {
+        flex-direction: column;
+      }
+    }
+
+
+    button {
+      &.active {
+        color: $dark;
+        text-decoration: underline;
+        text-decoration-color: $secondary;
+      }
+    }
+    hr {
+      height: 1rem;
+      border: none;
+      background-color: black;
+      width: 1px;
+      margin: auto 0;
+    }
+  }
+}
+
+.filter-section {
+  form {
+    display: flex;
+    @media (max-width: 800px) {
+      flex-direction: column;
+    }
+  }
+
+  fieldset {
+    margin-right: 2rem;
+    @media (max-width: 800px) {
+      display: inline;
+      width: 100%;
+      margin-right: 0;
+    }
+
+    label {
+      font-size: large;
+      font-weight: 900;
+      font-family: Petrona;
+      padding-right: 1rem;
+
+      @media (max-width: 800px) {
+        width: 100%;
+      }
+    }
+
+    select {
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      padding-bottom: 0.1rem;
+      min-width: 10rem;
+    }
+
+    .select {
+      display: flex;
+      align-items: flex-end;
+      @media (max-width: 800px) {
+        flex-direction: column;
+        align-items: normal;
+      }
+    }
+
+    #pop, #admin {
+      min-width: 10rem;
+    }
+    #rec {
+      min-width: 13rem;
+    }
+  }
+}

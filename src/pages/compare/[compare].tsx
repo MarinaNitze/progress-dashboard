@@ -20,6 +20,7 @@ import Card from '../../components/card/Card';
 import useDataPractices, { Practice } from '../../hooks/useDataPractices';
 
 import '../home.scss';
+import './compare.scss';
 
 const PRACTICE_LINK_MAP: Record<Practice, string> = {
   'No witnesses': '/topic/out-of-state-background-checks#what-we-can-do',
@@ -35,14 +36,6 @@ export default function Compare({ params: { compare } }: PageProps) {
     useGatsbyImages()['images/compare/implementedMedium.svg'].publicURL;
   const implementedIcon = (
     <img className="implemented-icon" src={implementedSvg} alt="implemented" />
-  );
-
-  const arrowSvg = useGatsbyImages()['images/compare/up-arrow.svg'].publicURL;
-  const arrowDownIcon = (
-    <img className="arrow-icon" src={arrowSvg} alt="arrow" />
-  );
-  const arrowUpIcon = (
-    <img className="arrow-icon rotate-180" src={arrowSvg} alt="arrow" />
   );
 
   const practicesByState = useDataPractices().practicesByState;
@@ -207,7 +200,7 @@ export default function Compare({ params: { compare } }: PageProps) {
         />
       </section>
       <Breadcrumbs crumbLabel="Compare" />
-      <main className="cwp-main home">
+      <main className="cwp-main home compare">
         <GridContainer>
           <section className="intro-section">
             <Grid>
@@ -285,13 +278,23 @@ export default function Compare({ params: { compare } }: PageProps) {
                 <p className="total">
                   {filteredPractices.length} total results
                 </p>
-                <div className="column">
-                  <button onClick={() => setHideAll(true)}>
-                    Hide all recommendations {arrowUpIcon}
-                  </button>
-                  <button onClick={() => setHideAll(false)}>
-                    Show all recommendations {arrowDownIcon}
-                  </button>
+                <div className="flex-start mobile-col">
+                  <p className="show-hide-title">Implemented Recommendations</p>
+                  <div className="flex-start">
+                    <button
+                      className={`${hideAll === true ? 'active' : ''}`}
+                      onClick={() => setHideAll(true)}
+                    >
+                      Hide all
+                    </button>
+                    <hr />
+                    <button
+                      className={`${hideAll === false ? 'active' : ''}`}
+                      onClick={() => setHideAll(false)}
+                    >
+                      Show all
+                    </button>
+                  </div>
                 </div>
               </div>
               <CardGroup>

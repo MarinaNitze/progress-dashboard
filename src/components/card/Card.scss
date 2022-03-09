@@ -96,30 +96,6 @@ li.usa-card {
   height: 100%;
 }
 
-.compare-section {
-  .row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    @media (max-width: 480px) {
-      flex-direction: column-reverse;
-    }
-    .column {
-      display: flex;
-      flex-direction: column;
-      margin: 1rem 0;
-      font-size: 1.25rem;
-    }
-  }
-
-  img.arrow-icon {
-    margin: 0 .5rem;
-    &.rotate-180 {
-      transform: rotate(180deg);
-    }
-  }
-}
-
 .card .topic:hover {
   background-color: $primary;
   border-radius: 0.5rem;
@@ -138,7 +114,7 @@ li.usa-card {
   margin-bottom: 1rem;
 }
 
-.compare {
+.usa-card__container.compare {
   height: auto;
   border: 1px solid $light !important;
   .media {
