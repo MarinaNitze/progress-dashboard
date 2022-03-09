@@ -17,7 +17,7 @@ import Hero from '../../components/hero/Hero';
 import Breadcrumbs from '../../components/breadcrumbs/Breadcrumbs';
 import Card from '../../components/card/Card';
 
-import useDataPractices, { Practice } from '../../hooks/useDataPractices';
+import useDataPractices, { Practice, Topic } from '../../hooks/useDataPractices';
 
 import '../home.scss';
 import './compare.scss';
@@ -29,9 +29,26 @@ const PRACTICE_LINK_MAP: Record<Practice, string> = {
   'General inbox for receiving requests':
     '/topic/out-of-state-background-checks#what-we-can-do',
   'Accepts electronic requests': '/recommendation/electronic-background-check',
+  'Social media': '/topic/social-media',
+  'Ongoing activity': '/topic/ongoing-activity',
+  'Senior staff sign-off': '/topic/senior-staff-sign-off',
+  'Ask youth for placement options': '/topic/ask-youth-for-placement-options',
+  'Ask kin for more kin': '/topic/ask-kin-for-more-kin',
+  'Formal plan to stay connected': '/topic/formal-plan-to-stay-connected',
+  'Expansive legal definition of kin': '/topic/expansive-legal-defintion-of-kin'
 };
 
+const COMPARE_TOPIC_FULL_TITLE = {
+  'Background Checks': 'Out of State Background Checks (Adam Walsh Checks)',
+  'Family Finding': 'Family and Kin Finding'
+}
+
 export default function Compare({ params: { compare } }: PageProps) {
+  // Create a typed version of the url "compare" param
+  // (because dealing with re-typing existing Gatsby PageProps is no,
+  // but some amount of type-safety with all the stuff going on here is nice)
+  const compareTopic = compare as Topic;
+
   const implementedSvg =
     useGatsbyImages()['images/compare/implementedMedium.svg'].publicURL;
   const implementedIcon = (
@@ -39,6 +56,14 @@ export default function Compare({ params: { compare } }: PageProps) {
   );
 
   const practicesByState = useDataPractices().practicesByState;
+  // Create a list of which practices apply to the current compare topic 
+   const topicPractices = practicesByState[0].practices
+   .filter(practice => practice.topic === compareTopic)
+   .map(practice => practice.practiceName);
+
+  // Create a processed list of practice data by state, 
+  // which only includes the practices for the current compare topic
+  // and is sorted alphabetically by state name 
   const practiceDataByState = practicesByState
     .reduce<typeof practicesByState>((acc, state) => {
       const filteredPractices = state.practices.filter(
@@ -137,19 +162,8 @@ export default function Compare({ params: { compare } }: PageProps) {
     { value: '7500000', label: 'Greater than 7.5 Million' },
   ];
 
-  const recOptions: { value: Practice; label: string }[] = [
-    { value: 'No witnesses', label: 'No witnesses' },
-    { value: 'No fee', label: 'No fee' },
-    { value: 'No notary', label: 'No notary' },
-    {
-      value: 'General inbox for receiving requests',
-      label: 'General inbox for receiving requests',
-    },
-    {
-      value: 'Accepts electronic requests',
-      label: 'Accepts electronic requests',
-    },
-  ];
+  const recOptions: { value: Practice; label: string }[] = topicPractices
+    .map(practice => ({ value: practice, label: practice }));
 
   const createCardContent = (stateData: typeof practiceDataByState[0]) => {
     return (
@@ -205,22 +219,20 @@ export default function Compare({ params: { compare } }: PageProps) {
           <section className="intro-section">
             <Grid>
               <p>
-                View and compare which states and territories in the U.S. have
-                implemented our recommendations for Out of State Background
-                (Adam Walsh) Checks:{' '}
-                <Link to={PRACTICE_LINK_MAP['No witnesses']}>no witnesses</Link>
-                , <Link to={PRACTICE_LINK_MAP['No fee']}>no fee</Link>,{' '}
-                <Link to={PRACTICE_LINK_MAP['No notary']}>no notary</Link>,{' '}
-                <Link
-                  to={PRACTICE_LINK_MAP['General inbox for receiving requests']}
-                >
-                  general inboxes for receiving requests
-                </Link>
-                ,{' '}
-                <Link to={PRACTICE_LINK_MAP['Accepts electronic requests']}>
-                  and accept electronic requests
-                </Link>
-                .
+              View and compare which states and territories in the U.S. have
+                implemented our {topicPractices.length} recommendations for
+                {' '}{COMPARE_TOPIC_FULL_TITLE[compareTopic]}:{' '}
+                {
+                  topicPractices.map((practice, idx) => (
+                    <>
+                      {idx === topicPractices.length - 1 ? 'and ': ''}
+                      <Link to={PRACTICE_LINK_MAP[practice]}>
+                        {practice.toLowerCase()}
+                      </Link>
+                      {idx < topicPractices.length - 1 ? ', ': '.'}
+                    </>
+                  ))
+                }
               </p>
               <h2 className="features-title">State by State Compare</h2>
             </Grid>
