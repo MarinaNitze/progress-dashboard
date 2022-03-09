@@ -16,7 +16,7 @@
 
 .usa-hero-callout {
   flex-basis: unset;
-  padding-right: 1rem;
+  padding: 0 1rem;
 }
 
 .usa-grid {
@@ -66,9 +66,15 @@
 
 
 @media (max-width: 64em) {
-.cwp-search-hero {
-  .usa-hero-callout {
-    width: 100%;
+  .cwp-search-hero {
+    .usa-hero-callout {
+      width: 100%;
+    }
   }
-}
+  
+  
+  .usa-hero-callout {
+    padding-left: 1rem;
+    padding-bottom: 3rem;
+  }
 }

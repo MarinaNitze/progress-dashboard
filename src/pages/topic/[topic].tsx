@@ -105,7 +105,7 @@ export default function State({ params: { topic } }: PageProps) {
           id="main-content"
           desktop={{ col: 12 }}
         >
-          <main className="cwp-main">
+          <main className="cwp-main topic">
             {selectedTopic?.about && (
               <Grid data-cy="about-this-topic" id="about-this-topic">
                 <section>

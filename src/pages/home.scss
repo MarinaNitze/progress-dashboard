@@ -4,6 +4,13 @@
   padding-bottom: 5rem;
 }
 
+.home.cwp-main {
+  margin: 2rem 1rem;
+  @media (max-width: 800px) {
+    margin: 2rem 0;
+  }
+}
+
 .cwp-topic-hero {
   min-height: 18.75rem;
   h1 {
@@ -65,6 +72,7 @@
   h2 {
     display: inline-flex;
     flex-direction: column;
+    margin-top: 2.75rem;
 
     &:after {
       @include vertical-line;
@@ -185,7 +193,7 @@
     }
   }
 
-  .mission-hero {
+  .mission-hero, .cwp-home-hero {
     .usa-hero-callout.usa-section-dark {
       display: flex;
       flex-direction: column;
@@ -208,21 +216,18 @@
     padding-right: 2rem;
   }
 
-  .bgImage {
-    display: none;
-  }
-
   .usa-hero {
     width: auto;
     margin: 0;
-    padding: 0 1rem;
+    padding: 0 !important;
+    max-height: none !important;
 
     .usa-hero-callout {
       max-width: 100%;
     }
 
     h2 {
-      margin: 1rem 0;
+      margin: 2rem 0;
     }
   }
 }

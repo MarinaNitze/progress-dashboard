@@ -52,6 +52,7 @@
 .filter-section {
   form {
     display: flex;
+    align-items: flex-end;
     @media (max-width: 800px) {
       flex-direction: column;
     }

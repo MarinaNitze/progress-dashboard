@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { render, fireEvent, act } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import { mockGatsbyImageData } from '../../../test/test-utils';
 
 import Header from './Header';
@@ -31,21 +31,5 @@ describe('Header', () => {
     const title = getByText(siteTitle);
 
     expect(title).toBeInTheDocument();
-  });
-
-  it('sticky header appears on scroll up', () => {
-    const cmp = render(<Header headerLinks={headerLinks} />);
-    const header = cmp.container.querySelector('.cwp-header');
-
-    act(() => {
-      fireEvent.scroll(window, { target: { scrollY: 100 } });
-    });
-    expect(header?.classList.contains('sticky-nav')).toBe(false);
-
-    act(() => {
-      fireEvent.scroll(window, { target: { scrollY: 50 } });
-    });
-
-    expect(header?.classList.contains('sticky-nav')).toBe(true);
   });
 });
