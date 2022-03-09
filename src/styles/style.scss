@@ -66,14 +66,20 @@ li:not(:last-child) {
   margin-bottom: 1rem;
 }
 
-a {
+a, button {
   font-size: 1.3rem;
   font-weight: 300;
   text-decoration: none;
-  color: #05447e;
+  border: none;
+  background: white;
+  color: $link-text;
+}
+
+a:hover, button:hover {
+  text-decoration: underline;
+  color: $secondary;
 }
 
 a:hover {
-  text-decoration: underline;
-  color: #fe6659;
+  background-color: $light;
 }

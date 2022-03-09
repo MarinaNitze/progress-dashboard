@@ -114,24 +114,46 @@ li.usa-card {
   margin-bottom: 1rem;
 }
 
-.compare {
+.usa-card__container.compare {
+  height: auto;
   border: 1px solid $light !important;
   .media {
     padding: .5rem 0;
   }
+
   .content {
     padding-top: .5rem;;
-  }
-  ul {
-    list-style: none;
-    padding-inline-start: 0;
-    li {
-      a {
-        font-size: 1rem;
+    button {
+      // make button wider so text fits on one line
+      width: 130%;
+      margin-left: -15%;
+      @media (max-width: 480px) {
+        width: 100%;
+        margin-left: 0;
+      }
+      text-align: center;
+      margin-top: 1rem;
+      text-decoration: underline;
+    }
+
+    .centered {
+      width: 120%;
+      margin-left: -10%;
+      text-align: center;
+      .implemented-icon {
+        margin-left: 0;
       }
     }
-    li:not(:last-child) {
-      margin-bottom: .5rem;
+
+    ul {
+      list-style: none;
+      padding-inline-start: 0;
+      li {
+        margin-bottom: .5rem;
+        a {
+          font-size: 1rem;
+        }
+      }
     }
   }
 
@@ -152,6 +174,7 @@ li.usa-card {
   }
   .usa-card__header {
     padding-bottom: 0;
+    height: 3.5rem;
   }
   h3{
     font-size: 1.3rem;

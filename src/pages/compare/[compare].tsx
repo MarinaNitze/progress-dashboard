@@ -20,6 +20,7 @@ import Card from '../../components/card/Card';
 import useDataPractices, { Practice } from '../../hooks/useDataPractices';
 
 import '../home.scss';
+import './compare.scss';
 
 const PRACTICE_LINK_MAP: Record<Practice, string> = {
   'No witnesses': '/topic/out-of-state-background-checks#what-we-can-do',
@@ -150,19 +151,44 @@ export default function Compare({ params: { compare } }: PageProps) {
     },
   ];
 
-  const createCardContent = (stateData: typeof practiceDataByState[0]) => (
-    <ul>
-      {stateData.practices.map(p => (
-        <li
-          key={p.practiceName}
-          className={p.bool ? 'implemented' : 'not-implemented'}
-        >
-          {p.bool ? implementedIcon : ''}{' '}
-          <Link to={PRACTICE_LINK_MAP[p.practiceName]}>{p.practiceName}</Link>
-        </li>
-      ))}
-    </ul>
-  );
+  const createCardContent = (stateData: typeof practiceDataByState[0]) => {
+    return (
+      <div>
+        <ul>
+          {stateData.practices.map(p => (
+            <li
+              key={p.practiceName}
+              className={p.bool ? 'implemented' : 'not-implemented'}
+            >
+              {p.bool ? implementedIcon : ''}{' '}
+              <Link to={PRACTICE_LINK_MAP[p.practiceName]}>
+                {p.practiceName}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
+    );
+  };
+
+  const createCardPlaceholderContent = (
+    stateData: typeof practiceDataByState[0],
+  ) => {
+    const implementedPracticesCount = stateData.practices.filter(
+      p => p.bool,
+    ).length;
+    return (
+      <div className="centered">
+        {!!implementedPracticesCount ? implementedIcon : ''}
+        {` ${implementedPracticesCount} of 5 implemented`}
+      </div>
+    );
+  };
+
+  // Default state: undefined.
+  // When bool = true, force hide all
+  // when bool = false, force show all
+  const [hideAll, setHideAll] = useState<boolean | undefined>(undefined);
 
   return (
     <Layout>
@@ -174,7 +200,7 @@ export default function Compare({ params: { compare } }: PageProps) {
         />
       </section>
       <Breadcrumbs crumbLabel="Compare" />
-      <main className="cwp-main home">
+      <main className="cwp-main home compare">
         <GridContainer>
           <section className="intro-section">
             <Grid>
@@ -248,13 +274,36 @@ export default function Compare({ params: { compare } }: PageProps) {
           </section>
           <section className="compare-section">
             <Grid>
-              <p className="total">{filteredPractices.length} total results</p>
+              <div className="row">
+                <p className="total">
+                  {filteredPractices.length} total results
+                </p>
+                <div className="flex-start mobile-col">
+                  <p className="show-hide-title">Implemented Recommendations</p>
+                  <div className="flex-start">
+                    <button
+                      className={`${hideAll === true ? 'active' : ''}`}
+                      onClick={() => setHideAll(true)}
+                    >
+                      Hide all
+                    </button>
+                    <hr />
+                    <button
+                      className={`${hideAll === false ? 'active' : ''}`}
+                      onClick={() => setHideAll(false)}
+                    >
+                      Show all
+                    </button>
+                  </div>
+                </div>
+              </div>
               <CardGroup>
                 {filteredPractices.map(fp => (
                   <Card
                     key={fp.code}
                     title={fp.name}
                     content={createCardContent(fp)}
+                    placeholderHiddenContent={createCardPlaceholderContent(fp)}
                     layout="compare"
                     className="compare-width"
                     image={`/src/images/compare/${
@@ -263,6 +312,10 @@ export default function Compare({ params: { compare } }: PageProps) {
                     imgAlt={`${
                       fp.practices.filter(p => p.bool).length
                     } out of 5`}
+                    forceHide={hideAll}
+                    defaultHidden={true}
+                    showText={<>Show recommendations</>}
+                    hideText={<>Hide recommendations</>}
                   />
                 ))}
               </CardGroup>

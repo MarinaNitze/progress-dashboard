@@ -1,4 +1,4 @@
-import React, { ReactElement } from 'react';
+import React, { ReactElement, useEffect, useState } from 'react';
 import { navigate } from 'gatsby';
 import {
   Card as CardCmp,
@@ -24,13 +24,18 @@ export type CardProps = {
   link?: string;
   linkText?: string;
   content?: string | ReactElement;
+  placeholderHiddenContent?: string | ReactElement;
+  showText?: string | ReactElement;
+  hideText?: string | ReactElement;
+  forceHide?: boolean | undefined;
+  defaultHidden?: boolean;
   dataCy?: string;
   className?: string;
 };
 
 const gridLayouts = {
-  tablet: { topic: true, sm: 6, md: 12, lg: 12, compare: 3 },
-  desktop: { topic: true, sm: 4, md: 8, lg: 12, compare: 2 },
+  tablet: { topic: true, sm: 6, md: 12, lg: 12, compare: 4 },
+  desktop: { topic: true, sm: 4, md: 8, lg: 12, compare: 3 },
 };
 
 function mediaLayout(
@@ -49,6 +54,11 @@ export default function Card({
   link,
   linkText,
   content,
+  placeholderHiddenContent,
+  showText,
+  hideText,
+  forceHide,
+  defaultHidden = false,
   dataCy,
   layout = 'lg',
 }: CardProps) {
@@ -71,6 +81,13 @@ export default function Card({
       />
     );
   }
+
+  const [isHidden, setIsHidden] = useState(forceHide ?? defaultHidden);
+  useEffect(() => {
+    if (typeof forceHide === 'boolean') {
+      setIsHidden(forceHide);
+    }
+  }, [forceHide]);
 
   return (
     <CardCmp
@@ -99,11 +116,24 @@ export default function Card({
       )}
       {content && (
         <CardBody className="content">
-          {typeof content === 'string' ? (
+          {isHidden ? (
+            placeholderHiddenContent ?? ''
+          ) : typeof content === 'string' ? (
             <ReactMarkdown>{content}</ReactMarkdown>
           ) : (
             content
           )}
+
+          {
+            // Only include show/hide button if text is provided
+            showText && hideText ? (
+              <button onClick={() => setIsHidden(h => !h)}>
+                {isHidden ? showText : hideText}
+              </button>
+            ) : (
+              ''
+            )
+          }
         </CardBody>
       )}
       {layout === 'lg' && link ? (
