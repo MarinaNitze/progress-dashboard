@@ -44,11 +44,11 @@ export default function Header({ headerLinks }: HeaderProps) {
   };
 
   // Change header links based on how menu is being displayed:
-  // If screen size > 800px, then we're in full width view so all links should be included
+  // If !showMenu and !showSearch, then it's the normal full-width menu (b/c these vars can only be affected by buttons that are only accessible in mobile)
   // else, if showSearch, then set header links to empty array ()
   // else, filter out search link to get desired mobile menu items
   const filteredHeaderLinks =
-    window.innerWidth > 800
+    !showSearch && !showMenu
       ? headerLinks
       : showSearch
       ? []
