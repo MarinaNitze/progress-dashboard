@@ -185,7 +185,7 @@
     }
   }
 
-  .mission-hero {
+  .mission-hero, .cwp-home-hero {
     .usa-hero-callout.usa-section-dark {
       display: flex;
       flex-direction: column;
@@ -208,14 +208,11 @@
     padding-right: 2rem;
   }
 
-  .bgImage {
-    display: none;
-  }
-
   .usa-hero {
     width: auto;
     margin: 0;
-    padding: 0 1rem;
+    padding: 0 !important;
+    max-height: none !important;
 
     .usa-hero-callout {
       max-width: 100%;
