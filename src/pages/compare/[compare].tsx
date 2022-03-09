@@ -17,7 +17,10 @@ import Hero from '../../components/hero/Hero';
 import Breadcrumbs from '../../components/breadcrumbs/Breadcrumbs';
 import Card from '../../components/card/Card';
 
-import useDataPractices, { Practice, Topic } from '../../hooks/useDataPractices';
+import useDataPractices, {
+  Practice,
+  Topic,
+} from '../../hooks/useDataPractices';
 
 import '../home.scss';
 import './compare.scss';
@@ -35,13 +38,14 @@ const PRACTICE_LINK_MAP: Record<Practice, string> = {
   'Ask youth for placement options': '/topic/ask-youth-for-placement-options',
   'Ask kin for more kin': '/topic/ask-kin-for-more-kin',
   'Formal plan to stay connected': '/topic/formal-plan-to-stay-connected',
-  'Expansive legal definition of kin': '/topic/expansive-legal-defintion-of-kin'
+  'Expansive legal definition of kin':
+    '/topic/expansive-legal-defintion-of-kin',
 };
 
 const COMPARE_TOPIC_FULL_TITLE = {
   'Background Checks': 'Out of State Background Checks (Adam Walsh Checks)',
-  'Family Finding': 'Family and Kin Finding'
-}
+  'Family Finding': 'Family and Kin Finding',
+};
 
 export default function Compare({ params: { compare } }: PageProps) {
   // Create a typed version of the url "compare" param
@@ -49,21 +53,15 @@ export default function Compare({ params: { compare } }: PageProps) {
   // but some amount of type-safety with all the stuff going on here is nice)
   const compareTopic = compare as Topic;
 
-  const implementedSvg =
-    useGatsbyImages()['images/compare/implementedMedium.svg'].publicURL;
-  const implementedIcon = (
-    <img className="implemented-icon" src={implementedSvg} alt="implemented" />
-  );
-
   const practicesByState = useDataPractices().practicesByState;
-  // Create a list of which practices apply to the current compare topic 
-   const topicPractices = practicesByState[0].practices
-   .filter(practice => practice.topic === compareTopic)
-   .map(practice => practice.practiceName);
+  // Create a list of which practices apply to the current compare topic
+  const topicPractices = practicesByState[0].practices
+    .filter(practice => practice.topic === compareTopic)
+    .map(practice => practice.practiceName);
 
-  // Create a processed list of practice data by state, 
+  // Create a processed list of practice data by state,
   // which only includes the practices for the current compare topic
-  // and is sorted alphabetically by state name 
+  // and is sorted alphabetically by state name
   const practiceDataByState = practicesByState
     .reduce<typeof practicesByState>((acc, state) => {
       const filteredPractices = state.practices.filter(
@@ -162,9 +160,15 @@ export default function Compare({ params: { compare } }: PageProps) {
     { value: '7500000', label: 'Greater than 7.5 Million' },
   ];
 
-  const recOptions: { value: Practice; label: string }[] = topicPractices
-    .map(practice => ({ value: practice, label: practice }));
+  const recOptions: { value: Practice; label: string }[] = topicPractices.map(
+    practice => ({ value: practice, label: practice }),
+  );
 
+  const implementedSvg =
+    useGatsbyImages()['images/compare/implementedMedium.svg'].publicURL;
+  const implementedIcon = (
+    <img className="implemented-icon" src={implementedSvg} alt="implemented" />
+  );
   const createCardContent = (stateData: typeof practiceDataByState[0]) => {
     return (
       <div>
@@ -194,7 +198,7 @@ export default function Compare({ params: { compare } }: PageProps) {
     return (
       <div className="centered">
         {!!implementedPracticesCount ? implementedIcon : ''}
-        {` ${implementedPracticesCount} of 5 implemented`}
+        {` ${implementedPracticesCount} of ${topicPractices.length} implemented`}
       </div>
     );
   };
@@ -219,20 +223,18 @@ export default function Compare({ params: { compare } }: PageProps) {
           <section className="intro-section">
             <Grid>
               <p>
-              View and compare which states and territories in the U.S. have
-                implemented our {topicPractices.length} recommendations for
-                {' '}{COMPARE_TOPIC_FULL_TITLE[compareTopic]}:{' '}
-                {
-                  topicPractices.map((practice, idx) => (
-                    <>
-                      {idx === topicPractices.length - 1 ? 'and ': ''}
-                      <Link to={PRACTICE_LINK_MAP[practice]}>
-                        {practice.toLowerCase()}
-                      </Link>
-                      {idx < topicPractices.length - 1 ? ', ': '.'}
-                    </>
-                  ))
-                }
+                View and compare which states and territories in the U.S. have
+                implemented our {topicPractices.length} recommendations for{' '}
+                {COMPARE_TOPIC_FULL_TITLE[compareTopic]}:{' '}
+                {topicPractices.map((practice, idx) => (
+                  <>
+                    {idx === topicPractices.length - 1 ? 'and ' : ''}
+                    <Link to={PRACTICE_LINK_MAP[practice]}>
+                      {practice.toLowerCase()}
+                    </Link>
+                    {idx < topicPractices.length - 1 ? ', ' : '.'}
+                  </>
+                ))}
               </p>
               <h2 className="features-title">State by State Compare</h2>
             </Grid>
@@ -320,10 +322,10 @@ export default function Compare({ params: { compare } }: PageProps) {
                     className="compare-width"
                     image={`/src/images/compare/${
                       fp.practices.filter(p => p.bool).length
-                    }Of5.svg`}
+                    }Of${topicPractices.length}.svg`}
                     imgAlt={`${
                       fp.practices.filter(p => p.bool).length
-                    } out of 5`}
+                    } out of ${topicPractices.length}`}
                     forceHide={hideAll}
                     defaultHidden={true}
                     showText={<>Show recommendations</>}
