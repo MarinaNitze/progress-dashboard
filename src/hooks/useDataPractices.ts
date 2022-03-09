@@ -2,6 +2,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 import { PracticesDataQuery } from '../../graphql-types';
 import useDataStates from './useDataStates';
 import { stateCode } from '../types/stateCode';
+import { PracticeName, Topic } from '../types/compare';
 
 export default function useDataPractices() {
   const { practicesData } = useStaticQuery<PracticesDataQuery>(graphql`
@@ -83,7 +84,7 @@ export default function useDataPractices() {
         population: states.statesData[key].population,
         admin: states.statesData[key].admin,
         practices: practices.map(p => ({
-          practiceName: p.data?.Name as Practice,
+          practiceName: p.data?.Name as PracticeName,
           topic: p.data?.Topic as Topic,
           value: p.data?.[key as stateCode],
         })),
@@ -96,26 +97,3 @@ export default function useDataPractices() {
 
   return { practicesByState, rawPractices: practicesData };
 }
-
-/** Copied from values in air table data to reduce magic string-y ness **/
-export const enum Value {
-  full = 'Fully Implemented',
-  partial = 'Partially Implemented',
-  not = 'Not Implemented',
-  na = 'NA',
-}
-
-export type Topic = 'Background Checks' | 'Family Finding';
-export type Practice =
-  | 'No witnesses'
-  | 'No fee'
-  | 'No notary'
-  | 'General inbox for receiving requests'
-  | 'Accepts electronic requests'
-  | 'Social media'
-  | 'Ongoing activity'
-  | 'Senior staff sign-off'
-  | 'Ask youth for placement options'
-  | 'Ask kin for more kin'
-  | 'Formal plan to stay connected'
-  | 'Expansive legal definition of kin';

@@ -17,16 +17,12 @@ import Hero from '../../components/hero/Hero';
 import Breadcrumbs from '../../components/breadcrumbs/Breadcrumbs';
 import Card from '../../components/card/Card';
 
-import useDataPractices, {
-  Practice,
-  Topic,
-  Value,
-} from '../../hooks/useDataPractices';
-
 import '../home.scss';
 import './compare.scss';
+import { PracticeName, Topic, Value } from '../../types/compare';
+import useDataPractices from '../../hooks/useDataPractices';
 
-const PRACTICE_LINK_MAP: Record<Practice, string> = {
+const PRACTICE_LINK_MAP: Record<PracticeName, string> = {
   // Background checks
   'No witnesses': '/topic/out-of-state-background-checks#what-we-can-do',
   'No fee': '/topic/out-of-state-background-checks#what-we-can-do',
@@ -163,7 +159,7 @@ export default function Compare({ params: { compare } }: PageProps) {
     { value: '7500000', label: 'Greater than 7.5 Million' },
   ];
 
-  const recOptions: { value: Practice; label: string }[] = topicPractices.map(
+  const recOptions: { value: PracticeName; label: string }[] = topicPractices.map(
     practice => ({ value: practice, label: practice }),
   );
 
@@ -237,7 +233,6 @@ export default function Compare({ params: { compare } }: PageProps) {
   // when bool = false, force show all
   const [hideAll, setHideAll] = useState<boolean | undefined>(undefined);
 
-  console.log(filteredPractices);
   return (
     <Layout>
       <section id="hero-section">
