@@ -9,15 +9,24 @@
   padding-right: 0;
 }
 
-.cwp-topic-hero .gatsby-image-wrapper img {
-  max-height: 345px;
+.cwp-topic-hero {
+  &.gatsby-image-wrapper img {
+    max-height: 345px;
+  }
+
+  @media (max-width: 800px) {
+    &.primary {
+      background-color: $light !important;
+    }
+
+    .bgImage {
+      display: none;
+    }
+  }
 }
 
-.cwp-main {
+.topic.cwp-main {
   margin: 2rem 1rem;
-  @media (max-width: 800px) {
-    margin: 2rem 0;
-  }
 }
 
 .section-title {

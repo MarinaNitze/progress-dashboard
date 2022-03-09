@@ -9,6 +9,10 @@
   position: sticky;
   top: 0;
 
+  @media (max-width: 800px) {
+    border-radius: 0;
+  }
+
   .usa-sidenav {
     background-color: $info;
     border-bottom: none;

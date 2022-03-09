@@ -4,6 +4,13 @@
   padding-bottom: 5rem;
 }
 
+.home.cwp-main {
+  margin: 2rem 1rem;
+  @media (max-width: 800px) {
+    margin: 2rem 0;
+  }
+}
+
 .cwp-topic-hero {
   min-height: 18.75rem;
   h1 {

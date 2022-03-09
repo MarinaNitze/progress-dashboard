@@ -123,7 +123,7 @@ export default function Recommendation({
           id="main-content"
           desktop={{ col: 12 }}
         >
-          <main className="cwp-main">
+          <main className="cwp-main recommendation">
             {selectedRecommendation?.about && (
               <Grid id="about-this-recommendation">
                 <section>
