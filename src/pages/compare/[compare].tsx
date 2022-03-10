@@ -17,28 +17,50 @@ import Hero from '../../components/hero/Hero';
 import Breadcrumbs from '../../components/breadcrumbs/Breadcrumbs';
 import Card from '../../components/card/Card';
 
-import useDataPractices, { Practice } from '../../hooks/useDataPractices';
-
 import '../home.scss';
 import './compare.scss';
+import { PracticeName, Topic, Value } from '../../types/compare';
+import useDataPractices from '../../hooks/useDataPractices';
 
-const PRACTICE_LINK_MAP: Record<Practice, string> = {
+const PRACTICE_LINK_MAP: Record<PracticeName, string> = {
+  // Background checks
   'No witnesses': '/topic/out-of-state-background-checks#what-we-can-do',
   'No fee': '/topic/out-of-state-background-checks#what-we-can-do',
   'No notary': '/topic/out-of-state-background-checks#what-we-can-do',
   'General inbox for receiving requests':
     '/topic/out-of-state-background-checks#what-we-can-do',
   'Accepts electronic requests': '/recommendation/electronic-background-check',
+  // Family finding (NOTE: these links are made-up placeholders)
+  'Social media': '/topic/social-media',
+  'Ongoing activity': '/topic/ongoing-activity',
+  'Senior staff sign-off': '/topic/senior-staff-sign-off',
+  'Ask youth for placement options': '/topic/ask-youth-for-placement-options',
+  'Ask kin for more kin': '/topic/ask-kin-for-more-kin',
+  'Formal plan to stay connected': '/topic/formal-plan-to-stay-connected',
+  'Expansive legal definition of kin':
+    '/topic/expansive-legal-defintion-of-kin',
+};
+
+const COMPARE_TOPIC_FULL_TITLE = {
+  'Background Checks': 'Out of State Background Checks (Adam Walsh Checks)',
+  'Family Finding': 'Family and Kin Finding',
 };
 
 export default function Compare({ params: { compare } }: PageProps) {
-  const implementedSvg =
-    useGatsbyImages()['images/compare/implementedMedium.svg'].publicURL;
-  const implementedIcon = (
-    <img className="implemented-icon" src={implementedSvg} alt="implemented" />
-  );
+  // Create a typed version of the url "compare" param
+  // (because dealing with re-typing existing Gatsby PageProps is no,
+  // but some amount of type-safety with all the stuff going on here is nice)
+  const compareTopic = compare as Topic;
 
   const practicesByState = useDataPractices().practicesByState;
+  // Create a list of which practices apply to the current compare topic
+  const topicPractices = practicesByState[0].practices
+    .filter(practice => practice.topic === compareTopic)
+    .map(practice => practice.practiceName);
+
+  // Create a processed list of practice data by state,
+  // which only includes the practices for the current compare topic
+  // and is sorted alphabetically by state name
   const practiceDataByState = practicesByState
     .reduce<typeof practicesByState>((acc, state) => {
       const filteredPractices = state.practices.filter(
@@ -80,7 +102,7 @@ export default function Compare({ params: { compare } }: PageProps) {
 
     const filterByRec = (state: typeof practiceDataByState[0]) => {
       const practiceArr = state.practices
-        .filter(p => p.bool)
+        .filter(p => p.value === Value.partial || p.value === Value.full)
         .map(p => p.practiceName);
       return recFilter?.every(
         filter =>
@@ -137,20 +159,23 @@ export default function Compare({ params: { compare } }: PageProps) {
     { value: '7500000', label: 'Greater than 7.5 Million' },
   ];
 
-  const recOptions: { value: Practice; label: string }[] = [
-    { value: 'No witnesses', label: 'No witnesses' },
-    { value: 'No fee', label: 'No fee' },
-    { value: 'No notary', label: 'No notary' },
-    {
-      value: 'General inbox for receiving requests',
-      label: 'General inbox for receiving requests',
-    },
-    {
-      value: 'Accepts electronic requests',
-      label: 'Accepts electronic requests',
-    },
-  ];
+  const recOptions: { value: PracticeName; label: string }[] = topicPractices.map(
+    practice => ({ value: practice, label: practice }),
+  );
 
+  const implementedSvg =
+    useGatsbyImages()['images/compare/implementedMedium.svg'].publicURL;
+  const partialSvg = useGatsbyImages()['images/compare/partial.svg'].publicURL;
+  const implementedIcon = (
+    <img className="implemented-icon" src={implementedSvg} alt="implemented" />
+  );
+  const partialIcon = (
+    <img
+      className="partial-icon"
+      src={partialSvg}
+      alt="partially implemented"
+    />
+  );
   const createCardContent = (stateData: typeof practiceDataByState[0]) => {
     return (
       <div>
@@ -158,9 +183,17 @@ export default function Compare({ params: { compare } }: PageProps) {
           {stateData.practices.map(p => (
             <li
               key={p.practiceName}
-              className={p.bool ? 'implemented' : 'not-implemented'}
+              className={
+                p.value === Value.full || p.value === Value.partial
+                  ? 'implemented'
+                  : 'not-implemented'
+              }
             >
-              {p.bool ? implementedIcon : ''}{' '}
+              {p.value === Value.full
+                ? implementedIcon
+                : p.value === Value.partial
+                ? partialIcon
+                : ''}{' '}
               <Link to={PRACTICE_LINK_MAP[p.practiceName]}>
                 {p.practiceName}
               </Link>
@@ -174,13 +207,23 @@ export default function Compare({ params: { compare } }: PageProps) {
   const createCardPlaceholderContent = (
     stateData: typeof practiceDataByState[0],
   ) => {
-    const implementedPracticesCount = stateData.practices.filter(
-      p => p.bool,
+    const fullyImplementedCount = stateData.practices.filter(
+      p => p.value === Value.full,
     ).length;
+    const partiallyImplementedCount = stateData.practices.filter(
+      p => p.value === Value.partial,
+    ).length;
+
     return (
       <div className="centered">
-        {!!implementedPracticesCount ? implementedIcon : ''}
-        {` ${implementedPracticesCount} of 5 implemented`}
+        {!!fullyImplementedCount
+          ? implementedIcon
+          : !!partiallyImplementedCount
+          ? partialIcon
+          : ''}
+        {` ${fullyImplementedCount + partiallyImplementedCount} of ${
+          topicPractices.length
+        } implemented or in progress`}
       </div>
     );
   };
@@ -206,21 +249,17 @@ export default function Compare({ params: { compare } }: PageProps) {
             <Grid>
               <p>
                 View and compare which states and territories in the U.S. have
-                implemented our recommendations for Out of State Background
-                (Adam Walsh) Checks:{' '}
-                <Link to={PRACTICE_LINK_MAP['No witnesses']}>no witnesses</Link>
-                , <Link to={PRACTICE_LINK_MAP['No fee']}>no fee</Link>,{' '}
-                <Link to={PRACTICE_LINK_MAP['No notary']}>no notary</Link>,{' '}
-                <Link
-                  to={PRACTICE_LINK_MAP['General inbox for receiving requests']}
-                >
-                  general inboxes for receiving requests
-                </Link>
-                ,{' '}
-                <Link to={PRACTICE_LINK_MAP['Accepts electronic requests']}>
-                  and accept electronic requests
-                </Link>
-                .
+                implemented our {topicPractices.length} recommendations for{' '}
+                {COMPARE_TOPIC_FULL_TITLE[compareTopic]}:{' '}
+                {topicPractices.map((practice, idx) => (
+                  <>
+                    {idx === topicPractices.length - 1 ? 'and ' : ''}
+                    <Link to={PRACTICE_LINK_MAP[practice]}>
+                      {practice.toLowerCase()}
+                    </Link>
+                    {idx < topicPractices.length - 1 ? ', ' : '.'}
+                  </>
+                ))}
               </p>
               <h2 className="features-title">State by State Compare</h2>
             </Grid>
@@ -307,11 +346,13 @@ export default function Compare({ params: { compare } }: PageProps) {
                     layout="compare"
                     className="compare-width"
                     image={`/src/images/compare/${
-                      fp.practices.filter(p => p.bool).length
-                    }Of5.svg`}
+                      fp.practices.filter(p => p.value === 'Fully Implemented')
+                        .length
+                    }Of${topicPractices.length}.svg`}
                     imgAlt={`${
-                      fp.practices.filter(p => p.bool).length
-                    } out of 5`}
+                      fp.practices.filter(p => p.value === 'Fully Implemented')
+                        .length
+                    } out of ${topicPractices.length}`}
                     forceHide={hideAll}
                     defaultHidden={true}
                     showText={<>Show recommendations</>}
