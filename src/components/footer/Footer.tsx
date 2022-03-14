@@ -45,7 +45,7 @@ export default function Footer() {
             ))}
           </div>
           <div className="cr-section">
-            <p>© {getYear()} [WHO?]</p>
+            <p>© {getYear()}</p>
           </div>
         </section>
       </section>
