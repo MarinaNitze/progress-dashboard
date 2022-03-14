@@ -159,9 +159,8 @@ export default function Compare({ params: { compare } }: PageProps) {
     { value: '7500000', label: 'Greater than 7.5 Million' },
   ];
 
-  const recOptions: { value: PracticeName; label: string }[] = topicPractices.map(
-    practice => ({ value: practice, label: practice }),
-  );
+  const recOptions: { value: PracticeName; label: string }[] =
+    topicPractices.map(practice => ({ value: practice, label: practice }));
 
   const implementedSvg =
     useGatsbyImages()['images/compare/implementedMedium.svg'].publicURL;
