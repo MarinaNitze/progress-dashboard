@@ -62,13 +62,18 @@ export default function Header({ headerLinks }: HeaderProps) {
       <HeaderCmp
         className={`cwp-header ${direction === 'up' ? 'sticky-nav z-top' : ''}`}
         basic
+        data-cy="cwp-header"
       >
         <div className="usa-nav-container">
           <div className="usa-navbar">
             <NavMenuButton
               onClick={onClickShowMenu}
+              data-cy="cwp-header-menu-button"
               label={
-                <div className={`menu-button ${showMenu ? 'close' : ''}`}>
+                <div
+                  data-cy="cwp-header-menu-button-image-wrapper"
+                  className={`menu-button ${showMenu ? 'close' : ''}`}
+                >
                   <img
                     src={
                       showMenu
@@ -128,7 +133,9 @@ export default function Header({ headerLinks }: HeaderProps) {
             {
               // Add a menu title to the mobile menu nav overlay
               showMenu ? (
-                <div className="menu-title">child welfare playbook</div>
+                <div className="menu-title" data-cy="cwp-menu-title">
+                  child welfare playbook
+                </div>
               ) : (
                 ''
               )
