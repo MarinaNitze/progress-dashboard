@@ -18,7 +18,7 @@
     max-height: 2.8125rem;
 
     content: url('../../images/header/cwp-logo.svg');
-    @media (max-width: 480px) {
+    max-width: map-get($breakpoints, 'mobile-lg') {
       content: url('../../images/header/cwp-logo-mobile.svg');
       margin-top: 1rem;
     }
@@ -41,7 +41,7 @@
     margin: auto;
   }
 
-  @media (max-width: 800px) {
+  @media (max-width: map-get($breakpoints, 'tablet-lg')) {
     &.sticky-nav {
       position: sticky;
       top: 0px;
@@ -54,10 +54,10 @@
         color: $header-text;
         font-weight: bold;
         text-transform: none;
-    
+
         .menu-button {
           img {
-            margin: 0 .5rem;
+            margin: 0 0.5rem;
           }
           &.close {
             background-color: black;
@@ -71,7 +71,6 @@
           }
         }
       }
-    
     }
 
     .usa-nav.cwp-nav {
@@ -97,19 +96,29 @@
           color: white;
         }
 
-        // Hide "clear" button in edge/chrome 
-        input[type=text]::-ms-clear {  display: none; width : 0; height: 0; }
-        input[type=text]::-ms-reveal {  display: none; width : 0; height: 0; }
-        input[type="search"]::-webkit-search-decoration,
-        input[type="search"]::-webkit-search-cancel-button,
-        input[type="search"]::-webkit-search-results-button,
-        input[type="search"]::-webkit-search-results-decoration { display: none; }
-        // end 
-        
+        // Hide "clear" button in edge/chrome
+        input[type='text']::-ms-clear {
+          display: none;
+          width: 0;
+          height: 0;
+        }
+        input[type='text']::-ms-reveal {
+          display: none;
+          width: 0;
+          height: 0;
+        }
+        input[type='search']::-webkit-search-decoration,
+        input[type='search']::-webkit-search-cancel-button,
+        input[type='search']::-webkit-search-results-button,
+        input[type='search']::-webkit-search-results-decoration {
+          display: none;
+        }
+        // end
+
         .usa-button {
           background-color: $info !important;
           border-bottom: 2px solid white !important;
-          border-top: none!important;
+          border-top: none !important;
           border-left: none !important;
           border-right: none !important;
           border-radius: 0 !important;

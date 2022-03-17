@@ -6,7 +6,7 @@
 
 .home.cwp-main {
   margin: 2rem 1rem;
-  @media (max-width: 800px) {
+  @media (max-width: map-get($breakpoints, 'tablet-lg')) {
     margin: 2rem 0;
   }
 }
@@ -135,13 +135,13 @@
   .usa-button {
     background-color: inherit !important;
     border: none !important;
-    padding: 0 0 .25rem .25rem;
+    padding: 0 0 0.25rem 0.25rem;
     border-radius: 0 !important;
   }
   .usa-button:hover {
-      color: $secondary !important;
-      border-bottom: 4px solid $secondary !important;
-    }
+    color: $secondary !important;
+    border-bottom: 4px solid $secondary !important;
+  }
   .active {
     color: $secondary;
     border-bottom: 4px solid $secondary !important;
@@ -161,7 +161,6 @@
     }
   }
 
-
   ul {
     padding-inline-start: 0;
   }
@@ -180,7 +179,7 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: map-get($breakpoints, 'tablet-lg')) {
   .usa-grid {
     &.right {
       display: flex;
@@ -193,7 +192,8 @@
     }
   }
 
-  .mission-hero, .cwp-home-hero {
+  .mission-hero,
+  .cwp-home-hero {
     .usa-hero-callout.usa-section-dark {
       display: flex;
       flex-direction: column;
@@ -228,6 +228,74 @@
 
     h2 {
       margin: 2rem 0;
+    }
+  }
+}
+
+@media (max-width: map-get($breakpoints, 'mobile-lg')) {
+  .cwp-main {
+    &.home {
+      margin: 0;
+    }
+    .grid-container {
+      padding-left: 0;
+      padding-right: 0;
+
+      .features-title,
+      .topics-title {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+
+      .usa-card__container {
+        border-radius: 0;
+
+        &.lg {
+          margin-left: 0;
+          margin-right: 0;
+        }
+      }
+
+      .usa-card__footer.smallFooter {
+        padding-top: 3rem;
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    .topics-section {
+      .home-view-all-container {
+        display: flex;
+        justify-content: center;
+        padding-top: 2.75rem;
+        .home-view-all-button {
+          width: 75%;
+          padding: 1.25rem;
+        }
+      }
+      .usa-card-group {
+        flex-flow: row wrap;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        .usa-card {
+          max-width: 50%;
+          &:not(:last-child) {
+            flex: 50%;
+          }
+          &:last-child {
+            margin-right: auto;
+            margin-left: auto;
+          }
+        }
+        .usa-card__container {
+          border-radius: 0.5rem;
+          &:after {
+            flex: auto;
+          }
+        }
+      }
     }
   }
 }

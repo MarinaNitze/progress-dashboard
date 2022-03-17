@@ -14,7 +14,7 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: map-get($breakpoints, 'tablet-lg')) {
   .topics-section {
     padding: 3rem 0;
   }

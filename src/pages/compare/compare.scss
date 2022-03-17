@@ -7,7 +7,7 @@
     justify-content: space-between;
     margin: 2rem 0 1rem 0;
     font-size: 1.25rem;
-    @media (max-width: 480px) {
+    max-width: map-get($breakpoints, 'mobile-lg') {
       flex-direction: column-reverse;
     }
 
@@ -26,11 +26,10 @@
     }
 
     .mobile-col {
-      @media (max-width: 800px) {
+      @media (max-width: map-get($breakpoints, 'tablet-lg')) {
         flex-direction: column;
       }
     }
-
 
     button {
       &.active {
@@ -53,14 +52,14 @@
   form {
     display: flex;
     align-items: flex-end;
-    @media (max-width: 800px) {
+    @media (max-width: map-get($breakpoints, 'tablet-lg')) {
       flex-direction: column;
     }
   }
 
   fieldset {
     margin-right: 2rem;
-    @media (max-width: 800px) {
+    @media (max-width: map-get($breakpoints, 'tablet-lg')) {
       display: inline;
       width: 100%;
       margin-right: 0;
@@ -72,7 +71,7 @@
       font-family: Petrona;
       padding-right: 1rem;
 
-      @media (max-width: 800px) {
+      @media (max-width: map-get($breakpoints, 'tablet-lg')) {
         width: 100%;
       }
     }
@@ -88,13 +87,14 @@
     .select {
       display: flex;
       align-items: flex-end;
-      @media (max-width: 800px) {
+      @media (max-width: map-get($breakpoints, 'tablet-lg')) {
         flex-direction: column;
         align-items: normal;
       }
     }
 
-    #pop, #admin {
+    #pop,
+    #admin {
       min-width: 10rem;
     }
     #rec {

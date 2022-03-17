@@ -1,3 +1,5 @@
+@import '../../styles/settings.scss';
+
 .cwp-footer {
   display: flex;
   justify-content: space-between;
@@ -34,7 +36,7 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (min-width: map-get($breakpoints, 'mobile-lg')) and (max-width: map-get($breakpoints, 'tablet-lg')) {
   .cwp-footer {
     display: flex;
     flex-direction: column;
@@ -64,6 +66,39 @@
 
     .cr-section {
       align-self: center;
+    }
+  }
+}
+
+@media (max-width: map-get($breakpoints, 'mobile-lg')) {
+  .cwp-footer {
+    background-color: $footer-background;
+    padding: 3rem 1rem;
+    .coop-container {
+      .coop-text {
+        padding-left: 0.5rem;
+        padding-bottom: 1rem;
+      }
+      .footer-content {
+        justify-content: end;
+      }
+    }
+    .logo-area {
+      flex-flow: row wrap;
+      flex-direction: row;
+      flex-wrap: wrap;
+      row-gap: 2rem;
+      .logo-img:not(first) {
+        flex: 40%;
+        margin-right: 0;
+      }
+    }
+    .cr-section {
+      padding-right: 1rem;
+      padding-top: 1rem;
+      p {
+        font-size: 1rem;
+      }
     }
   }
 }

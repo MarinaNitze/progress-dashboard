@@ -40,11 +40,11 @@
   background-color: $secondary;
   display: flex;
   padding-left: 1.5rem;
-  padding-right:1.5rem;
+  padding-right: 1.5rem;
   place-items: center;
   color: $dark;
 
-  @media (max-width: 800px) {
+  @media (max-width: map-get($breakpoints, 'tablet-lg')) {
     padding-left: 1rem;
     padding-right: 2rem;
   }
@@ -64,7 +64,7 @@
   margin-left: 2%;
   background-color: $white;
   box-shadow: rgba(0, 0, 0, 0.35) 0rem 0.3rem 0.9rem;
-  position:absolute;
+  position: absolute;
 }
 
 .searchResult::-webkit-scrollbar {
