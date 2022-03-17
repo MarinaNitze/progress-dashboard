@@ -8,20 +8,24 @@ const headerLinks = [
   {
     to: '/topic',
     text: 'Topics',
+    dataCy: 'cwp-nav-topic-link',
   },
   {
     to: '/recommendation',
     text: 'Recommendations',
+    dataCy: 'cwp-nav-recommendation-link',
   },
   {
     to: '/compare',
     text: 'Compare',
+    dataCy: 'cwp-nav-compare-link',
   },
   {
     to: '/search',
     text: 'Search',
     iconPath: 'images/header/search.svg',
     iconClassname: 'search-icon',
+    dataCy: 'cwp-nav-search-link',
   },
 ];
 

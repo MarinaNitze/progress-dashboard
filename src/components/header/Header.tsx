@@ -21,6 +21,7 @@ type HeaderLinks = (GatsbyLinkProps<unknown> & {
   iconClassname?: string;
   iconAlt?: string;
   text: string;
+  dataCy?: string;
 })[];
 
 export default function Header({ headerLinks }: HeaderProps) {
@@ -112,8 +113,12 @@ export default function Header({ headerLinks }: HeaderProps) {
           </div>
           <PrimaryNav
             className={`cwp-nav ${showSearch ? 'search-nav' : ''}`}
-            items={filteredHeaderLinks.map(link => (
-              <Link className="font-family-body text-bold" to={link.to}>
+            items={filteredHeaderLinks.map((link, i) => (
+              <Link
+                className="font-family-body text-bold"
+                to={link.to}
+                data-cy={link?.dataCy ?? `nav-link-${i}`}
+              >
                 {link.text}
                 {link.iconPath && (
                   <img
