@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import {
   Header as HeaderCmp,
   NavMenuButton,
@@ -8,6 +8,7 @@ import {
 import useGatsbyImages from '../../hooks/useGatsbyImages';
 import { GatsbyLinkProps, navigate } from 'gatsby-link';
 import { Link } from 'gatsby';
+import useScrollDirection from '../../hooks/useScrollDirection';
 
 import './Header.scss';
 
@@ -23,6 +24,8 @@ type HeaderLinks = (GatsbyLinkProps<unknown> & {
 })[];
 
 export default function Header({ headerLinks }: HeaderProps) {
+  const scrollRef = useRef(0);
+  const direction = useScrollDirection(scrollRef);
   const [showMenu, setShowMenu] = useState(false);
   const [showSearch, setShowSearch] = useState(false);
   const imageMap = useGatsbyImages();
@@ -56,7 +59,10 @@ export default function Header({ headerLinks }: HeaderProps) {
 
   return (
     <>
-      <HeaderCmp className={`cwp-header sticky-nav z-top`} basic>
+      <HeaderCmp
+        className={`cwp-header ${direction === 'up' ? 'sticky-nav z-top' : ''}`}
+        basic
+      >
         <div className="usa-nav-container">
           <div className="usa-navbar">
             <NavMenuButton
