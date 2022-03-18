@@ -1,11 +1,13 @@
 /// <reference types="cypress" />
 
 describe('Mobile header', () => {
-  it('menu test', () => {
+  beforeEach(() => {
     cy.visit('/');
     cy.viewport(320, 480);
     cy.viewport('iphone-5');
+  });
 
+  it('should navigate through menu nav links area', () => {
     cy.get('[data-cy=cwp-header-menu-button-image-wrapper]').should(
       'have.not.class',
       'close',
@@ -34,6 +36,12 @@ describe('Mobile header', () => {
 
     cy.get('[data-cy=cwp-nav-compare-link]').should('have.text', 'Compare');
 
+    cy.get('[data-cy=cwp-header]')
+      .get('[data-cy=cwp-header-menu-button]')
+      .click();
+  });
+
+  it('should navigate through search nav area', () => {
     // data-testid is the built in e2e attribute from uswds. Was not able to custom include our
     // own data-cy attribute
     cy.get('[data-testid=navMenuButton]').then(buttons => {
