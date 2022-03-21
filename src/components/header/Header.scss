@@ -131,10 +131,13 @@
       }
 
       .menu-title {
-        font-family: Petrona;
-        border-bottom: 1px solid white;
-        font-size: 1.5rem;
-        color: white;
+        border-bottom: 1px solid $white;
+
+        a.menu-link {
+          font-family: Petrona;
+          font-size: 1.5rem;
+          color: $white;
+        }
       }
 
       .usa-nav__primary-item {

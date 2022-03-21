@@ -139,7 +139,9 @@ export default function Header({ headerLinks }: HeaderProps) {
               // Add a menu title to the mobile menu nav overlay
               showMenu ? (
                 <div className="menu-title" data-cy="cwp-menu-title">
-                  child welfare playbook
+                  <Link className="menu-link" to="/">
+                    child welfare playbook
+                  </Link>
                 </div>
               ) : (
                 ''
