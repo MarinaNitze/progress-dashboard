@@ -18,7 +18,7 @@
     max-height: 2.8125rem;
 
     content: url('../../images/header/cwp-logo.svg');
-    max-width: map-get($breakpoints, 'mobile-lg') {
+    @media (max-width: map-get($breakpoints, 'mobile-lg')) {
       content: url('../../images/header/cwp-logo-mobile.svg');
       margin-top: 1rem;
     }
