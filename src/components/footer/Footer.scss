@@ -4,6 +4,7 @@
   display: flex;
   justify-content: space-between;
   padding: 3rem 7rem;
+  background-color: $footer-background;
 
   .coop-container {
     display: flex;
@@ -72,7 +73,6 @@
 
 @media (max-width: map-get($breakpoints, 'mobile-lg')) {
   .cwp-footer {
-    background-color: $footer-background;
     padding: 3rem 1rem;
     .coop-container {
       .coop-text {
