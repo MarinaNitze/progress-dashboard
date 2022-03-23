@@ -118,16 +118,16 @@ li.usa-card {
   height: auto;
   border: 1px solid $light !important;
   .media {
-    padding: .5rem 0;
+    padding: 0.5rem 0;
   }
 
   .content {
-    padding-top: .5rem;;
+    padding-top: 0.5rem;
     button {
       // make button wider so text fits on one line
       width: 130%;
       margin-left: -15%;
-      @media (max-width: 480px) {
+      max-width: map-get($breakpoints, 'mobile-lg') {
         width: 100%;
         margin-left: 0;
       }
@@ -140,7 +140,8 @@ li.usa-card {
       width: 120%;
       margin-left: -10%;
       text-align: center;
-      .implemented-icon, .partial-icon {
+      .implemented-icon,
+      .partial-icon {
         margin-left: 0;
       }
     }
@@ -149,7 +150,7 @@ li.usa-card {
       list-style: none;
       padding-inline-start: 0;
       li {
-        margin-bottom: .5rem;
+        margin-bottom: 0.5rem;
         a {
           font-size: 1rem;
         }
@@ -173,21 +174,21 @@ li.usa-card {
   .implemented {
     padding-left: 1.5rem;
   }
-  .usa-card{
+  .usa-card {
     width: 15rem;
   }
   .usa-card__header {
     padding-bottom: 0;
     height: 3.5rem;
   }
-  h3{
+  h3 {
     font-size: 1.3rem;
     text-align: center;
   }
 }
 
-@media (min-width: 64em){
+@media (min-width: 64em) {
   .compare-width {
-      width: 20% !important;
+    width: 20% !important;
   }
 }

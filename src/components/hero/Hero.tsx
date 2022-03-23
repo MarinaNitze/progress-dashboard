@@ -59,7 +59,11 @@ export default function Hero({
             backgroundColor === 'dark' && ' white-text'
           }`}
         >
-          {title && imageAlign === 'left' ? <h2>{title}</h2> : <h1>{title}</h1>}
+          {title && imageAlign === 'left' ? (
+            <h2 data-cy={`${dataCy}-title`}>{title}</h2>
+          ) : (
+            <h1 data-cy={`${dataCy}-title`}>{title}</h1>
+          )}
           {children}
         </div>
       </div>

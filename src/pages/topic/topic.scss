@@ -14,7 +14,7 @@
     max-height: 345px;
   }
 
-  @media (max-width: 800px) {
+  @media (max-width: map-get($breakpoints, 'tablet-lg')) {
     &.primary {
       background-color: $light !important;
     }

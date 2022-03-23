@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect, SyntheticEvent } from 'react';
 import {
   Header as HeaderCmp,
   NavMenuButton,
   PrimaryNav,
-  Search,
 } from '@trussworks/react-uswds';
 import useGatsbyImages from '../../hooks/useGatsbyImages';
 import { GatsbyLinkProps, navigate } from 'gatsby-link';
 import { Link } from 'gatsby';
+import useScrollDirection from '../../hooks/useScrollDirection';
 
 import './Header.scss';
 
@@ -20,9 +20,13 @@ type HeaderLinks = (GatsbyLinkProps<unknown> & {
   iconClassname?: string;
   iconAlt?: string;
   text: string;
+  dataCy?: string;
 })[];
 
 export default function Header({ headerLinks }: HeaderProps) {
+  const scrollRef = useRef(0);
+  const searchInputRef = useRef<HTMLInputElement>(null);
+  const direction = useScrollDirection(scrollRef);
   const [showMenu, setShowMenu] = useState(false);
   const [showSearch, setShowSearch] = useState(false);
   const imageMap = useGatsbyImages();
@@ -37,11 +41,28 @@ export default function Header({ headerLinks }: HeaderProps) {
     setShowSearch(prevShowSearch => !prevShowSearch);
   };
 
+  const onBlurCloseSearch = ({
+    currentTarget,
+  }: SyntheticEvent<HTMLFormElement>) => {
+    // Captures search input and button container to detect blur outside child elements
+    requestAnimationFrame(() => {
+      if (!currentTarget.contains(document.activeElement)) {
+        setShowSearch(false);
+      }
+    });
+  };
+
   const submitSearch = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const searchTerm = (e.target as any)[0].value;
     navigate('/search', { state: { searchTerm } });
   };
+
+  useEffect(() => {
+    if (showSearch) {
+      searchInputRef?.current?.focus();
+    }
+  }, [showSearch, searchInputRef?.current]);
 
   // Change header links based on how menu is being displayed:
   // If !showMenu and !showSearch, then it's the normal full-width menu (b/c these vars can only be affected by buttons that are only accessible in mobile)
@@ -54,15 +75,28 @@ export default function Header({ headerLinks }: HeaderProps) {
       ? []
       : headerLinks.filter(h => h.text !== 'Search');
 
+  const closeMenuAll = () => {
+    setShowMenu(false);
+    setShowSearch(false);
+  };
+
   return (
     <>
-      <HeaderCmp className={`cwp-header sticky-nav z-top`} basic>
+      <HeaderCmp
+        className={`cwp-header ${direction === 'up' ? 'sticky-nav z-top' : ''}`}
+        basic
+        data-cy="cwp-header"
+      >
         <div className="usa-nav-container">
           <div className="usa-navbar">
             <NavMenuButton
               onClick={onClickShowMenu}
+              data-cy="cwp-header-menu-button"
               label={
-                <div className={`menu-button ${showMenu ? 'close' : ''}`}>
+                <div
+                  data-cy="cwp-header-menu-button-image-wrapper"
+                  className={`menu-button ${showMenu ? 'close' : ''}`}
+                >
                   <img
                     src={
                       showMenu
@@ -74,7 +108,11 @@ export default function Header({ headerLinks }: HeaderProps) {
                 </div>
               }
             />
-            <Link to="/">
+            <Link
+              className="mobile-header-home-link"
+              onClick={closeMenuAll}
+              to="/"
+            >
               <img
                 className="cwp-logo"
                 alt="cwp-logo"
@@ -101,8 +139,12 @@ export default function Header({ headerLinks }: HeaderProps) {
           </div>
           <PrimaryNav
             className={`cwp-nav ${showSearch ? 'search-nav' : ''}`}
-            items={filteredHeaderLinks.map(link => (
-              <Link className="font-family-body text-bold" to={link.to}>
+            items={filteredHeaderLinks.map((link, i) => (
+              <Link
+                className="font-family-body text-bold"
+                to={link.to}
+                data-cy={link?.dataCy ?? `nav-link-${i}`}
+              >
                 {link.text}
                 {link.iconPath && (
                   <img
@@ -122,7 +164,11 @@ export default function Header({ headerLinks }: HeaderProps) {
             {
               // Add a menu title to the mobile menu nav overlay
               showMenu ? (
-                <div className="menu-title">child welfare playbook</div>
+                <div className="menu-title" data-cy="cwp-menu-title">
+                  <Link className="menu-link" to="/">
+                    child welfare playbook
+                  </Link>
+                </div>
               ) : (
                 ''
               )
@@ -130,10 +176,36 @@ export default function Header({ headerLinks }: HeaderProps) {
             {
               // Add search bar element to otherwise empty mobile search nav overlay
               showSearch ? (
-                <Search
-                  placeholder="Search the playbook"
+                <form
                   onSubmit={submitSearch}
-                />
+                  data-cy="mobile-search-form"
+                  className="usa-search"
+                  role="mobile-search"
+                  onBlur={onBlurCloseSearch}
+                >
+                  <label data-cy="mobile-search-label" className="usa-sr-only">
+                    Search
+                  </label>
+                  <input
+                    ref={searchInputRef}
+                    data-cy="mobile-header-search-input"
+                    className="usa-input"
+                    id="search-field"
+                    name="mobile-search"
+                    type="search"
+                    placeholder="Search the playbook"
+                  />
+                  <button
+                    type="submit"
+                    className="usa-button mobile-search-button"
+                    data-testid="button"
+                    autoFocus
+                  >
+                    <span className="mobile-header-search-icon usa-search__submit-text">
+                      Search
+                    </span>
+                  </button>
+                </form>
               ) : (
                 ''
               )

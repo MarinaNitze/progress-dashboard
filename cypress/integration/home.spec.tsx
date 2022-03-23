@@ -9,15 +9,19 @@ describe('Home page', () => {
     cy.get('[data-cy=lg-feature-home]')
       .get('.usa-card__header')
       .first()
-      .should('have.text', 'Full width feature');
+      .should(
+        'have.text',
+        `Let’s improve out-of-state background checks (“Adam Walsh checks”).`,
+      );
 
     cy.get('[data-cy=topics-button-home]').should(
       'have.text',
       'View all Topics',
     );
 
-    cy.get('[data-cy=mission-hero-home]')
-      .get('.mission-title')
-      .should('have.text', 'Our mission');
+    cy.get('[data-cy=mission-hero-home-title]').should(
+      'have.text',
+      'Our mission',
+    );
   });
 });

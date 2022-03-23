@@ -1,3 +1,5 @@
+@import '../../styles/settings.scss';
+
 .breadcrumb {
   margin: 1rem 1rem 1rem 5rem;
 }
@@ -15,7 +17,7 @@ li.usa-breadcrumb__list-item.usa-current {
   font-size: 0.875rem;
 }
 
-@media (max-width: 800px) {
+@media (max-width: map-get($breakpoints, 'tablet-lg')) {
   .breadcrumb {
     display: none;
   }

@@ -46,8 +46,9 @@ export default function TopicsSection() {
             ))}
           </CardGroup>
         </Grid>
-        <Grid>
+        <Grid className="home-view-all-container">
           <Button
+            className="home-view-all-button"
             data-cy="topics-button-home"
             type="button"
             onClick={() => {
