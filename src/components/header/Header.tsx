@@ -44,7 +44,7 @@ export default function Header({ headerLinks }: HeaderProps) {
   const onBlurCloseSearch = ({
     currentTarget,
   }: SyntheticEvent<HTMLFormElement>) => {
-    // Captures search input and button container to detect blur outide child elements
+    // Captures search input and button container to detect blur outside child elements
     requestAnimationFrame(() => {
       if (!currentTarget.contains(document.activeElement)) {
         setShowSearch(false);
