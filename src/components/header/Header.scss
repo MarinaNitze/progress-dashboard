@@ -88,12 +88,23 @@
 
         .usa-search {
           padding: 0;
+          @media (max-width: map-get($breakpoints, 'mobile-lg')) {
+            display: flex;
+            align-items: center;
+          }
         }
 
         .usa-input {
           background: $info;
-          border-color: white;
-          color: white;
+          border-color: $white;
+          color: $white;
+          @media (max-width: map-get($breakpoints, 'mobile-lg')) {
+            width: 80%;
+            &:focus {
+              outline-color: $white;
+              border-bottom-width: 0px;
+            }
+          }
         }
 
         // Hide "clear" button in edge/chrome
@@ -117,11 +128,19 @@
 
         .usa-button {
           background-color: $info !important;
-          border-bottom: 2px solid white !important;
-          border-top: none !important;
-          border-left: none !important;
-          border-right: none !important;
           border-radius: 0 !important;
+          &.mobile-search-button {
+            @media (max-width: map-get($breakpoints, 'mobile-lg')) {
+              border: 0.25rem solid $white !important;
+              border-left-style: none !important;
+              padding: 1rem;
+              &:focus {
+                outline-offset: -0.25rem;
+                outline-color: $white;
+                border-style: none !important;
+              }
+            }
+          }
         }
       }
 
@@ -157,6 +176,14 @@
 
     .usa-navbar {
       justify-content: space-between;
+    }
+  }
+
+  @media (max-width: map-get($breakpoints, 'mobile-lg')) {
+    .mobile-header-home-link {
+      &:hover {
+        background-color: inherit;
+      }
     }
   }
 

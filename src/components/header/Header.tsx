@@ -1,9 +1,8 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect, SyntheticEvent } from 'react';
 import {
   Header as HeaderCmp,
   NavMenuButton,
   PrimaryNav,
-  Search,
 } from '@trussworks/react-uswds';
 import useGatsbyImages from '../../hooks/useGatsbyImages';
 import { GatsbyLinkProps, navigate } from 'gatsby-link';
@@ -26,6 +25,7 @@ type HeaderLinks = (GatsbyLinkProps<unknown> & {
 
 export default function Header({ headerLinks }: HeaderProps) {
   const scrollRef = useRef(0);
+  const searchInputRef = useRef<HTMLInputElement>(null);
   const direction = useScrollDirection(scrollRef);
   const [showMenu, setShowMenu] = useState(false);
   const [showSearch, setShowSearch] = useState(false);
@@ -41,11 +41,28 @@ export default function Header({ headerLinks }: HeaderProps) {
     setShowSearch(prevShowSearch => !prevShowSearch);
   };
 
+  const onBlurCloseSearch = ({
+    currentTarget,
+  }: SyntheticEvent<HTMLFormElement>) => {
+    // Captures search input and button container to detect blur outide child elements
+    requestAnimationFrame(() => {
+      if (!currentTarget.contains(document.activeElement)) {
+        setShowSearch(false);
+      }
+    });
+  };
+
   const submitSearch = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const searchTerm = (e.target as any)[0].value;
     navigate('/search', { state: { searchTerm } });
   };
+
+  useEffect(() => {
+    if (showSearch) {
+      searchInputRef?.current?.focus();
+    }
+  }, [showSearch, searchInputRef?.current]);
 
   // Change header links based on how menu is being displayed:
   // If !showMenu and !showSearch, then it's the normal full-width menu (b/c these vars can only be affected by buttons that are only accessible in mobile)
@@ -57,6 +74,11 @@ export default function Header({ headerLinks }: HeaderProps) {
       : showSearch
       ? []
       : headerLinks.filter(h => h.text !== 'Search');
+
+  const closeMenuAll = () => {
+    setShowMenu(false);
+    setShowSearch(false);
+  };
 
   return (
     <>
@@ -86,7 +108,11 @@ export default function Header({ headerLinks }: HeaderProps) {
                 </div>
               }
             />
-            <Link to="/">
+            <Link
+              className="mobile-header-home-link"
+              onClick={closeMenuAll}
+              to="/"
+            >
               <img
                 className="cwp-logo"
                 alt="cwp-logo"
@@ -150,10 +176,36 @@ export default function Header({ headerLinks }: HeaderProps) {
             {
               // Add search bar element to otherwise empty mobile search nav overlay
               showSearch ? (
-                <Search
-                  placeholder="Search the playbook"
+                <form
                   onSubmit={submitSearch}
-                />
+                  data-cy="mobile-search-form"
+                  className="usa-search"
+                  role="mobile-search"
+                  onBlur={onBlurCloseSearch}
+                >
+                  <label data-cy="mobile-search-label" className="usa-sr-only">
+                    Search
+                  </label>
+                  <input
+                    ref={searchInputRef}
+                    data-cy="mobile-header-search-input"
+                    className="usa-input"
+                    id="search-field"
+                    name="mobile-search"
+                    type="search"
+                    placeholder="Search the playbook"
+                  />
+                  <button
+                    type="submit"
+                    className="usa-button mobile-search-button"
+                    data-testid="button"
+                    autoFocus
+                  >
+                    <span className="mobile-header-search-icon usa-search__submit-text">
+                      Search
+                    </span>
+                  </button>
+                </form>
               ) : (
                 ''
               )
