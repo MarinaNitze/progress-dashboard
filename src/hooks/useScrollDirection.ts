@@ -3,7 +3,8 @@ import { MutableRefObject, useEffect, useState } from 'react';
 export default function useScrollDirection(
   scrollRef: MutableRefObject<number>,
 ) {
-  const [goingUp, setGoingUp] = useState(false);
+  // Default to 'up'
+  const [goingUp, setGoingUp] = useState(true);
 
   const handleScroll = () => {
     const currentScrollY = window.scrollY;

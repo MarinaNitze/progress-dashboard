@@ -16,7 +16,7 @@ describe('when useScrollDirection rendered', () => {
       result: { current },
     } = renderHook(() => useScrollDirection(ref));
 
-    expect(current).toBe('down');
+    expect(current).toBe('up');
     expect(ref.current).toBe(0);
   });
 });

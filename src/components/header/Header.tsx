@@ -46,7 +46,10 @@ export default function Header({ headerLinks }: HeaderProps) {
   }: SyntheticEvent<HTMLFormElement>) => {
     // Captures search input and button container to detect blur outside child elements
     requestAnimationFrame(() => {
-      if (!currentTarget.contains(document.activeElement)) {
+      if (
+        !currentTarget.contains(document.activeElement) &&
+        direction === 'up'
+      ) {
         setShowSearch(false);
       }
     });
@@ -59,10 +62,10 @@ export default function Header({ headerLinks }: HeaderProps) {
   };
 
   useEffect(() => {
-    if (showSearch) {
+    if (showSearch && direction === 'up') {
       searchInputRef?.current?.focus();
     }
-  }, [showSearch, searchInputRef?.current]);
+  }, [showSearch, direction, searchInputRef?.current]);
 
   // Change header links based on how menu is being displayed:
   // If !showMenu and !showSearch, then it's the normal full-width menu (b/c these vars can only be affected by buttons that are only accessible in mobile)
@@ -155,7 +158,7 @@ export default function Header({ headerLinks }: HeaderProps) {
                 )}
               </Link>
             ))}
-            mobileExpanded={showMenu || showSearch}
+            mobileExpanded={(showMenu || showSearch) && direction === 'up'}
             onToggleMobileNav={() => {
               setShowMenu(false);
               setShowSearch(false);
@@ -163,19 +166,17 @@ export default function Header({ headerLinks }: HeaderProps) {
           >
             {
               // Add a menu title to the mobile menu nav overlay
-              showMenu ? (
+              showMenu && (
                 <div className="menu-title" data-cy="cwp-menu-title">
                   <Link className="menu-link" to="/">
                     child welfare playbook
                   </Link>
                 </div>
-              ) : (
-                ''
               )
             }
             {
               // Add search bar element to otherwise empty mobile search nav overlay
-              showSearch ? (
+              showSearch && (
                 <form
                   onSubmit={submitSearch}
                   data-cy="mobile-search-form"
@@ -199,15 +200,12 @@ export default function Header({ headerLinks }: HeaderProps) {
                     type="submit"
                     className="usa-button mobile-search-button"
                     data-testid="button"
-                    autoFocus
                   >
                     <span className="mobile-header-search-icon usa-search__submit-text">
                       Search
                     </span>
                   </button>
                 </form>
-              ) : (
-                ''
               )
             }
           </PrimaryNav>
