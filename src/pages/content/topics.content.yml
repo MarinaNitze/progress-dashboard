@@ -68,7 +68,7 @@ topics:
   - hero:
       backgroundColor: primary
       title: Extended Foster Care
-      image: /src/images/heros/hero-home.png
+      image: /src/images/heros/hero-baby.png
       imgAlt: Extended Foster Care
     layout: topic
     title: extended-foster-care
@@ -79,7 +79,7 @@ topics:
     recommendations:
       - electronicBackgroundCheck
   - hero:
-      backgroundColor: primary
+      backgroundColor: secondary
       title: Finding family members
       image: /src/images/heros/all-topics.jpg
       imgAlt: Family Finding
@@ -120,7 +120,7 @@ topics:
   - hero:
       backgroundColor: primary
       title: Inquiry Management
-      image: /src/images/heros/hero-home.png
+      image: /src/images/heros/hero-baby.png
       imgAlt: Inquiry Management
     layout: topic
     title: inquiry-management
@@ -133,7 +133,7 @@ topics:
   - hero:
       backgroundColor: primary
       title: License Renewal
-      image: /src/images/heros/hero-home.png
+      image: /src/images/heros/hero-baby.png
       imgAlt: License Renewal
     layout: topic
     title: license-renewal
@@ -146,7 +146,7 @@ topics:
   - hero:
       backgroundColor: primary
       title: Recruitment
-      image: /src/images/heros/hero-home.png
+      image: /src/images/heros/hero-baby.png
       imgAlt: Recruitment
     layout: topic
     title: recruitment
