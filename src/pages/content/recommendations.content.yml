@@ -16,7 +16,7 @@ recommendations:
       * Make your request form computer friendly. Turn your current form into a fillable PDF, Google form, or a standard Microsoft Word document. Paper forms have to be completed and scanned, creating additional barriers to submitting them — and then for reading them.
 
       * Provide an online portal for accepting background check requests the next time your agency updates the website.
-    outcome: ""
+    outcome: ''
     title: electronic-background-check
     benefits:
       - Faster processing of foster parent licenses
@@ -29,7 +29,7 @@ recommendations:
   - heading: Complete background check forms at orientation
     costs:
       - Staff time at orientation
-    inspiration: ""
+    inspiration: ''
     about: The process and timeframe for out-of-state abuse and neglect registry
       checks — commonly called Adam Walsh checks — vary quite a bit from state
       to state. To get foster families approved faster, start out-of-state
@@ -55,15 +55,15 @@ recommendations:
       - Ability to correct errors in real-time
       - Eliminates the need to follow-up for forms
     who:
-      number: ""
-      image: ""
+      number: ''
+      image: ''
       what: Frederick County, MD
   - heading: Use social media to find family members
     costs:
       - Social media training
       - Employee time
-    inspiration: "[Diligent Search
-      checklist](http://www.michigan.gov/documents/dhs/DHS-0991_480683_7.dot)"
+    inspiration: '[Diligent Search
+      checklist](http://www.michigan.gov/documents/dhs/DHS-0991_480683_7.dot)'
     about: >-
       Social media is widely used across cultural, geographic, and economic
       groups. This makes social media a powerful and unique tool for finding
@@ -90,7 +90,8 @@ recommendations:
       * **Making staffing decisions** — Decide if a central team will conduct social media family finding activities, or if all workers will be granted access. There are pros and cons to both approaches.
 
       * **Unblocking social media sites** — Management may have to meet with IT to have certain social media sites unblocked from the network.
-    outcome: New Mexico increased initial kinship placements from 3% to 40% in one
+    outcome:
+      New Mexico increased initial kinship placements from 3% to 40% in one
       year by shifting to practices that included using social media to identify
       kin.
     title: use-social-media
@@ -185,7 +186,8 @@ recommendations:
         independently
       - Avoid placing children in general foster care who have kinship placement
         options
-    outcome: New Mexico increased initial kinship placements from 3% to 40% in one
+    outcome:
+      New Mexico increased initial kinship placements from 3% to 40% in one
       year by shifting to youth-focused practices that include asking youth
       about their supportive connections.
     who:
@@ -235,7 +237,8 @@ recommendations:
         * In **California**, all supportive adults at every Child and Family Team meeting are explicitly asked if they know of any other kin who should be included.
 
         * **Michigan** explicitly asks identified kin to share the names of more kin on their Relative Notification Form
-    inspiration: Download Michigan’s Relative Notification form [on their list of
+    inspiration:
+      Download Michigan’s Relative Notification form [on their list of
       Foster Care
       Forms](https://www.michigan.gov/mdhhs/0,5885,7-339-71551_7199_54039---,00.html).
   - heading: Establish a dedicated family-finding team
@@ -368,11 +371,12 @@ recommendations:
 
       * Keep track of meeting attendance - With a simple spreadsheet, you can keep track of the breakdown of roles at planning meetings. Use this information to keep track of progress towards the goal of having three times as many supportive adults as paid staff in attendance.
     costs:
-      - " Time to implement form and workflow changes"
+      - ' Time to implement form and workflow changes'
     benefits:
       - Supportive adults remain engaged and involved with youth
       - Youth less likely to lose connections during care
-    outcome: Olmsted County, MN demonstrated significantly better outcomes for older
+    outcome:
+      Olmsted County, MN demonstrated significantly better outcomes for older
       foster youth when a ratio of 3:1 supportive adults to paid staff attended
       their planning meetings (roughly 12 family members to 3 staff members).
       They also pay attention to the balance of family present from both sides
@@ -429,7 +433,8 @@ recommendations:
 
 
       Foster parents may be reluctant to maintain a child’s previous connections, if they think doing so will harm their chances for adoption. However, even if the child is adopted, they deserve to have a strong support network. Making this a formal responsibility of foster parents can help keep a youth’s connections intact throughout their time in care.
-    how: Revise your foster parent training to include the formal expectation that
+    how:
+      Revise your foster parent training to include the formal expectation that
       foster parents will help maintain a youth’s connections. For example, you
       may require that foster parents participate in the development of kinship
       connection plans.
@@ -441,8 +446,9 @@ recommendations:
       - Supportive adults remain engaged and involved with youth
     who:
       number: 1
-      what: "**Washington State** includes these expectations in their Caregiver Core
-        Training (CCT) module."
+      what:
+        '**Washington State** includes these expectations in their Caregiver Core
+        Training (CCT) module.'
   - heading: Make a plan to keep youth connected to their supportive adults
     title: plan-for-youth-to-keep-connected-supportive-adults
     about: >-
@@ -469,7 +475,8 @@ recommendations:
     benefits:
       - Youth less likely to lose connections during care
       - Supportive adults remain engaged and involved with youth
-    outcome: "**Olmsted County, MN** demonstrated significantly better outcomes for
+    outcome:
+      "**Olmsted County, MN** demonstrated significantly better outcomes for
       older foster youth when a ratio of 3:1 unpaid adults to paid staff
       attended their planning meetings (roughly 12 family members to 3 staff
       members). They also pay attention to the balance of family present from
@@ -558,12 +565,14 @@ recommendations:
       - More supportive adults found and engaged in a youth’s life
       - Kin may eventually be able to serve as a placement option or supportive
         adult
-    outcome: While we don’t have exact data for this recommendation, anecdotal data
+    outcome:
+      While we don’t have exact data for this recommendation, anecdotal data
       from our members suggests that many kin who aren’t placements on day one
       eventually serve as placements and/or supportive connections later on.
     who:
       number: 2
-      what: "* **Michigan** explicitly asks identified kin to commit to staying in
+      what:
+        '* **Michigan** explicitly asks identified kin to commit to staying in
         touch with youth on their [Relative Notification
         Form](http://www.michigan.gov/documents/dhs/DHS-0990_265835_7.dot)"
   - title: align-checklists-to-statutes

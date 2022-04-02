@@ -81,9 +81,8 @@ export default function Compare({ params: { compare } }: PageProps) {
     label: 'Any',
   });
   const [recFilter, setRecFilter] = useState<readonly any[]>(['']);
-  const [filteredPractices, setFilteredPractices] = useState(
-    practiceDataByState,
-  );
+  const [filteredPractices, setFilteredPractices] =
+    useState(practiceDataByState);
 
   useEffect(() => {
     const filterByPop = (state: typeof practiceDataByState[0]) => {
@@ -164,9 +163,8 @@ export default function Compare({ params: { compare } }: PageProps) {
     label: string;
   }[] = topicPractices.map(practice => ({ value: practice, label: practice }));
 
-  const implementedSvg = useGatsbyImages()[
-    'images/compare/implementedMedium.svg'
-  ].publicURL;
+  const implementedSvg =
+    useGatsbyImages()['images/compare/implementedMedium.svg'].publicURL;
   const partialSvg = useGatsbyImages()['images/compare/partial.svg'].publicURL;
   const implementedIcon = (
     <img className="implemented-icon" src={implementedSvg} alt="implemented" />
