@@ -313,9 +313,6 @@ export default function Compare({ params: { compare } }: PageProps) {
           <section className="compare-section">
             <Grid>
               <section className="row">
-                {/* <p className="total">
-                  {filteredPractices.length} total results
-                </p> */}
                 <div className="implementation-legend">
                   <div className="legend-area">
                     {partialIcon}
