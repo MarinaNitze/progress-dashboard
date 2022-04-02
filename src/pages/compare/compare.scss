@@ -1,14 +1,16 @@
 @import '../../styles/settings.scss';
 
 .compare-section {
+  .usa-card-group {
+    row-gap: 1.3rem;
+  }
   .row {
     display: flex;
-    align-items: baseline;
     justify-content: space-between;
     margin: 2rem 0 1rem 0;
     font-size: 1.25rem;
-    max-width: map-get($breakpoints, 'mobile-lg') {
-      flex-direction: column-reverse;
+    @media (max-width: map-get($breakpoints, 'tablet-lg')) {
+      flex-direction: column;
     }
 
     .total {
@@ -17,7 +19,14 @@
 
     .show-hide-title {
       font-family: Petrona;
-      font-weight: 800;
+      font-size: large;
+      font-weight: 900;
+      padding-right: 1rem;
+      color: $dark;
+      align-self: center;
+      @media (max-width: map-get($breakpoints, 'mobile-lg')) {
+        padding-left: 0.25rem;
+      }
     }
 
     .flex-start {
@@ -28,6 +37,11 @@
     .mobile-col {
       @media (max-width: map-get($breakpoints, 'tablet-lg')) {
         flex-direction: column;
+      }
+
+      @media (max-width: map-get($breakpoints, 'mobile-lg')) {
+        padding: 0 0.5rem 0 0.5rem 0;
+        align-self: flex-start;
       }
     }
 
@@ -41,9 +55,35 @@
     hr {
       height: 1rem;
       border: none;
-      background-color: black;
+      background-color: $link-text;
       width: 1px;
       margin: auto 0;
+    }
+
+    .implementation-legend {
+      display: flex;
+      width: 40%;
+
+      :first-child {
+        padding-right: 1.5rem;
+      }
+
+      @media (max-width: map-get($breakpoints, 'mobile-lg')) {
+        width: 100%;
+        padding: 0.5rem;
+      }
+    }
+
+    .legend-area {
+      display: flex;
+      align-items: center;
+
+      .implemented-icon,
+      .partial-icon {
+        height: 20px;
+        margin-top: 0.25rem;
+        padding-right: 0.75rem;
+      }
     }
   }
 }
@@ -86,7 +126,7 @@
 
     .select {
       display: flex;
-      align-items: flex-end;
+      align-items: baseline;
       @media (max-width: map-get($breakpoints, 'tablet-lg')) {
         flex-direction: column;
         align-items: normal;

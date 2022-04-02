@@ -11,16 +11,15 @@ import {
 import useGatsbyImages from '../../hooks/useGatsbyImages';
 import Select from '../../components/select/Select';
 import { Option } from 'react-select';
-
 import Layout from '../../components/layout/Layout';
 import Hero from '../../components/hero/Hero';
 import Breadcrumbs from '../../components/breadcrumbs/Breadcrumbs';
 import Card from '../../components/card/Card';
+import { PracticeName, Topic, Value } from '../../types/compare';
+import useDataPractices from '../../hooks/useDataPractices';
 
 import '../home.scss';
 import './compare.scss';
-import { PracticeName, Topic, Value } from '../../types/compare';
-import useDataPractices from '../../hooks/useDataPractices';
 
 const PRACTICE_LINK_MAP: Record<PracticeName, string> = {
   // Background checks
@@ -82,8 +81,9 @@ export default function Compare({ params: { compare } }: PageProps) {
     label: 'Any',
   });
   const [recFilter, setRecFilter] = useState<readonly any[]>(['']);
-  const [filteredPractices, setFilteredPractices] =
-    useState(practiceDataByState);
+  const [filteredPractices, setFilteredPractices] = useState(
+    practiceDataByState,
+  );
 
   useEffect(() => {
     const filterByPop = (state: typeof practiceDataByState[0]) => {
@@ -159,11 +159,14 @@ export default function Compare({ params: { compare } }: PageProps) {
     { value: '7500000', label: 'Greater than 7.5 Million' },
   ];
 
-  const recOptions: { value: PracticeName; label: string }[] =
-    topicPractices.map(practice => ({ value: practice, label: practice }));
+  const recOptions: {
+    value: PracticeName;
+    label: string;
+  }[] = topicPractices.map(practice => ({ value: practice, label: practice }));
 
-  const implementedSvg =
-    useGatsbyImages()['images/compare/implementedMedium.svg'].publicURL;
+  const implementedSvg = useGatsbyImages()[
+    'images/compare/implementedMedium.svg'
+  ].publicURL;
   const partialSvg = useGatsbyImages()['images/compare/partial.svg'].publicURL;
   const implementedIcon = (
     <img className="implemented-icon" src={implementedSvg} alt="implemented" />
@@ -179,9 +182,9 @@ export default function Compare({ params: { compare } }: PageProps) {
     return (
       <div>
         <ul>
-          {stateData.practices.map(p => (
+          {stateData.practices.map((p, i) => (
             <li
-              key={p.practiceName}
+              key={`${p.practiceName}-${i}`}
               className={
                 p.value === Value.full || p.value === Value.partial
                   ? 'implemented'
@@ -193,7 +196,10 @@ export default function Compare({ params: { compare } }: PageProps) {
                 : p.value === Value.partial
                 ? partialIcon
                 : ''}{' '}
-              <Link to={PRACTICE_LINK_MAP[p.practiceName]}>
+              <Link
+                to={PRACTICE_LINK_MAP[p.practiceName]}
+                key={`${p.practiceName}-${i}-link`}
+              >
                 {p.practiceName}
               </Link>
             </li>
@@ -215,11 +221,7 @@ export default function Compare({ params: { compare } }: PageProps) {
 
     return (
       <div className="centered">
-        {!!fullyImplementedCount
-          ? implementedIcon
-          : !!partiallyImplementedCount
-          ? partialIcon
-          : ''}
+        {!!fullyImplementedCount ? implementedIcon : partialIcon}
         {` ${fullyImplementedCount + partiallyImplementedCount} of ${
           topicPractices.length
         } implemented or in progress`}
@@ -312,33 +314,43 @@ export default function Compare({ params: { compare } }: PageProps) {
           </section>
           <section className="compare-section">
             <Grid>
-              <div className="row">
-                <p className="total">
+              <section className="row">
+                {/* <p className="total">
                   {filteredPractices.length} total results
-                </p>
+                </p> */}
+                <div className="implementation-legend">
+                  <div className="legend-area">
+                    {partialIcon}
+                    <p>In progress</p>
+                  </div>
+                  <div className="legend-area">
+                    {implementedIcon}
+                    <p>Fully implemented</p>
+                  </div>
+                </div>
                 <div className="flex-start mobile-col">
                   <p className="show-hide-title">Implemented Recommendations</p>
                   <div className="flex-start">
-                    <button
-                      className={`${hideAll === true ? 'active' : ''}`}
-                      onClick={() => setHideAll(true)}
-                    >
-                      Hide all
-                    </button>
-                    <hr />
                     <button
                       className={`${hideAll === false ? 'active' : ''}`}
                       onClick={() => setHideAll(false)}
                     >
                       Show all
                     </button>
+                    <hr />
+                    <button
+                      className={`${hideAll === true ? 'active' : ''}`}
+                      onClick={() => setHideAll(true)}
+                    >
+                      Hide all
+                    </button>
                   </div>
                 </div>
-              </div>
+              </section>
               <CardGroup>
-                {filteredPractices.map(fp => (
+                {filteredPractices.map((fp, i) => (
                   <Card
-                    key={fp.code}
+                    key={`${fp.code}-${i}`}
                     title={fp.name}
                     content={createCardContent(fp)}
                     placeholderHiddenContent={createCardPlaceholderContent(fp)}
