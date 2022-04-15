@@ -441,7 +441,7 @@ recommendations:
       systems will not actively work to maintain that connection. 
 
 
-      However, supportive connections are critical to a youth’s well-being. When a formal plan is in place to maintain connections, youth will have more people that they can count on for emotional support, rides, tutoring, advice, and everyday connections.
+      However, supportive connections are critical to a youth’s well-being. When a formal plan is in place to maintain connections, youth will have more people that they can count on for emotional support, rides, tutoring, advice, and everyday connections. test
     how: >-
       As soon as the youth enters care, make a list of all the supportive
       connections in their lives, including family members, teachers, friends,
@@ -564,3 +564,32 @@ recommendations:
       what: "* **Michigan** explicitly asks identified kin to commit to staying in
         touch with youth on their [Relative Notification
         Form](http://www.michigan.gov/documents/dhs/DHS-0990_265835_7.dot)"
+  - title: align-checklists-to-statutes
+    heading: Align checklists to statutes
+    about: By aligning licensing checklist items to specific statutes, you can help
+      decision-makers understand the source of these legal requirements. This
+      ensures that decision-makers clearly understand the source of a problem,
+      so they can identify the most effective solution. For example, a landline
+      telephone requirement creates a challenge for many families as most people
+      are now in mobile-only households. By highlighting the statute behind this
+      requirement, a decision-maker can better consider whether it is enough to
+      change the requirement, or if the policy behind the requirement needs to
+      be updated and modernized as well.
+    how: >-
+      * Create or locate a list of all checklist items.
+
+      * Identify the legal requirement for each item.
+
+      * Add the statute number next to each item on the checklist. 
+
+      * Consider how you might update items that are challenging to families. Can you update the requirement, or does the policy need to be changed?
+    costs:
+      - Staff time
+    benefits:
+      - Facilitates the modernization of outdated policies
+      - Enables more effective decision-making
+    outcome: We are still collecting concrete data.
+    who:
+      number: 1
+      what: Washington State’s [statute aligned
+        checklist](https://www.childwelfareplaybook.com/assets/10-183%20Foster%20Inspection%20Checklist.docx)
