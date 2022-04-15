@@ -732,3 +732,127 @@ recommendations:
       what: |-
         * Indiana
         * Washington State
+  - heading: License homes while social distancing
+    title: license-homes-while-social-distancing
+    about: >-
+      Some child welfare systems have paused licensing for some or all new
+      families in order to limit in-person contact, even though federal
+      regulations do not require the licensing process to be conducted in
+      person. Delays caused by stopping licensing can mean losing homes,
+      especially relative placements, in a time when placement options are
+      already severely limited. 
+
+
+      Licensing new foster homes with minimal physical contact by conducting everything by email, phone, and video (except for fingerprinting and a single in-person safety walkthrough) can limit any delays and prevent the loss of placement options.
+    how: >-
+      * Conduct the initial safety walkthrough over video, during which case
+      workers can identify safety concerns and make compliance plans. The final
+      safety walkthrough can then be conducted in person, during a focused visit
+      of no more than 20 minutes. 
+
+      * For emergency relative placements, the in-person final safety walkthrough can be combined with the placement visit. Any follow-ups can be conducted over video. 
+
+      * Conduct interviews over phone or video. If families lack technology equipment, connect them with [free Lifeline phone service](https://data.usac.org/publicreports/CompaniesNearMe/Download/Report) and [free Internet services](https://thinkofus.gitbook.io/command-center/resources/foster-youth/technology#i-cannot-afford-to-buy-access-to-the-internet). You may also be able to [use federal funding to secure equipment for families](https://thinkofusteam.app.box.com/s/joy9mrzgr4yjw997tjdi5dib1z6f1y4v).
+
+      * Resolve minor pending items with photos.
+
+      * Prioritize in-home and community-based fingerprinting. Mobile Livescan units reduce in-person time by allowing you to combine fingerprinting with the final safety walkthrough. Community-based fingerprinting sites like UPS stores remain open as essential businesses and provide a stress-free, fast environment for applicants to complete this requirement. 
+
+      * Eliminate or temporarily suspend other in-person requirements. If your process requires a medical evaluation, allow a medical professional to complete the paperwork based on patients records or via a telehealth visit. 
+
+      * Invest in online solutions that allow families to complete and track paperwork, attend and track orientations and trainings, and upload key documents. 
+
+      * If your child welfare system has a unique requirement, like tuberculosis tests, evaluate whether such a unique requirement is necessary and remove or suspend it if possible.
+    costs:
+      - Software cost for online tracking system for families
+      - Potential cost of mobile fingerprinting machine
+    benefits:
+      - "Limiting in-person contact while also limiting delays in licensing "
+      - Prevents the loss of placement options
+      - May make it easier for families to complete all or some of the
+        requirements
+    outcome: >-
+      States with contracts for community-based fingerprinting sites report the
+      same processing times as before the pandemic. For more information on
+      fingerprinting, see [How to ensure fingerprinting doesn’t stop your
+      work?](https://thinkofus.gitbook.io/command-center/resources/agencies/support-foster-families/dont-let-fingerprinting-stop-your-work)
+
+
+      States that require tuberculosis tests and/or medical physicals  report that these are the most difficult in-person requirements for families to complete during the pandemic.
+
+
+      From March to May 2020, the child welfare systems using the online tool [Binti](https://www.binti.com/) for foster parent licensing, which collectively serve approximately 17% of the nation’s foster youth, have:
+
+
+      * 2,715 online training orientations completed
+
+      * 3,560 online applications filled out, e-signed and submitted to agencies by families applying to be foster/adoptive families
+
+      * 1,154 families approved by agencies to be caregivers
+
+      * 1,798 families renewed their yearly approval
+
+      * 115,171 online case notes submitted by social workers
+    who:
+      number: 1
+      what: Rhode Island continued to license homes during the pandemic, limiting
+        in-person contact to a single 20-minute walkthrough during which a
+        mobile fingerprinting unit for all adult household members.
+  - heading: Offer online foster parent training
+    title: offer-online-foster-parent-training
+    about: >-
+      Many agencies have paused their resource family training and licensing
+      efforts during the pandemic. However, the need for safe placement options
+      for foster children can’t afford to wait. 
+
+
+      By offering online training and online or telephone recruitment and orientation events, you can continue to license families while limiting in-person contact.
+    how: >-
+      * Use an existing online foster parent training. The Caregiver Core
+      Training (CCT) is an online system developed by the Alliance for Child
+      Welfare Excellence in Washington State. You can view their training
+      materials
+      [here](https://allianceforchildwelfare.org/project/learn-more-about-caregiver-core-training-online).
+      If you think this is a viable option for your child welfare agency, you
+      can contact Christina Coad at the Alliance directly
+      ([ccoad@uw.edu](mailto:ccoad@uw.edu)). 
+
+      * Conduct telephone orientations. Washington, D.C. developed an approach for conducting orientation sessions over the phone which was well received by families who attended. The agency provided a PowerPoint [presentation](https://www.childwelfareplaybook.com/assets/CFSA_Recruitment_Orientation_March_2020_Pride.pptx) for attendees to follow along and had a foster parent on the line to offer a real-world perspective.
+
+      * Conduct online orientations. You can use the same slide deck and materials as you would for an in-person orientation, or add an interactive element by using a platform like [Google Forms](https://www.google.com/forms/about/) to create a [scored quiz](https://support.google.com/docs/answer/7032287?hl=en). If your agency uses [Binti](https://binti.com/), you can provide an online orientation video for families to watch. Afterwards, families can complete a quiz in order to get credit.
+
+      * Convert your own in-person training to online training. If you prefer to use your own training instead of an existing online training, you can convert your materials. 
+
+      * Follow promising practices for online training. In developing their own online training, Michigan identified several promising practices: 
+
+      * * Offer an online option for families to connect with one another. You can create a closed Facebook group for each class to help participants build connections and form a support group.
+        * Schedule frequent classes. For two-parent households, this will allow parents to more easily switch between attending the training and spending time with children. 
+        * Keep classes short. A full-day class is often too long for many participants to do online. Build in short breaks throughout the class so that participants don’t disengage.
+        * Set online meeting guidelines before the first class. Not all participants will be familiar with online meetings. Guidelines can include general expectations, online meeting manners (i.e. how to dress appropriately, when to mute), and instructions on using the technology. Leave time at the beginning of the meeting to assist with any technical difficulties.
+        * Include an interactive element, such as a questionnaire for each session to make sure that parents understand the material as the trainer covers it. Cut any hands-on activities that can’t easily be done remotely. Instead, stop to discuss the material more often. 
+        * Cap the class at approximately 20 people to make sure that everyone can engage. 
+        * You can contact Jessica Sweet at Michigan DHHS if you have any questions ([SweetJ2@michigan.gov](mailto:SweetJ2@michigan.gov)).
+    costs:
+      - Low to no cost if using existing online materials
+      - Potential cost of online meeting software
+      - Potential cost to develop online training materials
+    benefits:
+      - Training and licensing can continue while limiting in-person contact
+      - Prevents the loss of placement options
+    outcome: >-
+      * Los Angeles County found that when given a choice, more than 90% of
+      families (approximately 9,000 to date) opted to complete orientation
+      online.
+
+      * In addition to being convenient for families and vital during COVID-19, Los Angeles County found that online orientations reduce staff workloads and free up staff time for other priorities.
+    who:
+      number: 4
+      what: >-
+        * Washington State offers the Caregiver Core Training, developed in
+        partnership with the Alliance for Child Welfare Excellence. 
+
+        * Washington, D.C. developed an approach to conduct orientation sessions over the telephone.
+
+        * Michigan offers online training. 
+
+        * Los Angeles County conducts most of its orientation sessions online.
