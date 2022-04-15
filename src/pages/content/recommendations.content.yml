@@ -976,3 +976,80 @@ recommendations:
       - Decreases the number of missed appointments
       - Decreases delays in the licensing process
     outcome: We are still collecting concrete data.
+  - heading: Use bilingual staff members instead of interpreters
+    title: use-bilingual-staff-members-instead-of-interpreters
+    about: >-
+      Interpreters are highly skilled but they may not have child welfare
+      specific knowledge. This can make it difficult to translate important
+      content (especially on the fly) during foster parent orientation and
+      training or in ongoing interactions. 
+
+
+      Relying on bilingual staff members whenever possible will help ensure that families receive and understand important information and trainings.
+    how: >-
+      * Ask caregivers about the language they are most comfortable interacting
+      in as early as possible, by including this on inquiry forms or at the very
+      start of an application process. Case workers should identify whether a
+      relative placement needs a translator right away. 
+
+      * Maintain a list of bilingual staff members. Identify work flexibilities that can allow them to take on occasional training responsibilities even if their normal responsibilities are in a different part of the agency. 
+
+      * Use remote meeting capabilities so that families and staff members can work together even if they are in different parts of your state.
+
+      * County-administered systems can pool resources.
+    costs:
+      - Low to no cost
+    benefits:
+      - Prevents families from missing or misunderstanding important information
+  - heading: Allow youth to explore and select programs available to them
+    title: allow-youth-to-explore-and-select-programs-available-to-them
+    about: >-
+      Many youth do not know what programs are available to them. Case workers
+      are often managing so many cases that they don’t always have time to
+      explain every available program. This means that youth may miss out on
+      opportunities to prepare for independence. 
+
+
+      Instead of requiring case workers to explain each program directly, make it possible for older youth to look through a list of available programming and choose the topics most relevant to them.
+    how: >-
+      Share a printed or emailed list of all programs with youth. Ask them to
+      circle or highlight those that interest them. 
+
+
+      You can also create a programming calendar online and allow youth to RSVP for programs of interest, using a free tool like Google Forms or Eventbrite.
+    costs:
+      - Free
+    benefits:
+      - Increases data on what programs are of most interest to youth (not just
+        what youth attend).
+      - Prevents youth from missing opportunities to prepare for independence
+    outcome: We are still collecting concrete data.
+    who:
+      number: 0
+  - heading: Find alternatives to physical mail for sharing documents with youth
+    title: find-alternatives-to-physical-mail-for-sharing-documents-with-youth
+    about: >-
+      Many foster youth do not have reliable physical addresses, making it
+      difficult for them to receive physical mail. In a multi-state discovery
+      sprint with older foster youth, [Think of Us](https://thinkof-us.org/)
+      found as many as 30% of mailed calendars were returned to sender. This
+      means that as many as 30% of youth never learn about programs being
+      offered.
+
+
+      Switching from physical mail to using online calendars, email, and text messages to share information about programming and other materials will help ensure that youth do not miss important information.
+    how: Programming calendars can be posted online and emailed to youth. You could
+      also use an online calendar that allows others to subscribe to your
+      events, like Eventbrite. A photo of the calendar could also be texted to
+      youth.
+    costs:
+      - Free (you may even save money on postage and printing)
+    benefits:
+      - Eliminates returned mail rates of up to 30%
+      - Youth are more aware of program options
+    outcome: We are still collecting concrete data.
+    who:
+      what: "[Los Angeles Opportunity Youth
+        Collaborative](https://www.instagram.com/la_oyc/) offers an [online
+        calendar](https://www.eventbrite.com/o/los-angeles-opportunity-youth-co\
+        llaborative-30967055551) of upcoming programs."
