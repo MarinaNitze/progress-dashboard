@@ -1185,7 +1185,8 @@ recommendations:
       - Identify families who can increase their training and take higher-need
         placements
     who:
-      number: 0
+      number: 1
+      what: "* Washington State"
   - title: email-renewal-requirements
     heading: Email license renewal requirements
     about: >-
