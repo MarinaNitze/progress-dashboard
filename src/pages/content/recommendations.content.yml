@@ -1811,11 +1811,11 @@ recommendations:
       - Identifies families who may not be a good fit early on
     who:
       number: 1
-      what: Dr. Patricia Aviles-Cubillos, a foster parent recruiter with Fairfax
+      what: "* Dr. Patricia Aviles-Cubillos, a foster parent recruiter with Fairfax
         County Department of Family Services, provides her own phone number to
         families to register for orientation, instead of having an online signup
         form. This creates an opportunity for an early conversation, where she
-        can get to know the family, and they can ask questions.
+        can get to know the family, and they can ask questions."
   - title: respond-quickly-to-inquiries-with-information
     heading: Respond quickly to inquiries with more information
     costs:
