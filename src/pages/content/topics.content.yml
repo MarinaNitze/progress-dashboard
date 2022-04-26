@@ -7,12 +7,28 @@ topics:
     layout: topic
     title: foster-parent-licensing
     image: /src/images/topics/Topic-FPL.svg
-    about: \[Text to be added]
-    why: \[Text to be added]
-    what: \[Text to be added]
+    about: Foster parent licensing can be a lengthy, and at times inefficient,
+      process. Delays in licensing can mean losing homes in a time when
+      placement options are already severely limited.
+    why: The licensing process is key to ensuring child safety and foster family
+      preparedness. While it is important to be thorough, delays in the process
+      can overburden licensing workers and inspectors or even risk losing
+      families.
+    what: >-
+      
+
+      * **Increase support for licensing workers.** Providing clerical support for licensing workers will help staff maintain a higher case load, while increasing family satisfaction. If you can give families a dedicated licensor through the whole process, staff will be able to reduce the likelihood of errors while developing a more holistic picture of the family. 
+
+      * **Make safety inspections easier for families.** Some families do not pass the inspection on the first try simply because they were missing one or more items that they didn’t know they needed. When an inspector has to return, it can make the licensing process longer and takes more resources. By providing families with a checklist of safety items ahead of time, as well as providing families with items they need but cannot acquire, you can streamline the safety inspection process and avoid delays.
+
+      * **Continue licensing and training while social distancing.** Some agencies paused their licensing or training during the pandemic. However, federal regulations do not require that these processes take place in person. By providing foster parent training online and conducting key parts of the licensing process remotely (like doing the initial safety walkthrough over video), you can avoid having to halt your licensing and training work.
     recommendations:
-      - electronicBackgroundCheck
-      - backgroundCheckForm
+      - align-checklists-to-statutes
+      - provide-clerical-support-for-licensing-workers
+      - give-families-a-dedicated-licensor
+      - distinguish-important-mail-for-foster-families
+      - use-evacuation-plan-magnets
+      - help-relative-placements-access-financial-assistance
   - hero:
       backgroundColor: light
       title: Background Checks
