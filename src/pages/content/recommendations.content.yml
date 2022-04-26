@@ -16,7 +16,7 @@ recommendations:
       * Make your request form computer friendly. Turn your current form into a fillable PDF, Google form, or a standard Microsoft Word document. Paper forms have to be completed and scanned, creating additional barriers to submitting them — and then for reading them.
 
       * Provide an online portal for accepting background check requests the next time your agency updates the website.
-    outcome: ""
+    outcome: ''
     title: electronic-background-check
     benefits:
       - Faster processing of foster parent licenses
@@ -29,7 +29,7 @@ recommendations:
   - heading: Complete background check forms at orientation
     costs:
       - Staff time at orientation
-    inspiration: ""
+    inspiration: ''
     about: The process and timeframe for out-of-state abuse and neglect registry
       checks — commonly called Adam Walsh checks — vary quite a bit from state
       to state. To get foster families approved faster, start out-of-state
@@ -55,15 +55,15 @@ recommendations:
       - Ability to correct errors in real-time
       - Eliminates the need to follow-up for forms
     who:
-      number: ""
-      image: ""
+      number: ''
+      image: ''
       what: Frederick County, MD
   - heading: Use social media to find family members
     costs:
       - Social media training
       - Employee time
-    inspiration: "[Diligent Search
-      checklist](http://www.michigan.gov/documents/dhs/DHS-0991_480683_7.dot)"
+    inspiration: '[Diligent Search
+      checklist](http://www.michigan.gov/documents/dhs/DHS-0991_480683_7.dot)'
     about: >-
       Social media is widely used across cultural, geographic, and economic
       groups. This makes social media a powerful and unique tool for finding
@@ -90,7 +90,8 @@ recommendations:
       * **Making staffing decisions** — Decide if a central team will conduct social media family finding activities, or if all workers will be granted access. There are pros and cons to both approaches.
 
       * **Unblocking social media sites** — Management may have to meet with IT to have certain social media sites unblocked from the network.
-    outcome: New Mexico increased initial kinship placements from 3% to 40% in one
+    outcome:
+      New Mexico increased initial kinship placements from 3% to 40% in one
       year by shifting to practices that included using social media to identify
       kin.
     title: use-social-media
@@ -185,7 +186,8 @@ recommendations:
         independently
       - Avoid placing children in general foster care who have kinship placement
         options
-    outcome: New Mexico increased initial kinship placements from 3% to 40% in one
+    outcome:
+      New Mexico increased initial kinship placements from 3% to 40% in one
       year by shifting to youth-focused practices that include asking youth
       about their supportive connections.
     who:
@@ -235,7 +237,8 @@ recommendations:
         * In **California**, all supportive adults at every Child and Family Team meeting are explicitly asked if they know of any other kin who should be included.
 
         * **Michigan** explicitly asks identified kin to share the names of more kin on their Relative Notification Form
-    inspiration: Download Michigan’s Relative Notification form [on their list of
+    inspiration:
+      Download Michigan’s Relative Notification form [on their list of
       Foster Care
       Forms](https://www.michigan.gov/mdhhs/0,5885,7-339-71551_7199_54039---,00.html).
   - heading: Establish a dedicated family-finding team
@@ -368,11 +371,12 @@ recommendations:
 
       * Keep track of meeting attendance - With a simple spreadsheet, you can keep track of the breakdown of roles at planning meetings. Use this information to keep track of progress towards the goal of having three times as many supportive adults as paid staff in attendance.
     costs:
-      - " Time to implement form and workflow changes"
+      - ' Time to implement form and workflow changes'
     benefits:
       - Supportive adults remain engaged and involved with youth
       - Youth less likely to lose connections during care
-    outcome: Olmsted County, MN demonstrated significantly better outcomes for older
+    outcome:
+      Olmsted County, MN demonstrated significantly better outcomes for older
       foster youth when a ratio of 3:1 supportive adults to paid staff attended
       their planning meetings (roughly 12 family members to 3 staff members).
       They also pay attention to the balance of family present from both sides
@@ -429,7 +433,8 @@ recommendations:
 
 
       Foster parents may be reluctant to maintain a child’s previous connections, if they think doing so will harm their chances for adoption. However, even if the child is adopted, they deserve to have a strong support network. Making this a formal responsibility of foster parents can help keep a youth’s connections intact throughout their time in care.
-    how: Revise your foster parent training to include the formal expectation that
+    how:
+      Revise your foster parent training to include the formal expectation that
       foster parents will help maintain a youth’s connections. For example, you
       may require that foster parents participate in the development of kinship
       connection plans.
@@ -441,8 +446,9 @@ recommendations:
       - Supportive adults remain engaged and involved with youth
     who:
       number: 1
-      what: "**Washington State** includes these expectations in their Caregiver Core
-        Training (CCT) module."
+      what:
+        '**Washington State** includes these expectations in their Caregiver Core
+        Training (CCT) module.'
   - heading: Make a plan to keep youth connected to their supportive adults
     title: plan-for-youth-to-keep-connected-supportive-adults
     about: >-
@@ -469,7 +475,8 @@ recommendations:
     benefits:
       - Youth less likely to lose connections during care
       - Supportive adults remain engaged and involved with youth
-    outcome: "**Olmsted County, MN** demonstrated significantly better outcomes for
+    outcome:
+      "**Olmsted County, MN** demonstrated significantly better outcomes for
       older foster youth when a ratio of 3:1 unpaid adults to paid staff
       attended their planning meetings (roughly 12 family members to 3 staff
       members). They also pay attention to the balance of family present from
@@ -518,17 +525,19 @@ recommendations:
       - Staff may be able to increase initial kinship placements
       - Find more kin who can take placement and/or serve as supportive
         connections for youth
-    outcome: "* **Rhode Island** has begun to depopulate group homes by requiring a
+    outcome:
+      '* **Rhode Island** has begun to depopulate group homes by requiring a
       red team before any group placement, or any placement into a home that
-      already has at least one other unrelated foster child."
+      already has at least one other unrelated foster child.'
     who:
       number: 1
-      what: "* **Rhode Island** holds a red team meeting, led by the Chief of Staff of
+      what:
+        '* **Rhode Island** holds a red team meeting, led by the Chief of Staff of
         the Department, before a child is placed in a group home or in a general
         foster home with other unrelated foster youth. As part of the red team,
         the family finding office conducts kin research, the team constructs a
         genogram, and they ask the youth directly about possible placement
-        ideas."
+        ideas.'
   - heading: Be gentle when interacting with kin for the first time
     title: be-gentle-when-interacting-with-kin-first-time
     about: >-
@@ -558,17 +567,20 @@ recommendations:
       - More supportive adults found and engaged in a youth’s life
       - Kin may eventually be able to serve as a placement option or supportive
         adult
-    outcome: While we don’t have exact data for this recommendation, anecdotal data
+    outcome:
+      While we don’t have exact data for this recommendation, anecdotal data
       from our members suggests that many kin who aren’t placements on day one
       eventually serve as placements and/or supportive connections later on.
     who:
       number: 2
-      what: "* **Michigan** explicitly asks identified kin to commit to staying in
+      what:
+        '* **Michigan** explicitly asks identified kin to commit to staying in
         touch with youth on their [Relative Notification
-        Form](http://www.michigan.gov/documents/dhs/DHS-0990_265835_7.dot)"
+        Form](http://www.michigan.gov/documents/dhs/DHS-0990_265835_7.dot)'
   - title: align-checklists-to-statutes
     heading: Align checklists to statutes
-    about: By aligning licensing checklist items to specific statutes, you can help
+    about:
+      By aligning licensing checklist items to specific statutes, you can help
       decision-makers understand the source of these legal requirements. This
       ensures that decision-makers clearly understand the source of a problem,
       so they can identify the most effective solution. For example, a landline
@@ -597,7 +609,8 @@ recommendations:
         checklist](https://www.childwelfareplaybook.com/assets/10-183%20Foster%20Inspection%20Checklist.docx)
   - heading: Provide clerical support for licensing workers
     title: provide-clerical-support-for-licensing-workers
-    about: Case workers spend a significant amount of time on licensing paperwork,
+    about:
+      Case workers spend a significant amount of time on licensing paperwork,
       which is time they could otherwise spend directly with families or on
       evaluations. By providing clerical support for case workers, you can
       reduce the amount of paperwork that case workers are responsible for.
@@ -769,7 +782,7 @@ recommendations:
       - Software cost for online tracking system for families
       - Potential cost of mobile fingerprinting machine
     benefits:
-      - "Limiting in-person contact while also limiting delays in licensing "
+      - 'Limiting in-person contact while also limiting delays in licensing '
       - Prevents the loss of placement options
       - May make it easier for families to complete all or some of the
         requirements
@@ -797,7 +810,8 @@ recommendations:
       * 115,171 online case notes submitted by social workers
     who:
       number: 1
-      what: Rhode Island continued to license homes during the pandemic, limiting
+      what:
+        Rhode Island continued to license homes during the pandemic, limiting
         in-person contact to a single 20-minute walkthrough during which a
         mobile fingerprinting unit for all adult household members.
   - heading: Offer online foster parent training
@@ -860,7 +874,8 @@ recommendations:
         * Los Angeles County conducts most of its orientation sessions online.
   - heading: Provide safety inspection items for families in need
     title: provide-safety-inspection-items-for-families-in-need
-    about: Whether due to time, money or transportation constraints, some families
+    about:
+      Whether due to time, money or transportation constraints, some families
       cannot acquire needed safety inspection items (such as rope ladders or
       oven locks). By providing these items to families in need, you can ensure
       that anyone who needs safety items can get them.
@@ -1040,7 +1055,8 @@ recommendations:
 
 
       Switching from physical mail to using online calendars, email, and text messages to share information about programming and other materials will help ensure that youth do not miss important information.
-    how: Programming calendars can be posted online and emailed to youth. You could
+    how:
+      Programming calendars can be posted online and emailed to youth. You could
       also use an online calendar that allows others to subscribe to your
       events, like Eventbrite. A photo of the calendar could also be texted to
       youth.
@@ -1066,7 +1082,8 @@ recommendations:
 
 
       By using direct deposit to distribute extended foster care stipends, you can eliminate unnecessary barriers and ensure that youth receive their stipends reliably.
-    how: Make it a practice to open a bank account for each youth as part of your
+    how:
+      Make it a practice to open a bank account for each youth as part of your
       onboarding process. This is the bank account you will use to direct
       deposit their stipends. You should be able to set up a direct deposit
       process through your existing accounting system.
@@ -1144,7 +1161,8 @@ recommendations:
 
 
       If a youth believes that they have an entire extra year in foster care, they may accidentally delay plans and activities that can prepare them for independence. Using precise language to describe the day that foster care ends will help avoid this confusion.
-    how: Conduct an inventory of your program materials that reference the end of
+    how:
+      Conduct an inventory of your program materials that reference the end of
       foster care (like posters, pamphlets, website content, and handouts).
       Replace any references to “until 21” with “to the end of 20” or “until
       your 21st birthday.” If your program ends at a different age, follow this
@@ -1154,10 +1172,11 @@ recommendations:
     benefits:
       - Youth will clearly understand when they will age out of foster care
       - Youth do not miss opportunities to build independence
-    outcome: Think of Us is conducting a study to identify the best language to use
+    outcome:
+      Think of Us is conducting a study to identify the best language to use
       in this scenario. This page will be updated with the results.
-    inspiration: "[First Place for Youth](https://firstplaceforyouth.org/) helps
-      youth in foster care build skills for successful transitions."
+    inspiration: '[First Place for Youth](https://firstplaceforyouth.org/) helps
+      youth in foster care build skills for successful transitions.'
   - title: increase-retention-with-renewal-check-ins
     heading: Increase foster family retention with renewal check-ins
     about: >-
@@ -1188,7 +1207,7 @@ recommendations:
         placements
     who:
       number: 1
-      what: "* Washington State"
+      what: '* Washington State'
   - title: email-renewal-requirements
     heading: Email license renewal requirements
     about: >-
@@ -1220,7 +1239,7 @@ recommendations:
       - Increases foster family retention
     who:
       number: 1
-      what: "* Frederick County, Maryland"
+      what: '* Frederick County, Maryland'
   - title: high-value-training-for-renewals
     heading: Make it easy for families to take high-value training for renewals
     about: >-
@@ -1233,7 +1252,7 @@ recommendations:
 
       Offer a curriculum of the highest-value trainings, with childcare and meals taken care of, to make completing training hours prior to renewal both simple for families and high-value for the agency.
     how: >-
-      
+
 
       * Secure a venue for an all-day training event on a recurring basis at a time convenient for families, like one weekend a month. 
 
@@ -1284,7 +1303,7 @@ recommendations:
       - Increases foster family retention
     who:
       number: 1
-      what: "* Clinton County MDHHS, Michigan"
+      what: '* Clinton County MDHHS, Michigan'
   - title: focus-recruitment-on-fostering-not-adoption
     heading: Focus recruitment on fostering, not adoption
     about: >-
@@ -1296,7 +1315,7 @@ recommendations:
 
       By updating your recruitment materials, messaging, and inquiry forms, you can highlight the real needs of your child welfare agency: foster families who will prioritize helping to reunify and heal a child’s family of origin or provide permanency for older youth and sibling groups. Case workers should have multiple conversations about potential families’ expectations and work to clarify that fostering is not the right choice for a family that is only looking to adopt an infant.
     how: >-
-      
+
 
       * If you ask about placement preferences in your inquiry form, remove references to adoption. Draft email and letter templates to respond to families who are only interested in adoption, to redirect them to legally-free youth in need of families. 
 
@@ -1312,7 +1331,7 @@ recommendations:
     who:
       number: 4
       what: >-
-        
+
 
         * Montgomery County, MD’s statute states “our purpose is to meet the needs of the kids in our community” and they have no children awaiting adoption. They use this statute to politely decline families who are only interested in adoption.
 
@@ -1321,7 +1340,8 @@ recommendations:
         * Indiana maintains clear messaging with potential foster families as well as staff, to remind all parties that their role is to support the reunification of the family of origin. They report that [this video](https://www.youtube.com/watch?v=bdTyJUO5Vqw) is helpful in training.
   - title: use-youth-data-for-foster-family-recruitment
     heading: Use youth data to drive foster family recruitment
-    about: Foster children do best with families who can most meet their needs. When
+    about:
+      Foster children do best with families who can most meet their needs. When
       a kinship caregiver isn’t available, the next best thing is a family that
       can keep youth in their school, community, and culture. Use data on the
       characteristics of youth when they enter foster care (such as language
@@ -1347,7 +1367,7 @@ recommendations:
     who:
       number: 3
       what: >-
-        
+
 
         * Hawaii regularly runs a report with data on each foster child that includes attributes like their origin, age, whether they have a disability, and whether they are now placed in another school district. This report is the foundation of much of its recruitment work. 
 
@@ -1365,7 +1385,7 @@ recommendations:
 
       Focus your scarce resources on foster families who can support reunification goals and not on licensing families who are only willing to take legally-free infants.
     how: >-
-      
+
 
       * Create a clear plan for identifying and redirecting families who are only interested in infant adoption. 
 
@@ -1379,14 +1399,15 @@ recommendations:
     who:
       number: 2
       what: >-
-        
+
 
         * Oklahoma started the Resource Family Model in 2018, which emphasizes the need for reunification. It does not approve caregivers who are only willing to take placements under age 12 (except for kinship caregivers). 
 
         * Ohio counties can redirect families who are only interested in ages 0 to 3 to private adoption agencies, as long as this is in their written recruitment plan. Ohio also has a rule allowing them to close homes if a family declines to take a placement over a certain period of time.
   - title: financial-bonuses-for-recruitment-referrals
     heading: Provide financial bonuses to foster families for recruitment referrals
-    about: Providing financial bonuses to current foster families who recruit more
+    about:
+      Providing financial bonuses to current foster families who recruit more
       families is an additional way to financially support current families.
       This also incentivizes successful recruitment activities.
     how: >-
@@ -1407,14 +1428,15 @@ recommendations:
     who:
       number: 2
       what: >-
-        
+
 
         * Washington, D.C. challenges “squads” of resource families to recruit more families. For each family that gets licensed, the referring family gets a $500 bonus. The squad that collectively recruits the most new licensed families gets a celebratory event with prizes and food. During the pandemic, they delivered meals via DoorDash in lieu of in-person celebrations. 
 
         * Montgomery County, MD provides current foster families a $500 bonus if they refer other families. The first $250 is payable when the new family receives its license, and the second is payable when they take their first placement.
   - title: social-media-for-recruitment
     heading: Use social media for foster family recruitment
-    about: Create and regularly update social media presences for your agency, so
+    about:
+      Create and regularly update social media presences for your agency, so
       community members can learn more about foster parenting and how to support
       the foster youth in their community. Radio ads, billboards, television
       commercials, and other offline media help spread awareness of the need for
@@ -1436,14 +1458,15 @@ recommendations:
     who:
       number: 2
       what: >-
-        
+
 
         * Frederick County, MD has an active [Facebook page](https://www.facebook.com/FCDSS.fosteradopt)
 
         * Rhode Island DCYF maintains an active [Facebook presence](https://www.facebook.com/ridcyf/)
   - title: hire-current-foster-parents-to-train-new-foster-parents
     heading: Hire current foster parents to help train new foster parents
-    about: Current foster parents who do not work for your Department can provide
+    about:
+      Current foster parents who do not work for your Department can provide
       additional empathy and perspectives that can help new families decide to
       sign up, or decide to expand their training or placement preferences.
       Hiring current foster parents to assist as co-trainers in new or
@@ -1458,12 +1481,12 @@ recommendations:
     costs:
       - Moderate
     benefits:
-      - "Increases foster family recruitment "
+      - 'Increases foster family recruitment '
       - Increases current foster family retention
     who:
       number: 2
       what: >-
-        
+
 
         * Frederick County, MD hires experienced foster parents to co-facilitate PRIDE foster parent training. 
 
@@ -1479,7 +1502,7 @@ recommendations:
 
       Child welfare systems are seeing success hiring youth with lived experience as foster parent trainers, clerical support, and foster parent recruiters.
     how: >-
-      
+
 
       * Work with your HR department to find the best mechanism for setting aside position(s) specifically for those with lived experience.
 
@@ -1492,7 +1515,7 @@ recommendations:
     who:
       number: 2
       what: >-
-        
+
 
         * New Mexico
 
@@ -1527,7 +1550,7 @@ recommendations:
     who:
       number: 2
       what: >-
-        
+
 
         * Rhode Island reports a 95% success rate at making connections for its foster children with this program. Watch this video about Rhode Island’s [Extreme Family Finding](https://www.wpri.com/rhode-show/connecting-through-the-extreme-family-finding-program/?fbclid=IwAR0ENP03Qx_ep_o5WyE9y4vmd5mrmW0feWp6umLg5M29ZkOgvWVolDCjjKY).
 
@@ -1544,24 +1567,26 @@ recommendations:
 
 
       Instead of passing off a potential foster family from a recruiter to a licensor, create more opportunities for warm hand-offs and for recruiting team members to continue seeing and interacting with their families.
-    how: Identify opportunities for recruitment team members to continue to interact
+    how:
+      Identify opportunities for recruitment team members to continue to interact
       with their families, such as through trainings, home visits or community
       events.
     costs:
       - Low to no cost
     benefits:
-      - "Increased foster family retention and recruitment "
+      - 'Increased foster family retention and recruitment '
     who:
       number: 2
       what: >-
-        
+
 
         * Frederick County, MD has recruiters also conduct foster parent training, which means caregivers see a familiar face as they start the process. 
 
         * Fairfax County, VA has recruitment team members join a family’s initial home visit for a warm hand-off to the licensor.
   - title: include-placement-and-recruitment-in-case-planning
     heading: Include placement and recruitment teams in regular case planning meetings
-    about: Recruitment teams can do their best work if they understand the current
+    about:
+      Recruitment teams can do their best work if they understand the current
       needs and characteristics of youth in care. Without this context, they may
       recruit families who do not best match the needs of youth in care.
       Including recruitment and placement workers in all of your routine
@@ -1584,7 +1609,7 @@ recommendations:
     who:
       number: 3
       what: >-
-        
+
 
         * In Frederick County, MD, case workers and placement workers sit side by side. This creates an environment of collaboration where all team members can work together to recruit potential families or match children to families that can best meet their needs. 
 
@@ -1620,7 +1645,7 @@ recommendations:
     who:
       number: 2
       what: >-
-        
+
 
         * Frederick County, MD pays close attention to new families in the application process, with an eye towards the youth currently in need of a placement or a better-fitting placement. When they identify a match, they work with the family to prioritize their application process. 
 
@@ -1640,7 +1665,7 @@ recommendations:
 
       Focus some recruitment efforts on existing relative caregivers. Make sure case workers discuss the idea of becoming a general licensed home with relative caregivers at regular points, particularly at permanency milestones like a return home. Your system should have a clear, documented path for “converting” from a relative caregiver to a general licensed home without having to start from scratch.
     how: >-
-      
+
 
       * Encourage case workers to discuss the possibility of becoming a general foster home with kinship caregivers. Formally note when a relative caregiver has capacity for additional children in their home (even if they currently have only a child-specific license). 
 
@@ -1653,7 +1678,7 @@ recommendations:
     who:
       number: 5
       what: >-
-        
+
 
         * In Colorado, the [Kin Connect Child Placing Agency](https://kinconnect.org/) specializes in encouraging and helping relative caregivers to become generally licensed homes. 
 
@@ -1672,7 +1697,7 @@ recommendations:
 
       Replace generic recruitment materials and photos with thoughtful and inclusive materials that reflect real community members. Images of foster families should include single parents, LGBTQ+ families, people of color, and people with a variety of abilities.
     how: >-
-      
+
 
       * Review and update your recruitment and marketing materials (including websites, posters and brochures) to better reflect your community members. Prioritize the communities from which you need more homes in order to keep children within their community. For example, if you need more homes to support trans teenagers, make sure you include trans caregivers and LGBTQ+ positive stories in your materials. In addition to photographs, review materials for inclusive case studies and example scenarios. 
 
@@ -1687,19 +1712,21 @@ recommendations:
     who:
       number: 4
       what: >-
-        
+
 
         * Prince George’s County, MD, Fairfax County, VA, Colorado and Washington State have committed to having inclusive and representative imagery and stories in their recruitment materials. 
 
         * Washington State added pronouns and preferred names to their inquiry and application forms.
   - title: recognize-foster-families
     heading: Find opportunities to recognize foster families
-    about: Every child welfare system needs more ways to support and retain their
+    about:
+      Every child welfare system needs more ways to support and retain their
       best foster families. Find opportunities to formally recognize your
       current foster families, through awards, events, or gifts. These
       recognition opportunities create positive word of mouth from current
       foster families that attract more families to sign up to foster.
-    how: Start a recognition program. Even a certificate and a personal note can go
+    how:
+      Start a recognition program. Even a certificate and a personal note can go
       a long way towards making a foster family feel valued and appreciated (and
       all their friends will see the certificate on the wall). You can also
       commission local businesses to donate free or discounted items as awards
@@ -1712,7 +1739,7 @@ recommendations:
     who:
       number: 4
       what: >-
-        
+
 
         * Washington, D.C. has “squads” of foster families who support one another. Squads have monthly get-togethers and events, which can include recognition awards and modest prizes. The squads build camaraderies and help one another through challenges. Each year, there is a competition to see which squad recruits the most new families, with a ceremony and gift card prizes for the winning squad. 
 
@@ -1733,7 +1760,7 @@ recommendations:
 
       By capturing detailed information about how new foster families were referred to your agency, you can focus on the highest-yield recruitment methods and avoid accidentally stopping methods that were, in fact, successfully recruiting families.
     how: >-
-      
+
 
       * Add to your inquiry forms a list of possible events, marketing materials, or other recruitment methods that someone may have been exposed to, and ask which ones interested the person completing the inquiry. 
 
@@ -1749,7 +1776,7 @@ recommendations:
     who:
       number: 2
       what: >-
-        
+
 
         * Frederick County, MD asks interested families to specify in detail how they became interested in fostering, and asks them to indicate on their inquiry form all the places where they heard about fostering. This helped them realize that ValPack mailers were actually reaching a lot of families. 
 
@@ -1770,7 +1797,7 @@ recommendations:
 
       Keep all your potential foster family inquiries open and find ways to keep families engaged with newsletters, email campaigns, and the occasional personal check-in. You can also keep interested families engaged by highlighting other ways for them to support foster youth, such as participating in a donation drive or volunteering at an event.
     how: >-
-      
+
 
       * If your team maintains performance metrics around converting inquiries to applications, stop. Instead, focus on opportunities to encourage high-touch interactions with families, like phone calls or meetings, and ways to engage interested families in lower-level commitments like attending an event or participating in a donation drive. 
 
@@ -1783,7 +1810,7 @@ recommendations:
     who:
       number: 3
       what: >-
-        
+
 
         * In Frederick County, MD, if a family has completed PRIDE and not submitted an application packet within the next year, they must complete a PRIDE refresher. Many families take a long time to complete the application: more families take six or more months than the number of families who complete the application right away.
 
@@ -1813,11 +1840,12 @@ recommendations:
       - Identifies families who may not be a good fit early on
     who:
       number: 1
-      what: "* Dr. Patricia Aviles-Cubillos, a foster parent recruiter with Fairfax
+      what:
+        '* Dr. Patricia Aviles-Cubillos, a foster parent recruiter with Fairfax
         County Department of Family Services, provides her own phone number to
         families to register for orientation, instead of having an online signup
         form. This creates an opportunity for an early conversation, where she
-        can get to know the family, and they can ask questions."
+        can get to know the family, and they can ask questions.'
   - title: respond-quickly-to-inquiries-with-information
     heading: Respond quickly to inquiries with more information
     costs:
@@ -1836,7 +1864,7 @@ recommendations:
 
       Set a required, short response time for following up with potential foster family inquiries. Responding quickly with more information makes you seem responsive and supportive to new families, gives primed applicants a way to get started and make a more informed choice about whether fostering is right for them, and can help weed out poor fits (e.g. families only looking to adopt infants). By providing information about additional ways to support foster youth, you can also help more hesitant families get and stay engaged.
     how: >-
-      
+
 
       * Set a metric, ranging from one to seven days, for how quickly you will respond to new inquiries. This metric should be as short as possible, but realistic given your current staffing and resources. Track initial response times for new inquiries. If they begin to slip, work with your team to identify how to respond faster (such as increasing resources or using calendar reminders). 
 
@@ -1848,7 +1876,7 @@ recommendations:
     who:
       number: 2
       what: >-
-        
+
 
         * Ohio, a county-administered system, requires that all inquiries receive a response within seven days. They have developed a packet of materials to provide in response to new inquiries. 
 
@@ -1864,7 +1892,7 @@ recommendations:
 
       Setting reminders is a simple way to make sure that you stay in touch with potential foster families, and that they feel appreciated.
     how: >-
-      
+
 
       * Create a regular newsletter that you send to all families who submit inquiries. It doesn’t have to be long or complicated, and can be just a story or a few links. Consider including information about other ways to support foster youth without (or before) becoming a foster parent. 
 
@@ -1880,7 +1908,7 @@ recommendations:
     who:
       number: 6
       what: >-
-        
+
 
         * Washington, D.C. schedules check-ins with every family on their inquiry list each quarter. 
 
@@ -1913,9 +1941,10 @@ recommendations:
       - Increased foster family recruitment
     who:
       number: 1
-      what: "* Prince George’s County tracks the zip codes of new inquiries against
+      what:
+        '* Prince George’s County tracks the zip codes of new inquiries against
         the zip codes where they most need placement options, and then focuses
-        recruitment efforts on the missing zip code areas."
+        recruitment efforts on the missing zip code areas.'
   - title: digital-marketing-for-recruitment
     heading: Use digital marketing campaigns for foster family recruitment
     about: >-
@@ -1936,25 +1965,27 @@ recommendations:
       cost money, but can have a higher return on investment than some analog
       recruitment methods.
     costs:
-      - "Varies "
+      - 'Varies '
     benefits:
       - Recruitment can be focused on the families your foster children most need
       - Increased foster family recruitment
     who:
       number: 2
       what: >-
-        
+
 
         * Multiple California counties partnered with Mark Daley to run targeted recruitment campaigns for specific types of homes, such as homes for CSEC youth, as well as child-specific campaigns. 
 
         * Washington, D.C. runs paid Facebook marketing campaigns to attract the hardest-to-find kinds of families.
   - title: senior-staff-sign-off-for-non-relative-placements
     heading: Require senior staff sign-off for non-relative placements
-    about: Case workers don’t want to wake a director in the middle of the night to
+    about:
+      Case workers don’t want to wake a director in the middle of the night to
       sign-off on a non-relative placement. Requiring this level of sign-off
       incentivizes early family finding and may prevent placements in group
       homes.
-    how: Require senior staff sign-off for non-relative placements, no matter the
+    how:
+      Require senior staff sign-off for non-relative placements, no matter the
       time of day. You can require sign-off on initial placements, subsequent
       placements, and any congregate care placements.
     costs:
@@ -1962,14 +1993,16 @@ recommendations:
     benefits:
       - Incentivizes finding more kinship placement options
       - Helps prevent placement in group homes
-    outcome: New Mexico increased initial kinship placements from 3% to 40% in one
+    outcome:
+      New Mexico increased initial kinship placements from 3% to 40% in one
       year by shifting to practices that included requiring Director-level
       approval for non-kin placements.
     who:
       number: 1
-      what: "* New Mexico has a policy that a Director must sign-off on any placement
+      what:
+        '* New Mexico has a policy that a Director must sign-off on any placement
         with non-kin, whether general foster care or a group home, even if it’s
-        the middle of the night."
+        the middle of the night.'
   - title: use-heart-map
     heading: Use a Heart Map to identify a youth’s important relationships
     about: >-
@@ -1982,7 +2015,7 @@ recommendations:
 
       The Heart Map exercise provides a meaningful way for staff to surface contacts with youth, in order to strengthen and maintain those relationships.
     how: >-
-      
+
 
       * Download a printable [Heart Map](https://www.childwelfareplaybook.com/assets/heartmap.pdf). As soon as a youth enters care, walk them through the Heart Map to quickly surface people who are important to them. 
 
@@ -1995,4 +2028,4 @@ recommendations:
       - Increases the number of supportive adults in youth’s lives
     who:
       number: 1
-      what: "* [Uplift Family Services](https://upliftfs.org/), California"
+      what: '* [Uplift Family Services](https://upliftfs.org/), California'
