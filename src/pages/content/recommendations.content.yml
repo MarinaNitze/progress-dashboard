@@ -572,7 +572,7 @@ recommendations:
     who:
       number: 2
       what:
-        '* **Michigan** explicitly asks identified kin to commit to staying in
+        "* **Michigan** explicitly asks identified kin to commit to staying in
         touch with youth on their [Relative Notification
         Form](http://www.michigan.gov/documents/dhs/DHS-0990_265835_7.dot)"
   - title: align-checklists-to-statutes
