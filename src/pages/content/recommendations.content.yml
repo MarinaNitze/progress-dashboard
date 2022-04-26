@@ -509,9 +509,7 @@ recommendations:
 
       * **Require a red team meeting before any youth can be placed in a group home.** You may require a meeting before additional scenarios, such as placing a youth out of state or placing a youth in a general foster home with other unrelated youth.
 
-      * **Ask about connections.** As part of their process, the red team should construct a genogram and plan to ask youth about possible placement options. 
-
-      * **Consider requiring senior staff sign-off.** If you do not have the resources to create an entire team or want to add an additional level of incentive, you may consider requiring senior staff sign-off for any non-kin placements. Requiring this level of sign-off can create more incentive for early family finding. Some states utilize a policy that requires senior staff sign-off even in the middle of the night.
+      * **Ask about connections.** As part of their process, the red team should construct a genogram and plan to ask youth about possible placement options.
     costs:
       - Staff time
     benefits:
@@ -520,23 +518,17 @@ recommendations:
       - Staff may be able to increase initial kinship placements
       - Find more kin who can take placement and/or serve as supportive
         connections for youth
-    outcome: >-
-      * **Rhode Island** has begun to depopulate group homes by requiring a red
-      team before any group placement, or any placement into a home that already
-      has at least one other unrelated foster child.
-
-      * **New Mexico** increased initial kinship placements from 3% to 40% in one year by shifting to practices that included requiring Director-level approval for non-kin placements.
+    outcome: "* **Rhode Island** has begun to depopulate group homes by requiring a
+      red team before any group placement, or any placement into a home that
+      already has at least one other unrelated foster child."
     who:
       number: 1
-      what: >-
-        * **Rhode Island** holds a red team meeting, led by the Chief of Staff
-        of the Department, before a child is placed in a group home or in a
-        general foster home with other unrelated foster youth. As part of the
-        red team, the family finding office conducts kin research, the team
-        constructs a genogram, and they ask the youth directly about possible
-        placement ideas.
-
-        * **New Mexico** has a policy that a Director must approve any placement with non-kin (whether general foster care or a group home), even if it’s the middle of the night.
+      what: "* **Rhode Island** holds a red team meeting, led by the Chief of Staff of
+        the Department, before a child is placed in a group home or in a general
+        foster home with other unrelated foster youth. As part of the red team,
+        the family finding office conducts kin research, the team constructs a
+        genogram, and they ask the youth directly about possible placement
+        ideas."
   - heading: Be gentle when interacting with kin for the first time
     title: be-gentle-when-interacting-with-kin-first-time
     about: >-
