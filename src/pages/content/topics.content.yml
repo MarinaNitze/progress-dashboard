@@ -96,11 +96,28 @@ topics:
     layout: topic
     title: extended-foster-care
     image: /src/images/topics/Topic-EFC.svg
-    about: Extended Foster Care
-    why: Extended Foster Care
-    what: Extended Foster Care
+    about: The end of foster care can be a difficult or confusing time for youth.
+      However, there are several important ways that staff can better prepare
+      and support youth during this time.
+    why: Youth can often be confused about the end of foster care, even about the
+      date foster care will end. This means that youth may miss out on
+      opportunities to build independence or connections.
+    what: >-
+      
+
+      * **Be specific about the end of foster care.** Youth often report confusion about the day foster care ends, as they may misunderstand “until 21” to mean that care continues until their 22nd birthday. Using specific language about when foster care ends will ensure that youth are better prepared and not accidentally delaying plans or activities that can prepare them for independence.
+
+      * **Make sure youth know their options.** Allowing youth to explore and select available programs means youth can better select the topics most relevant to them, as case workers are often too busy to explain each program. If possible, providing positions within your agency for youth with lived experience is a valuable way to center lived experiences of care in your work, while providing employment options to youth. 
+
+      * **Make it easier to receive Extended Foster Care stipends.** Youth often report that direct deposited funds or cash is more useful than store-specific gift cards. Requiring youth to pick up a check in person each month can also put a burden on youth who are in college, working, or don’t have access to adequate transportation.
     recommendations:
-      - electronicBackgroundCheck
+      - allow-youth-to-explore-and-select-programs-available-to-them
+      - find-alternatives-to-physical-mail-for-sharing-documents-with-youth
+      - use-direct-deposit-to-distribute-extended-foster-care-stipends
+      - use-heart-map
+      - keep-a-schedule-of-when-youth-will-age-out
+      - give-cash-or-prepaid-cards-for-youth-stipends
+      - use-specific-language-about-the-end-of-foster-care
   - hero:
       backgroundColor: secondary
       title: Finding family members
