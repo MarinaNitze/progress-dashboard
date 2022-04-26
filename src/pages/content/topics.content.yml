@@ -223,8 +223,32 @@ topics:
     layout: topic
     title: recruitment
     image: /src/images/topics/Topic-Recruitment.svg
-    about: Recruitment
-    why: Recruitment
-    what: Recruitment
+    about: Foster family recruitment is vital to ensuring a wide pool of placement
+      options for youth in care. Innovative programs are finding a variety of
+      creative ways for successfully recruiting new foster families.
+    why: Successful recruitment means that youth in care can be placed with families
+      who are in their existing community and culture, or who speak the same
+      language. Identifying the families most needed is helpful, but must be
+      followed by intentional recruitment methods targeting the communities or
+      types of families most needed.
+    what: >-
+      
+
+      * **Be specific and intentional in recruitment.** Use data about the youth who currently need placements, as well as the data from incoming foster family inquiries, to identify the gaps in your current recruitment. Once those gaps are identified, you can tailor your recruitment materials and methods to better reflect your community and the families most needed. Additionally, be clear in your materials that homes are needed for foster care, not the adoption of infants. Clarity early in the process will help potential foster families make the right choice for themselves, as well as help staff focus on the families most needed for placements.
+
+      * **Make the recruitment, application, and placement process seamless.** By including recruiters in follow up activities with potential foster families, you can increase family satisfaction and prevent losing potential families, who may feel confused or unsupported if they’re passed off between multiple staff members. Recruiters should also be included in your routine case management and placement meetings, as they can help identify any pending families who are good matches for current youth. Once identified, you will be able to prioritize licensing these matching families. 
+
+      * **Include current foster families in recruitment efforts**. Positive word of mouth can be a valuable tool in recruiting potential foster families. You can encourage current foster families to help recruit other families by providing financial bonuses for any referrals, or when referrals complete major milestones like completing an application. Hiring current foster parents as trainers or for an orientation can also help current foster parents feel valued, while providing valuable information and perspectives to new families.
     recommendations:
-      - electronicBackgroundCheck
+      - focus-recruitment-on-fostering-not-adoption
+      - use-youth-data-for-foster-family-recruitment
+      - dont-license-infant-only
+      - financial-bonuses-for-recruitment-referrals
+      - social-media-for-recruitment
+      - hire-current-foster-parents-to-train-new-foster-parents
+      - include-recruiters-in-follow-up-activities
+      - include-placement-and-recruitment-in-case-planning
+      - include-pending-families-in-placement-searches
+      - recruit-relative-caregivers-to-become-general-caregivers
+      - reflect-community-in-recruitment
+      - digital-marketing-for-recruitment
