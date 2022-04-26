@@ -180,11 +180,24 @@ topics:
     layout: topic
     title: license-renewal
     image: /src/images/topics/Topic-LR.svg
-    about: License Renewal
-    why: License Renewal
-    what: License Renewal
+    about: License renewal can be a time-consuming process for both staff and
+      families, but a successful license renewal process can ensure better
+      retention and increased family satisfaction.
+    why: Maintaining up-to-date licenses is key for ensuring child safety and foster
+      family preparedness. The license renewal process can also provide an
+      opportunity for staff to connect with foster families, maintaining family
+      engagement and increasing retention.
+    what: >-
+      
+
+      * **Use electronic tools to increase understanding and engagement.** Emailing renewal requirements to families can decrease the chances of important documents going unnoticed in the large amount of mail that families receive from agencies. Additionally, families often have multiple renewal dates pending, for items like CPR recertification or pet vaccines. Using an electronic calendar to track and send reminders for these items helps families to be better prepared at renewal time. 
+
+      * **Take the opportunity to check-in with families.** Using renewal as an opportunity to check-in with families will help staff identify families who may be feeling overwhelmed, as well as those who may be interested in increasing their training and taking on more responsibility.
     recommendations:
-      - electronicBackgroundCheck
+      - increase-retention-with-renewal-check-ins
+      - email-renewal-requirements
+      - high-value-training-for-renewals
+      - track-renewal-dates-on-calendar
   - hero:
       backgroundColor: primary
       title: Recruitment
