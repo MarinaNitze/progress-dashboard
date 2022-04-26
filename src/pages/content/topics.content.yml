@@ -141,11 +141,30 @@ topics:
     layout: topic
     title: inquiry-management
     image: /src/images/topics/Topic-IM.svg
-    about: Inquiry Management
-    why: Inquiry Management
-    what: Inquiry Management
+    about: Responding to and tracking inquiries from potential foster families can
+      be time consuming, but represents a key moment for engagement and
+      successful recruitment.
+    why: Potential families may fill out an inquiry form when they are ready to
+      apply the next day, or the next year. Remaining proactive in your inquiry
+      management process can mean keeping families engaged over the months or
+      years as they decide to complete an application to become a foster family,
+      while allowing families who are ready to move to the application process
+      quickly.
+    what: >-
+      
+
+      * **Respond to inquiries quickly.** If too much time passes after a family completes an inquiry form, a potential caregiver may become discouraged, second guess themselves, or change their mind. Responding quickly and providing more information will help families to immediately feel engaged and supported, while allowing those who are ready to complete an application more quickly. 
+
+      * **Stay in touch with families.** Some families may take years to decide they’re ready to become a foster family. Closing inquiries after a certain time period has elapsed risks losing these potential caregivers. Instead, stay in touch with families who inquire through email newsletters, personal check-ins, or by offering other ways to support foster youth without or before becoming a foster parent. 
+
+      * **Leverage inquiry data.** You can use the data from incoming inquiries, such as zip code or languages spoken, to highlight any gaps in your recruitment. Additionally, by tracking detailed referral information from new inquiries, you can better understand which recruitment methods are most successful.
     recommendations:
-      - electronicBackgroundCheck
+      - track-referral-information
+      - don't-close-inquiries
+      - talk-with-families-quickly-after-inquiry
+      - respond-quickly-to-inquiries-with-information
+      - reminders-to-stay-in-touch-with-families-who-submit-inquiries
+      - use-inquiry-data-to-identify-recruitment-gaps
   - hero:
       backgroundColor: primary
       title: License Renewal
