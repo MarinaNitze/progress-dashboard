@@ -379,3 +379,49 @@ collections:
                       widget: 'hidden',
                       default: 'light',
                     }
+      - label: 'About Page'
+        name: 'about'
+        file: 'src/pages/about.content.yml'
+        fields:
+          - label: 'Hero'
+            name: 'hero'
+            widget: 'object'
+            fields:
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - {
+                  label: 'Image',
+                  name: 'image',
+                  widget: 'image',
+                  media_folder: '/src/images/heros',
+                  required: false,
+                  allow_multiple: false,
+                }
+              - {
+                  label: 'Background Color',
+                  name: 'backgroundColor',
+                  widget: 'select',
+                  options:
+                    ['primary', 'secondary', 'info', 'light', 'white'],
+                  default: ['light'],
+                }
+              - {
+                  label: 'Image Alt Text',
+                  name: 'imgAlt',
+                  widget: 'string',
+                  required: false,
+                }
+          - label: 'About'
+            name: 'about'
+            widget: 'markdown'
+          - label: 'Membership'
+            name: 'membership'
+            widget: 'markdown'
+          - label: 'How it Works'
+            name: 'howItWorks'
+            widget: 'markdown'
+          - label: 'Benefits of Membership'
+            name: 'benefitsOfMembership'
+            widget: 'markdown'
+          - label: 'Current Members'
+            name: 'currentMembers'
+            widget: 'list'

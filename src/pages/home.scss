@@ -170,12 +170,25 @@
   }
 }
 
-@media (max-width: 1100px) {
+.cwp-about {
+  display: flex;
+  margin-left: 0;
+  margin-right: 0;
+  max-width: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@media (max-width: 64em) {
   .usa-search {
     .usa-input {
       width: 100%;
       max-width: 100%;
     }
+  }
+
+  .cwp-about {
+    display: block
   }
 }
 

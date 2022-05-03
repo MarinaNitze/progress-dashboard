@@ -21,6 +21,11 @@ const headerLinks = [
     dataCy: 'cwp-nav-compare-link',
   },
   {
+    to: '/about',
+    text: 'About',
+    dataCy: 'cwp-nav-compare-link',
+  },
+  {
     to: '/search',
     text: 'Search',
     iconPath: 'images/header/search.svg',
