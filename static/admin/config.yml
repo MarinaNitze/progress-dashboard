@@ -400,8 +400,7 @@ collections:
                   label: 'Background Color',
                   name: 'backgroundColor',
                   widget: 'select',
-                  options:
-                    ['primary', 'secondary', 'info', 'light', 'white'],
+                  options: ['primary', 'secondary', 'info', 'light', 'white'],
                   default: ['light'],
                 }
               - {

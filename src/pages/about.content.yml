@@ -55,4 +55,20 @@ benefitsOfMembership: >-
 
 
   **To join, email [marina@marinanitze.com](mailto:marina@marinanitze.com)**
-currentMembers: [California (State of California and San Diego County), Colorado, Hawaii, Indiana, "Maryland (State of Maryland, along with Baltimore, Frederick, Montgomery, and Prince George’s Counties)", Michigan, New Hampshire, New Mexico, Ohio, Oklahoma, Rhode Island, Virginia (Fairfax County), Washington DC, Washington State]
+currentMembers:
+  [
+    California (State of California and San Diego County),
+    Colorado,
+    Hawaii,
+    Indiana,
+    'Maryland (State of Maryland, along with Baltimore, Frederick, Montgomery, and Prince George’s Counties)',
+    Michigan,
+    New Hampshire,
+    New Mexico,
+    Ohio,
+    Oklahoma,
+    Rhode Island,
+    Virginia (Fairfax County),
+    Washington DC,
+    Washington State,
+  ]

@@ -13,22 +13,29 @@ import content from './about.content.yml';
 import './home.scss';
 
 export default function About() {
-   const { hero, about, membership, howItWorks, benefitsOfMembership, currentMembers } = content
+  const {
+    hero,
+    about,
+    membership,
+    howItWorks,
+    benefitsOfMembership,
+    currentMembers,
+  } = content;
 
-   const getAboutMarkdown = (key: string) => {
+  const getAboutMarkdown = (key: string) => {
     switch (key) {
       case 'about':
-        return about
+        return about;
       case 'membership':
-        return membership
+        return membership;
       case 'howItWorks':
-        return howItWorks
+        return howItWorks;
       case 'benefitsOfMembership':
-        return benefitsOfMembership
+        return benefitsOfMembership;
       default:
-        return "";
+        return '';
     }
-   }
+  };
 
   const addHash = (title: string, url: string) => {
     window.history.replaceState(null, title, url);
@@ -38,7 +45,7 @@ export default function About() {
     'membership',
     'howItWorks',
     'benefitsOfMembership',
-    'currentMembers'
+    'currentMembers',
   ];
   const allItems: AnchorLinkProps[] = [
     {
@@ -66,8 +73,7 @@ export default function About() {
     {
       to: `/about#current-members`,
       title: 'Current Members',
-      onAnchorLinkClick: () =>
-        addHash('Current Members', '#current-members'),
+      onAnchorLinkClick: () => addHash('Current Members', '#current-members'),
     },
   ];
 
@@ -78,17 +84,15 @@ export default function About() {
   return (
     <Layout>
       <section id="test-section-id">
-          <Hero
-            className="cwp-about-hero"
-            path={hero.image && hero.image.slice(3)}
-            alt={hero.imgAlt && hero.imgAlt}
-            backgroundColor={hero.backgroundColor}
-            title={hero.title}
-          />
+        <Hero
+          className="cwp-about-hero"
+          path={hero.image && hero.image.slice(3)}
+          alt={hero.imgAlt && hero.imgAlt}
+          backgroundColor={hero.backgroundColor}
+          title={hero.title}
+        />
       </section>
-      <Breadcrumbs
-        crumbLabel={"About"}
-      />
+      <Breadcrumbs crumbLabel={'About'} />
       <GridContainer className="cwp-about">
         <Grid desktop={{ col: 3 }}>
           <SideAnchorNav items={items} />
@@ -100,19 +104,27 @@ export default function About() {
           desktop={{ col: 12 }}
         >
           <main className="cwp-main about">
-            {itemFilterKey.map( ( key, index) =>
-              ( <Grid id={key as string} key={key as string}>
+            {itemFilterKey.map((key, index) => (
+              <Grid id={key as string} key={key as string}>
                 <section>
                   <h2 className="section-title">{allItems[index].title}</h2>
-                  { key !== 'currentMembers' ? <ReactMarkdown className="section-content">
-                    {getAboutMarkdown(key)}
-                  </ReactMarkdown> : <ul>{currentMembers.map( (cm: string) => (<li key={cm}>{cm}</li>))}</ul>}
+                  {key !== 'currentMembers' ? (
+                    <ReactMarkdown className="section-content">
+                      {getAboutMarkdown(key)}
+                    </ReactMarkdown>
+                  ) : (
+                    <ul>
+                      {currentMembers.map((cm: string) => (
+                        <li key={cm}>{cm}</li>
+                      ))}
+                    </ul>
+                  )}
                 </section>
-              </Grid> ))}
+              </Grid>
+            ))}
           </main>
         </Grid>
       </GridContainer>
     </Layout>
   );
 }
-
