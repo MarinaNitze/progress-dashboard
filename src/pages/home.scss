@@ -179,6 +179,12 @@
   padding-right: 0;
 }
 
+#about {
+  h2 {
+    margin-top: 0;
+  }
+}
+
 @media (max-width: 64em) {
   .usa-search {
     .usa-input {
