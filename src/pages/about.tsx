@@ -32,6 +32,8 @@ export default function About() {
         return howItWorks;
       case 'benefitsOfMembership':
         return benefitsOfMembership;
+      case 'currentMembers':
+        return currentMembers;
       default:
         return '';
     }
@@ -59,19 +61,19 @@ export default function About() {
       onAnchorLinkClick: () => addHash('Membership', '#membership'),
     },
     {
-      to: `/about#how-it-works`,
+      to: `/about#howItWorks`,
       title: 'How it Works',
       onAnchorLinkClick: () => addHash('How it Works', '#how-it-works'),
     },
     {
-      to: `/about#benefits-of-membership`,
+      to: `/about#benefitsOfMembership`,
       title: 'Benefits of Membership',
       className: 'text-wrap-line',
       onAnchorLinkClick: () =>
         addHash('Benefits of Membership', '#benefits-of-membership'),
     },
     {
-      to: `/about#current-members`,
+      to: `/about#currentMembers`,
       title: 'Current Members',
       onAnchorLinkClick: () => addHash('Current Members', '#current-members'),
     },
@@ -108,17 +110,9 @@ export default function About() {
               <Grid id={key as string} key={key as string}>
                 <section>
                   <h2 className="section-title">{allItems[index].title}</h2>
-                  {key !== 'currentMembers' ? (
-                    <ReactMarkdown className="section-content">
-                      {getAboutMarkdown(key)}
-                    </ReactMarkdown>
-                  ) : (
-                    <ul>
-                      {currentMembers.map((cm: string) => (
-                        <li key={cm}>{cm}</li>
-                      ))}
-                    </ul>
-                  )}
+                  <ReactMarkdown className="section-content">
+                    {getAboutMarkdown(key)}
+                  </ReactMarkdown>
                 </section>
               </Grid>
             ))}

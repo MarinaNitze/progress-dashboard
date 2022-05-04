@@ -423,4 +423,4 @@ collections:
             widget: 'markdown'
           - label: 'Current Members'
             name: 'currentMembers'
-            widget: 'list'
+            widget: 'markdown'
