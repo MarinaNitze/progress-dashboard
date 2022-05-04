@@ -7,9 +7,9 @@ import TopicContent from '../../pages/content/topics.content.yml';
 import { Recommendation as RecommendationType } from '../../types/recommendation';
 import RecommendationContent from '../../pages/content/recommendations.content.yml';
 
-import './Search.scss';
-
 import useGatsbyImages from '../../hooks/useGatsbyImages';
+
+import './Search.scss';
 
 type SearchProps = {
   home?: boolean;

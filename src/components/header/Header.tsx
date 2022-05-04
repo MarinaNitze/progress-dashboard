@@ -1,12 +1,12 @@
 import React, { useState, useRef } from 'react';
+import { Link } from 'gatsby';
 import {
   Header as HeaderCmp,
   NavMenuButton,
   PrimaryNav,
 } from '@trussworks/react-uswds';
-import useGatsbyImages from '../../hooks/useGatsbyImages';
 import { GatsbyLinkProps } from 'gatsby-link';
-import { Link } from 'gatsby';
+import useGatsbyImages from '../../hooks/useGatsbyImages';
 import useScrollDirection from '../../hooks/useScrollDirection';
 
 import './Header.scss';

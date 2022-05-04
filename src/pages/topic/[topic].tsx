@@ -1,16 +1,17 @@
-import { PageProps } from 'gatsby';
 import React from 'react';
+import { PageProps, Link } from 'gatsby';
 import { Grid, GridContainer } from '@trussworks/react-uswds';
 import ReactMarkdown from 'react-markdown';
 import { AnchorLinkProps } from 'gatsby-plugin-anchor-links';
-import Layout from '../../components/layout/Layout';
-import { Topic } from '../../types/topic';
-import Hero from '../../components/hero/Hero';
+
 import Breadcrumbs from '../../components/breadcrumbs/Breadcrumbs';
+import Hero from '../../components/hero/Hero';
+import Layout from '../../components/layout/Layout';
 import SideAnchorNav from '../../components/side-anchor-nav/SideAnchorNav';
 import Table, { TableHeading } from '../../components/table/Table';
+
 import { Recommendation } from '../../types/recommendation';
-import { Link } from 'gatsby';
+import { Topic } from '../../types/topic';
 
 import content from '../content/topics.content.yml';
 import recContent from '../content/recommendations.content.yml';

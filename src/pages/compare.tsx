@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import { Link } from 'gatsby';
 
-import Layout from '../components/layout/Layout';
-import Hero from '../components/hero/Hero';
 import Breadcrumbs from '../components/breadcrumbs/Breadcrumbs';
+import Hero from '../components/hero/Hero';
+import Layout from '../components/layout/Layout';
 
+import useDataPractices from '../hooks/useDataPractices';
 import useGatsbyImages from '../hooks/useGatsbyImages';
 
 import './home.scss';
-import useDataPractices from '../hooks/useDataPractices';
 
 export default function Compare() {
   const searchIcon = useGatsbyImages()['images/header/search.svg'].publicURL;

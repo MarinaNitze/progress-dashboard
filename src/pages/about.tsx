@@ -3,9 +3,9 @@ import { Grid, GridContainer } from '@trussworks/react-uswds';
 import ReactMarkdown from 'react-markdown';
 import { AnchorLinkProps } from 'gatsby-plugin-anchor-links';
 
-import Layout from '../components/layout/Layout';
-import Hero from '../components/hero/Hero';
 import Breadcrumbs from '../components/breadcrumbs/Breadcrumbs';
+import Hero from '../components/hero/Hero';
+import Layout from '../components/layout/Layout';
 import SideAnchorNav from '../components/side-anchor-nav/SideAnchorNav';
 
 import content from './about.content.yml';

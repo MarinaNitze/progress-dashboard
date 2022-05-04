@@ -8,17 +8,18 @@ import {
   Label,
   CardGroup,
 } from '@trussworks/react-uswds';
-import useGatsbyImages from '../../hooks/useGatsbyImages';
-import Select from '../../components/select/Select';
 import { Option } from 'react-select';
-import Layout from '../../components/layout/Layout';
-import Hero from '../../components/hero/Hero';
+
 import Breadcrumbs from '../../components/breadcrumbs/Breadcrumbs';
 import Card from '../../components/card/Card';
+import Hero from '../../components/hero/Hero';
+import Layout from '../../components/layout/Layout';
+import Select from '../../components/select/Select';
+
 import { PracticeName, Topic, Value } from '../../types/compare';
 import useDataPractices from '../../hooks/useDataPractices';
+import useGatsbyImages from '../../hooks/useGatsbyImages';
 
-import '../home.scss';
 import './compare.scss';
 
 const PRACTICE_LINK_MAP: Record<PracticeName, string> = {
