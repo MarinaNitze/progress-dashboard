@@ -1,11 +1,11 @@
-import React, { useState, useRef, useEffect, SyntheticEvent } from 'react';
+import React, { useState, useRef } from 'react';
 import {
   Header as HeaderCmp,
   NavMenuButton,
   PrimaryNav,
 } from '@trussworks/react-uswds';
 import useGatsbyImages from '../../hooks/useGatsbyImages';
-import { GatsbyLinkProps, navigate } from 'gatsby-link';
+import { GatsbyLinkProps } from 'gatsby-link';
 import { Link } from 'gatsby';
 import useScrollDirection from '../../hooks/useScrollDirection';
 
@@ -17,70 +17,22 @@ type HeaderProps = {
 
 type HeaderLinks = (GatsbyLinkProps<unknown> & {
   iconPath?: string;
-  iconClassname?: string;
-  iconAlt?: string;
   text: string;
   dataCy?: string;
 })[];
 
 export default function Header({ headerLinks }: HeaderProps) {
   const scrollRef = useRef(0);
-  const searchInputRef = useRef<HTMLInputElement>(null);
   const direction = useScrollDirection(scrollRef);
   const [showMenu, setShowMenu] = useState(false);
-  const [showSearch, setShowSearch] = useState(false);
   const imageMap = useGatsbyImages();
 
   const onClickShowMenu = () => {
-    setShowSearch(false);
     setShowMenu(prevShowMenu => !prevShowMenu);
   };
 
-  const onClickShowSearch = () => {
-    setShowMenu(false);
-    setShowSearch(prevShowSearch => !prevShowSearch);
-  };
-
-  const onBlurCloseSearch = ({
-    currentTarget,
-  }: SyntheticEvent<HTMLFormElement>) => {
-    // Captures search input and button container to detect blur outside child elements
-    requestAnimationFrame(() => {
-      if (
-        !currentTarget.contains(document.activeElement) &&
-        direction === 'up'
-      ) {
-        setShowSearch(false);
-      }
-    });
-  };
-
-  const submitSearch = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    const searchTerm = (e.target as any)[0].value;
-    navigate('/search', { state: { searchTerm } });
-  };
-
-  useEffect(() => {
-    if (showSearch && direction === 'up') {
-      searchInputRef?.current?.focus();
-    }
-  }, [showSearch, direction, searchInputRef?.current]);
-
-  // Change header links based on how menu is being displayed:
-  // If !showMenu and !showSearch, then it's the normal full-width menu (b/c these vars can only be affected by buttons that are only accessible in mobile)
-  // else, if showSearch, then set header links to empty array ()
-  // else, filter out search link to get desired mobile menu items
-  const filteredHeaderLinks =
-    !showSearch && !showMenu
-      ? headerLinks
-      : showSearch
-      ? []
-      : headerLinks.filter(h => h.text !== 'Search');
-
   const closeMenuAll = () => {
     setShowMenu(false);
-    setShowSearch(false);
   };
 
   return (
@@ -122,46 +74,21 @@ export default function Header({ headerLinks }: HeaderProps) {
                 // instead of src property, content set in CSS to easily swap for mobile
               />
             </Link>
-            <NavMenuButton
-              onClick={onClickShowSearch}
-              label={
-                <div
-                  className={`menu-button search ${showSearch ? 'close' : ''}`}
-                >
-                  Search
-                  <img
-                    src={
-                      showSearch
-                        ? imageMap['images/header/close.svg'].publicURL
-                        : imageMap['images/header/search.svg'].publicURL
-                    }
-                  />
-                </div>
-              }
-            />
           </div>
           <PrimaryNav
-            className={`cwp-nav ${showSearch ? 'search-nav' : ''}`}
-            items={filteredHeaderLinks.map((link, i) => (
+            className={`cwp-nav`}
+            items={headerLinks.map((link, i) => (
               <Link
                 className="font-family-body text-bold"
                 to={link.to}
                 data-cy={link?.dataCy ?? `nav-link-${i}`}
               >
                 {link.text}
-                {link.iconPath && (
-                  <img
-                    className={link.iconClassname}
-                    src={imageMap[link.iconPath].publicURL}
-                    alt={link.iconAlt}
-                  />
-                )}
               </Link>
             ))}
-            mobileExpanded={(showMenu || showSearch) && direction === 'up'}
+            mobileExpanded={(showMenu ) && direction === 'up'}
             onToggleMobileNav={() => {
               setShowMenu(false);
-              setShowSearch(false);
             }}
           >
             {
@@ -172,40 +99,6 @@ export default function Header({ headerLinks }: HeaderProps) {
                     child welfare playbook
                   </Link>
                 </div>
-              )
-            }
-            {
-              // Add search bar element to otherwise empty mobile search nav overlay
-              showSearch && (
-                <form
-                  onSubmit={submitSearch}
-                  data-cy="mobile-search-form"
-                  className="usa-search"
-                  role="mobile-search"
-                  onBlur={onBlurCloseSearch}
-                >
-                  <label data-cy="mobile-search-label" className="usa-sr-only">
-                    Search
-                  </label>
-                  <input
-                    ref={searchInputRef}
-                    data-cy="mobile-header-search-input"
-                    className="usa-input"
-                    id="search-field"
-                    name="mobile-search"
-                    type="search"
-                    placeholder="Search the playbook"
-                  />
-                  <button
-                    type="submit"
-                    className="usa-button mobile-search-button"
-                    data-testid="button"
-                  >
-                    <span className="mobile-header-search-icon usa-search__submit-text">
-                      Search
-                    </span>
-                  </button>
-                </form>
               )
             }
           </PrimaryNav>

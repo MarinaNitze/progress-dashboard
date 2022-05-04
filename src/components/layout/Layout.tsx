@@ -28,8 +28,6 @@ const headerLinks = [
   {
     to: '/search',
     text: 'Search',
-    iconPath: 'images/header/search.svg',
-    iconClassname: 'search-icon',
     dataCy: 'cwp-nav-search-link',
   },
 ];
