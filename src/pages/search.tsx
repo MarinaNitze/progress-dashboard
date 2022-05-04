@@ -6,7 +6,6 @@ import Hero from '../components/hero/Hero';
 import Layout from '../components/layout/Layout';
 import SearchComponent from '../components/search/SearchComponent';
 
-
 import { Topic as TopicType } from '../types/topic';
 import topicContent from './content/topics.content.yml';
 
