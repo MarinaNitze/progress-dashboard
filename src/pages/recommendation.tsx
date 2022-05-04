@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from 'gatsby';
 
-import Layout from '../components/layout/Layout';
-import Hero from '../components/hero/Hero';
 import Breadcrumbs from '../components/breadcrumbs/Breadcrumbs';
+import Hero from '../components/hero/Hero';
+import Layout from '../components/layout/Layout';
 
 import { Recommendation as RecommendationType } from '../types/recommendation';
 import content from './content/recommendations.content.yml';

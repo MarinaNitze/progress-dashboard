@@ -1,18 +1,18 @@
 import React, { useState } from 'react';
 import { CardGroup, Grid, GridContainer } from '@trussworks/react-uswds';
 
-import Layout from '../components/layout/Layout';
-import Hero from '../components/hero/Hero';
 import Breadcrumbs from '../components/breadcrumbs/Breadcrumbs';
 import Card from '../components/card/Card';
+import Hero from '../components/hero/Hero';
+import Layout from '../components/layout/Layout';
+
+// this import and usage in a src/pages file is necessary for graphql-types to run properly
+import useGatsbyImages from '../hooks/useGatsbyImages';
 
 import { Topic as TopicType } from '../types/topic';
 import content from './content/topics.content.yml';
 
 import './home.scss';
-
-// this import and usage in a src/pages file is necessary for graphql-types to run properly
-import useGatsbyImages from '../hooks/useGatsbyImages';
 
 export default function Topic() {
   const searchIcon = useGatsbyImages()['images/header/search.svg'].publicURL;

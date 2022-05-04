@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { PageProps } from 'gatsby';
-import Layout from '../components/layout/Layout';
-import Hero from '../components/hero/Hero';
-import SearchComponent from '../components/search/SearchComponent';
 import { ButtonGroup } from '@trussworks/react-uswds';
+
+import Hero from '../components/hero/Hero';
+import Layout from '../components/layout/Layout';
+import SearchComponent from '../components/search/SearchComponent';
 
 import { Topic as TopicType } from '../types/topic';
 import topicContent from './content/topics.content.yml';
@@ -11,9 +12,10 @@ import topicContent from './content/topics.content.yml';
 import { Recommendation as RecommendationType } from '../types/recommendation';
 import recommendationContent from './content/recommendations.content.yml';
 
-import './home.scss';
 import { formatSearchFilter, formatAndSortSearchResults } from '../utils/util';
 import { TypeFilter } from '../types/typeFilter';
+
+import './home.scss';
 
 export default function Search({ location }: PageProps) {
   const state = location.state as { searchTerm: string };

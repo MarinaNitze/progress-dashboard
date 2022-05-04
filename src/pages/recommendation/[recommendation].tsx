@@ -1,18 +1,20 @@
-import { PageProps } from 'gatsby';
 import React from 'react';
+import { PageProps } from 'gatsby';
 import { Grid, GridContainer } from '@trussworks/react-uswds';
 import ReactMarkdown from 'react-markdown';
 import { AnchorLinkProps } from 'gatsby-plugin-anchor-links';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
-import Layout from '../../components/layout/Layout';
-import content from '../content/recommendations.content.yml';
-import { Recommendation as RecommendationType } from '../../types/recommendation';
-import Hero from '../../components/hero/Hero';
 import Breadcrumbs from '../../components/breadcrumbs/Breadcrumbs';
+import Hero from '../../components/hero/Hero';
+import Layout from '../../components/layout/Layout';
 import SideAnchorNav from '../../components/side-anchor-nav/SideAnchorNav';
+
 import useGatsbyImages from '../../hooks/useGatsbyImages';
 import { ImageSharp } from '../../../graphql-types';
-import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import { Recommendation as RecommendationType } from '../../types/recommendation';
+
+import content from '../content/recommendations.content.yml';
 
 import './recommendation.scss';
 
