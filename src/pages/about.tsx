@@ -52,7 +52,7 @@ export default function About() {
   const allItems: AnchorLinkProps[] = [
     {
       to: `/about#about`,
-      title: 'About the Progress Dashboard',
+      title: 'About',
       onAnchorLinkClick: () => addHash('About', '#about'),
     },
     {
