@@ -86,7 +86,7 @@ export default function Header({ headerLinks }: HeaderProps) {
                 {link.text}
               </Link>
             ))}
-            mobileExpanded={(showMenu ) && direction === 'up'}
+            mobileExpanded={showMenu && direction === 'up'}
             onToggleMobileNav={() => {
               setShowMenu(false);
             }}
