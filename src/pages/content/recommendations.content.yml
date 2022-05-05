@@ -7,7 +7,7 @@ recommendations:
     about: To speed up the process and reduce application costs, offer ways for
       people to submit background check requests electronically. When people
       submit requests by mail, this leads to longer wait times and more
-      opportunity for clerical mistakes.
+      opportunity for clerical mistakes..
     how: >-
       * Create a secure, generic email address for receiving requests instead of
       using an individual’s account. This provides a consistent process that
@@ -595,7 +595,7 @@ recommendations:
       number: 1
       what: Washington State’s [statute aligned
         checklist](https://www.childwelfareplaybook.com/assets/10-183%20Foster%20Inspection%20Checklist.docx)
-      image: ../images/recommendations/align_checklists_to_statutes.png
+      image: ""
   - heading: Provide clerical support for licensing workers
     title: provide-clerical-support-for-licensing-workers
     about: Case workers spend a significant amount of time on licensing paperwork,
@@ -916,7 +916,7 @@ recommendations:
       what: |-
         * Indiana
         * Rhode Island
-      image: ../images/recommendations/accept_photos.png
+      image: ""
   - heading: Provide safety inspection checklists ahead of time
     title: provide-safety-inspection-checklists-ahead-of-time
     about: >-
