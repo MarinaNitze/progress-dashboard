@@ -1,6 +1,6 @@
 # Progress Dashboard
 
-A dashboard for child welfare
+The Child Welfare Progress Dashboard is an actionable playbook of best practices in child welfare and foster care, put together by a working group of over twenty member agencies. The playbook details best practices across foster care, from recruitment to placements, along with implementation and cost details. Additionally, the dashboard feature allows users to compare which practices have been implemented by 55 states and territories.
 
 ## Running
 
@@ -14,27 +14,16 @@ Copy `.env.sample` into a file named `.env` and enter necessary values.
 
 Start dev: `npm start`
 
-Build and start prod: `npm run build && npm run serve`
+Build and start prod locally: `npm run build && npm run serve`
 
-## AWS Integration
+## CMS
+This website uses netlify-cms to manage a lot of it's content. To access the cms, simply add `/admin` to the domain url.
 
-### Prod deployment
+Users are granted access/edit permissions via the netlify site workspace.
 
-Using aws s3 static website hosting configured with gatsby-plugin-s3 and a prebuilt s3 bucket
-Using cloudfront distribution
+## Deployment
+This site is hosted with netlify and there are integrations between the repository hosted on github and the site workspace in netlify.
 
-### Deployment Previews
+Whenever a new pull request is created, netlify will build a deployment preview of the code change and the url for the preview can be found in the pull request conversation on github.
 
-Using github actions in `.github/workflows/` to automate
-
-- building s3 bucket as static site with necessary permissions on pull request
-- buildilng and deploying pull request to s3 bucket on opening pull request
-- synching s3 bucket on new commits to an open pull request
-- deleting bucket and contents when a pull request is merged or closed
-
-### Netlify CMS
-
-Configuration of backend in `static/admin/config.yml`
-Using aws lambda functions behind aws api gateways for authorization calls, code in `OAuthLambdas/` folder
-Using github OAuth Apps to provide [OAuth service](https://github.com/organizations/Bloom-Works/settings/applications/1756326)
-Using aws secret manager to store github secrets in aws.
+To deploy to the production site, merge code into the main branch and netlify will start the ci/cd pipeline to build and deploy to production.
