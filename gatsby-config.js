@@ -65,20 +65,7 @@ module.exports = {
         ],
       },
     },
-    {
-      resolve: `gatsby-plugin-s3`,
-      options: {
-        bucketName: 'progress-dashboard',
-        protocol: 'http',
-        hostname: 'progress-dashboard.s3-website-us-east-1.amazonaws.com',
-      },
-    },
-    {
-      resolve: `gatsby-plugin-netlify-cms`,
-      options: {
-        enableIdentityWidget: false,
-      },
-    },
+    `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-ts`,
     `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
