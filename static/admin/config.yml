@@ -1,6 +1,6 @@
 backend:
   name: 'github'
-  repo: 'Bloom-Works/progress-dashboard'
+  repo: 'MarinaNitze/progress-dashboard'
   branch: 'main'
 publish_mode: 'editorial_workflow'
 
