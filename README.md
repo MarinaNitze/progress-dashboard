@@ -17,11 +17,13 @@ Start dev: `npm start`
 Build and start prod locally: `npm run build && npm run serve`
 
 ## CMS
+
 This website uses netlify-cms to manage a lot of it's content. To access the cms, simply add `/admin` to the domain url.
 
 Users are granted access/edit permissions via the netlify site workspace.
 
 ## Deployment
+
 This site is hosted with netlify and there are integrations between the repository hosted on github and the site workspace in netlify.
 
 Whenever a new pull request is created, netlify will build a deployment preview of the code change and the url for the preview can be found in the pull request conversation on github.
