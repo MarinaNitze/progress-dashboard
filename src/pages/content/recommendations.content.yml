@@ -595,7 +595,7 @@ recommendations:
       number: 1
       what: Washington State’s [statute aligned
         checklist](https://www.childwelfareplaybook.com/assets/10-183%20Foster%20Inspection%20Checklist.docx)
-      image: ../images/recommendations/align_checklists_to_statutes.png
+      image: ""
   - heading: Provide clerical support for licensing workers
     title: provide-clerical-support-for-licensing-workers
     about: Case workers spend a significant amount of time on licensing paperwork,
@@ -916,7 +916,7 @@ recommendations:
       what: |-
         * Indiana
         * Rhode Island
-      image: ../images/recommendations/accept_photos.png
+      image: ""
   - heading: Provide safety inspection checklists ahead of time
     title: provide-safety-inspection-checklists-ahead-of-time
     about: >-
