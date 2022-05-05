@@ -916,6 +916,7 @@ recommendations:
       what: |-
         * Indiana
         * Rhode Island
+      image: ../images/recommendations/accept_photos.png
   - heading: Provide safety inspection checklists ahead of time
     title: provide-safety-inspection-checklists-ahead-of-time
     about: >-
