@@ -1,9 +1,9 @@
 hero:
-  title: About the Progress Dashboard
+  title: About the Child Welfare Playbook
   backgroundColor: white
 about: >-
-  **Our goal is to create a public, actionable playbook documenting practices
-  that can be easily replicated and scaled by others.**
+  **Our goal is to create a public, actionable playbook documenting promising
+  practices that can be easily replicated and scaled by others.**
 
 
   The Child Welfare Playbook is a collection of promising practices in service of the following five goals:
@@ -40,22 +40,25 @@ howItWorks: >-
 
   * Optionally, we can also hold a 1:1 follow-up call to go over more in-depth recommendations for your team, and to provide any implementation help you may need.
 
-  * Promising practices and positive results will be captured here in the online Foster Care Playbook, including actionable collateral like example checklists and contracts.
+  * Promising practices and positive results will be captured here in the online Child Welfare Playbook, including actionable collateral like example checklists and contracts.
 benefitsOfMembership: >-
   * Promising practices for improving your processes, in an actionable format
   (e.g. sample contracts, checklists, policy language, etc.)
 
-  * Data about how current practices compare with other states (shared in a private, respectful manner with no shaming or ranking)
+  * Data about how current practices compare with other states (shared in a respectful manner with no shaming or ranking)
 
   * Opportunities to participate in cross-state improvement projects
 
-  * Positive media coverage related to participation (always approved ahead of time)
+  * Positive media coverage related to participation (always with your advance approval)
 
   * Implementation assistance for adapting promising practices
 
 
   **To join, email [marina@marinanitze.com](mailto:marina@marinanitze.com)**
 currentMembers: >-
+  ![Current Progress Dashboard Member Map](src/images/members.png)
+
+
   * California (State of California and San Diego County)
 
   * Colorado
