@@ -42,7 +42,8 @@ const PRACTICE_LINK_MAP: Record<PracticeName, string> = {
 };
 
 const COMPARE_TOPIC_FULL_TITLE = {
-  'Background Checks': 'Out of State Child Abuse and Neglect Checks (Adam Walsh Checks)',
+  'Background Checks':
+    'Out of State Child Abuse and Neglect Checks (Adam Walsh Checks)',
   'Family Finding': 'Kin Finding',
 };
 
@@ -239,7 +240,7 @@ export default function Compare({ params: { compare } }: PageProps) {
         <Hero
           className="cwp-topic-hero"
           backgroundColor="dark"
-          title={compare}
+          title={COMPARE_TOPIC_FULL_TITLE[compareTopic]}
         />
       </section>
       <Breadcrumbs crumbLabel="Compare" />
@@ -248,9 +249,23 @@ export default function Compare({ params: { compare } }: PageProps) {
           <section className="intro-section">
             <Grid>
               <p>
-			  If a prospective foster parent lived in another state within the last 5 years, their <em>current</em> state must check the child abuse & neglect registry from their prior state(s) before approving them as foster parents.</p>
-			  <p>This sounds like a good idea. But in practice, inconsistent processes across states for fulfilling these requests are putting children at risk, and cause some of the most significant delays in licensing (paying) foster parents, particularly for kinship caregivers who already have placement of children but who do not receive any financial support until they are licensed.</p>
-			  <p>To solve this, every child welfare system should adopt these {topicPractices.length} promising practices for{' '}
+                If a prospective foster parent lived in another state within the
+                last 5 years, their <em>current</em> state must check the child
+                abuse & neglect registry from their prior state(s) before
+                approving them as foster parents.
+              </p>
+              <p>
+                This sounds like a good idea. But in practice, inconsistent
+                processes across states for fulfilling these requests are
+                putting children at risk, and cause some of the most significant
+                delays in licensing (paying) foster parents, particularly for
+                kinship caregivers who already have placement of children but
+                who do not receive any financial support until they are
+                licensed.
+              </p>
+              <p>
+                To solve this, every child welfare system should adopt these{' '}
+                {topicPractices.length} promising practices for{' '}
                 {COMPARE_TOPIC_FULL_TITLE[compareTopic]}:{' '}
                 {topicPractices.map((practice, idx) => (
                   <>
@@ -262,7 +277,7 @@ export default function Compare({ params: { compare } }: PageProps) {
                   </>
                 ))}
               </p>
-              <h2 className="features-title">State by State Compare</h2>
+              <h2 className="features-title">State by State Comparison</h2>
             </Grid>
           </section>
           <section className="filter-section">
