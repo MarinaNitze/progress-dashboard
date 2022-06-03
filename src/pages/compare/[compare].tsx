@@ -248,6 +248,7 @@ export default function Compare({ params: { compare } }: PageProps) {
         <GridContainer>
           <section className="intro-section">
             <Grid>
+			// This part should only appear on the Adam Walsh page
               <p>
                 If a prospective foster parent lived in another state within the
                 last 5 years, their <em>current</em> state must check the child
@@ -263,6 +264,11 @@ export default function Compare({ params: { compare } }: PageProps) {
                 who do not receive any financial support until they are
                 licensed.
               </p>
+			 // This part should only appear on the Kin Finding page
+			 <p>
+			    Kin finding content
+			 </p>
+			 // Resume generic top
               <p>
                 To solve this, every child welfare system should adopt these{' '}
                 {topicPractices.length} promising practices for{' '}
