@@ -11,10 +11,10 @@ home:
   features:
     whatsNew: ""
     largeFeature:
-      content: Inconsistencies in how we conduct background checks are putting
-        children at risk. To solve this problem, we need to approach it from
-        both sides — how we fulfill background check requests and how we make
-        these requests.
+      content: Inconsistencies in how we conduct out-of-state child abuse and neglect
+        registry checks are putting children at risk. To solve this problem, we
+        need to approach it from both sides — how we fulfill background check
+        requests and how we make these requests.
       image: ../images/features/feature-babies.png
       title: Let’s improve out-of-state child abuse and neglect checks (“Adam Walsh
         checks”).
@@ -24,8 +24,8 @@ home:
       layout: lg
     mediumFeature:
       content: Children do better when they’re placed with family members or other
-        known adults. But identifying and connecting with extended family
-        members can be a challenge for foster care programs. [Learn
+        known adults ("kin"). But identifying and connecting with extended
+        family members can be a challenge for foster care programs. [Learn
         more](https://progress-dashboard.netlify.app/topic/finding-family-members).
       image: ../images/features/Medium-Feature.png
       title: Get tips on how to find family and kin.
