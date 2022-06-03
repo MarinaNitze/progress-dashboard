@@ -38,7 +38,7 @@ topics:
       - use-bilingual-staff-members-instead-of-interpreters
   - hero:
       backgroundColor: light
-      title: Background Checks
+      title: Out of State Child Abuse and Neglect Checks
       image: /src/images/heros/background-checks.jpg
       imgAlt: background checks
     layout: topic

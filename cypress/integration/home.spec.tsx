@@ -11,7 +11,7 @@ describe('Home page', () => {
       .first()
       .should(
         'have.text',
-        `Let’s improve out-of-state background checks (“Adam Walsh checks”).`,
+        `Let’s improve out-of-state child abuse and neglect checks (“Adam Walsh checks”).`,
       );
 
     cy.get('[data-cy=topics-button-home]').should(

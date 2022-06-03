@@ -2,6 +2,7 @@ backend:
   name: 'github'
   repo: 'MarinaNitze/progress-dashboard'
   branch: 'main'
+  base_url: https://charming-salamander-5a550e.netlify.app
 publish_mode: 'editorial_workflow'
 
 media_folder: 'src/images'
