@@ -248,7 +248,7 @@ export default function Compare({ params: { compare } }: PageProps) {
         <GridContainer>
           <section className="intro-section">
             <Grid>
-			// This part should only appear on the Adam Walsh page
+              // This part should only appear on the Adam Walsh page
               <p>
                 If a prospective foster parent lived in another state within the
                 last 5 years, their <em>current</em> state must check the child
@@ -264,13 +264,12 @@ export default function Compare({ params: { compare } }: PageProps) {
                 who do not receive any financial support until they are
                 licensed.
               </p>
-			 // This part should only appear on the Kin Finding page
-			 <p>
-			    Kin finding content
-			 </p>
-			 // Resume generic top
+              // This part should only appear on the Kin Finding page
+              <p>The best thing for a child in foster care is living with an adult they already know and trust ("kin"). The vast majority of children entering care have kin available to care for them, but most systems fail to find these adults for most children.</p>
+			  <p>When systems adopt more effective kin-finding practices, they can achieve initial kinship placement rates in excess of 80%.</p>
+              // Resume generic top
               <p>
-                To solve this, every child welfare system should adopt these{' '}
+                Our goal is for every child welfare system to adopt these{' '}
                 {topicPractices.length} promising practices for{' '}
                 {COMPARE_TOPIC_FULL_TITLE[compareTopic]}:{' '}
                 {topicPractices.map((practice, idx) => (
