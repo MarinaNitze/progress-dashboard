@@ -4,7 +4,7 @@ The Child Welfare Progress Dashboard is an actionable playbook of best practices
 
 ## Running
 
-(With `node` (`v16`+) and `npm` installed:) 
+(With `node` (`v16`+) and `npm` installed:)
 
 Install: `npm ci`
 

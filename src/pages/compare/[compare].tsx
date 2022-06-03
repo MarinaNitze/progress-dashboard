@@ -30,10 +30,10 @@ const PRACTICE_LINK_MAP: Record<PracticeName, string> = {
   'General inbox for receiving requests':
     '/topic/out-of-state-background-checks#what-we-can-do',
   'Accepts electronic requests': '/recommendation/electronic-background-check',
-  // Family finding (NOTE: these links are made-up placeholders)
-  'Social media': '/topic/social-media',
-  'Ongoing activity': '/topic/ongoing-activity',
-  'Senior staff sign-off': '/topic/senior-staff-sign-off',
+  // Family finding
+  'Use social media to find kin': '/topic/social-media',
+  'Ongoing kin-finding activities': '/topic/ongoing-activity',
+  'Require senior staff sign-off for non-kin placements': '/topic/senior-staff-sign-off',
   'Ask youth for placement options': '/topic/ask-youth-for-placement-options',
   'Ask kin for more kin': '/topic/ask-kin-for-more-kin',
   'Formal plan to stay connected': '/topic/formal-plan-to-stay-connected',
@@ -265,8 +265,16 @@ export default function Compare({ params: { compare } }: PageProps) {
                 licensed.
               </p>
               // This part should only appear on the Kin Finding page
-              <p>The best thing for a child in foster care is living with an adult they already know and trust ("kin"). The vast majority of children entering care have kin available to care for them, but most systems fail to find these adults for most children.</p>
-			  <p>When systems adopt more effective kin-finding practices, they can achieve initial kinship placement rates in excess of 80%.</p>
+              <p>
+                The best thing for a child in foster care is living with an
+                adult they already know and trust ("kin"). The vast majority of
+                children entering care have kin available to care for them, but
+                most systems fail to find these adults for most children.
+              </p>
+              <p>
+                When systems adopt more effective kin-finding practices, they
+                can achieve initial kinship placement rates in excess of 80%.
+              </p>
               // Resume generic top
               <p>
                 Our goal is for every child welfare system to adopt these{' '}
