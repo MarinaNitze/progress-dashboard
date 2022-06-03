@@ -277,6 +277,9 @@ export default function Compare({ params: { compare } }: PageProps) {
                   </>
                 ))}
               </p>
+			  <p>
+			    Want to report an update or error? Please email updates@childwelfareplaybook.com
+			  </p>
               <h2 className="features-title">State by State Comparison</h2>
             </Grid>
           </section>
