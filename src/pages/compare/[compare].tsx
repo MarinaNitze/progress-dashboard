@@ -30,10 +30,10 @@ const PRACTICE_LINK_MAP: Record<PracticeName, string> = {
   'General inbox for receiving requests':
     '/topic/out-of-state-background-checks#what-we-can-do',
   'Accepts electronic requests': '/recommendation/electronic-background-check',
-  // Family finding
-  'Use social media to find kin': '/topic/social-media',
-  'Ongoing kin-finding activities': '/topic/ongoing-activity',
-  'Require senior staff sign-off for non-kin placements': '/topic/senior-staff-sign-off',
+  // Family finding (NOTE: these links are made-up placeholders)
+  'Social media': '/topic/social-media',
+  'Ongoing activity': '/topic/ongoing-activity',
+  'Senior staff sign-off': '/topic/senior-staff-sign-off',
   'Ask youth for placement options': '/topic/ask-youth-for-placement-options',
   'Ask kin for more kin': '/topic/ask-kin-for-more-kin',
   'Formal plan to stay connected': '/topic/formal-plan-to-stay-connected',
