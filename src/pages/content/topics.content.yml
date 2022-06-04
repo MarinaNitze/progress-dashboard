@@ -1,117 +1,42 @@
 topics:
   - hero:
       backgroundColor: light
-      title: Foster Parent Licensing
+      title: Connecting Youth to Their Supportive Adults
       image: /src/images/heros/hero-baby.png
-      imgAlt: foster-parent-licensing
+      imgAlt: connecting-youth-to-their-supportive-adults
     layout: topic
-    title: foster-parent-licensing
+    title: connecting-youth-to-their-supportive-adults
     image: /src/images/topics/Topic-FPL.svg
-    about: Foster parent licensing can be a lengthy, and at times inefficient,
-      process. Delays in licensing can mean losing homes in a time when
-      placement options are already severely limited.
-    why: While it is important to be thorough, delays in the process
-      can overburden licensing workers and inspectors or even risk losing
-      families.
+    about: Connecting Youth to Their Supportive Adults About
+    why: Connecting Youth to Their Supportive Adults Why
     what: >-
 
 
-      * **Increase support for licensing workers.** Providing clerical support for licensing workers helps staff maintain a higher case load, while increasing family satisfaction. If you can give families a dedicated licensor through the whole process, staff will be able to reduce the likelihood of errors while developing a more holistic picture of the family. 
+      * **Thing.** Words words. 
 
-      * **Make safety inspections easier for families.** Some families do not pass the inspection on the first try simply because they were missing one or more items that they didn’t know they needed. When an inspector has to return, it makes the process longer by weeks or months. By providing families with a checklist of safety items ahead of time, as well as providing families with items they need but cannot acquire, you can streamline the safety inspection process and avoid delays.
-
-      * **Continue licensing and training while social distancing.** Some agencies paused their licensing or training during the pandemic. However, federal regulations do not require that these processes take place in person. By providing foster parent training online and conducting key parts of the licensing process remotely (like doing the initial safety walkthrough over video), you can avoid having to halt your licensing and training work during the pandemic.
+      * **Thing 2.** Words words.
     recommendations:
       - align-checklists-to-statutes
       - provide-clerical-support-for-licensing-workers
-      - give-families-a-dedicated-licensor
-      - distinguish-important-mail-for-foster-families
-      - use-evacuation-plan-magnets
-      - help-relative-placements-access-financial-assistance
-      - license-homes-while-social-distancing
-      - offer-online-foster-parent-training
-      - provide-safety-inspection-items-for-families-in-need
-      - provide-safety-inspection-checklists-ahead-of-time
-      - accept-photos-to-resolve-minor-pending-inspection-items
-      - send-appointment-reminders
-      - use-bilingual-staff-members-instead-of-interpreters
   - hero:
       backgroundColor: light
-      title: Out of State Child Abuse and Neglect Checks
-      image: /src/images/heros/background-checks.jpg
-      imgAlt: background checks
+      title: Emergency Placements
+      image: /src/images/heros/hero-baby.png
+      imgAlt: emergency-placements
     layout: topic
-    title: out-of-state-background-checks
-    image: /src/images/topics/Topic-BC.svg
-    about:
-      Child welfare programs are required to check the child abuse and neglect
-      registry in each state where a potential foster parent lived during
-      the past 5 years. This is called the “Adam Walsh check” after the 2006 act
-      that requires it. Programs must do this for anyone else in the home
-      who’s 18 years or older.
-    why: >-
-      Flaws and inconsistencies in states’ out of state child abuse and neglect check processes are: 
-
-
-      * Putting children at risk. Some states only respond to requests when someone doesn’t pass the background check. This means that foster care programs don’t know if a potential foster parent passed the background check or if the request was simply lost. 
-
-      * Causing delays in licensing foster parents. Foster care programs have to decide how long to wait for a potential response to an Adam Walsh check request before proceeding and assuming no response is a good response. While they’re waiting, children need placement. 
-
-      * Adding to the financial burden of relatives. Some programs don’t financially support relative placements until they are fully licensed. Delays in out-of-state background checks translate into weeks or months of grandmothers struggling to make ends meet while caring for their grandchildren.
-
-
-      We can eliminate these inefficiencies. But to solve this problem, we need to approach it from both sides — how we fulfill background check requests and how we make these requests.
+    title: emergency-placements
+    image: /src/images/topics/Topic-FPL.svg
+    about: Emergency Placements About
+    why: Emergency Placements Why
     what: >-
-      ### **Make it easier for people to request background checks from your
-      state.**
 
 
-      **Don’t require a witnessed or notarized signature.** It’s very difficult for a social worker to gather all household applicants together at one time to visit a notary and/or witness. This step does not provide any safety benefits. The vast majority of states don’t require a notarized signature or a witness.
+      * **Thing.** Words words. 
 
-
-      * _“It was so impossible to get a whole household of adults with different work schedules and who already had kids to meet me half an hour away at the notary, that all of us in the office just became notaries ourselves so we could do it.”_ —Licensor
-
-
-      **Accept requests electronically.** Whether you build an online portal or accept email requests, this will allow you to process requests more efficiently. 
-
-
-      * _“[State] moved to an electronic request system, which is great. But it only allows one account per child welfare system. Someone else from my state already registered, so now I can’t.”_ —Licensor
-
-
-      **Don’t charge a fee.** It’s so difficult for some states to issue a check to another state — even for a few dollars — that many licensing workers report paying these fees out of their own pockets. The vast majority of states don’t charge any fees.
-
-
-      * _“It was so hard to get my office to generate the checks, that we gave up and pay for them out of our office snack fund.”_ —Licensor
-
-
-      **Send inquiries to a general mailbox, not an individual person.** If you direct Adam Walsh inquiries to a specific person's desk or email, then when that person is on vacation — or retires — those inquiries will all be lost. Since no response is considered a "clean" check, this creates a real risk of missing known child abusers. Instead, create a general desk/group to process these requests.
-
-
-      **Respond to all requests.** Without a response, the requestor doesn’t know whether the applicant passed the check or if the request was lost.
-
-
-      **Eliminate other burdensome requirements.** For example, some states require specific ink colors or typefaces. 
-
-
-      * _“In the pandemic, the thing I miss most about the office is access to the typewriter. Without it, I can’t send a typed Adam Walsh form to [State], like they require.”_ —Licensor 
-
-      * “[State] requires typed forms. But their PDF isn’t fillable.” —Licensor 
-
-      * _“[State] requires you to fill out the form in black ink, but sign it in blue ink, or they send it back. And they DO send it back.”_ —Licensor 
-
-      * _“[State’s] requirement for the blue ink and the blank ink means I can’t fax this form to them, either.”_ —Supervisor
-
-
-      ### **Improve your process for requesting out-of-state background checks.**
-
-
-      **Collect information early.** Ask whether applicants and the other adults in their household lived in other states in the last 5 years as early as possible in the process. For example, if your application process includes a “mini” application or a “pre-application” form, ask there. 
-
-
-      **Start background checks early.** Submit out-of-state requests as early as possible in your process. Review your licensing worker checklists to move this step towards the top of the list.
+      * **Thing 2.** Words words.
     recommendations:
-      - electronic-background-check
-      - background-check-form
+      - align-checklists-to-statutes
+      - provide-clerical-support-for-licensing-workers
   - hero:
       backgroundColor: primary
       title: Extended Foster Care
@@ -124,8 +49,7 @@ topics:
       The end of foster care can be a difficult and confusing time for youth.
       However, there are several important ways that staff can better prepare
       and support youth during this time.
-    why:
-      Youth can often be confused about the end of foster care—even about the
+    why: Youth can often be confused about the end of foster care—even about the
       date foster care will end. This means that youth may miss out on
       opportunities to build independence or connections.
     what: >-
@@ -209,6 +133,61 @@ topics:
       - red-team-to-prevent-group-home-placements
       - senior-staff-sign-off-for-non-relative-placements
   - hero:
+      backgroundColor: light
+      title: Foster Parent Compensation
+      image: /src/images/heros/hero-baby.png
+      imgAlt: foster-parent-compensation
+    layout: topic
+    title: foster-parent-compensation
+    image: /src/images/topics/Topic-FPL.svg
+    about: Compensation About
+    why: Compensation Why
+    what: >-
+
+
+      * **Thing.** Words words. 
+
+      * **Thing 2.** Words words.
+    recommendations:
+      - align-checklists-to-statutes
+      - provide-clerical-support-for-licensing-workers
+  - hero:
+      backgroundColor: light
+      title: Foster Parent Licensing
+      image: /src/images/heros/hero-baby.png
+      imgAlt: foster-parent-licensing
+    layout: topic
+    title: foster-parent-licensing
+    image: /src/images/topics/Topic-FPL.svg
+    about: Foster parent licensing can be a lengthy, and at times inefficient,
+      process. Delays in licensing can mean losing homes in a time when
+      placement options are already severely limited.
+    why: While it is important to be thorough, delays in the process
+      can overburden licensing workers and inspectors or even risk losing
+      families.
+    what: >-
+
+
+      * **Increase support for licensing workers.** Providing clerical support for licensing workers helps staff maintain a higher case load, while increasing family satisfaction. If you can give families a dedicated licensor through the whole process, staff will be able to reduce the likelihood of errors while developing a more holistic picture of the family. 
+
+      * **Make safety inspections easier for families.** Some families do not pass the inspection on the first try simply because they were missing one or more items that they didn’t know they needed. When an inspector has to return, it makes the process longer by weeks or months. By providing families with a checklist of safety items ahead of time, as well as providing families with items they need but cannot acquire, you can streamline the safety inspection process and avoid delays.
+
+      * **Continue licensing and training while social distancing.** Some agencies paused their licensing or training during the pandemic. However, federal regulations do not require that these processes take place in person. By providing foster parent training online and conducting key parts of the licensing process remotely (like doing the initial safety walkthrough over video), you can avoid having to halt your licensing and training work during the pandemic.
+    recommendations:
+      - align-checklists-to-statutes
+      - provide-clerical-support-for-licensing-workers
+      - give-families-a-dedicated-licensor
+      - distinguish-important-mail-for-foster-families
+      - use-evacuation-plan-magnets
+      - help-relative-placements-access-financial-assistance
+      - license-homes-while-social-distancing
+      - offer-online-foster-parent-training
+      - provide-safety-inspection-items-for-families-in-need
+      - provide-safety-inspection-checklists-ahead-of-time
+      - accept-photos-to-resolve-minor-pending-inspection-items
+      - send-appointment-reminders
+      - use-bilingual-staff-members-instead-of-interpreters
+  - hero:
       backgroundColor: primary
       title: Inquiry Management
       image: /src/images/heros/hero-baby.png
@@ -242,6 +221,25 @@ topics:
       - reminders-to-stay-in-touch-with-families-who-submit-inquiries
       - use-inquiry-data-to-identify-recruitment-gaps
   - hero:
+      backgroundColor: light
+      title: Level of Need Assessments
+      image: /src/images/heros/hero-baby.png
+      imgAlt: level-of-need-assessments
+    layout: topic
+    title: level-of-need-assessments
+    image: /src/images/topics/Topic-FPL.svg
+    about: LON About
+    why: LON Why
+    what: >-
+
+
+      * **Thing.** Words words. 
+
+      * **Thing 2.** Words words.
+    recommendations:
+      - align-checklists-to-statutes
+      - provide-clerical-support-for-licensing-workers
+  - hero:
       backgroundColor: primary
       title: License Renewal
       image: /src/images/heros/hero-baby.png
@@ -252,8 +250,7 @@ topics:
     about: License renewal can be a time-consuming process for both staff and
       families, but a successful license renewal process can ensure better
       retention and increased family satisfaction.
-    why:
-      The license renewal process can provide an
+    why: The license renewal process can provide an
       opportunity for staff to connect with foster families, maintaining family
       engagement and increasing retention.
     what: >-
@@ -267,6 +264,83 @@ topics:
       - email-renewal-requirements
       - high-value-training-for-renewals
       - track-renewal-dates-on-calendar
+  - hero:
+      backgroundColor: light
+      title: Out of State Child Abuse and Neglect Checks
+      image: /src/images/heros/background-checks.jpg
+      imgAlt: background checks
+    layout: topic
+    title: out-of-state-background-checks
+    image: /src/images/topics/Topic-BC.svg
+    about:
+      Child welfare programs are required to check the child abuse and neglect
+      registry in each state where a potential foster parent lived during
+      the past 5 years. This is called the “Adam Walsh check” after the 2006 act
+      that requires it. Programs must do this for anyone else in the home
+      who’s 18 years or older.
+    why: >-
+      Flaws and inconsistencies in states’ out of state child abuse and neglect check processes are: 
+
+
+      * Putting children at risk. Some states only respond to requests when someone doesn’t pass the background check. This means that foster care programs don’t know if a potential foster parent passed the background check or if the request was simply lost. 
+
+      * Causing delays in licensing foster parents. Foster care programs have to decide how long to wait for a potential response to an Adam Walsh check request before proceeding and assuming no response is a good response. While they’re waiting, children need placement. 
+
+      * Adding to the financial burden of relatives. Some programs don’t financially support relative placements until they are fully licensed. Delays in out-of-state background checks translate into weeks or months of grandmothers struggling to make ends meet while caring for their grandchildren.
+
+
+      We can eliminate these inefficiencies. But to solve this problem, we need to approach it from both sides — how we fulfill background check requests and how we make these requests.
+    what: >-
+      ### **Make it easier for people to request background checks from your
+      state.**
+
+
+      **Don’t require a witnessed or notarized signature.** It’s very difficult for a social worker to gather all household applicants together at one time to visit a notary and/or witness. This step does not provide any safety benefits. The vast majority of states don’t require a notarized signature or a witness.
+
+
+      * _“It was so impossible to get a whole household of adults with different work schedules and who already had kids to meet me half an hour away at the notary, that all of us in the office just became notaries ourselves so we could do it.”_ —Licensor
+
+
+      **Accept requests electronically.** Whether you build an online portal or accept email requests, this will allow you to process requests more efficiently. 
+
+
+      * _“[State] moved to an electronic request system, which is great. But it only allows one account per child welfare system. Someone else from my state already registered, so now I can’t.”_ —Licensor
+
+
+      **Don’t charge a fee.** It’s so difficult for some states to issue a check to another state — even for a few dollars — that many licensing workers report paying these fees out of their own pockets. The vast majority of states don’t charge any fees.
+
+
+      * _“It was so hard to get my office to generate the checks, that we gave up and pay for them out of our office snack fund.”_ —Licensor
+
+
+      **Send inquiries to a general mailbox, not an individual person.** If you direct Adam Walsh inquiries to a specific person's desk or email, then when that person is on vacation — or retires — those inquiries will all be lost. Since no response is considered a "clean" check, this creates a real risk of missing known child abusers. Instead, create a general desk/group to process these requests.
+
+
+      **Respond to all requests.** Without a response, the requestor doesn’t know whether the applicant passed the check or if the request was lost.
+
+
+      **Eliminate other burdensome requirements.** For example, some states require specific ink colors or typefaces. 
+
+
+      * _“In the pandemic, the thing I miss most about the office is access to the typewriter. Without it, I can’t send a typed Adam Walsh form to [State], like they require.”_ —Licensor 
+
+      * “[State] requires typed forms. But their PDF isn’t fillable.” —Licensor 
+
+      * _“[State] requires you to fill out the form in black ink, but sign it in blue ink, or they send it back. And they DO send it back.”_ —Licensor 
+
+      * _“[State’s] requirement for the blue ink and the blank ink means I can’t fax this form to them, either.”_ —Supervisor
+
+
+      ### **Improve your process for requesting out-of-state background checks.**
+
+
+      **Collect information early.** Ask whether applicants and the other adults in their household lived in other states in the last 5 years as early as possible in the process. For example, if your application process includes a “mini” application or a “pre-application” form, ask there. 
+
+
+      **Start background checks early.** Submit out-of-state requests as early as possible in your process. Review your licensing worker checklists to move this step towards the top of the list.
+    recommendations:
+      - electronic-background-check
+      - background-check-form
   - hero:
       backgroundColor: primary
       title: Recruitment
@@ -282,7 +356,7 @@ topics:
     why:
       Successful recruitment means that youth in care can be placed with families
       who are in their existing community and culture, who speak the same
-      language, etc. Start by identifying the families your children need most, 
+      language, etc. Start by identifying the families your children need most,
       followed by intentional recruitment methods targeting the communities and
       types of families matching those needs.
     what: >-
@@ -296,13 +370,13 @@ topics:
       potential foster families make the right choice for themselves, as well as
       help staff focus on the families most needed for placements.
 
-      
+
       **Make the recruitment, application, and placement process seamless.** By including recruiters in follow up activities with potential foster families, you can increase family satisfaction and prevent losing potential families, who may feel confused or unsupported if they’re passed off between multiple staff members. Recruiters should also be included in your routine case management and placement meetings, as they can help identify any pending families who are good matches for current youth. Once identified, you should prioritize licensing these matching families. 
 
-      
+
       **Include current foster families in recruitment efforts**. Positive word of mouth can be a valuable tool in recruiting potential foster families. You can encourage current foster families to help recruit other families by providing financial bonuses for  referrals, or when referrals complete major milestones like completing their application. Hiring current foster parents as trainers or for an orientation can also help current foster parents feel valued, while providing valuable information and perspectives to new families.
-      
-      
+
+
       **Be creative.** Our members have had success using a variety of creative recruitment methods, including: 
 
         * Hosting information sessions with community organizations like fraternity and sorority alumni groups (especially HBCU fraternities and sororities).
@@ -325,3 +399,60 @@ topics:
       - recruit-relative-caregivers-to-become-general-caregivers
       - reflect-community-in-recruitment
       - digital-marketing-for-recruitment
+  - hero:
+      backgroundColor: light
+      title: Relative Licensing Exemptions
+      image: /src/images/heros/hero-baby.png
+      imgAlt: relative-licensing-exemptions
+    layout: topic
+    title: relative-licensing-exemptions
+    image: /src/images/topics/Topic-FPL.svg
+    about: Relative Licensing Exemptions About
+    why: Relative Licensing Exemptions Why
+    what: >-
+
+
+      * **Thing.** Words words. 
+
+      * **Thing 2.** Words words.
+    recommendations:
+      - align-checklists-to-statutes
+      - provide-clerical-support-for-licensing-workers
+  - hero:
+      backgroundColor: light
+      title: Retention
+      image: /src/images/heros/hero-baby.png
+      imgAlt: retention
+    layout: topic
+    title: retention
+    image: /src/images/topics/Topic-FPL.svg
+    about: Retention About
+    why: Retention Why
+    what: >-
+
+
+      * **Thing.** Words words. 
+
+      * **Thing 2.** Words words.
+    recommendations:
+      - align-checklists-to-statutes
+      - provide-clerical-support-for-licensing-workers
+  - hero:
+      backgroundColor: light
+      title: Social Media
+      image: /src/images/heros/hero-baby.png
+      imgAlt: social-media
+    layout: topic
+    title: social-media
+    image: /src/images/topics/Topic-FPL.svg
+    about: Social Media About
+    why: Social Media Why
+    what: >-
+
+
+      * **Thing.** Words words. 
+
+      * **Thing 2.** Words words.
+    recommendations:
+      - align-checklists-to-statutes
+      - provide-clerical-support-for-licensing-workers
