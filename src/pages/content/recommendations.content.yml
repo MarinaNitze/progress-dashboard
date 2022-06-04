@@ -77,6 +77,9 @@ recommendations:
       connections and message them. 
 
 
+      Child welfare systems should _require_ social media searches as a core part of kin finding activities. 
+
+
       Before you start using social media for family finding, create a policy to guide staff. Cover topics like:
 
 
@@ -135,6 +138,8 @@ recommendations:
       * Review the list of known connections at recurring planning meetings. Ask
       all participants if they can think of anyone who is missing.
 
+      * Set and require specific milestones for repeating kin-finding activities, such as court hearings, planning meetings, or at specific calendar intervals. Specify exactly who is responsible for leading this work at each milestone.
+
       * Try different approaches for learning about connections, like: Who picks you up from school? Who would you call if you got locked out of your home? Who did you see at your last family gathering? Who do you miss?
     costs:
       - A few minutes of time
@@ -168,12 +173,14 @@ recommendations:
 
       Ask youth, both at initial removal and at regular intervals afterwards, about the supportive adults in their lives. Even young children may be able to tell you about the important people in their lives.
     how: >-
-      * Supervisors of child welfare workers can make it a practice to regularly
-      ask, “What did the youth say?”
+      * Require workers to talk to youth about their connections, no matter how young. Supervisors can encourage this practice by regularly
+      asking, “What did the youth say?”
 
       * Use [heart maps](/recommendation/use-heart-map) with youth to learn more about their supportive adults.
 
       * Ask youth about their supportive connections at every placement change, and at regular intervals — annually, for example.
+
+      * Designate an official place for keeping a youth's list of kin in your IT system.
 
       * Phrase inquiries carefully so that young people don’t feel like they have to supply a placement option or they will be homeless. Helpful prompts include: “Who came to your last family gathering?” and “Who would you call if you needed a ride home from school?”
 
@@ -215,8 +222,10 @@ recommendations:
 
       Children can’t have too many adults who care about them. Most youth enter foster care with more connections than they leave with. Making sure to ask kin you know about to help identify additional kin, especially if children are too young to share on their own, can create a broader supportive network.
     how: >-
-      * Make it a standard practice to ask kin about other kin during initial
-      and ongoing kin contacts
+      * Require team members to ask kin about other kin during initial
+      and ongoing kin contacts.
+
+      * Designate a place in your IT system for storing information about all kin, including names and contact information.
 
       * Add a question like, “Are there other connections that we should know about?” to any kinship-finding form letters or standard messages.
 
@@ -462,15 +471,17 @@ recommendations:
     how: >-
       As soon as the youth enters care, make a list of all the supportive
       connections in their lives, including family members, teachers, friends,
-      and even pets. Work with the youth to create this list. You may also
-      consider making a genogram. After that, you should:
+      and even pets. Work with the youth to create this list. 
+      Consider making a genogram or heart map. After that, you should:
 
 
       * **Locate contact information for each supportive connection.** Staff may need to use social media to do so. 
 
       * **Make a formal plan to stay in touch with each connection.** Plans could include weekly Facetime or phone calls, exchanging letters or emails, in-person visits, providing transportation, or attending school events. You can even make a plan to stay in touch with a pet, such as visits to a dog park. 
 
-      * **Get foster families involved.** Maintain a formal expectation that foster families will help support these connection plans.
+      * **Designate a place in your IT system to store these plans.** 
+
+      * **Get foster families involved.** Maintain a [formal expectation](/recommendation/keeping-in-touch-with-kin-formal-responsibility) that foster families will help support these connection plans.
     costs:
       - Staff time
     benefits:
@@ -1988,7 +1999,7 @@ recommendations:
       homes.
     how:
       Require senior staff sign-off for non-relative placements, no matter the
-      time of day. You can require sign-off on initial placements, subsequent
+      time of day. You should require sign-off on initial placements, subsequent
       placements, and any congregate care placements.
     costs:
       - Free
