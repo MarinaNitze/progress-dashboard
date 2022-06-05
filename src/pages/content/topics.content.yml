@@ -1,43 +1,5 @@
 topics:
   - hero:
-      backgroundColor: light
-      title: Connecting Youth to Their Supportive Adults
-      image: /src/images/heros/hero-baby.png
-      imgAlt: connecting-youth-to-their-supportive-adults
-    layout: topic
-    title: connecting-youth-to-their-supportive-adults
-    image: /src/images/topics/Topic-FPL.svg
-    about: Connecting Youth to Their Supportive Adults About
-    why: Connecting Youth to Their Supportive Adults Why
-    what: >-
-
-
-      * **Thing.** Words words. 
-
-      * **Thing 2.** Words words.
-    recommendations:
-      - align-checklists-to-statutes
-      - provide-clerical-support-for-licensing-workers
-  - hero:
-      backgroundColor: light
-      title: Emergency Placements
-      image: /src/images/heros/hero-baby.png
-      imgAlt: emergency-placements
-    layout: topic
-    title: emergency-placements
-    image: /src/images/topics/Topic-FPL.svg
-    about: Emergency Placements About
-    why: Emergency Placements Why
-    what: >-
-
-
-      * **Thing.** Words words. 
-
-      * **Thing 2.** Words words.
-    recommendations:
-      - align-checklists-to-statutes
-      - provide-clerical-support-for-licensing-workers
-  - hero:
       backgroundColor: primary
       title: Extended Foster Care
       image: /src/images/heros/hero-baby.png
@@ -140,17 +102,27 @@ topics:
     layout: topic
     title: foster-parent-compensation
     image: /src/images/topics/Topic-FPL.svg
-    about: Compensation About
-    why: Compensation Why
+    about: There are a variety of ways to compensate resource families beyond the standard room and board rate (which itself can vary based on different factors), including special salaried foster parent programs and ad hoc additional employment opportunities.
+    why: Every caregiver of a dependent child should have financial support to provide a stable and supportive placement. In many systems, kinshp caregivers lack access to these resources. And in the case of some youth with high levels of need, growing professional foster parent programs are proving better outcomes and helping keep these youth out of institutions. And providing smaller but meaningful ways for your families to earn extra money for related work, like co-leading trainings, can increase satisfaction and retention.
     what: >-
 
 
-      * **Thing.** Words words. 
+      * **Look for additional ways to compensate foster parents.** This might take the form of paying them to appear on panels, provide mentoring to new families, or incentive payment for providing referrals or placement stability. 
 
-      * **Thing 2.** Words words.
+      * **Pay for respite.** Every foster parent needs a break sometimes. 
+
+      * **Pay your kinship caregivers** If your system has the practice of unlicensed (unpaid) kin, look for ways to either secure state funding to fill in the gap, or streamline your licensing process and take greater advantage of relative non-safety exemptions to get all your relatives licensed and eligile for IV-E reimbursement. (Reach out to us for pro bono advice!) 
+
+      * **Establish a professional foster parent program.** A professional foster parent doesn't have to (indeed, shouldn't) have outside employment or income; they receive a salary in exchange for committing to fully meeting the needs of the child in their home. These programs can help avoid institutional placements and, when designed well, are generating impressive outcomes for even children with very high levels of need.
     recommendations:
-      - align-checklists-to-statutes
-      - provide-clerical-support-for-licensing-workers
+      - pay-for-respite
+      - summer-camp-stipends
+      - professional-foster-parents
+      - placement-stability-bonuses
+      - pay-to-keep-homes-open
+      - pay-kinship-caregivers-until-they-get-licensed
+      - provide-more-ways-for-foster-parents-to-earn-money
+      - financial-bonuses-for-recruitment-referrals
   - hero:
       backgroundColor: light
       title: Foster Parent Licensing
@@ -220,25 +192,6 @@ topics:
       - respond-quickly-to-inquiries-with-information
       - reminders-to-stay-in-touch-with-families-who-submit-inquiries
       - use-inquiry-data-to-identify-recruitment-gaps
-  - hero:
-      backgroundColor: light
-      title: Level of Need Assessments
-      image: /src/images/heros/hero-baby.png
-      imgAlt: level-of-need-assessments
-    layout: topic
-    title: level-of-need-assessments
-    image: /src/images/topics/Topic-FPL.svg
-    about: LON About
-    why: LON Why
-    what: >-
-
-
-      * **Thing.** Words words. 
-
-      * **Thing 2.** Words words.
-    recommendations:
-      - align-checklists-to-statutes
-      - provide-clerical-support-for-licensing-workers
   - hero:
       backgroundColor: primary
       title: License Renewal
@@ -401,42 +354,38 @@ topics:
       - digital-marketing-for-recruitment
   - hero:
       backgroundColor: light
-      title: Relative Licensing Exemptions
+      title: Relative Licensing Exceptions
       image: /src/images/heros/hero-baby.png
       imgAlt: relative-licensing-exemptions
     layout: topic
-    title: relative-licensing-exemptions
+    title: relative-licensing-exceptions
     image: /src/images/topics/Topic-FPL.svg
-    about: Relative Licensing Exemptions About
-    why: Relative Licensing Exemptions Why
+    about: Federal law allows child welfare systems to make exceptions for relatives to any foster parent licensing requirement that's not a safety issue. Most systems are not taking advantage of this flexibility, and should. **States currently using this flexibility are  licensing 100% of their relative caregivers within 60 days.**
+    why: In states that allow unlicensed kinship placements, greater licensing flexibility would give financial support to all your kinship caregivers (by getting them all licensed/approved/certified). 
+
+
+      In states that don't allow unlicensed placements, flexible licensing for relatives will significantly increase your available kinship placements, who are far better for children than strangers or institutions. 
+
+
+      This flexibility also shortens the licensing process for relatives.
     what: >-
 
 
-      * **Thing.** Words words. 
+      * **Update your policy to allow flexible exceptions for relatives.** Don't limit exceptions to a specific list. If a relative is safe enough to have _placement_, then by definition, any other licensing requirements are non-safety issues and you can waive them. 
 
-      * **Thing 2.** Words words.
+      * **Normalize making exceptions for relatives.** In systems that do this now, exceptions happen more often than not! Don't use special forms and approval processes to request exceptions. Instead, build natural places to document variations into your standard process, such as your home study template. 
+
+      * **Empower line workers.** Workers who are interacting directly with families are best positioned to understand the child and family dynamics at hand and make smart trade-offs. Licensing workers should be able to approve most, if not all, exemptions. Some systems reserve specific types of exemptions, such as criminal history, for higher level supervisors. 
+
+      * **Approve everyone with placement.** If your kinship caregivers can't get through your licensing process, you need to fix your licensing process. If they already have placement, there cannot, by definition, be any safety issues remaining — so you can use relative non-safety waivers to get that caregiver licensed.
     recommendations:
-      - align-checklists-to-statutes
-      - provide-clerical-support-for-licensing-workers
-  - hero:
-      backgroundColor: light
-      title: Retention
-      image: /src/images/heros/hero-baby.png
-      imgAlt: retention
-    layout: topic
-    title: retention
-    image: /src/images/topics/Topic-FPL.svg
-    about: Retention About
-    why: Retention Why
-    what: >-
+      - pay-kinship-caregivers-until-they-get-licensed
+      - normalize-relative-licensing-exceptions
+      - maximize-relative-exceptions
+      - license-undocumented-kin
+      - empower-line-level-exceptions
+      - flexible-licensing-wording
 
-
-      * **Thing.** Words words. 
-
-      * **Thing 2.** Words words.
-    recommendations:
-      - align-checklists-to-statutes
-      - provide-clerical-support-for-licensing-workers
   - hero:
       backgroundColor: light
       title: Social Media
@@ -445,14 +394,23 @@ topics:
     layout: topic
     title: social-media
     image: /src/images/topics/Topic-FPL.svg
-    about: Social Media About
-    why: Social Media Why
+    about: Social media has many roles in child welfare, from the targeted recruitment of new foster parents to finding teens who have run away from care. Having the right policies in place can help your department unlock its many benefits while protecting privacy.
+    why: Few child welfare systems are fully utilizing the power of social media, which can be a top driver of recruiting new successful foster parents, finding kin for children in care, locating runaway children, and more.
     what: >-
 
 
-      * **Thing.** Words words. 
+      * **Publish social media guidance for your agency.** The best social media policies _require_ using social media for crucial tasks like recruitment and kin finding, but set the right parameters for protecting the privacy of children, families, and staff. Providing exact examples and steps can help staff gain comfort with using new social media tools. We have multiple policy examples to copy and build on. 
 
-      * **Thing 2.** Words words.
+      * **Use social media to find kin.** Social media is proving far more effective at identifying and contacting kin than any other method. 
+
+      * **Use social media to recruit new homes.** While you can use social media for general recruitment information, it really shines when you use it to target the specific types of families your children need most, such as by school district or language spoken. 
+
+      * **Encourage social media for supporting current foster parents.** Online support groups for foster parents can help increase retention, solve problems, and build community.
     recommendations:
-      - align-checklists-to-statutes
-      - provide-clerical-support-for-licensing-workers
+      - use-social-media
+      - social-media-policy
+      - social-media-for-recruitment
+      - social-media-for-targeted-recruitment
+      - find-awol-youth
+      - protect-youth-privacy-on-social-media
+      - foster-family-support-groups-on-social

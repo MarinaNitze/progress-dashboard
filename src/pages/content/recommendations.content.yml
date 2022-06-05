@@ -74,37 +74,26 @@ recommendations:
       Search popular social media sites like Facebook for known family members,
       such as a youth’s parents or older siblings. From there, look through
       public messages, photos, and friend lists to identify additional
-      connections and message them. 
+      connections and message them. (This message should not reveal identifying details.) 
 
 
       Child welfare systems should _require_ social media searches as a core part of kin finding activities. 
 
 
-      Before you start using social media for family finding, create a policy to guide staff. Cover topics like:
-
-
-      * **Limiting accounts** — Provide official shared work accounts or have staff create  accounts that they only use for work. Don’t allow workers to use their personal accounts for family finding.  
-
-      * **Confidentiality** — Don’t share private information through social media messages. Just as you would leave a generic voicemail when trying to identify kin, encourage social media contacts to reach out to you directly for follow-up.
-
-      * **Respecting family privacy** — If a public child welfare account were to “friend” a possible family member, that would publicly reveal that the family member is having an interaction with child welfare. Workers should not update profiles, post public messages, or “friend” other accounts when using official work accounts for family finding. 
-
-      * **Making staffing decisions** — Decide if a central team will conduct social media family finding activities, or if all workers will be granted access. There are pros and cons to both approaches.
-
-      * **Unblocking social media sites** — Management may have to meet with IT to have certain social media sites unblocked from the network.
+      Make sure to have a [robust social media](/recommendations/social-media-policy) policy in place.
     outcome:
-      New Mexico increased initial kinship placements from 3% to 40% in one
+      New Mexico increased initial kinship placements from 3% to over 40% in one
       year by shifting to practices that included using social media to identify
       kin.
     title: use-social-media
     benefits:
       - Find more kin who can take placement and/or serve as lifelong support
         for vulnerable youth
-      - Find some kin your agency would not otherwise find
-      - Avoid placing children in general foster care who have kinship placement
+      - Find  kin your agency would not otherwise find
+      - Avoid placing children in general foster care who actually have kinship placement
         options
     who:
-      number: 5
+      number: 6
       image: ../images/recommendations/use_social_media.png
       what: >-
         ### What they're doing
@@ -112,13 +101,11 @@ recommendations:
 
         * **Rhode Island**’s family finding team uses “DCYF” in place of worker last names on social media to protect worker privacy.
 
-        * **Michigan** has social media sites listed on their [Diligent Search checklist](http://www.michigan.gov/documents/dhs/DHS-0991_480683_7.dot).
+        * **Michigan** includes social media sites listed on its [Diligent Search checklist](http://www.michigan.gov/documents/dhs/DHS-0991_480683_7.dot).
 
         * **New Mexico** encourages workers to create second, separate social media accounts under their name that they use exclusively for work.
 
         * **Virginia**’s central family-finding social media accounts are called “Virginia Family Finding 1” (and 2, and 3) to protect worker privacy.
-
-        * **Washington State** is updating its policies to allow more workers to use social media.
 
         * Some counties in **Ohio** and **California**, but it's not done state-wide at this time.
   - heading: Ask about connections repeatedly over time
@@ -1446,14 +1433,15 @@ recommendations:
 
         * Montgomery County, MD provides current foster families a $500 bonus if they refer other families. The first $250 is payable when the new family receives its license, and the second is payable when they take their first placement.
   - title: social-media-for-recruitment
-    heading: Use social media for foster family recruitment
+    heading: Use social media for general foster family recruitment efforts
     about:
       Create and regularly update social media presences for your agency, so
       community members can learn more about foster parenting and how to support
       the foster youth in their community. Radio ads, billboards, television
-      commercials, and other offline media help spread awareness of the need for
-      more foster families; a regular cadence of social media posts can raise
+      commercials, and other offline media can help spread awareness of the need for
+      more foster families, but a regular cadence of social media posts can raise
       awareness with even more community members.
+    outcome: ''
     how: >-
       Make a Facebook page for your department and create a regular schedule of
       content. Include things like upcoming events, employee profiles, profiles
@@ -1462,19 +1450,48 @@ recommendations:
       necessarily becoming a foster parent. 
 
 
-      If you do not already have a social media policy, draft one that includes best practices like not friending other users, not sending sensitive information over private messages, and using official agency accounts instead of personal accounts. Your communications team may also want to participate in writing or vetting content before it is posted.
+      If you do not already have a social media policy, publish one. [Here are our recommendations](/recommendation/social-media-policy).
     costs:
-      - Low to no cost
+      - Free to post general information
     benefits:
       - Increased foster family recruitment
+    who:
+      number: 3
+      what: >-
+
+
+        * Colorado posts about becoming a foster family on NextDoor.
+
+        * Frederick County, MD has an active [Facebook page](https://www.facebook.com/FCDSS.fosteradopt)
+
+        * Rhode Island DCYF maintains an active [Facebook presence](https://www.facebook.com/ridcyf/)
+
+        * Rhode Island DCYF posts a "Friday Win" (a bit of good news) every Friday on social media to build interaction.
+  - title: social-media-for-targeted-recruitment
+    heading: Use social media for targeted foster family recruitment
+    about:
+      Create and regularly update social media presences for your agency, so
+      community members can learn more about foster parenting and how to support
+      the foster youth in their community. Radio ads, billboards, television
+      commercials, and other offline media can help spread awareness of the need for
+      more foster families, but a regular cadence of social media posts can raise
+      awareness with even more community members.
+    outcome: Some California counties have experienced tremendous results using targeted recruitment to find homes for some of their hardest to place children, including those with disabilities and CSEC.
+    how: >-
+      Work with a professional to develop targeted digital marketing campaigns for the types of families your system needs most. For example, you can target families in specific zip codes or school districts, retired nurses, military families, families who speak particular languages, and more. 
+    costs:
+      - Varying costs associated with targeted digital campaigns. Once set up, these costs can go down dramatically.
+    benefits:
+      - Increased foster family recruitment of the exact types of families your children need.
     who:
       number: 2
       what: >-
 
 
-        * Frederick County, MD has an active [Facebook page](https://www.facebook.com/FCDSS.fosteradopt)
+        * Washington, DC uses digital marketing campaigns.
 
-        * Rhode Island DCYF maintains an active [Facebook presence](https://www.facebook.com/ridcyf/)
+
+        * In California, Mark Daley is running digital campaigns for multiple counties. [Click here for details](/assets/MarkDaley.pdf).
   - title: hire-current-foster-parents-to-train-new-foster-parents
     heading: Hire current foster parents to help train new foster parents
     about:
@@ -2042,3 +2059,388 @@ recommendations:
     who:
       number: 1
       what: '* [Uplift Family Services](https://upliftfs.org/), California'
+  - heading: Pay for Respite
+    costs:
+      - Upwards of $0.66 per day per child
+    about: Respite care gives foster parents a break, whether for date night or a trip out of state where a child is not allowed to tag along. Paying for respite, whether by providing funds or a respite provider, helps foster parents to avoid burnout and potentially support youth with higher levels of need.
+    how: >-
+      * Pay for respite for caregivers, including unlicensed caregivers. This can be a literal stipend, or you can provide paid respite by paying other respite homes a maintenance payment to provide respite. 
+
+      * Normalize taking respite by proactively paying for it on a regular basis, instead of requiring families to apply for it. 
+
+      * Continue to pay foster parents their normal rate on days they use respite.
+    outcome: ''
+    title: pay-for-respite
+    benefits:
+      - Improved foster home retention
+      - Respite providers might convert to licensed caregivers later
+      - Paid respite can enable some caregivers to take on and support children with higher levels of need
+    who:
+      number: 4
+      image: ''
+      what: >-
+        * **Colorado** provides $0.66 per day for respite on top of foster care maintenance payments. Foster parents can use it towards any approved babysitter. 
+
+        * **Maryland** provides 7 paid respite days per year, which must be used at an approved respite provider. Both families get paid for those 7 days. 
+
+        * **Washington** provides 2 paid respite days per month. 
+
+        * **Frederick County, MD** can arrange for paid respite for unlicensed kinship caregivers. 
+
+        * **Fairfax County, VA** provides respite grants to licensed caregivers, aimed at keeping siblings together and supporting foster home retention. 
+  - heading: Summer Camp Stipends
+    costs:
+      - Cost of camp
+    about: Foster youth may miss out on the childhood experience of summer camp because their foster parents can't afford it. While some camps specialize in foster youth and/or in bringing separated foster siblings together, kids in care deserve to attend camp with their peers, too.
+    how: >-
+      * Offer summer camp stipends to foster families, including unlicensed kinship caregivers.
+    outcome: ''
+    title: summer-camp-stipends
+    benefits:
+      - Youth in care get normal childhood experiences
+      - Summer camp is an indirect form of respite for foster parents
+    who:
+      number: 1
+      image: ''
+      what: 'Virginia provides a $500 stipend for summer camp to every child.'
+  - heading: Professional (Salaried) Foster Parents
+    costs:
+      - Equilvalent to FTE salaries with benefits
+    about: Many children in institutions could be thriving in a dedicated family setting. Requirements that foster parents have a separate source of income and employment means that willing and experienced homes cannot provide the full-time care that some children need. Professional, or salaried, foster parents are an emerging answer to this challenge.
+    how: >-
+      * Develop a pilot professional foster parent program. Identify payment rates, expectations (professional foster parents should not be able to disrupt their placement for a set period of time, like six months), and from where you will recruit your initial parents. We encourage you to reach out to existing programs to learn from and model them!
+
+      * Waive income requirements for professional foster parents, because the expectation is that their job is now meeting the needs of the child in their home.
+
+      * Provide 24/7 wraparound services and other supports to professional foster parents to support and maintain the placement.
+    outcome: Washington DC's professional foster parents have achieved a placement stability rate of 95%.
+    title: professional-foster-parents
+    benefits:
+      - Family settings for youth with high levels of need, instead of institutional placements
+      - Placement stability for youth with the highest levels of need
+    who:
+      number: 2
+      image: ''
+      what: >-
+        * **California** has a very successful professional foster parent program through Uplift Human Services.  
+
+        * **Washington DC** has two professional foster parent programs: PPY (Pregnant and Parenting Youth), where the foster parents take in both the pregnant or parenting youth and their child, and SOAR (Stabilize Observe Assess and Respite), for taking children with high levels of need. They pay an annual salary plus a stipend to purchase health insurance.
+  - heading: Placement Stability Bonuses
+    costs:
+      - Bonus amount
+    about: Placement stability is good for youth. Providing financial bonuses to some families for maintaining placement stability incentives this.
+    how: >-
+      * Create a placement stability bonus structure. Decide on amounts, milestones, and which foster parents / youth will be eligible.
+
+      * Pay bonuses in cash equivalents, not gift cards to specific stores.
+    outcome: ''
+    title: placement-stability-bonuses
+    benefits:
+      - Increased foster home retention
+      - Increased placement stability
+    who:
+      number: 1
+      image: ''
+      what: >-
+        * **Washington DC** pays an annual stipend of $1200 if a child has been with a parent for 12 consecutive months.
+
+  - heading: Pay to Keep Homes Open
+    costs:
+      - Modest increase in maintenance payments
+      - Ultimately saves costs in avoided group home placements
+    about: When children experience a disruption, such as running away or requiring an inpatient treatment, their foster home bed is generally "closed." Paying the home to not only keep their bed open, but remain involved (e.g., visiting the hospital daily) can reduce placement disruption.
+    how: >-
+      * Don't close a bed when a child runs away or is hospitalized.
+
+      * Review contracts with private agencies for criteria for closing out a bed.
+    outcome: ''
+    title: pay-to-keep-homes-open
+    benefits:
+      - Placement stability
+    who:
+      number: 1
+      image: ''
+      what: >-
+        * **Maryland** can pay to keep some homes open through its Center for Excellence grant. 
+  - heading: Pay Kinship Caregivers Until They Get Licensed
+    costs: 
+      - Significant state funds
+    about: Kinship caregivers are not eligible for receiving foster care stipends until they complete a licensing process. In most states, the can take 100s of days; and many states allow for kinship caregivers to remain unlicensed (unpaid) indefinitely. This lack of financial support can severely negatively impact the ability for a kinship caregiver to provide a stable placement.
+    how: >-
+      * Pay kinship caregivers from the first day they receive placement. This generally requires state funds.
+
+      * Streamlining your kinship licensing process, including maximizing non-safety exemptions, can get kinship caregivers licensed (and therefore paid) much faster.
+    outcome: ''
+    title: pay-kinship-caregivers-until-they-get-licensed
+    benefits:
+      - Kinship caregivers can financially support their children
+    who:
+      number: 3
+      image: ''
+      what: >-
+        * **California**'s Emergency Caregiver Funding Program provides funding for up to 365 days to caregivers who receive placement before being approved. 
+
+        * **Ohio** can provide kinship caregivers with payments for up to six months, from state funds, if the relative has an approved home study. 
+
+        * **Michigan** can use state funds for unlicensed kinship caregivers. 
+
+        * **Oklahoma** pays kinship caregivers for the first 60 days after placement, after which time they are usually licensed and eligible for regular maintenance payments. If the caregiver is still not licensed at 60 days, and Oklahoma determines the delay is due to the state, it will continue paying the kinship caregiver until they're licensed.
+  - heading: Social Media Policy and Practice Guidance
+    costs: 
+      - Time to write and publish policy
+    inspiration: '[Washington DC social media policy](/assets/DC_Social_Media_Policy.pdf)'
+    about: The best social media policies in child welfare enable staff to take advantage of its many benefits while protecting the privacy of children, families, and employees.
+    how: >-
+        A comprehensive social media policy covers topics like: 
+
+        * **Limiting accounts** — Provide official shared work accounts or have staff create  accounts that they only use for work. Don’t allow workers to use their personal accounts for family finding. 
+
+        * **Confidentiality** — Don’t share private information through social media messages. Just as you would leave a generic voicemail when trying to identify kin, encourage social media contacts to reach out to you directly for follow-up. 
+
+        * **Respecting family privacy** — If a public child welfare account were to “friend” a possible family member, that would publicly reveal that the family member is having an interaction with child welfare. Workers should not update profiles, post public messages, or “friend” other accounts when using official work accounts for family finding. 
+
+        * **Making staffing decisions** — Decide if a central team will conduct social media family finding activities, or if all workers will be granted access. There are pros and cons to both approaches. 
+
+        * **Requiring official cause** - Using social media should be _mandatory_ when looking for kin and when recruiting more foster families. At the same time, workers should not look up family members purely out of curiosity. 
+
+        * **Handling records management** — As a government agency, your social media messages may be subject to things like public records requests. You can use tools to automatically archive all your official social media accounts. 
+
+        * **Unblocking social media sites** — Management may have to meet with IT to have certain social media sites unblocked from the network. (Let us know if you need help with this!)
+    outcome: ''
+    title: social-media-policy
+    benefits:
+      - Increased success at kin-finding
+      - Improved foster parent recruitment
+    who:
+      number: 9
+      image: ''
+      what: >-
+
+        * **Washington DC** has a [detailed policy](/assets/DC_Social_Media_Policy.pdf) guiding employees on how to effectively use social media. 
+
+        * **Oklahoma** uses Archive Social to automatically archive all its social media activity in case of a public records request. 
+
+        * **Oklahoma** uses Loomly to organize and track its social media posts across various platforms. 
+
+        * **Rhode Island**’s family finding team uses “DCYF” in place of worker last names on social media to protect worker privacy. 
+
+        * **Michigan** has social media sites listed on their [Diligent Search checklist](http://www.michigan.gov/documents/dhs/DHS-0991_480683_7.dot). 
+
+        * **New Mexico** encourages workers to create second, separate social media accounts under their name that they use exclusively for work. 
+
+        * **Virginia**’s central family-finding social media accounts are called “Virginia Family Finding 1” (and 2, and 3) to protect worker privacy. 
+
+        * **Washington State** is updating its policies to allow more workers to use social media. 
+
+        * Some counties in **Ohio** and **California**, but it's not done state-wide at this time.
+  - heading: Provide More Ways for Foster Parents to Earn Money
+    costs:
+      - Varies
+    about: Additional financial opportunities, even if modest, can help foster parents feel appreciated and recognize their time and effort fairly.
+    how: >-
+      * Hire current foster parents as co-trainers at foster parent trainings and orientation.
+
+      * Compensate foster parents for attending required training sessions.
+
+      * Provide foster parents with an up-to-date list of local stores and restaurants that provide foster parent discounts.
+
+      * Prioritize foster parents when hiring for ad hoc, part-time, and full-time roles at your agency.
+    outcome: ''
+    title: provide-more-ways-for-foster-parents-to-earn-money
+    benefits:
+      - Foster parents experience greater levels of appreciation
+      - Foster parents earn more money
+    who:
+      number: 4
+      image: ''
+      what: >-
+        * **Frederick County, MD** pays foster parents to attend trainings ($25-50ish per class). 
+
+        * **Frederick County, MD** pays foster parents $20 per session to co-lead foster parent trainings. 
+
+        * **Washington, DC** hires foster parents as trainers. 
+
+        * **Colorado** has a mobile app (The Foster Family Business App) that provides foster parents with discounts at a variety of local stores. 
+
+        * **Fairfax County, VA** pays foster parents for co-leading foster parent trainings and being on panels.
+  - heading: Use social media to find missing children
+    costs:
+      - None
+    about: It's scary when youth run away or go missing while in care. Social media can be an effective way to find and communicate with AWOL youth.
+    how: >-
+      * Search popular social media sites for the youth by name. Also review friends, posts, and comments on any known friend or family member profiles.
+
+      * While it may normally be against policy to send friend requests, this practice may be required in order to send a message to a youth with a private profile. Ensure your workers can use this flexibility when necessary.
+
+      * Stay calm. An open line of communication can help encourage youth to return, but it might not happen immediately. A line of communication can at least let you know if a youth is safe.
+    outcome: ''
+    title: find-awol-youth
+    benefits:
+      - Another method for finding and communicating with missing children
+    who:
+      number: 2
+      image: ''
+      what: >-
+        * **Washington State** encourages its missing youth workers to search and reach out over social media. 
+
+        * **Rhode Island** has successfully found and brought back multiple foster youth via Facebook.  
+  - heading: Protect youth privacy on social media
+    costs:
+      - None
+    about: Foster parents may mean well when posting on social media, but seemingly innocent stories and photos can easily violate the privacy of foster youth in their home. This can be an especially tricky area to navigate for kinship caregivers.
+    how: >-
+      * Review your privacy policy with current kinship caregivers to make it clear what they can and cannot post on social media. This can be tricky when grandma would _normally_ post family photos, but if grandma is currently a kinship caregiver, she cannot post those photos without permission from the child's parent(s).
+
+      * Instead of posting photos of youth online, such as in galleries of youth available for adoption, use images of concepts and items that are representative of that child, such as horses or art supplies. Adoption websites are not catalogs.
+
+      * Make it explicitly clear to families that covering a child's face with an emoji or other shape is not sufficient; they cannot post images online at all.
+
+      * Use private technology tools to enable (and encourage!) sharing of photos and other information between foster families and the child's famil of origin. Keep this material off social media.
+
+      * If workers see inappropriate photos posted on social media, encourage them to reach out gently but firmly to remind families of  privacy rules. It has become a trend to post images of children in care with funny emojis covering their faces, which may give families a false impression that this behavior is allowed.
+    outcome: ''
+    title: protect-youth-privacy-on-social-media
+    benefits:
+      - Increased privacy for youth
+      - Clarity of expectations for foster families
+    who:
+      number: 2
+      image: ''
+      what: >-
+        * **Raise the Future** uses [collages in place of children's photos](https://www.raisethefuture.org/waiting-children#!/profile/192499/) in its online adoption gallery. 
+
+        * **Ohio** uses the [Our Family Wizard](https://www.ourfamilywizard.com/) tool to encourage secure photo and information sharing between families. Normally a tool for divorced parents, this company offers free licenses to child welfare agencies.
+  - heading: Encourage foster family support groups on social media
+    costs:
+      - None
+    about: Support groups exist on social media for every topic you can think of, including foster care. Families in your system should have access to a social media based support group.
+    how: >-
+      * Appoint an outside group or agency to run the group. Families aren't comfortable in agency-run groups.
+
+      * Make sure the group has clear guidance for what to do if a member is in crisis or if there is suspected child abuse or neglect.
+
+      * Agency employees should not join these groups.
+    outcome: ''
+    title: foster-family-support-groups-on-social
+    benefits:
+      - Increased sense of community among foster parents
+      - Indirect source of recruitment and retention
+    who:
+      number: 1
+      image: ''
+      what: >-
+        * **Michigan** experienced success augmenting its online foster parent training programs with a private Facebook group during the pandemic to help build community when people could not get together face to face.  
+  - heading: Describe foster parent licensing requirements with flexible wording
+    costs:
+      - None
+    about: Child welfare systems can box themselves into a corner by being overly specific when describing foster parent licensing requirements. Flexible language around certain requirements means more caregivers, especially kin caregivers, can get licensed.
+    how: >-
+      * Review your current language for overly-specific requirements. For example, don't try to define a bedroom.
+
+      * Solicit feedback from licensing workers about which of your licensing requirements trip them up, whether because the verbiage is confusing, or too specific. In particular, seek stories about times when specific requirements meant that an otherwise qualified kinship caregiver couldn't get licensed.
+    outcome: ''
+    title: flexible-licensing-wording
+    benefits:
+      - More kinship caregivers
+      - Simpler licensing process
+    who:
+      number: 2
+      image: ''
+      what: >-
+        * **California** does not define a "bedroom" so it does not have to worry about square footage, number of doors or windows, or other details that frequently trip up other systems during the approval process. This is especially important for kinship caregivers who may not have the resources to provide every child with a dedicated bedroom. 
+
+        * **Rhode Island** created a kinship licensing "playbook" that encourages conversations and collaboration over a specific list of very detailed requirements.
+
+  - heading: Empower licensing workers to approve relative licensing exceptions
+    costs:
+      - None
+    about: When the licensing workers who interact with and really know a family get to make decisions about how to approve or mitigaten non-safety exceptions for relatives, everyone benefits. A supervisor or area administrator who has never met a family is often not the best person to make a judgement call, and that can lead to denials that lack nuance — which ultimately means fewer kids in kinship care. Localized decision making means faster and higher licensing rates for relatives. 
+    how: >-
+      * Review your exception approval process. Consider removing some or all higher approval steps. If this is too drastic a shift, start with making a list of exceptions that licensing workers can mitigate directly, and only require higher level approvals for others. For example, some systems let licensing workers approve everything except criminal histories. 
+
+      * Don't have an exception approval process at all. Instead, [move mitigation and alternate plans within the normal process](/recommendation/normalize-relative-licensing-exceptions) (e.g., the home study template).
+    outcome: ''
+    title: empower-line-level-exceptions
+    benefits:
+      - Clear and faster decision making
+      - Fairer decisions for kinship caregivers
+    who:
+      number: 2
+      image: ''
+      what: >-
+        * **Rhode Island** reduced licensing contacts with a family to one team of 2-3 people max. 
+
+        * **Indiana** has a weekly meeting focused on how **TO** license every family. This attitude generates solutions, not denials.
+  - heading: License undocumented family members
+    costs:
+      - None
+    about: It's _not_ a federal requirement for kinship caregivers to be in the country legally in order to get licensed — this is a pervasive myth. These caregivers should also be eligible for licensing and financial support. 
+    how: >-
+      * Build trust with caregivers. If they think you'll report them to authorities for their immigration status, they won't work with you. Make it clear that your focus is only making sure the involved youth have a safe and supported placement.
+
+      * Conduct name-based background checks.
+
+      * Limit documentation of undocumented status. Don't document immigration status (whether documented or not) in your IT system.
+
+      * Remove state licensing requirements for residency or citizenship. This is not required under federal law, so any state requirements are you getting in your own way.
+
+      * Look for other household members to license. As a workaround, you can license a household member who does have a documented immigration status.
+    outcome: ''
+    title: license-undocumented-kin
+    benefits:
+      - Kinship caregivers without documentation can get financial support
+      - More kinship caregivers
+    who:
+      number: 2
+      image: ''
+      what: >-
+        * **New Mexico** licenses undocumented family members by conducting name-based background checks in place of fingerprints for family members with immigration status concerns. 
+  - heading: Maximize use of relative licensing exceptions
+    costs:
+      - None
+    about: Title IV-E of the Social Security Act, which governs foster care maintenance payments and licensing, specifically says that states can make exceptions to any "non-safety" licensing requirements for relatives. Most states have artificially limited their flexibility around exceptions — but you can fix this by following in the footsteps of states that have maximum flexibility. 
+    how: >-
+      * Borrow policy verbiage from states with maximum flexibility to grant exceptions to relatives. The only licensing requirements that are "safety" issues are those that would prevent placement (such as a disqualifying criminal history). Here's the law, so you can easily reference it: "(D) that a waiver of any standards established pursuant to subparagraph (A) may be made only on a case- by-case basis for non-safety standards (as determined by the State) in relative foster family homes for specific children in care."  
+
+      * If you currently allow _some_ exceptions, change this to allow all non-safety issues. Do not have a specific list of relative exceptions. 
+
+      * If you don't currently allow any licensing exceptions for relatives, start! Use states that already have this flexibility, listed below, as a guide (and feel free to reach out to us for help). 
+
+      * Carefully define "safety" and "non-safety." This trips up many systems. If a kinship caregiver is safe enough to place, then by definition, any other issues are non-safety issues. A safety issue is only something that would cause you to immediately remove a child from that person's care. Under this definition, **ALL** kinship caregivers with placement should qualify for a license. 
+
+      * Acknowledge there will be a small handful of exceptions. You may have a kinship caregiver with a disqualifying federal criminal history but is a court-ordered placement. In this case, the caregiver won't be eligible for IV-E reimbursement. But this should be an extremely rare situation.
+    outcome: ''
+    title: maximize-relative-exceptions
+    benefits:
+      - All kinship caregivers will get financial support
+      - More kinship caregivers in systems that do not currently have exceptions
+    who:
+      number: 3
+      image: ''
+      what: >-
+        * **Oklahoma** approves almost all of its kinship caregivers within 60 days of placement, with the liberal use of exceptions and no list of allowed exceptions. Here's [Oklahoma's policy](/assets/OK_Relative_Exceptions.docx). 
+
+        * **Washington DC** can waive anything except criminal history, and can license a kinship caregiver in as little as six HOURS. 
+
+        * **New Hampshire** can waive any requirement upon request (though the caregiver has to request the waiver).
+
+  - heading: Normalize making licensing exceptions for relatives
+    costs:
+      - None
+    about: Exceptions to licensing requirements for relatives don't have to be entirely separate forms or processes. Many systems incorporate this mitigation and decision making within the standard process, such as the home study template. In systems that allow relative nonsafety exceptions, these exceptions happen _more often than not_ — so instead of treating it as an exceptional circumstance, treat it as a routine one.
+    how: >-
+      * Move existing exception forms into your standard forms. This can largely be handled in the narrative sections of a home study.
+	  
+      * Find opportunities to [reduce the number and/or level of decision-makers for relative exceptions](/recommendation/empower-line-level-exceptions).
+    outcome: ''
+    title: normalize-relative-licensing-exceptions
+    benefits:
+      - Faster relative licensing
+      - Streamlined process for employees
+    who:
+      number: 2
+      image: ''
+      what: >-
+        * **New Mexico** has a finite list of relative nonsafety waivers, but instead of requiring a separate form, it addresses exceptions in the same part of the home study where the topic comes up (e.g., capacity exceptions when surveying the home). 
+
+        * **Rhode Island** and **Ohio ** do not have a separate form to request exceptions, and instead incorporate mitigations throughout the home study. 
