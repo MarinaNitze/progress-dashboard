@@ -1,5 +1,26 @@
 topics:
   - hero:
+      backgroundColor: light
+      title: Emergency Placements
+      image: /src/images/heros/hero-baby.png
+      imgAlt: emergency-placements
+    layout: topic
+    title: emergency-placements
+    image: /src/images/topics/Topic-FPL.svg
+    about: While some entries in foster care are planned in advance, many others are sudden, perhaps in the middle of the night or on a weekend. Placement desks are under great duress to find family or a matching foster home immediately, even in the face of dwindling resources and homes. Worse, when unsuitable placements are made under duress, they might work out for days or weeks, but eventually disrupt and start the emergency all over again.
+    why: A strategic variety of emergency options can ultimately increase the number of youth initially placed with kin (by giving the system enough time to find them) and avoid institutional placements.
+    what: >-
+
+
+      * **Dedicated emergency placements.** Sometimes called crisis nurseries or receiving homes, facilities or dedicated foster homes that specialize in very short-term (usually under 72 hours) emergency placements can give taxed placement desks enough time to find and resource kinship placements, or at worst, thoughtfully match the child with an available home in the community that matches their needs. 
+
+      * **Have families on call** A foster parent may be available to take a placement, but simply can't answer the phone right away. A schedule and/or compensation for families to be "on call" for possible placements can ensure children have placement options no matter what time of day.
+    recommendations:
+      - on-call-families
+      - require-private-agency-emergency-beds
+      - designated-emergency-homes
+      - emergency-shelters
+  - hero:
       backgroundColor: primary
       title: Extended Foster Care
       image: /src/images/heros/hero-baby.png
@@ -44,9 +65,9 @@ topics:
       be a challenge for foster care programs.
 
 
-      Child welfare systems who have adopted the practices listed on this page are able to place children with relatives more than 80% of the time. 
-	  
-      
+      Child welfare systems who have adopted the practices listed on this page are able to place children with relatives more than 80% of the time.
+
+
       **Track adoption of these practices on the [progress dashboard](/compare/Family%20Finding)**.
     why: >-
       Children can’t have too many adults who care about them. A strong support
@@ -233,9 +254,9 @@ topics:
       registry in each state where a potential foster parent lived during
       the past 5 years. This is called the “Adam Walsh check” after the 2006 act
       that requires it. Programs must do this for anyone else in the home
-      who’s 18 years or older.  
-	  
-      
+      who’s 18 years or older.
+
+
       **Track adoption of these practices on the [progress dashboard](/compare/Background%20Checks)**.
     why: >-
       Flaws and inconsistencies in states’ out of state child abuse and neglect check processes are: 
