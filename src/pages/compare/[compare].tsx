@@ -234,6 +234,40 @@ export default function Compare({ params: { compare } }: PageProps) {
   // when bool = false, force show all
   const [hideAll, setHideAll] = useState<boolean | undefined>(undefined);
 
+  const awContent = (
+    <div>
+      <p>
+        If a prospective foster parent lived in another state within the last 5
+        years, their <em>current</em> state must check the child abuse & neglect
+        registry from their prior state(s) before approving them as foster
+        parents.
+      </p>
+      <p>
+        This sounds like a good idea. But in practice, inconsistent processes
+        across states for fulfilling these requests are putting children at
+        risk, and cause some of the most significant delays in licensing
+        (paying) foster parents, particularly for kinship caregivers who already
+        have placement of children but who do not receive any financial support
+        until they are licensed.
+      </p>
+    </div>
+  );
+
+  const kinFindingContent = (
+    <div>
+      <p>
+        The best thing for a child in foster care is living with an adult they
+        already know and trust ("kin"). The vast majority of children entering
+        care have kin available to care for them, but most systems fail to find
+        these adults for most children.
+      </p>
+      <p>
+        When systems adopt more effective kin-finding practices, they can
+        achieve initial kinship placement rates in excess of 80%.
+      </p>
+    </div>
+  );
+
   return (
     <Layout>
       <section id="hero-section">
@@ -248,46 +282,21 @@ export default function Compare({ params: { compare } }: PageProps) {
         <GridContainer>
           <section className="intro-section">
             <Grid>
-              // This part should only appear on the Adam Walsh page
-              <p>
-                If a prospective foster parent lived in another state within the
-                last 5 years, their <em>current</em> state must check the child
-                abuse & neglect registry from their prior state(s) before
-                approving them as foster parents.
-              </p>
-              <p>
-                This sounds like a good idea. But in practice, inconsistent
-                processes across states for fulfilling these requests are
-                putting children at risk, and cause some of the most significant
-                delays in licensing (paying) foster parents, particularly for
-                kinship caregivers who already have placement of children but
-                who do not receive any financial support until they are
-                licensed.
-              </p>
-              // This part should only appear on the Kin Finding page
-              <p>
-                The best thing for a child in foster care is living with an
-                adult they already know and trust ("kin"). The vast majority of
-                children entering care have kin available to care for them, but
-                most systems fail to find these adults for most children.
-              </p>
-              <p>
-                When systems adopt more effective kin-finding practices, they
-                can achieve initial kinship placement rates in excess of 80%.
-              </p>
-              // Resume generic top
+              {compareTopic == 'Background Checks'
+                ? awContent
+                : kinFindingContent}
               <p>
                 Our goal is for every child welfare system to adopt these{' '}
                 {topicPractices.length} promising practices for{' '}
                 {COMPARE_TOPIC_FULL_TITLE[compareTopic]}:{' '}
                 {topicPractices.map((practice, idx) => (
-                  <>
+                  <React.Fragment key={practice}>
                     {idx === topicPractices.length - 1 ? 'and ' : ''}
-                    <Link to={PRACTICE_LINK_MAP[practice]}>
+                    <Link to={PRACTICE_LINK_MAP[practice] || ''}>
                       {practice.toLowerCase()}
                     </Link>
                     {idx < topicPractices.length - 1 ? ', ' : '.'}
-                  </>
+                  </React.Fragment>
                 ))}
               </p>
               <p>

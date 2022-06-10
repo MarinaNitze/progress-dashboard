@@ -5,7 +5,7 @@ import useSortData, { Direction } from '../../hooks/useSortData';
 import './Table.scss';
 
 export type TableHeading<T> = {
-  dataKey: keyof T;
+  dataKey: Extract<keyof T, string>;
   sortable?: boolean;
   heading?: string;
   renderCellContent?: (rowData: T) => JSX.Element;
