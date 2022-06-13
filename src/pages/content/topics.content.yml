@@ -1,6 +1,33 @@
 topics:
   - hero:
       backgroundColor: light
+      title: Connecting Youth to Their Supportive Adults
+      image: /src/images/heros/hero-baby.png
+      imgAlt: connecting-youth-to-their-supportive-adults
+    layout: topic
+    title: connecting-youth-to-their-supportive-adults
+    image: /src/images/topics/Topic-FPL.svg
+    about: Youth in foster care often leave with fewer connections than they entered care with. Children can't be expected to maintain these relationships by themselves—they can't drive, may not have a phone while in care, and may not even have contact information. It should be the responsibility of every child welfare system to maintain and nurture all of a child's supportive relationships throughout their time in care. 
+    why: Children in foster care deserve every support available, including rich relationships with their support network.
+    what: >-
+
+
+      * **Document a youth's support network.** Whether with a heart map or a genogram, capture all of a youth's relationships, their contact information, and a next step for staying in touch. 
+
+      * **Make it policy to keep in touch.** A child's worker and foster family should have an active plan for staying in touch with every connection, whether that's through in person visits, video calls, summer trips, rides to school, or other interactions. It should be a formal responsibility for the worker and the foster family to adhere to this plan. 
+
+      * **Support those supportive adults** An adult may love a child but not know exactly how to support them or to navigate the child welfare system. Offer resources, like training or even simply an occasional conversation, to the entire support network. 
+    recommendations:
+      - ask-about-supportive-adults
+      - plan-for-youth-to-keep-connected-supportive-adults
+      - create-life-books
+      - encourage-youth-to-bring-supports-to-meetings
+      - provide-transportation-to-visits-with-supportive-adults
+      - employ-parent-aides
+      - provide-training-for-supportive-adults
+      - use-dna-to-find-more-family-connections
+  - hero:
+      backgroundColor: light
       title: Emergency Placements
       image: /src/images/heros/hero-baby.png
       imgAlt: emergency-placements
@@ -118,6 +145,7 @@ topics:
       - use-extreme-family-finding
       - red-team-to-prevent-group-home-placements
       - senior-staff-sign-off-for-non-relative-placements
+      - use-dna-to-find-more-family-connections
   - hero:
       backgroundColor: light
       title: Foster Parent Compensation
@@ -413,6 +441,50 @@ topics:
       - license-undocumented-kin
       - empower-line-level-exceptions
       - flexible-licensing-wording
+
+  - hero:
+      backgroundColor: light
+      title: Retention
+      image: /src/images/heros/hero-baby.png
+      imgAlt: retention
+    layout: topic
+    title: retention
+    image: /src/images/topics/Topic-FPL.svg
+    about: Most child welfare systems are struggling to retain experienced foster parents who are increasingly exiting due to burnout or frustration.
+    why: Retaining quality foster homes reduces the need to recruit new homes, and over time, creates experienced homes that can support youth with higher levels of need.
+    what: >-
+
+
+      * **Proactively prevent burnout.** This is hard to do in practice, but if a family did really well with a child with complex needs, the _last_ thing you should do is call them the next morning to take another complicated case. Check in with families to provide a break, an ear, or even grief counseling — whatever they need to fully prepare to take a future placement. 
+
+      * **Show appreciation for current families.** It can be easy to take foster families for granted. Even small showings of appreciation can help them 
+
+      * **Build community** When a foster family is part of a community of families, they are more likely to remain engaged. 
+
+      * **Carefully define retention goals.** If a family doesn't renew their license because they just adopted a sibling group of three from foster care, or because it's clear to everyone early on that fostering isn't right for them, that's not a failure — that's a success. Similarly, a family not renewing because they moved or are going through unrelated personal circumstances (like a divorce or illness) don't indicate a system failure. You want to focus your retention efforts on the families that are well-suited to supporting your children. 
+
+      * **Talk to your existing families** Getting their feedback early and often can help address smaller issues early on, before they blow up into big issues that make them want to quit. Real relationships are far superior to mailing out surveys.
+    recommendations:
+      - measure-retention-carefully
+      - ideas-for-recognizing-resource-families
+      - resource-family-support-groups
+      - accompany-resource-parents-to-meetings
+      - check-in-frequently-on-first-placements
+      - provide-childcare-at-resource-parent-events
+      - provide-regular-updates-to-resource-parents
+      - welcome-bag-for-new-resource-parents
+      - make-it-easy-for-resource-parents-to-meet-new-licensing-requirements
+      - support-resource-parents-through-allegations
+      - mentors-for-resource-parents
+      - give-resource-families-opportunities-to-be-heard
+      - foster-a-sense-of-community-amongst-resource-families
+      - check-in-with-your-resource-families-regularly
+      - financial-supports-for-resource-families
+      - normalize-respite
+      - identify-natural-supports-for-caregivers
+      - proactively-avoid-resource-family-burnout
+      - create-a-resource-parent-handbook
+
 
   - hero:
       backgroundColor: light

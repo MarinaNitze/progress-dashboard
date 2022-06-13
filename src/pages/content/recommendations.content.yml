@@ -216,7 +216,7 @@ recommendations:
 
       * Add a question like, “Are there other connections that we should know about?” to any kinship-finding form letters or standard messages.
 
-      * Ask supportive adults who attend planning meetings if there are others who should be in attendance.
+      * Ask supportive adults who attend planning meetings if there are others who should be in attendance or otherwise be involved.
     costs:
       - None
     benefits:
@@ -225,13 +225,15 @@ recommendations:
       - Find some kin faster than if agency workers have to search for them
         independently
     who:
-      number: 2
+      number: 3
       image: ../images/recommendations/ask_family_about_family.png
       what: >-
         ### What they're doing
 
 
         * In **California**, all supportive adults at every Child and Family Team meeting are explicitly asked if they know of any other kin who should be included.
+
+        * In **Washington** at Family Team Decision Meetings, they ask everyone the question: even if you can’t take placement, is there anyone else within your family or that the child knows who we should be talking to? 
 
         * **Michigan** explicitly asks identified kin to share the names of more kin on their Relative Notification Form
     inspiration:
@@ -2542,3 +2544,175 @@ recommendations:
         * **California** has transitional facilities in five counties. 
 
         * **Ohio** has two licensed crisis nurseries.
+
+  - heading: Check in frequently on first placements
+    costs:
+      - Staff time
+    about: No matter how many hours of training they've had, it's a different experience once a child is placed in your home. This is particularly the case for kinship caregivers who may have had no notice their life was about to change. A little extra support during this transition period can go a long way towards making a placement successful and retaining foster homes for the long term.
+    how: >-
+      * Update your practices to include regular check-ins with resource families after they take their first placement. The specific person who should check in may vary by agency, but it should be a consistent person. Kinship caregivers should also get these calls. Milestones might include the first night, right before any key meetings, the first day a child attends school (if different from the first day of placement), and at least once a week for the first month.
+
+      * Ask open-ended questions. How's it going? Do they need anything? Do they have any questions? This is a great opportunity to identify any additional supports that may be needed and get them in place proactively.
+    outcome: ''
+    title: check-in-frequently-on-first-placements
+    benefits:
+      - Initial placements can be more stable
+      - Increased retention of new resource families
+    who:
+      number: 1
+      image: ''
+      what: >-
+        * **Frederick County, MD** checks in frequently with new resource families after taking their first placement. They also join new families in many of their new experiences, such as agency meetings and court hearings, to help them get comfortable and familiar with the process. 
+
+  - heading: Give new resource parents a welcome bag
+    costs:
+      - Small
+    about: Retention starts at the start! Drop off a welcome bag to new resource parents with a note that welcomes them to fostering and includes a combination of useful items and fun treats for the whole family.
+    how: >-
+      * Include a mix of contents, some practical and some just fun. Consider the whole family (the parents, the youth in care, and any children or other adults already in the home - perhaps even a pet!).
+
+      * If your agency lacks the budget for welcome bags, forward this page to your local community supporters to make bags on your behalf.
+
+      * Kinship caregivers should get bags, too, although you might adjust the tone and message (and possibly the contents) of the delivery accordingly. You can still thank them for their sacrifices and include family activities like a game, craft project, or treats.
+    outcome: ''
+    title: welcome-bag-for-new-resource-parents
+    benefits:
+      - Makes new resource parents feel supported at a key milestone.
+    who:
+      number: 1
+      image: ''
+      what: >-
+        * **Frederick County, MD** visits the home of resource families after they get their license to drop off a welcome bag that includes a [resource family handbook](/recommendation/create-a-resource-parent-handbook), a water bottle, Foster Love mugs, two books for adults, and a children's book (The Invisible String). 
+		
+  - heading: Provide childcare at resource family events and trainings
+    costs:
+      - Can be free or paid
+    about: Childcare can be an insurmountable barrier to adults completing necessary licensing steps or to attending regular training and/or recognition events. You can fix this by providing childcare on-site.
+    how: >-
+      * Prioritize childcare options for kinship caregivers who need to complete required agency steps to maintain their kinship placeent, such as a fingerprinting session or a medical exam.
+
+      * If agency policy allows, look for community members who can volunteer to provide childcare. This can be a smart recruitment strategy to introduce more people to youth in care and the idea of fostering!
+
+      * Depending on your agency's policies around childcare providers, you may need to perform background checks or other steps to assess childcare providers ahead of time.
+
+      * Childcare should be for children in foster care as well as other children in the home. The care itself doesn't have to be fancy; putting on a movie can be enough.
+
+      * Make sure that kinship caregivers are eligible for this childcare, too.
+    outcome: ''
+    title: provide-childcare-at-resource-parent-events
+    benefits:
+      - More families can navigate your licensing process, and faster 
+      - Higher attendance at training and events
+      - Better trained families
+      - Greater sense of community among resource families
+      - Potential to recruit more resource families through childcare volunteers
+    who:
+      number: 1
+      image: ''
+      what: >-
+        * **Frederick County, MD** provides childcare for agency-sponsored events and trainings. Sitters are usually from community-based organizations like churches, and have to pass a background check that includes fingerprints. 
+
+  - heading: Identify natural supports for caregivers
+    costs:
+      - None
+    about: Caregivers, whether kinship caregivers or general resource families, need support too, and they won't be able to get 100 percent of that support from your agency. Identifying natural supports early on can help activate those supports when they're needed.
+    how: >-
+      * Update your home study process to include identifying natural supports. Home study specialists should talk through different hypothetical scenarios with the caregiver to prompt brainstorming of what supports they would need and who they would reach out to. Families can write these plans down.
+    outcome: ''
+    title: identify-natural-supports-for-caregivers
+    benefits:
+      - Increased resource family retention
+      - More supported caregivers
+    who:
+      number: 1
+      image: ''
+      what: >-
+        * **Washington** asks caregivers about their natural support network as part of its home study form. 
+
+  - heading: Check in with your resource families on a regular basis
+    costs:
+      - Staff time
+    about: There is so much to do and there are so many emergencies to handle that it can be easy to assume that no news is good news in the case of your existing resource families, but this is not alway the case. Regular check-ins can surface issues of all sizes proactively, so you have enough time to fix individual or systemic issues before they cause you to lose families altogether.
+    how: >-
+      * Try to make check-ins a human interaction, instead of relying on a paper or electronic survey. This takes more time but gets much richer information and much higher response rates. The worker conducting the check-in should capture what they learn on a structured form for internal analysis and reporting.
+
+      * Make it as easy as possible for families to participate in check-ins. Work around their schedule, provide childcare, offer different meeeting options (in-person coffee or video chat or phone call).
+
+      * Incorporate check-ins with existing meetings. If you have a worker going to do a home visit anyway, make it a practice for them to talk to the caregiver privately about how they're doing and whether they have questions or unmet needs. The worker should capture this information and there should be clear steps for follow-up.
+
+      * Develop an agency practice for evaluating all check-in information at a regular cadence (such as quarterly or every six months) to look for high-level trends or themes that may indicate the need for new programs or supports, or changes. Sort information by area and by worker if you are in a larger system. You don't need a data scientist to spot problems.
+
+      * Make sure to check in with families at least quarterly, and at key milestones, such as right after initial placements, and especially after removals / reunifications.
+
+      * Provide caregivers an anonymous way to share more feedback.
+    outcome: ''
+    title: check-in-with-your-resource-families-regularly
+    benefits:
+      - Increased retention by being able to spot and get ahead of issues
+      - More families feeling heard
+    who:
+      number: 2
+      image: ''
+      what: >-
+        * **Washington** conducts an annual caregiver survey and has a team that pays close attention to the responses. 
+
+        * **Rhode Island** surveys caregivers with a survey after they complete training, and after their initial placement.
+
+  - heading: Measure retention carefully
+    costs:
+      - None
+    about: The percentage of families that your system retains as resource parents can be a misleading number if not tracked carefully. There are plenty of good, or at least neutral, reasons for a family closing its beds, such as adopting their current placement, moving out of state, or perhaps reaching a certain age. There are also some families for whom fostering is just not a good fit, and it's best for them and for children in care that they part ways with your agency. Retention goals should focus on families willing and able to meet the needs of children in care, but who drop out due to frustration or burnout—and this starts by being able to measure and differentiate how you're performing with those families.
+    how: >-
+      * Formally capture when a family stops serving as a resource family. This might be when their license expires, when they submit a letter of termination, or when a kinship placement ends. If you do not have such clear milestones, come up with one, such as "has not taken a placement in over 12 months."
+
+      * Capture the reason when caregivers close their license in your IT system. While all their answers won't necessarily be honest (it's hard to capture "they quit because they hated their worker" in a note), it's a start.
+
+      * Differentiate between reasons that could have been avoided with agency action, and those that could not. Focus your efforts only on the former.
+    outcome: ''
+    title: measure-retention-carefully
+    benefits:
+      - More actionable retention data
+      - Ability to retain more homes (if data is acted upon)
+    who:
+      number: 2
+      image: ''
+      what: >-
+        * **Chapin Hall** provides a list of retention reasons in its report [The Dynamics of Foster Home Recruitment and Retention](https://fcda.chapinhall.org/wp-content/uploads/2018/10/Foster-Home-Report-Final_FCDA_October2018.pdf). These reasons are:
+
+          * Closed because of abuse/neglect 
+          * Agency decision related to concerns about foster parent’s performance 
+          * Family request (related to change in circumstances, personal or family issues) 
+          * Family request (related to concerns about DCS/provider agency) 
+          * Family adopted and is selecting out of foster care 
+          * Family serving as kinship only and kinship case has ended 
+          * Other reason
+
+        * **Washington** measures termination reason on its form [10-017](https://www.dcyf.wa.gov/sites/default/files/forms/10-017.pdf). The reasons it includes are:
+
+          * Adoption completed
+          * Adoption disruption
+          * Adoption Home Study not approved
+          * Cannot comply with requirements
+          * Changed agency
+          * Child Placing Agency request
+          * Criminal History
+          * Denied
+          * Did not receive placements
+          * Dissatisfied with DCFS
+          * Dissatisfied with Child Placing Agency
+          * License expired
+          * Family did not respond to renewal
+          * Family goals/personal issues
+          * Family’s response to child’s allegation
+          * Foster child aged out of care
+          * Foster child’s behavior too challenging
+          * Moved and did not reapply
+          * Moved and relicensed at new address
+          * Moved new home does not meet licensing requirements
+          * Provider deceased
+          * Response to investigation
+          * Revoked
+          * Specific child placement no longer needed
+
+
+        
