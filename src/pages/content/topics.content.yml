@@ -21,9 +21,8 @@ topics:
       - ask-about-supportive-adults
       - plan-for-youth-to-keep-connected-supportive-adults
       - create-life-books
-      - encourage-youth-to-bring-supports-to-meetings
+      - supportive-adults-have-robust-presence
       - provide-transportation-to-visits-with-supportive-adults
-      - employ-parent-aides
       - provide-training-for-supportive-adults
       - use-dna-to-find-more-family-connections
   - hero:
@@ -141,10 +140,12 @@ topics:
       - Use-expansive-legal-definition-of-kin
       - plan-for-youth-to-keep-connected-supportive-adults
       - be-gentle-when-interacting-with-kin-first-time
-      - supportive-adults-have-robust presence
+      - supportive-adults-have-robust-presence
       - use-extreme-family-finding
       - red-team-to-prevent-group-home-placements
       - senior-staff-sign-off-for-non-relative-placements
+      - use-dna-to-find-more-family-connections
+      - create-life-books
       - use-dna-to-find-more-family-connections
   - hero:
       backgroundColor: light

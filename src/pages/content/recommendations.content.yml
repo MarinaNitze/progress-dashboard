@@ -351,7 +351,7 @@ recommendations:
 
       * [Michigan Genogram Templates](https://www.childwelfareplaybook.com/assets/Genogram_MI.pdf)
   - heading: Make sure supportive adults have a robust presence at planning meetings
-    title: supportive-adults-have-robust presence
+    title: supportive-adults-have-robust-presence
     about: Most youth leave foster care with fewer connections than they entered
       with. However, most supportive adults want to be more involved in
       supporting the youth in their lives. Keeping these adults engaged and
@@ -369,11 +369,13 @@ recommendations:
       * Ask youth about supportive adults in their lives - Staff should make sure that supportive adults are aware of and invited to planning meetings. You might even ask youth to suggest a supportive adult themselves. 
 
       * Keep track of meeting attendance - With a simple spreadsheet, you can keep track of the breakdown of roles at planning meetings. Use this information to keep track of progress towards the goal of having three times as many supportive adults as paid staff in attendance.
+      * Keep asking about supportive adults as new goals arise - A youth may have one or more supportive adults who generally attend meetings, but may have an additional support for a specific goal, such as practicing for a driving test, getting mentoring in math, or shopping for a prom dress.
     costs:
       - ' Time to implement form and workflow changes'
     benefits:
       - Supportive adults remain engaged and involved with youth
       - Youth less likely to lose connections during care
+      - More productive meetings
     outcome:
       Olmsted County, MN demonstrated significantly better outcomes for older
       foster youth when a ratio of 3:1 supportive adults to paid staff attended
@@ -382,7 +384,7 @@ recommendations:
       of the family.
       [source](https://anchor.fm/nipfc/episodes/Episode-10--Sustaining-Family-Involvement-ea7q6v)
     who:
-      number: 3
+      number: 4
       what: >-
         * **Michigan** has begun tracking who attends each planning meeting, and
         their role (e.g. CASA, supportive adult, paid staff). They do this in a
@@ -391,6 +393,9 @@ recommendations:
         * **Ohio** has Youth Centered Permanency Round Tables (YCPRT) running in several counties. For YCPRTs, the youth is asked to bring a support person to the meeting. It can be anyone: a caregiver, a friend of the family, a member of the family, or anyone the youth feels is supportive of them. That can also initiate more conversations and discussion about permanency options and supports for the youth. One youth asked his fast food manager to come with him, and the manager didn’t even know he was in foster care. The manager ended up adopting him!
 
         * In **Ohio**, the practice for maintaining connections is: any youth 14 and over is able to have two support persons join in on the family team meetings and case plan meetings. That helps to initiate discussion of any other support persons available to the child.
+        * **Hawaii** develops [Youth Circles](/assets/HawaiiCircleBrochure.pdf) for each child, which includes working with each youth to identify the supportive adults who will be invited to the circle. 
+
+        * **New Hampshire** identifies up to 45 of a youth's supports through Permanency Pact through Foster Club, and involves them in meetings to accomplish specific goals, such as buying a first car, attending holiday celebrations after aging out of care, etc. As adults are identified, the agency sends those adults invites and supportive materials to support these goals.
   - heading: Use an expansive legal definition of kin
     title: Use-expansive-legal-definition-of-kin
     about: >-
@@ -2710,3 +2715,84 @@ recommendations:
           * Response to investigation
           * Revoked
           * Specific child placement no longer needed
+
+  - heading: Provide training for supportive adults
+    costs:
+      - None
+    about: Adults who care about children in care want to be helpful, but they may not know how. Offering training and supports to supportive adults (who do not have placement) can help them be a more active and supportive presence in the lives of our children.
+    how: >-
+      * Talk to supportive adults to find out what they need. Some might benefit from trauma-informed trainings, but others may simply need encouragement to proactively reach out to youth and ideas for what activities to do and what questions to ask.
+
+      * Make existing trainings available to supportive adults. This shouldn't cost your system extra money, but provides extra resources to a broader array of supports. Send emails or share pamphlets about upcoming trainings with all the [supportive adults you have captured](/recommendation/ask-about-supportive-adults).
+    outcome: ''
+    title: provide-training-for-supportive-adults
+    benefits:
+      - More supports for our youth
+    who:
+      number: 1
+      image: ''
+      what: >-
+        * **New Hampshire** offers free classes to supportive adults on topics like how to navigate communicating with teenagers. Some of this is trauma-informed training. 
+
+  - heading: Provide transportation to visits with supportive adults
+    costs:
+      - Costs money, but can be mitigated through some volunteer labor
+    about: Making a plan to keep youth connected with their entire network of supportive adults is critical, but generally requires reliable transportation to work. Case workers and resource parents can sometimes provide this transportation, but your system should make sure a robust array of transportation options are available for youth.
+    how: >-
+      * Provide transit passes or ride-hailing app stipends for older youth. These youth can often navigate to their supportive adults on their own if they have the financial support to do so.
+
+      * Ask supportive adults to provide transportation. This can be a great way to keep youth connected with their supportive adults, and is often an activity adults are happy to provide and simply do not know is needed.
+    outcome: ''
+    title: provide-transportation-to-visits-with-supportive-adults
+    benefits:
+      - More access to supportive adults
+    who:
+      number: 2
+      image: ''
+      what: >-
+        * **Hawaii** has a volunteer network (who have passed background checks) who transport youth to visits with supportive adults, as well as other activities like afterschool activities. 
+
+        * **New Hampshire** uses a paid transportation service with drivers who have passed background checks to support visits to supportive adults. 
+
+        * **CASA programs** in some systems allow CASAs to provide transportation for youth to visit their supportive adults.
+
+  - heading: Create life books for youth in care
+    costs:
+      - None
+    about: A life book captures a child's key milestones and relationshps, and it should follow them throughout (and after) their time in care.
+    how: >-
+      * Print a lifebook template.  
+
+      * Make completing the lifebook a formal resource parent responsibility. Check on its contents during regular check-ins such as monthly visits. 
+
+      * Make copies of the lifebook for the family members of origin on a regular cadence. This should be at least quarterly.
+
+      * Make sure a child's lifebook follows them by including it in any move checklists, as well as in any permanency (e.g., aging out, adoption) checklists.
+    outcome: ''
+    title: create-life-books
+    benefits:
+      - Captures memories for youth in care
+      - Can find more kin
+    who:
+      number: 1
+      image: ''
+      what: >-
+        * **Frederick County, MD** has three templates you can print and put in a three-ring notebook: [Zig Zags](/assets/Lifebook-circles-zigzags.pdf), [Floral](/assets/Lifebook-floral-water-color.pdf), [Triangles](/assets/Lifebook-triangles.pdf). 
+
+  - heading: Use DNA to find more family connections
+    costs:
+      - Usually under $100 per child
+    about: This idea is more controversial, and it's important to consider a youth's privacy and wishes. However, ancestry DNA tools that can uncover more family members can be a useful tool for children in care with no or limited kinship placement options or supportive adults.
+    how: >-
+      * Develop a policy for when and how to use DNA services. You may want to limit this to youth with no viable kinship placements, or only older youth who can consent to participation, or only youth whose family of origin consents to its use.
+
+      * Couple counseling with the results. A DNA test might reveal unknown (or unexpected) parents, siblings, and other relatives. Strong supports need to be in place before a test so a youth can process the results.
+    outcome: ''
+    title: use-dna-to-find-more-family-connections
+    benefits:
+      - Can reveal kinship placement and support options that could not otherwise be found.
+    who:
+      number: 1
+      image: ''
+      what: >-
+        * **Colorado** uses Ancestry DNA as one tool in its family finding office.
