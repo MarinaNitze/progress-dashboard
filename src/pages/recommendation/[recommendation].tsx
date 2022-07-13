@@ -112,7 +112,7 @@ export default function Recommendation({
         )}
       </section>
       <Breadcrumbs
-        crumbLabel={selectedRecommendation?.title}
+        crumbLabel={selectedRecommendation?.heading}
         page="recommendation"
       />
       <GridContainer className="cwp-recommendation">
