@@ -40,15 +40,14 @@ export default function Footer() {
         <section className="footer-content">
           <div className="logo-area">
             {paths.map(({ path, altText, partnerURL }, i) => (
-              <a
-                href={partnerURL}
-              >
-              <img
-                key={`${path}-${altText}`}
-                className="logo-img"
-                src={imageMap[path].publicURL}
-                alt={altText ?? `partner logo ${i}`}
-              /></a>
+              <a href={partnerURL}>
+                <img
+                  key={`${path}-${altText}`}
+                  className="logo-img"
+                  src={imageMap[path].publicURL}
+                  alt={altText ?? `partner logo ${i}`}
+                />
+              </a>
             ))}
           </div>
           <div className="cr-section">
