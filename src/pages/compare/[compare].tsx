@@ -19,6 +19,7 @@ import Select from '../../components/select/Select';
 import { PracticeName, Topic, Value } from '../../types/compare';
 import useDataPractices from '../../hooks/useDataPractices';
 import useGatsbyImages from '../../hooks/useGatsbyImages';
+import { COMPARE_TOPIC_FULL_TITLE } from '../../utils/mappings';
 
 import './compare.scss';
 
@@ -39,12 +40,6 @@ const PRACTICE_LINK_MAP: Record<PracticeName, string> = {
   'Formal plan to stay connected': '/topic/formal-plan-to-stay-connected',
   'Expansive legal definition of kin':
     '/topic/expansive-legal-defintion-of-kin',
-};
-
-const COMPARE_TOPIC_FULL_TITLE = {
-  'Background Checks':
-    'Out of State Child Abuse and Neglect Checks (Adam Walsh Checks)',
-  'Family Finding': 'Kin Finding',
 };
 
 export default function Compare({ params: { compare } }: PageProps) {
