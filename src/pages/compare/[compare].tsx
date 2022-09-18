@@ -30,16 +30,16 @@ const PRACTICE_LINK_MAP: Record<PracticeName, string> = {
   'No notary': '/topic/out-of-state-background-checks#what-we-can-do',
   'General inbox for receiving requests':
     '/topic/out-of-state-background-checks#what-we-can-do',
-  'Accepts electronic requests': '/recommendation/electronic-background-check',
+  'Accept electronic requests': '/recommendation/electronic-background-check',
   // Family finding (NOTE: these links are made-up placeholders)
-  'Social media': '/topic/social-media',
-  'Ongoing activity': '/topic/ongoing-activity',
-  'Senior staff sign-off': '/topic/senior-staff-sign-off',
+  'Use social media to find kin': '/recommendation/use-social-media',
+  'Ongoing kin-finding activities': '/recommendation/ask-about-connections',
+  'Require senior staff sign-off for non-kin placements': '/recommendation/senior-staff-sign-off-for-non-relative-placements',
   'Ask youth for placement options': '/topic/ask-youth-for-placement-options',
-  'Ask kin for more kin': '/topic/ask-kin-for-more-kin',
-  'Formal plan to stay connected': '/topic/formal-plan-to-stay-connected',
+  'Ask kin for more kin': '/recommendation/ask-family-members-for-more-family-members',
+  'Formal plan to stay connected to kin': '/topic/formal-plan-to-stay-connected',
   'Expansive legal definition of kin':
-    '/topic/expansive-legal-defintion-of-kin',
+    '/recommendation/Use-expansive-legal-definition-of-kin',
 };
 
 export default function Compare({ params: { compare } }: PageProps) {

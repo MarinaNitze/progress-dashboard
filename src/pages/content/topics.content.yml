@@ -18,7 +18,6 @@ topics:
     recommendations:
       - use-social-media
 
-
   - hero:
       backgroundColor: light
       title: Connecting Youth to Their Supportive Adults
@@ -534,7 +533,6 @@ topics:
       - reimburse-for-sibling-visit-transportation
       - make-sibling-visits-fun
       - train-resource-parents-about-sibling-connections
-
 
   - hero:
       backgroundColor: light
