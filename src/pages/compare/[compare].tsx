@@ -34,10 +34,13 @@ const PRACTICE_LINK_MAP: Record<PracticeName, string> = {
   // Family finding (NOTE: these links are made-up placeholders)
   'Use social media to find kin': '/recommendation/use-social-media',
   'Ongoing kin-finding activities': '/recommendation/ask-about-connections',
-  'Require senior staff sign-off for non-kin placements': '/recommendation/senior-staff-sign-off-for-non-relative-placements',
+  'Require senior staff sign-off for non-kin placements':
+    '/recommendation/senior-staff-sign-off-for-non-relative-placements',
   'Ask youth for placement options': '/topic/ask-youth-for-placement-options',
-  'Ask kin for more kin': '/recommendation/ask-family-members-for-more-family-members',
-  'Formal plan to stay connected to kin': '/topic/formal-plan-to-stay-connected',
+  'Ask kin for more kin':
+    '/recommendation/ask-family-members-for-more-family-members',
+  'Formal plan to stay connected to kin':
+    '/topic/formal-plan-to-stay-connected',
   'Expansive legal definition of kin':
     '/recommendation/Use-expansive-legal-definition-of-kin',
 };
