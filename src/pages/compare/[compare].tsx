@@ -36,7 +36,8 @@ const PRACTICE_LINK_MAP: Record<PracticeName, string> = {
   'Ongoing kin-finding activities': '/recommendation/ask-about-connections',
   'Require senior staff sign-off for non-kin placements':
     '/recommendation/senior-staff-sign-off-for-non-relative-placements',
-  'Ask youth for placement options': '/recommendation/ask-about-supportive-adults',
+  'Ask youth for placement options':
+    '/recommendation/ask-about-supportive-adults',
   'Ask kin for more kin':
     '/recommendation/ask-family-members-for-more-family-members',
   'Formal plan to stay connected to kin':
