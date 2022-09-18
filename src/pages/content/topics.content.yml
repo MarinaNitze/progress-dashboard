@@ -1,6 +1,26 @@
 topics:
   - hero:
       backgroundColor: light
+      title: Connecting Parents
+      image: /src/images/heros/hero-baby.png
+      imgAlt: social-media
+    layout: topic
+    title: connecting-parents
+    image: /src/images/topics/Topic-FPL.svg
+    about: A relationship between parents and the resource parent who is caring for their child(ren) should start at the start of placement. Connecting and nurturing this relationship between parents supports children, no matter what their path to permanency ends up being.
+    why: Reunification is much more difficult without a relationship between parents and the resource parents who have their children.
+    what: >-
+
+
+      * **Word.** Sentence. 
+
+      * **Word.** Sentence. 
+    recommendations:
+      - use-social-media
+
+
+  - hero:
+      backgroundColor: light
       title: Connecting Youth to Their Supportive Adults
       image: /src/images/heros/hero-baby.png
       imgAlt: connecting-youth-to-their-supportive-adults
@@ -488,6 +508,36 @@ topics:
 
   - hero:
       backgroundColor: light
+      title: Sibling Connections
+      image: /src/images/heros/hero-baby.png
+      imgAlt: social-media
+    layout: topic
+    title: sibling-connections
+    image: /src/images/topics/Topic-FPL.svg
+    about: Keeping siblings together in foster care should be top priority. If siblings must be separated, systems need to keep those siblings connected.
+    why: Siblings should not be separated.
+    what: >-
+
+
+      * **Word.** Sentence. 
+
+      * **Word.** Sentence. 
+    recommendations:
+      - host-events-and-camps-to-bring-together-separated-siblings
+      - never-stop-looking-for-placements-for-sibling-groups
+      - use-parent-visits-to-bring-siblings-together
+      - encourage-resource-parents-to-collaborate-on-sibling-connections
+      - provide-transportation-for-sibling-visits
+      - remove-barriers-for-visits-with-adult-siblings
+      - formally-require-sibling-visits
+      - post-adoption-sibling-visits
+      - reimburse-for-sibling-visit-transportation
+      - make-sibling-visits-fun
+      - train-resource-parents-about-sibling-connections
+
+
+  - hero:
+      backgroundColor: light
       title: Social Media
       image: /src/images/heros/hero-baby.png
       imgAlt: social-media
@@ -514,3 +564,22 @@ topics:
       - find-awol-youth
       - protect-youth-privacy-on-social-media
       - foster-family-support-groups-on-social
+
+  - hero:
+      backgroundColor: light
+      title: Supporting Parents
+      image: /src/images/heros/hero-baby.png
+      imgAlt: social-media
+    layout: topic
+    title: supporting-parents
+    image: /src/images/topics/Topic-FPL.svg
+    about: It's all too easy to miss the needs of parents after their children enter foster care, as the needs of the children and resource parents can take precedence. Systems should be supporting parents in every way possible to prevent removals in the first place; if a removal does occur, that parent needs support from day one to understand what has happened, to be comforted that their children are safe, and to know and navigate the steps for getting their children back.
+    why: Supporting parents is a mission-critical step in reunifying families.
+    what: >-
+
+
+      * **Word.** Sentence. 
+
+      * **Word.** Sentence. 
+    recommendations:
+      - use-social-media

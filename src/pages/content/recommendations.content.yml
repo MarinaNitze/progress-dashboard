@@ -25,6 +25,8 @@ recommendations:
     who:
       number: 13
       image: ../images/recommendations/electronic-bg-checks.png
+
+
   - heading: Complete background check forms at orientation
     costs:
       - Staff time at orientation
@@ -57,6 +59,8 @@ recommendations:
       number: ''
       image: ''
       what: Frederick County, MD
+
+
   - heading: Use social media to find family members
     costs:
       - Social media training
@@ -108,6 +112,8 @@ recommendations:
         * **Virginia**’s central family-finding social media accounts are called “Virginia Family Finding 1” (and 2, and 3) to protect worker privacy.
 
         * Some counties in **Ohio** and **California**, but it's not done state-wide at this time.
+
+
   - heading: Ask about connections repeatedly over time
     title: ask-about-connections
     about: >-
@@ -2800,3 +2806,281 @@ recommendations:
       image: ''
       what: >-
         * **Colorado** uses Ancestry DNA as one tool in its family finding office.
+
+
+  - heading: Host events and camps to bring together separated siblings
+    costs:
+      - varies
+    inspiration: >-
+      * [Camp Connect](https://mrpa.org/fostering-connections-through-camp-connect/) in Maryland uses an existing camp facility, with a higher staff to camper ratio and on-site clinical social workers. The camp is funded by the Department and is free for children to attend, including children with higher levels of behaviors. They are flexible about what siblings can attend, including siblings who have been adopted.
+
+      * [Camp to Belong](https://camptobelong.org) in Colorado
+    about: Create regular events and camps where separated siblings can come together and have fun.
+    how: >-
+      * Host a monthly (at least) event for separated siblings. Make it fun and seasonal. It could be as simple as meeting at a playground or petting zoo, or an existing community event like an outdoor kids' concert. Your foster parent support groups may be able to volunteer to coordinate events, or at least suggest locations or existing events to join.
+
+      * Invite separated siblings to existing events. If you are already having a community event, invite the families of separated siblings to all attend.
+
+      * Send separated sibling groups to regular camp. You don't need a special camp for separated siblings; you could raise funds or provide grants to send siblings to existing camps.
+
+      * Create a summer camp for separated siblings. This can be challenging to start, but you can collaborate with local non-profits, existing summer camps, and models from other states with existing sibling camps to create a pilot program for next summer. It could be an afternoon in the park with agency employees running activities at first; it doesn't have to be a week-long sleepaway camp.
+    outcome: ''
+    title: host-events-and-camps-to-bring-together-separated-siblings
+    benefits:
+      - More opportunities for separated siblings to spend time together and make memories
+      - Can be a neutral location for the resource families of separated siblings to first meet
+    who:
+      number: 4
+      image: ''
+      what: >-
+        * **Maryland** has Camp Connect, a sleepaway camp for siblings in foster care. Department employees can sign up to work shifts at the camp and receive their normal salary during this time. 
+
+        * **San Diego County, CA** has Camp Connect for siblings to have fun together. It also has other activities throughout the year like beach day and  SeaWorld Day. All siblings qualify for camp connect.
+
+        * **Frederick County, MD** hosts events like a petting zoo for siblings to get together. Parents are invited, too! 
+
+        * **Michigan** hosts fun events, such as taking families to the movies or trampoline park, that include siblings, even if those siblings are not in care.
+
+        * **Colorado** has Camp to Belong. 
+
+
+  - heading: Never stop looking for a placement that can take an entire separated sibling group
+    costs:
+      - Time
+    inspiration: Oklahoma tracks separated siblings in a dedicated part of its monthly Recruitment Report.
+    about: While almost every state officially keeps looking for placements that can reunite separated sibling groups, this practice can easily fall by the wayside over time. Systems need to put measures in place to continue this search. Note that if a sibling group is separated but all siblings are with kin, it is likely not necessary to continue searching for a placement, unless specific circumstances warrant it.
+    how: >-
+      * Confirm that you can generate a report of children in foster care who are separated from at least one sibling, distinguishing by kinship and non-kinship placement.
+	  
+      * Confirm that siblings who are separated in foster care and not all with kinship caregivers remain on the recruitment lists for the recruitment and placement teams.
+
+      * Confirm that regular case check-ins (which may be called Family Team Decision Meetings, Child and Family Team meetings, or something else in your jurisdiction) include updates on recruitment efforts for separated sibling groups who are not all placed with kin.
+    outcome: ''
+    title: never-stop-looking-for-placements-for-sibling-groups
+    benefits:
+      - Ultimately reconnects some separated siblings
+    who:
+      number: 
+      image: ''
+      what: >-
+        * **Washington State** has a report available in its IT system listing children in care who are separated from siblings. This report includes children who are currently in care who have a sibling who was recently discharged from care.
+		
+        * **New Hampshire** has a program called Roadmaps to Reunification that hones in on siblings being together.
+		
+        * Every state in our working group has an official policy to continue searching for placements for sibling groups that are separated in general (non-kin) foster care.
+
+  - heading: Use parent visits as another opportunity for bringing siblings together
+    costs:
+      - None
+    about: Court-ordered visits for parents are another opportunity to bring separated sibling groups together.
+    how: >-
+      * Make it normal practice for parent/child visits to include an entire sibling group, unless specific circumstances warrant a different situation.
+
+      * Do not count visits with parents as sibling visits; these should be in addition.
+    outcome: ''
+    title: use-parent-visits-to-bring-siblings-together
+    benefits:
+      - More sibling visits
+    who:
+      number: 3
+      image: ''
+      what: >-
+        * **Frederick County, MD** 
+
+        * **Nebraska** 
+
+        * **Oklahoma** 
+
+  - heading: Encourage resource parents of separated siblings to connect directly
+    costs:
+      - None
+    inspiration: "Fairfax County, VA's [policy](LINK TO COLLEEN)."
+    about: Sibling connection is about much more than a monthly in-person visit. It can be invites to school events, birthday calls and cards, and regular everyday connections like playing in the park on a nice day. Resource parents of separated sibling groups should collaborate to help keep them connected in large and small ways; this is not a responsibility of the system or social worker alone.
+    how: >-
+      * When siblings are separated in care, their respective resource parents should be connected right away, unless there are case-specific reasons not to.
+
+      * Case workers can encourage resource parents to collaborate by gently checking in on a regular basis about how sibling visits are going. If parents are reticent, case workers should be empowered to set up an initial visit to break the ice.
+
+      * General foster parents (non-kin) should be expected to faciliate sibling connections through phone calls, video chats, and in-person visits. They should not have the option to opt-out of this responsibility.
+    outcome: ''
+    title: encourage-resource-parents-to-collaborate-on-sibling-connections
+    benefits:
+      - If one sibling placement disrupts in the future, an established relationship with other siblings' foster parents may open the door to that placement taking in the additional siblings.
+      - Maintains and builds strong sibling connections.
+    who:
+      number: 5
+      image: ''
+      what: >-
+        * **Fairfax County, VA** encourages its resource families to communicate in its [written policy](LINK TO COLLEEN).
+
+        * **Michigan** connects resource parents of separated children at the start of placements and encouraged to set up additional visits.
+
+        * **Frederick County, MD** introduces all resource parents of separated sibling groups, encourages an ongoing relationship between resource parents, especially if one resource parent is a kinship caregiver and the other is not.
+
+        * **Oklahoma** encourages resource parents with separated siblings to bring the children together as often as possible.
+
+        * **New Hampshire** promotes natural collaboration between parents and resource parents. 
+
+        * **Washington DC**’s social worker team ensures resource parents understand the expectation for sibling visits and that the Agency supports this practice; in all, it’s a collected effort with the entire team. BOND Leads create activities where siblings who are separated can engage across Squad members (resource parents). Resource Parent Support Workers ensure families have connections and opportunities to get siblings together on their own as well.
+
+  - heading: Provide transportation for sibling visits
+    costs:
+      - Varies
+    about: Transportation can often be the biggest barrier to sibling visits. Providing options, especially for younger children who can't navigate cabs or public transit on their own, can mean more and easier sibling visits.
+    how: >-
+      * Provide taxi, ride sharing, and/or public transit fares for older youth who can use this transit on their own.
+
+      * Investigate transportation options for younger youth such as dedicated Department employees, Department-run transportation services, or third-party services like [HopSkipDrive](https://www.hopskipdrive.com).
+    outcome: ''
+    title: provide-transportation-for-sibling-visits
+    benefits:
+      - More sibling visits
+    who:
+      number: 4
+      image: ''
+      what: >-
+        * **Fairfax County, VA** has multiple options for transporting youth to visit their siblings. If a youth is 13 or older, the agency provides funding for a taxi cab. For infants, younger children, and/or children with higher levels of need, the Department runs a program called MV with trained, background-checked drivers who can provide transportation. Fairfax County also uses [HopSkipDrive](https://www.hopskipdrive.com). 
+
+        * **Nebraska** expects resource parents to provide transport for visits within 25 miles. It also has a number of contracted transportation providers who must have background checks, and potentially has taxis available for older youth.
+
+        * **New Hampshire** has a Safe Passage transportation program that can be used for sibling transport. 
+
+        * **Frederick County, MD** has the ability to use taxi cabs to transport older children to sibling visits.
+
+  - heading: Remove barriers for contact with familiar adult siblings
+    costs:
+      - None
+    about: Adult siblings (who have existing relationships with their younger siblings) should not have to jump through hoops for visits. This is especially true for siblings who are only just now aging out of foster care themselves. 
+    how: >-
+      * Examine whether your system has barriers, like court petitions, background checks, or social worker sign-off, to familiar adult siblings setting up visits. (It is acceptable for some evaluation, like a background check, if the adult sibling is unknown to the sibling or the case, but now wants to be involved.)
+
+      * Leverage prudent parenting guidance to encourage visits with familiar adult siblings without Departmental involvement.
+    outcome: ''
+    title: remove-barriers-for-visits-with-adult-siblings
+    benefits:
+      - Maintained sibling connections
+      - Another supportive adult who can provide fun, transportation from school, and mentorship for younger children in care
+    who:
+      number: 4
+      image: ''
+      what: >-
+        * **Fairfax County, VA** does not require background checks for children in care to visit and contact their adult siblings (unless case-specific circumstances warrant it).  
+
+        * **Rhode Island** considers visits with familiar adult siblings prudent parenting.
+
+        * **Frederick County, MD** does not require background checks for familiar adult siblings to visit with younger siblings. [See their policy on relative visits](/assets/SSA 16-16 Family and Friends Contact.pdf). 
+
+        * **Oklahoma** considers visits with adult siblings like other relatives; there is no required background check unless warranted in specific circumstances.
+
+  - heading: Have a formal policy requiring regular sibling contact
+    inspiration: Michigan's IT system includes tickler reminders for workers when sibling visits are coming due.
+    costs:
+      - None
+    about: Sibling connections are invaluable. If siblings end up separated despite all efforts to keep them together, systems should have policies in place that require regular visits and other communication, and ongoing efforts to reunite the siblings.
+    how: >-
+      * Copy policy language like Oklahoma's (see below).
+    outcome: ''
+    title: formally-require-sibling-visits
+    benefits:
+      - More sibling contact and stronger connections
+    who:
+      number: 5
+      image: ''
+      what: >-
+        * **Frederick County, MD** requires separated siblings to have contact at least monthly [per policy](/assets/SSA 15-18 Parent-Child and Sibling Visitation.pdf), and explicitly forbids withholding sibling visits as a form of discipline.   
+
+        * **Indiana** requires at least two sibling visits per month. 
+
+        * **Michigan** requires a minimum of a one hour visit per month.
+
+        * **Oklahoma** has a policy requiring ongoing efforts to keep siblings connected: Oklahoma's policy: (d) Child's contact with siblings. Per Section 471(a)(31) of the Social Security Act (42 U.S.C. § 671(a)(31)), 10A O.S. §§1-4-807 and 1-4-811, and Oklahoma Administrative Code 340:75-6-85, DHS makes ongoing reasonable efforts to place sibling groups together in both temporary and permanent placements. When joint placement of siblings is unsafe or contrary to the child's well-being, DHS must justify and document the justification for the decision, make monthly efforts to resolve the barriers to joint placement, provide frequent visitation, and arrange for ongoing interaction. Frequent contact, such as face-to-face visitation, phone calls, email, social media, or mail contact between siblings is arranged. DHS must make efforts to resolve barriers to joint placement and visitation a minimum of once a month. 
+
+        * **Washington** has a robust policy:
+
+          * Children placed apart from their siblings will have two or more face-to-face visits or contacts per month, unless there is an approved exception, as listed in Procedures Section 4. Additional approved forms of sibling contact are encouraged to support and maintain sibling relationships. Approved forms of contact include, but are not limited to: Telephone contact; Electronic contact through video chat or email.
+
+          * Ongoing visitation is encouraged to promote and maintain the continuity of sibling relationships that existed prior to placement. This includes siblings who: Remained in the home at the time of removal; Aged out of foster care; Returned home; Are placed with a non-custodial parent; or Lived part-time in the home at the time of the sibling’s removal.
+          * Sibling contact during family time meets the requirement for a sibling visit.
+          * Shared planning meetings or court events do not meet the requirement for a sibling visit.
+          * The first sibling visit must occur as soon as possible after placement.
+          * Sibling visits will continue after a parent’s rights are terminated or relinquished unless an approved exception applies.
+          * Sibling visits cannot be limited or used as a sanction for a child’s behavior or as an incentive to change a child’s behavior.
+          * Sibling visit plans will be developed within 14 calendar days and in consultation with the out-of-home caregiver and child, when developmentally appropriate, unless an approved exception applies.
+
+  - heading: Include sibling visitation in post-adoption plans
+    costs:
+      - None
+    inspiration: California's code
+    about: When siblings are separated in foster care and then one or more of them are adopted, it can be even greater trauma if adoptive parents cut off contact with their siblings. It should be possible to include ongoing sibling visitation, same as open adoptions can allow for visits with birth parents. When siblings are old enough, they will find one another again -- why allow for gaps in that connection?
+    how: >-
+      * Model California's legal code.
+    outcome: ''
+    title: post-adoption-sibling-visits
+    benefits:
+      - Continued sibling contact
+      - Word
+    who:
+      number: 1
+      image: ''
+      what: >-
+        * **California** includes language for sibling visitation in adoption decrees by default. 
+
+  - heading: Reimburse resource parents for providing transportation to sibling visits
+    costs:
+      - Modest
+    inspiration: Fostering Great Ideas in South Carolina incentivizes caregivers to provide sibling transport with Amazon gift cards for $0.50 per mile.
+    about: Incentivizing, or at least reimbursing, resource parents for transporting children to visits with their siblings can 
+    how: >-
+      * Make sure that sibling visits count for existing resource parent transportation reimbursement.
+
+      * Offer higher reimbursement rates / incentive payments for sibling visits.
+
+      * Offer reimbursement to all caregivers of separated siblings, not just licensed resource parents.
+    outcome: ''
+    title: reimburse-for-sibling-visit-transportation
+    benefits:
+      - More sibling visits
+    who:
+      number: 3
+      image: ''
+      what: >-
+        * **Oklahoma** provides transportation reimbursement. 
+
+        * **South Carolina** provides sibling transportation incentives (see inspiration section). 
+
+        * **Indiana** reimburses licensed resource homes for transportation beyond 120 miles per month, including transport to sibling visits. But for unlicensed kinship caregivers, it reimburses for all miles traveled for sibling visits.
+
+  - heading: Make sibling visits fun
+    costs:
+      - Minimal
+    about: Sibling visits in cold visitation centers or with nothing to do suck. Sibling visits should be fun!
+    how: >-
+      * Provide families and social workers with tools for fun visits, ranging from ideas for activities, to games or crafts to share.
+    outcome: ''
+    title: make-sibling-visits-fun
+    benefits:
+      - Siblings get more out of visits
+    who:
+      number: 1
+      image: ''
+      what: >-
+        * **Fostering Great Ideas in South Carolina** make sibling visits fun by sending small gift/activity packages to siblings marked as “from” their other siblings. They can open these together on visits, even on Zoom. 
+
+  - heading: Include the importance of sibling connections in resource parent training
+    costs:
+      - None
+    about: It's important to make it clear to potential and new resource parents that if they take placement of a child who is separated from their siblings, it's expected that they help keep the children in their care connected to those siblings. A new resource parent may not even think to ask about a child's siblings or may not feel empowered to organize calls and visits. Training is a great place to set the expectation and cultural norms that sibling connections are important and maintaining them is part of a resource parent's responsibility.
+    how: >-
+      * Include content on sibling connections in your resource parent training. Include specifics, and make it clear in what ways the resouce parents are empowered to connect with one another, bring siblings together, invite siblings to their home, and other details.
+
+    outcome: ''
+    title: train-resource-parents-about-sibling-connections
+    benefits:
+      - Encourages more and stronger sibling connections
+    who:
+      number: 2
+      image: ''
+      what: >-
+        * **Frederick County, MD** includes content on keeping siblings connected in its PRIDE training.
+
+        * **San Diego County, CA** repeatedly talks about sibling connections as part of Quality Parenting Initiative. 
