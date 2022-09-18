@@ -9,20 +9,24 @@ import useDataPractices from '../hooks/useDataPractices';
 import useGatsbyImages from '../hooks/useGatsbyImages';
 
 import './home.scss';
+import { COMPARE_TOPIC_FULL_TITLE } from '../utils/mappings';
+import { Topic } from '../types/compare';
 
 export default function Compare() {
   const searchIcon = useGatsbyImages()['images/header/search.svg'].publicURL;
   const [input, setInput] = useState('');
   const OgPractices = [
     ...new Set(
-      useDataPractices().rawPractices.nodes.map(node => node.data?.Topic),
+      useDataPractices().rawPractices.nodes.map(
+        node => node.data?.Topic as Topic,
+      ),
     ),
   ];
   const [practices, setPractices] = useState(OgPractices);
 
   type alphabetRecType = {
     letter: string;
-    practice: typeof OgPractices;
+    practice: string[];
   };
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -43,13 +47,20 @@ export default function Compare() {
   const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
   const reducePracticesAlphabet = () => {
     return alphabet.reduce<alphabetRecType[]>((acc, char) => {
-      const orderedPractices = practices.filter(
-        practice => practice && practice[0].toUpperCase() === char,
-      );
+      const orderedPractices = practices
+        .map(practice => practice && COMPARE_TOPIC_FULL_TITLE[practice])
+        .filter(practice => practice && practice[0].toUpperCase() === char);
       return [...acc, { letter: char, practice: orderedPractices }];
     }, []);
   };
 
+  const getPraticeNameFromFullTitle: (fullTitle: string) => Topic = (
+    fullTitle: string,
+  ) => {
+    return (Object.entries(COMPARE_TOPIC_FULL_TITLE).find(
+      ([_, value]) => value === fullTitle,
+    ) ?? ['' as Topic])[0] as Topic;
+  };
   return (
     <Layout>
       <section id="test-section-id">
@@ -96,7 +107,13 @@ export default function Compare() {
                     {alphabetPractice.practice.map(practice => {
                       return (
                         <li key={practice}>
-                          <Link to={`/compare/${practice}`}>{practice}</Link>
+                          <Link
+                            to={`/compare/${getPraticeNameFromFullTitle(
+                              practice,
+                            )}`}
+                          >
+                            {practice}
+                          </Link>
                         </li>
                       );
                     })}
