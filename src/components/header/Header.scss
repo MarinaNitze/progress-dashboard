@@ -179,11 +179,9 @@
     }
   }
 
-  @media (max-width: map-get($breakpoints, 'mobile-lg')) {
-    .mobile-header-home-link {
-      &:hover {
-        background-color: inherit;
-      }
+  .mobile-header-home-link {
+    &:hover {
+      background-color: inherit;
     }
   }
 
