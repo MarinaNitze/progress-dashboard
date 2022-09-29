@@ -9,7 +9,7 @@ import useDataPractices from '../hooks/useDataPractices';
 import useGatsbyImages from '../hooks/useGatsbyImages';
 
 import './home.scss';
-import { COMPARE_TOPIC_FULL_TITLE_MAP } from '../utils/compareMappings';
+import { COMPARE_TOPIC_FULL_TITLE_MAP } from '../utils/compare';
 import { Topic } from '../types/compare';
 
 export default function Compare() {
@@ -81,7 +81,6 @@ export default function Compare() {
             <label className="usa-sr-only" htmlFor="practice-search">
               Search
             </label>
-
             <input
               className="usa-input"
               id="practice-search"

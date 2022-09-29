@@ -26,6 +26,7 @@ import {
 } from '../../utils/compare';
 
 import './compare.scss';
+import ProgressChart from '../../components/progress-chart/progressChart';
 
 export default function Compare({ params: { compare } }: PageProps) {
   // Create a typed version of the url "compare" param
@@ -340,10 +341,16 @@ export default function Compare({ params: { compare } }: PageProps) {
                     placeholderHiddenContent={createCardPlaceholderContent(fp)}
                     layout="compare"
                     className="compare-width"
-                    image={`/src/images/compare/${
-                      fp.practices.filter(p => p.value === 'Fully Implemented')
-                        .length
-                    }Of${topicPractices.length}.svg`}
+                    image={
+                      <ProgressChart
+                        numberOfSegments={fp.practices.length}
+                        implementedCount={
+                          fp.practices.filter(
+                            p => p.value === 'Fully Implemented',
+                          ).length
+                        }
+                      />
+                    }
                     imgAlt={`${
                       fp.practices.filter(p => p.value === 'Fully Implemented')
                         .length
