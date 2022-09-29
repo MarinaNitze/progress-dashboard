@@ -1,0 +1,25 @@
+<canvas id="pie" height="1000" width="1000"></canvas>
+<script>
+  var canvas = document.getElementById('pie');
+  var ctx = canvas.getContext('2d');
+  ctx.scale(0.5, 0.5);
+
+  const numberOfSlices = 5;
+  var offset = 10;
+  var endAngle = Math.PI * 1.5;
+  var beginAngle, offsetX, offsetY, medianAngle;
+
+  for (var i = 0; i < numberOfSlices; i = i + 1) {
+    beginAngle = endAngle;
+    endAngle = endAngle + Math.PI * (2 / numberOfSlices);
+    medianAngle = (endAngle + beginAngle) / 2;
+    offsetX = Math.cos(medianAngle) * offset;
+    offsetY = Math.sin(medianAngle) * offset;
+    ctx.beginPath();
+    ctx.fillStyle = i === 0 ? 'blue' : 'yellow';
+    ctx.moveTo(200 + offsetX, 200 + offsetY);
+    ctx.arc(200 + offsetX, 200 + offsetY, 120, beginAngle, endAngle);
+    ctx.lineTo(200 + offsetX, 200 + offsetY);
+    ctx.fill();
+  }
+</script>
