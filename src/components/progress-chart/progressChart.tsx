@@ -18,7 +18,14 @@ export default function ProgressChart({
     }
   }, []);
 
-  return <canvas ref={canvasRef} height="130" width="130" />;
+  return (
+    <canvas
+      ref={canvasRef}
+      height="130"
+      width="130"
+      title={`${implementedCount} out of ${numberOfSegments}`}
+    />
+  );
 }
 
 // Inspired by https://www.codeblocq.com/2016/04/Create-a-Pie-Chart-with-HTML5-canvas/
