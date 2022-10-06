@@ -48,7 +48,10 @@ export default function Compare() {
   const reducePracticesAlphabet = () => {
     return alphabet.reduce<alphabetRecType[]>((acc, char) => {
       const orderedPractices = practices
-        .map(practice => practice && COMPARE_TOPIC_FULL_TITLE_MAP[practice])
+        .map(
+          practice =>
+            (practice && COMPARE_TOPIC_FULL_TITLE_MAP[practice]) || practice,
+        )
         .filter(practice => practice && practice[0].toUpperCase() === char);
       return [...acc, { letter: char, practice: orderedPractices }];
     }, []);
@@ -56,11 +59,11 @@ export default function Compare() {
 
   const getPraticeNameFromFullTitle: (fullTitle: string) => Topic = (
     fullTitle: string,
-  ) => {
-    return (Object.entries(COMPARE_TOPIC_FULL_TITLE_MAP).find(
+  ) =>
+    (Object.entries(COMPARE_TOPIC_FULL_TITLE_MAP).find(
       ([_, value]) => value === fullTitle,
-    ) ?? ['' as Topic])[0] as Topic;
-  };
+    ) ?? [fullTitle as Topic])[0] as Topic;
+
   return (
     <Layout>
       <section id="test-section-id">

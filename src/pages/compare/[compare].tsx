@@ -33,6 +33,8 @@ export default function Compare({ params: { compare } }: PageProps) {
   // (because dealing with re-typing existing Gatsby PageProps is no,
   // but some amount of type-safety with all the stuff going on here is nice)
   const compareTopic = compare as Topic;
+  const compareTopicTitle =
+    COMPARE_TOPIC_FULL_TITLE_MAP[compareTopic] || compareTopic;
   const practiceLinkMap = COMPARE_TOPIC_PRACTICE_LINKS_MAP[compareTopic];
   const mainContent = COMPARE_TOPIC_CONTENT_MAP[compareTopic];
 
@@ -179,12 +181,16 @@ export default function Compare({ params: { compare } }: PageProps) {
                 : p.value === Value.partial
                 ? partialIcon
                 : ''}{' '}
-              <Link
-                to={practiceLinkMap[p.practiceName] || ''}
-                key={`${p.practiceName}-${i}-link`}
-              >
-                {p.practiceName}
-              </Link>
+              {practiceLinkMap[p.practiceName] ? (
+                <Link
+                  to={practiceLinkMap[p.practiceName] || ''}
+                  key={`${p.practiceName}-${i}-link`}
+                >
+                  {p.practiceName}
+                </Link>
+              ) : (
+                p.practiceName
+              )}
             </li>
           ))}
         </ul>
@@ -223,7 +229,7 @@ export default function Compare({ params: { compare } }: PageProps) {
         <Hero
           className="cwp-topic-hero"
           backgroundColor="dark"
-          title={COMPARE_TOPIC_FULL_TITLE_MAP[compareTopic]}
+          title={compareTopicTitle}
         />
       </section>
       <Breadcrumbs crumbLabel="Compare" />
@@ -235,13 +241,17 @@ export default function Compare({ params: { compare } }: PageProps) {
               <p>
                 Our goal is for every child welfare system to adopt these{' '}
                 {topicPractices.length} promising practices for{' '}
-                {COMPARE_TOPIC_FULL_TITLE_MAP[compareTopic]}:{' '}
+                {compareTopicTitle}:{' '}
                 {topicPractices.map((practice, idx) => (
                   <React.Fragment key={practice}>
                     {idx === topicPractices.length - 1 ? 'and ' : ''}
-                    <Link to={practiceLinkMap[practice] || ''}>
-                      {practice.toLowerCase()}
-                    </Link>
+                    {practiceLinkMap[practice] ? (
+                      <Link to={practiceLinkMap[practice] || ''}>
+                        {practice.toLowerCase()}
+                      </Link>
+                    ) : (
+                      practice.toLowerCase()
+                    )}
                     {idx < topicPractices.length - 1 ? ', ' : '.'}
                   </React.Fragment>
                 ))}

@@ -2,7 +2,7 @@ import React from 'react';
 import { ReactNode } from 'react-markdown';
 import { PracticeLinkMap, Topic } from '../types/compare';
 
-export const COMPARE_TOPIC_FULL_TITLE_MAP: Record<Topic, string> = {
+export const COMPARE_TOPIC_FULL_TITLE_MAP: Partial<Record<Topic, string>> = {
   'Background Checks':
     'Out of State Child Abuse and Neglect Checks (Adam Walsh Checks)',
   'Family Finding': 'Kin Finding',
