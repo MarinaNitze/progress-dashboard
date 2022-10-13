@@ -189,7 +189,7 @@ export default function Compare({ params: { compare } }: PageProps) {
                   {p.practiceName}
                 </Link>
               ) : (
-                p.practiceName
+                <span>{p.practiceName}</span>
               )}
             </li>
           ))}

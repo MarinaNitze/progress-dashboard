@@ -37,7 +37,7 @@ export default function Compare() {
     setInput(e?.currentTarget.value);
     const filteredPractices = OgPractices.filter(
       practice =>
-        practice
+        COMPARE_TOPIC_FULL_TITLE_MAP[practice]
           ?.toLowerCase()
           .includes(e?.currentTarget.value.toLowerCase()) ?? false,
     );
@@ -48,10 +48,7 @@ export default function Compare() {
   const reducePracticesAlphabet = () => {
     return alphabet.reduce<alphabetRecType[]>((acc, char) => {
       const orderedPractices = practices
-        .map(
-          practice =>
-            (practice && COMPARE_TOPIC_FULL_TITLE_MAP[practice]) || practice,
-        )
+        .map(practice => practice && COMPARE_TOPIC_FULL_TITLE_MAP[practice])
         .filter(practice => practice && practice[0].toUpperCase() === char);
       return [...acc, { letter: char, practice: orderedPractices }];
     }, []);
@@ -62,7 +59,7 @@ export default function Compare() {
   ) =>
     (Object.entries(COMPARE_TOPIC_FULL_TITLE_MAP).find(
       ([_, value]) => value === fullTitle,
-    ) ?? [fullTitle as Topic])[0] as Topic;
+    ) ?? [''])[0] as Topic;
 
   return (
     <Layout>
