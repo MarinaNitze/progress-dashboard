@@ -35,6 +35,8 @@ export default function About() {
         return benefitsOfMembership;
       case 'currentMembers':
         return currentMembers;
+      case 'freeEvaluation':
+        return freeEvaluation;
       default:
         return '';
     }
@@ -49,6 +51,7 @@ export default function About() {
     'howItWorks',
     'benefitsOfMembership',
     'currentMembers',
+    'freeEvaluation',
   ];
   const allItems: AnchorLinkProps[] = [
     {
@@ -74,9 +77,14 @@ export default function About() {
         addHash('Benefits of Membership', '#benefits-of-membership'),
     },
     {
-      to: `/about#currentMembers`,
+      to: `/about#freeEvaluation`,
       title: 'Current Members',
       onAnchorLinkClick: () => addHash('Current Members', '#current-members'),
+    },
+    {
+      to: `/about#freeEvaluation`,
+      title: 'Free Licensing Evaluation',
+      onAnchorLinkClick: () => addHash('Free Licensing Evaluation', '#free-evaluation'),
     },
   ];
 
