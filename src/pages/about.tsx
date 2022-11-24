@@ -84,7 +84,8 @@ export default function About() {
     {
       to: `/about#freeEvaluation`,
       title: 'Free Licensing Evaluation',
-      onAnchorLinkClick: () => addHash('Free Licensing Evaluation', '#free-evaluation'),
+      onAnchorLinkClick: () =>
+        addHash('Free Licensing Evaluation', '#free-evaluation'),
     },
   ];
 
