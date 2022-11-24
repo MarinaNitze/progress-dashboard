@@ -19,38 +19,24 @@ import Select from '../../components/select/Select';
 import { PracticeName, Topic, Value } from '../../types/compare';
 import useDataPractices from '../../hooks/useDataPractices';
 import useGatsbyImages from '../../hooks/useGatsbyImages';
-import { COMPARE_TOPIC_FULL_TITLE } from '../../utils/mappings';
+import {
+  COMPARE_TOPIC_CONTENT_MAP,
+  COMPARE_TOPIC_FULL_TITLE_MAP,
+  COMPARE_TOPIC_PRACTICE_LINKS_MAP,
+} from '../../utils/compare';
 
 import './compare.scss';
-
-const PRACTICE_LINK_MAP: Record<PracticeName, string> = {
-  // Background checks
-  'No witnesses': '/topic/out-of-state-background-checks#what-we-can-do',
-  'No fee': '/topic/out-of-state-background-checks#what-we-can-do',
-  'No notary': '/topic/out-of-state-background-checks#what-we-can-do',
-  'General inbox for receiving requests':
-    '/topic/out-of-state-background-checks#what-we-can-do',
-  'Accept electronic requests': '/recommendation/electronic-background-check',
-  // Family finding (NOTE: these links are made-up placeholders)
-  'Use social media to find kin': '/recommendation/use-social-media',
-  'Ongoing kin-finding activities': '/recommendation/ask-about-connections',
-  'Require senior staff sign-off for non-kin placements':
-    '/recommendation/senior-staff-sign-off-for-non-relative-placements',
-  'Ask youth for placement options':
-    '/recommendation/ask-about-supportive-adults',
-  'Ask kin for more kin':
-    '/recommendation/ask-family-members-for-more-family-members',
-  'Formal plan to stay connected to kin':
-    '/recommendation/plan-for-youth-to-keep-connected-supportive-adults',
-  'Expansive legal definition of kin':
-    '/recommendation/Use-expansive-legal-definition-of-kin',
-};
+import ProgressChart from '../../components/progress-chart/progressChart';
 
 export default function Compare({ params: { compare } }: PageProps) {
   // Create a typed version of the url "compare" param
   // (because dealing with re-typing existing Gatsby PageProps is no,
   // but some amount of type-safety with all the stuff going on here is nice)
   const compareTopic = compare as Topic;
+  const compareTopicTitle =
+    COMPARE_TOPIC_FULL_TITLE_MAP[compareTopic] || compareTopic;
+  const practiceLinkMap = COMPARE_TOPIC_PRACTICE_LINKS_MAP[compareTopic];
+  const mainContent = COMPARE_TOPIC_CONTENT_MAP[compareTopic];
 
   const practicesByState = useDataPractices().practicesByState;
   // Create a list of which practices apply to the current compare topic
@@ -195,12 +181,16 @@ export default function Compare({ params: { compare } }: PageProps) {
                 : p.value === Value.partial
                 ? partialIcon
                 : ''}{' '}
-              <Link
-                to={PRACTICE_LINK_MAP[p.practiceName]}
-                key={`${p.practiceName}-${i}-link`}
-              >
-                {p.practiceName}
-              </Link>
+              {practiceLinkMap[p.practiceName] ? (
+                <Link
+                  to={practiceLinkMap[p.practiceName] || ''}
+                  key={`${p.practiceName}-${i}-link`}
+                >
+                  {p.practiceName}
+                </Link>
+              ) : (
+                <span>{p.practiceName}</span>
+              )}
             </li>
           ))}
         </ul>
@@ -233,47 +223,13 @@ export default function Compare({ params: { compare } }: PageProps) {
   // when bool = false, force show all
   const [hideAll, setHideAll] = useState<boolean | undefined>(undefined);
 
-  const awContent = (
-    <div>
-      <p>
-        If a prospective foster parent lived in another state within the last 5
-        years, their <em>current</em> state must check the child abuse & neglect
-        registry from their prior state(s) before approving them as foster
-        parents.
-      </p>
-      <p>
-        This sounds like a good idea. But in practice, inconsistent processes
-        across states for fulfilling these requests are putting children at
-        risk, and cause some of the most significant delays in licensing
-        (paying) foster parents, particularly for kinship caregivers who already
-        have placement of children but who do not receive any financial support
-        until they are licensed.
-      </p>
-    </div>
-  );
-
-  const kinFindingContent = (
-    <div>
-      <p>
-        The best thing for a child in foster care is living with an adult they
-        already know and trust ("kin"). The vast majority of children entering
-        care have kin available to care for them, but most systems fail to find
-        these adults for most children.
-      </p>
-      <p>
-        When systems adopt more effective kin-finding practices, they can
-        achieve initial kinship placement rates in excess of 80%.
-      </p>
-    </div>
-  );
-
   return (
     <Layout>
       <section id="hero-section">
         <Hero
           className="cwp-topic-hero"
           backgroundColor="dark"
-          title={COMPARE_TOPIC_FULL_TITLE[compareTopic]}
+          title={compareTopicTitle}
         />
       </section>
       <Breadcrumbs crumbLabel="Compare" />
@@ -281,19 +237,21 @@ export default function Compare({ params: { compare } }: PageProps) {
         <GridContainer>
           <section className="intro-section">
             <Grid>
-              {compareTopic == 'Background Checks'
-                ? awContent
-                : kinFindingContent}
+              {mainContent}
               <p>
                 Our goal is for every child welfare system to adopt these{' '}
                 {topicPractices.length} promising practices for{' '}
-                {COMPARE_TOPIC_FULL_TITLE[compareTopic]}:{' '}
+                {compareTopicTitle}:{' '}
                 {topicPractices.map((practice, idx) => (
                   <React.Fragment key={practice}>
                     {idx === topicPractices.length - 1 ? 'and ' : ''}
-                    <Link to={PRACTICE_LINK_MAP[practice] || ''}>
-                      {practice.toLowerCase()}
-                    </Link>
+                    {practiceLinkMap[practice] ? (
+                      <Link to={practiceLinkMap[practice] || ''}>
+                        {practice.toLowerCase()}
+                      </Link>
+                    ) : (
+                      practice.toLowerCase()
+                    )}
                     {idx < topicPractices.length - 1 ? ', ' : '.'}
                   </React.Fragment>
                 ))}
@@ -393,10 +351,16 @@ export default function Compare({ params: { compare } }: PageProps) {
                     placeholderHiddenContent={createCardPlaceholderContent(fp)}
                     layout="compare"
                     className="compare-width"
-                    image={`/src/images/compare/${
-                      fp.practices.filter(p => p.value === 'Fully Implemented')
-                        .length
-                    }Of${topicPractices.length}.svg`}
+                    image={
+                      <ProgressChart
+                        numberOfSegments={fp.practices.length}
+                        implementedCount={
+                          fp.practices.filter(
+                            p => p.value === 'Fully Implemented',
+                          ).length
+                        }
+                      />
+                    }
                     imgAlt={`${
                       fp.practices.filter(p => p.value === 'Fully Implemented')
                         .length

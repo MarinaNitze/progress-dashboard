@@ -1,4 +1,4 @@
-import React, { ReactElement, useEffect, useState } from 'react';
+import React, { ReactElement, ReactNode, useEffect, useState } from 'react';
 import { navigate } from 'gatsby';
 import {
   Card as CardCmp,
@@ -19,7 +19,7 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 export type CardProps = {
   title: string;
   layout?: 'topic' | 'sm' | 'md' | 'lg' | 'compare';
-  image?: string;
+  image?: string | ReactNode;
   imgAlt?: string;
   link?: string;
   linkText?: string;
@@ -63,23 +63,27 @@ export default function Card({
   layout = 'lg',
 }: CardProps) {
   let imageComponent;
-  const imageNode =
-    image && useGatsbyImages()[image.slice(image[0] === '.' ? 3 : 5)];
-  if (imageNode && imageNode.extension === 'svg') {
-    const svgImage = imageNode.publicURL;
-    imageComponent = svgImage && (
-      <img src={svgImage} alt={imgAlt ?? title + ' image'} />
-    );
+  if (typeof image !== 'string') {
+    imageComponent = image;
   } else {
-    const gatsbyImage: ImageSharp['gatsbyImageData'] =
-      imageNode && getImage(imageNode);
-    imageComponent = gatsbyImage && (
-      <GatsbyImage
-        className="image"
-        image={gatsbyImage}
-        alt={imgAlt ?? title + ' image'}
-      />
-    );
+    const imageNode =
+      image && useGatsbyImages()[image.slice(image[0] === '.' ? 3 : 5)];
+    if (imageNode && imageNode.extension === 'svg') {
+      const svgImage = imageNode.publicURL;
+      imageComponent = svgImage && (
+        <img src={svgImage} alt={imgAlt ?? title + ' image'} />
+      );
+    } else {
+      const gatsbyImage: ImageSharp['gatsbyImageData'] =
+        imageNode && getImage(imageNode);
+      imageComponent = gatsbyImage && (
+        <GatsbyImage
+          className="image"
+          image={gatsbyImage}
+          alt={imgAlt ?? title + ' image'}
+        />
+      );
+    }
   }
 
   const [isHidden, setIsHidden] = useState(forceHide ?? defaultHidden);

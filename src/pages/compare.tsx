@@ -9,7 +9,7 @@ import useDataPractices from '../hooks/useDataPractices';
 import useGatsbyImages from '../hooks/useGatsbyImages';
 
 import './home.scss';
-import { COMPARE_TOPIC_FULL_TITLE } from '../utils/mappings';
+import { COMPARE_TOPIC_FULL_TITLE_MAP } from '../utils/compare';
 import { Topic } from '../types/compare';
 
 export default function Compare() {
@@ -37,7 +37,7 @@ export default function Compare() {
     setInput(e?.currentTarget.value);
     const filteredPractices = OgPractices.filter(
       practice =>
-        practice
+        COMPARE_TOPIC_FULL_TITLE_MAP[practice]
           ?.toLowerCase()
           .includes(e?.currentTarget.value.toLowerCase()) ?? false,
     );
@@ -48,7 +48,7 @@ export default function Compare() {
   const reducePracticesAlphabet = () => {
     return alphabet.reduce<alphabetRecType[]>((acc, char) => {
       const orderedPractices = practices
-        .map(practice => practice && COMPARE_TOPIC_FULL_TITLE[practice])
+        .map(practice => practice && COMPARE_TOPIC_FULL_TITLE_MAP[practice])
         .filter(practice => practice && practice[0].toUpperCase() === char);
       return [...acc, { letter: char, practice: orderedPractices }];
     }, []);
@@ -56,11 +56,11 @@ export default function Compare() {
 
   const getPraticeNameFromFullTitle: (fullTitle: string) => Topic = (
     fullTitle: string,
-  ) => {
-    return (Object.entries(COMPARE_TOPIC_FULL_TITLE).find(
+  ) =>
+    (Object.entries(COMPARE_TOPIC_FULL_TITLE_MAP).find(
       ([_, value]) => value === fullTitle,
-    ) ?? ['' as Topic])[0] as Topic;
-  };
+    ) ?? [''])[0] as Topic;
+
   return (
     <Layout>
       <section id="test-section-id">
@@ -81,7 +81,6 @@ export default function Compare() {
             <label className="usa-sr-only" htmlFor="practice-search">
               Search
             </label>
-
             <input
               className="usa-input"
               id="practice-search"
