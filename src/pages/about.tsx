@@ -20,6 +20,7 @@ export default function About() {
     howItWorks,
     benefitsOfMembership,
     currentMembers,
+    freeEvaluation,
   } = content;
 
   const getAboutMarkdown = (key: string) => {
