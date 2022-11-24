@@ -422,3 +422,6 @@ collections:
           - label: 'Current Members'
             name: 'currentMembers'
             widget: 'markdown'
+          - label: 'Free Licensing Evaluation'
+            name: 'freeEvaluation'
+            widget: 'markdown'
