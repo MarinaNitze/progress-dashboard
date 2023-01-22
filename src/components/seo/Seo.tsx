@@ -86,7 +86,7 @@ export default function Seo({
       <link
         rel="preconnect"
         href="https://fonts.gstatic.com"
-        crossOrigin="true"
+        crossOrigin="anonymous"
       ></link>
       <link
         href="https://fonts.googleapis.com/css2?family=Petrona:wght@300;400;500;600;700;800;900&display=swap"

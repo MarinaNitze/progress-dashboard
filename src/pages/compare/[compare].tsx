@@ -72,7 +72,7 @@ export default function Compare({ params: { compare } }: PageProps) {
     useState(practiceDataByState);
 
   useEffect(() => {
-    const filterByPop = (state: typeof practiceDataByState[0]) => {
+    const filterByPop = (state: (typeof practiceDataByState)[0]) => {
       const pop =
         typeof state.population === 'string'
           ? parseInt(state.population)
@@ -86,7 +86,7 @@ export default function Compare({ params: { compare } }: PageProps) {
       }
     };
 
-    const filterByRec = (state: typeof practiceDataByState[0]) => {
+    const filterByRec = (state: (typeof practiceDataByState)[0]) => {
       const practiceArr = state.practices
         .filter(p => p.value === Value.partial || p.value === Value.full)
         .map(p => p.practiceName);
@@ -163,7 +163,7 @@ export default function Compare({ params: { compare } }: PageProps) {
       alt="partially implemented"
     />
   );
-  const createCardContent = (stateData: typeof practiceDataByState[0]) => {
+  const createCardContent = (stateData: (typeof practiceDataByState)[0]) => {
     return (
       <div>
         <ul>
@@ -199,7 +199,7 @@ export default function Compare({ params: { compare } }: PageProps) {
   };
 
   const createCardPlaceholderContent = (
-    stateData: typeof practiceDataByState[0],
+    stateData: (typeof practiceDataByState)[0],
   ) => {
     const fullyImplementedCount = stateData.practices.filter(
       p => p.value === Value.full,
