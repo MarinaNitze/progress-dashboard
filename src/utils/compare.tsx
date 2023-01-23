@@ -1,5 +1,4 @@
-import React from 'react';
-import { ReactNode } from 'react-markdown';
+import React, { ReactNode } from 'react';
 import { PracticeLinkMap, Topic } from '../types/compare';
 
 export const COMPARE_TOPIC_FULL_TITLE_MAP: Record<Topic, string> = {

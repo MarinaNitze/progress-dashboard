@@ -4,20 +4,24 @@ import useSortData, { Direction } from '../../hooks/useSortData';
 
 import './Table.scss';
 
-export type TableHeading<T> = {
+export type TableHeading<T extends { [key: string]: any }> = {
   dataKey: Extract<keyof T, string>;
   sortable?: boolean;
   heading?: string;
   renderCellContent?: (rowData: T) => JSX.Element;
 };
 
-type TableProps<T> = {
+type TableProps<T extends { [key: string]: any }> = {
   columns: TableHeading<T>[];
   data: T[];
   dataCy?: string;
 };
 
-export default function Table<T>({ columns, data, dataCy }: TableProps<T>) {
+export default function Table<T extends { [key: string]: any }>({
+  columns,
+  data,
+  dataCy,
+}: TableProps<T>) {
   const sortIcon =
     useGatsbyImages()['images/topics/icon-sort-down.svg'].publicURL;
   const { items, requestSort, columnMap } = useSortData<T>(
@@ -59,7 +63,7 @@ export default function Table<T>({ columns, data, dataCy }: TableProps<T>) {
           <tr key={`${key}-row`}>
             {columns.map(col => (
               <td key={`${col.dataKey}-cell`}>
-                {col.renderCellContent !== undefined
+                {col.renderCellContent
                   ? col.renderCellContent(row)
                   : row[col.dataKey]}
               </td>

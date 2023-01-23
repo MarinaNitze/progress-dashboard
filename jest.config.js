@@ -12,7 +12,10 @@ module.exports = {
     `<rootDir>.*/public`,
     '<rootDir>/cypress/',
   ],
-  transformIgnorePatterns: [`node_modules/(?!(gatsby)/)`],
+  transformIgnorePatterns: [
+    '<rootDir>/node_modules/(?!(react-markdown|micromark.*|decode-named-character-reference|trim-lines|hast.*)/)',
+  ],
+
   globals: {
     __PATH_PREFIX__: ``,
   },
