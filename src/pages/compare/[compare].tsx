@@ -15,6 +15,9 @@ import Card from '../../components/card/Card';
 import Hero from '../../components/hero/Hero';
 import Layout from '../../components/layout/Layout';
 import Select from '../../components/select/Select';
+import CompareHideCardToggles from '../../components/compare/CompareHideCardToggles';
+import CompareLegend from '../../components/compare/CompareLegend';
+import ProgressChart from '../../components/progress-chart/progressChart';
 
 import { PracticeName, Topic, Value } from '../../types/compare';
 import useDataPractices from '../../hooks/useDataPractices';
@@ -26,7 +29,6 @@ import {
 } from '../../utils/compare';
 
 import './compare.scss';
-import ProgressChart from '../../components/progress-chart/progressChart';
 
 export default function Compare({ params: { compare } }: PageProps) {
   // Create a typed version of the url "compare" param
@@ -198,7 +200,7 @@ export default function Compare({ params: { compare } }: PageProps) {
     );
   };
 
-  const createCardPlaceholderContent = (
+  const createCardSummaryContent = (
     stateData: (typeof practiceDataByState)[0],
   ) => {
     const fullyImplementedCount = stateData.practices.filter(
@@ -313,34 +315,11 @@ export default function Compare({ params: { compare } }: PageProps) {
           <section className="compare-section">
             <Grid>
               <section className="row">
-                <div className="implementation-legend">
-                  <div className="legend-area">
-                    {partialIcon}
-                    <p>In progress</p>
-                  </div>
-                  <div className="legend-area">
-                    {implementedIcon}
-                    <p>Fully implemented</p>
-                  </div>
-                </div>
-                <div className="flex-start mobile-col">
-                  <p className="show-hide-title">Implemented Recommendations</p>
-                  <div className="flex-start">
-                    <button
-                      className={`${hideAll === false ? 'active' : ''}`}
-                      onClick={() => setHideAll(false)}
-                    >
-                      Show all
-                    </button>
-                    <hr />
-                    <button
-                      className={`${hideAll === true ? 'active' : ''}`}
-                      onClick={() => setHideAll(true)}
-                    >
-                      Hide all
-                    </button>
-                  </div>
-                </div>
+                <CompareLegend />
+                <CompareHideCardToggles
+                  hideAll={hideAll}
+                  setHideAll={setHideAll}
+                />
               </section>
               <CardGroup>
                 {filteredPractices.map((fp, i) => (
@@ -348,7 +327,7 @@ export default function Compare({ params: { compare } }: PageProps) {
                     key={`${fp.code}-${i}`}
                     title={fp.name}
                     content={createCardContent(fp)}
-                    placeholderHiddenContent={createCardPlaceholderContent(fp)}
+                    placeholderHiddenContent={createCardSummaryContent(fp)}
                     layout="compare"
                     className="compare-width"
                     image={
