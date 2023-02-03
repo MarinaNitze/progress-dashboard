@@ -5,61 +5,60 @@ import Breadcrumbs from '../components/breadcrumbs/Breadcrumbs';
 import Hero from '../components/hero/Hero';
 import Layout from '../components/layout/Layout';
 
-import useDataPractices from '../hooks/useDataPractices';
 import useGatsbyImages from '../hooks/useGatsbyImages';
 
 import './home.scss';
-import { COMPARE_TOPIC_FULL_TITLE_MAP } from '../utils/compare';
-import { Topic } from '../types/compare';
+
+enum PracticeArea {
+  backgroundChecks = 'Out of State Child Abuse and Neglect Checks (Adam Walsh Checks)',
+  familyFinding = 'Kin Finding (Nationwide)',
+  familyFinding_CACounties = 'Kin Finding (California)',
+}
+
+const DEPRECATED_PA_PARAMS = {
+  [PracticeArea.familyFinding]: 'Family Finding',
+  [PracticeArea.backgroundChecks]: 'Background Checks',
+};
+
+type ByLetter = {
+  letter: string;
+  practiceAreas: PracticeArea[];
+};
 
 export default function Compare() {
   const searchIcon = useGatsbyImages()['images/header/search.svg'].publicURL;
-  const [input, setInput] = useState('');
-  const OgPractices = [
-    ...new Set(
-      useDataPractices().rawPractices.nodes.map(
-        node => node.data?.Topic as Topic,
-      ),
-    ),
-  ];
-  const [practices, setPractices] = useState(OgPractices);
+  const [searchString, setSearchString] = useState('');
 
-  type alphabetRecType = {
-    letter: string;
-    practice: string[];
-  };
+  const PRACTICE_AREAS = Object.values(PracticeArea);
+  const [practiceAreas, setPracticeAreas] = useState(PRACTICE_AREAS);
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e?.preventDefault();
   };
 
-  const handleInput = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setInput(e?.currentTarget.value);
-    const filteredPractices = OgPractices.filter(
-      practice =>
-        COMPARE_TOPIC_FULL_TITLE_MAP[practice]
-          ?.toLowerCase()
-          .includes(e?.currentTarget.value.toLowerCase()) ?? false,
+  const handleInputOnChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setSearchString(e?.currentTarget.value);
+    setPracticeAreas(
+      PRACTICE_AREAS.filter(practice =>
+        practice.toLowerCase().includes(e?.currentTarget.value.toLowerCase()),
+      ),
     );
-    setPractices(filteredPractices);
   };
 
   const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
-  const reducePracticesAlphabet = () => {
-    return alphabet.reduce<alphabetRecType[]>((acc, char) => {
-      const orderedPractices = practices
-        .map(practice => practice && COMPARE_TOPIC_FULL_TITLE_MAP[practice])
-        .filter(practice => practice && practice[0].toUpperCase() === char);
-      return [...acc, { letter: char, practice: orderedPractices }];
+  const getPracticeAreasByLetter = () => {
+    return alphabet.reduce<ByLetter[]>((acc, char) => {
+      return [
+        ...acc,
+        {
+          letter: char,
+          practiceAreas: practiceAreas.filter(
+            practice => practice && practice[0].toUpperCase() === char,
+          ),
+        },
+      ];
     }, []);
   };
-
-  const getPraticeNameFromFullTitle: (fullTitle: string) => Topic = (
-    fullTitle: string,
-  ) =>
-    (Object.entries(COMPARE_TOPIC_FULL_TITLE_MAP).find(
-      ([_, value]) => value === fullTitle,
-    ) ?? [''])[0] as Topic;
 
   return (
     <Layout>
@@ -87,31 +86,30 @@ export default function Compare() {
               type="search"
               name="search"
               placeholder="Search practice Areas"
-              value={input}
-              onChange={handleInput}
+              value={searchString}
+              onChange={handleInputOnChange}
             />
             <img className="search-icon" src={searchIcon} alt="search icon" />
           </form>
         </section>
         <section className="recommendations-section" id="test-section-id">
-          {reducePracticesAlphabet().map(alphabetPractice => {
+          {getPracticeAreasByLetter().map(({ letter, practiceAreas }) => {
             return (
-              alphabetPractice.practice.length > 0 && (
-                <section
-                  id={`${alphabetPractice.letter}-section`}
-                  key={alphabetPractice.letter}
-                >
-                  <h2>{alphabetPractice.letter}</h2>
+              practiceAreas.length > 0 && (
+                <section id={`${letter}-section`} key={letter}>
+                  <h2>{letter}</h2>
                   <ul>
-                    {alphabetPractice.practice.map(practice => {
+                    {practiceAreas.map(pa => {
                       return (
-                        <li key={practice}>
+                        <li key={pa}>
                           <Link
-                            to={`/compare/${getPraticeNameFromFullTitle(
-                              practice,
-                            )}`}
+                            to={
+                              pa === PracticeArea.familyFinding_CACounties
+                                ? `/compare/counties/CA/${pa}`
+                                : `/compare/${DEPRECATED_PA_PARAMS[pa]}`
+                            }
                           >
-                            {practice}
+                            {pa}
                           </Link>
                         </li>
                       );

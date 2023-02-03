@@ -8,13 +8,15 @@ import {
   CardFooter,
   Button,
 } from '@trussworks/react-uswds';
-import ReactMarkdown from 'react-markdown';
 import { GridProps } from '@trussworks/react-uswds/lib/components/grid/Grid/Grid';
 
-import './Card.scss';
+import ReactMarkdown from 'react-markdown';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+
 import useGatsbyImages from '../../hooks/useGatsbyImages';
 import { ImageSharp } from '../../../graphql-types';
-import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+
+import './Card.scss';
 
 export type CardProps = {
   title: string;
