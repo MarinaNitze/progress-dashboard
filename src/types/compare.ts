@@ -7,7 +7,8 @@ export const enum Value {
 }
 
 // Must match values in the "Topic" column of the Progress Dashboard airtable
-export type Topic = 'Background Checks' | 'Family Finding';
+// (Renaming here because "Topic" refers to something else! see Topic)
+export type PracticeArea = 'Background Checks' | 'Family Finding';
 
 // Must match values in the "Name" column of the Progress Dashboard airtable
 export type PracticeName =

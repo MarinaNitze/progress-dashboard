@@ -19,7 +19,7 @@ import CompareHideCardToggles from '../../components/compare/CompareHideCardTogg
 import CompareLegend from '../../components/compare/CompareLegend';
 import ProgressChart from '../../components/progress-chart/progressChart';
 
-import { PracticeName, Topic, Value } from '../../types/compare';
+import { PracticeName, PracticeArea, Value } from '../../types/compare';
 import useDataPractices from '../../hooks/useDataPractices';
 import useGatsbyImages from '../../hooks/useGatsbyImages';
 import {
@@ -34,13 +34,13 @@ export default function Compare({ params: { compare } }: PageProps) {
   // Create a typed version of the url "compare" param
   // (because dealing with re-typing existing Gatsby PageProps is no,
   // but some amount of type-safety with all the stuff going on here is nice)
-  const compareTopic = compare as Topic;
+  const compareTopic = compare as PracticeArea;
   const compareTopicTitle =
     COMPARE_TOPIC_FULL_TITLE_MAP[compareTopic] || compareTopic;
   const practiceLinkMap = COMPARE_TOPIC_PRACTICE_LINKS_MAP[compareTopic];
   const mainContent = COMPARE_TOPIC_CONTENT_MAP[compareTopic];
 
-  const practicesByState = useDataPractices().practicesByState;
+  const practicesByState = useDataPractices().practicesByRegion.state;
   // Create a list of which practices apply to the current compare topic
   const topicPractices = practicesByState[0].practices
     .filter(practice => practice.topic === compareTopic)
