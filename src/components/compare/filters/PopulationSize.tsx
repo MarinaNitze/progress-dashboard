@@ -1,5 +1,6 @@
+import React from 'react';
 import { Fieldset, Label } from '@trussworks/react-uswds';
-import { Dispatch, SetStateAction, useState } from 'react';
+import { useState } from 'react';
 import { Option } from 'react-select';
 
 import { PracticeAreaData } from '../../../hooks/useDataPractices';
@@ -23,11 +24,11 @@ const COUNTIES_POP_SIZE_OPTS = [
 
 type PopulationSizeFilterProps = {
   regionType: RegionType;
-  setFilteredData: Dispatch<SetStateAction<PracticeAreaData[]>>;
+  applyFilter: (filterFunc: (value: PracticeAreaData) => boolean) => void;
 };
 export default function PopulationSizeFilter({
   regionType,
-  setFilteredData,
+  applyFilter,
 }: PopulationSizeFilterProps) {
   const options =
     regionType === 'states' ? STATES_POP_SIZE_OPTS : COUNTIES_POP_SIZE_OPTS;
@@ -44,23 +45,21 @@ export default function PopulationSizeFilter({
           value={popSizeFilter}
           handleChange={(opt: typeof Option) => {
             setPopSizeFilter(opt);
-            setFilteredData(data =>
-              data.filter(d => {
-                if (opt.value === options[1].value) {
-                  return d.population < parseInt(options[1].value);
-                } else if (opt.value === options[2].value) {
-                  return (
-                    d.population >= parseInt(options[1].value) &&
-                    d.population < parseInt(options[2].value)
-                  );
-                } else if (opt.value === options[3].value) {
-                  return d.population >= parseInt(options[3].value);
-                } else {
-                  // no filter selected
-                  return true;
-                }
-              }),
-            );
+            applyFilter(d => {
+              if (opt.value === options[1].value) {
+                return d.population < parseInt(options[2].value);
+              } else if (opt.value === options[2].value) {
+                return (
+                  d.population >= parseInt(options[2].value) &&
+                  d.population < parseInt(options[3].value)
+                );
+              } else if (opt.value === options[3].value) {
+                return d.population >= parseInt(options[3].value);
+              } else {
+                // no filter selected
+                return true;
+              }
+            });
           }}
         />
       </div>

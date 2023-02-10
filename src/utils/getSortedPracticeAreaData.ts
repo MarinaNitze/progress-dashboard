@@ -1,7 +1,7 @@
 import { PracticeAreaData } from '../hooks/useDataPractices';
 import { PracticeArea } from '../types/compare';
 
-export const getSortedFilteredPracticeData = (
+export const getSortedPracticeAreaData = (
   regionData: PracticeAreaData[],
   practiceArea: PracticeArea,
 ) =>

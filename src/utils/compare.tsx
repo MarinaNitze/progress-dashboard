@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react';
 import { PracticeLinkMap, PracticeArea } from '../types/compare';
 
-export const COMPARE_TOPIC_FULL_TITLE_MAP: Record<PracticeArea, string> = {
+export const COMPARE_DASHBOARD_FULL_TITLE_MAP: Record<PracticeArea, string> = {
   'Background Checks':
     'Out of State Child Abuse and Neglect Checks (Adam Walsh Checks)',
   'Family Finding': 'Kin Finding',
@@ -31,7 +31,7 @@ const family_finding_link_map: PracticeLinkMap = {
     '/recommendation/Use-expansive-legal-definition-of-kin',
 };
 
-export const COMPARE_TOPIC_PRACTICE_LINKS_MAP: Record<
+export const PRACTICE_AREA_PRACTICE_LINKS_MAP: Record<
   PracticeArea,
   PracticeLinkMap
 > = {
@@ -39,7 +39,7 @@ export const COMPARE_TOPIC_PRACTICE_LINKS_MAP: Record<
   'Background Checks': background_checks_link_map,
 };
 
-export const COMPARE_TOPIC_CONTENT_MAP: Record<PracticeArea, ReactNode> = {
+export const PRACTICE_AREA_CONTENT_MAP: Record<PracticeArea, ReactNode> = {
   'Background Checks': (
     <div>
       <p>

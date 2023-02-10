@@ -159,11 +159,13 @@ export default function useDataPractices() {
           parseInt(states.statesData[key].population as string) ??
           states.statesData[key].population,
         admin: states.statesData[key].admin,
-        practices: practices.map(p => ({
-          practiceName: p.data?.Name as PracticeName,
-          topic: p.data?.Topic as PracticeArea,
-          value: p.data?.[key as stateCode] ?? '',
-        })),
+        practices: practices
+          .filter(p => p.table === 'Practices')
+          .map(p => ({
+            practiceName: p.data?.Name as PracticeName,
+            topic: p.data?.Topic as PracticeArea,
+            value: p.data?.[key as stateCode] ?? '',
+          })),
       });
     }
 
@@ -176,11 +178,13 @@ export default function useDataPractices() {
           parseInt(caCounties.caCountiesData[key].population as string) ??
           caCounties.caCountiesData[key].population,
         admin: '', // for inferred type consistency
-        practices: practices.map(p => ({
-          practiceName: p.data?.Name as PracticeName,
-          topic: p.data?.Topic as PracticeArea,
-          value: p.data?.[key as caCountyCode] ?? '',
-        })),
+        practices: practices
+          .filter(p => p.table === 'Practices - CA Counties')
+          .map(p => ({
+            practiceName: p.data?.Name as PracticeName,
+            topic: p.data?.Topic as PracticeArea,
+            value: p.data?.[key as caCountyCode] ?? '',
+          })),
       });
     }
 
@@ -188,5 +192,5 @@ export default function useDataPractices() {
   };
 
   const practicesByRegion = mapPracticesByRegion(practicesData?.nodes ?? []);
-  return { practicesByRegion, rawPractices: practicesData };
+  return { practicesByRegion };
 }
