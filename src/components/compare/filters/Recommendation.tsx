@@ -1,5 +1,5 @@
 import { Fieldset, Label } from '@trussworks/react-uswds';
-import { Dispatch, SetStateAction, useState } from 'react';
+import React, { useState } from 'react';
 import { Option } from 'react-select';
 import { PracticeAreaData } from '../../../hooks/useDataPractices';
 
@@ -8,12 +8,12 @@ import Select from '../../select/Select';
 
 type RecommendationFilterProps = {
   topicPractices: PracticeName[];
-  setFilteredData: Dispatch<SetStateAction<PracticeAreaData[]>>;
+  applyFilter: (filterFunc: (value: PracticeAreaData) => boolean) => void;
 };
 
 export default function RecommendationFilter({
   topicPractices,
-  setFilteredData,
+  applyFilter,
 }: RecommendationFilterProps) {
   const recOptions: (typeof Option)[] = topicPractices.map(practice => ({
     value: practice,
@@ -32,23 +32,21 @@ export default function RecommendationFilter({
           value={recFilter}
           handleChange={(opts: (typeof Option)[]) => {
             setRecFilter(opts);
-            setFilteredData(data =>
-              data.filter(d => {
-                if (opts.length === 0) return true;
+            applyFilter(d => {
+              if (opts.length === 0) return true;
 
-                const implementedPractices = d.practices
-                  .filter(
-                    practice =>
-                      practice.value === Value.partial ||
-                      practice.value === Value.full,
-                  )
-                  .map(practice => practice.practiceName);
+              const implementedPractices = d.practices
+                .filter(
+                  practice =>
+                    practice.value === Value.partial ||
+                    practice.value === Value.full,
+                )
+                .map(practice => practice.practiceName);
 
-                return opts.every(filterOption =>
-                  implementedPractices.includes(filterOption.value),
-                );
-              }),
-            );
+              return opts.every(filterOption =>
+                implementedPractices.includes(filterOption.value),
+              );
+            });
           }}
         />
       </div>

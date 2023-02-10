@@ -1,4 +1,4 @@
-import React, { Dispatch, SetStateAction, useState } from 'react';
+import React, { useState } from 'react';
 import { Fieldset, Label } from '@trussworks/react-uswds';
 import { Option } from 'react-select';
 
@@ -12,10 +12,10 @@ const ADMINISTRATION_OPTS = [
 ];
 
 type AdministrationFilterProps = {
-  setFilteredData: Dispatch<SetStateAction<PracticeAreaData[]>>;
+  applyFilter: (filterFunc: (value: PracticeAreaData) => boolean) => void;
 };
 export default function AdministrationFilter({
-  setFilteredData,
+  applyFilter,
 }: AdministrationFilterProps) {
   const [adminFilter, setAdminFilter] = useState<typeof Option>(
     ADMINISTRATION_OPTS[0],
@@ -32,12 +32,10 @@ export default function AdministrationFilter({
           value={adminFilter}
           handleChange={(opt: typeof Option) => {
             setAdminFilter(opt);
-            setFilteredData(data =>
-              data.filter(d => {
-                if (opt === undefined || opt.value === '') return true;
-                return opt.value.toLowerCase() === d.admin.toLowerCase();
-              }),
-            );
+            applyFilter(d => {
+              if (opt === undefined || opt.value === '') return true;
+              return opt.value.toLowerCase() === d.admin.toLowerCase();
+            });
           }}
         />
       </div>
