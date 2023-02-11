@@ -15,7 +15,7 @@ A state’s new process needs to be “reasonably in accord with recommended sta
 
 We are proposing Standards for Kinship Caregivers that can serve as these “recommended standards of national organizations,” similar to how the [Model Foster Home Licensing Standards](https://nara.memberclicks.net/nara-model-foster-care-standards) served as the recommended standards for the previous combined (kin and non-kin) process. 
 
-The goal of these Standards for Kinship Caregivers is for every kinship caregiver to be eligible for Foster Care Maintenance Payments the same day the kinship child is placed. 
+The goal of these Standards for Kinship Caregivers is for every kinship caregiver to be qualified for Foster Care Maintenance Payments from the date the kinship child is placed. 
 
 We are co-designing these standards with a diverse array of kinship caregivers from around the country, and are seeking as much input from states and child welfare workers as possible, too. This can ultimately enable greater permanency and well-being for many children and families.
 
@@ -77,7 +77,7 @@ These standards are being developed by a group of national organizations includi
 ### Do I have to follow these standards?
 
 No. These standards are only recommendations. But they are designed to make it 
-easy for states to take advantage of this new federal flexibility to have 
+easy for Title IV-E agencies to take advantage of this new federal flexibility to have 
 distinct processes for supporting kinship caregivers.
 
 ### I have another question.
