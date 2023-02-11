@@ -11,17 +11,11 @@ home:
   features:
     whatsNew: ''
     largeFeature:
-      content:
-        Inconsistencies in how we conduct out-of-state child abuse and neglect
-        registry checks are putting children at risk. To solve this problem, we
-        need to approach it from both sides — how we fulfill background check
-        requests and how we make these requests.
+      content: Learn more about the new recommended standards, and how to take part in designing them.
       image: ../images/features/feature-babies.png
-      title:
-        Let’s improve out-of-state child abuse and neglect checks (“Adam Walsh
-        checks”).
+      title: New recommended standards for approving kinship caregivers
       imgAlt: full width feature image
-      link: /topic/out-of-state-background-checks
+      link: /kinship-caregivers
       linkText: Find out how
       layout: lg
     mediumFeature:
