@@ -9,7 +9,7 @@ import SideAnchorNav from '../components/side-anchor-nav/SideAnchorNav';
 import './home.scss';
 
 const ABOUT = `
-A new draft rule proposes allowing child welfare systems to have a kin-specific process for approving kin. If it’s finalized, systems will be able to create new, streamlined processes for providing kin with Foster Care Maintenance Payments that are eligible for Title IV-E reimbursement. 
+A new [draft rule](https://www.federalregister.gov/documents/2023/02/14/2023-03005/separate-licensing-standards-for-relative-or-kinship-foster-family-homes) proposes allowing child welfare systems to have a kin-specific process for approving kin. If it’s finalized, systems will be able to create new, streamlined processes for providing kin with Foster Care Maintenance Payments that are eligible for Title IV-E reimbursement. 
 
 A state’s new process needs to be “reasonably in accord with recommended standards of national organizations concerned with standards for [foster family] homes, including standards related to admission policies, safety, sanitation, and protection of civil rights.”
 
