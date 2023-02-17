@@ -48,7 +48,7 @@
     "gatsby-plugin-styled-components": "^6.4.0",
     "gatsby-plugin-ts": "^3.1.0",
     "gatsby-source-airtable": "^2.3.0",
-    "gatsby-source-filesystem": "^5.4.0",
+    "gatsby-source-filesystem": "^5.6.0",
     "gatsby-transformer-sharp": "^5.4.0",
     "gbimage-bridge": "^0.2.2",
     "jest-environment-jsdom": "^29.3.1",
