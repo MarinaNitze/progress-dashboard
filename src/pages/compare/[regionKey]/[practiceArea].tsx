@@ -33,8 +33,7 @@ export default function CompareCountiesPracticeArea({
 }) {
   const data = useDataPractices().practicesByRegion;
   // Grab data for given region (states or CA counties) from path param
-  const regionData =
-    regionKey === 'states' ? data.state : data.county[regionKey];
+  const regionData = regionKey === 'states' ? data.state : data.county['CA'];
 
   // Sort data and filters practices to include only values for
   // practices linked to the given practice area from path param
