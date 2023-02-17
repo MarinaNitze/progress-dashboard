@@ -28,14 +28,14 @@ const GET_INVOLVED = `
 `;
 
 const MORE_WAYS = `
-Join a discovery sprint: A discovery sprint is a process where trained researchers talk to a
+Join a learning sprint: A learning sprint is a process where trained researchers talk to a
  diverse range of people impacted by the process (including kinship caregivers, parents of 
  children involved in care, and workers processing background checks) to uncover pain points,
  creative solutions, and opportunities for improvement to the process.
 
 
 
-### Join the discovery sprint to improve the background check process for kinship caregivers
+### Join the learning sprint to improve the background check process for kinship caregivers
 - We want to design and recommend a background check process that is both a good experience
   for kinship caregivers and fast, while continuing to meet federal requirements.
 - [Sign up here](https://airtable.com/shrQkKvpnAnLjhUuj)
@@ -47,7 +47,7 @@ Join a discovery sprint: A discovery sprint is a process where trained researche
 
 
 
-### Join the discovery sprint to improve the safety assessment process for kinship caregivers
+### Join the learning sprint to improve the safety assessment process for kinship caregivers
 - We want to design and recommend a safety assessment process that accommodates a 
    diverse array of kinship caregivers, while maintaining child safety. This assessment
    will focus on resolving issues, not disqualifying kinship caregivers.
