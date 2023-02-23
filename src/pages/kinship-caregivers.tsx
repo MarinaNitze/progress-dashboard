@@ -66,10 +66,10 @@ the same time as, or before, the final rule comes out.
 
 ### Who is developing these approval standards?
 
-These standards are being developed by a group of national organizations including [A Second Chance](https://www.asecondchance-kinship.com/),
+These standards are being developed by a group of national organizations including [A Second Chance Inc.](https://www.asecondchance-kinship.com/),
  [American Bar Association Center on Children and the Law](https://www.americanbar.org/groups/public_interest/child_law/),
  [Children’s Rights](https://www.childrensrights.org/),
- CWPolicy,
+ [CWPolicy](https://cwpolicy.com/),
  [Generations United](https://www.gu.org/),
  [New America’s Resource Family Working Group](https://www.childwelfareplaybook.com/),
  and [Think of Us](https://www.thinkof-us.org/).
