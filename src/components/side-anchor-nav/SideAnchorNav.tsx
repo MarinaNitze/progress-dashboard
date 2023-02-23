@@ -1,13 +1,12 @@
 import React from 'react';
+import { AnchorLink, AnchorLinkProps } from 'gatsby-plugin-anchor-links';
+import './SideAnchorNav.scss';
 import {
   SideNav,
   SummaryBox,
   SummaryBoxContent,
   SummaryBoxHeading,
 } from '@trussworks/react-uswds';
-import { AnchorLink, AnchorLinkProps } from 'gatsby-plugin-anchor-links';
-
-import './SideAnchorNav.scss';
 
 export type SideAnchorNavProps = {
   items: AnchorLinkProps[];

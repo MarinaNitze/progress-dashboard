@@ -1,8 +1,8 @@
-import { renderHook } from '@testing-library/react-hooks';
+import useDataStates from './useDataStates';
 import { mockDataStates } from '../../test/mockDataStates';
 import { mockStaticData } from '../../test/test-utils';
+import { renderHook } from '@testing-library/react-hooks';
 import { StatesDataQuery } from '../../graphql-types';
-import useDataStates from './useDataStates';
 
 describe('when rendered', () => {
   it('returns a list of US states', () => {

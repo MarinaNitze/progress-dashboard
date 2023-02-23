@@ -1,11 +1,10 @@
 import React from 'react';
+import Select from '../../select/Select';
 import { Fieldset, Label } from '@trussworks/react-uswds';
-import { useState } from 'react';
 import { Option } from 'react-select';
-
 import { PracticeAreaData } from '../../../hooks/useDataPractices';
 import { RegionType } from '../../../types/regionType';
-import Select from '../../select/Select';
+import { useState } from 'react';
 
 const POP_SIZE_ANY = { value: '', label: 'Any' };
 const STATES_POP_SIZE_OPTS = [

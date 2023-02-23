@@ -1,9 +1,8 @@
 import React from 'react';
-import { render } from '@testing-library/react';
-
 import Table, { TableHeading } from './Table';
 import { mockGatsbyImageData } from '../../../test/test-utils';
 import { Recommendation } from '../../types/recommendation';
+import { render } from '@testing-library/react';
 
 const columns: TableHeading<Partial<Recommendation>>[] = [
   {

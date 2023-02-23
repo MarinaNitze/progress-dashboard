@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-import { PracticeLinkMap, PracticeArea } from '../types/compare';
+import { PracticeArea, PracticeLinkMap } from '../types/compare';
 
 export const COMPARE_DASHBOARD_FULL_TITLE_MAP: Record<PracticeArea, string> = {
   'Background Checks':

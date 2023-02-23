@@ -1,20 +1,15 @@
-import React, { useEffect, useState } from 'react';
-import { PageProps } from 'gatsby';
-import { ButtonGroup } from '@trussworks/react-uswds';
-
 import Hero from '../components/hero/Hero';
 import Layout from '../components/layout/Layout';
-import SearchComponent from '../components/search/SearchComponent';
-
-import { Topic as TopicType } from '../types/topic';
-import topicContent from './content/topics.content.yml';
-
-import { Recommendation as RecommendationType } from '../types/recommendation';
+import React, { useEffect, useState } from 'react';
 import recommendationContent from './content/recommendations.content.yml';
-
-import { formatSearchFilter, formatAndSortSearchResults } from '../utils/util';
+import SearchComponent from '../components/search/SearchComponent';
+import topicContent from './content/topics.content.yml';
+import { ButtonGroup } from '@trussworks/react-uswds';
+import { formatAndSortSearchResults, formatSearchFilter } from '../utils/util';
+import { PageProps } from 'gatsby';
+import { Recommendation as RecommendationType } from '../types/recommendation';
+import { Topic as TopicType } from '../types/topic';
 import { TypeFilter } from '../types/typeFilter';
-
 import './home.scss';
 
 export default function Search({ location }: PageProps) {

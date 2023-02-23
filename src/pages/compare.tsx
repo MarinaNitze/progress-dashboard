@@ -1,14 +1,11 @@
-import React, { useState } from 'react';
-import { Link } from 'gatsby';
-
 import Breadcrumbs from '../components/breadcrumbs/Breadcrumbs';
 import Hero from '../components/hero/Hero';
 import Layout from '../components/layout/Layout';
-
+import React, { useState } from 'react';
 import useGatsbyImages from '../hooks/useGatsbyImages';
-
-import './home.scss';
+import { Link } from 'gatsby';
 import { PracticeArea } from '../types/compare';
+import './home.scss';
 
 enum CompareDashboardTitle {
   backgroundChecks = 'Out of State Child Abuse and Neglect Checks (Adam Walsh Checks)',

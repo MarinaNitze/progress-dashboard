@@ -1,8 +1,7 @@
-import { PageProps, navigate } from 'gatsby';
+import Layout from '../../components/layout/Layout';
 import React from 'react';
 import useDataStates from '../../hooks/useDataStates';
-
-import Layout from '../../components/layout/Layout';
+import { navigate, PageProps } from 'gatsby';
 
 export default function State({ params: { state = 'dc' } }: PageProps) {
   const { statesData } = useDataStates();

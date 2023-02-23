@@ -1,20 +1,17 @@
-import React from 'react';
-import { PageProps, Link } from 'gatsby';
-import { Grid, GridContainer } from '@trussworks/react-uswds';
-import ReactMarkdown from 'react-markdown';
-import { AnchorLinkProps } from 'gatsby-plugin-anchor-links';
-
 import Breadcrumbs from '../../components/breadcrumbs/Breadcrumbs';
+import content from '../content/topics.content.yml';
 import Hero from '../../components/hero/Hero';
 import Layout from '../../components/layout/Layout';
+import React from 'react';
+import ReactMarkdown from 'react-markdown';
+import recContent from '../content/recommendations.content.yml';
 import SideAnchorNav from '../../components/side-anchor-nav/SideAnchorNav';
 import Table, { TableHeading } from '../../components/table/Table';
-
+import { AnchorLinkProps } from 'gatsby-plugin-anchor-links';
+import { Grid, GridContainer } from '@trussworks/react-uswds';
+import { Link, PageProps } from 'gatsby';
 import { Recommendation } from '../../types/recommendation';
 import { Topic } from '../../types/topic';
-
-import content from '../content/topics.content.yml';
-import recContent from '../content/recommendations.content.yml';
 import './topic.scss';
 
 const columns: TableHeading<Recommendation>[] = [

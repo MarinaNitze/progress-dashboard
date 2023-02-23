@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
 import Layout from '../components/layout/Layout';
+import React, { useEffect, useState } from 'react';
 import Seo from '../components/seo/Seo';
 
 export default function NotFoundPage() {

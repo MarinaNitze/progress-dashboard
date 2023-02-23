@@ -1,7 +1,6 @@
 import React from 'react';
 import useGatsbyImages from '../../hooks/useGatsbyImages';
 import useSortData, { Direction } from '../../hooks/useSortData';
-
 import './Table.scss';
 
 export type TableHeading<T extends { [key: string]: any }> = {

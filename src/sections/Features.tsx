@@ -1,11 +1,9 @@
+import Card, { CardProps } from '../components/card/Card';
+import content from '../pages/index.content.yml';
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import { CardGroup, Grid, GridContainer } from '@trussworks/react-uswds';
-
-import Card, { CardProps } from '../components/card/Card';
 import './Features.scss';
-
-import content from '../pages/index.content.yml';
 
 type featureContent = {
   largeFeature: CardProps;

@@ -1,14 +1,10 @@
-import React, { useState, useEffect } from 'react';
-import { Link, navigate } from 'gatsby';
-
-import { Topic as TopicType } from '../../types/topic';
-import TopicContent from '../../pages/content/topics.content.yml';
-
-import { Recommendation as RecommendationType } from '../../types/recommendation';
+import React, { useEffect, useState } from 'react';
 import RecommendationContent from '../../pages/content/recommendations.content.yml';
-
+import TopicContent from '../../pages/content/topics.content.yml';
 import useGatsbyImages from '../../hooks/useGatsbyImages';
-
+import { Link, navigate } from 'gatsby';
+import { Recommendation as RecommendationType } from '../../types/recommendation';
+import { Topic as TopicType } from '../../types/topic';
 import './Search.scss';
 
 type SearchProps = {

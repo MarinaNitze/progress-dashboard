@@ -1,5 +1,5 @@
+import { graphql, useStaticQuery } from 'gatsby';
 import { HeroAndCardImagesQuery } from '../../graphql-types';
-import { useStaticQuery, graphql } from 'gatsby';
 
 type useGatsbyImageResponse = {
   [key: string]: any;

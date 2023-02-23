@@ -1,7 +1,6 @@
-import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
-
 import Layout from './Layout';
+import React from 'react';
+import { ComponentMeta, ComponentStory } from '@storybook/react';
 
 export default {
   title: 'Example/Layout',

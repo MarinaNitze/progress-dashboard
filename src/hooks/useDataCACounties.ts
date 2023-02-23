@@ -1,5 +1,5 @@
-import { graphql, useStaticQuery } from 'gatsby';
 import { CaCountiesDataQuery } from '../../graphql-types';
+import { graphql, useStaticQuery } from 'gatsby';
 
 export default function useDataCACounties() {
   const { CACountiesData } = useStaticQuery<CaCountiesDataQuery>(graphql`

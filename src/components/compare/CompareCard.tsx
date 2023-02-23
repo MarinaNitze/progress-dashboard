@@ -1,12 +1,11 @@
-import React from 'react';
-import { Link } from 'gatsby';
-
-import { PracticeAreaData } from '../../hooks/useDataPractices';
-import { PracticeArea, Value } from '../../types/compare';
-import { PRACTICE_AREA_PRACTICE_LINKS_MAP } from '../../utils/compare';
 import Card from '../card/Card';
 import ProgressChart from '../progress-chart/progressChart';
+import React from 'react';
 import { ImplementedIcon, PartialIcon } from './CompareLegend';
+import { Link } from 'gatsby';
+import { PRACTICE_AREA_PRACTICE_LINKS_MAP } from '../../utils/compare';
+import { PracticeArea, Value } from '../../types/compare';
+import { PracticeAreaData } from '../../hooks/useDataPractices';
 
 type CompareCardProps = {
   data: PracticeAreaData;

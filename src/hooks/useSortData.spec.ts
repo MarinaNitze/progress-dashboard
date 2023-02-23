@@ -1,8 +1,7 @@
+import useSortData, { Direction } from './useSortData';
+import { Recommendation } from '../types/recommendation';
 import { renderHook } from '@testing-library/react-hooks';
 import { TableHeading } from '../components/table/Table';
-import { Recommendation } from '../types/recommendation';
-
-import useSortData, { Direction } from './useSortData';
 
 const data: Partial<Recommendation>[] = [
   {

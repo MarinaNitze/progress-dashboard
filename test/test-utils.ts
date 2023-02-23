@@ -1,5 +1,5 @@
-import { useStaticQuery } from 'gatsby';
 import { HeroAndCardImagesQuery } from '../graphql-types';
+import { useStaticQuery } from 'gatsby';
 
 export const mockImageData = () => ({
   heroImages: {

@@ -1,15 +1,12 @@
-import React from 'react';
-import { Grid, GridContainer } from '@trussworks/react-uswds';
-import ReactMarkdown from 'react-markdown';
-import { AnchorLinkProps } from 'gatsby-plugin-anchor-links';
-
 import Breadcrumbs from '../components/breadcrumbs/Breadcrumbs';
+import content from './about.content.yml';
 import Hero from '../components/hero/Hero';
 import Layout from '../components/layout/Layout';
+import React from 'react';
+import ReactMarkdown from 'react-markdown';
 import SideAnchorNav from '../components/side-anchor-nav/SideAnchorNav';
-
-import content from './about.content.yml';
-
+import { AnchorLinkProps } from 'gatsby-plugin-anchor-links';
+import { Grid, GridContainer } from '@trussworks/react-uswds';
 import './home.scss';
 
 export default function About() {

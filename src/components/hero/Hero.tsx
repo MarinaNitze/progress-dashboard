@@ -1,9 +1,7 @@
 import React from 'react';
-import { GatsbyImage, getImage } from 'gatsby-plugin-image';
-
-import { ImageSharp } from '../../../graphql-types';
 import useGatsbyImages from '../../hooks/useGatsbyImages';
-
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import { ImageSharp } from '../../../graphql-types';
 import './hero.scss';
 
 type BackgroundColorOptions =

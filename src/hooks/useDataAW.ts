@@ -1,5 +1,5 @@
-import { useStaticQuery, graphql } from 'gatsby';
 import { AwDataQuery } from '../../graphql-types';
+import { graphql, useStaticQuery } from 'gatsby';
 
 export default function useDataAW() {
   const { awData } = useStaticQuery<AwDataQuery>(graphql`

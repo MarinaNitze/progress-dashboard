@@ -1,10 +1,9 @@
-import { Fieldset, Label } from '@trussworks/react-uswds';
 import React, { useState } from 'react';
+import Select from '../../select/Select';
+import { Fieldset, Label } from '@trussworks/react-uswds';
 import { Option } from 'react-select';
 import { PracticeAreaData } from '../../../hooks/useDataPractices';
-
 import { PracticeName, Value } from '../../../types/compare';
-import Select from '../../select/Select';
 
 type RecommendationFilterProps = {
   topicPractices: PracticeName[];

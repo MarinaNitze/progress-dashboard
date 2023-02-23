@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
+import Select from '../../select/Select';
 import { Fieldset, Label } from '@trussworks/react-uswds';
 import { Option } from 'react-select';
-
-import Select from '../../select/Select';
 import { PracticeAreaData } from '../../../hooks/useDataPractices';
 
 const ADMINISTRATION_OPTS = [

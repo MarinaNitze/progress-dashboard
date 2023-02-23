@@ -1,7 +1,6 @@
 import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
-
 import Seo from './Seo';
+import { ComponentMeta, ComponentStory } from '@storybook/react';
 
 export default {
   title: 'Example/Seo',

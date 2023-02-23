@@ -1,11 +1,10 @@
-import React, { createContext, useEffect } from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
-import { Grid, GridContainer } from '@trussworks/react-uswds';
-import { useState, useRef } from '@storybook/addons';
-import { AnchorLinkProps } from 'gatsby-plugin-anchor-links';
-
-import SideAnchorNav from './SideAnchorNav';
 import content from './content.yml';
+import React, { createContext, useEffect } from 'react';
+import SideAnchorNav from './SideAnchorNav';
+import { AnchorLinkProps } from 'gatsby-plugin-anchor-links';
+import { ComponentMeta, ComponentStory } from '@storybook/react';
+import { Grid, GridContainer } from '@trussworks/react-uswds';
+import { useRef, useState } from '@storybook/addons';
 
 type ContextState = {
   [key: string]: React.MutableRefObject<null> | null;

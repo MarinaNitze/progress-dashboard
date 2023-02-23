@@ -1,15 +1,11 @@
-import React, { useState } from 'react';
-import ReactMarkdown from 'react-markdown';
-
+import content from './index.content.yml';
 import Features from '../sections/Features';
-import Topics from '../sections/Topics';
-
 import Hero from '../components/hero/Hero';
 import Layout from '../components/layout/Layout';
+import React, { useState } from 'react';
+import ReactMarkdown from 'react-markdown';
 import Search from '../components/search/SearchComponent';
-
-import content from './index.content.yml';
-
+import Topics from '../sections/Topics';
 import './home.scss';
 
 const IndexPage = () => {

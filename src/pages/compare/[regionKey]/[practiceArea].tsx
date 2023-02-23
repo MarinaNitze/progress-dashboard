@@ -1,30 +1,27 @@
-import React, { useState } from 'react';
-import { CardGroup, Form, Grid, GridContainer } from '@trussworks/react-uswds';
-
-import Layout from '../../../components/layout/Layout';
-import Hero from '../../../components/hero/Hero';
-import Breadcrumbs from '../../../components/breadcrumbs/Breadcrumbs';
-import CompareLegend from '../../../components/compare/CompareLegend';
-import CompareHideCardToggles from '../../../components/compare/CompareHideCardToggles';
 import AdministrationFilter from '../../../components/compare/filters/Administration';
-import PopulationSizeFilter from '../../../components/compare/filters/PopulationSize';
-import RecommendationFilter from '../../../components/compare/filters/Recommendation';
+import Breadcrumbs from '../../../components/breadcrumbs/Breadcrumbs';
 import CompareCard from '../../../components/compare/CompareCard';
-
-import { RegionType } from '../../../types/regionType';
+import CompareHideCardToggles from '../../../components/compare/CompareHideCardToggles';
+import CompareLegend from '../../../components/compare/CompareLegend';
+import Hero from '../../../components/hero/Hero';
+import Layout from '../../../components/layout/Layout';
+import PopulationSizeFilter from '../../../components/compare/filters/PopulationSize';
+import React, { useState } from 'react';
+import RecommendationFilter from '../../../components/compare/filters/Recommendation';
 import useDataPractices from '../../../hooks/useDataPractices';
-import { getSortedPracticeAreaData } from '../../../utils/getSortedPracticeAreaData';
-import { PracticeArea } from '../../../types/compare';
-
+import { CardGroup, Form, Grid, GridContainer } from '@trussworks/react-uswds';
 import { getPractices } from '../../../utils/getPractices';
+import { getSortedPracticeAreaData } from '../../../utils/getSortedPracticeAreaData';
+import { Link } from 'gatsby';
+import { PracticeArea } from '../../../types/compare';
+import { RegionType } from '../../../types/regionType';
+import '../compare.scss';
+
 import {
   PRACTICE_AREA_CONTENT_MAP,
   COMPARE_DASHBOARD_FULL_TITLE_MAP,
   PRACTICE_AREA_PRACTICE_LINKS_MAP,
 } from '../../../utils/compare';
-
-import '../compare.scss';
-import { Link } from 'gatsby';
 
 export default function CompareCountiesPracticeArea({
   params: { regionKey, practiceArea },
@@ -130,6 +127,9 @@ export default function CompareCountiesPracticeArea({
                   setHideAll={setHideAll}
                 />
               </div>
+              {regionKey === 'CA' && (
+                <p className="coming-soon">Data coming soon!</p>
+              )}
               <CardGroup>
                 {filteredData.map(d => (
                   <CompareCard

@@ -1,10 +1,10 @@
-import { useStaticQuery, graphql } from 'gatsby';
-import { PracticesDataQuery } from '../../graphql-types';
-import useDataStates from './useDataStates';
-import { stateCode } from '../types/stateCode';
-import { PracticeName, PracticeArea } from '../types/compare';
 import useDataCACounties from './useDataCACounties';
+import useDataStates from './useDataStates';
 import { caCountyCode } from '../types/caCountyCode';
+import { graphql, useStaticQuery } from 'gatsby';
+import { PracticeArea, PracticeName } from '../types/compare';
+import { PracticesDataQuery } from '../../graphql-types';
+import { stateCode } from '../types/stateCode';
 
 export type PracticeAreaData = {
   code: string;
