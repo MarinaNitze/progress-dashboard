@@ -1,7 +1,6 @@
 import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
-
 import Table, { TableHeading } from './Table';
+import { ComponentMeta, ComponentStory } from '@storybook/react';
 import { Recommendation } from '../../types/recommendation';
 
 const columns: TableHeading<any>[] = [

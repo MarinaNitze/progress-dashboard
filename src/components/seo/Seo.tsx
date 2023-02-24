@@ -1,6 +1,6 @@
-import { useStaticQuery, graphql } from 'gatsby';
-import React from 'react';
 import Helmet from 'react-helmet';
+import React from 'react';
+import { graphql, useStaticQuery } from 'gatsby';
 
 type SEOProps = {
   description?: string;

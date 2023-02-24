@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "es6",
     "module": "commonjs",
-    "lib": ["dom", "es2015", "es2017", "es2019"],
+    "lib": ["dom", "es2015", "es2017", "es2019", "ES2021"],
     "jsx": "preserve",
     "allowJs": true,
     "moduleResolution": "node",

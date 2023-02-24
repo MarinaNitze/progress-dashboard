@@ -1,8 +1,7 @@
 import * as React from 'react';
-import { render } from '@testing-library/react';
-import { mockGatsbyImageData } from '../../../test/test-utils';
-
 import Header from './Header';
+import { mockGatsbyImageData } from '../../../test/test-utils';
+import { render } from '@testing-library/react';
 
 const headerLinks = [
   {

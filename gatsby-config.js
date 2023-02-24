@@ -62,6 +62,14 @@ module.exports = {
             baseId: process.env.AIRTABLE_BASE_ID,
             tableName: `Practices`,
           },
+          {
+            baseId: process.env.AIRTABLE_BASE_ID,
+            tableName: `Practices - CA Counties`,
+          },
+          {
+            baseId: process.env.AIRTABLE_BASE_ID,
+            tableName: `CA Counties`,
+          },
         ],
       },
     },

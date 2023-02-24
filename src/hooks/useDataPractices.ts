@@ -1,14 +1,29 @@
-import { useStaticQuery, graphql } from 'gatsby';
-import { PracticesDataQuery } from '../../graphql-types';
+import useDataCACounties from './useDataCACounties';
 import useDataStates from './useDataStates';
+import { caCountyCode } from '../types/caCountyCode';
+import { graphql, useStaticQuery } from 'gatsby';
+import { PracticeArea, PracticeName } from '../types/compare';
+import { PracticesDataQuery } from '../../graphql-types';
 import { stateCode } from '../types/stateCode';
-import { PracticeName, Topic } from '../types/compare';
+
+export type PracticeAreaData = {
+  code: string;
+  name: string;
+  population: number;
+  admin: string;
+  practices: {
+    practiceName: PracticeName;
+    topic: PracticeArea;
+    value: string;
+  }[];
+};
 
 export default function useDataPractices() {
   const { practicesData } = useStaticQuery<PracticesDataQuery>(graphql`
     query PracticesData {
-      practicesData: allAirtable(filter: { table: { eq: "Practices" } }) {
+      practicesData: allAirtable(filter: { table: { regex: "/^Practices/" } }) {
         nodes {
+          table
           data {
             Name
             Topic
@@ -65,6 +80,64 @@ export default function useDataPractices() {
             WV
             WI
             WY
+            Alameda
+            Alpine
+            Amador
+            Butte
+            Calaveras
+            Colusa
+            Contra_Costa
+            Del_Norte
+            El_Dorado
+            Fresno
+            Glenn
+            Humboldt
+            Imperial
+            Inyo
+            Kern
+            Kings
+            Lake
+            Lassen
+            Los_Angeles
+            Madera
+            Marin
+            Mariposa
+            Mendocino
+            Merced
+            Modoc
+            Mono
+            Monterey
+            Napa
+            Nevada
+            Orange
+            Placer
+            Plumas
+            Riverside
+            Sacramento
+            San_Benito
+            San_Bernardino
+            San_Diego
+            San_Francisco
+            San_Joaquin
+            San_Luis_Obispo
+            San_Mateo
+            Santa_Barbara
+            Santa_Clara
+            Santa_Cruz
+            Shasta
+            Sierra
+            Siskiyou
+            Solano
+            Sonoma
+            Stanislaus
+            Sutter
+            Tehama
+            Trinity
+            Tulare
+            Tuolumne
+            Ventura
+            Yolo
+            Yuba
           }
         }
       }
@@ -72,28 +145,52 @@ export default function useDataPractices() {
   `);
 
   const states = useDataStates();
+  const caCounties = useDataCACounties();
 
-  const mapPracticesByState = (
+  const mapPracticesByRegion = (
     practices: PracticesDataQuery['practicesData']['nodes'],
   ) => {
-    let practicesByState = [];
+    let practicesByState: PracticeAreaData[] = [];
     for (const key in states.statesData) {
       practicesByState.push({
         code: key,
         name: states.statesData[key].name,
-        population: states.statesData[key].population,
+        population:
+          parseInt(states.statesData[key].population as string) ??
+          states.statesData[key].population,
         admin: states.statesData[key].admin,
-        practices: practices.map(p => ({
-          practiceName: p.data?.Name as PracticeName,
-          topic: p.data?.Topic as Topic,
-          value: p.data?.[key as stateCode],
-        })),
+        practices: practices
+          .filter(p => p.table === 'Practices')
+          .map(p => ({
+            practiceName: p.data?.Name as PracticeName,
+            topic: p.data?.Topic as PracticeArea,
+            value: p.data?.[key as stateCode] ?? '',
+          })),
       });
     }
-    return practicesByState;
+
+    let practicesByCACounty: PracticeAreaData[] = [];
+    for (const key in caCounties.caCountiesData) {
+      practicesByCACounty.push({
+        code: key,
+        name: caCounties.caCountiesData[key].name,
+        population:
+          parseInt(caCounties.caCountiesData[key].population as string) ??
+          caCounties.caCountiesData[key].population,
+        admin: '', // for inferred type consistency
+        practices: practices
+          .filter(p => p.table === 'Practices - CA Counties')
+          .map(p => ({
+            practiceName: p.data?.Name as PracticeName,
+            topic: p.data?.Topic as PracticeArea,
+            value: p.data?.[key as caCountyCode] ?? '',
+          })),
+      });
+    }
+
+    return { state: practicesByState, county: { CA: practicesByCACounty } };
   };
 
-  const practicesByState = mapPracticesByState(practicesData?.nodes ?? []);
-
-  return { practicesByState, rawPractices: practicesData };
+  const practicesByRegion = mapPracticesByRegion(practicesData?.nodes ?? []);
+  return { practicesByRegion };
 }

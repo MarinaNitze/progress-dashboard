@@ -1,7 +1,6 @@
 import * as React from 'react';
-import { render } from '@testing-library/react';
-
 import Hero from './Hero';
+import { render } from '@testing-library/react';
 
 describe('Hero', () => {
   it('renders Hero component', () => {

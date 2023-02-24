@@ -1,6 +1,5 @@
-import { renderHook } from '@testing-library/react-hooks';
-
 import useScrollDirection from './useScrollDirection';
+import { renderHook } from '@testing-library/react-hooks';
 
 describe('when useScrollDirection rendered', () => {
   afterAll(() => {

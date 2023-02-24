@@ -1,12 +1,11 @@
 import React from 'react';
+import { Link } from 'gatsby';
+import './Breadcrumbs.scss';
 import {
   Breadcrumb,
   BreadcrumbBar,
   BreadcrumbLink,
 } from '@trussworks/react-uswds';
-import { Link } from 'gatsby';
-
-import './Breadcrumbs.scss';
 
 type BreadcrumbProps = {
   crumbLabel: 'topic' | 'recommendation' | string | undefined;

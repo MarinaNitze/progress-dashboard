@@ -1,12 +1,11 @@
+import Layout from './Layout';
 import React from 'react';
+import { mockImageData, mockStaticData } from '../../../test/test-utils';
 import { render } from '@testing-library/react';
 import {
   DefaultSeoQueryQuery,
   HeroAndCardImagesQuery,
 } from '../../../graphql-types';
-import { mockStaticData, mockImageData } from '../../../test/test-utils';
-
-import Layout from './Layout';
 
 describe('Layout', () => {
   beforeEach(() => {

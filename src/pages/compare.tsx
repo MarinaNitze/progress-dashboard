@@ -1,65 +1,65 @@
-import React, { useState } from 'react';
-import { Link } from 'gatsby';
-
 import Breadcrumbs from '../components/breadcrumbs/Breadcrumbs';
 import Hero from '../components/hero/Hero';
 import Layout from '../components/layout/Layout';
-
-import useDataPractices from '../hooks/useDataPractices';
+import React, { useState } from 'react';
 import useGatsbyImages from '../hooks/useGatsbyImages';
-
+import { Link } from 'gatsby';
+import { PracticeArea } from '../types/compare';
 import './home.scss';
-import { COMPARE_TOPIC_FULL_TITLE_MAP } from '../utils/compare';
-import { Topic } from '../types/compare';
+
+enum CompareDashboardTitle {
+  backgroundChecks = 'Out of State Child Abuse and Neglect Checks (Adam Walsh Checks)',
+  familyFinding = 'Kin Finding (Nationwide)',
+  familyFinding_CACounties = 'Kin Finding (California)',
+}
+
+type ByLetter = {
+  letter: string;
+  compareDashboards: CompareDashboardTitle[];
+};
+
+function getDashboardPracticeArea(
+  dashboard: CompareDashboardTitle,
+): PracticeArea {
+  if (dashboard.includes('Adam Walsh')) return 'Background Checks';
+  return 'Family Finding';
+}
 
 export default function Compare() {
   const searchIcon = useGatsbyImages()['images/header/search.svg'].publicURL;
-  const [input, setInput] = useState('');
-  const OgPractices = [
-    ...new Set(
-      useDataPractices().rawPractices.nodes.map(
-        node => node.data?.Topic as Topic,
-      ),
-    ),
-  ];
-  const [practices, setPractices] = useState(OgPractices);
+  const [searchString, setSearchString] = useState('');
 
-  type alphabetRecType = {
-    letter: string;
-    practice: string[];
-  };
+  const [filteredCompareDashboards, setFilteredCompareTopics] = useState(
+    Object.values(CompareDashboardTitle),
+  );
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e?.preventDefault();
   };
 
-  const handleInput = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setInput(e?.currentTarget.value);
-    const filteredPractices = OgPractices.filter(
-      practice =>
-        COMPARE_TOPIC_FULL_TITLE_MAP[practice]
-          ?.toLowerCase()
-          .includes(e?.currentTarget.value.toLowerCase()) ?? false,
+  const handleInputOnChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setSearchString(e?.currentTarget.value);
+    setFilteredCompareTopics(
+      Object.values(CompareDashboardTitle).filter(dashboard =>
+        dashboard.toLowerCase().includes(e?.currentTarget.value.toLowerCase()),
+      ),
     );
-    setPractices(filteredPractices);
   };
 
   const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
-  const reducePracticesAlphabet = () => {
-    return alphabet.reduce<alphabetRecType[]>((acc, char) => {
-      const orderedPractices = practices
-        .map(practice => practice && COMPARE_TOPIC_FULL_TITLE_MAP[practice])
-        .filter(practice => practice && practice[0].toUpperCase() === char);
-      return [...acc, { letter: char, practice: orderedPractices }];
+  const getCompareDashboardsByLetter = () => {
+    return alphabet.reduce<ByLetter[]>((acc, char) => {
+      return [
+        ...acc,
+        {
+          letter: char,
+          compareDashboards: filteredCompareDashboards.filter(
+            dash => dash && dash[0].toUpperCase() === char,
+          ),
+        },
+      ];
     }, []);
   };
-
-  const getPraticeNameFromFullTitle: (fullTitle: string) => Topic = (
-    fullTitle: string,
-  ) =>
-    (Object.entries(COMPARE_TOPIC_FULL_TITLE_MAP).find(
-      ([_, value]) => value === fullTitle,
-    ) ?? [''])[0] as Topic;
 
   return (
     <Layout>
@@ -87,40 +87,46 @@ export default function Compare() {
               type="search"
               name="search"
               placeholder="Search practice Areas"
-              value={input}
-              onChange={handleInput}
+              value={searchString}
+              onChange={handleInputOnChange}
             />
             <img className="search-icon" src={searchIcon} alt="search icon" />
           </form>
         </section>
         <section className="recommendations-section" id="test-section-id">
-          {reducePracticesAlphabet().map(alphabetPractice => {
-            return (
-              alphabetPractice.practice.length > 0 && (
-                <section
-                  id={`${alphabetPractice.letter}-section`}
-                  key={alphabetPractice.letter}
-                >
-                  <h2>{alphabetPractice.letter}</h2>
-                  <ul>
-                    {alphabetPractice.practice.map(practice => {
-                      return (
-                        <li key={practice}>
-                          <Link
-                            to={`/compare/${getPraticeNameFromFullTitle(
-                              practice,
-                            )}`}
-                          >
-                            {practice}
-                          </Link>
-                        </li>
-                      );
-                    })}
-                  </ul>
-                </section>
-              )
-            );
-          })}
+          {getCompareDashboardsByLetter().map(
+            ({ letter, compareDashboards }) => {
+              return (
+                compareDashboards.length > 0 && (
+                  <section id={`${letter}-section`} key={letter}>
+                    <h2>{letter}</h2>
+                    <ul>
+                      {compareDashboards.map(dash => {
+                        return (
+                          <li key={dash}>
+                            <Link
+                              to={
+                                dash ===
+                                CompareDashboardTitle.familyFinding_CACounties
+                                  ? `/compare/CA/${getDashboardPracticeArea(
+                                      dash,
+                                    )}`
+                                  : `/compare/states/${getDashboardPracticeArea(
+                                      dash,
+                                    )}`
+                              }
+                            >
+                              {dash}
+                            </Link>
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  </section>
+                )
+              );
+            },
+          )}
         </section>
       </main>
     </Layout>

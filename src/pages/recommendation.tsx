@@ -1,15 +1,11 @@
-import React, { useState } from 'react';
-import { Link } from 'gatsby';
-
 import Breadcrumbs from '../components/breadcrumbs/Breadcrumbs';
+import content from './content/recommendations.content.yml';
 import Hero from '../components/hero/Hero';
 import Layout from '../components/layout/Layout';
-
-import { Recommendation as RecommendationType } from '../types/recommendation';
-import content from './content/recommendations.content.yml';
-
+import React, { useState } from 'react';
 import useGatsbyImages from '../hooks/useGatsbyImages';
-
+import { Link } from 'gatsby';
+import { Recommendation as RecommendationType } from '../types/recommendation';
 import './home.scss';
 
 type alphabetRecType = {

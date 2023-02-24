@@ -1,9 +1,9 @@
 import React from 'react';
-import { Topic as TopicType } from '../types/topic';
-import { Recommendation as RecommendationType } from '../types/recommendation';
-import { Link } from 'gatsby';
-import { Button } from '@trussworks/react-uswds';
 import ReactMarkdown from 'react-markdown';
+import { Button } from '@trussworks/react-uswds';
+import { Link } from 'gatsby';
+import { Recommendation as RecommendationType } from '../types/recommendation';
+import { Topic as TopicType } from '../types/topic';
 import { TypeFilter } from '../types/typeFilter';
 
 type GeoState = {

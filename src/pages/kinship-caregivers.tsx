@@ -1,11 +1,10 @@
-import { Grid, GridContainer } from '@trussworks/react-uswds';
-import React from 'react';
-import ReactMarkdown from 'react-markdown';
 import Breadcrumbs from '../components/breadcrumbs/Breadcrumbs';
 import Hero from '../components/hero/Hero';
 import Layout from '../components/layout/Layout';
+import React from 'react';
+import ReactMarkdown from 'react-markdown';
 import SideAnchorNav from '../components/side-anchor-nav/SideAnchorNav';
-
+import { Grid, GridContainer } from '@trussworks/react-uswds';
 import './home.scss';
 
 const ABOUT = `

@@ -1,6 +1,5 @@
 import React from 'react';
 import useGatsbyImages from '../../hooks/useGatsbyImages';
-
 import './Footer.scss';
 
 const paths = [

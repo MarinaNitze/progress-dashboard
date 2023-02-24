@@ -1,15 +1,14 @@
-import React, { useState, useRef } from 'react';
+import React, { useRef, useState } from 'react';
+import useGatsbyImages from '../../hooks/useGatsbyImages';
+import useScrollDirection from '../../hooks/useScrollDirection';
+import { GatsbyLinkProps } from 'gatsby-link';
 import { Link } from 'gatsby';
+import './Header.scss';
 import {
   Header as HeaderCmp,
   NavMenuButton,
   PrimaryNav,
 } from '@trussworks/react-uswds';
-import { GatsbyLinkProps } from 'gatsby-link';
-import useGatsbyImages from '../../hooks/useGatsbyImages';
-import useScrollDirection from '../../hooks/useScrollDirection';
-
-import './Header.scss';
 
 type HeaderProps = {
   headerLinks: HeaderLinks;

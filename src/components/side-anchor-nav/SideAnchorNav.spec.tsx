@@ -1,8 +1,7 @@
 import React from 'react';
-import { render } from '@testing-library/react';
-import { AnchorLinkProps } from 'gatsby-plugin-anchor-links';
-
 import SideAnchorNav from './SideAnchorNav';
+import { AnchorLinkProps } from 'gatsby-plugin-anchor-links';
+import { render } from '@testing-library/react';
 
 const anchorLinks: AnchorLinkProps[] = [
   {

@@ -1,8 +1,7 @@
+import Footer from './Footer';
 import React from 'react';
 import { mockGatsbyImageData } from '../../../test/test-utils';
 import { render } from '@testing-library/react';
-
-import Footer from './Footer';
 
 describe('Footer', () => {
   beforeEach(() => {

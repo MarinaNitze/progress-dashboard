@@ -1,18 +1,17 @@
+import Card from '../components/card/Card';
+import content from '../pages/content/topics.content.yml';
+import mainPageContent from '../pages/index.content.yml';
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import { navigate } from 'gatsby';
+import { Topic } from '../types/topic';
+import './Topics.scss';
 import {
   CardGroup,
   Grid,
   GridContainer,
   Button,
 } from '@trussworks/react-uswds';
-
-import { Topic } from '../types/topic';
-import Card from '../components/card/Card';
-import './Topics.scss';
-import content from '../pages/content/topics.content.yml';
-import mainPageContent from '../pages/index.content.yml';
 
 type TopicSection = {
   topicSection: { topics: string[]; popularTopics: string };

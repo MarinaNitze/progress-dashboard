@@ -1,5 +1,11 @@
 import React, { ReactElement, ReactNode, useEffect, useState } from 'react';
+import ReactMarkdown from 'react-markdown';
+import useGatsbyImages from '../../hooks/useGatsbyImages';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import { GridProps } from '@trussworks/react-uswds/lib/components/grid/Grid/Grid';
+import { ImageSharp } from '../../../graphql-types';
 import { navigate } from 'gatsby';
+import './Card.scss';
 import {
   Card as CardCmp,
   CardBody,
@@ -8,13 +14,6 @@ import {
   CardFooter,
   Button,
 } from '@trussworks/react-uswds';
-import ReactMarkdown from 'react-markdown';
-import { GridProps } from '@trussworks/react-uswds/lib/components/grid/Grid/Grid';
-
-import './Card.scss';
-import useGatsbyImages from '../../hooks/useGatsbyImages';
-import { ImageSharp } from '../../../graphql-types';
-import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
 export type CardProps = {
   title: string;
