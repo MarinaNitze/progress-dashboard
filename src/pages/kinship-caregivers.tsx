@@ -70,6 +70,7 @@ These standards are being developed by a group of national organizations includi
  [Children’s Rights](https://www.childrensrights.org/),
  [CWPolicy](https://cwpolicy.com/),
  [Generations United](https://www.gu.org/),
+ [National Association for Regulatory Administration](https://www.naralicensing.org/),
  [New America’s Resource Family Working Group](https://www.childwelfareplaybook.com/),
  and [Think of Us](https://www.thinkof-us.org/).
 
