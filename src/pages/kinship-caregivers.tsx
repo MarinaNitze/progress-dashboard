@@ -18,6 +18,8 @@ The goal of these Standards for Kinship Caregivers is for every kinship caregive
 
 We are co-designing these standards with a diverse array of kinship caregivers from around the country, and are seeking as much input from states and child welfare workers as possible, too. This can ultimately enable greater permanency and well-being for many children and families.
 
+The recommended standards will be for state agencies, and not be designed specifically for tribal nations that license kinship caregivers. We recognize the great diversity in Indian Country with 574 federally-recognized tribal nations and the sovereign authority of tribal nations to develop their own licensing standards. The recommended standards are however intended to provide examples of how state agencies can improve their kinship care licensing standards as they apply to a diverse group of children and families under their jurisdiction. 
+
 `;
 
 const GET_INVOLVED = `
@@ -70,6 +72,7 @@ These standards are being developed by a group of national organizations includi
  [Children’s Rights](https://www.childrensrights.org/),
  [CWPolicy](https://cwpolicy.com/),
  [Generations United](https://www.gu.org/),
+ [National Indian Child Welfare Association](https://www.nicwa.org/),
  [National Association for Regulatory Administration](https://www.naralicensing.org/),
  [New America’s Resource Family Working Group](https://www.childwelfareplaybook.com/),
  and [Think of Us](https://www.thinkof-us.org/).
