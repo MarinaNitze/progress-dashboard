@@ -62,11 +62,7 @@
 
     .implementation-legend {
       display: flex;
-      width: 40%;
-
-      :first-child {
-        padding-right: 1.5rem;
-      }
+      flex-wrap: wrap;
 
       @media (max-width: map-get($breakpoints, 'mobile-lg')) {
         width: 100%;
@@ -77,16 +73,50 @@
     .legend-area {
       display: flex;
       align-items: center;
+      width: 50%;
 
-      .implemented-icon,
-      .partial-icon {
-        height: 20px;
-        margin-top: 0.25rem;
-        padding-right: 0.75rem;
+      p {
+        font-size: 1.15rem;
+        margin: 0;
+      }
+    }
+    .show-hide-toggles {
+      button {
+        font-size: 1.15rem;
       }
     }
   }
-}
+  .icon {
+    width: 20px;
+    min-width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: .75rem;
+
+    &.in-progress {
+      background-color: #fae4ba;
+    }
+    &.implemented {
+      background-color: #f2b039;
+    }
+    &.not-implemented {
+      background-color: #d9d9d9;
+    }
+    &.dont-know {
+      border-color: #d9d9d9;
+      border-width: 1px;
+      border-style: solid;
+      background: linear-gradient( -45deg, white, white 49%, #d9d9d9 49%, #d9d9d9 51%, white 51% )
+    }
+
+    &.inline {
+      width: 15px;
+      height: 15px;
+      margin-top: .2rem;
+      margin-right: .5rem;
+    }
+  }
+} 
 
 .coming-soon {
   font-size: 75px;
