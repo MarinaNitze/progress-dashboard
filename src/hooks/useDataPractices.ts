@@ -188,7 +188,12 @@ export default function useDataPractices() {
       });
     }
 
-    return { state: practicesByState, county: { CA: practicesByCACounty } };
+    return {
+      state: practicesByState,
+      county: {
+        CA: practicesByCACounty,
+      },
+    };
   };
 
   const practicesByRegion = mapPracticesByRegion(practicesData?.nodes ?? []);
