@@ -4,34 +4,20 @@ import Layout from '../components/layout/Layout';
 import React, { useState } from 'react';
 import useGatsbyImages from '../hooks/useGatsbyImages';
 import { Link } from 'gatsby';
-import { PracticeArea } from '../types/compare';
 import './home.scss';
-
-enum CompareDashboardTitle {
-  backgroundChecks = 'Out of State Child Abuse and Neglect Checks (Adam Walsh Checks)',
-  familyFinding = 'Kin Finding (Nationwide)',
-  familyFinding_CACounties = 'Kin Finding (California)',
-}
+import { COMPARE_DASHBOARDS, getPathToDashboard } from '../utils/compare';
 
 type ByLetter = {
   letter: string;
-  compareDashboards: CompareDashboardTitle[];
+  compareDashboards: string[];
 };
-
-function getDashboardPracticeArea(
-  dashboard: CompareDashboardTitle,
-): PracticeArea {
-  if (dashboard.includes('Adam Walsh')) return 'Background Checks';
-  return 'Family Finding';
-}
 
 export default function Compare() {
   const searchIcon = useGatsbyImages()['images/header/search.svg'].publicURL;
   const [searchString, setSearchString] = useState('');
 
-  const [filteredCompareDashboards, setFilteredCompareTopics] = useState(
-    Object.values(CompareDashboardTitle),
-  );
+  const [filteredCompareDashboards, setFilteredCompareDashboards] =
+    useState(COMPARE_DASHBOARDS);
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e?.preventDefault();
@@ -39,8 +25,8 @@ export default function Compare() {
 
   const handleInputOnChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSearchString(e?.currentTarget.value);
-    setFilteredCompareTopics(
-      Object.values(CompareDashboardTitle).filter(dashboard =>
+    setFilteredCompareDashboards(
+      COMPARE_DASHBOARDS.filter(dashboard =>
         dashboard.toLowerCase().includes(e?.currentTarget.value.toLowerCase()),
       ),
     );
@@ -104,20 +90,7 @@ export default function Compare() {
                       {compareDashboards.map(dash => {
                         return (
                           <li key={dash}>
-                            <Link
-                              to={
-                                dash ===
-                                CompareDashboardTitle.familyFinding_CACounties
-                                  ? `/compare/CA/${getDashboardPracticeArea(
-                                      dash,
-                                    )}`
-                                  : `/compare/states/${getDashboardPracticeArea(
-                                      dash,
-                                    )}`
-                              }
-                            >
-                              {dash}
-                            </Link>
+                            <Link to={getPathToDashboard(dash)}>{dash}</Link>
                           </li>
                         );
                       })}

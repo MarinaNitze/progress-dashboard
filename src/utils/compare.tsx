@@ -1,6 +1,7 @@
 import React, { ReactNode } from 'react';
 import { PracticeArea, PracticeLinkMap } from '../types/compare';
 
+///////////// mappings for `src/pages/[regionKey]/[practiceArea].tsx` /////////
 export const COMPARE_DASHBOARD_FULL_TITLE_MAP: Record<PracticeArea, string> = {
   'Background Checks':
     'Out of State Child Abuse and Neglect Checks (Adam Walsh Checks)',
@@ -73,3 +74,35 @@ export const PRACTICE_AREA_CONTENT_MAP: Record<PracticeArea, ReactNode> = {
     </div>
   ),
 };
+
+/////////// HELPERS FOR `src/pages/compare.tsx` //////////////////////////////////
+function getCompareDashboards(
+  searchTitles: string[],
+  titleMapping: [PracticeArea, string],
+) {
+  const [practiceArea, fullTitle] = titleMapping;
+  if (practiceArea === 'Family Finding') {
+    searchTitles.push(`${fullTitle} (Nationwide)`);
+    searchTitles.push(`${fullTitle} (CA Counties)`);
+  } else {
+    searchTitles.push(fullTitle);
+  }
+  return searchTitles;
+}
+export const COMPARE_DASHBOARDS = (
+  Object.entries(COMPARE_DASHBOARD_FULL_TITLE_MAP) as [PracticeArea, string][]
+).reduce(getCompareDashboards, [] as string[]);
+
+function getPracticeAreaForDashboard(dashboard: string): string {
+  const [practiceArea] = Object.entries(COMPARE_DASHBOARD_FULL_TITLE_MAP).find(
+    ([_, fullTitle]) => dashboard.includes(fullTitle),
+  ) ?? [''];
+
+  return practiceArea;
+}
+
+export function getPathToDashboard(dashboard: string) {
+  return dashboard.includes('CA Counties')
+    ? `/compare/CA/${getPracticeAreaForDashboard(dashboard)}`
+    : `/compare/states/${getPracticeAreaForDashboard(dashboard)}`;
+}
