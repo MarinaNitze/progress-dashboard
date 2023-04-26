@@ -9,7 +9,7 @@ export default function CompareHideCardToggles({
   setHideAll,
 }: CompareHideCardTogglesProps) {
   return (
-    <div className="flex-start mobile-col">
+    <div className="flex-start mobile-col show-hide-toggles">
       <p className="show-hide-title">Implemented Recommendations</p>
       <div className="flex-start">
         <button

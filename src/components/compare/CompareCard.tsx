@@ -1,7 +1,6 @@
 import Card from '../card/Card';
 import ProgressChart from '../progress-chart/progressChart';
 import React from 'react';
-import { ImplementedIcon, PartialIcon } from './CompareLegend';
 import { Link } from 'gatsby';
 import { PRACTICE_AREA_PRACTICE_LINKS_MAP } from '../../utils/compare';
 import { PracticeArea, Value } from '../../types/compare';
@@ -13,24 +12,6 @@ type CompareCardProps = {
   forceHide: boolean | undefined;
 };
 
-const createCardSummaryContent = (data: PracticeAreaData) => {
-  const fullyImplementedCount = data.practices.filter(
-    p => p.value === Value.full,
-  ).length;
-  const partiallyImplementedCount = data.practices.filter(
-    p => p.value === Value.partial,
-  ).length;
-
-  return (
-    <div className="centered">
-      {!!fullyImplementedCount ? <ImplementedIcon /> : <PartialIcon />}
-      {` ${fullyImplementedCount + partiallyImplementedCount} of ${
-        data.practices.length
-      } implemented or in progress`}
-    </div>
-  );
-};
-
 const createCardContent = (
   data: PracticeAreaData,
   practiceArea: PracticeArea,
@@ -40,21 +21,22 @@ const createCardContent = (
     <div>
       <ul>
         {data.practices.map(p => (
-          <li
-            key={p.practiceName}
-            className={
-              p.value === Value.full || p.value === Value.partial
-                ? 'implemented'
-                : 'not-implemented'
-            }
-          >
-            {p.value === Value.full ? (
-              <ImplementedIcon />
-            ) : p.value === Value.partial ? (
-              <PartialIcon />
-            ) : (
-              ''
-            )}
+          <li key={p.practiceName}>
+            <div
+              className={`icon 
+              ${p.value === Value.full ? 'implemented' : ''} 
+              ${p.value === Value.not ? 'not-implemented' : ''}
+              ${p.value === Value.partial ? 'in-progress' : ''} 
+              ${p.value === Value.na ? 'dont-know' : ''}
+              `}
+              title={
+                p.value === Value.na
+                  ? 'No data'
+                  : p.value === Value.partial
+                  ? 'In progress'
+                  : p.value
+              }
+            ></div>
             {PRACTICE_LINK_MAP[p.practiceName] ? (
               <Link
                 to={PRACTICE_LINK_MAP[p.practiceName] as string}
@@ -78,25 +60,34 @@ export default function CompareCard({
   forceHide,
 }: CompareCardProps) {
   const practicesCountTotal = data.practices.length;
-  const practicesCountImplemented = data.practices.filter(
-    p => p.value === Value.full,
-  ).length;
+  const practicesCounts = data.practices.reduce(
+    (counts, practice) => {
+      if (practice.value === Value.full) counts[Value.full] += 1;
+      if (practice.value === Value.na) counts[Value.na] += 1;
+      if (practice.value === Value.partial) counts[Value.partial] += 1;
+
+      return counts;
+    },
+    { [Value.full]: 0, [Value.na]: 0, [Value.partial]: 0 },
+  );
 
   return (
     <Card
       key={data.code}
       title={data.name}
       content={createCardContent(data, practiceArea)}
-      placeholderHiddenContent={createCardSummaryContent(data)}
+      placeholderHiddenContent={<></>}
       layout="compare"
       className="compare-width"
       image={
         <ProgressChart
           numberOfSegments={practicesCountTotal}
-          implementedCount={practicesCountImplemented}
+          implementedCount={practicesCounts[Value.full]}
+          inProgressCount={practicesCounts[Value.partial]}
+          dontKnowCount={practicesCounts[Value.na]}
         />
       }
-      imgAlt={`${practicesCountImplemented} out of ${practicesCountTotal}`}
+      imgAlt={`${practicesCounts[Value.full]} out of ${practicesCountTotal}`}
       forceHide={forceHide}
       defaultHidden={true}
       showText="Show recommendations"

@@ -136,44 +136,19 @@ li.usa-card {
       text-decoration: underline;
     }
 
-    .centered {
-      width: 120%;
-      margin-left: -10%;
-      text-align: center;
-      .implemented-icon,
-      .partial-icon {
-        margin-left: 0;
-      }
-    }
-
     ul {
       list-style: none;
       padding-inline-start: 0;
       li {
         margin-bottom: 0.5rem;
+        line-height: 1.4rem;
+        display: flex;
         a,
         span {
           font-size: 1rem;
         }
       }
     }
-  }
-
-  .implemented-icon {
-    margin-left: -1.5rem;
-  }
-  .partial-icon {
-    margin-left: -1.5rem;
-    height: 15px;
-  }
-
-  .not-implemented {
-    padding-left: 1.2rem;
-    color: $not-implemented-text;
-  }
-
-  .implemented {
-    padding-left: 1.5rem;
   }
   .usa-card {
     width: 15rem;
