@@ -74,7 +74,7 @@ export default function About() {
         addHash('Benefits of Membership', '#benefits-of-membership'),
     },
     {
-      to: `/about#freeEvaluation`,
+      to: `/about#currentMembers`,
       title: 'Current Members',
       onAnchorLinkClick: () => addHash('Current Members', '#current-members'),
     },
