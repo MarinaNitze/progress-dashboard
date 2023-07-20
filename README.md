@@ -1,4 +1,4 @@
-# Progress Dashboard
+# Child Welfare Progress Dashboard
 
 The Child Welfare Progress Dashboard is an actionable playbook of best practices in child welfare and foster care, put together by a working group of over twenty member agencies. The playbook details best practices across foster care, from recruitment to placements, along with implementation and cost details. Additionally, the dashboard feature allows users to compare which practices have been implemented by 55 states and territories.
 
