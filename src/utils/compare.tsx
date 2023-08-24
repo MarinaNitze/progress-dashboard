@@ -36,7 +36,7 @@ export const PRACTICE_AREA_PRACTICE_LINKS_MAP: Record<
   PracticeArea,
   PracticeLinkMap
 > = {
-  'Family Finding': family_finding_link_map,
+  'Kin Finding': family_finding_link_map,
   'Background Checks': background_checks_link_map,
 };
 
@@ -63,7 +63,7 @@ export const PRACTICE_AREA_CONTENT_MAP: Record<PracticeArea, ReactNode> = {
       </p>
     </div>
   ),
-  'Family Finding': (
+  'Kin Finding': (
     <div>
       <p>
         The best thing for a child in foster care is living with an adult they
@@ -85,7 +85,7 @@ function getCompareDashboards(
   titleMapping: [PracticeArea, string],
 ) {
   const [practiceArea, fullTitle] = titleMapping;
-  if (practiceArea === 'Family Finding') {
+  if (practiceArea === 'Kin Finding') {
     searchTitles.push(`${fullTitle} (Nationwide)`);
     searchTitles.push(`${fullTitle} (CA Counties)`);
   } else {
