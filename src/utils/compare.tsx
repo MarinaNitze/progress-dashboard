@@ -5,7 +5,7 @@ import { PracticeArea, PracticeLinkMap } from '../types/compare';
 export const COMPARE_DASHBOARD_FULL_TITLE_MAP: Record<PracticeArea, string> = {
   'Background Checks':
     'Out of State Child Abuse and Neglect Checks (Adam Walsh Checks)',
-  'Family Finding': 'Kin Finding',
+  'Kin Finding': 'Kin Finding',
 };
 
 const background_checks_link_map: PracticeLinkMap = {
@@ -18,18 +18,18 @@ const background_checks_link_map: PracticeLinkMap = {
 };
 
 const family_finding_link_map: PracticeLinkMap = {
-  'Use social media to find kin': '/recommendation/use-social-media',
-  'Ongoing kin-finding activities': '/recommendation/ask-about-connections',
-  'Require senior staff sign-off for non-kin placements':
-    '/recommendation/senior-staff-sign-off-for-non-relative-placements',
-  'Ask youth for placement options':
-    '/recommendation/ask-about-supportive-adults',
-  'Ask kin for more kin':
-    '/recommendation/ask-family-members-for-more-family-members',
-  'Formal plan to stay connected to kin':
-    '/recommendation/plan-for-youth-to-keep-connected-supportive-adults',
+  'Ask youth about their kin': '/recommendation/ask-about-supportive-adults',
   'Expansive legal definition of kin':
     '/recommendation/Use-expansive-legal-definition-of-kin',
+  'Require senior staff sign-off for non-kin placements':
+    '/recommendation/senior-staff-sign-off-for-non-relative-placements',
+  'Maintain a shared list of kin':
+    '/recommendation/ask-family-members-for-more-family-members',
+  'Dedicated kin-finding responsibility':
+    '/recommendation/ask-about-connections',
+  'Use social media to find kin': '/recommendation/use-social-media',
+  'Use a variety of contact methods':
+    '/recommendation/plan-for-youth-to-keep-connected-supportive-adults',
 };
 
 export const PRACTICE_AREA_PRACTICE_LINKS_MAP: Record<
@@ -56,6 +56,10 @@ export const PRACTICE_AREA_CONTENT_MAP: Record<PracticeArea, ReactNode> = {
         (paying) foster parents, particularly for kinship caregivers who already
         have placement of children but who do not receive any financial support
         until they are licensed.
+      </p>
+      <p>
+        While the playbook has 21 recommended practices for kin-finding, this
+        progress dashboard focuses on the Top 7.
       </p>
     </div>
   ),

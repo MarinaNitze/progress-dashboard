@@ -8,7 +8,7 @@ export const enum Value {
 
 // Must match values in the "Topic" column of the Progress Dashboard airtable
 // (Renaming here because "Topic" refers to something else! see Topic)
-export type PracticeArea = 'Background Checks' | 'Family Finding';
+export type PracticeArea = 'Background Checks' | 'Kin Finding';
 
 // Must match values in the "Name" column of the Progress Dashboard airtable
 export type PracticeName =
@@ -18,11 +18,11 @@ export type PracticeName =
   | 'General inbox for receiving requests'
   | 'Accept electronic requests'
   | 'Use social media to find kin'
-  | 'Ongoing kin-finding activities'
+  | 'Maintain a shared list of kin'
   | 'Require senior staff sign-off for non-kin placements'
-  | 'Ask youth for placement options'
-  | 'Ask kin for more kin'
-  | 'Formal plan to stay connected to kin'
+  | 'Ask youth about their kin'
+  | 'Use a variety of contact methods'
+  | 'Dedicated kin-finding responsibility'
   | 'Expansive legal definition of kin';
 
 export type PracticeLinkMap = Partial<Record<PracticeName, string>>;
