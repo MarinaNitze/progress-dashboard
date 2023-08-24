@@ -57,10 +57,6 @@ export const PRACTICE_AREA_CONTENT_MAP: Record<PracticeArea, ReactNode> = {
         have placement of children but who do not receive any financial support
         until they are licensed.
       </p>
-      <p>
-        While the playbook has 21 recommended practices for kin-finding, this
-        progress dashboard focuses on the Top 7.
-      </p>
     </div>
   ),
   'Kin Finding': (
@@ -74,6 +70,11 @@ export const PRACTICE_AREA_CONTENT_MAP: Record<PracticeArea, ReactNode> = {
       <p>
         When systems adopt more effective kin-finding practices, they can
         achieve initial kinship placement rates in excess of 80%.
+      </p>
+      <p>
+        While the playbook has 21 recommended practices for kin-finding, this
+        progress dashboard focuses on the Top 7. As states adopt them, we will
+        focus the dashboard on other practices.
       </p>
     </div>
   ),
