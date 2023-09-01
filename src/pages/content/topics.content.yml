@@ -85,7 +85,7 @@ topics:
       image: /src/images/heros/all-topics.jpg
       imgAlt: Kin Finding
     layout: topic
-    title: finding-family-members
+    title: finding-kin
     image: /src/images/topics/Topic-FF.svg
     about:
       Children in care do better when they’re placed with family members or other
@@ -104,38 +104,13 @@ topics:
 
 
       But most youth enter foster care with more connections than they leave with.
-    what: >-
-      **Ask young people.** Children often have more supportive people in their
-      lives than you — or they — realize. And the ways you ask children about
-      their networks can get different results. For example, try questions like,
-      “If you were stuck and needed a ride, who would you call?” or "Who came to your birthday party?" and use tools like heart maps to draw out more connections. 
-
-
-      **Use social media.** While no technology can automate kin-finding, looking up known kin on social media can uncover even more potential supportive adults and placements, and makes it easier to reach them. 
-
-
-      **Try the “snowball method.”** The “snowball method” is when you ask one contact for more contacts. Each time you connect with someone in a child’s life, ask them for suggestions of other people to contact. 
-
-
-      **Document as you go.** Support networks can get complicated. Find a template that works for you — like a genogram or heart map — and keep it up to date as you identify more connections. 
-
-
-      **Maintain an expansive definition of kin.** Children don't care if they're a certain degree of legally related to the adults they love. Kin includes everyone who matters to a child, including teachers, godparents, and neighbors. 
-
-
-      **Make plans to keep kids connected to their kin.** Kin are useful for far more than "just" placements. Every child in care should have a plan for staying connected with all their kin. Over time, this support network can ensure that child never has to live with a stranger in foster care.
-
-
-      **Never stop looking.** Finding kin should be an ongoing activity. Missing connections may surface or have changes in circumstances, and new kinship relationships can develop over time, too.
-
-
-      **Shift placement desk incentives** Require a supervisor's signature for any non-kin placements, even in the middle of the night, to encourage the placement desk to prioritize finding kin placements.
     recommendations:
+      - ask-about-supportive-adults
+
       - use-heart-map
       - establish-a-dedicated-family-finding-team
       - ask-family-members-for-more-family-members
       - ask-about-connections
-      - ask-about-supportive-adults
       - use-social-media
       - make-a-genogram
       - keeping-in-touch-with-kin-formal-responsibility
