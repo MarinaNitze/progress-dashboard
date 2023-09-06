@@ -234,54 +234,36 @@ recommendations:
       Download Michigan’s Relative Notification form [on their list of
       Foster Care
       Forms](https://www.michigan.gov/mdhhs/0,5885,7-339-71551_7199_54039---,00.html).
-  - heading: Establish a dedicated family-finding team
+  - heading: Establish a dedicated family-finding responsibility
     costs:
-      - FTE salaries (which may be able to be repurposed from other areas)
+      - Leadership and staff time to determine the best
+      - Updates to policy, position descriptions, and training to affirm kin-finding responsibilities
+      - Resources for the employees with kin-finding responsibility to carry out their job successfully
+      - Human resources and recruitment assistance if the shift in responsibility requires new training and/or staffing
     inspiration: >-
-      At least one of our child welfare system members uses and recommends each
-      of these tools for finding relatives of youth in foster care. The tools
-      work best when coupled with a genogram.
+      * In **Indiana**, kin finding metrics are used in performance evaluations.
 
+      * **Wisconsin** has a [concise guide](https://drive.google.com/file/d/1vhn78eupW25aIhfTGSVri1rh2y_0GEQ9/view) for kin-finding responsibilities, including suggested meeting agendas.
 
-      * [Accurint](https://www.accurint.com/): LexisNexis tool for searching records.
-
-      * [TLOxp (The Last One)](https://www.tlo.com/): Records search tool from TransUnion, one of the 3 credit bureaus. 
-
-      * [Find a Grave](https://www.findagrave.com/): This tool can be helpful for completing genograms. 
-
-      * **[Facebook](https://www.facebook.com/):** Look at public photos, posts, and friend lists to find family members.
+      * **Kevin’s Campbell’s Family Finding Model** credits having a designated specialist whose primary job is to carry out kin-finding activities as a key piece of effective implementation.
     about: >-
-      Effective family-finding requires a specialized skill set, from being
-      savvy with social media to engaging newfound kin without scaring them. Not
-      every case worker has these skills, and most already have demanding
-      workloads. 
-
-
-      A small team dedicated to finding family will help:
-
-
-      * Free up case workers for other tasks
-
-      * Test out promising new strategies and standardize effective practices 
-
-      * Save money on subscription-based family-finding tools
-
-
-      Form a dedicated family-finding team for your child welfare system, instead of relying on individual case workers to find kin for the children on their caseload.
+      The old adage that “when it’s everybody’s job, it’s nobody’s job” rings especially true in kin-finding. While every team member can play a valuable role in identifying, reaching out to, and maintaining kin connections, it also needs to be somebody’s formal responsibility at the end of the day.
+      Whose responsibility may vary based on your agency; a small team may thrive when the child’s case worker is also responsible for kin-finding, while another agency may need a focused kin-finding team.
     how: >-
-      * Create a new team or department for family finding.
+      * Determine the right place for kin-finding responsibility in your agency. If unsure, conduct a pilot to try out multiple arrangements, with feedback from employees.
 
-      * Charge this new team with specific tasks, like:
+      * Make a process map of the kin-finding process and all its expected steps. Confirm that the responsibilities and resources are assigned correctly, and that no steps are skipped in the transition.
 
-        * Using family-finding tools
-        * Making initial contacts with potential kin
-        * Establishing plans for staying in touch with kin
-        * Searching for more kin at regular intervals
-        * Prioritizing kin searches for children who are currently placed with non-kin
-      * Put processes in place to ensure regular communication and collaboration across teams. Even with a dedicated team, finding kin is still everyone’s responsibility. Other case workers, planning meeting attendees, and young people are all resources for identifying and locating more kin.
-    outcome: Member systems with dedicated family-finding teams report
-      higher-than-average rates of kin placement.
-    title: establish-a-dedicated-family-finding-team
+      * Ask a variety of employees for their feedback. One team may be happy with a status quo, while another team may be frustrated that they regularly find available kin far into a child’s case.
+
+      * Detail metrics for success. New metrics should be rolled out slowly and with ample feedback. An example metric is % of initial kin placements (out of all placements).
+
+      * Empower team members who are ultimately responsible for kin-finding with the ability to make changes in other areas of the agency in support of kin–finding.
+
+      * Once determined, update position descriptions, performance reviews, and other collateral to make responsibilities clear.
+
+      * If you have a separate kin-finding team, require that they work with the child, the parents, and the child’s worker. Kin-finding cannot be done in isolation or without talking to the child and their parent(s) (if available).
+    title: establish-a-dedicated-family-finding-responsibility
     benefits:
       - Find more kin who can take placement and/or serve as lifelong support
         for vulnerable youth
@@ -3156,3 +3138,136 @@ recommendations:
           * [Implementations and operations overview](https://www.aspentechpolicyhub.org/wp-content/uploads/Oklahoma-1-Implementation-Operations-Overview-2023.pdf)
           * [Self-service portal walkthrough video](https://vimeo.com/820718593/5bda54cf4d)
         * [Aspen Tech Policy Hub: Improving the Outcomes of Youth Aging Out of Foster Care](https://www.aspentechpolicyhub.org/project/improving-the-outcomes-of-youth-aging-out-of-fostercare/)
+  - title: maintain-a-shared-list-of-kin
+    heading: Maintain a shared list of kin
+    about:
+      Kin are often lost in case notes or handwritten paperwork. To ensure children in care have access to all their kin, and that those kin are kept in the loop if placement or other needs shift, it’s critical to have kin names and contact information in a shared electronic format.
+      A shared list also enables team members, including foster parents, lawyers, and CASAs, to identify missing kin and/or to help nurture relationships with the child.
+    how: >-
+      * Create a shared electronic list of kin, their relationship to the child, their contact information, and their contact method preferences. Include brief but relevant context notes.
+
+      * Update the list with the last contact date and the team member who last made the contact. This can help avoid situations where either nobody calls (thinking someone else did) or everyone calls (creating overwhelm for the kin).
+
+      * Ideally, every team member can see and update this list, including those outside the agency, such as CASAs, attorneys, tribes, parents, and foster parents.
+
+      * If IT restrictions prevent sharing a file, get creative about workarounds. For example, the case worker could email an updated contact list to the child’s team once a month, or the team could collectively update the list at shared planning meetings.
+
+      * Include tribes in your core kin-finding efforts.
+    costs:
+      - A shared electronic file of some kind. This could be a Microsoft Word document on a Sharepoint site, or within a section of your IT system. This may require creative brainstorming with your IT team.
+    benefits:
+      - More people finding kin
+      - More people supporting kin relationships
+    who:
+      what: >-
+        * 30 Days to Family suggests that agencies [identify at least 80 kin](https://secureservercdn.net/198.71.233.159/qzt.0d4.myftpupload.com/wp-content/uploads/30-Days-to-Family-Logic-Model-2021-2.pdf) upfront for each child, with balanced representation across both parents whenever possible.
+
+        * **Washington** State maintains a [policy](https://www.dcyf.wa.gov/tribal-relations/icw) for engaging local tribal partners on kin-finding.
+
+        * Some agencies have been able to use [Smartsheet](https://www.smartsheet.com/solutions/federal-government) to securely store and share kin contact information outside of their child welfare IT system (but with the full blessing of IT). Your agency may have similar approved tools.
+
+        * [Michigan’s Diligent Search Checklist](https://drive.google.com/file/d/1CRv_CsTgsg8xZkOr3vJ1R-kCtPpB6XkE/view) has many prompts for sourcing kin connections.
+  - title: use-a-variety-of-contact-methods
+    heading: Use a variety of contact methods
+    about: Personal preferences, technology literacy, and mobility all impact which communication channels kin can use. If you are only using one method to reach kin, such as mailing physical letters, you are not reaching everyone you need to find.
+    how: >-
+      * Conduct user research with kin to learn about their contact preferences.
+
+      * Collect contact preferences for kin, and write them down where everyone can see.
+
+      * Enable employees to use email, text messaging, social media messaging, and telephone calls. They may even need to make in-person visits. While employees may need the ability to send physical mail occasionally, it should not be your most common method of communication.
+    costs:
+      - Time to develop policies and practices for document retention, records discovery, privacy, data sharing, and other concerns for new communication methods.
+      - Suggested message templates adapted for each medium. An email will be different from a text message which will be different from a voicemail.
+    benefits:
+      - Find more kin
+    who:
+      what: >-
+        * Some agencies use customer service tools to communicate with kin via email, text message, and social media. These tools can often handle the security, document retention, and discovery needs of an agency, while also providing a convenient single interface for an employee, as well as the ability for teams to collaborate (e.g., one employee can easily jump into messaging with kin when another is on leave).
+  - title: involve-kin-prior-to-removal
+    heading: Involve kin prior to removal
+    about: Many families interacted with their child welfare agency prior to a child ever being removed. Identifying kin early and often ensures that kin placements are already known to the agency if a removal is ultimately necessary. Plus, involving kin earlier may provide some families with the support they need to avoid a removal altogether.
+    how: >-
+      * Explicitly encourage parents and youth to bring their supportive kin to meetings. Update templates for meeting invites and notification letters to include this encouragement.
+
+      * Ask youth and parents about their support network at the earliest possible interactions, including investigations and meetings. If removal is not imminent, do not frame this as asking about potential placement options. Instead, this is about helping to identify and activate the family’s support network, in the hopes of helping the family to take action and get support earlier.
+
+      * Keep asking about kin at every interaction. The stress and potential shame at being involved with the child welfare system may discourage people from sharing at first.
+
+      * Make it possible for kin to complete approval steps like a background check ahead of time, so they are already approved if removal becomes necessary.
+    costs:
+      - Time for staff to learn, practice, implement, and iterate
+      - A place to record kin and their contact information, even if a case is not open
+      - Depending on your authorities and case status, you may need a release of information from the parent(s)
+    benefits:
+      - Can prevent removal entirely
+      - Identifies kin before an emergency removal
+    who:
+      what: >-
+        * Many states allow kin to begin their kin-specific approval process, such as getting fingerprinted, prior to removal, so they are ready if removal becomes necessary.
+
+        * Listen to Outagamie County, Wisconsin share their strategies for engaging kin during intake on the [Let’s Have a Conversation podcast](https://open.spotify.com/episode/0GRYSP8UA21ZevmYMSSRHd).
+
+        * [View Iowa state's example release of information form](https://hhs.iowa.gov/sites/default/files/470-2115.pdf) for parent(s).
+  - title: leverage-the-court-system-to-encourage-kin
+    heading: Leverage the court system to encourage kin
+    about:
+      The court system, from initial hearings to ongoing check-ins, can provide a powerful checkpoint to ensure that kin-finding activities are thorough and ongoing.
+      Courts can also increase flexibility around establishing paternity to unlock access to more paternal kin.
+    how: >-
+      * Include a narrative checkpoint in each court hearing to ask about kin-finding activities, challenges, and next steps.
+
+      * Engage and train judges in understanding the importance of following up on the kin-finding responses. This is not a “check the box” exercise; if a child’s kin haven’t been thoroughly searched for and engaged, judges should request timely follow-ups.
+
+      * Review and update any legal barriers to establishing paternity, leveraging feedback from families and workers.
+
+      * Enable kin-finding team members to start search and outreach for paternal kin regardless of legal paternity.
+    costs:
+      - Time to update court forms and processes
+      - Time to create/distribute training materials
+      - Legal and/or practice changes to add flexibility to establishing paternity for purposes of identifying and engaging kin. For example, the court may need to provide funds for DNA tests to establish paternity, or the court may need to remove extra steps (such as requiring a court appearance to establish “father status”) that make it difficult for fathers to come forward.
+    benefits:
+      - Find more kin
+    who:
+      what: >-
+        * Ohio uses a “Quality Hearing Toolkit” to facilitate discussions between judges and agency staff about what has been done to find relatives and explore kinship care options.
+
+        * [Oregon court reports](https://www.courts.oregon.gov/programs/jcip/Documents/Hearings-Shelter.pdf) include the questions:
+          * Has the caseworker requested relative information from both parents and followed up to determine if the relatives are placement resources?
+          * Has DHS used available technology to search for relatives?
+          * Has anyone asked the child about placement preferences?
+          * What has DHS done to keep siblings in care together?
+  - title: test-your-communications-with-real-kin
+    heading: Test your communications with real kin
+    about:
+      Your existing messages and forms may be scaring off or confusing potential kin placements and connections. Communications that look like legal notices, use government acronyms and jargon, or that aren’t translated may be discarded or overlooked. This is particularly important when sending notices to kin within 30 days of removal.
+      Ensure your messages to kin are clear and actionable by testing them with real kin, and then improving your messages based on their feedback.
+    how: >-
+      * Compile a list of all kin-finding communications (e.g., notification letters, forms, meeting invitations, and phone call scripts).
+
+      * Identify a resource who can collect feedback from kin about these existing communications.
+
+      * Conduct user research and usability testing with kin. Include a diverse group of kin, including: current kin caregivers; previously identified kin who are not current caregivers; and kin in the community who have never been contacted by child welfare
+
+      * Test both the language in your current messages and also the format. For example, kin may tell you that they infrequently look at physical mail, or that they don’t answer unknown phone numbers.
+
+      * Compensate kin fairly for the time they spend with you. $25-50 is common for a one-hour meeting. When providing a gift card, offer both digital and physical card options, and confirm it’s for a store the recipient can easily access.
+
+      * Revise existing communications based on kin feedback. Revisions may include expanding and/or eliminating communication channels (such as replacing or augmenting phone calls with text messages).
+
+      * Translate communications into other languages based on your local demographics. Use a human translator, wherever possible, over tools like Google Translate, which may not account for cultural nuances.
+
+      * Identify a solution for one-off translations as needed, such as LanguageLine. Add this resource to the training, practice guides, and other materials used by staff who conduct kin finding.
+
+      * Share de-identified kin feedback with staff for awareness. This could be key quotations posted on an Intranet site, a presentation at a team meeting, and/or an emailed report.
+    costs:
+      - A resource who can conduct user research and usability testing with kin
+      - Time and resources to recruit diverse kin to share feedback
+      - Funds for compensating kin for their feedback
+      - Time and resources to revise existing forms and messages
+      - Translation services
+    benefits:
+      - More kin engagement, and faster
+    who:
+      what: >-
+        * We intend to develop example, user-tested messages in 2024 through the working group. If you have a letter, form, or other message you’d like to share for the toolkit, let us know.
