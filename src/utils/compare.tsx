@@ -24,12 +24,12 @@ const family_finding_link_map: PracticeLinkMap = {
   'Require senior staff sign-off for non-kin placements':
     '/recommendation/senior-staff-sign-off-for-non-relative-placements',
   'Maintain a shared list of kin':
-    '/recommendation/ask-family-members-for-more-family-members',
-  'Dedicated kin-finding responsibility':
-    '/recommendation/ask-about-connections',
+    '/recommendation/maintain-a-shared-list-of-kin',
+  'Establish a dedicated family-finding responsibility':
+    '/recommendation/establish-a-dedicated-family-finding-responsibility',
   'Use social media to find kin': '/recommendation/use-social-media',
   'Use a variety of contact methods':
-    '/recommendation/plan-for-youth-to-keep-connected-supportive-adults',
+    '/recommendation/use-a-variety-of-contact-methods',
 };
 
 export const PRACTICE_AREA_PRACTICE_LINKS_MAP: Record<
