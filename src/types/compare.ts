@@ -19,6 +19,7 @@ export type PracticeName =
   | 'Accept electronic requests'
   | 'Use social media to find kin'
   | 'Maintain a shared list of kin'
+  | 'Establish a dedicated family-finding responsibility'
   | 'Require senior staff sign-off for non-kin placements'
   | 'Ask youth about their kin'
   | 'Use a variety of contact methods'

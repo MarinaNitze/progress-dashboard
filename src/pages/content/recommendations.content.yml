@@ -60,6 +60,7 @@ recommendations:
       what: Frederick County, MD
 
   - heading: Use social media to find family members
+    title: use-social-media
     costs:
       - Social media training
       - Employee time
@@ -87,7 +88,6 @@ recommendations:
       New Mexico increased initial kinship placements from 3% to over 40% in one
       year by shifting to practices that included using social media to identify
       kin.
-    title: use-social-media
     benefits:
       - Find more kin who can take placement and/or serve as lifelong support
         for vulnerable youth
@@ -95,11 +95,13 @@ recommendations:
       - Avoid placing children in general foster care who actually have kinship placement
         options
     who:
-      number: 6
-      image: ../images/recommendations/use_social_media.png
       what: >-
         ### What they're doing
 
+
+        * A Second Chance, Inc. (ASCI) [uses Facebook and other forms of social media](https://www.asecondchance-kinship.com/programs-services/philadelphia/support-services/family-finding/) to identify at least 40 kin for each child.
+
+        * **Washington DC**’s [social media policy](https://cfsa.dc.gov/sites/default/files/dc/sites/cfsa/publication/attachments/Program_Policy_Appropriate_Use_Social_Media_FINAL_0.pdf).
 
         * **Rhode Island**’s family finding team uses “DCYF” in place of worker last names on social media to protect worker privacy.
 
@@ -111,8 +113,8 @@ recommendations:
 
         * Some counties in **Ohio** and **California**, but it's not done state-wide at this time.
 
-  - heading: Ask about connections repeatedly over time
-    title: ask-about-connections
+  - heading: Never stop looking for kin
+    title: never-stop-looking-for-kin
     about: >-
       The beginning of foster care is a difficult and emotional time for
       children and their families. Both children and adults may be too stressed
@@ -139,8 +141,6 @@ recommendations:
       - Find some kin faster than if agency workers have to search for them
         independently
     who:
-      number: 5
-      image: ../images/recommendations/ask_often.png
       what: >-
         ### What they're doing
 
@@ -193,8 +193,8 @@ recommendations:
         * During the COVID-19 pandemic, **Rhode Island** set up a Zoom meeting with each group home facility, and met with each youth one on one to discuss their placement options. They were able to move many youth from group homes into kinship placements as a result.
 
         * Fairfax County, Virginia conducts family finding for youth annually, and at every placement change.
-  - heading: Ask family members for more family members
-    title: ask-family-members-for-more-family-members
+  - heading: Use the snowball method
+    title: use-the-snowball-method
     about: >-
       When you connect with a youth’s kin, make it a point to always ask them if
       they know of other potential kin, whether they may be current connections
@@ -203,8 +203,7 @@ recommendations:
 
       Children can’t have too many adults who care about them. Most youth enter foster care with more connections than they leave with. Making sure to ask kin you know about to help identify additional kin, especially if children are too young to share on their own, can create a broader supportive network.
     how: >-
-      * Require team members to ask kin about other kin during initial
-      and ongoing kin contacts.
+      * Require team members to ask kin about other kin during initial and ongoing kin contacts.
 
       * Designate a place in your IT system for storing information about all kin, including names and contact information.
 
@@ -235,17 +234,18 @@ recommendations:
       Foster Care
       Forms](https://www.michigan.gov/mdhhs/0,5885,7-339-71551_7199_54039---,00.html).
   - heading: Establish a dedicated family-finding responsibility
+    title: establish-a-dedicated-family-finding-responsibility
     costs:
       - Leadership and staff time to determine the best
       - Updates to policy, position descriptions, and training to affirm kin-finding responsibilities
       - Resources for the employees with kin-finding responsibility to carry out their job successfully
       - Human resources and recruitment assistance if the shift in responsibility requires new training and/or staffing
     inspiration: >-
-      * In **Indiana**, kin finding metrics are used in performance evaluations.
+      * In Indiana, kin finding metrics are used in performance evaluations.
 
-      * **Wisconsin** has a [concise guide](https://drive.google.com/file/d/1vhn78eupW25aIhfTGSVri1rh2y_0GEQ9/view) for kin-finding responsibilities, including suggested meeting agendas.
+      * Wisconsin has a [concise guide](https://drive.google.com/file/d/1vhn78eupW25aIhfTGSVri1rh2y_0GEQ9/view) for kin-finding responsibilities, including suggested meeting agendas.
 
-      * **Kevin’s Campbell’s Family Finding Model** credits having a designated specialist whose primary job is to carry out kin-finding activities as a key piece of effective implementation.
+      * Kevin’s Campbell’s Family Finding Model credits having a designated specialist whose primary job is to carry out kin-finding activities as a key piece of effective implementation.
     about: >-
       The old adage that “when it’s everybody’s job, it’s nobody’s job” rings especially true in kin-finding. While every team member can play a valuable role in identifying, reaching out to, and maintaining kin connections, it also needs to be somebody’s formal responsibility at the end of the day.
       Whose responsibility may vary based on your agency; a small team may thrive when the child’s case worker is also responsible for kin-finding, while another agency may need a focused kin-finding team.
@@ -263,16 +263,11 @@ recommendations:
       * Once determined, update position descriptions, performance reviews, and other collateral to make responsibilities clear.
 
       * If you have a separate kin-finding team, require that they work with the child, the parents, and the child’s worker. Kin-finding cannot be done in isolation or without talking to the child and their parent(s) (if available).
-    title: establish-a-dedicated-family-finding-responsibility
     benefits:
       - Find more kin who can take placement and/or serve as lifelong support
         for vulnerable youth
-      - Dedicated team can develop skills like social media searching that are
-        otherwise hard to develop across your entire workforce
+      - Clarity and accountability
       - Find kin faster
-    who:
-      number: 2
-      image: ../images/recommendations/establish_family_finding_team.png
   - title: make-a-genogram
     heading: Make a genogram
     about: Keeping track of a youth’s connections can get complicated, and a
@@ -303,6 +298,7 @@ recommendations:
       * [Find a Grave](https://www.findagrave.com/): This tool can be helpful for completing genograms.
     costs:
       - Genogram software (optional, but helpful)
+      - Time for employees to train on creating genograms and to actually create them for each child
     benefits:
       - Find more kin who can take placement and/or serve as lifelong support
         for vulnerable youth
@@ -313,19 +309,29 @@ recommendations:
       number: 4
       image: ../images/recommendations/genogram.png
     inspiration: >-
-      At least one of our child welfare system members recommends each of these
-      tools for mapping out and finding relatives of youth in foster care:
+      * In Ohio, the statewide average is 151 kin per child and the record is finding 559 kin for one child.
+
+      * The [Extreme Family Finding Project](https://www.fosteradopt.org/family-permanency/extreme-family-finding/) — which has a 95% success rate — recommends a genogram have at least 150-200 people on it, as does [30 Days to Family](https://forchildwelfare.org/30-days-to-family/30-days-to-family-faq/).
+
+      * In New Mexico, “All investigations now require the completion of a genogram, a map of family relationships and history, and for the genogram to be uploaded in the case record.” [source](https://klvg4oyd4j.execute-api.us-west-2.amazonaws.com/prod/PublicFiles/0bafdaa4e38b4b6292f0c68ed362e88d/c538c771-ed32-4305-8d4d-c6f18fabda99/App_B_T_1dot1_Retention_and_Recruitment_of_Resource_Families_-3-28-2022.pdf)
 
 
-      * [FamilyEcho](https://www.familyecho.com/)
+       At least one of our child welfare system members recommends each of these
+       tools for mapping out and finding relatives of youth in foster care:
 
-      * [GenoPro](https://genopro.com/)
+       * [FamilyEcho](https://www.familyecho.com/)
 
-      * [Free Word genogram templates](https://www.mywordtemplates.org/printables/template399.html)
+       * [GenoPro](https://genopro.com/)
 
-      * [Rhode Island’s Excel genogram template](https://www.childwelfareplaybook.com/assets/GENOGRAM.xlsx)
+       * [Binti Family Finding Tool](https://binti.com/)
 
-      * [Michigan Genogram Templates](https://www.childwelfareplaybook.com/assets/Genogram_MI.pdf)
+       * [Free Word genogram templates](https://www.mywordtemplates.org/printables/template399.html)
+
+       * [Rhode Island’s Excel genogram template](https://www.childwelfareplaybook.com/assets/GENOGRAM.xlsx)
+
+       * [Michigan Genogram Templates](https://www.childwelfareplaybook.com/assets/Genogram_MI.pdf)
+
+       * Tennessee’s [genogram template PDF](https://www.grandfamilies.org/Portals/0/Documents/Wikihow/TN%201013%20(3)%20Kinship%20Exception%20Request.pdf?ver=i_OMQHWcnwlqmQ1hwPGbfw%3d%3d)
   - heading: Make sure supportive adults have a robust presence at planning meetings
     title: supportive-adults-have-robust-presence
     about: Most youth leave foster care with fewer connections than they entered
@@ -345,9 +351,10 @@ recommendations:
       * Ask youth about supportive adults in their lives - Staff should make sure that supportive adults are aware of and invited to planning meetings. You might even ask youth to suggest a supportive adult themselves. 
 
       * Keep track of meeting attendance - With a simple spreadsheet, you can keep track of the breakdown of roles at planning meetings. Use this information to keep track of progress towards the goal of having three times as many supportive adults as paid staff in attendance.
+
       * Keep asking about supportive adults as new goals arise - A youth may have one or more supportive adults who generally attend meetings, but may have an additional support for a specific goal, such as practicing for a driving test, getting mentoring in math, or shopping for a prom dress.
     costs:
-      - ' Time to implement form and workflow changes'
+      - 'Time to implement form and workflow changes'
     benefits:
       - Supportive adults remain engaged and involved with youth
       - Youth less likely to lose connections during care
@@ -369,40 +376,32 @@ recommendations:
         * **Ohio** has Youth Centered Permanency Round Tables (YCPRT) running in several counties. For YCPRTs, the youth is asked to bring a support person to the meeting. It can be anyone: a caregiver, a friend of the family, a member of the family, or anyone the youth feels is supportive of them. That can also initiate more conversations and discussion about permanency options and supports for the youth. One youth asked his fast food manager to come with him, and the manager didn’t even know he was in foster care. The manager ended up adopting him!
 
         * In **Ohio**, the practice for maintaining connections is: any youth 14 and over is able to have two support persons join in on the family team meetings and case plan meetings. That helps to initiate discussion of any other support persons available to the child.
+
         * **Hawaii** develops [Youth Circles](/assets/HawaiiCircleBrochure.pdf) for each child, which includes working with each youth to identify the supportive adults who will be invited to the circle. 
 
         * **New Hampshire** identifies up to 45 of a youth's supports through Permanency Pact through Foster Club, and involves them in meetings to accomplish specific goals, such as buying a first car, attending holiday celebrations after aging out of care, etc. As adults are identified, the agency sends those adults invites and supportive materials to support these goals.
   - heading: Use an expansive legal definition of kin
     title: Use-expansive-legal-definition-of-kin
     about: >-
-      Being placed in kinship care can often be a more stable placement for
-      youth when compared to placement in a group home or foster home with other
-      unrelated youth. By staying in a familiar setting, youth will experience
-      fewer disruptions and will be able to better maintain their existing
-      relationships. Using an expansive legal definition of kin will allow staff
-      to find more placement options for youth more quickly, and can mean more adults qualify to be emergency placements. 
-
+      Using an expansive legal definition of kin allows staff to find more placement options for youth more quickly, and can mean more adults qualify to be emergency placements.
 
       Even if a connection cannot serve as a placement, youth need as many supportive adults around them as possible. Maintaining an expansive legal definition of kin will allow you to create a broader support system for youth.
     how: >-
-      * When asking youth or supportive connections about placement options,
-      remove any requirements that kin needs to be a blood or legal
-      relation. You can also ask about family friends, teachers or the spouses
-      of relatives. Some agencies consider these relationships to be “fictive
-      kin,” though this term has fallen out of use.
+      * The recommended definition of kin is: “Individuals related to a child by blood, marriage, tribal custom, and/or adoption and other individuals who have an emotionally significant relationship with the child or the child’s parents or other family members (often referred to as ‘fictive kin’).”
 
-      * By asking about connections repeatedly over time, you can include important relationships that a youth has developed since entering care, too.
+      * Multiple child welfare advocates [came together](https://www.regulations.gov/document/ACF-2023-0001-0002/comment?filter=new%20america) to unanimously recommend the above definition of kin to the federal government as part of the comment period on the kin-specific licensing rule.
 
-      * Some agencies find more kin through conversations with the child, a parent, or a third party such as a teacher or [clergy](https://www.cdss.ca.gov/inforesources/foster-care/kinship-care).
+      * Adopt this definition verbatim, or adjust your existing legal definition to encompass all of these categories of kin, for purposes of who qualifies for emergency placement, for kin-specific licensing waivers/exemptions, and for the upcoming kin-specific licensing process.
     costs:
-      - Low to no cost
+      - Potential legislative change, although in some agencies, the definition of kin is in policy.
+      - Significant time updating policies, forms, training, and other collateral to adapt to an expanded definition.
     benefits:
       - More supportive adults found and engaged in a youth’s life
       - Kinship care can be a more stable placement option for youth
       - Avoids placement in group homes or foster homes with other unrelated
         youth
     who:
-      number: 1
+      number: 42
   - heading: Make keeping in touch with kin a formal foster family responsibility
     title: keeping-in-touch-with-kin-formal-responsibility
     about: >-
@@ -466,14 +465,24 @@ recommendations:
       [source](https://anchor.fm/nipfc/episodes/Episode-10--Sustaining-Family-I\
       nvolvement-ea7q6v)"
     who:
-      number: 4
       what: >-
-        * **Virginia** uses mobility maps with foster youth to map out important
-        relationships.
+        * **A Second Chance, Inc.** [establishes committed relationships](https://www.asecondchance-kinship.com/programs-services/philadelphia/support-services/family-finding/) regarding the specific ways kin can support each young person.
+
+        * **Virginia** uses mobility maps with foster youth to map out important relationships.
+
+        * **New Hampshire** engages kin in [Permanency Pacts](https://www.fosterclub.com/sites/default/files/Permanency%20Pact_0.pdf).
+
+        * **Arizona** [Fostering Sustainable Connections](https://dcs.az.gov/news/department-child-safety-wins-federal-approval-innovative-intervention-program-help-children) program helps children locate and reconnect with relatives, friends, coaches, neighbors, teachers, and others who have been important in their lives. Once the child’s important people are identified, a Family Engagement Specialist facilitates a meeting to identify ways that these people can become involved in the child’s life.
+
+        * Epic O'Hana in '**Hawaii** uses O’Hana meetings to identify and engage extended families in a plan to help children stay safe and connected to family. Epic O’Hana’s [report on Maintaining Connections](https://www.grandfamilies.org/Portals/0/Documents/Wikihow/Hawaii%20Maintaining%20Connections%20manual.pdf?ver=lrUOaC2XwUsJMdzVcHOW4g%3d%3d) explains how they engage extended families for children involved in child welfare.
 
         * **Indiana’s** practice model includes developing plans for maintaining connections for foster youth.
 
+        * **Wisconsin** [says](https://drive.google.com/file/d/1vhn78eupW25aIhfTGSVri1rh2y_0GEQ9/view): “The focus of Family Find and Engagement is not the discovery of placements. The focus is to discover and build connections for the youth.”
+
         * **Uplift Human Services in San Jose, CA** uses a [heart map](https://www.childwelfareplaybook.com/playbook/heart_maps) to help youth identify and make plans with their supportive connections.
+
+        * **Iowa** [policy](https://hhs.iowa.gov/sites/default/files/18-B1.pdf) requires that: “If you determine that a person is unwilling or unable to assume care of the child, determine if the person is willing to provide other types of support to the child to maintain their connection to family and others with whom they have a significant relationship. This type of support could include postal mail or e-mail contact, phone calls, visits, respite, and participation in holiday or other gatherings.“
 
         * **Michigan** explicitly asks identified kin to commit to staying in touch with youth on their [Relative Notification Form](http://www.michigan.gov/documents/dhs/DHS-0990_265835_7.dot)
 
@@ -518,7 +527,7 @@ recommendations:
         the family finding office conducts kin research, the team constructs a
         genogram, and they ask the youth directly about possible placement
         ideas.'
-  - heading: Be gentle when interacting with kin for the first time
+  - heading: Use gentle commitment escalation with kin
     title: be-gentle-when-interacting-with-kin-first-time
     about: >-
       Kinship connections may be permanently lost if an initial communication
@@ -552,11 +561,12 @@ recommendations:
       from our members suggests that many kin who aren’t placements on day one
       eventually serve as placements and/or supportive connections later on.
     who:
-      number: 2
-      what:
-        '* **Michigan** explicitly asks identified kin to commit to staying in
+      what: >-
+        * **Michigan** explicitly asks identified kin to commit to staying in
         touch with youth on their [Relative Notification
-        Form](http://www.michigan.gov/documents/dhs/DHS-0990_265835_7.dot)'
+        Form](http://www.michigan.gov/documents/dhs/DHS-0990_265835_7.dot)
+
+        * **Wisconsin** has [suggested questions for talking to kin](https://drive.google.com/file/d/1vhn78eupW25aIhfTGSVri1rh2y_0GEQ9/view).
   - title: align-checklists-to-statutes
     heading: Align checklists to statutes
     about:
@@ -1562,8 +1572,6 @@ recommendations:
     who:
       number: 2
       what: >-
-
-
         * Rhode Island reports a 95% success rate at making connections for its foster children with this program. Watch this video about Rhode Island’s [Extreme Family Finding](https://www.wpri.com/rhode-show/connecting-through-the-extreme-family-finding-program/?fbclid=IwAR0ENP03Qx_ep_o5WyE9y4vmd5mrmW0feWp6umLg5M29ZkOgvWVolDCjjKY).
 
         * Read about Missouri’s [success stories](https://www.fosteradopt.org/family-permanency/extreme-family-finding/).
@@ -1985,8 +1993,6 @@ recommendations:
     who:
       number: 2
       what: >-
-
-
         * Multiple California counties partnered with Mark Daley to run targeted recruitment campaigns for specific types of homes, such as homes for CSEC youth, as well as child-specific campaigns. 
 
         * Washington, D.C. runs paid Facebook marketing campaigns to attract the hardest-to-find kinds of families.
@@ -1997,25 +2003,28 @@ recommendations:
       sign-off on a non-relative placement. Requiring this level of sign-off
       incentivizes early family finding and may prevent placements in group
       homes.
-    how:
-      Require senior staff sign-off for non-relative placements, no matter the
-      time of day. You should require sign-off on initial placements, subsequent
-      placements, and any congregate care placements.
+    how: >-
+      * Require senior staff sign-off for non-kin placements, no matter the time of day.
+
+      * Require sign-off on every placement: initial placements, subsequent placements, and any congregate care placements.
+
+      * The senior staff member should ask questions about what kin-finding activities have been conducted and about future kin-finding plans.
+
+      * For placement changes planned in advance, this process may look different than for emergency placements.
     costs:
-      - Free
+      - New or updated policy requiring senior staff sign-off on non-kin placements.
+      - 'Clear process for sign-off, including: exactly which senior staff member is responsible at any given time, recommended questions the senior staff member should ask about kin-finding progress, and senior staff contact information.'
+      - Resources for kin-finding; this is not an effective tactic if your placement desk has no viable ways to find kin.
     benefits:
       - Incentivizes finding more kinship placement options
       - Helps prevent placement in group homes
-    outcome:
-      New Mexico increased initial kinship placements from 3% to 40% in one
-      year by shifting to practices that included requiring Director-level
-      approval for non-kin placements.
     who:
-      number: 1
-      what:
-        '* New Mexico has a policy that a Director must sign-off on any placement
+      what: >-
+        * New Mexico has a policy that a Director must sign-off on any placement
         with non-kin, whether general foster care or a group home, even if it’s
-        the middle of the night.'
+        the middle of the night.
+
+        * New York's [kinship firewall policy](https://www.grandfamilies.org/Portals/0/Documents/Wikihow/20-OCFS-ADM-18%20kinfirst%20firewall.pdf?ver=aRW2qPM7j_EMROWXTct8SA%3d%3d)
   - title: use-heart-map
     heading: Use a Heart Map to identify a youth’s important relationships
     about: >-
@@ -2737,8 +2746,7 @@ recommendations:
         * **CASA programs** in some systems allow CASAs to provide transportation for youth to visit their supportive adults.
 
   - heading: Create life books for youth in care
-    costs:
-      - None
+    title: create-life-books
     about: A life book captures a child's key milestones and relationshps, and it should follow them throughout (and after) their time in care.
     how: >-
       * Print a lifebook template.
@@ -2749,7 +2757,8 @@ recommendations:
 
       * Make sure a child's lifebook follows them by including it in any move checklists, as well as in any permanency (e.g., aging out, adoption) checklists.
     outcome: ''
-    title: create-life-books
+    costs:
+      - None
     benefits:
       - Captures memories for youth in care
       - Can find more kin
@@ -2760,15 +2769,15 @@ recommendations:
         * **Frederick County, MD** has three templates you can print and put in a three-ring notebook: [Zig Zags](/assets/Lifebook-circles-zigzags.pdf), [Floral](/assets/Lifebook-floral-water-color.pdf), [Triangles](/assets/Lifebook-triangles.pdf). 
 
   - heading: Use DNA to find more family connections
-    costs:
-      - Usually under $100 per child
+    title: use-dna-to-find-more-family-connections
     about: This idea is more controversial, and it's important to consider a youth's privacy and wishes. However, ancestry DNA tools that can uncover more family members can be a useful tool for children in care with no or limited kinship placement options or supportive adults.
     how: >-
       * Develop a policy for when and how to use DNA services. You may want to limit this to youth with no viable kinship placements, or only older youth who can consent to participation, or only youth whose family of origin consents to its use.
 
       * Couple counseling with the results. A DNA test might reveal unknown (or unexpected) parents, siblings, and other relatives. Strong supports need to be in place before a test so a youth can process the results.
     outcome: ''
-    title: use-dna-to-find-more-family-connections
+    costs:
+      - Usually under $100 per child
     benefits:
       - Can reveal kinship placement and support options that could not otherwise be found.
     who:
@@ -3140,8 +3149,10 @@ recommendations:
         * [Aspen Tech Policy Hub: Improving the Outcomes of Youth Aging Out of Foster Care](https://www.aspentechpolicyhub.org/project/improving-the-outcomes-of-youth-aging-out-of-fostercare/)
   - title: maintain-a-shared-list-of-kin
     heading: Maintain a shared list of kin
-    about:
+    about: >-
       Kin are often lost in case notes or handwritten paperwork. To ensure children in care have access to all their kin, and that those kin are kept in the loop if placement or other needs shift, it’s critical to have kin names and contact information in a shared electronic format.
+
+
       A shared list also enables team members, including foster parents, lawyers, and CASAs, to identify missing kin and/or to help nurture relationships with the child.
     how: >-
       * Create a shared electronic list of kin, their relationship to the child, their contact information, and their contact method preferences. Include brief but relevant context notes.
