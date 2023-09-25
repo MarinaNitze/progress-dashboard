@@ -103,7 +103,7 @@
     "netlify-plugin-cypress": "^1.2.0",
     "sass-loader": "^13.2.0",
     "sass-resources-loader": "^2.2.5",
-    "start-server-and-test": "^1.15.2",
+    "start-server-and-test": "^2.0.1",
     "style-loader": "^3.3.1",
     "ts-jest": "^29.0.5",
     "yaml-loader": "^0.8.0"
