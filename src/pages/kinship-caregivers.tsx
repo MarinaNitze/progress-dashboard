@@ -8,62 +8,40 @@ import { Grid, GridContainer } from '@trussworks/react-uswds';
 import './home.scss';
 
 const ABOUT = `
-A new [draft rule](https://www.federalregister.gov/documents/2023/02/14/2023-03005/separate-licensing-standards-for-relative-or-kinship-foster-family-homes) proposes allowing child welfare systems to have a kin-specific process for approving kin. If it’s finalized, systems will be able to create new, streamlined processes for providing kin with Foster Care Maintenance Payments that are eligible for Title IV-E reimbursement. 
+A [new rule](https://www.federalregister.gov/documents/2023/09/28/2023-21081/separate-licensing-or-approval-standards-for-relative-or-kinship-foster-family-homes) published by the Administration for Children and Families on 09/28/2023 will, for the first time, allow title IV-E agencies to adopt kin-specific licensing or approval standards for kinship foster family homes.
 
-A state’s new process needs to be “reasonably in accord with recommended standards of national organizations concerned with standards for [foster family] homes, including standards related to admission policies, safety, sanitation, and protection of civil rights.”
+A title IV-E agency’s kin-specific licensing or approval standards must be “reasonably in accord with recommended standards of national organizations.”
 
-We are proposing Standards for Kinship Caregivers that can serve as these “recommended standards of national organizations,” similar to how the [Model Foster Home Licensing Standards](https://nara.memberclicks.net/nara-model-foster-care-standards) served as the recommended standards for the previous combined (kin and non-kin) process. 
+The new [Kin-Specific Foster Home Approval Standards](https://docs.google.com/document/d/1V30W6Ft_uEUpVIQ062wPh12HrYHNod0b43T25wrp190/edit) will serve as these “recommended standards of national organizations,” similar to how the [Model Foster Home Licensing Standards](https://nara.memberclicks.net/nara-model-foster-care-standards) served as the recommended standards for the previous combined (kin and non-kin) process. 
 
-The goal of these Standards for Kinship Caregivers is for every kinship caregiver to be qualified for Foster Care Maintenance Payments from the date the kinship child is placed. 
+The Kin-Specific Foster Home Approval Standards respect the unique circumstances of kin caregivers, removing many historic barriers and striving to make the approval process warmer and more flexible for kin caregivers. We worked closely with kin caregivers, subject matter experts, and at least 45 title IV-E agencies to develop these model standards and implementation guidance.
 
-We are co-designing these standards with a diverse array of kinship caregivers from around the country, and are seeking as much input from states and child welfare workers as possible, too. This can ultimately enable greater permanency and well-being for many children and families.
+The Kin-Specific Foster Home Approval Standards include standard background checks, a caregiver suitability assessment, and a safety and needs assessment. **That’s it.** It intentionally does not recommend requirements such as tuberculosis tests, medical exams, financial reviews, pet registrations, and other barriers that have kept children in foster care from living with people who love them.
 
-The recommended standards will be for state agencies, and not be designed specifically for tribal nations that license kinship caregivers. We recognize the great diversity in Indian Country with 574 federally-recognized tribal nations and the sovereign authority of tribal nations to develop their own licensing standards. The recommended standards are however intended to provide examples of how state agencies can improve their kinship care licensing standards as they apply to a diverse group of children and families under their jurisdiction. 
+In the majority of cases, once an agency adopts these new standards, they should be eligible to claim title IV-E reimbursement for foster care maintenance payments made on behalf of an otherwise-eligible child within days after placement, with the only post-placement delays being waiting for the fingerprint-based background check results and any applicable out-of-state child abuse and neglect registry check results.
+
+The Kin-Specific Foster Home Approval Standards include implementation guidance and example template forms for optional agency use, to make it as simple as possible to adopt the standards.
+
+The new rule applies to title IV-E agencies, which includes all states and tribes that have approved title IV-E plans or are operating the title IV-E program through a tribal-state agreement. The new rule is not applicable to tribes that do not operate the title IV-E program. We recognize the great diversity in Indian Country with 574 federally-recognized tribal nations and the sovereign authority of tribal nations to develop their own licensing standards. The recommended standards are, however, intended to provide examples of how state agencies can improve their kinship care licensing standards as they apply to a diverse group of children and families under their jurisdiction. 
 
 `;
 
 const GET_INVOLVED = `
 - [Sign up for email updates](https://mailchi.mp/childwelfareplaybook/standards-for-kinship-caregivers)
-- Sign up for the next webinar (Coming Soon!)
-- Read the current draft kinship standards (Coming Soon!)
+- [Sign up for the launch webinar](https://www.gksnetwork.org/events/kin-specific-licensure-overview-of-new-federal-rule-release-of-recommended-standards/) on Wednesday, October 11 from 1-2p PT / 4-5p ET. The event will be recorded if you cannot attend live. 
+- Share your feedback and questions on the model standards
 `;
 
 const MORE_WAYS = `
-Join a learning sprint: A learning sprint is a process where trained researchers talk to a
- diverse range of people impacted by the process (including kinship caregivers, parents of 
- children involved in care, and workers processing background checks) to uncover pain points,
- creative solutions, and opportunities for improvement to the process.
-
-
-
-### Join the learning sprint to improve the background check process for kinship caregivers
-- We want to design and recommend a background check process that is both a good experience
-  for kinship caregivers and fast, while continuing to meet federal requirements.
-- [Sign up here](https://airtable.com/shrQkKvpnAnLjhUuj)
-    - We are especially looking for: current or former kinship caregivers; tribal partners;
-      current child welfare workers who request or process background checks; 
-      parents of children currently or formerly in foster care (especially fathers);
-      and people who process background checks in areas outside of foster care (childcare; guns; employee screening; etc.).
-- Participants selected for in-depth interviews will be compensated for their time
-
-
-
-### Join the learning sprint to improve the safety assessment process for kinship caregivers
-- We want to design and recommend a safety assessment process that accommodates a 
-   diverse array of kinship caregivers, while maintaining child safety. This assessment
-   will focus on resolving issues, not disqualifying kinship caregivers.
-- [Sign up here](https://airtable.com/shrcGOn0wWbb7lbJv)
-    - We are especially looking for: current or former kinship caregivers;
-      parents of children currently or formerly in foster care (especially fathers);
-      tribal partners; and current child welfare workers who conduct safety assessments.
-- Participants selected for in-depth interviews will be compensated for their time
 `;
 
 const FAQ = `
-### When will these standards be finalized?
+### When can I start using these standards?
 
-We intend to publish the first version of the Standards for Kinship Caregivers at
-the same time as, or before, the final rule comes out.
+We intend to pilot the Kin-Specific Foster Home Approval Standards with 6 agencies, and will 
+provide regular updates throughout the pilot, beginning in Fall 2023. We will update the 
+implementation materials and make clarifications as needed based on what we learn. We 
+encourage you to follow along and begin your planning alongside these 6.
 
 ### Who is developing these approval standards?
 
@@ -71,7 +49,7 @@ These standards are being developed by a group of national organizations includi
  [American Bar Association Center on Children and the Law](https://www.americanbar.org/groups/public_interest/child_law/),
  [Children’s Rights](https://www.childrensrights.org/),
  [CWPolicy](https://cwpolicy.com/),
- [Generations United](https://www.gu.org/),
+ [Generations United and its Grandfamilies & Kinship Support Network: A National Technical Assistance Center](https://www.gksnetwork.org/),
  [National Indian Child Welfare Association](https://www.nicwa.org/),
  [National Association for Regulatory Administration](https://www.naralicensing.org/),
  [New America’s Resource Family Working Group](https://www.childwelfareplaybook.com/),
@@ -85,7 +63,7 @@ distinct processes for supporting kinship caregivers.
 
 ### I have another question.
 
-Great! Please [submit it here](https://app.smartsheet.com/b/form/a82cab78a6544383a6c1b6bffcbf3ce7).
+Great! Please [submit it here](https://docs.google.com/forms/d/e/1FAIpQLSdGr6SFFzEZ6iKVlVEpeKnbYCuze5ldnpyPdqon8IaTatRbhQ/viewform) or email info (at) childwelfareplaybook.com.
 `;
 
 export default function KinshipCaregivers() {
