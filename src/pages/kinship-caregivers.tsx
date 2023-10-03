@@ -29,7 +29,7 @@ The new rule applies to title IV-E agencies, which includes all states and tribe
 const GET_INVOLVED = `
 - [Sign up for email updates](https://mailchi.mp/childwelfareplaybook/standards-for-kinship-caregivers)
 - [Sign up for the launch webinar](https://www.gksnetwork.org/events/kin-specific-licensure-overview-of-new-federal-rule-release-of-recommended-standards/) on Wednesday, October 11 from 1-2p PT / 4-5p ET. The event will be recorded if you cannot attend live. 
-- Share your feedback and questions on the model standards
+- Share your feedback and questions on the model standards [here](https://docs.google.com/forms/d/e/1FAIpQLSdGr6SFFzEZ6iKVlVEpeKnbYCuze5ldnpyPdqon8IaTatRbhQ/viewform) or email info (at) childwelfareplaybook.com.
 `;
 
 const FAQ = `
