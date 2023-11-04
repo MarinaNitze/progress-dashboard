@@ -8,6 +8,8 @@ import { Grid, GridContainer } from '@trussworks/react-uswds';
 import './home.scss';
 
 const ABOUT = `
+Please visit the [permanent landing page for the kin-specific model standards](https://www.grandfamilies.org/Resources/Foster-Care-Licensing/Kin-Specific-Foster-Care-Licensing) hosted at Grandfamilies.org.
+
 A [new rule](https://www.federalregister.gov/documents/2023/09/28/2023-21081/separate-licensing-or-approval-standards-for-relative-or-kinship-foster-family-homes) published by the Administration for Children and Families on 09/28/2023 will, for the first time, allow title IV-E agencies to adopt kin-specific licensing or approval standards for kinship foster family homes.
 
 A title IV-E agency’s kin-specific licensing or approval standards must be “reasonably in accord with recommended standards of national organizations.”
