@@ -7,9 +7,11 @@ import SideAnchorNav from '../components/side-anchor-nav/SideAnchorNav';
 import { Grid, GridContainer } from '@trussworks/react-uswds';
 import './home.scss';
 
-const ABOUT = `
+const MOVED = `
 Please visit the [permanent landing page for the kin-specific model standards](https://www.grandfamilies.org/Resources/Foster-Care-Licensing/Kin-Specific-Foster-Care-Licensing) hosted at Grandfamilies.org.
+`;
 
+const ABOUT = `
 A [new rule](https://www.federalregister.gov/documents/2023/09/28/2023-21081/separate-licensing-or-approval-standards-for-relative-or-kinship-foster-family-homes) published by the Administration for Children and Families on 09/28/2023 will, for the first time, allow title IV-E agencies to adopt kin-specific licensing or approval standards for kinship foster family homes.
 
 A title IV-E agency’s kin-specific licensing or approval standards must be “reasonably in accord with recommended standards of national organizations.”
@@ -80,6 +82,10 @@ export default function KinshipCaregivers() {
           <SideAnchorNav
             items={[
               {
+                to: `#moved`,
+                title: 'This Page Has Moved',
+              },
+              {
                 to: `#about`,
                 title: 'About',
               },
@@ -100,6 +106,14 @@ export default function KinshipCaregivers() {
           desktop={{ col: 12 }}
         >
           <main className="cwp-main kinship-caregivers">
+            <Grid id="moved">
+              <section>
+                <h2 className="section-title">Theis Landing Page Has Moved</h2>
+                <ReactMarkdown className="section-content">
+                  {MOVED}
+                </ReactMarkdown>
+              </section>
+            </Grid>
             <Grid id="about">
               <section>
                 <h2 className="section-title">About</h2>
