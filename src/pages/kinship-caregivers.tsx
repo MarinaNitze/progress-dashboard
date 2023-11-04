@@ -9,6 +9,7 @@ import './home.scss';
 
 const MOVED = `
 Please visit the [permanent landing page for the kin-specific model standards](https://www.grandfamilies.org/Resources/Foster-Care-Licensing/Kin-Specific-Foster-Care-Licensing) hosted at Grandfamilies.org.
+
 `;
 
 const ABOUT = `
@@ -108,7 +109,7 @@ export default function KinshipCaregivers() {
           <main className="cwp-main kinship-caregivers">
             <Grid id="moved">
               <section>
-                <h2 className="section-title">Theis Landing Page Has Moved</h2>
+                <h2 className="section-title">This Landing Page Has Moved</h2>
                 <ReactMarkdown className="section-content">
                   {MOVED}
                 </ReactMarkdown>
