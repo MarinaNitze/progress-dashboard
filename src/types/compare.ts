@@ -12,9 +12,9 @@ export type PracticeArea = 'Background Checks' | 'Kin Finding';
 
 // Must match values in the "Name" column of the Progress Dashboard airtable
 export type PracticeName =
-  | 'No witnesses'
+  | 'Accepts attestation of consent'
   | 'No fee'
-  | 'No notary'
+  | 'No notarized or witnessed signature'
   | 'General inbox for receiving requests'
   | 'Accept electronic requests'
   | 'Use social media to find kin'
