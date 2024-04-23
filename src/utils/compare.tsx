@@ -9,9 +9,11 @@ export const COMPARE_DASHBOARD_FULL_TITLE_MAP: Record<PracticeArea, string> = {
 };
 
 const background_checks_link_map: PracticeLinkMap = {
-  'No witnesses': '/topic/out-of-state-background-checks#what-we-can-do',
+  'Accepts attestation of consent':
+    '/topic/out-of-state-background-checks#what-we-can-do',
   'No fee': '/topic/out-of-state-background-checks#what-we-can-do',
-  'No notary': '/topic/out-of-state-background-checks#what-we-can-do',
+  'No notarized or witnessed signature':
+    '/topic/out-of-state-background-checks#what-we-can-do',
   'General inbox for receiving requests':
     '/topic/out-of-state-background-checks#what-we-can-do',
   'Accept electronic requests': '/recommendation/electronic-background-check',
@@ -44,10 +46,10 @@ export const PRACTICE_AREA_CONTENT_MAP: Record<PracticeArea, ReactNode> = {
   'Background Checks': (
     <div>
       <p>
-        If a prospective foster parent lived in another state within the last 5
-        years, their <em>current</em> state must check the child abuse & neglect
-        registry from their prior state(s) before approving them as foster
-        parents.
+        If a prospective foster parent or an adult in their home lived in
+        another state within the last 5 years, their <em>current</em> agency
+        must check the child abuse & neglect registry from their prior state(s)
+        before approving them as foster parents.
       </p>
       <p>
         This sounds like a good idea. But in practice, inconsistent processes
