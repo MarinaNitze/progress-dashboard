@@ -222,7 +222,7 @@ topics:
       * **Leverage inquiry data.** You can use the data from incoming inquiries, such as zip code or languages spoken, to highlight  gaps in your recruitment. Additionally, by tracking detailed referral information from new inquiries, you can better understand which recruitment methods are most successful.
     recommendations:
       - track-referral-information
-      - don't-close-inquiries
+      - dont-close-inquiries
       - talk-with-families-quickly-after-inquiry
       - respond-quickly-to-inquiries-with-information
       - reminders-to-stay-in-touch-with-families-who-submit-inquiries
