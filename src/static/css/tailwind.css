@@ -1,0 +1,17 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.social svg {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+}
+
+.social svg:hover path {
+    fill: rgb(181, 14, 26);
+}
+
+.prose ul > li::marker {
+    color: #000000;
+}

@@ -1,0 +1,79 @@
+---
+layout: default
+title: Topics
+---
+
+{% set topics = topics.topics %}
+
+<div x-data="topicsData" x-init="init">
+    <div class="flex items-end bg-gray-300 bg-no-repeat bg-right" style="background-image: url({{ topicsIndex.hero | replace('/src', '') }});">
+        <div class="mx-auto w-full">
+            <div class="max-w-screen-lg py-24 pl-[5%]">
+                <h1 class="font-serif text-5xl font-bold text-white">{{ topicsIndex.title }}</h1>
+            </div>
+        </div>
+    </div>
+    <div class="hidden md:block mx-auto px-8 md:px-[5%]">
+        <nav class="flex py-8" aria-label="Breadcrumb">
+            <ol class="inline-flex items-center space-x-1 md:space-x-3">
+                <li class="inline-flex items-center">
+                    <a href="/" class="font-medium text-navy hover:underline">Home</a>
+                </li>
+                <li aria-current="page">
+                    <div class="flex items-center gap-2">
+                        <span>/</span>
+                        <strong class="text-navy hover:underline font-bold">All Topics</strong>
+                    </div>
+                </li>
+            </ol>
+        </nav>
+    </div>
+    <div class="md:block mx-auto px-8 md:px-[5%] py-8 md:py-0 mb-12 md:mb-24">
+    <form class="flex">
+        <input class="placeholder-black border-b-2 border-black w-full p-4" type="text" x-model="search" placeholder="Search Topics...">
+        <button class="font-sans bg-gray-900 text-base font-bold px-12 rounded-r-lg" @click="searchTopics">Search</button>
+    </form>
+    </div>
+    <div class="md:block mx-auto px-8 md:px-[5%] mb-24">
+    <div>
+        <ul class="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xxl:grid-cols-5 gap-4">
+            <template x-for="topic in filteredTopics" :key="topic.title">
+                <li class="flex">
+                    <a class="rounded-lg overflow-hidden bg-gray-200 group text-[21px] text-navy hover:bg-yellow hover:underline w-full bg-[#F4B413] block text-center font-bold flex flex-col" :href="'/topics/' + topic.title">
+                        <div class="h-[120px] flex items-center justify-center">
+                            <img :src="topic.image.split('/src').join('')" role="presentation" />
+                        </div>
+                        <div class="rounded-b-lg flex-1 p-8 bg-yellow" x-text="topic.hero.title"></div>
+                    </a>
+                </li>
+            </template>
+        </ul>
+    </div>
+    </div>
+    <script>
+    document.addEventListener('alpine:init', () => {
+        Alpine.data('topicsData', () => ({
+        search: '',
+        Topics: [],
+        init() {
+            this.topics = {{ topics | dump | safe }};
+        },
+        searchTopics() {
+            window.location.href = '?q=' + this.search;
+        },
+        get filteredTopics() {
+            if (!this.search) {
+                return this.topics.sort((a, b) => a.hero.title.localeCompare(b.hero.title));
+            }
+
+            return this.topics.filter((topic) => {
+                return String(topic.hero.title).toLowerCase().includes(this.search.toLowerCase())
+            }).sort((a, b) => a.hero.title.localeCompare(b.hero.title));
+        }
+        }));
+    });
+    </script>
+</div>
+
+
+

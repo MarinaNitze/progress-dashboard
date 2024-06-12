@@ -1,0 +1,84 @@
+---
+layout: default
+title: Recommendations
+---
+
+{% set recommendations = recommendations.recommendations %}
+
+<div x-data="recommendationsData" x-init="init">
+  <div class="flex items-end bg-gray-300 bg-no-repeat bg-right" style="background-image: url({{ recommendationsIndex.hero | replace('/src', '') }});">
+    <div class="mx-auto w-full">
+      <div class="max-w-screen-lg py-24 pl-[5%]">
+        <h1 class="font-serif text-5xl font-bold text-white">{{ recommendationsIndex.title }}</h1>
+      </div>
+    </div>
+  </div>
+  <div class="hidden md:block mx-auto px-8 md:px-[5%]">
+      <nav class="flex py-8" aria-label="Breadcrumb">
+          <ol class="inline-flex items-center space-x-1 md:space-x-3">
+              <li class="inline-flex items-center">
+                  <a href="/" class="font-medium text-navy hover:underline">Home</a>
+              </li>
+              <li aria-current="page">
+                  <div class="flex items-center gap-2">
+                      <span>/</span>
+                      <strong class="text-navy hover:underline font-bold">All Recommendations</strong>
+                  </div>
+              </li>
+          </ol>
+      </nav>
+  </div>
+  <div class="md:block mx-auto px-8 md:px-[5%] py-8 md:py-0 mb-12 md:mb-24">
+    <form class="flex">
+      <input class="placeholder-black border-b-2 border-black w-full p-4" type="text" x-model="search" placeholder="Search Recommendations...">
+      <button class="font-sans bg-gray-900 text-base font-bold px-12 rounded-r-lg" @click="searchTopics">Search</button>
+    </form>
+  </div>
+  <div class="md:block mx-auto px-8 md:px-[5%]">
+    <div>
+      <template x-for="projectGroup in projectGroups">
+        <div class="mb-12">
+          <template x-if="filteredrecommendations.some(project => project.heading.charAt(0) === projectGroup)">
+            <h2 class="font-serif text-4xl font-bold mb-12 mt-0">
+                <span class="border-b-[4px] border-[#fe6659] pb-2" x-text="projectGroup"></span>
+            </h2>
+          </template>
+          <ul>
+            <template x-for="project in filteredrecommendations" :key="project.title">
+              <li x-show="project.heading.charAt(0) === projectGroup" class="mb-4">
+                <a class="text-[21px] text-navy hover:underline" :href="'/recommendations/' + project.title" x-text="project.heading"></a>
+              </li>
+            </template>
+          </ul>
+        </div>
+      </template>
+    </div>
+  </div>
+  <script>
+    document.addEventListener('alpine:init', () => {
+      Alpine.data('recommendationsData', () => ({
+        search: '',
+        recommendations: [],
+        init() {
+          this.recommendations = {{ recommendations | dump | safe }};
+        },
+        searchrecommendations() {
+          window.location.href = '?q=' + this.search;
+        },
+        get filteredrecommendations() {
+          if (!this.search) {
+            return this.recommendations.sort((a, b) => a.heading.localeCompare(b.heading));
+          }
+          return this.recommendations.filter((project) => {
+            return String(project.heading).toLowerCase().includes(this.search.toLowerCase())
+          }).sort((a, b) => a.heading.localeCompare(b.heading));
+        },
+        get projectGroups() {
+          return Array.from(new Set(this.recommendations.map(project => project.heading.charAt(0)))).sort();
+        }
+      }));
+    });
+  </script>
+</div>
+
+

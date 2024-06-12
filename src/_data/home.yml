@@ -1,0 +1,67 @@
+home:
+  title: Progress Dashboard
+  hero:
+    title: 'Learning faster. Together. '
+    content: I'd like more information regarding
+    backgroundColor: primary
+    image: ../images/heros/homepage-hero-sm-1-.png
+    imgAlt: Hero image
+    link: hero
+    linkText: hero link
+  features:
+    whatsNew: "What's New"
+    largeFeature:
+      content: Learn more about the new recommended standards, and how to take part in designing them.
+      image: ../images/features/feature-babies.png
+      title: New recommended standards for approving kinship caregivers
+      imgAlt: full width feature image
+      link: /kinship-caregivers
+      linkText: Find out how
+      layout: lg
+    mediumFeature:
+      content:
+        Children do better when they’re placed with family members or other
+        known adults ("kin"). But identifying and connecting with extended
+        family members can be a challenge for foster care programs. [Learn
+        more](https://progress-dashboard.netlify.app/topic/finding-kin).
+      image: ../images/features/Medium-Feature.png
+      title: Get tips on how to find family and kin.
+      imgAlt: medium feature image
+      layout: md
+    smallFeature:
+      content: Keeping track of a youth’s connections can get complicated, and a
+        genogram offers a helpful, visual solution. See key relationships easily
+        and start identifying possible additions. [Learn
+        more](https://progress-dashboard.netlify.app/recommendation/make-a-genogram).
+      image: ../images/features/Small-Feature-Footer.png
+      title: Make a genogram.
+      imgAlt: small feature image
+      layout: sm
+  mission:
+    title: Our mission
+    backgroundColor: light
+    image: ../images/heros/mission-fam-bg.png
+    content: >-
+      We’re working with experts from across the country to identify and
+      document practical, scalable strategies for improving child welfare.
+      Everything in this playbook comes from [our growing community of child
+      welfare practitioners](https://www.childwelfareplaybook.com/about) —
+      whether it’s tips for improving background checks or resources for finding
+      family members.
+
+
+      This playbook is designed specifically for you to copy these ideas. (Seriously, you don’t need to ask us – just take whatever you find useful!)
+
+
+      This playbook is the result of a collaboration between states at the cutting edge of child welfare and [New America’s Public Interest Technology team](https://www.newamerica.org/pit/), in partnership with [Foster America](https://www.foster-america.org/) and [Think of Us](https://www.thinkof-us.org/).
+    imgAlt: mission image
+  topicSection:
+    popularTopics: ''
+    topics:
+      - recruitment
+      - background-checks
+      - extended-foster-care
+      - foster-parent-licensing
+      - inquiry-management
+      - family-finding
+      - license-renewal

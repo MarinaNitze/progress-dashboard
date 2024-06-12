@@ -1,0 +1,134 @@
+---
+layout: default
+pagination:
+  data: topics.topics
+  size: 1
+  alias: topic
+permalink: "/topics/{{ topic.title }}/"
+---
+
+<div class="flex items-end bg-gray-900 bg-no-repeat bg-right" style="background-image: url({{ topic.hero.image | replace('/src', '') }});">
+    <div class="mx-auto w-full">
+        <div class="max-w-screen-md py-24 pl-[5%]">
+            <h1 class="font-serif text-5xl font-bold">{{ topic.hero.title }}</h1>
+        </div>
+    </div>
+</div>
+<div class="hidden md:block mx-auto px-8 md:px-[5%]">
+    <nav class="flex py-8" aria-label="Breadcrumb">
+        <ol class="inline-flex items-center space-x-1 md:space-x-3">
+            <li class="inline-flex items-center">
+                <a href="/" class="font-medium text-navy hover:underline">Home</a>
+            </li>
+            <li>
+                <div class="flex items-center gap-2">
+                    <span>/</span>
+                    <a href="/topics" class="font-medium text-navy hover:underline">Topics</a>
+                </div>
+            </li>
+            <li aria-current="page">
+                <div class="flex items-center gap-2">
+                    <span>/</span>
+                    <strong class="text-navy hover:underline font-bold">{{ topic.hero.title }}</strong>
+                </div>
+            </li>
+        </ol>
+    </nav>
+</div>
+<div class="flex flex-col md:flex-row gap-12 mt-12">
+    <div class="bg-[#522a10] py-12 px-8 md:pl-[5%] sticky md:self-start rounded-r-lg">
+        <div class="w-[210px]">
+            <div class="font-serif font-bold text-3xl text-white mb-2">On this page</div>
+            <hr class="border-[#fe6659] border-b-[4px] w-1/2 mb-4 mt-4" />
+            <ul class="flex flex-col gap-2">
+                {% if topic.about %}
+                    <li>
+                        <a class="text-lg hover:underline text-white hover:text-[#fe6659]" href="#about">
+                            {% if topic.aboutTitle %}
+                                {{ topic.aboutTitle }}
+                            {% else %}
+                                About this topic
+                            {% endif %}
+                        </a>
+                    </li>
+                {% endif %}
+                {% if topic.why %}
+                    <li>
+                        <a class="text-lg hover:underline text-white hover:text-[#fe6659]" href="#why">
+                            {% if topic.whyTitle %}
+                                {{ topic.whyTitle }}
+                            {% else %}
+                                Why this matters
+                            {% endif %}
+                        </a>
+                    </li>
+                {% endif %}
+                {% if topic.why %}
+                    <li>
+                        <a class="text-lg hover:underline text-white hover:text-[#fe6659]" href="#what">
+                            {% if topic.whatTitle %}
+                                {{ topic.whatTitle }}
+                            {% else %}
+                                What we can do
+                            {% endif %}
+                        </a>
+                    </li>
+                {% endif %}
+            </ul>
+        </div>
+    </div>
+    <div class="w-full px-8">
+        <div class="md:pr-[10%] md:pl-0 prose prose-xl max-w-none">
+            {% if topic.about %}
+                <div class="mb-12">
+                    <h2 id="about" class="text-4xl font-bold mb-8 mt-0 font-serif">
+                        <span class="border-b-[4px] border-[#fe6659] pb-2">
+                            {% if topic.aboutTitle %}
+                                {{ topic.aboutTitle }}
+                            {% else %}
+                                About this topic
+                            {% endif %}
+                        </span>
+                    </h2>
+                    {{ topic.about | markdown | safe }}
+                </div>
+            {% endif %}
+            {% if topic.why %}
+                <div class="mb-12">
+                    <h2 id="why" class="text-4xl font-bold mb-8 mt-0 font-serif">
+                        <span class="border-b-[4px] border-[#fe6659] pb-2">
+                            {% if topic.whyTitle %}
+                                {{ topic.whyTitle }}
+                            {% else %}
+                                Why this matters
+                            {% endif %}
+                        </span>
+                    </h2>
+                    {{ topic.why | markdown | safe }}
+                </div>
+            {% endif %}
+            {% if topic.what %}
+                <div class="mb-12">
+                    <h2 id="why" class="text-4xl font-bold mb-8 mt-0 font-serif">
+                        <span class="border-b-[4px] border-[#fe6659] pb-2">
+                            {% if topic.whatTitle %}
+                                {{ topic.whatTitle }}
+                            {% else %}
+                                What we can do
+                            {% endif %}
+                        </span>
+                    </h2>
+                    {{ topic.what | markdown | safe }}
+                </div>
+            {% endif %}
+            {% if topic.what %}
+                <div class="mb-12">
+                    <h2 id="why" class="text-4xl font-bold mb-8 mt-0 font-serif">
+                        <span class="border-b-[4px] border-[#fe6659] pb-2">{{ topic.whatTitle }}</span>
+                    </h2>
+                    {{ topic.what | markdown | safe }}
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
