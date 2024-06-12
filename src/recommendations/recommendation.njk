@@ -4,7 +4,7 @@ pagination:
   data: recommendations.recommendations
   size: 1
   alias: recommendation
-permalink: "/recommendations/{{ recommendation.title }}/"
+permalink: "/recommendations/{{ recommendation.title | replace(' ', '-') | replace('?', '-') | replace('!', '-') | replace('@', '-') | replace('#', '-') | replace('$', '-') | replace('%', '-') | replace('^', '-') | replace('&', '-') | replace('*', '-') | replace('(', '-') | replace(')', '-') | replace('+', '-') | replace('=', '-') | replace('{', '-') | replace('}', '-') | replace('[', '-') | replace(']', '-') | replace('|', '-') | replace('\\', '-') | replace(':', '-') | replace(';', '-') | replace('"', '-') | replace('\'', '-') | replace('<', '-') | replace('>', '-') | replace(',', '-') | replace('.', '-') | replace('/', '-') | replace('?', '-') }}/index.html"
 ---
 
 <div class="flex items-end bg-white bg-no-repeat bg-right">
