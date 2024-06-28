@@ -3,14 +3,17 @@ layout: default
 title: Search
 ---
 
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+
 <div x-init="init" x-data="searchData">
-  <div class="min-h-[400px] bg-primary">
+  <div class="bg-white border-b-2 border-black">
       <div class="mx-auto px-8 md:px-[5%]">
           <div class="max-w-screen-lg py-24">
-                <h1 class="text-7xl font-bold text-white mb-24" x-text="searchParam != '' ? `Search results for: ${searchParam}` : `Search`"></h1>
-                <form class="flex gap-2">
-                    <input class="placeholder-black bg-primary text-white border-b-2 border-white w-full p-4" type="text" x-model="search" x-bind:value="search" />
-                    <button class="font-sans bg-white text-primary font-bold px-12" @click="performSearch">Search</button>
+                <h1 class="text-5xl font-serif font-black mb-8" x-text="searchParam != '' ? `Search results for: ${searchParam}` : `Search`"></h1>
+                <form class="flex border-2 border-black rounded-lg max-w-[600px]">
+                    <input class="font-sans placeholder-base text-base w-full p-4 rounded-l-lg" type="text" x-model="search" x-bind:value="search" />
+                    <button class="cursor-pointer font-sans bg-salmon text-base font-bold px-12 border-2 border-white hover:text-base hover:underline rounded-r-lg" @click="performSearch">Search</button>
                 </form>
           </div>
       </div>
@@ -37,7 +40,7 @@ title: Search
                     <button
                         id="tab-1"
                         class="border-b-4 pb-2 mr-4"
-                        :class="activeTab === 1 ? 'border-primary' : 'border-transparent'"
+                        :class="activeTab === 1 ? 'border-salmon' : 'border-transparent'"
                         :tabindex="activeTab === 1 ? 0 : -1"
                         :aria-selected="activeTab === 1"
                         aria-controls="tabpanel-1"
@@ -48,7 +51,7 @@ title: Search
                     <button
                         id="tab-2"
                         class="border-b-4 pb-2 mr-4"
-                        :class="activeTab === 2 ? 'border-primary' : 'border-transparent'"
+                        :class="activeTab === 2 ? 'border-salmon' : 'border-transparent'"
                         :tabindex="activeTab === 2 ? 0 : -1"
                         :aria-selected="activeTab === 2"
                         aria-controls="tabpanel-2"
@@ -59,7 +62,7 @@ title: Search
                     <button
                         id="tab-3"
                         class="border-b-4 pb-2"
-                        :class="activeTab === 3 ? 'border-primary' : 'border-transparent'"
+                        :class="activeTab === 3 ? 'border-salmon' : 'border-transparent'"
                         :tabindex="activeTab === 3 ? 0 : -1"
                         :aria-selected="activeTab === 3"
                         aria-controls="tabpanel-3"
@@ -114,12 +117,12 @@ title: Search
                         x-show="activeTab === 2"                     
                     >
                         <ul>
-                            <template x-for="result in results" :key="result.title" x-if="result && result.type === 'PROJECT'">
+                            <template x-for="result in results" :key="result.title" x-if="result && result.type === 'RECOMMENDATION'">
                                 <li class="mb-12">
-                                    <template x-if="result && result.type === 'PROJECT'">
+                                    <template x-if="result && result.type === 'RECOMMENDATION'">
                                         <div class="text-lg">
-                                            <h3 class="text-[26px] text-navy font-bold hover:underline"><a :href="'/projects/' + result.title" class="flex-grow" x-text="result.heading"></a></h3>
-                                            <div class="my-2 font-bold">Project</div>
+                                            <h3 class="text-[26px] text-navy font-bold hover:underline"><a :href="'/recommendations/' + result.title" class="flex-grow" x-text="result.heading"></a></h3>
+                                            <div class="my-2 font-bold">Recommendation</div>
                                             <div class="flex-grow" x-html="markdownToHtml(result.about)"></div>
                                         </div>
                                     </template>
@@ -156,90 +159,88 @@ title: Search
         </div>
     </template>
   </div>
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
-  <script>
-        let CORAM_PROJECTS = {{ projects | dump | safe }};
-        let CORAM_TOPICS = {{ topics | dump | safe }};
-        let CORAM_INDEX;
-
-        let urlParams = new URLSearchParams(window.location.search);
-
-        document.addEventListener('alpine:init', () => {
-            Alpine.data('searchData', () => ({
-                search: '',
-                results: [],
-                searchParam: '',
-                hasNoResults() {
-                    return this.results.length === 0 && this.searchParam !== '';
-                },
-                hasResults() {
-                    return this.results.length > 0;
-                },
-                init() {
-                    this.search = urlParams.get('q') || '';
-                    this.searchParam = urlParams.get('q') || '';
-
-                    const checkFuseSearch = setInterval(() => {
-                        if (typeof Fuse !== 'undefined') {
-                            this.initSearch();
-                            clearInterval(checkFuseSearch);
-                        } else {
-                            console.log('Waiting for FlexSearch to load...');
-                        }
-                    }, 1000);
-                },
-                initSearch() {
-                    const options = {
-                        includeScore: true,
-                        keys: ['heading', 'hero.title', 'who', 'what', 'how', 'why']
-                    }
-                
-                    CORAM_INDEX = new Fuse([], options);
-
-                    CORAM_TOPICS.topics.forEach((topic, index) => {
-                        CORAM_INDEX.add({
-                            type: "TOPIC",
-                            ...topic
-                        });
-                    });
-                    
-                    CORAM_PROJECTS.projects.forEach((project, index) => {
-                        CORAM_INDEX.add({
-                            type: "PROJECT",
-                            ...project
-                        });
-                    });
-
-                    if (this.search !== '') {
-                        this.performSearch()
-                    }
-                },
-                markdownToHtml(markdownText) {
-                    return marked.parse(markdownText);
-                },
-                performSearch(ev) {
-                    if (ev) {
-                        ev.preventDefault();
-                    }
-
-                    this.results = [];
-
-                    let url = new URL(window.location.href);
-                    url.searchParams.set('q', this.search);
-                    window.history.pushState({}, '', url);
-
-                    this.searchParam = this.search;
-
-                    const searchResults = CORAM_INDEX.search(this.search);
-
-                    if (searchResults.length > 0) {
-                        this.results = searchResults.map(result => result.item);
-                    }
-                }
-            }));
-        });
-    </script>
 </div>
 
+<script>
+    let CORAM_RECOMMENDATIONS = {{ recommendations | dump | safe }};
+    let CORAM_TOPICS = {{ topics | dump | safe }};
+    let CORAM_INDEX;
+
+    let urlParams = new URLSearchParams(window.location.search);
+
+    document.addEventListener('alpine:init', () => {
+        Alpine.data('searchData', () => ({
+            search: '',
+            results: [],
+            searchParam: '',
+            hasNoResults() {
+                return this.results.length === 0 && this.searchParam !== '';
+            },
+            hasResults() {
+                return this.results.length > 0;
+            },
+            init() {
+                this.search = urlParams.get('q') || '';
+                this.searchParam = urlParams.get('q') || '';
+
+                const checkFuseSearch = setInterval(() => {
+                    if (typeof Fuse !== 'undefined') {
+                        this.initSearch();
+                        clearInterval(checkFuseSearch);
+                    } else {
+                        console.log('Waiting for FlexSearch to load...');
+                    }
+                }, 1000);
+            },
+            initSearch() {
+                const options = {
+                    includeScore: true,
+                    keys: ['heading', 'hero.title', 'who', 'what', 'how', 'why']
+                }
+            
+                CORAM_INDEX = new Fuse([], options);
+
+                CORAM_TOPICS.topics.forEach((topic, index) => {
+                    CORAM_INDEX.add({
+                        type: "TOPIC",
+                        ...topic
+                    });
+                });
+                
+                CORAM_RECOMMENDATIONS.recommendations.forEach((recommendation, index) => {
+                    CORAM_INDEX.add({
+                        type: "RECOMMENDATION",
+                        ...recommendation
+                    });
+                });
+
+                if (this.search !== '') {
+                    this.performSearch()
+                }
+            },
+            markdownToHtml(markdownText) {
+                return marked.parse(markdownText);
+            },
+            performSearch(ev) {
+                if (ev) {
+                    ev.preventDefault();
+                }
+
+                this.results = [];
+
+                let url = new URL(window.location.href);
+                url.searchParams.set('q', this.search);
+                window.history.pushState({}, '', url);
+
+                this.searchParam = this.search;
+
+                const searchResults = CORAM_INDEX.search(this.search);
+
+                if (searchResults.length > 0) {
+                    this.results = searchResults.map(result => result.item);
+                }
+            }
+        }));
+    });
+</script>
 

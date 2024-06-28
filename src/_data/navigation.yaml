@@ -8,5 +8,7 @@ items:
     url: "/compare"
   - text: About
     url: "/about"
+  - text: Blog
+    url: "/blog"
   - text: Search
     url: "/search"
