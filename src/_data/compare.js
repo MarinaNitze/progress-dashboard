@@ -3,32 +3,29 @@ require('dotenv').config();
 const Airtable = require('airtable');
 
 let base = new Airtable({ apiKey: process.env.AIRTABLE_API_KEY }).base(process.env.AIRTABLE_BASE_ID);
-console.log(base);
 
-module.exports = () => {
-  /*
-  return new Promise((resolve, reject) => {
-    let allDatasets = [];
-    
-    base.table('AW').select().all().then((result) => {
-      console.log(result);
-    });
+module.exports = async () => {
+  let allDatasets = {};
 
-    base.table('States').select().all().then((result) => {
-      console.log(result);
-    });
+  try {
+    const awData = await base.table('AW').select().all();
+    allDatasets['AW'] = awData;
 
-    base.table('Practices').select().all().then((result) => {
-      console.log(result);
-    });
+    const statesData = await base.table('States').select().all();
+    allDatasets['States'] = statesData;
 
-    base.table('Practices - CA Counties').select().all().then((result) => {
-      console.log(result);
-    });
+    const practicesData = await base.table('Practices').select().all();
+    allDatasets['Practices'] = practicesData;
 
-    base.table('CA Counties').select().all().then((result) => {
-      console.log(result);
-    });
-  });
-  */
+    const practicesCACountiesData = await base.table('Practices - CA Counties').select().all();
+    allDatasets['Practices - CA Counties'] = practicesCACountiesData;
+
+    const caCountiesData = await base.table('CA Counties').select().all();
+    allDatasets['CA Counties'] = caCountiesData;
+
+    return allDatasets;
+  } catch (error) {
+    console.error(error);
+    throw new Error('Failed to fetch data from Airtable');
+  }
 };
