@@ -10,8 +10,11 @@ path: home
 {% set mission = home.home.mission %}
 
 
-<div class="min-h-[500px] bg-no-repeat bg-yellow bg-right-bottom flex items-center" style="background-image: url({{ hero.image | replace('/src', '') }})">
-    <div class="px-8 md:px-[5%]">
+<div class="bg-no-repeat bg-yellow bg-right-bottom flex flex-col md:flex-row items-center">
+    <div class="order-1 md:order-2 w-full md:w-1/2 flex items-end">
+        <img src="{{ hero.image | replace('/src', '') }}" role="presentation" class="w-full h-full object-cover" />
+    </div>
+    <div class="order-2 md:order-1 p-8 md:px-[5%]">
         <div class="max-w-xl">
             <h1 class="text-5xl font-serif font-black mb-8">{{ hero.title }}</h1>
             <div class="text-xl mb-8">{{ hero.content }}</div>
@@ -72,7 +75,7 @@ path: home
             <div class="aspect-w-1 aspect-h-1">
                 <img src="{{ mission.image | replace('/src', '') }}" alt="{{ mission.title }}" class="w-full h-full object-cover hidden md:block" />
             </div>
-            <div class="md:p-12 w-3/4">
+            <div class="md:p-12 w-3/4 p-8">
                 <h2 class="text-4xl font-bold mb-8 mt-0">
                     <span class="border-b-[4px] border-orange pb-2 font-serif font-black">{{ mission.title }}</span>
                 </h2>
