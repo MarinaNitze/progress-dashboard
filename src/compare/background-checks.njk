@@ -172,9 +172,10 @@ title: Out of State Child Abuse and Neglect Checks (Adam Walsh Checks)
                 });
 
                 this.comparisons = COMPARE_DATA.filter(comparison => {
-                    console.log(comparison.fields.Topic);
                     return comparison.fields.Topic === COMPARE_TOPIC;
                 }).map(comparison => comparison.fields);
+
+                console.log("TEST", this.comparisons);
 
                 // Watch for changes to filters
                 this.$watch('filterAdministration', () => {
