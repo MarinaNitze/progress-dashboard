@@ -13,7 +13,7 @@ collections:
     files:
       - label: 'Topics Collection'
         name: 'topicsCollection'
-        file: 'src/pages/content/topics.content.yml'
+        file: 'src/_data/topics.yml'
         fields:
           - label: 'Topics'
             name: 'topics'
@@ -95,7 +95,7 @@ collections:
                 required: false
       - name: 'recommendationsCollection'
         label: 'Recommendations Collection'
-        file: 'src/pages/content/recommendations.content.yml'
+        file: 'src/_data/recommendations.yml'
         fields:
           - label: 'Recommendations'
             name: 'recommendations'
@@ -236,12 +236,6 @@ collections:
                 fields:
                   - { label: 'Title', name: 'title', widget: 'string' }
                   - { label: 'Content', name: 'content', widget: 'markdown' }
-                  - {
-                      label: 'Background Color',
-                      name: 'backgroundColor',
-                      widget: 'hidden',
-                      default: 'yellow',
-                    }
                   - {
                       label: 'Image',
                       name: 'image',
