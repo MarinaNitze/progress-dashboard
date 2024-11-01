@@ -19,6 +19,7 @@ collections:
             name: 'topics'
             widget: 'list'
             summary: '{{fields.title}}'
+            collapsed: true
             fields:
               - {
                   label: 'Title for url',
