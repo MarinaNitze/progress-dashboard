@@ -39,14 +39,6 @@ collections:
                       allow_multiple: false,
                     }
                   - {
-                      label: 'Background Color',
-                      name: 'backgroundColor',
-                      widget: 'select',
-                      options:
-                        ['yellow'],
-                      default: ['yellow'],
-                    }
-                  - {
                       label: 'Image Alt Text',
                       name: 'imgAlt',
                       widget: 'string',
