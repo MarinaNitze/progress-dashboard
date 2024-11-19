@@ -7,10 +7,16 @@ topics:
     layout: topic
     title: connecting-youth-to-their-supportive-adults
     image: /src/images/topics/Topic-FPL.svg
-    about: Youth in foster care often leave with fewer connections than they entered care with. Children can't be expected to maintain these relationships by themselves—they can't drive, may not have a phone while in care, and may not even have contact information. It should be the responsibility of every child welfare system to maintain and nurture all of a child's supportive relationships throughout their time in care.
-    why: Children in foster care deserve every support available, including rich relationships with their support network.
+    about: Youth in foster care often leave with fewer connections than they entered
+      care with. Children can't be expected to maintain these relationships by
+      themselves—they can't drive, may not have a phone while in care, and may
+      not even have contact information. It should be the responsibility of
+      every child welfare system to maintain and nurture all of a child's
+      supportive relationships throughout their time in care.
+    why: Children in foster care deserve every support available, including rich
+      relationships with their support network.
     what: >-
-
+      
 
       * **Document a youth's support network.** Whether with a heart map or a genogram, capture all of a youth's relationships, their contact information, and a next step for staying in touch. 
 
@@ -33,10 +39,18 @@ topics:
     layout: topic
     title: emergency-placements
     image: /src/images/topics/Topic-FPL.svg
-    about: While some entries in foster care are planned in advance, many others are sudden, perhaps in the middle of the night or on a weekend. Placement desks are under great duress to find family or a matching foster home immediately, even in the face of dwindling resources and homes. Worse, when unsuitable placements are made under duress, they might work out for days or weeks, but eventually disrupt and start the emergency all over again.
-    why: A strategic variety of emergency options can ultimately increase the number of youth initially placed with kin (by giving the system enough time to find them) and avoid institutional placements.
+    about: While some entries in foster care are planned in advance, many others are
+      sudden, perhaps in the middle of the night or on a weekend. Placement
+      desks are under great duress to find family or a matching foster home
+      immediately, even in the face of dwindling resources and homes. Worse,
+      when unsuitable placements are made under duress, they might work out for
+      days or weeks, but eventually disrupt and start the emergency all over
+      again.
+    why: A strategic variety of emergency options can ultimately increase the number
+      of youth initially placed with kin (by giving the system enough time to
+      find them) and avoid institutional placements.
     what: >-
-
+      
 
       * **Dedicated emergency placements.** Sometimes called crisis nurseries or receiving homes, facilities or dedicated foster homes that specialize in very short-term (usually under 72 hours) emergency placements can give taxed placement desks enough time to find and resource kinship placements, or at worst, thoughtfully match the child with an available home in the community that matches their needs. 
 
@@ -54,15 +68,14 @@ topics:
     layout: topic
     title: extended-foster-care
     image: /src/images/topics/Topic-EFC.svg
-    about:
-      The end of foster care can be a difficult and confusing time for youth.
+    about: The end of foster care can be a difficult and confusing time for youth.
       However, there are several important ways that staff can better prepare
       and support youth during this time.
     why: Youth can often be confused about the end of foster care—even about the
       date foster care will end. This means that youth may miss out on
       opportunities to build independence or connections.
     what: >-
-
+      
 
       * **Be specific about the end of foster care.** Youth often report confusion about the day foster care ends, as they may misunderstand “until 21” to mean that care continues until their 22nd birthday. Using specific language about when foster care ends will ensure that youth are better prepared and not accidentally delaying plans or activities that can prepare them for independence.
 
@@ -87,17 +100,17 @@ topics:
     layout: topic
     title: finding-kin
     image: /src/images/topics/Topic-FF.svg
-    about:
-      Children in care do better when they’re placed with family members or other
-      adults they know and trust. But identifying and connecting with extended family members can
-      be a challenge for foster care programs.
+    about: >-
+      Children in care do better when they’re placed with family members or
+      other adults they know and trust. But identifying and connecting with
+      extended family members can be a challenge for foster care programs.
 
 
       Child welfare systems who have adopted the practices listed on this page are able to place children with relatives more than 80% of the time.
 
 
       **Track adoption of these practices on the [progress dashboard](/compare/states/Kin%20Finding/)**.
-    why: >-
+    why: >
       Children can’t have too many adults who care about them. A strong support
       system of adults supports young people’s resiliency and long term health
       and well-being. 
@@ -128,7 +141,7 @@ topics:
       - involve-kin-prior-to-removal
       - leverage-the-court-system-to-encourage-kin
       - test-your-communications-with-real-kin
-
+    what: "\ \n"
   - hero:
       backgroundColor: light
       title: Foster Parent Compensation
@@ -137,10 +150,20 @@ topics:
     layout: topic
     title: foster-parent-compensation
     image: /src/images/topics/Topic-FPL.svg
-    about: There are a variety of ways to compensate resource families beyond the standard room and board rate (which itself can vary based on different factors), including special salaried foster parent programs and ad hoc additional employment opportunities.
-    why: Every caregiver of a dependent child should have financial support to provide a stable and supportive placement. In many systems, kinshp caregivers lack access to these resources. And in the case of some youth with high levels of need, growing professional foster parent programs are proving better outcomes and helping keep these youth out of institutions. And providing smaller but meaningful ways for your families to earn extra money for related work, like co-leading trainings, can increase satisfaction and retention.
+    about: There are a variety of ways to compensate resource families beyond the
+      standard room and board rate (which itself can vary based on different
+      factors), including special salaried foster parent programs and ad hoc
+      additional employment opportunities.
+    why: Every caregiver of a dependent child should have financial support to
+      provide a stable and supportive placement. In many systems, kinshp
+      caregivers lack access to these resources. And in the case of some youth
+      with high levels of need, growing professional foster parent programs are
+      proving better outcomes and helping keep these youth out of institutions.
+      And providing smaller but meaningful ways for your families to earn extra
+      money for related work, like co-leading trainings, can increase
+      satisfaction and retention.
     what: >-
-
+      
 
       * **Look for additional ways to compensate foster parents.** This might take the form of paying them to appear on panels, provide mentoring to new families, or incentive payment for providing referrals or placement stability. 
 
@@ -169,11 +192,10 @@ topics:
     about: Foster parent licensing can be a lengthy, and at times inefficient,
       process. Delays in licensing can mean losing homes in a time when
       placement options are already severely limited.
-    why: While it is important to be thorough, delays in the process
-      can overburden licensing workers and inspectors or even risk losing
-      families.
+    why: While it is important to be thorough, delays in the process can overburden
+      licensing workers and inspectors or even risk losing families.
     what: >-
-
+      
 
       * **Increase support for licensing workers.** Providing clerical support for licensing workers helps staff maintain a higher case load, while increasing family satisfaction. If you can give families a dedicated licensor through the whole process, staff will be able to reduce the likelihood of errors while developing a more holistic picture of the family. 
 
@@ -202,18 +224,16 @@ topics:
     layout: topic
     title: inquiry-management
     image: /src/images/topics/Topic-IM.svg
-    about:
-      Responding to and tracking inquiries from potential foster families can
+    about: Responding to and tracking inquiries from potential foster families can
       be time consuming, but represents a key moment for engagement and
       successful recruitment.
     why: Potential families may fill out an inquiry form when they are ready to
       apply the next day, or the next year. Remaining proactive in your inquiry
       management process can mean keeping families engaged over the months or
-      years as they decide to become a foster family,
-      while allowing families who are ready to move to the application process
-      quickly.
+      years as they decide to become a foster family, while allowing families
+      who are ready to move to the application process quickly.
     what: >-
-
+      
 
       * **Respond to inquiries quickly.** If too much time passes after a family completes an inquiry form, a potential caregiver may become discouraged, second guess themselves, or change their mind. Responding quickly and providing more information will help families to immediately feel engaged and supported, while allowing those who are ready to complete an application more quickly. 
 
@@ -238,11 +258,11 @@ topics:
     about: License renewal can be a time-consuming process for both staff and
       families, but a successful license renewal process can ensure better
       retention and increased family satisfaction.
-    why: The license renewal process can provide an
-      opportunity for staff to connect with foster families, maintaining family
-      engagement and increasing retention.
+    why: The license renewal process can provide an opportunity for staff to connect
+      with foster families, maintaining family engagement and increasing
+      retention.
     what: >-
-
+      
 
       * **Use electronic tools to increase understanding and engagement.** Emailing renewal requirements to families can decrease the chances of important documents going unnoticed in the large amount of mail that families receive from agencies. Additionally, families often have multiple renewal dates pending, for items like CPR recertification or pet vaccines. Using an electronic calendar to track and send reminders for these items helps families to be better prepared at renewal time. 
 
@@ -260,17 +280,18 @@ topics:
     layout: topic
     title: out-of-state-background-checks
     image: /src/images/topics/Topic-BC.svg
-    about:
+    about: >-
       Child welfare programs are required to check the child abuse and neglect
-      registry in each state where a potential foster parent lived during
-      the past 5 years. This is called the “Adam Walsh check” after the 2006 act
-      that requires it. Programs must do this for anyone else in the home
-      who’s 18 years or older.
+      registry in each state where a potential foster parent lived during the
+      past 5 years. This is called the “Adam Walsh check” after the 2006 act
+      that requires it. Programs must do this for anyone else in the home who’s
+      18 years or older.
 
 
       **Track adoption of these practices on the [progress dashboard](/compare/Background%20Checks)**.
     why: >-
-      Flaws and inconsistencies in states’ out of state child abuse and neglect check processes are: 
+      Flaws and inconsistencies in states’ out of state child abuse and neglect
+      check processes are: 
 
 
       * Putting children at risk. Some states only respond to requests when someone doesn’t pass the background check. This means that foster care programs don’t know if a potential foster parent passed the background check or if the request was simply lost. 
@@ -340,12 +361,11 @@ topics:
     layout: topic
     title: recruitment
     image: /src/images/topics/Topic-Recruitment.svg
-    about:
-      Foster family recruitment is vital to ensuring a wide pool of placement
+    about: Foster family recruitment is vital to ensuring a wide pool of placement
       options for youth in care. Innovative programs are finding a variety of
-      creative ways to successfully recruit new foster families that meet the needs of children in care.
-    why:
-      Successful recruitment means that youth in care can be placed with families
+      creative ways to successfully recruit new foster families that meet the
+      needs of children in care.
+    why: Successful recruitment means that youth in care can be placed with families
       who are in their existing community and culture, who speak the same
       language, etc. Start by identifying the families your children need most,
       followed by intentional recruitment methods targeting the communities and
@@ -356,10 +376,11 @@ topics:
       family inquiries, to identify the gaps in your current recruitment. Once
       those gaps are identified, you can tailor your recruitment materials and
       methods to better reflect your community and the families needed most.
-      Additionally, be clear in your materials that you need homes willing to work towards reunification,
-      not people looking to adopt infants. Clarity early in the process will help
-      potential foster families make the right choice for themselves, as well as
-      help staff focus on the families most needed for placements.
+      Additionally, be clear in your materials that you need homes willing to
+      work towards reunification, not people looking to adopt infants. Clarity
+      early in the process will help potential foster families make the right
+      choice for themselves, as well as help staff focus on the families most
+      needed for placements.
 
 
       **Make the recruitment, application, and placement process seamless.** By including recruiters in follow up activities with potential foster families, you can increase family satisfaction and prevent losing potential families, who may feel confused or unsupported if they’re passed off between multiple staff members. Recruiters should also be included in your routine case management and placement meetings, as they can help identify any pending families who are good matches for current youth. Once identified, you should prioritize licensing these matching families. 
@@ -398,9 +419,15 @@ topics:
     layout: topic
     title: relative-licensing-exceptions
     image: /src/images/topics/Topic-FPL.svg
-    about: Federal law allows child welfare systems to make exceptions for relatives to any foster parent licensing requirement that's not a safety issue. Most systems are not taking advantage of this flexibility, and should. **States currently using this flexibility are  licensing 100% of their relative caregivers within 60 days.**
-    why:
-      In states that allow unlicensed kinship placements, greater licensing flexibility would give financial support to all your kinship caregivers (by getting them all licensed/approved/certified).
+    about: Federal law allows child welfare systems to make exceptions for relatives
+      to any foster parent licensing requirement that's not a safety issue. Most
+      systems are not taking advantage of this flexibility, and should. **States
+      currently using this flexibility are  licensing 100% of their relative
+      caregivers within 60 days.**
+    why: >-
+      In states that allow unlicensed kinship placements, greater licensing
+      flexibility would give financial support to all your kinship caregivers
+      (by getting them all licensed/approved/certified).
 
 
       In states that don't allow unlicensed placements, flexible licensing for relatives will significantly increase your available kinship placements, who are far better for children than strangers or institutions.
@@ -408,7 +435,7 @@ topics:
 
       This flexibility also shortens the licensing process for relatives.
     what: >-
-
+      
 
       * **Update your policy to allow flexible exceptions for relatives.** Don't limit exceptions to a specific list. If a relative is safe enough to have _placement_, then by definition, any other licensing requirements are non-safety issues and you can waive them. 
 
@@ -424,7 +451,6 @@ topics:
       - license-undocumented-kin
       - empower-line-level-exceptions
       - flexible-licensing-wording
-
   - hero:
       backgroundColor: light
       title: Retention
@@ -433,10 +459,13 @@ topics:
     layout: topic
     title: retention
     image: /src/images/topics/Topic-FPL.svg
-    about: Most child welfare systems are struggling to retain experienced foster parents who are increasingly exiting due to burnout or frustration.
-    why: Retaining quality foster homes reduces the need to recruit new homes, and over time, creates experienced homes that can support youth with higher levels of need.
+    about: Most child welfare systems are struggling to retain experienced foster
+      parents who are increasingly exiting due to burnout or frustration.
+    why: Retaining quality foster homes reduces the need to recruit new homes, and
+      over time, creates experienced homes that can support youth with higher
+      levels of need.
     what: >-
-
+      
 
       * **Proactively prevent burnout.** This is hard to do in practice, but if a family did really well with a child with complex needs, the _last_ thing you should do is call them the next morning to take another complicated case. Check in with families to provide a break, an ear, or even grief counseling — whatever they need to fully prepare to take a future placement. 
 
@@ -467,7 +496,6 @@ topics:
       - identify-natural-supports-for-caregivers
       - proactively-avoid-resource-family-burnout
       - create-a-resource-parent-handbook
-
   - hero:
       backgroundColor: light
       title: Sibling Connections
@@ -476,10 +504,11 @@ topics:
     layout: topic
     title: sibling-connections
     image: /src/images/topics/Topic-FPL.svg
-    about: Keeping siblings together in foster care should be top priority. If siblings must be separated, systems need to keep those siblings connected.
+    about: Keeping siblings together in foster care should be top priority. If
+      siblings must be separated, systems need to keep those siblings connected.
     why: Siblings should not be separated.
     what: >-
-
+      
 
       * **Bring separated siblings together.** Train resource parents that keeping children in their care connected to their siblings is their explicit responsibility, and provide transportation stipends and alternatives to enable visits. Resource parents of separated siblings should be in regular contact. 
 
@@ -496,7 +525,6 @@ topics:
       - reimburse-for-sibling-visit-transportation
       - make-sibling-visits-fun
       - train-resource-parents-about-sibling-connections
-
   - hero:
       backgroundColor: light
       title: Social Media
@@ -505,10 +533,15 @@ topics:
     layout: topic
     title: social-media
     image: /src/images/topics/Topic-FPL.svg
-    about: Social media has many roles in child welfare, from the targeted recruitment of new foster parents to finding teens who have run away from care. Having the right policies in place can help your department unlock its many benefits while protecting privacy.
-    why: Few child welfare systems are fully utilizing the power of social media, which can be a top driver of recruiting new successful foster parents, finding kin for children in care, locating runaway children, and more.
+    about: Social media has many roles in child welfare, from the targeted
+      recruitment of new foster parents to finding teens who have run away from
+      care. Having the right policies in place can help your department unlock
+      its many benefits while protecting privacy.
+    why: Few child welfare systems are fully utilizing the power of social media,
+      which can be a top driver of recruiting new successful foster parents,
+      finding kin for children in care, locating runaway children, and more.
     what: >-
-
+      
 
       * **Publish social media guidance for your agency.** The best social media policies _require_ using social media for crucial tasks like recruitment and kin finding, but set the right parameters for protecting the privacy of children, families, and staff. Providing exact examples and steps can help staff gain comfort with using new social media tools. We have multiple policy examples to copy and build on. 
 
@@ -525,3 +558,20 @@ topics:
       - find-awol-youth
       - protect-youth-privacy-on-social-media
       - foster-family-support-groups-on-social
+  - layout: topic
+    title: prevention
+    hero:
+      title: Prevention
+      image: src/images/heros/all-topics.jpg
+      imgAlt: a family dancing together
+    image: src/images/topics/noun-holding-hands-7341580.svg
+    why: >
+      Removal is traumatic for a child and family, even in a best case scenario
+      where they can stay with kin they know and love until they can reunite.
+      When prevention services can safely prevent removal altogether, everyone
+      benefits.
+    what: |
+      Coming Soon
+    about: >
+      Families should be kept together and supported with necessary prevention
+      services whenever it's possible to safely do so.
