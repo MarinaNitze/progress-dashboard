@@ -31,17 +31,3 @@
 Right now, Static CMS does not create a branch as diagrammed and instead just stores changes on the editor's computer until publishing. However, this feature is coming soon and can be upgraded in the future to do this. This will better enable previewing content before publishing.
 
 When that time comes, the version number in `@staticcms/app@^3.3.0` can be updated in [`src/admin/index.html][/src/admin/index.html].
-
-### Authentication and Authorization
-
-The site relies on the following mechanisms for authentication and authorization. Links to get to these settings are below and are accessible to CoramIT and other admin users (if any):
-
-- [**Netlify/GitHub Repo Writing**](https://github.com/coram-uk/coram-playbook/settings/installations): This allow Netlify to push branch deployment URLs to pull requests for preview deployments.
-- [**Netlify/GitHub Authentication and Authorization**](https://github.com/organizations/coram-uk/settings/installations): This enables users to login via Static CMS base by allowing Netlify to check if a user is within the Coram UK GitHub Organization.
-- [**GitHub User Authentication**](https://github.com/orgs/coram-uk/people): A user must be a member of the [Coram UK GitHub Organization](https://github.com/coram-uk) in order to authenticate via Static CMS.
-- [**GitHub User Authorization: Admins**](https://github.com/orgs/coram-uk/teams/coram-playbook-admins): A user in this team can modify settings in GitHub and also contribute content to the site.
-- [**GitHub User Authorization: Contributors**](https://github.com/orgs/coram-uk/teams/coram-playbook-contributors): A user in this team can contribute content to the site, but can't modify org/repo settings.
-
-### Domain Setup
-
-When the site's URLs need to be updated, the place to do that is within [Netlify's domain settings](https://app.netlify.com/teams/coram/dns). By adding a domain here, it'll provide the settings to add to your domain registration. Coram IT should be able to access these.

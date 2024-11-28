@@ -10,12 +10,14 @@ This is the easiest way to add, edit, remove content from the site for most user
 
 1. [Create a GitHub account](https://github.com/signup)
 1. Verify your account email and [add two-factor authentication or a passkey](https://github.com/settings/security) 
-1. Request that Coram IT adds you to the [Coram Playbook Contributors Team](https://github.com/orgs/coram-uk/teams/coram-playbook-contributors) within the coram-uk GitHub Org.
-1. Navigate to [innovation.coram-i.org.uk/admin](https://innovation.coram-i.org.uk/admin) or [coram-playbook.netlify.app/admin](https://coram-playbook.netlify.app/admin) and sign-in with your GitHub account and authorize the application.
+1. Request that Marina adds you to the GitHub repository as a collaborator with `Write` permissions. This would happen in the repo settings's [Collaborator and teams section](https://github.com/bloom-works/handbook/settings/access).
+1. Navigate to [childwelfareplaybook.com/admin](https://childwelfareplaybook.com/admin) and sign-in with your GitHub account and authorize the application.
+
+If this doesn't work, you may need to have Marina approve you as a Git contributor in Netlify
 
 ### Contributing
 
-Once you're setup, you can edit content by going to [innovation.coram-i.org.uk/admin](https://innovation.coram-i.org.uk/admin) or [coram-playbook.netlify.app/admin](https://coram-playbook.netlify.app/admin).
+Once you're setup, you can edit content by going to [childwelfareplaybook.com/admin](https://childwelfareplaybook.com/admin).
 
 ## Code
 
