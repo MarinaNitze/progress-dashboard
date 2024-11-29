@@ -580,18 +580,3 @@ topics:
     about: >
       Families should be kept together and supported with necessary prevention
       services whenever it's possible to safely do so.
-  - layout: topic
-    title: case-workers-named-jeff
-    hero:
-      title: Hire case workers named Jeff
-      image: src/images/heros/jeff-text.png
-      imgAlt: The word Jeff
-    image: src/images/topics/stencil-giraffe-svg.svg
-    about: |
-      Why it's good to hire Jeffs as case workers
-    why: |
-      It's good practice
-    what: |
-      Recruit Jeffs
-    recommendations:
-      - background-check-form
