@@ -160,15 +160,11 @@ title: Kin Finding
                 console.log('STATE_DATA:', STATE_DATA);
                 console.log('COMPARE_DATA:', COMPARE_DATA);
 
-                this.states = STATE_DATA.map(state => {
-                    return {
-                        ...state.fields
-                    };
-                });
+                this.states = structuredClone(STATE_DATA);
 
                 this.comparisons = COMPARE_DATA.filter(comparison => {
-                    return comparison.fields.Topic === COMPARE_TOPIC;
-                }).map(comparison => comparison.fields);
+                    return comparison['Topic'] === COMPARE_TOPIC;
+                });
 
                 // Watch for changes to filters
                 this.$watch('filterAdministration', () => {
@@ -196,6 +192,7 @@ title: Kin Finding
 
             getComparisonsByState(stateCode) {
                 const comparisonData = [];
+                console.log("comparisons", this.comparisons);
                 this.comparisons.forEach(comparison => {
                     comparisonData.push({
                         name: comparison.Name,
@@ -204,6 +201,7 @@ title: Kin Finding
                 });
 
                 comparisonData.sort((a, b) => a.name.localeCompare(b.name));
+                console.log("comparisonData", comparisonData);
                 return comparisonData;
             },
 
@@ -212,6 +210,7 @@ title: Kin Finding
             },
 
             getImplementedCount(state) {
+                console.log("getImplementedCount", state);
                 return this.getComparisonsByState(state.code).filter(c => c.value === 'Fully Implemented').length;
             },
 
