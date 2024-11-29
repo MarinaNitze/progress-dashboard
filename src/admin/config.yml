@@ -5,7 +5,7 @@ backend:
   branch: 'main'
 publish_mode: 'editorial_workflow'
 
-media_folder: 'src/images'
+media_folder: '/src/images'
 
 collections:
   - label: 'Recommendations, Topics, and Tags'
