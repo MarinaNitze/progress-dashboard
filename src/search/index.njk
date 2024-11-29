@@ -162,9 +162,9 @@ title: Search
 </div>
 
 <script>
-    let CWP_RECOMMENDATIONS = {{ recommendations | dump | safe }};
-    let CWP_TOPICS = {{ topics | dump | safe }};
-    let CWP_INDEX;
+    let CORAM_RECOMMENDATIONS = {{ recommendations | dump | safe }};
+    let CORAM_TOPICS = {{ topics | dump | safe }};
+    let CORAM_INDEX;
 
     let urlParams = new URLSearchParams(window.location.search);
 
@@ -198,16 +198,17 @@ title: Search
                     keys: ['heading', 'hero.title', 'who', 'what', 'how', 'why']
                 }
             
-                CWP_INDEX = new Fuse([], options);
+                CORAM_INDEX = new Fuse([], options);
 
-                CWP_TOPICS.topics.forEach((topic, index) => {
-                    CWP_INDEX.add({
+                CORAM_TOPICS.topics.forEach((topic, index) => {
+                    CORAM_INDEX.add({
                         type: "TOPIC",
                         ...topic
                     });
                 });
                 
-    WP.recommendations.forEach((recommendation, index) => WP            CWP_INDEX.add({
+                CORAM_RECOMMENDATIONS.recommendations.forEach((recommendation, index) => {
+                    CORAM_INDEX.add({
                         type: "RECOMMENDATION",
                         ...recommendation
                     });
@@ -233,7 +234,7 @@ title: Search
 
                 this.searchParam = this.search;
 
-                const searchResults = CWP_INDEX.search(this.search);
+                const searchResults = CORAM_INDEX.search(this.search);
 
                 if (searchResults.length > 0) {
                     this.results = searchResults.map(result => result.item);
@@ -242,4 +243,3 @@ title: Search
         }));
     });
 </script>
-
