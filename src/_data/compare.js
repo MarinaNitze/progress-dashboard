@@ -42,6 +42,6 @@ module.exports = async () => {
     return allDatasets;
   } catch (error) {
     console.error(error);
-    throw new Error('Failed to fetch data from Airtable');
+    throw new Error('Failed to load data');
   }
 };
