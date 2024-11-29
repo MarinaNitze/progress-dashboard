@@ -1,12 +1,12 @@
 state,fee,notary,witness,contact type,mail,original copy,ink,typed or printed,fax,email,electronic form,response,response time,notes,code
-Alabama,NO,NO,YES (cannot be applicant or requestor),Office,YES,YES,blue or black; blue ink preferred,print or type,NO,NO,NO,Uses form; includes attached report,,,AL
+Alabama,NO,NO,YES,Office,YES,YES,blue or black; blue ink preferred,print or type,NO,NO,NO,Uses form; includes attached report,,,AL
 Alaska,NO,NO,NO,Office,YES,NO,unspecified,print or type,YES,YES,NO,Uses form; includes attached report,30 days,"Says fee is ""not yet""
 Requires cover letter and/or applicant DL",AK
 American Samoa,YES,unspecified,unspecified,Person,unspecified,unspecified,unspecified,unspecified,unspecified,unspecified,NO,unspecified,unspecified,Email to request form,AS
-Arizona,NO,YES,NO,Office,YES,YES,n/a,typed,NO,NO,NO,Uses form; includes attached report,,"Confusingly asks for applicant's email, doesn't seem to ask for requestor's info?
+Arizona,NO,NO,NO,Office,YES,YES,n/a,typed,NO,YES,NO,Uses form; includes attached report,,"Confusingly asks for applicant's email, doesn't seem to ask for requestor's info?
 
 ",AZ
-Arkansas,YES,YES,NO,Office,NO,NO,unspecified,print or type,YES,NO,NO,unspecified,7-10 days,"Confusingly expects an AR notary
+Arkansas,NO,NO,NO,Office,NO,NO,unspecified,print or type,YES,NO,NO,unspecified,7-10 days,"Confusingly expects an AR notary
 
 Fee is $10 and must be paid via check or money order. The fee is waived if the organization is a 501c3 but not for states. 
 
@@ -18,7 +18,7 @@ It states that the results letter will only list ONE marriage partner. Therefore
 Connecticut,NO,NO,NO,Office,YES,NO,unspecified,print or type,YES,YES,NO,"Uses form; includes attached report. If no history, a statement of ""No Record Found"" is stamped, dated, and initialed on the letter.",Usually within 48 hours but can be up to 4 weeks during peak times,"Provides email address to contact if no background check results have been received within 4 weeks. 
 
 Form is only 1 page and is very straightforward",CT
-Delaware,NO,NO,NO,Office,NO,NO,n/a,portal only,NO,NO,YES,User receives an email when results are ready. They must then log in to the portal and select the appropriate request to see the results. They can download and print the results letter from the portal.,10 days,"Request must be submitted through the Delaware Child Protection Registry Request Web Portal (built on Salesforce). A login must be created before a user can access the electronic form. Agencies as well as individuals can register and submit requests. It is unclear whether multiple individuals from the same agency can register.
+Delaware,YES,NO,NO,Office,NO,NO,n/a,portal only,NO,NO,YES,User receives an email when results are ready. They must then log in to the portal and select the appropriate request to see the results. They can download and print the results letter from the portal.,10 days,"Request must be submitted through the Delaware Child Protection Registry Request Web Portal (built on Salesforce). A login must be created before a user can access the electronic form. Agencies as well as individuals can register and submit requests. It is unclear whether multiple individuals from the same agency can register.
 
 A paper consent form must be filled out by the person to be investigated and uploaded to the online portal for each request.
 
@@ -192,7 +192,7 @@ Washington,YES,NO,NO,Office,YES,YES,NO,Typed,YES,NO,YES,Unspecified,Unspecified,
 West Virginia,NO,Unclear,Unclear,Office,YES,Unclear,Blue,Printed,NO,NO,NO,Unspecified,Unspecified,"There zero information on the form, and none that I can see on their website...",WV
 Wisconsin,NO,NO,NO,Office,Unclear,NO,Only signature requirement specified.,"Printed or typed, but handwritten signature required.",YES,YES,NO,Unspecified,10 working days from date request was *received* by the agency,"- separate form must be completed for EACH individual requiring a background check
 - form downloads automatically to computer",WI
-Wyoming,YES,NO,NO,Office,YES,YES,unspecified,"FORM: printed
-NAMES (attached list): typed",NO,NO,NO,"Results sent by mail AND email. Email seems to be encouraged, but exact process is unclear. They list an email at the top of the form, and at the bottom of the form there's an ""opt out"" option. If they do NOT opt out, results are sent by email and an original copy of the results are later sent by mail. **Seems like a recipe for missing critical info.",unspecified,"- Process for getting response is confusing and related information is disjointed / scattered. 
+Wyoming,NO,NO,NO,Office,YES,YES,unspecified,"FORM: printed
+NAMES (attached list): typed",NO,NO,YES,"Results sent by mail AND email. Email seems to be encouraged, but exact process is unclear. They list an email at the top of the form, and at the bottom of the form there's an ""opt out"" option. If they do NOT opt out, results are sent by email and an original copy of the results are later sent by mail. **Seems like a recipe for missing critical info.",unspecified,"- Process for getting response is confusing and related information is disjointed / scattered. 
 - ""ink"" is specified, but no color
 - potentially confusing instruction to type/print names and info of everyone being screened",WY
