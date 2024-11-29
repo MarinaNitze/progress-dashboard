@@ -566,9 +566,9 @@ topics:
     title: prevention
     hero:
       title: Prevention
-      image: /src/images/heros/all-topics.jpg
+      image: src/images/heros/all-topics.jpg
       imgAlt: a family dancing together
-    image: /src/images/topics/Topic-FF.svg
+    image: src/images/topics/Topic-FF.svg
     why: >
       Removal is traumatic for a child and family, even in a best case scenario
       where they can stay with kin they know and love until they can reunite.
