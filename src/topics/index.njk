@@ -41,7 +41,7 @@ title: Topics
                 <li class="flex">
                     <a class="rounded-lg overflow-hidden bg-gray-200 group text-[21px] text-navy hover:bg-yellow hover:underline w-full bg-[#F4B413] block text-center font-bold flex flex-col" :href="'/topics/' + topic.title">
                         <div class="h-[120px] flex items-center justify-center">
-                            <img :src="topic.image.split('/src').join('')" role="presentation" />
+                            <img :src="topic.image.split(/^\/?src/).join('')" role="presentation" />
                         </div>
                         <div class="rounded-b-lg flex-1 p-8 bg-yellow" x-text="topic.hero.title"></div>
                     </a>
