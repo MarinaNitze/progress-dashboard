@@ -7,7 +7,7 @@ pagination:
 permalink: "/topics/{{ topic.title }}/"
 ---
 
-<div class="flex items-end bg-gray-900 bg-no-repeat bg-right" style="background-image: url({{ topic.hero.image | replace('/src', '') }});">
+<div class="flex items-end bg-gray-900 bg-no-repeat bg-right" style="background-image: url({{ topic.hero.image | replace(r/^\/?src/, '') }});">
     <div class="mx-auto w-full">
         <div class="max-w-screen-md py-24 pl-[5%]">
             <h1 class="font-serif text-5xl font-bold">{{ topic.hero.title }}</h1>
