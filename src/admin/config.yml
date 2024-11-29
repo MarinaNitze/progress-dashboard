@@ -2,8 +2,7 @@ local_backend: true
 backend:
   name: 'github'
   repo: 'MarinaNitze/progress-dashboard'
-  # branch: 'main'
-  branch: 'staticcms_image_upload_fix'
+  branch: 'main'
 publish_mode: 'editorial_workflow'
 
 media_folder: 'src/images'
