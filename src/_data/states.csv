@@ -1,0 +1,55 @@
+name,abbrev,code,population,admin
+Alabama,Ala.,AL,4779736,State
+Alaska,Alaska,AK,710231,State
+Arizona,Ariz.,AZ,6392017,State
+Arkansas,Ark.,AR,2915918,State
+California,Calif.,CA,37253956,County
+Colorado,Colo.,CO,5029196,County
+Connecticut,Conn.,CT,3574097,State
+Delaware,Del.,DE,897934,State
+District of Columbia,D.C.,DC,692683,State
+Florida,Fla.,FL,18801310,State
+Georgia,Ga.,GA,9687653,167294
+Hawaii,Hawaii,HI,1360301,State
+Idaho,Idaho,ID,1567582,State
+Illinois,Ill.,IL,12830632,State
+Indiana,Ind.,IN,6483802,State
+Iowa,Iowa,IA,3046355,State
+Kansas,Kans.,KS,2853118,State
+Kentucky,Ky.,KY,4339367,State
+Louisiana,La.,LA,4533372,State
+Maine,Maine,ME,1328361,State
+Maryland,Md.,MD,5773552,State
+Massachusetts,Mass.,MA,6547629,State
+Michigan,Mich.,MI,9883640,State
+Minnesota,Minn.,MN,5303925,County
+Mississippi,Miss.,MS,2967297,State
+Missouri,Mo.,MO,5988927,State
+Montana,Mont.,MT,989415,State
+Nebraska,Nebr.,NE,1826341,State
+Nevada,Nev.,NV,2700551,County
+New Hampshire,N.H.,NH,1316470,State
+New Jersey,N.J.,NJ,8791894,State
+New Mexico,N.M.,NM,2059179,State
+New York,N.Y.,NY,19378102,County
+North Carolina,N.C.,NC,9535483,County
+North Dakota,N.D.,ND,672591,County
+Ohio,Ohio,OH,11536504,County
+Oklahoma,Okla.,OK,3751351,State
+Oregon,Ore.,OR,3831074,State
+Pennsylvania,Pa.,PA,12702379,County
+Rhode Island,R.I.,RI,1059361,State
+South Carolina,S.C.,SC,5148714,State
+South Dakota,S.D.,SD,884659,State
+Tennessee,Tenn.,TN,6829174,State
+Texas,Tex.,TX,28995881,State
+Utah,Utah,UT,28995881,State
+Vermont,Vt.,VT,623989,State
+Virginia,Va.,VA,8535519,County
+Washington,Wash.,WA,7614893,State
+West Virginia,W.Va.,WV,1792147,State
+Wisconsin,Wis.,WI,5822434,County
+Wyoming,Wyo.,WY,578759,State
+Puerto Rico,P.R.,PR,3193694,State
+Guam,G.U.,GU,167294,State
+American Samoa,A.S.,AS,55312,State
