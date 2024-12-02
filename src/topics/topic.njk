@@ -121,14 +121,6 @@ permalink: "/topics/{{ topic.title }}/"
                     {{ topic.what | markdown | safe }}
                 </div>
             {% endif %}
-            {% if topic.what %}
-                <div class="mb-12">
-                    <h2 id="why" class="text-4xl font-bold mb-8 mt-0 font-serif">
-                        <span class="border-b-[4px] border-[#fe6659] pb-2">{{ topic.whatTitle }}</span>
-                    </h2>
-                    {{ topic.what | markdown | safe }}
-                </div>
-            {% endif %}
         </div>
     </div>
 </div>
