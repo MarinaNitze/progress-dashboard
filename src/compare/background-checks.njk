@@ -165,15 +165,11 @@ title: Out of State Child Abuse and Neglect Checks (Adam Walsh Checks)
                 console.log('STATE_DATA:', STATE_DATA);
                 console.log('COMPARE_DATA:', COMPARE_DATA);
 
-                this.states = STATE_DATA.map(state => {
-                    return {
-                        ...state.fields
-                    };
-                });
+                this.states = structuredClone(STATE_DATA);
 
                 this.comparisons = COMPARE_DATA.filter(comparison => {
-                    return comparison.fields.Topic === COMPARE_TOPIC;
-                }).map(comparison => comparison.fields);
+                    return comparison['Topic'] === COMPARE_TOPIC;
+                });
 
                 console.log("TEST", this.comparisons);
 

@@ -1,31 +1,47 @@
-require('dotenv').config();
+const fs = require('fs');
+const { parse } = require('csv-parse');
 
-const Airtable = require('airtable');
+async function importCSV(filePath) {
+  let csvData = [];
 
-let base = new Airtable({ apiKey: process.env.AIRTABLE_API_KEY }).base(process.env.AIRTABLE_BASE_ID);
+  fs.createReadStream(filePath)
+    .pipe(parse({ 
+      columns: true, // Uses first row as headers
+      skip_empty_lines: true 
+    }))
+    .on('data', (data) => csvData.push(data))
+    .on('end', () => {
+      console.log(csvData); // Output the array of JSON objects
+    })
+    .on('error', (error) => {
+      console.error(error.message); 
+    });
+
+  return csvData;
+}
 
 module.exports = async () => {
   let allDatasets = {};
 
   try {
-    const awData = await base.table('AW').select().all();
+    const awData = await importCSV('src/_data/aw.csv');
     allDatasets['AW'] = awData;
 
-    const statesData = await base.table('States').select().all();
+    const statesData = await importCSV('src/_data/states.csv');
     allDatasets['States'] = statesData;
 
-    const practicesData = await base.table('Practices').select().all();
+    const practicesData = await importCSV('src/_data/practices.csv');
     allDatasets['Practices'] = practicesData;
 
-    const practicesCACountiesData = await base.table('Practices - CA Counties').select().all();
+    const practicesCACountiesData = await importCSV('src/_data/practices_ca_counties.csv');
     allDatasets['Practices - CA Counties'] = practicesCACountiesData;
 
-    const caCountiesData = await base.table('CA Counties').select().all();
+    const caCountiesData = await importCSV('src/_data/ca_counties.csv');
     allDatasets['CA Counties'] = caCountiesData;
 
     return allDatasets;
   } catch (error) {
     console.error(error);
-    throw new Error('Failed to fetch data from Airtable');
+    throw new Error('Failed to load data');
   }
 };
