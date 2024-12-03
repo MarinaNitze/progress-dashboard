@@ -156,7 +156,6 @@ title: Kin Finding
             filterRecommendation: 'ALL',
 
             init() {
-                console.log('Initializing Alpine.js component');
                 console.log('STATE_DATA:', STATE_DATA);
                 console.log('COMPARE_DATA:', COMPARE_DATA);
 
@@ -168,15 +167,12 @@ title: Kin Finding
 
                 // Watch for changes to filters
                 this.$watch('filterAdministration', () => {
-                    console.log('filterAdministration changed:', this.filterAdministration);
                     this.sortStates();
                 });
                 this.$watch('filterPopulation', () => {
-                    console.log('filterPopulation changed:', this.filterPopulation);
                     this.sortStates();
                 });
                 this.$watch('filterRecommendation', () => {
-                    console.log('filterRecommendation changed:', this.filterRecommendation);
                     this.sortStates();
                 });
 
@@ -206,12 +202,14 @@ title: Kin Finding
             },
 
             getTotalSegments(state) {
-                return this.getComparisonsByState(state.code).length;
+                let totalSegments = this.getComparisonsByState(state.code).length;
+                return totalSegments;
             },
 
             getImplementedCount(state) {
-                console.log("getImplementedCount", state);
-                return this.getComparisonsByState(state.code).filter(c => c.value === 'Fully Implemented').length;
+                let stateComparison = this.getComparisonsByState(state.code);
+                let implementedCount = stateComparison.filter(c => c.value === 'Fully Implemented').length;
+                return implementedCount;
             },
 
             drawProgressChart(state) {
@@ -283,7 +281,6 @@ title: Kin Finding
             },
 
             sortStates() {
-                console.log('Sorting states with filters:', this.filterAdministration, this.filterPopulation, this.filterRecommendation);
                 const filteredStates = this.states.filter((state) => {
                     if (this.filterAdministration !== 'ALL') {
                         return this.filterAdministration.toLowerCase() === state.admin.toLowerCase();
@@ -310,7 +307,6 @@ title: Kin Finding
                 });
 
                 this.filteredStates = filteredStates.sort((a, b) => a.name.localeCompare(b.name));
-                console.log('Filtered states:', this.filteredStates);
 
                 // Redraw charts after sorting
                 this.$nextTick(() => {
