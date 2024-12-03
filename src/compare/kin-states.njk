@@ -188,6 +188,7 @@ title: Kin Finding
 
             getComparisonsByState(stateCode) {
                 const comparisonData = [];
+                console.log("comparisons", this.comparisons);
                 this.comparisons.forEach(comparison => {
                     comparisonData.push({
                         name: comparison.Name,
@@ -196,6 +197,7 @@ title: Kin Finding
                 });
 
                 comparisonData.sort((a, b) => a.name.localeCompare(b.name));
+                console.log("comparisonData", comparisonData);
                 return comparisonData;
             },
 

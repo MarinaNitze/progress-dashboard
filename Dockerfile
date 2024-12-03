@@ -1,12 +1,12 @@
 ################################
 ### TO BUILD IMAGE
-# docker build -t coram/playbook .
+# docker build -t cwp .
 #
 ### TO RUN SERVER (requires rebuild if files change)
-# docker run -it --rm -p "8080:8080" coram/playbook
+# docker run -it --rm -p "8080:8080" cwp
 #
 ### TO RUN TERMINAL WITH LOCAL FILES (i.e. for local development with live file mapping)
-#   1. docker run -it --rm -p "8080:8080" -v "$PWD:/app" coram/playbook bash
+#   1. docker run -it --rm -p "8080:8080" -v "$PWD:/app" cwp bash
 #   2. npm install
 #   3. npm run start
 ################################
