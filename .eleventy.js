@@ -5,6 +5,9 @@ const { DateTime } = require("luxon");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const htmlmin = require("html-minifier");
 const markdownIt = require("markdown-it");
+const markdownItAnchor = require('markdown-it-anchor')
+const pluginTOC = require('eleventy-plugin-toc')
+
 const markdownItOptions = {
   html: true,
   breaks: true,
@@ -66,6 +69,17 @@ module.exports = function (eleventyConfig) {
   // Copy favicon to route of /_site
   eleventyConfig.addPassthroughCopy("./src/favicon.ico");
 
+  eleventyConfig.setLibrary(
+    'md',
+    markdownIt().use(markdownItAnchor)
+  );
+
+  eleventyConfig.addPlugin(pluginTOC, {
+    flat: true,
+    wrapper: 'div',
+    wrapperClass: 'text-lg text-white hover:*:text-orange hover:*:underline'
+  })
+  
   eleventyConfig.addNunjucksFilter("markdown", function(markdownString) {
     const md = new markdownIt(markdownItOptions);
     return md.render(markdownString);

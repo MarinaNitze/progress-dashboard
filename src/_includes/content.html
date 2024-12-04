@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      {{title}}
+    </title>
+    {% if description %}
+      <meta name="description" content="{{description}}"/>
+    {% endif %}
+    {% block head %}{% endblock %}
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Petrona:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css"/>
+  </head>
+  <body class="text-base font-sans">
+    {% include "./partials/navbar.html" %}
+
+    <div class="flex items-end bg-no-repeat bg-right">
+      <div class="mx-auto w-full">
+        <div class="max-w-screen-lg py-24 pl-[5%]">
+          <h1 class="font-serif text-5xl font-bold">{{ header }}</h1>
+        </div>
+      </div>
+    </div>
+    <div class="hidden md:block mx-auto px-8 md:px-[5%]">
+      <div class="max-w-4xl">
+        <nav class="flex py-8" aria-label="Breadcrumb">
+            <ol class="inline-flex items-center space-x-1 md:space-x-3">
+                <li class="inline-flex items-center">
+                    <a href="/" class="font-medium text-navy hover:underline">Home</a>
+                </li>
+                <li aria-current="page">
+                    <div class="flex items-center gap-2">
+                        <span>/</span>
+                        <strong class="text-navy hover:underline font-bold">About</strong>
+                    </div>
+                </li>
+            </ol>
+        </nav>
+      </div>
+    </div>
+    <div class="flex flex-col md:flex-row gap-12">
+      <div class="bg-[#522a10] p-8 md:pl-[5%] sticky md:self-start rounded-r-lg">
+        <div class="w-[210px]">
+          <div class="font-bold text-3xl text-white mb-2">On this page</div>
+          <hr class="border-b-[4px] border-orange my-6 w-1/2" />
+          {{ content | toc | safe }}
+        </div>
+      </div>
+      <div class="px-8 prose prose-xl max-w-none">
+        <div class="max-w-4xl">
+          {{ content | safe }}
+        </div>
+      </div>
+    </div>
+
+    {% include "./partials/footer.html" %}
+
+    <script src="/static/js/alpine.js"></script>
+
+    {% if path == "home" %}
+      <!-- Netlify Identity Widget -->
+      <!-- Needed only if you are using Netlify Identity feature -->
+      <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    {% endif %}
+  </body>
+</html>
