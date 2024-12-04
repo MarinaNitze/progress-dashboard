@@ -55,7 +55,7 @@ path: home
                 {% for topic in topicSection.topics %}
                     {% for candidateTopic in topics.topics %}
                         {% if topic === candidateTopic.title %}
-                            <a class="rounded-lg overflow-hidden bg-gray-200 group text-[21px] text-navy hover:bg-yellow hover:underline w-full bg-[#F4B413] block text-center font-bold flex flex-col" href="'/topics/{{ candidateTopic.title }}">
+                            <a class="rounded-lg overflow-hidden bg-gray-200 group text-[21px] text-navy hover:bg-yellow hover:underline w-full bg-[#F4B413] block text-center font-bold flex flex-col" href="/topics/{{ candidateTopic.title }}">
                                 <div class="h-[120px] flex items-center justify-center">
                                     <img src="{{ candidateTopic.image | replace('/src', '') }}" role="presentation" />
                                 </div>
