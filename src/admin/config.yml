@@ -2,7 +2,7 @@ local_backend: true
 backend:
   name: 'github'
   repo: 'MarinaNitze/progress-dashboard'
-  branch: 'main'
+  branch: 'add-decap'
 publish_mode: 'editorial_workflow'
 
 media_folder: 'src/images'
