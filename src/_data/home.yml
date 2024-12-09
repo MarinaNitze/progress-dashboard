@@ -32,7 +32,7 @@ home:
       content: Keeping track of a youth’s connections can get complicated, and a
         genogram offers a helpful, visual solution. See key relationships easily
         and start identifying possible additions. [Learn
-        more](https://progress-dashboard.netlify.app/recommendation/make-a-genogram).
+        more](https://progress-dashboard.netlify.app/recommendations/make-a-genogram).
       image: ../images/features/Small-Feature-Footer.png
       title: Make a genogram.
       imgAlt: small feature image
