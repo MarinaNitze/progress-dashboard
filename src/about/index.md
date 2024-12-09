@@ -1,7 +1,7 @@
 ---
-layout: content
 title: About
 header: About the Child Welfare Playbook
+layout: content
 ---
 
 ## About
@@ -43,7 +43,7 @@ To join, email [members@childwelfareplaybook.com](mailto:members@childwelfarepla
 
 * Promising practices and positive results will be captured here in the online Child Welfare Playbook, including actionable collateral like example checklists and contracts.
 
-## Membership
+## Benefits of Membership
 
 * Promising practices for improving your processes, in an actionable format (e.g. sample contracts, checklists, policy language, etc.)
 
