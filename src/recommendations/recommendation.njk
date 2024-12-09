@@ -194,6 +194,9 @@ permalink: "/recommendations/{{ recommendation.title }}/"
                     {% endif %}
                 </div>
             {% endif %}
+            {% if recommendation.extraContent %}
+                {{ recommendation.extraContent | markdown | safe }}
+            {% endif %}
         </div>
     </div>
 </div>
