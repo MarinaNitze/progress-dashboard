@@ -60,6 +60,7 @@ module.exports = function (eleventyConfig) {
   });
 
   // Copy Image Folder to /_site
+  eleventyConfig.addPassthroughCopy("./src/static/assets");
   eleventyConfig.addPassthroughCopy("./src/static/img");
   eleventyConfig.addPassthroughCopy("./src/images");
 

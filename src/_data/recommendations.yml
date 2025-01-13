@@ -327,9 +327,9 @@ recommendations:
 
        * [Free Word genogram templates](https://www.mywordtemplates.org/printables/template399.html)
 
-       * [Rhode Island’s Excel genogram template](https://www.childwelfareplaybook.com/assets/GENOGRAM.xlsx)
+       * [Rhode Island’s Excel genogram template](/static/assets/GENOGRAM.xlsx)
 
-       * [Michigan Genogram Templates](https://www.childwelfareplaybook.com/assets/Genogram_MI.pdf)
+       * [Michigan Genogram Templates](/static/assets/Genogram_MI.pdf)
 
        * Tennessee’s [genogram template PDF](https://www.grandfamilies.org/Portals/0/Documents/Wikihow/TN%201013%20(3)%20Kinship%20Exception%20Request.pdf?ver=i_OMQHWcnwlqmQ1hwPGbfw%3d%3d)
   - heading: Make sure supportive adults have a robust presence at planning meetings
@@ -377,7 +377,7 @@ recommendations:
 
         * In **Ohio**, the practice for maintaining connections is: any youth 14 and over is able to have two support persons join in on the family team meetings and case plan meetings. That helps to initiate discussion of any other support persons available to the child.
 
-        * **Hawaii** develops [Youth Circles](/assets/HawaiiCircleBrochure.pdf) for each child, which includes working with each youth to identify the supportive adults who will be invited to the circle. 
+        * **Hawaii** develops [Youth Circles](/static/assets/HawaiiCircleBrochure.pdf) for each child, which includes working with each youth to identify the supportive adults who will be invited to the circle. 
 
         * **New Hampshire** identifies up to 45 of a youth's supports through Permanency Pact through Foster Club, and involves them in meetings to accomplish specific goals, such as buying a first car, attending holiday celebrations after aging out of care, etc. As adults are identified, the agency sends those adults invites and supportive materials to support these goals.
   - heading: Use an expansive legal definition of kin
@@ -596,7 +596,7 @@ recommendations:
     who:
       number: 1
       what: Washington State’s [statute aligned
-        checklist](https://www.childwelfareplaybook.com/assets/10-183%20Foster%20Inspection%20Checklist.docx)
+        checklist](/static/assets/10-183%20Foster%20Inspection%20Checklist.docx)
       image: ''
   - heading: Provide clerical support for licensing workers
     title: provide-clerical-support-for-licensing-workers
@@ -622,7 +622,7 @@ recommendations:
       number: 2
       what: >-
         * Washington State’s [position description for a clerical
-        worker](https://www.childwelfareplaybook.com/assets/WA%20PD%20for%20Clerical%20Support.doc)
+        worker](/static/assets/WA%20PD%20for%20Clerical%20Support.doc)
 
         * California
   - heading: Give families a dedicated licensor
@@ -688,7 +688,7 @@ recommendations:
       available at license renewal. A dry-erase magnet reminds families to
       practice and serves as easy documentation that they did so.
     how: Use a template like [this
-      one](https://www.childwelfareplaybook.com/assets/Emergency%20Fridge%20Decoration.pdf)
+      one](/static/assets/Emergency%20Fridge%20Decoration.pdf)
       to print and laminate your own magnets.
     costs:
       - Low to no cost
@@ -824,7 +824,7 @@ recommendations:
       can contact Christina Coad at the Alliance directly
       ([ccoad@uw.edu](mailto:ccoad@uw.edu)). 
 
-      * Conduct telephone orientations. Washington, D.C. developed an approach for conducting orientation sessions over the phone which was well received by families who attended. The agency provided a PowerPoint [presentation](https://www.childwelfareplaybook.com/assets/CFSA_Recruitment_Orientation_March_2020_Pride.pptx) for attendees to follow along and had a foster parent on the line to offer a real-world perspective.
+      * Conduct telephone orientations. Washington, D.C. developed an approach for conducting orientation sessions over the phone which was well received by families who attended. The agency provided a PowerPoint [presentation](/static/assets/CFSA_Recruitment_Orientation_March_2020_Pride.pptx) for attendees to follow along and had a foster parent on the line to offer a real-world perspective.
 
       * Conduct online orientations. You can use the same slide deck and materials as you would for an in-person orientation, or add an interactive element by using a platform like [Google Forms](https://www.google.com/forms/about/) to create a [scored quiz](https://support.google.com/docs/answer/7032287?hl=en). If your agency uses [Binti](https://binti.com/), you can provide an online orientation video for families to watch. Afterwards, families can complete a quiz in order to get credit.
 
@@ -906,9 +906,9 @@ recommendations:
       * Create a list of inspection items that can be resolved via photograph,
       like beds, smoke detectors, and home repairs. 
 
-      * Instruct families with a minor pending item to email a photograph once the item has been resolved. Store the photo with the family’s file. Here is a [sample email](https://www.childwelfareplaybook.com/assets/resolve_minor_pending_items_asset) for this practice.
+      * Instruct families with a minor pending item to email a photograph once the item has been resolved. Store the photo with the family’s file. Here is a [sample email](/static/assets/resolve_minor_pending_items_asset) for this practice.
 
-      * If you’re creating or currently use a foster family online portal, request the ability for families to upload attachments, which would include these photos. Here is a [sample IT request](https://www.childwelfareplaybook.com/assets/resolve_minor_pending_items_asset2) to add such a feature.
+      * If you’re creating or currently use a foster family online portal, request the ability for families to upload attachments, which would include these photos. Here is a [sample IT request](/static/assets/resolve_minor_pending_items_asset2) to add such a feature.
     costs:
       - Low to no cost
     benefits:
@@ -959,9 +959,9 @@ recommendations:
     who:
       what: >-
         * Rhode Island’s [safety checklist for families (in English and
-        Spanish)](https://www.childwelfareplaybook.com/assets/Fire%20%20Lead%20Safety%20Inspection%20Checklist%20-%20English%20and%20Spanish.pdf)
+        Spanish)](/static/assets/Fire%20%20Lead%20Safety%20Inspection%20Checklist%20-%20English%20and%20Spanish.pdf)
 
-        * Washington State’s [statue-aligned checklist](https://www.childwelfareplaybook.com/assets/10-183%20Foster%20Inspection%20Checklist.docx)
+        * Washington State’s [statue-aligned checklist](/static/assets/10-183%20Foster%20Inspection%20Checklist.docx)
       number: 2
   - heading: Send appointment reminders
     title: send-appointment-reminders
@@ -977,7 +977,7 @@ recommendations:
       invite, physical mail, email or text. If possible, ask families what their
       preferred mode of communication is and send their reminder that way. Here
       are [text
-      examples](https://www.childwelfareplaybook.com/assets/send_appointment_reminders_asset)
+      examples](/static/assets/send_appointment_reminders_asset)
       for reminders in a variety of formats.
     costs:
       - Low to no cost
@@ -1107,7 +1107,7 @@ recommendations:
       - Increases number of youth successfully transitioning out of foster care
     outcome: We are still collecting concrete data.
     inspiration: "[Excel spreadsheet that sorts transitioning youth by
-      birthdate](https://www.childwelfareplaybook.com/assets/Youth%20Age%20Out%\
+      birthdate](/static/assets/Youth%20Age%20Out%\
       20Tracker.xlsx)"
   - heading: Give cash or prepaid cards for youth stipends
     title: give-cash-or-prepaid-cards-for-youth-stipends
@@ -1484,7 +1484,7 @@ recommendations:
         * Washington, DC uses digital marketing campaigns.
 
 
-        * In California, Mark Daley is running digital campaigns for multiple counties. [Click here for details](/assets/MarkDaley.pdf).
+        * In California, Mark Daley is running digital campaigns for multiple counties. [Click here for details](/static/assets/MarkDaley.pdf).
   - title: hire-current-foster-parents-to-train-new-foster-parents
     heading: Hire current foster parents to help train new foster parents
     about:
@@ -2039,7 +2039,7 @@ recommendations:
     how: >-
 
 
-      * Download a printable [Heart Map](https://www.childwelfareplaybook.com/assets/heartmap.pdf). As soon as a youth enters care, walk them through the Heart Map to quickly surface people who are important to them. 
+      * Download a printable [Heart Map](/static/assets/heartmap.pdf). As soon as a youth enters care, walk them through the Heart Map to quickly surface people who are important to them. 
 
       * Encourage youth to list “someone in their heart” on each line, and draw more lines as needed. The two existing lines on the heart are strategic: More than one line prompts thinking about multiple relationships, but too many lines can be disheartening if youth cannot fill them all in. 
 
@@ -2182,7 +2182,7 @@ recommendations:
   - heading: Social Media Policy and Practice Guidance
     costs:
       - Time to write and publish policy
-    inspiration: '[Washington DC social media policy](/assets/DC_Social_Media_Policy.pdf)'
+    inspiration: '[Washington DC social media policy](/static/assets/DC_Social_Media_Policy.pdf)'
     about: The best social media policies in child welfare enable staff to take advantage of its many benefits while protecting the privacy of children, families, and employees.
     how: >-
       A comprehensive social media policy covers topics like: 
@@ -2210,7 +2210,7 @@ recommendations:
       image: ''
       what: >-
 
-        * **Washington DC** has a [detailed policy](/assets/DC_Social_Media_Policy.pdf) guiding employees on how to effectively use social media. 
+        * **Washington DC** has a [detailed policy](/static/assets/DC_Social_Media_Policy.pdf) guiding employees on how to effectively use social media. 
 
         * **Oklahoma** uses Archive Social to automatically archive all its social media activity in case of a public records request. 
 
@@ -2412,7 +2412,7 @@ recommendations:
       number: 3
       image: ''
       what: >-
-        * **Oklahoma** approves almost all of its kinship caregivers within 60 days of placement, with the liberal use of exceptions and no list of allowed exceptions. Here's [Oklahoma's policy](/assets/OK_Relative_Exceptions.docx). 
+        * **Oklahoma** approves almost all of its kinship caregivers within 60 days of placement, with the liberal use of exceptions and no list of allowed exceptions. Here's [Oklahoma's policy](/static/assets/OK_Relative_Exceptions.docx). 
 
         * **Washington DC** can waive anything except criminal history, and can license a kinship caregiver in as little as six HOURS. 
 
@@ -2456,7 +2456,7 @@ recommendations:
       what: >-
         * **Hawaii** has identified resource caregivers who will take non-infants and placements at any hour, in exchange for a monthly stipend. 
 
-        * **Rhode Island** has an [Emergency Response Program](/assets/RI-ERP.pdf). Some families are paid a $15 (taxable) stipend per day in exchange for being on call. If they receive a call, they have a no-reject, no-eject policy for 14 days. These families are for children under the age of 12. There is a second program, Emergency Response X, for children age 12 and older, with lighter requirements around no-reject/no-eject. These families are to support DCYF in assessment, planning for transition, etc. 
+        * **Rhode Island** has an [Emergency Response Program](/static/assets/RI-ERP.pdf). Some families are paid a $15 (taxable) stipend per day in exchange for being on call. If they receive a call, they have a no-reject, no-eject policy for 14 days. These families are for children under the age of 12. There is a second program, Emergency Response X, for children age 12 and older, with lighter requirements around no-reject/no-eject. These families are to support DCYF in assessment, planning for transition, etc. 
 
         * **Indiana** provides a higher per diem rate to certain homes in exchange for the following: you can only say “no” twice every quarter, you’re open to taking ages 0-18, you will answer the phone in the middle of the night, and you will and maintain placement up to 7 days. The state can sometimes provide this higher stipend for longer than the 7 days if necessary.
 
@@ -2493,7 +2493,7 @@ recommendations:
 
         * **Michigan** has transitional placement providers, which is a contract with current licensed foster parents. These homes have preferences, but cannot decline a placement within those preferences. They must keep the placement for 2-4 weeks. They are paid $100 a day during placement plus $245 a month to keep the bed open when they don't have a child there. This is mostly used for children new to care, or kids with higher levels of need. In order to qualify, an adult in the home must be home (not working). These homes are also eligible for longevity bonuses.
 
-        * **Rhode Island** has an [Emergency Response Program](/assets/RI-ERP.pdf). Some families are paid a $15 (taxable) stipend per day in exchange for being on call. If they receive a call, they have a no-reject, no-eject policy for 14 days. These families are for children under the age of 12. There is a second program, Emergency Response X, for children age 12 and older, with lighter requirements around no-reject/no-eject. These families are to support DCYF in assessment, planning for transition, etc. 
+        * **Rhode Island** has an [Emergency Response Program](/static/assets/RI-ERP.pdf). Some families are paid a $15 (taxable) stipend per day in exchange for being on call. If they receive a call, they have a no-reject, no-eject policy for 14 days. These families are for children under the age of 12. There is a second program, Emergency Response X, for children age 12 and older, with lighter requirements around no-reject/no-eject. These families are to support DCYF in assessment, planning for transition, etc. 
 
         * **Indiana** provides a higher per diem rate to certain homes in exchange for the following: you can only say “no” twice every quarter, you’re open to taking ages 0-18, you will answer the phone in the middle of the night, and you will and maintain placement up to 7 days. The state can sometimes provide this higher stipend for longer than the 7 days if necessary.
 
@@ -2766,7 +2766,7 @@ recommendations:
       number: 1
       image: ''
       what: >-
-        * **Frederick County, MD** has three templates you can print and put in a three-ring notebook: [Zig Zags](/assets/Lifebook-circles-zigzags.pdf), [Floral](/assets/Lifebook-floral-water-color.pdf), [Triangles](/assets/Lifebook-triangles.pdf). 
+        * **Frederick County, MD** has three templates you can print and put in a three-ring notebook: [Zig Zags](/static/assets/Lifebook-circles-zigzags.pdf), [Floral](/static/assets/Lifebook-floral-water-color.pdf), [Triangles](/static/assets/Lifebook-triangles.pdf). 
 
   - heading: Use DNA to find more family connections
     title: use-dna-to-find-more-family-connections
@@ -2945,7 +2945,7 @@ recommendations:
 
         * **Rhode Island** considers visits with familiar adult siblings prudent parenting.
 
-        * **Frederick County, MD** does not require background checks for familiar adult siblings to visit with younger siblings. [See their policy on relative visits](/assets/SSA 16-16 Family and Friends Contact.pdf). 
+        * **Frederick County, MD** does not require background checks for familiar adult siblings to visit with younger siblings. [See their policy on relative visits](/static/assets/SSA 16-16 Family and Friends Contact.pdf). 
 
         * **Oklahoma** considers visits with adult siblings like other relatives; there is no required background check unless warranted in specific circumstances.
 
@@ -2964,7 +2964,7 @@ recommendations:
       number: 5
       image: ''
       what: >-
-        * **Frederick County, MD** requires separated siblings to have contact at least monthly [per policy](/assets/SSA 15-18 Parent-Child and Sibling Visitation.pdf), and explicitly forbids withholding sibling visits as a form of discipline.   
+        * **Frederick County, MD** requires separated siblings to have contact at least monthly [per policy](/static/assets/SSA 15-18 Parent-Child and Sibling Visitation.pdf), and explicitly forbids withholding sibling visits as a form of discipline.   
 
         * **Indiana** requires at least two sibling visits per month. 
 
@@ -3170,7 +3170,7 @@ recommendations:
       - More people supporting kin relationships
     who:
       what: >-
-        * 30 Days to Family suggests that agencies [identify at least 80 kin](https://secureservercdn.net/198.71.233.159/qzt.0d4.myftpupload.com/wp-content/uploads/30-Days-to-Family-Logic-Model-2021-2.pdf) upfront for each child, with balanced representation across both parents whenever possible.
+        * 30 Days to Family suggests that agencies [identify at least 80 kin](https://forchildwelfare.org/wp-content/uploads/30-Days-to-Family-Logic-Model-2021-2.pdf) upfront for each child, with balanced representation across both parents whenever possible.
 
         * **Washington** State maintains a [policy](https://www.dcyf.wa.gov/tribal-relations/icw) for engaging local tribal partners on kin-finding.
 
