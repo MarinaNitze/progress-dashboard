@@ -3346,12 +3346,13 @@ recommendations:
     about:
       When you call or text a (potential) client to offer them services, what name comes up? What information comes up if they search your phone number? Ensuring this information is accurate and friendly can increase your engagement rates by helping prove you’re not a spammer.
     how: >-
-      _Update Your Caller ID Name_ 
-      * The name that appears as your phone number’s caller ID is known as a CNAM record. Updating your display name may require contacting your telephone provider, and/or paying a small monthly fee to upgrade to “advanced” caller ID. 
-      * Test what name appears on the [Caller ID Test website](https://calleridtest.com/). (This requires free registration.) 
-      _Update Search Engine Listings for Your Phone Number_ 
-      * List your phone number prominently on your official website to increase the chances of this result at the top of any searches for that number. 
-      * Make sure that any Google, Yelp, or other map-based listing has the accurate phone number, too. If there are other websites that come up in a search for your organization name, especially local community websites, try to update those listings with your phone number.
+      * _Update Your Caller ID Name_ 
+        * The name that appears as your phone number’s caller ID is known as a CNAM record. Updating your display name may require contacting your telephone provider, and/or paying a small monthly fee to upgrade to “advanced” caller ID. 
+        * Test what name appears on the [Caller ID Test website](https://calleridtest.com/). (This requires free registration.) 
+
+      * _Update Search Engine Listings for Your Phone Number_ 
+        * List your phone number prominently on your official website to increase the chances of this result at the top of any searches for that number. 
+        * Make sure that any Google, Yelp, or other map-based listing has the accurate phone number, too. If there are other websites that come up in a search for your organization name, especially local community websites, try to update those listings with your phone number.
     extraContent:
       <div class="doris-day">
         <div class="doris-day-logo">
@@ -3366,6 +3367,7 @@ recommendations:
       By the time child welfare is formally involved with a family, even for a screened-out report, there is an inherent element of coercion in offering “voluntary” services. Offering services to everyone with a new child is one point of engagement that can meet people when they may be most in need, without child welfare involvement. This support can be tiered based on the needs of each new parent, ranging from a supportive phone call to diapers to rental assistance, substance use treatment, or more.
     how: >-
       * [Hello Baby](https://www.hellobabypgh.org/) provides supports for all new parents in Allegheny County, Pennsylvania, with increasing supports for those that need them most. 
+
       * [Nashville Strong Babies](https://www.nashvillestrongbabies.com/) uses state birth records and Medicaid enrollment records to reach out to all new parents to offer a variety of supports. This tiered service started in a few targeted zip codes, but is now available to any new parent in Nashville. There are no income requirements and any family who is expecting a child, recently delivered, or parenting a child up to 18 months of age is eligible for support services.
     extraContent:
       <div class="doris-day">
@@ -3383,9 +3385,11 @@ recommendations:
       * What should you look for in a prevention navigator?
         * Experience in community navigation.
         * Multiple jurisdictions report that people with more life experience have more success. It is harder for newer employees to compartmentalize conversations, so they can experience a heavier burden.
+
       * What does success look like?
         * _Flexibility_ parents don’t keep business hours. Navigators need to be available during odd hours, with the boundaries/backup to avoid being on-call 24/7. Encourage navigators to respond quickly, but make it clear they don’t have to respond _immediately_. 
         * _Focus_ A dedicated navigator is able to learn and succeed more readily than someone who also has to wear multiple other hats. Jurisdictions that originally had navigators juggling multiple roles reported increased success when navigation became their sole job.
+
       * How do you measure performance?
         * Look at engagement rates, such as how many contacts they made, and how many people responded.
         * Track last contact dates and who they’ve closed out. For a new program, you may need to hire the best possible navigators you can upfront, give them some freedom to reach out / pull back as they feel appropriate, and then set standards from there.
