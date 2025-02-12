@@ -15,7 +15,7 @@ home:
       image: ../images/features/feature-babies.png
       title: New recommended standards for approving kinship caregivers
       imgAlt: full width feature image
-      link: /kinship-caregivers
+      link: https://docs.google.com/document/d/1V30W6Ft_uEUpVIQ062wPh12HrYHNod0b43T25wrp190/edit?tab=t.0#heading=h.1y1hk6otg82o
       linkText: Find out how
       layout: lg
     mediumFeature:
