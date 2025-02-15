@@ -3391,7 +3391,7 @@ recommendations:
         * _Focus_ A dedicated navigator is able to learn and succeed more readily than someone who also has to wear multiple other hats. Jurisdictions that originally had navigators juggling multiple roles reported increased success when navigation became their sole job.
 
       * How do you measure performance?
-        * Look at engagement rates, such as how many contacts they made, and how many people responded.
+        * Look at [engagement rates](https://www.childwelfareplaybook.com/recommendations/how-to-measure-engagement-rates), such as how many contacts they made, and how many people responded.
         * Track last contact dates and who they’ve closed out. For a new program, you may need to hire the best possible navigators you can upfront, give them some freedom to reach out / pull back as they feel appropriate, and then set standards from there.
         * Understand that reaching out endlessly is not the goal; typically, 60 days of no response is a cut-off for closing a case (with a case by case ability for a navigator to keep it open longer).
         * Track engagement with families over time; a person might not be ready today, but it’s still a positive if they reach back out in a few month
@@ -3552,18 +3552,16 @@ recommendations:
       
     who:
       what: >-
-        ### What they're doing
-
         * Oregon’s District 11 Klamath/Lake Counties started a tribal family coach program in 2020 as a response to the Klamath Tribe’s concern about families having multiple screened out calls that eventually led to a removal of their tribal member.  The Klamath Tribes concern was the lack of support to families addressing issues that caused the call to the hotline despite the call not raising to the level of a CPS investigation. Screened-out reports related to Native American and Alaska Native families are shared with the ODHS tribal family coach by the tribe, for potential assistance. The coach reaches out to the family together with a Klamath Tribal support person, to offer assistance, and has the flexibility to assist them with a wide range of needs.
 
 
-        In Oregon’s D11, the Klamath Tribes support their own members in collaboration with an ODHS Family Coach.  The ODHS tribal family coach can support all other Native American and Alaska Native families who may be from any tribe nationwide as well as tribal members from any of Oregon’s nine federally recognized tribes.
+          In Oregon’s D11, the Klamath Tribes support their own members in collaboration with an ODHS Family Coach.  The ODHS tribal family coach can support all other Native American and Alaska Native families who may be from any tribe nationwide as well as tribal members from any of Oregon’s nine federally recognized tribes.
 
 
-        The ODHS tribal family coach works closely with the Klamath tribal TANF team to support families in a coordinated way.
+          The ODHS tribal family coach works closely with the Klamath tribal TANF team to support families in a coordinated way.
 
 
-        Here is Oregon’s [position description](https://docs.google.com/document/d/1MXpOaBL2_cesoR42pI1NZxf6BNzKnWrX/edit?usp=drive_link&ouid=103308794074606378631&rtpof=true&sd=true) and [logic model](https://drive.google.com/file/d/1W8Q1M14JaWD0rOd37XmFD48QQ879ay0-/view?usp=drive_link) for jurisdictions looking to create their own coach program.
+          Here is Oregon’s [position description](https://docs.google.com/document/d/1MXpOaBL2_cesoR42pI1NZxf6BNzKnWrX/edit?usp=drive_link&ouid=103308794074606378631&rtpof=true&sd=true) and [logic model](https://drive.google.com/file/d/1W8Q1M14JaWD0rOd37XmFD48QQ879ay0-/view?usp=drive_link) for jurisdictions looking to create their own coach program.
     outcome: With the collaboration and hard work of the Klamath Tribes and the ODHS tribal family coach, Oregon’s D11 has become the only district in the state to both significantly reduce the number of Klamath Tribal children in foster care, and the only district to have zero and or minimal over-representation of Native American or Alaska Native children in foster care.
     extraContent:
       <div class="doris-day">
@@ -3572,4 +3570,116 @@ recommendations:
         </div>
         <p>The Prevention section is generously supported by the Doris Duke Foundation as part of the <a href="https://www.ddf-opt-in.org/">OPT-In for Families Initiative</a>.</p>
       </div>
-	  	  
+  - title: evaluate-referral-sources-for-bias
+    heading: Evaluate Referral Sources for Bias
+    about:
+      Some referral sources are biased, whether that means over-referring Black and Brown families, or referring a large percentage of families for reasons that do not warrant child welfare involvement. Evaluating your referral sources can help you to provide targeted training and feedback.
+    who:
+      what: >-
+        
+        - By [cross-referencing aggregate racial and demographic data with screening, testing, and CPS referral numbers](https://www.dcyf.wa.gov/safety/plan-safe-care/racial-equity), Washington State DCYF can direct anti-bias training to targeted referral sources and support policy that standardizes screening, testing, and referral practices.
+    extraContent:
+      <div class="doris-day">
+        <div class="doris-day-logo">
+          <img src="/images/doris-duke.svg" alt="Logo for the Doris Duke Foundation" />
+        </div>
+        <p>The Prevention section is generously supported by the Doris Duke Foundation as part of the <a href="https://www.ddf-opt-in.org/">OPT-In for Families Initiative</a>.</p>
+      </div>
+  - title: how-to-measure-engagement-rates
+    heading: How to Measure Engagement Rates
+    about:
+      When offering services, there are multiple ways to count an engagement. Each visit? Each text message? Each letter? When different programs measure engagement differently, it can be hard to tell which ones are more successful at engaging families.
+    how: >-
+      * The primary form of measuring engagement we found is counting ongoing responses from the individual, not only whether they respond initially. This likely means a program will have multiple engagement rates for the duration of their relationship with the client.
+      
+    who:
+      what: >-
+        * One jurisdiction tracks a successful contact (e.g., an answered call, or getting a text or call back), but does not count this as its engagement measure. Instead, they track engagement along a continuum: did they opt in to services? Complete a needs assessment? Talk to a navigator multiple times?  
+
+
+          To keep their tracking fresh, they regularly look at any contacts categorized as “other” to see if they should be tracking a new category.
+
+
+        We would love to hear stories of how other jurisdictions are tracking engagement across voluntary services.
+    extraContent:
+      <div class="doris-day">
+        <div class="doris-day-logo">
+          <img src="/images/doris-duke.svg" alt="Logo for the Doris Duke Foundation" />
+        </div>
+        <p>The Prevention section is generously supported by the Doris Duke Foundation as part of the <a href="https://www.ddf-opt-in.org/">OPT-In for Families Initiative</a>.</p>
+      </div>
+  - title: quickly-offer-specific-concrete-goods
+    heading: Quickly Offer Specific Concrete Goods in Initial Engagements
+    about:
+      Jurisdictions report that offering examples of specific services, instead of vaguely referring to _services,_ helps to engage more people.
+    how: >-
+      * Update your initial contact scripts or guidelines to mention specific offerings, such as free diapers, car seats, or rental assistance, instead of saying _services_ more generally.
+      
+      * If you offer many services, mention one or two that are most popular with your current clientele, and/or that are the simplest engagements. For example, many jurisdictions mention that free diapers — which can be a straightforward, one-time transaction — is a great opening offer.
+      
+      * Avoid vague terms like _services_ or _resources_ that don’t clarify why you’re calling or what you can provide.
+       
+    who:
+      what: >-
+        * One jurisdiction co-designed their outreach scripts with individuals with lived experience. They report that clarity about what services they can offer in the first 20 seconds of the call is important. For example: _Are you all good on coats? How about holiday gifts?_ 
+      
+        * Hello Baby in Allegheny County reports success in offering free diapers as a successful entry point. From there, they can engage more with families that may need it.
+    extraContent:
+      <div class="doris-day">
+        <div class="doris-day-logo">
+          <img src="/images/doris-duke.svg" alt="Logo for the Doris Duke Foundation" />
+        </div>
+        <p>The Prevention section is generously supported by the Doris Duke Foundation as part of the <a href="https://www.ddf-opt-in.org/">OPT-In for Families Initiative</a>.</p>
+      </div>
+  - title: use-data-analytics-to-prevent-child-welfare-involvement
+    heading: Use Data / Analytics to Prevent Child Welfare Involvement
+    about:
+      When resources, including staff time and funds, are limited, data can help to target communities, criteria, and specific services that can have the greatest positive impact for particular populations.
+
+      
+      The use of data to predict child welfare involvement can be very challenging and ultimately cause more harm to families, if not used carefully. Any data analysis needs to recognize the racial and socioeconomic biases baked into historical data and decision making. Predictive data or artificial intelligence should never, ever, ever be used for automatic decision making.
+
+      
+      In the examples below, we share examples of using data to identify communities where the provision of thoughtful, culturally responsive services can help to safely stem or solve problems before they ever rise to the level of child welfare involvement.
+    who:
+      what: >-
+        * [Child Opportunity Index](https://www.diversitydatakids.org/child-opportunity-index) - The Child Opportunity Index is a composite index of children's neighborhood opportunity that contains data for every neighborhood (census tract) in the United States from every year for 2012 through 2021. It comprises 44 indicators in three domains (education, health and environment, and social and economic) and 14 subdomains.
+          
+          One jurisdiction combines COI data with its child neglect reporting , to prioritize engagement. It also uses this information to drive other supports, such as prioritizing grant allocations.
+          
+          Look up your own service area on [their website](https://www.diversitydatakids.org/child-opportunity-index).
+      
+        * [Hello Baby](https://www.alleghenycounty.us/Services/Human-Services-DHS/DHS-News-and-Events/Accomplishments-and-Innovations/Hello-Baby) - Allegheny County, Pennsylvania created Hello Baby, a voluntary program for any family in the county with a newborn or young child (see their [methodology report](https://www.alleghenycounty.us/files/assets/county/v/1/services/dhs/documents/news-and-events/accomplishments-and-innovations/hello-baby/hello-baby-methodology-report_9-9-20-v2.pdf)).
+      
+        * [Predict Align Prevent](https://www.predict-align-prevent.org/) - Through geospatial risk analysis, strategic alignment of community initiatives, and implementation of accountable prevention programs, we discover practical solutions to the fundamental problems of child maltreatment, preventing the suffering and death of little children due to abuse and neglect.
+      
+        * By cross-referencing aggregate racial and demographic data with screening, testing, and CPS referral numbers, [Washington State DCYF](https://www.dcyf.wa.gov/safety/plan-safe-care/racial-equity) can direct anti-bias training to targeted referral sources and support policy that standardizes screening, testing, and referral practices.
+      
+          Washington State DCYF maintains a [public data dashboard](https://dcyf.wa.gov/practice/oiaa/reports/prevention-dashboard) to support the agency’s efforts to prevent child maltreatment.
+      
+        * Washington’s [Prenatal to Three Coalition](https://withinreachwa.org/washington-prenatal-to-three-coalition) uses Targeted Universalism to develop key focus areas and identify sub-populations of focus.
+      
+
+
+        Do you know of other data-driven prevention programs? Please let us know.
+    extraContent:
+      <div class="doris-day">
+        <div class="doris-day-logo">
+          <img src="/images/doris-duke.svg" alt="Logo for the Doris Duke Foundation" />
+        </div>
+        <p>The Prevention section is generously supported by the Doris Duke Foundation as part of the <a href="https://www.ddf-opt-in.org/">OPT-In for Families Initiative</a>.</p>
+      </div>
+  - title: example-engagement-scripts
+    heading: Example Co-Designed Engagement Scripts
+    about:
+      This page contains example scripts for engaging individuals in voluntary services.
+    who:
+      what: >-
+        * Washington State developed [suggested scripts](https://drive.google.com/file/d/1uthZqW0xEbvKnzxsEveFJOBoAopByd_u/view) for engaging parents in the Plan of Safe Care for infants exposed to substances. In Washington, scripting is an iterative process as they look for what language elicits the highest engagement rates.
+    extraContent:
+      <div class="doris-day">
+        <div class="doris-day-logo">
+          <img src="/images/doris-duke.svg" alt="Logo for the Doris Duke Foundation" />
+        </div>
+        <p>The Prevention section is generously supported by the Doris Duke Foundation as part of the <a href="https://www.ddf-opt-in.org/">OPT-In for Families Initiative</a>.</p>
+      </div>
