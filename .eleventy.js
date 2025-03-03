@@ -67,6 +67,12 @@ module.exports = function (eleventyConfig) {
 
   // Copy favicon to route of /_site
   eleventyConfig.addPassthroughCopy("./src/favicon.ico");
+  eleventyConfig.addPassthroughCopy("./src/favicon-180.png");
+  eleventyConfig.addPassthroughCopy("./src/favicon-192.png");
+  eleventyConfig.addPassthroughCopy("./src/favicon-512.png");
+  eleventyConfig.addPassthroughCopy("./src/favicon.svg");
+  eleventyConfig.addPassthroughCopy("./src/manifest.webmanifest");
+
 
   eleventyConfig.addNunjucksFilter("markdown", function(markdownString) {
     const md = new markdownIt(markdownItOptions).use(markdownItAttrs);
