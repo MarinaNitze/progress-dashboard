@@ -63,7 +63,7 @@ permalink: "/topics/{{ topic.title }}/"
                         </a>
                     </li>
                 {% endif %}
-                {% if topic.why %}
+                {% if topic.what %}
                     <li>
                         <a class="text-lg hover:underline text-white hover:text-[#fe6659]" href="#what">
                             {% if topic.whatTitle %}
@@ -71,6 +71,13 @@ permalink: "/topics/{{ topic.title }}/"
                             {% else %}
                                 What we can do
                             {% endif %}
+                        </a>
+                    </li>
+                {% endif %}
+                {% if topic.recommendations %}
+                    <li>
+                        <a class="text-lg hover:underline text-white hover:text-[#fe6659]" href="#recommendations">
+                            Recommendations
                         </a>
                     </li>
                 {% endif %}
@@ -119,6 +126,30 @@ permalink: "/topics/{{ topic.title }}/"
                         </span>
                     </h2>
                     {{ topic.what | markdown | safe }}
+                </div>
+            {% endif %}
+
+            {% if topic.recommendations %}
+                 <div class="mb-12">
+                    <h2 id="how-programs-are-doing-this" class="text-4xl font-bold mb-8 mt-0 font-serif">
+                        <span class="border-b-[4px] border-[#fe6659] pb-2">
+                            Recommendations
+                        </span>
+                    </h2>
+
+                    <ul>
+                    {% for rec in topic.recommendations %}
+                        <li>
+                            <a href="/recommendations/{{ rec }}/">
+                                {% for item in recommendations.recommendations %}
+                                    {% if item.title === rec %}
+                                        {{ item.heading }}
+                                    {% endif %}
+                                {% endfor %}
+                            </a>
+                        </li>
+                    {% endfor %}
+                    </ul>
                 </div>
             {% endif %}
         </div>
