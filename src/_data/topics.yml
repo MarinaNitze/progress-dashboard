@@ -281,10 +281,9 @@ topics:
     image: /src/images/topics/Topic-BC.svg
     about: >-
       Child welfare programs are required to check the child abuse and neglect
-      registry in each state where a potential foster parent lived during the
-      past 5 years. This is called the “Adam Walsh check” after the 2006 act
-      that requires it. Programs must do this for anyone else in the home who’s
-      18 years or older.
+      registry in each state where a potential foster parent, or any other adult in the home, lived during the
+      past 5 years. This is often called an “Adam Walsh check” after the 2006 act
+      that requires it.
 
 
       **Track adoption of these practices on the [progress dashboard](/compare/background-checks/)**.
@@ -292,8 +291,6 @@ topics:
       Flaws and inconsistencies in states’ out of state child abuse and neglect
       check processes are: 
 
-
-      * Putting children at risk. Some states only respond to requests when someone doesn’t pass the background check. This means that foster care programs don’t know if a potential foster parent passed the background check or if the request was simply lost. 
 
       * Causing delays in licensing foster parents. Foster care programs have to decide how long to wait for a potential response to an Adam Walsh check request before proceeding and assuming no response is a good response. While they’re waiting, children need placement. 
 
@@ -312,7 +309,7 @@ topics:
       * _“It was so impossible to get a whole household of adults with different work schedules and who already had kids to meet me half an hour away at the notary, that all of us in the office just became notaries ourselves so we could do it.”_ —Licensor
 
 
-      **Accept requests electronically.** Whether you build an online portal or accept email requests, this will allow you to process requests more efficiently. 
+      **Accept requests electronically.** Whether you build an online portal or accept and respond to email requests, this will allow you to process requests more efficiently. 
 
 
       * _“[State] moved to an electronic request system, which is great. But it only allows one account per child welfare system. Someone else from my state already registered, so now I can’t.”_ —Licensor
@@ -330,6 +327,12 @@ topics:
       **Respond to all requests.** Without a response, the requestor doesn’t know whether the applicant passed the check or if the request was lost.
 
 
+      **Accept attestation of consent.** Instead of requiring a separate consent form for each individual being checked, allow the requesting agency employee to check a box confirming they have consent on file. This dramatically reduces the time and complexity of completing checks. Consent is still required — but this does not require a separate form.
+
+
+      **Use the model standard form.** As part of the kin-specific model licensing standards, agencies co-designed an ideal form for requesting out-of-state child abuse and neglect registry checks. This form incorporates all the promising practices on this page. [Find the Out-of-State Child Abuse/Neglect Registry Check Form template here](https://www.grandfamilies.org/Resources/Kin-Specific-Licensing-Standards-Sample-Forms). 
+
+
       **Eliminate other burdensome requirements.** For example, some states require specific ink colors or typefaces. 
 
 
@@ -345,10 +348,10 @@ topics:
       ### **Improve your process for requesting out-of-state background checks.**
 
 
-      **Collect information early.** Ask whether applicants and the other adults in their household lived in other states in the last 5 years as early as possible in the process. For example, if your application process includes a “mini” application or a “pre-application” form, ask there. 
+      **Ask whether anyone lived out of state upfront.** Ask whether applicants and the other adults in their household lived in other states in the last 5 years as early as possible in the process. For example, if your application process includes a “mini” application or a “pre-application” form, ask there. 
 
 
-      **Start background checks early.** Submit out-of-state requests as early as possible in your process. Review your licensing worker checklists to move this step towards the top of the list.
+      **Start background checks as early as possible.** Submit out-of-state requests as early as possible in your process. Review your licensing worker checklists to move this step towards the top of the list.
     recommendations:
       - electronic-background-check
       - background-check-form
