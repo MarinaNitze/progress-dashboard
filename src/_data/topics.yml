@@ -412,46 +412,6 @@ topics:
       - digital-marketing-for-recruitment
   - hero:
       backgroundColor: light
-      title: Relative Licensing Exceptions
-      image: /src/images/heros/hero-baby.png
-      imgAlt: relative-licensing-exemptions
-    layout: topic
-    title: relative-licensing-exceptions
-    image: /src/images/topics/Topic-FPL.svg
-    about: Federal law allows child welfare systems to make exceptions for relatives
-      to any foster parent licensing requirement that's not a safety issue. Most
-      systems are not taking advantage of this flexibility, and should. **States
-      currently using this flexibility are  licensing 100% of their relative
-      caregivers within 60 days.**
-    why: >-
-      In states that allow unlicensed kinship placements, greater licensing
-      flexibility would give financial support to all your kinship caregivers
-      (by getting them all licensed/approved/certified).
-
-
-      In states that don't allow unlicensed placements, flexible licensing for relatives will significantly increase your available kinship placements, who are far better for children than strangers or institutions.
-
-
-      This flexibility also shortens the licensing process for relatives.
-    what: >-
-      
-
-      * **Update your policy to allow flexible exceptions for relatives.** Don't limit exceptions to a specific list. If a relative is safe enough to have _placement_, then by definition, any other licensing requirements are non-safety issues and you can waive them. 
-
-      * **Normalize making exceptions for relatives.** In systems that do this now, exceptions happen more often than not! Don't use special forms and approval processes to request exceptions. Instead, build natural places to document variations into your standard process, such as your home study template. 
-
-      * **Empower line workers.** Workers who are interacting directly with families are best positioned to understand the child and family dynamics at hand and make smart trade-offs. Licensing workers should be able to approve most, if not all, exemptions. Some systems reserve specific types of exemptions, such as criminal history, for higher level supervisors. 
-
-      * **Approve everyone with placement.** If your kinship caregivers can't get through your licensing process, you need to fix your licensing process. If they already have placement, there cannot, by definition, be any safety issues remaining — so you can use relative non-safety waivers to get that caregiver licensed.
-    recommendations:
-      - pay-kinship-caregivers-until-they-get-licensed
-      - normalize-relative-licensing-exceptions
-      - maximize-relative-exceptions
-      - license-undocumented-kin
-      - empower-line-level-exceptions
-      - flexible-licensing-wording
-  - hero:
-      backgroundColor: light
       title: Retention
       image: /src/images/heros/hero-baby.png
       imgAlt: retention
