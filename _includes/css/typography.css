@@ -129,7 +129,7 @@ h4, .h4 {
   --l-stack-gap: calc(var(--t-paragraph) * 1.5);
 }
 
-h5, .h5 {
+.small-caps {
   font-size: var(--font-base-size);
   line-height: var(--font-base-leading);
   text-transform: lowercase;
