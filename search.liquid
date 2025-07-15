@@ -78,15 +78,16 @@ pageTypes:
     </fieldset>
     <fieldset id="search-topic-filters" class="search-topic-filters l-stack-basic">
       <h4>Filter by topic</h4>
-      {%- for i in topics.topics -%}
-        {% assign topicFilterIcon = topics[i].icon %}
-        <label for="{{ topics[i].title | slugify }}" class="filter-label" hidden>
-          <span class="filter-label-name">
-            <input type="checkbox" id="{{ topics[i].title | slugify }}" data-topic-filter="{{ topics[i].title }}" name="topic-filter">
-            {% icon topicFilterIcon %}{{ topics[i].title }}
-          </span>
-            <span class="search-counter">0</span>
-        </label>
+      {%- for topic in collections.topics -%}
+        {% unless topic.url == false %}
+          <label for="{{ topic.data.title | slugify }}" class="filter-label" hidden>
+            <span class="filter-label-name">
+              <input type="checkbox" id="{{ topic.data.title | slugify }}" data-topic-filter="{{ topic.data.title }}" name="topic-filter">
+              {{ topic.data.icon }}{{ topic.data.title }}
+            </span>
+              <span class="search-counter">0</span>
+          </label>
+        {% endunless %}
       {%- endfor -%}
         <label for="no-topic" class="filter-label" hidden>
             <span class="filter-label-name">
