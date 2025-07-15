@@ -20,16 +20,15 @@ const topicList = [
   "background-checks",
   "emergency-placements",
   "extended-foster-care",
-  "finding-kin",
+  "kin-finding",
   "inquiry management",
   "licensing",
   "prevention",
   "recruitment",
   "relative-licensing-exceptions",
   "retention",
-  "sibling-connections",
+  "supportive-relationships",
   "social-media",
-  "supportive-adult-connections"
 ];
 
 export default async function(eleventyConfig) {
@@ -80,6 +79,11 @@ export default async function(eleventyConfig) {
 
   eleventyConfig.addCollection("stories", (collection) =>
     collection.getFilteredByGlob("stories/*.md")
+  );
+
+    // All resources
+  eleventyConfig.addCollection("topics", (collection) =>
+      collection.getFilteredByGlob("topics/*.md")
   );
 
   // All resources
