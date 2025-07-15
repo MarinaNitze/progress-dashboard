@@ -25,9 +25,9 @@ pagefind:
         {% if topic.data.featured %}
           {% include "components/card.liquid",
             type: "topic",
-            icon: topic.icon,
-            title: topic.title,
-            description: topic.description,
+            icon: topic.data.icon,
+            title: topic.data.title,
+            description: topic.content,
             url: "/plays#{{ topic }}"
           %}
         {% endif %}

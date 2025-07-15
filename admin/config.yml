@@ -19,10 +19,9 @@ collections:
       - { label: "Name of topic", name: "title", widget: "string" }
       - { label: "ID", name: "id", widget: "string" }
       - { label: "URL", name: "permalink", widget: "string" }
-      - { label: "Introduction", name: "description", widget: "markdown"}
       - { label: "Icon", name: "icon", widget: "string" }
-      - { label: "Content of topic page", name: "body", widget: "markdown" }
-      - { label: "Related topics", name: "related-topics", widget: "relation", collection: "topics", value_field: "title", search_fields: ["title", "id"], multiple: true}
+      - { label: "Introduction", name: "body", widget: "markdown" }
+      - { label: "Related topics", name: "related", widget: "relation", collection: "topics", value_field: "title", search_fields: ["title", "id"], multiple: true}
   - name: "plays"
     label: "Strategies"
     folder: "plays"

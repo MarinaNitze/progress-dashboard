@@ -1,9 +1,8 @@
 ---
 id: emergency-placements
 title: Emergency placements
-description: Find safe, temporary homes for youth who need immediate placement, especially during nights and weekends when options may be limited.
 icon: lifebuoy
 layout: "layouts/topic.njk"
 ---
 
-TK
+Find safe, temporary homes for youth who need immediate placement, especially during nights and weekends when options may be limited.

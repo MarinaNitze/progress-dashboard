@@ -20,15 +20,15 @@ const topicList = [
   "background-checks",
   "emergency-placements",
   "extended-foster-care",
+  "foster-parent-licensing",
+  "general-engagement",
+  "general-licensing",
   "kin-finding",
-  "inquiry management",
-  "licensing",
+  "kin-licensing",
   "prevention",
   "recruitment",
-  "relative-licensing-exceptions",
   "retention",
   "supportive-relationships",
-  "social-media",
 ];
 
 export default async function(eleventyConfig) {
