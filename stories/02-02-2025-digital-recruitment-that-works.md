@@ -7,7 +7,7 @@ type: Research report
 layout: "layouts/story"
 image: digital-recruiting.png
 tags: ["recruitment", "story"]
-eleventyExcludeFromCollections: ["recruitment-plays"]
+eleventyExcludeFromCollections: ["recruitment-strategies"]
 ---
 
 Content TK

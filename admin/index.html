@@ -11,7 +11,7 @@
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
     <script type="module">
 
-      const Play = createClass({
+      const Strategy = createClass({
         render: function() {
           const entry = this.props.entry;
 
@@ -78,7 +78,7 @@
       });
 
 
-      CMS.registerPreviewTemplate("plays", Play);
+      CMS.registerPreviewTemplate("strategies", Strategy);
       CMS.registerPreviewTemplate("resources", Resource);
       CMS.registerPreviewTemplate("stories", Story);
       CMS.registerPreviewStyle("../theme.css", { raw: false });

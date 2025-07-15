@@ -63,15 +63,15 @@ export default async function(eleventyConfig) {
       eleventyConfig.addFilter(filterName, dateFilters[filterName])
   })
 
-  // All plays sorted alphabetically
+  // All strategies sorted alphabetically
 
-  eleventyConfig.addCollection("playsAlpha", (collection) =>
-    collection.getFilteredByGlob("plays/*.md").sort(alphaSort)
+  eleventyConfig.addCollection("strategiesAlpha", (collection) =>
+    collection.getFilteredByGlob("strategies/*.md").sort(alphaSort)
   );
 
   for (let topic in topicList) {
-    eleventyConfig.addCollection(`${topicList[topic]}-plays`, function (collectionsApi) {
-      return collectionsApi.getFilteredByTags('play', `${topicList[topic]}`).sort(alphaSort);
+    eleventyConfig.addCollection(`${topicList[topic]}-strategies`, function (collectionsApi) {
+      return collectionsApi.getFilteredByTags('strategy', `${topicList[topic]}`).sort(alphaSort);
     });
   }
 

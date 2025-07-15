@@ -5,7 +5,7 @@ window.addEventListener('DOMContentLoaded', async (e) => {
   const filters = await pagefind.filters();
   await pagefind.init();
 
-  const pageTypes = ["Play", "Story", "Resource", "Meeting", "Page"]
+  const pageTypes = ["Strategy", "Story", "Resource", "Meeting", "Page"]
 
   const activeFilters = {};
 
@@ -65,10 +65,10 @@ window.addEventListener('DOMContentLoaded', async (e) => {
     if (searchType === "query") {
       otherSearchCounts.all = search.filters.topics;
 
-      otherSearchCounts.Play = await pagefind.search(
+      otherSearchCounts.Strategy = await pagefind.search(
         currentQuery, {
           filters: {
-            pageType: "Play"
+            pageType: "Strategy"
           }
         }
       );

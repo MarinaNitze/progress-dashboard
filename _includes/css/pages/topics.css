@@ -1,0 +1,36 @@
+.topic-grid {
+  --grid-col-width: var(--t-measure);
+}
+
+.topic-card {
+  text-decoration: none;
+  border: 0.5rem solid var(--c-orange);
+  border-radius: var(--radius-lg);
+  padding: 1rem;
+  transition: all 0.15s ease-out;
+}
+
+.topic-card h2 {
+  text-decoration: none;
+}
+
+.topic-card:hover {
+  background: var(--c-brown);
+  border-color: var(--c-brown);
+  transform: scale(1.02);
+}
+
+.topic-card svg {
+  color: var(--c-brown);
+  inline-size: 3rem;
+  aspect-ratio: 1 / 1;
+}
+
+.topic-card:hover * {
+  color: #fff;
+}
+
+.play-list-links ul {
+  padding: 0;
+  list-style: none;
+}

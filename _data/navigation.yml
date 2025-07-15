@@ -1,10 +1,8 @@
 ---
 items:
-- text: Plays
-  url: "/plays/"
-- text: Stories
-  url: "/stories/"
-- text: Dashboards
-  url: "/dashboards/"
+- text: Topics
+  url: "/topics/"
+- text: Community
+  url: "/community/"
 - text: Search
   url: "/search/"

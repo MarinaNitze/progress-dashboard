@@ -7,7 +7,7 @@ type: Case study
 layout: "layouts/story"
 image: alaska.png
 tags: ["supportive-relationships", "story"]
-eleventyExcludeFromCollections: ["supportive-relationships-plays"]
+eleventyExcludeFromCollections: ["supportive-relationships-strategies"]
 ---
 
 Content TK

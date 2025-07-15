@@ -28,7 +28,7 @@ pagefind:
             icon: topic.data.icon,
             title: topic.data.title,
             description: topic.content,
-            url: "/plays#{{ topic }}"
+            url: "/topics/{{ topic.data.id }}/"
           %}
         {% endif %}
       {% endfor %}

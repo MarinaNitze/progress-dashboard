@@ -1,0 +1,25 @@
+---
+layout: "layouts/content.njk"
+title: Topics
+description: TK
+pagefind:
+  type: Page
+tags:
+  - noTopic
+---
+
+<div class="l-grid topic-grid">
+{%- for topic in collections.topics -%}
+{% unless topic.url == false %}
+
+<a href="{{ topic.url }}" class="topic-card" id="{{ topic.data.id }}">
+  {% if topic.data.icon %} {% icon topic.data.icon %}{% endif %}
+
+  <h2 class="h3">{{ topic.data.title }}</h2>
+
+  {{ topic.content }}
+</a>
+{% endunless %}
+
+{%- endfor -%}
+</div>
