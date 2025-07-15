@@ -6,8 +6,8 @@ date: 2025-01-18
 type: Case study
 layout: "layouts/story"
 image: alaska.png
-tags: ["supportive-adult-connections", "story"]
-eleventyExcludeFromCollections: ["supportive-adult-connections-plays"]
+tags: ["supportive-relationships", "story"]
+eleventyExcludeFromCollections: ["supportive-relationships-plays"]
 ---
 
 Content TK

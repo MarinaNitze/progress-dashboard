@@ -5,9 +5,9 @@ author: Jordan Smith
 date: 2024-12-05
 type: Case study
 layout: "layouts/story"
-image: sibling-connections.png
-tags: ["sibling-connections", "story"]
-eleventyExcludeFromCollections: ["sibling-connections-plays"]
+image: supportive-relationships.png
+tags: ["supportive-relationships", "story"]
+eleventyExcludeFromCollections: ["supportive-relationships-plays"]
 ---
 
 Content TK
