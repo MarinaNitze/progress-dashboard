@@ -1,7 +1,7 @@
 ---
 layout: layouts/play.liquid
 templateEngineOverride: md,njk
-title: Support All New Parents
+title: Support all new parents
 tags: ["prevention", "play"]
 ---
 

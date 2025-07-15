@@ -2,7 +2,7 @@
 layout: layouts/play.liquid
 templateEngineOverride: md,njk
 title: Require senior staff sign-off for non-relative placements
-tags: ["finding-kin", "play"]
+tags: ["kin-finding", "play"]
 ---
 
 Case workers don’t want to wake a director in the middle of the night to sign-off on a non-relative placement. Requiring this level of sign-off incentivizes early family finding and may prevent placements in group homes. {.t-large}

@@ -1,7 +1,7 @@
 ---
 layout: layouts/play.liquid
 templateEngineOverride: md,njk
-title: Allow foster youth to proactively manage their growth into adulthood
+title: Create a digital app for youth to manage their own transition to adulthood
 tags: ["extended-foster-care", "play"]
 ---
 

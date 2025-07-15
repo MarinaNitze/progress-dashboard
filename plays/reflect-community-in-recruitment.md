@@ -1,7 +1,7 @@
 ---
 layout: layouts/play.liquid
 templateEngineOverride: md,njk
-title: Reflect your community in recruitment materials
+title: Reflect your community in recruitment
 tags: ["recruitment", "play"]
 ---
 

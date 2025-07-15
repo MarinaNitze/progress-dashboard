@@ -2,7 +2,7 @@
 layout: layouts/play.liquid
 templateEngineOverride: md,njk
 title: Make sibling visits fun
-tags: ["sibling-connections", "play"]
+tags: ["supportive-relationships", "play"]
 ---
 
 Sibling visits in cold visitation centers or with nothing to do suck. Sibling visits should be fun!{.t-large}

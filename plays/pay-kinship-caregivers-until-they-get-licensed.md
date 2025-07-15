@@ -1,8 +1,8 @@
 ---
 layout: layouts/play.liquid
 templateEngineOverride: md,njk
-title: Pay Kinship Caregivers Until They Get Licensed
-tags: ["relative-licensing-exceptions", "play"]
+title: Pay kinship caregivers until they get licensed
+tags: ["kin-licensing", "play"]
 ---
 
 Kinship caregivers are not eligible for receiving foster care stipends until they complete a licensing process. In most states, the can take 100s of days; and many states allow for kinship caregivers to remain unlicensed (unpaid) indefinitely. This lack of financial support can severely negatively impact the ability for a kinship caregiver to provide a stable placement.{.t-large}

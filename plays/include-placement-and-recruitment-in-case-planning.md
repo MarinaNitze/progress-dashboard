@@ -1,8 +1,8 @@
 ---
 layout: layouts/play.liquid
 templateEngineOverride: md,njk
-title: Include placement and recruitment teams in regular case planning meetings
-tags: ["recruitment", "play"]
+title: Include placement and recruitment teams in case planning
+tags: ["general-engagement", "play"]
 ---
 
 Recruitment teams can do their best work if they understand the current needs and characteristics of youth in care. Without this context, they may recruit families who do not best match the needs of youth in care. Including recruitment and placement workers in all of your routine planning meetings can help ensure that recruiters focus on the most needed families.{.t-large}

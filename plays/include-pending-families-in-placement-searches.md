@@ -1,7 +1,7 @@
 ---
 layout: layouts/play.liquid
 templateEngineOverride: md,njk
-title: Include pending families in placement searches
+title: Consider placements with families that are still getting licensed
 tags: ["recruitment", "play"]
 ---
 

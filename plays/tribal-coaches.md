@@ -1,7 +1,7 @@
 ---
 layout: layouts/play.liquid
 templateEngineOverride: md,njk
-title: Tribal Family Coaches
+title: Create tribal family coach positions
 tags: ["prevention", "play"]
 ---
 

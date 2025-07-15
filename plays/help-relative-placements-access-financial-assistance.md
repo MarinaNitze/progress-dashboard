@@ -1,8 +1,8 @@
 ---
 layout: layouts/play.liquid
 templateEngineOverride: md,njk
-title: Help relative placements access financial assistance
-tags: ["relative-licensing-exceptions", "play"]
+title: Help kin placements access financial assistance
+tags: ["kin-licensing", "play"]
 ---
 
 Sometimes, the biggest barrier to getting kinship families licensed is not safety concerns but financial requirements. Financial issues may be the only reason a relative placement doesn’t qualify. However, there are various programs that can provide assistance to these families and help them to get licensed.{.t-large}

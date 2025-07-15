@@ -1,7 +1,7 @@
 ---
 layout: layouts/play.liquid
 templateEngineOverride: md,njk
-title: Keep Your Wait List Warm
+title: Keep your wait list warm
 tags: ["prevention", "play"]
 ---
 

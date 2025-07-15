@@ -1,7 +1,7 @@
 ---
 layout: layouts/play.liquid
 templateEngineOverride: md,njk
-title: Accept background check electronically
+title: Streamline out-of-state background check processes
 tags: ["background-checks", "play"]
 ---
 

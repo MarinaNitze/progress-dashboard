@@ -1,8 +1,8 @@
 ---
 layout: layouts/play.liquid
 templateEngineOverride: md,njk
-title: Create life books for youth in care
-tags: ["supportive-adult-connections", "finding-kin", "play"]
+title: Create life books for children and youth in care
+tags: ["supportive-relationships", "play"]
 ---
 
 A life book captures a child's key milestones and relationships, and it should follow them throughout (and after) their time in care.{.t-large}

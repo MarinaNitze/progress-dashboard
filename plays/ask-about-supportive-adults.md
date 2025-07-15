@@ -1,8 +1,8 @@
 ---
 layout: layouts/play.liquid
 templateEngineOverride: md,njk
-title: Ask youth about their kin
-tags: ["supportive-adult-connections", "finding-kin", "play"]
+title: Ask children and youth about their kin
+tags: ["kin-finding", "play"]
 ---
 
 Youth are often placed in general foster care or in group homes when they have placement options with adults they already know and trust.{.t-large}

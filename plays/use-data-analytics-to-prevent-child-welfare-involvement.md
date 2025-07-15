@@ -1,7 +1,7 @@
 ---
 layout: layouts/play.liquid
 templateEngineOverride: md,njk
-title: Use Data / Analytics to Prevent Child Welfare Involvement
+title: Use data to prevent child welfare involvement
 tags: ["prevention", "play"]
 ---
 

@@ -2,7 +2,7 @@
 layout: layouts/play.liquid
 templateEngineOverride: md,njk
 title: Use an expansive legal definition of kin
-tags: ["finding-kin", "relative-licensing-exceptions", "play"]
+tags: ["kin-finding", "relative-licensing-exceptions", "play"]
 ---
 
 Using an expansive legal definition of kin allows staff to find more placement options for youth more quickly, and can mean more adults qualify to be emergency placements.{.t-large}

@@ -1,8 +1,8 @@
 ---
 layout: layouts/play.liquid
 templateEngineOverride: md,njk
-title: Provide childcare at resource family events and trainings
-tags: ["recruitment", "retention", "play"]
+title: Provide childcare at caregiver events and trainings
+tags: ["general-engagement", "play"]
 ---
 
 

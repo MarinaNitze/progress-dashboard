@@ -1,7 +1,7 @@
 ---
 layout: layouts/play.liquid
 title: Describe foster parent licensing requirements with flexible wording
-tags: ["licensing", "relative-licensing-exceptions", "play"]
+tags: ["foster-parent-licensing", "play"]
 ---
 
 Child welfare systems can box themselves into a corner by being overly specific when describing foster parent licensing requirements. Flexible language around certain requirements means more caregivers, especially kin caregivers, can get licensed.{.t-large}

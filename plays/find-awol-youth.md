@@ -2,7 +2,7 @@
 layout: layouts/play.liquid
 templateEngineOverride: md,njk
 title: Use social media to find missing children
-tags: ["social-media", "finding-kin", "play"]
+tags: ["social-media", "kin-finding", "play"]
 ---
 
 It's scary when youth run away or go missing while in care. Social media can be an effective way to find and communicate with AWOL youth. {.t-large}

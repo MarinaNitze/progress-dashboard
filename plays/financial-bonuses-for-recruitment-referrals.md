@@ -1,8 +1,8 @@
 ---
 layout: layouts/play.liquid
 templateEngineOverride: md,njk
-title: Provide financial bonuses to foster families for recruitment referrals
-tags: ["recruitment", "retention", "play"]
+title: Pay caregivers for bringing in new caregivers
+tags: ["general-engagment", "play"]
 ---
 
 Providing financial bonuses to current foster families who recruit more families is an additional way to financially support current families. This also incentivizes successful recruitment activities.{.t-large}

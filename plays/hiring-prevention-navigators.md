@@ -1,7 +1,7 @@
 ---
 layout: layouts/play.liquid
 templateEngineOverride: md,njk
-title: Hiring Prevention Navigators
+title: Hire prevention navigators
 tags: ["prevention", "play"]
 ---
 

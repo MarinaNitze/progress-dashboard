@@ -1,7 +1,7 @@
 ---
 layout: layouts/play.liquid
 templateEngineOverride: md,njk
-title: Focus recruitment on fostering, not adoption
+title: Recruit families who want to foster, not adopt
 tags: ["recruitment", "play"]
 ---
 

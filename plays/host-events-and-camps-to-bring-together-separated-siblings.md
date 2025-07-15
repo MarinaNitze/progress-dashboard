@@ -2,7 +2,7 @@
 layout: layouts/play.liquid
 templateEngineOverride: md,njk
 title: Host events and camps to bring together separated siblings
-tags: ["sibling-connections", "play"]
+tags: ["supportive-relationships", "play"]
 ---
 
 Create regular events and camps where separated siblings can come together and have fun.{.t-large}

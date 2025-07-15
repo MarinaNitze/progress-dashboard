@@ -2,7 +2,7 @@
 layout: layouts/play.liquid
 templateEngineOverride: md,njk
 title: Involve kin prior to removal
-tags: ["finding-kin", "prevention", "play"]
+tags: ["prevention", "play"]
 ---
 
 Many families interacted with their child welfare agency prior to a child ever being removed. Identifying kin early and often ensures that kin placements are already known to the agency if a removal is ultimately necessary. Plus, involving kin earlier may provide some families with the support they need to avoid a removal altogether.{.t-large}

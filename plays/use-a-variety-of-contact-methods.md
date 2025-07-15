@@ -1,8 +1,8 @@
 ---
 layout: layouts/play.liquid
 templateEngineOverride: md,njk
-title: Use a variety of contact methods
-tags: ["finding-kin", "play"]
+title: Use a multiple contact methods to engage kin
+tags: ["kin-finding", "play"]
 ---
 
 Personal preferences, technology literacy, and mobility all impact which communication channels kin can use. If you are only using one method to reach kin, such as mailing physical letters, you are not reaching everyone you need to find.{.t-large}
