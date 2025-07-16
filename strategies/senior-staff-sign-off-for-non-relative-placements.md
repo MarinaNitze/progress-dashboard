@@ -2,9 +2,12 @@
 layout: layouts/strategy.liquid
 templateEngineOverride: md,njk
 title: Require senior staff sign-off for non-kin placements
-tags: ["kin-finding", "strategy"]
+tags:
+  - kin-finding
+  - strategy
+resources:
+  - New York's kinship firewall policy
 ---
-
 Caseworkers don't want to wake a director in the middle of the night to sign off on a non-relative placement. Requiring this level of sign-off incentivizes thorough kin-finding efforts and may prevent placements in group homes by encouraging workers to exhaust all kin options first.
 
 ## How to do this
@@ -27,8 +30,4 @@ Caseworkers don't want to wake a director in the middle of the night to sign off
 
 **New Mexico** has a policy that a director must sign off on any placement with non-kin, whether general foster care or a group home, even if it's the middle of the night.
 
-**New York** has implemented a kinship firewall policy with similar requirements.
-
-## Related resources
-
-* [New York's kinship firewall policy](https://www.grandfamilies.org/Portals/0/Documents/Wikihow/20-OCFS-ADM-18%20kinfirst%20firewall.pdf?ver=aRW2qPM7j_EMROWXTct8SA%3d%3d)
+**New York** has implemented a kinship firewall policy with similar requirements.[](https://www.grandfamilies.org/Portals/0/Documents/Wikihow/20-OCFS-ADM-18%20kinfirst%20firewall.pdf?ver=aRW2qPM7j_EMROWXTct8SA%3d%3d)
