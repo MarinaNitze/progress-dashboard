@@ -1,0 +1,8 @@
+---
+items:
+- text: Topics
+  url: "/topics/"
+- text: Community
+  url: "/community/"
+- text: Search
+  url: "/search/"
