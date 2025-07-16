@@ -2,37 +2,28 @@
 layout: layouts/strategy.liquid
 templateEngineOverride: md,njk
 title: Provide childcare at caregiver events and trainings
-tags: ["general-engagement", "strategy"]
+tags:
+  - general-engagement
+  - strategy
 ---
+Childcare can be a major barrier to potential caregivers. It can stop them from attending training, recognition events, and support groups. You can make it easier for them by providing childcare on-site.
 
-
-Childcare can be an insurmountable barrier to adults completing necessary licensing steps or to attending regular training and/or recognition events. You can fix this by providing childcare on-site.{.t-large}
+This helps more caregivers complete your licensing process, and do it faster. It also increases attendance at training and events, and builds community among caregivers. It may even help you find new caregivers through childcare volunteers.
 
 ## How to do this
 
-* Prioritize childcare options for kinship caregivers who need to complete required agency steps to maintain their kinship placeent, such as a fingerprinting session or a medical exam.
+Make sure to provide childcare for kin caregivers who need to complete required agency steps to keep their placement, like fingerprinting or medical exams.
 
-* If agency policy allows, look for community members who can volunteer to provide childcare. This can be a smart recruitment strategy to introduce more people to youth in care and the idea of fostering!
+If your policy allows it, look for community members who can volunteer to provide childcare. (This can be a smart recruitment strategy too: it introduces more people to children in care and the idea of fostering\!)
 
-* Depending on your agency's policies around childcare providers, you may need to perform background checks or other steps to assess childcare providers ahead of time.
+Offer childcare for both children in care and other children in the home. 
 
-* Childcare should be for children in foster care as well as other children in the home. The care itself doesn't have to be fancy; putting on a movie can be enough.
+The childcare doesn't have to be fancy. Putting on a movie can be enough.
 
-* Make sure that kinship caregivers are eligible for this childcare, too.
+Depending on your policies, you may need to do background checks on childcare providers first.
 
-  costs:
-    - Can be free or paid
-  benefits:
-    - More families can navigate your licensing process, and faster
-    - Higher attendance at training and events
-    - Better trained families
-    - Greater sense of community among resource families
-    - Potential to recruit more resource families through childcare volunteers
-  who:
-    number: 2
+## This strategy in action
 
-## Who's doing this
-
-* **Frederick County, MD** provides childcare for agency-sponsored events and trainings. Sitters are usually from community-based organizations like churches, and have to pass a background check that includes fingerprints.
-
-* **Montgomery County, MD** provides free childcare and pizza dinner at monthly resource family trainings.
+* **Frederick County, MD** provides childcare for agency-sponsored events and trainings. Volunteers are usually from community-based organizations like churches. They have to pass a background check that includes fingerprints.
+  
+* **Montgomery County, MD** provides free childcare and pizza at monthly foster parent trainings.
