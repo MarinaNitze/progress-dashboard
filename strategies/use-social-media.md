@@ -2,7 +2,14 @@
 layout: layouts/strategy.liquid
 templateEngineOverride: md,njk
 title: Use social media to find kin
-tags: ["kin-finding", "strategy"]
+tags:
+  - kin-finding
+  - strategy
+resources:
+  - Washington DC's social media policy
+  - Michigan's Diligent Search Checklist
+  - A Second Chance, Inc.'s family finding approach
+  - "Kin Mobilization Learning Collaborative’s Session #19 on using social media"
 ---
 
 Social media can help you identify kin that traditional search tactics might miss. Make social media searches part of your regular kin-finding process.
