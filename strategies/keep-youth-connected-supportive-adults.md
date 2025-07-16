@@ -2,9 +2,17 @@
 layout: layouts/strategy.liquid
 templateEngineOverride: md,njk
 title: Make a plan to keep children and youth connected to their supportive adults
-tags: ["supportive-relationships", "strategy"]
+tags:
+  - supportive-relationships
+  - strategy
+resources:
+  - Heart map template
+  - Permanency pact template
+  - Maintaining connections manual
+  - Michigan's relative notification form
+  - Wisconsin's family find and engagement process
+  - Iowa's policy requirements
 ---
-
 Relationships with supportive adults are critical to a youth’s well-being. They provide emotional support, transportation, tutoring, advice, and meaningful interactions.
 
 But if a supportive adult can't serve as a placement, it’s often difficult to maintain the relationship. As a result, youth often leave foster care with fewer connections than when they entered.
@@ -26,7 +34,7 @@ Consider using a genogram or heart map to record these relationships. Download a
 * "Who do you think about when you lay your head on your pillow at night?"  
 * For older youth: "If you had a flat tire, who would you call?"
 
-Encourage youth to list "someone in their heart" on each line, and draw more lines as needed. The two existing lines on the heart are strategic: More than one line prompts thinking about multiple relationships, but too many lines can be disheartening if youth cannot fill them all in. Remember this isn't a one-time conversation \- start with maybe 5 minutes, then spend more time as youth open up and build trust.
+Encourage youth to list "someone in their heart" on each line, and draw more lines as needed. The two existing lines on the heart are strategic: More than one line prompts thinking about multiple relationships, but too many lines can be disheartening if youth cannot fill them all in. Remember this isn't a one-time conversation - start with maybe 5 minutes, then spend more time as youth open up and build trust.
 
 Gather contact information for each supportive connection. Social media can help with this.
 
@@ -54,13 +62,4 @@ Make sure to designate a place in your IT system to store these plans.
 
 **Uplift Family Services** in California uses Heart Maps as part of their connection planning process.
 
-Versions of this strategy have also been implemented by **California**, **Indiana, Michigan**, **New Hampshire, Virginia**, **A Second Chance, Inc.**, and **Uplift Human Services in San Jose**.
-
-## Related resources
-
-* [Heart map template](https://www.childwelfareplaybook.com/static/assets/heartmap.pdf)  
-* [Permanency pact template](https://www.fosterclub.com/sites/default/files/Permanency%20Pact_0.pdf)  
-* [Maintaining connections manual](https://www.grandfamilies.org/Portals/0/Documents/Wikihow/Hawaii%20Maintaining%20Connections%20manual.pdf?ver=lrUOaC2XwUsJMdzVcHOW4g%3d%3d)  
-* [Michigan's relative notification form](https://www.michigan.gov/mdhhs/-/media/Project/Websites/mdhhs/Doing-Business-with-MDHHS/Contract-and-Subrecipient-Resources/Foster-Care-Forms/DHS-0990.dot?rev=39bab7cbc17e41ea86e7d14669a0b732&hash=658359B04B5A81E4195C8614CDBBEED5)  
-* [Wisconsin's family find and engagement process](https://drive.google.com/file/d/1vhn78eupW25aIhfTGSVri1rh2y_0GEQ9/view)  
-* [Iowa's policy requirements](https://hhs.iowa.gov/sites/default/files/18-B1.pdf)
+Versions of this strategy have also been implemented by **California**, **Indiana, Michigan**, **New Hampshire, Virginia**, **A Second Chance, Inc.**, and **Uplift Human Services in San Jose**.[](https://hhs.iowa.gov/sites/default/files/18-B1.pdf)
