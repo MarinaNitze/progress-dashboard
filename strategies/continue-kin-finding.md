@@ -2,9 +2,13 @@
 layout: layouts/strategy.liquid
 templateEngineOverride: md,njk
 title: Continue kin-finding throughout the case
-tags: ["kin-finding", "strategy"]
+tags:
+  - kin-finding
+  - strategy
+resources:
+  - Michigan's relative notification form
+  - Michigan's meeting template for reviewing placements
 ---
-
 The beginning of foster care is a difficult and emotional time for children and their families. Both children and adults may be too stressed or afraid to share a complete list of connections during an initial meeting. By continuing to search for kin throughout a child's time in care and asking each connection about others, you can uncover more supportive relationships and help children leave care with more connections than they entered with.
 
 ## How to do this
@@ -33,9 +37,4 @@ The beginning of foster care is a difficult and emotional time for children and 
 
 **Rhode Island** connects with foster youth in group homes over Zoom meetings specifically to ask about supportive connections they may not have previously identified.
 
-**Virginia** asks about supportive adults annually and at every placement change, ensuring regular opportunities to discover new connections.
-
-## Related resources
-
-* [Michigan's Relative Notification Form](https://www.michigan.gov/mdhhs/-/media/Project/Websites/mdhhs/Doing-Business-with-MDHHS/Contract-and-Subrecipient-Resources/Foster-Care-Forms/DHS-0990.dot?rev=39bab7cbc17e41ea86e7d14669a0b732&hash=658359B04B5A81E4195C8614CDBBEED5)
-* [Michigan's meeting template for reviewing placements](https://docs.google.com/presentation/d/1Aky7GJkR5SUPJhM5_quR4c1QhtunMXRS/edit?usp=drive_link&ouid=103308794074606378631&rtpof=true&sd=true)
+**Virginia** asks about supportive adults annually and at every placement change, ensuring regular opportunities to discover new connections.[](https://docs.google.com/presentation/d/1Aky7GJkR5SUPJhM5_quR4c1QhtunMXRS/edit?usp=drive_link&ouid=103308794074606378631&rtpof=true&sd=true)
