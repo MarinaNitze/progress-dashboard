@@ -2,7 +2,11 @@
 layout: layouts/strategy.liquid
 templateEngineOverride: md,njk
 title: Use court hearings as kin-finding checkpoints
-tags: ["kin-finding", "strategy"]
+tags:
+  - kin-finding
+  - strategy
+resources:
+  - Oregon court reports
 ---
 
 Courts oversee child welfare cases and can be powerful checkpoints to ensure kin-finding happens. Since cases appear before judges regularly, court hearings provide natural opportunities to check on kin-finding progress and hold agencies accountable. Courts can also remove legal barriers that prevent agencies from finding paternal kin.
