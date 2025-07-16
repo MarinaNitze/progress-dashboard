@@ -1,26 +1,30 @@
 ---
 layout: layouts/strategy.liquid
 templateEngineOverride: md,njk
-title: Use a multiple contact methods to engage kin
+title: Use multiple contact methods to engage kin
 tags: ["kin-finding", "strategy"]
 ---
 
-Personal preferences, technology literacy, and mobility all impact which communication channels kin can use. If you are only using one method to reach kin, such as mailing physical letters, you are not reaching everyone you need to find.{.t-large}
+Personal preferences, technology literacy, and mobility all impact which communication channels kin can use. If you are only using one method to reach kin, such as mailing physical letters, you are not reaching everyone you need to find. Plus, people may think letters from unknown government agencies are fraudulent, so having multiple ways to contact and verify your identity helps build trust.
 
 ## How to do this
 
-* Conduct user research with kin to learn about their contact preferences.
+**Learn what works for kin**
 
-* Collect contact preferences for kin, and write them down where everyone can see.
+* Conduct user research with kin to learn about their contact preferences
+* Record contact preferences for each kin member in your child welfare information system
 
-* Enable employees to use email, text messaging, social media messaging, and telephone calls. They may even need to make in-person visits. While employees may need the ability to send physical mail occasionally, it should not be your most common method of communication.
+**Give staff multiple communication options**
 
-## Who's doing this
+* Enable employees to use email, text messaging, social media messaging, and telephone calls. They may even need to make in-person visits.
+* While employees may need to send physical mail occasionally, it shouldn't be your most common method of communication.
+* Provide clear ways for kin to verify your identity and legitimacy when you make initial contact, especially with previously unknown relatives.
 
-* Some agencies use customer service tools to communicate with kin via email, text message, and social media. These tools can often handle the security, document retention, and discovery needs of an agency, while also providing a convenient single interface for an employee, as well as the ability for teams to collaborate (e.g., one employee can easily jump into messaging with kin when another is on leave).
+**Set up supporting systems:**
 
-  costs:
-    - Time to develop policies and practices for document retention, records discovery, privacy, data sharing, and other concerns for new communication methods.
-    - Suggested message templates adapted for each medium. An email will be different from a text message which will be different from a voicemail.
-  benefits:
-    - Find more kin
+* Develop policies and practices for document retention, records discovery, privacy, data sharing, and other concerns for new communication methods.
+* Create message templates adapted for each medium. An email will be different from a text message, which will be different from a voicemail.
+
+## This strategy in action
+
+Some agencies use customer service tools to communicate with kin via email, text message, and social media. These tools can often handle the security, document retention, and discovery needs of an agency while providing a convenient single interface for employees and the ability for teams to collaborate (like one employee jumping into messaging with kin when another is on leave).

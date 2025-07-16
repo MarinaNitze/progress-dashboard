@@ -5,32 +5,32 @@ title: Use court hearings as kin-finding checkpoints
 tags: ["kin-finding", "strategy"]
 ---
 
-The court system, from initial hearings to ongoing check-ins, can provide a powerful checkpoint to ensure that kin-finding activities are thorough and ongoing. Courts can also increase flexibility around establishing paternity to unlock access to more paternal kin.{.t-large}
+Courts oversee child welfare cases and can be powerful checkpoints to ensure kin-finding happens. Since cases appear before judges regularly, court hearings provide natural opportunities to check on kin-finding progress and hold agencies accountable. Courts can also remove legal barriers that prevent agencies from finding paternal kin.
 
 ## How to do this
 
-* Include a narrative checkpoint in each court hearing to ask about kin-finding activities, challenges, and next steps.
+**Use court hearings as kin-finding checkpoints**
 
-* Engage and train judges in understanding the importance of following up on the kin-finding responses. This is not a “check the box” exercise; if a child’s kin haven’t been thoroughly searched for and engaged, judges should request timely follow-ups.
+* At each hearing, include a discussion about kin-finding activities, challenges, and next steps.
+* Emphasize the importance of following up on kin-finding responses to judges. This isn't a box-checking exercise: if there hasn’t been a thorough attempt to find and engage a child or youth’s kin, judges should request timely follow-ups.
 
-* Review and update any legal barriers to establishing paternity, leveraging feedback from families and workers.
+**Remove legal barriers to finding paternal kin**
 
-* Enable kin-finding team members to start search and outreach for paternal kin regardless of legal paternity.
+* Some jurisdictions require legal paternity to be established before searching for the father's relatives, which can delay or prevent finding those kin
+* Review and update these requirements using feedback from families and workers
+* Allow kin-finding team members to search for paternal kin even when paternity hasn't been legally established
 
-    costs:
-      - Time to update court forms and processes
-      - Time to create/distribute training materials
-      - Legal and/or practice changes to add flexibility to establishing paternity for purposes of identifying and engaging kin. For example, the court may need to provide funds for DNA tests to establish paternity, or the court may need to remove extra steps (such as requiring a court appearance to establish “father status”) that make it difficult for fathers to come forward.
-    benefits:
-      - Find more kin
+## This strategy in action
 
-## Who's doing this
+**Ohio** uses a “Quality Hearing Toolkit” to facilitate discussions between judges and agency staff about what has been done to find relatives and explore kinship care options.
 
-* Ohio uses a “Quality Hearing Toolkit” to facilitate discussions between judges and agency staff about what has been done to find relatives and explore kinship care options.
+**Oregon** court reports include the questions:
 
-* [Oregon court reports](https://www.courts.oregon.gov/programs/jcip/Documents/Hearings-Shelter.pdf){target=_blank} include the questions:
-  * Has the caseworker requested relative information from both parents and followed up to determine if the relatives are placement resources?
-  * Has DHS used available technology to search for relatives?
-  * Has anyone asked the child about placement preferences?
-  * What has DHS done to keep siblings in care together?
- 
+* Has the caseworker requested relative information from both parents and followed up to determine if the relatives are placement resources?
+* Has DHS used available technology to search for relatives?
+* Has anyone asked the child about placement preferences?
+* What has DHS done to keep siblings in care together?
+
+## Related resources
+
+* [Oregon court reports](https://www.courts.oregon.gov/programs/jcip/Documents/Hearings-Shelter.pdf)

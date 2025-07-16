@@ -2,7 +2,7 @@
 layout: layouts/strategy.liquid
 templateEngineOverride: md,njk
 title: Pay caregivers for bringing in new caregivers
-tags: ["general-engagment", "strategy"]
+tags: ["general-engagement", "strategy"]
 ---
 
 Providing financial bonuses to current foster families who recruit more families is an additional way to financially support current families. This also incentivizes successful recruitment activities.{.t-large}
