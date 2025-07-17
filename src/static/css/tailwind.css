@@ -47,3 +47,11 @@
 .blockquote p:empty {
     display: none;
 }
+
+footer {
+    align-items: center;
+}
+
+.footer img {
+    max-block-size: 2rem;
+}
