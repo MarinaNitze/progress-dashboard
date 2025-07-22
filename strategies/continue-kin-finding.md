@@ -3,7 +3,7 @@ layout: layouts/strategy.liquid
 templateEngineOverride: md,njk
 title: Continue kin-finding throughout the case
 tags:
-  - kin-finding
+  - kin-engagement
   - strategy
 resources:
   - Michigan's relative notification form

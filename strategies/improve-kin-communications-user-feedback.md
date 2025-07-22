@@ -2,7 +2,7 @@
 layout: layouts/strategy.liquid
 templateEngineOverride: md,njk
 title: Improve kin communications through user feedback
-tags: ["kin-finding", "strategy"]
+tags: ["kin-engagement", "strategy"]
 ---
 
 Your existing messages and forms may be scaring off or confusing potential kin placements and connections. Communications that look like legal notices, use government acronyms and jargon, or that aren’t translated may be discarded or overlooked. This is particularly important when sending notices to kin within 30 days of removal.{.t-large}

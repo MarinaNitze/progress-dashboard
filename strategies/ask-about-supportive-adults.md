@@ -3,7 +3,7 @@ layout: layouts/strategy.liquid
 templateEngineOverride: md,njk
 title: Ask children and youth about their kin
 tags:
-  - kin-finding
+  - kin-engagement
   - strategy
 resources:
   - Wisconsin's family find and engagement process

@@ -3,7 +3,7 @@ layout: layouts/strategy.liquid
 templateEngineOverride: md,njk
 title: Use social media to find kin
 tags:
-  - kin-finding
+  - kin-engagement
   - strategy
 resources:
   - Washington DC's social media policy

@@ -3,7 +3,7 @@ layout: layouts/strategy.liquid
 templateEngineOverride: md,njk
 title: Require senior staff sign-off for non-kin placements
 tags:
-  - kin-finding
+  - kin-engagement
   - strategy
 resources:
   - New York's kinship firewall policy

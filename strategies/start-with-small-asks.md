@@ -2,7 +2,7 @@
 layout: layouts/strategy.liquid
 templateEngineOverride: md,njk
 title: Start with small asks when contacting kin
-tags: ["kin-finding", "strategy"]
+tags: ["kin-engagement", "strategy"]
 ---
 
 Kinship connections may be permanently lost if an initial communication feels too overwhelming and demanding. Some connections may be learning they have a family member for the first time while simultaneously being asked to serve as a placement. Additionally, staff may feel that they need to move immediately to the next kin connection if an initial connection cannot serve as a placement.{.t-large}

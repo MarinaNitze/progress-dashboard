@@ -2,7 +2,7 @@
 layout: layouts/strategy.liquid
 templateEngineOverride: md,njk
 title: Assign dedicated kin-finding responsibility
-tags: ["kin-finding", "strategy"]
+tags: ["kin-engagement", "strategy"]
 ---
 
 Though every team member can play a role in maintaining kin connections, without clear ownership over kin-finding, important steps can fall through the cracks.

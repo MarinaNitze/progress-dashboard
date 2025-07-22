@@ -3,7 +3,7 @@ layout: layouts/strategy.liquid
 templateEngineOverride: md,njk
 title: Use court hearings as kin-finding checkpoints
 tags:
-  - kin-finding
+  - kin-engagement
   - strategy
 resources:
   - Oregon court reports

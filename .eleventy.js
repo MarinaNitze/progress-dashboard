@@ -23,7 +23,7 @@ const topicList = [
   "foster-parent-licensing",
   "general-engagement",
   "general-licensing",
-  "kin-finding",
+  "kin-engagement",
   "kin-licensing",
   "prevention",
   "recruitment",

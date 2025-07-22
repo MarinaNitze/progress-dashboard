@@ -3,7 +3,7 @@ layout: layouts/strategy.liquid
 templateEngineOverride: md,njk
 title: Document and track kin connections
 tags:
-  - kin-finding
+  - kin-engagement
   - strategy
 resources:
   - Florida kin-finding connections communication log template
