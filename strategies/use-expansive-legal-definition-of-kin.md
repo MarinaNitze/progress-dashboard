@@ -2,6 +2,7 @@
 layout: layouts/strategy.liquid
 templateEngineOverride: md,njk
 title: Use an expansive legal definition of kin
+order: 9
 tags: ["kin-engagement", "strategy"]
 ---
 

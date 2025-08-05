@@ -2,6 +2,7 @@
 layout: layouts/strategy.liquid
 templateEngineOverride: md,njk
 title: Document and track kin connections
+order: 4
 tags:
   - kin-engagement
   - strategy

@@ -2,6 +2,7 @@
 layout: layouts/strategy.liquid
 templateEngineOverride: md,njk
 title: Improve kin communications through user feedback
+order: 7
 tags: ["kin-engagement", "strategy"]
 ---
 

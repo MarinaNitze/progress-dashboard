@@ -2,6 +2,7 @@
 layout: layouts/strategy.liquid
 templateEngineOverride: md,njk
 title: Start with small asks when contacting kin
+order: 10
 tags: ["kin-engagement", "strategy"]
 ---
 

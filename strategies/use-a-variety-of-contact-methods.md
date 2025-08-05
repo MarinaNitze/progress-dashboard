@@ -2,6 +2,7 @@
 layout: layouts/strategy.liquid
 templateEngineOverride: md,njk
 title: Use multiple contact methods to engage kin
+order: 8
 tags: ["kin-engagement", "strategy"]
 ---
 

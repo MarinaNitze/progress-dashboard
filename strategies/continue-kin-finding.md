@@ -2,6 +2,7 @@
 layout: layouts/strategy.liquid
 templateEngineOverride: md,njk
 title: Continue kin-finding throughout the case
+order: 5
 tags:
   - kin-engagement
   - strategy

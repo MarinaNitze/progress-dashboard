@@ -2,6 +2,7 @@
 layout: layouts/strategy.liquid
 templateEngineOverride: md,njk
 title: Use court hearings as kin-finding checkpoints
+order: 3
 tags:
   - kin-engagement
   - strategy

@@ -2,6 +2,7 @@
 layout: layouts/strategy.liquid
 templateEngineOverride: md,njk
 title: Use social media to find kin
+order: 11
 tags:
   - kin-engagement
   - strategy

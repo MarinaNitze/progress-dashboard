@@ -2,6 +2,7 @@
 layout: layouts/strategy.liquid
 templateEngineOverride: md,njk
 title: Ask children and youth about their kin
+order: 1
 tags:
   - kin-engagement
   - strategy
