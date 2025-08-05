@@ -1,8 +1,9 @@
 ---
 id: retention
-title: Foster parent retention
+title: Caregiver retention
 icon: handshake
 layout: "layouts/topic.njk"
+summary: Keep experienced caregivers engaged through support, financial assistance, and recognition.
 ---
 
-Keep experienced foster parents engaged by providing comprehensive support, including financial assistance.
+Caregivers may deal with burnout, financial strain, and other challenges, which can make a child or youth’s placement unstable. These strategies can help you provide ongoing support for caregivers.
