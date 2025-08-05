@@ -2,7 +2,7 @@
 layout: layouts/strategy.liquid
 templateEngineOverride: md,njk
 title: Provide flexible payment options for youth
-tags: ["extended-foster-care", "strategy"]
+tags: ["supporting-older-youth", "strategy"]
 ---
 
 ## Give cash or prepaid cards for youth stipends

@@ -2,7 +2,7 @@
 layout: layouts/strategy.liquid
 templateEngineOverride: md,njk
 title: Empower youth to make their own choices
-tags: ["extended-foster-care", "strategy"]
+tags: ["supporting-older-youth", "strategy"]
 ---
 
 ## Allow youth to explore and select programs available to them

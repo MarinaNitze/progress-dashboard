@@ -2,7 +2,7 @@
 layout: layouts/strategy.liquid
 templateEngineOverride: md,njk
 title: Hire youth with lived experience for roles at your agency
-tags: ["extended-foster-care", "strategy"]
+tags: ["supporting-older-youth", "strategy"]
 ---
 
 Diverse teams can identify and eliminate bias. Having youth with lived experience on your team can bring and keep the perspective of foster youth to the forefront of everyday tasks. It also provides meaningful employment opportunities for youth aging out of care in your system.{.t-large}

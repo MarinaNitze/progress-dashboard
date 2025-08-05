@@ -2,7 +2,7 @@
 layout: layouts/strategy.liquid
 templateEngineOverride: md,njk
 title: Allow youth to explore and select programs available to them
-tags: ["extended-foster-care", "strategy"]
+tags: ["supporting-older-youth", "strategy"]
 ---
 
 Many youth do not know what programs are available to them. Case workers are often managing so many cases that they don’t always have time to explain every available program. This means that youth may miss out on opportunities to prepare for independence.{.t-large}

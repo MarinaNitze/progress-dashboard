@@ -2,7 +2,7 @@
 layout: layouts/strategy.liquid
 templateEngineOverride: md,njk
 title: Provide convenient training events for license renewals
-tags: ["foster-parent-licensing", "strategy"]
+tags: ["caregiver-licensing", "strategy"]
 ---
 
 Current foster families are often overwhelmed with day to day responsibilities and may put off their training requirements until their renewal date is looming. In some systems, this means the only training available to them is reading books or watching movies, which does not maximally prepare caregivers for the needs of foster youth.{.t-large}

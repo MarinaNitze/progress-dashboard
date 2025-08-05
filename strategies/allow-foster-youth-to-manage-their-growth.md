@@ -2,7 +2,7 @@
 layout: layouts/strategy.liquid
 templateEngineOverride: md,njk
 title: Create a digital app for youth to manage their own transition to adulthood
-tags: ["extended-foster-care", "strategy"]
+tags: ["supporting-older-youth", "strategy"]
 ---
 
 Allow foster youth to manage their growth into adulthood directly, enabling them to define their goals and collaborate with their support team to achieve them. Accomplish this by replacing traditional paper-based milestone planning with a web app.{.t-large}

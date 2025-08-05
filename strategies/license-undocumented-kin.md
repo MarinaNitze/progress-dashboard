@@ -2,7 +2,7 @@
 layout: layouts/strategy.liquid
 templateEngineOverride: md,njk
 title: License undocumented family members
-tags: ["kin-licensing", "strategy"]
+tags: ["caregiver-licensing", "strategy"]
 ---
 
 

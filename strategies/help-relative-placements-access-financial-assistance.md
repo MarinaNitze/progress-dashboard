@@ -2,7 +2,7 @@
 layout: layouts/strategy.liquid
 templateEngineOverride: md,njk
 title: Help kin placements access financial assistance
-tags: ["kin-licensing", "strategy"]
+tags: ["caregiver-licensing", "strategy"]
 ---
 
 Sometimes, the biggest barrier to getting kinship families licensed is not safety concerns but financial requirements. Financial issues may be the only reason a relative placement doesn’t qualify. However, there are various programs that can provide assistance to these families and help them to get licensed.{.t-large}
