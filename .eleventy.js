@@ -69,7 +69,7 @@ export default async function(eleventyConfig) {
 
   for (let topic in topicList) {
     eleventyConfig.addCollection(`${topicList[topic]}-strategies`, function (collectionsApi) {
-      return collectionsApi.getFilteredByTags('strategy', `${topicList[topic]}`).sort(alphaSort);
+      return collectionsApi.getFilteredByTags('strategy', `${topicList[topic]}`).sort((a, b) => a.data.order - b.data.order);
     });
   }
 
