@@ -4,15 +4,39 @@ pagefind:
   type: Topic
 ---
 
-<div class="page-banner" data-bg-color="dark">
+<div class="page-banner">
   <div class="l-wrapper">
-    <h1><a href="{{ url }}">{{ title }}</a></h1>
-    {% if description %}<p>{{ description }}</p>{% endif %}
+    <h2>{{ title }}</h2>
+    <p>{{ content | md | safe}}</p>
+    <p><a href="/topics/">Back to all topics</a></p>
   </div>
 </div>
 
 <div class="l-wrapper">
   <div class="l-section">
-    {{ content | md | safe }}
+
+  <div class="play-list-links">
+    <ul class="l-stack-basic">
+    {%- for play in collections[id + '-strategies'] -%}
+    <li class="play-card">
+      <a href="{{ play.url }}">{{ play.data.title }}</a>
+    </li>
+    {%- endfor -%}
+    </ul>
+
+    {% if related %}
+    <h3>Related strategies</h3>
+    {%- for item in related -%}
+      <h4>{{ collections.topics[item].data.title }}</h4>
+      <ul class="l-stack-basic">
+       {%- for play in collections[item + '-strategies'] -%}
+          <li class="play-card">
+            <a href="{{ play.url }}">{{ play.data.title }}</a>
+          </li>
+        {%- endfor -%}
+      </ul>
+    {%- endfor -%}
+    {% endif %}
+  </div>
   </div>
 </div>

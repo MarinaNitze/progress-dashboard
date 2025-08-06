@@ -6,9 +6,6 @@ pagefind:
 ---
 
 <div class="l-wrapper play-wrapper">
-  <div class="page-icon" role="presentation">
-    {% icon 'strategy' %}
-  </div>
 
 {%- capture pagefindMetaTags -%}
   {%- for tag in tags -%}
@@ -17,16 +14,36 @@ pagefind:
   {%- endfor -%}
 {%- endcapture -%}
 
+<div class="strategy-header">
+  <div class="strategy-title">
+    <span class="subhead">Strategy</span>
+    <h2 data-pagefind-meta="title">{{ title }}</h2>
+  </div>
+
+  <div class="topic-list">
+    <h3 class="subhead">Topics</h3>
+    <ul>
+      {%- for topic in collections.topics -%}
+        {%- for tag in tags -%}
+          {%- if topic.data.id == tag -%}
+            <li><a href="{{ topic.url }}">{{ topic.data.title }}</a></li>
+            {%- break -%}
+          {%- endif -%}
+        {%- endfor -%}
+      {%- endfor -%}
+    </ul>
+  </div>
+</div>
+
 <div class="l-section">
 <div class="l-stack" data-pagefind-meta="topics:{{ pagefindMetaTags }}">
-      <h2 data-pagefind-meta="title">{{ title }}</h2>
-      {{ content }}
+  {{ content }}
 </div>
 </div>
 
   <h3>Resources</h3>
   <div class="l-grid">
-    {% for relatedResource in relatedResources %}
+    {% for relatedResource in resources %}
       {% assign targetResource = collections.resources | find: relatedResource %}
 
       {%- include "components/card.liquid",

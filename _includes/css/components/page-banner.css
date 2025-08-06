@@ -8,6 +8,25 @@
     background-size: cover;
 }
 
+.page-banner * {
+    margin-inline: auto;
+}
+
+.page-banner p {
+    max-inline-size: calc(var(--t-measure) * 0.75);
+    text-wrap: balance;
+    text-align: center;
+}
+
+.page-banner h2 {
+  text-align: center;
+  padding: var(--t-paragraph);
+  background: var(--c-blue);
+  color: #fff;
+  border-radius: var(--radius-lg);
+  rotate: -1.5deg;
+}
+
 .page-banner h1 {
     text-align: left;
     color: var(--c-base);

@@ -1,13 +1,32 @@
 .footer {
     background: var(--c-blue);
     color: #fff;
+    position: relative;
+}
+
+.footer-wave {
+  position: absolute;
+  bottom: 100%;
+  z-index: -1;
+}
+
+.footer-divider {
+  fill: var(--c-blue);
+  margin-block: calc(var(--t-paragraph) * 2);
+  margin-inline: auto;
 }
 
 .footer-inner {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 3rem;
+    gap: var(--rhythm);
     padding-block: 2rem;
+}
+
+.footer ul * {
+  display: flex;
+  align-items: center;
 }
 
 .footer ul {
@@ -18,12 +37,17 @@
     max-inline-size: unset;
     margin: 0;
     padding: 0;
-    mix-blend-mode: multiply;
     align-items: center;
 }
 
+
 .footer img {
   block-size: 1.5rem;
+}
+
+[data-logo="foster-america"] img,
+[data-logo="think-of-us"] img {
+  block-size: 2rem;
 }
 
 .footer li {
@@ -31,26 +55,21 @@
 }
 
 .footer h3 {
-    font-family: var(--font-serif);
     margin-block-end: 1rem;
+    opacity: 0.8;
 }
 
- 
 .footer-logos {
     display: flex;
     flex-direction: column;
 }
 
 .footer-copyright {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    text-align: center;
     width: 100%;
-    color: #000;
-}
-
-.footer-copyright p {
-    margin-left: auto;
+    margin-block-start: var(--t-paragraph);
+    font-size: var(--font-sm-size);
+    line-height: var(--font-sm-leading);
 }
 
 @media (min-width: 768px) {

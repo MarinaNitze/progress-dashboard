@@ -1,33 +1,35 @@
+{% include "svg/divider.svg" %}
+
+
 <footer class="footer">
+<svg class="footer-wave" viewBox="0 0 1440 59" xmlns="http://www.w3.org/2000/svg"><path d="M0 69V9.81845C135.107 3.41682 270.214 -2.98481 389 1.499C507.786 5.9828 610.25 21.3522 715 25.8901C819.75 30.428 926.786 24.1343 1048 19.6505C1169.21 15.1667 1304.61 12.4926 1440 9.81845V69H0Z" fill="#1274FD"/></svg>
   <div class="l-wrapper">
     <div class="footer-inner">
-      <div class="footer-logos">
-        <h3>Made in cooperation with</h3>
+      <h3 class="subhead">Made in partnership with</h3>
+      <div class="footer-content">
         <ul>
-          <li>
+          <li data-logo="foster-america">
             <a href="https://www.foster-america.org">
               <img src="/images/footer/foster-america-logo.svg" alt="Foster America" />
             </a>
           </li>
-          <li>
+          <li data-logo="new-america">
             <a href="https://www.newamerica.org/new-practice-lab">
               <img src="/images/footer/new-america-logo.svg" alt="New America" />
             </a>
           </li>
-          <li>
+          <li data-logo="think-of-us">
             <a href="https://www.thinkof-us.org/">
               <img src="/images/footer/thinkofus-logo.svg" alt="Think of Us" />
             </a>
           </li>
-          <li>
+          <li data-logo="bloom">
             <a href="https://bloomworks.digital">
               <img src="/images/footer/bloom-works-logo.svg" alt="Bloomworks Digital" />
             </a>
           </li>
         </ul>
-      </div>
-      <div class="footer-copyright">
-        <p>&copy; {{ helpers.currentYear() }}</p>
+        <p class="footer-copyright"> &copy; {{ helpers.currentYear() }}</p>
       </div>
     </div>
   </div>

@@ -1,17 +1,24 @@
 .topic-grid {
-  --grid-col-width: var(--t-measure);
+  --grid-col-width: calc(var(--t-measure) / 2);
+  max-inline-size: unset;
+  align-content: center;
 }
 
 .topic-card {
   text-decoration: none;
   border: 3px solid var(--c-blue);
   border-radius: var(--radius-lg);
-  padding: 1rem;
+  padding: var(--t-paragraph) calc(var(--t-paragraph) * 1.5);
   transition: all 0.15s ease-out;
+  position: relative;
 }
 
 .topic-card h2 {
   text-decoration: none;
+  margin-block-start: 0;
+  font-size: var(--font-xl-size);
+  line-height: var(--font-xl-leading);
+  color: var(--c-blue);
 }
 
 .topic-card:hover {
@@ -21,9 +28,28 @@
 }
 
 .topic-card svg {
-  color: var(--c-brown);
+  position: absolute;
+  rotate: -2deg;
+  color: #fff;
+  background: var(--c-faded-blue);
+  padding: var(--rhythm);
+  border-radius: var(--radius-lg);
   inline-size: 3rem;
   aspect-ratio: 1 / 1;
+  inset-inline-start: calc(100% - 1.5rem);
+  inset-block-end: calc(100% - 1.5rem);
+}
+
+.topic-card:nth-child(3n) svg {
+  rotate: -1deg;
+}
+
+.topic-card:nth-child(4n) svg {
+  rotate: 4deg;
+}
+
+.topic-card:nth-child(7n) svg {
+  rotate: -3deg;
 }
 
 .topic-card:hover * {

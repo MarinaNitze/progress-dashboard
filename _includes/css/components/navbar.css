@@ -23,6 +23,11 @@
   align-items: center;
 }
 
+.nav h1 {
+  font-size: var(--font-3xl-size);
+  color: #fff;
+}
+
 .nav-logo {
   display: flex;
   align-items: center;
@@ -83,8 +88,8 @@
 .nav-mobile-menu ul {
   display: flex;
   flex-direction: column;
-  font-weight: var(--font-bold);
   margin-block-start: 1rem;
+  color: #fff;
   font-size: var(--font-xl-size);
   line-height: var(--font-xl-leading);
 }
