@@ -4,7 +4,7 @@
 
 .topic-card {
   text-decoration: none;
-  border: 0.5rem solid var(--c-orange);
+  border: 3px solid var(--c-blue);
   border-radius: var(--radius-lg);
   padding: 1rem;
   transition: all 0.15s ease-out;
@@ -15,8 +15,8 @@
 }
 
 .topic-card:hover {
-  background: var(--c-brown);
-  border-color: var(--c-brown);
+  background: var(--c-blue);
+  border-color: var(--c-blue);
   transform: scale(1.02);
 }
 

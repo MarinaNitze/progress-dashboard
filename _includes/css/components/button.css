@@ -1,6 +1,6 @@
 .button {
     border-radius: var(--radius-lg);
-    background: var(--c-orange);
+    background: var(--c-blue);
     color: #fff;
     font-weight: var(--font-bold);
     display: inline-block;
@@ -11,11 +11,11 @@
 .button:hover,
 .button:focus {
     background-color: #fff;
-    color: var(--c-orange);
+    color: var(--c-blue);
 }
 
 .button[data-type="secondary"] {
   background: #fff;
-  border: 0.25rem solid var(--c-orange);
+  border: 0.25rem solid var(--c-blue);
   color: var(--base);
 }

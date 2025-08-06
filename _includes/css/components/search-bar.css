@@ -50,7 +50,7 @@
 }
 
 .home-search input[type="submit"] {
-    background: var(--c-orange);
+    background: var(--c-blue);
     font-size: var(--font-base-size);
     line-height: var(--font-base-leading);
     color: var(--c-base);

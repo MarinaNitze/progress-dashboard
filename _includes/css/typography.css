@@ -35,8 +35,8 @@ body,
 input,
 select,
 button {
-  font-size: var(--base-font-size);
-  line-height: var(--base-leading);
+  font-size: var(--font-base-size);
+  line-height: var(--font-base-leading);
   font-family: var(--font-primary);
 }
 
@@ -59,6 +59,7 @@ b, strong {
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: var(--font-primary);
   font-weight: var(--font-bold);
   color: var(--c-headline);
   margin-inline: 0;
@@ -67,15 +68,6 @@ h1, h2, h3, h4, h5, h6,
   padding: 0;
 }
 
-h1, h2, h3,
-.h1, .h2, .h3 {
-  font-family: var(--font-secondary);
-}
-
-h4, h5, h6,
-.h4, .h5, .h6 {
-  font-family: var(--font-primary);
-}
 
 a {
   text-decoration-color: rgb(var(--c-link-text-rgb, var(--c-accent-dark-rgb)) / 60%);
@@ -105,10 +97,6 @@ h1, .h1 {
 h2, .h2 {
   font-size: var(--font-4xl-size);
   line-height: var(--font-4xl-leading);
-  text-decoration: underline;
-  text-decoration-color: var(--c-orange);
-  text-underline-offset: 1rem;
-  text-decoration-thickness: 4px;
   --l-stack-gap: calc(var(--t-paragraph) * 3);
 }
 
@@ -233,8 +221,8 @@ time {
 }
 
 mark {
-  background: var(--c-yellow);
-  color: var(--c-brown);
+  background: var(--c-blue);
+  color: #fff;
   padding-inline: 0.25rem;
   border-radius: 4px;
 }

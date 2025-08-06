@@ -23,14 +23,6 @@
     max-inline-size: 48rem;
 }
 
-.page-banner[data-bg-color="light"] {
-    background-color: var(--c-gray-900);
-}
-
-.page-banner[data-bg-color="dark"] {
-    background-color: var(--c-gray-300);
-}
-
 .page-banner[data-bg-color="dark"] *,
 .page-banner[data-type="story"] * {
     color: #fff;

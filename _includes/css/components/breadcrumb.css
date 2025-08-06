@@ -25,7 +25,7 @@
 }
 
 .breadcrumb li a {
-    color: var(--c-navy);
+    color: var(--c-blue);
     font-weight: var(--font-medium);
 }
 

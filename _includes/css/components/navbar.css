@@ -2,7 +2,7 @@
 
 .nav {
   border-block-end: 1px solid #fff;
-  background: var(--c-yellow);
+  background: var(--c-blue);
   padding-block: 1.5rem;
 }
 
@@ -64,9 +64,6 @@
   block-size: 1.5rem;
 }
 
-.nav-hamburger {
-
-}
 
 .nav-hamburger:hover {
   background: #fff;
@@ -102,7 +99,7 @@
 }
 
 .nav-mobile-menu a:hover {
-  color: var(--c-blue-500);
+  color: var(--c-blue);
   background: var(--c-gray-200);
 }
 

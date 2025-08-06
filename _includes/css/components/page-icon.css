@@ -1,6 +1,6 @@
 .page-icon {
   --icon-size: 12vw;
-  color: var(--c-orange);
+  color: var(--c-blue);
   border: clamp(0.25rem, 0.1rem + 0.5vw, 1rem) solid;
   padding: calc(var(--icon-size) / 4);
   border-radius: 50%;

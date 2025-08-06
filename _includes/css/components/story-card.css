@@ -24,8 +24,8 @@
   border-end-start-radius: var(--radius-lg);
   border-start-end-radius: var(--radius-lg);
   padding: 0.25rem 0.5rem;
-  background: var(--c-yellow);
-  color: var(--c-brown);
+  background: var(--c-blue);
+  color: var(--c-white);
   font-weight: var(--font-bold);
   position: absolute;
   inset-inline-start: 0;

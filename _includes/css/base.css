@@ -13,12 +13,12 @@ svg {
 }
 
 ::selection {
-  background: var(--c-brown);
+  background: var(--c-blue);
   color: #fff;
 }
 
 ::-moz-selection {
-  background: var(--c-brown);
+  background: var(--c-blue);
   color: #fff;
 }
 

@@ -1,5 +1,5 @@
 .toc {
-    background: var(--c-brown);
+    background: var(--c-blue);
     padding: 3rem 2rem;
     position: sticky;
 }
@@ -29,7 +29,7 @@
 .toc hr {
     margin-block: 1.5rem;
     border: 0;
-    border-block-end: 4px solid var(--c-orange);
+    border-block-end: 4px solid var(--c-blue);
     inline-size: 50%;
 }
 
@@ -46,6 +46,6 @@
 }
 
 .toc a:hover {
-    color: var(--c-orange);
+    color: var(--c-blue);
     text-decoration: underline;
 }
