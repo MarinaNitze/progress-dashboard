@@ -1,0 +1,56 @@
+---
+layout: layouts/default.njk
+pagefind:
+  type: Meeting
+---
+
+<div class="l-wrapper play-wrapper">
+
+<div class="strategy-header">
+  <div class="strategy-title">
+    <span class="subhead">Community meeting</span>
+    <h2 data-pagefind-meta="title">{{ title }}</h2>
+  </div>
+
+  <div class="topic-list">
+    <h3 class="subhead">Topics</h3>
+    <ul>
+      {%- for topic in collections.topics -%}
+        {%- for tag in tags -%}
+          {%- if topic.data.id == tag -%}
+            <li><a href="{{ topic.url }}">{{ topic.data.title }}</a></li>
+            {%- break -%}
+          {%- endif -%}
+        {%- endfor -%}
+      {%- endfor -%}
+    </ul>
+  </div>
+</div>
+
+<div class="l-section">
+<div class="l-text-wrapper">
+  <div class="l-stack" data-pagefind-meta="topics:{{ pagefindMetaTags }}">
+    <div class="l-frame">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ youtubeId }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    {{ content }}
+  </div>
+</div>
+</div>
+
+  <h3>Resources</h3>
+  <div class="l-grid">
+    {% for relatedResource in resources %}
+      {% assign targetResource = collections.resources | find: relatedResource %}
+
+      {%- include "components/card.liquid",
+        type: "resource",
+        filetype: targetResource.data.filetype,
+        title: targetResource.data.title,
+        description: targetResource.content,
+        url: targetResource.data.url
+      -%}
+    {% endfor %}
+  </div>
+</div>

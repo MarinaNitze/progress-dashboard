@@ -1,0 +1,20 @@
+---
+layout: "layouts/content.njk"
+permalink: "/community/"
+title: Community meetings
+description: TK
+pagefind:
+  type: Page
+tags:
+  - noTopic
+---
+
+<div class="l-grid topic-grid">
+{%- for meeting in collections.meetings reversed -%}
+<a href="{{ meeting.url }}" class="topic-card">
+  <h2 class="h3">{{ meeting.data.title }}</h2>
+
+  <p>{{ meeting.content }}</p>
+</a>
+{%- endfor -%}
+</div>

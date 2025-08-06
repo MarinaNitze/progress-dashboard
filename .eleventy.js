@@ -89,6 +89,10 @@ export default async function(eleventyConfig) {
       collection.getFilteredByGlob("resources/*.md")
   );
 
+  eleventyConfig.addCollection("meetings", (collection) =>
+      collection.getFilteredByGlob("meetings/*.md")
+  );
+
   eleventyConfig.addFilter("find", function find(collection = [], title = "") {
     return collection.find(item => item.data.title === title);
   });
