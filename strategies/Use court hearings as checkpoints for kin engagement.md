@@ -1,13 +1,14 @@
 ---
+layout: layouts/strategy.liquid
+templateEngineOverride: md,njk
 title: Use court hearings as checkpoints for kin engagement
-order: 4
 tags:
   - strategy
   - kin-engagement
-layout: layouts/strategy.liquid
-templateEngineOverride: md,njk
+order: 4
+resources:
+  - Oregon shelter hearing benchbook
 ---
-
 Since child welfare cases appear before judges regularly, court hearings provide natural opportunities to hold agencies accountable and check on efforts to engage kin. Courts can also remove legal barriers that prevent agencies from finding paternal kin.
 
 ## How to do this
@@ -27,8 +28,4 @@ Since child welfare cases appear before judges regularly, court hearings provide
 * Has the caseworker requested relative information from both parents and followed up to determine if the relatives are placement resources?  
 * Has DHS used available technology to search for relatives?  
 * Has anyone asked the child about placement preferences?  
-* What has DHS done to keep siblings in care together?
-
-## Related resources
-
-* [Oregon court reports](https://www.courts.oregon.gov/programs/jcip/Documents/Hearings-Shelter.pdf)
+* What has DHS done to keep siblings in care together?[](https://www.courts.oregon.gov/programs/jcip/Documents/Hearings-Shelter.pdf)
