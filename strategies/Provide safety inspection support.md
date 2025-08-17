@@ -1,13 +1,17 @@
 ---
+layout: layouts/strategy.liquid
+templateEngineOverride: md,njk
 title: Provide safety inspection support
-order: 7
 tags:
   - strategy
   - caregiver-licensing
-layout: layouts/strategy.liquid
-templateEngineOverride: md,njk
+order: 7
+resources:
+  - Fire and lead safety inspection checklist
+  - Foster home licensing inspection checklist
+  - Sample IT request to allow uploads in online portal [DEADLINK]
+  - Sample email to request photo validation [DEADLINK]
 ---
-
 Safety inspections often delay the licensing process when families don't know what items they need ahead of time, can't afford required safety equipment, or have to wait for return visits to resolve minor issues. Provide support throughout the inspection process so families can pass inspections quickly and staff spend less time on return visits.
 
 ## How to do this
@@ -26,11 +30,4 @@ Safety inspections often delay the licensing process when families don't know wh
 
 **Washington State** uses statute-aligned checklists that families receive ahead of inspections.
 
-**California**, **Indiana**, and **Rhode Island** provide safety inspection items to families in need and accept photos to resolve minor pending items.
-
-## Related resources
-
-* [Rhode Island's safety checklist for families (in English and Spanish)](https://www.childwelfareplaybook.com/static/assets/Fire%20%20Lead%20Safety%20Inspection%20Checklist%20-%20English%20and%20Spanish.pdf)  
-* [Washington State's statute-aligned checklist](https://childwelfareplaybook.com/static/assets/10-183%20Foster%20Inspection%20Checklist.docx)  
-* [Sample email for requesting photos of resolved inspection items](https://childwelfareplaybook.com/static/assets/resolve_minor_pending_items_asset\))  
-* [Sample IT request for adding photo upload capability to online portals](https://childwelfareplaybook.com/static/assets/resolve_minor_pending_items_asset2)
+**California**, **Indiana**, and **Rhode Island** provide safety inspection items to families in need and accept photos to resolve minor pending items.[](https://childwelfareplaybook.com/static/assets/resolve_minor_pending_items_asset2)
