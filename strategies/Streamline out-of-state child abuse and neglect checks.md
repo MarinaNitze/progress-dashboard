@@ -9,7 +9,6 @@ order: 1
 resources:
   - Form template for out-of-state child abuse and neglect checks
 ---
-
 Out-of-state child abuse and neglect registry checks (often referred to as Adam Walsh checks) can take months to complete and delay approvals for foster families that are ready to care for children. They are particularly burdensome for kin caregivers who already have children in their home, but cannot get licensed until this step is complete.
 
 Process check requests faster by handling them efficiently and removing administrative barriers.
@@ -33,8 +32,4 @@ Process check requests faster by handling them efficiently and removing administ
 
 ## This strategy in action
 
-Check out the [Out-of-State Child Abuse and Neglect dashboard](https://childwelfareplaybook.com/compare/background-checks/) to compare which jurisdictions have implemented these promising practices.
-
-## Related resources
-
-* [Form template for out-of-state child abuse and neglect checks](https://www.google.com/url?q=https://docs.google.com/document/d/1V30W6Ft_uEUpVIQ062wPh12HrYHNod0b43T25wrp190/edit?tab%3Dt.0%23heading%3Dh.yd2gyy5b38kz&sa=D&source=docs&ust=1750798774259355&usg=AOvVaw2yTL2zyUIGHpRFEo_0wQvZ)
+Check out the [Out-of-State Child Abuse and Neglect dashboard](https://childwelfareplaybook.com/compare/background-checks/) to compare which jurisdictions have implemented these promising practices.[](https://www.google.com/url?q=https://docs.google.com/document/d/1V30W6Ft_uEUpVIQ062wPh12HrYHNod0b43T25wrp190/edit?tab%3Dt.0%23heading%3Dh.yd2gyy5b38kz&sa=D&source=docs&ust=1750798774259355&usg=AOvVaw2yTL2zyUIGHpRFEo_0wQvZ)
