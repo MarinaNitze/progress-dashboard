@@ -1,13 +1,14 @@
 ---
+layout: layouts/strategy.liquid
+templateEngineOverride: md,njk
 title: Use email and text to contact youth instead of paper mail
-order: 6
 tags:
   - strategy
   - supporting-older-youth
-layout: layouts/strategy.liquid
-templateEngineOverride: md,njk
+order: 6
+resources:
+  - Online calendar example
 ---
-
 Many youth in care do not have reliable addresses. This makes it difficult for them to receive mail.
 
 Use online calendars, email, and text messages to share information and other materials with youth. This reduces the chance that they will miss important information.
@@ -20,8 +21,4 @@ Use online calendars, email, and text messages to share information and other ma
 
 ## This strategy in action
 
-**Los Angeles Opportunity Youth Collaborative** offers an online calendar of upcoming programs that youth can access any time.
-
-## Related resources
-
-* [Online calendar example](https://www.eventbrite.com/o/los-angeles-opportunity-youth-collaborative-30967055551)
+**Los Angeles Opportunity Youth Collaborative** offers an online calendar of upcoming programs that youth can access any time.[](https://www.eventbrite.com/o/los-angeles-opportunity-youth-collaborative-30967055551)
