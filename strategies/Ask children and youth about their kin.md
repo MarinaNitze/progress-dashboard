@@ -1,13 +1,15 @@
 ---
+layout: layouts/strategy.liquid
+templateEngineOverride: md,njk
 title: Ask children and youth about their kin
-order: 2
 tags:
   - strategy
   - kin-engagement
-layout: layouts/strategy.liquid
-templateEngineOverride: md,njk
+order: 2
+resources:
+  - Wisconsin kin engagement guide
+  - Heart map template
 ---
-
 Children and youth are often placed in general foster care or group homes when they have placement options with adults they already know and trust. Asking children and youth about the supportive adults in their lives can help find more kin placements faster, and avoid unnecessary placements with strangers.
 
 ## How to do this
@@ -28,9 +30,4 @@ Children and youth are often placed in general foster care or group homes when t
 
 During the COVID-19 pandemic, **Rhode Island** set up Zoom meetings with each group home facility and met with each child or youth one-on-one to discuss their placement options. They successfully moved many children and youth from group homes into kin placements.
 
-**Fairfax County, Virginia** conducts family finding for children and youth annually and at every placement change.
-
-## Related resources
-
-* [Wisconsin's suggested questions for talking to youth](https://drive.google.com/file/d/1vhn78eupW25aIhfTGSVri1rh2y_0GEQ9/view)   
-* [Heart maps tool](https://childwelfareplaybook.com/recommendations/use-heart-map)
+**Fairfax County, Virginia** conducts family finding for children and youth annually and at every placement change.[](https://childwelfareplaybook.com/recommendations/use-heart-map)
