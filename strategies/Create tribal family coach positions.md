@@ -1,11 +1,14 @@
 ---
+layout: layouts/strategy.liquid
+templateEngineOverride: md,njk
 title: Create tribal family coach positions
-order: 8
 tags:
   - strategy
   - prevention
-layout: layouts/strategy.liquid
-templateEngineOverride: md,njk
+order: 8
+resources:
+  - "Logic model: Oregon tribal family coach"
+  - "Job description: Oregon tribal family coach"
 ---
 
 Native American and Alaska Native families are disproportionately likely to be involved with child welfare systems. And they may not get culturally appropriate support from standard services.
