@@ -1,13 +1,15 @@
 ---
+layout: layouts/strategy.liquid
+templateEngineOverride: md,njk
 title: Set expectations with caregivers for maintaining connections
-order: 8
 tags:
   - strategy
   - supportive-relationships
-layout: layouts/strategy.liquid
-templateEngineOverride: md,njk
+order: 8
+resources:
+  - Oklahoma policy on visits with parents and siblings
+  - Washington State policy on visits with relatives
 ---
-
 Caregivers often don't realize they're expected to help maintain a child or youth's connections with siblings and other important people. Without clear expectations, these relationships can fade during a child's time in care. Set clear expectations to help children and youth keep these important relationships throughout their time in care.
 
 ## How to do this
@@ -50,9 +52,4 @@ Make it standard practice for court-ordered parent visits to include entire sibl
 
 **Washington, DC** ensures caregivers understand expectations for sibling visits, with BOND Leads creating activities where separated siblings can engage and support workers helping families connect siblings independently.
 
-**Nebraska** uses parent visits as opportunities to bring sibling groups together.
-
-## Related resources
-
-* [Oklahoma sibling contact policy](https://oklahoma.gov/okdhs/library/policy/current/oac-340/chapter-75/subchapter-6/parts-5/child-s-visitation-with-parents-and-siblings.html)  
-* [Washington State sibling visitation policy](https://dcyf.wa.gov/4250-placement-out-home-and-conditions-return-home/4254-family-time-and-sibling-and-relative-visits)
+**Nebraska** uses parent visits as opportunities to bring sibling groups together.[](https://dcyf.wa.gov/4250-placement-out-home-and-conditions-return-home/4254-family-time-and-sibling-and-relative-visits)
