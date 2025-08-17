@@ -9,8 +9,8 @@ order: 1
 resources:
   - Life book templates
   - Moment Garden
+  - Family Album
 ---
-
 Children's histories, relationships, and important memories can easily get lost as they move through the foster care system. You can help preserve these connections by capturing key milestones and relationships in a life book. Create and maintain life books that follow children wherever they go.
 
 ## How to do this
@@ -22,8 +22,3 @@ Children's histories, relationships, and important memories can easily get lost 
 ## This strategy in action
 
 **Frederick County, MD** prints Life Book templates and puts them in a three-ring binder.
-
-## Related resources
-
-* Frederick County’s resources: [Zig Zags](https://childwelfareplaybook.com/static/assets/Lifebook-circles-zigzags.pdf), [Floral](https://childwelfareplaybook.com/static/assets/Lifebook-floral-water-color.pdf), [Triangles](https://childwelfareplaybook.com/static/assets/Lifebook-triangles.pdf).  
-* Free online photo sharing websites: [Family Album](http://www.family-album.com), [Moment Garden](http://www.momentgarden.com) 
