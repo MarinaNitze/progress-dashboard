@@ -1,9 +1,9 @@
 ---
 title: Heart map template
 filetype: pdf
-url: /resources/heartmap.pdf
+url: https://drive.google.com/file/d/1T5B5ZGW-Q5wT5ZOwFCBsmr_j_haJfWKg/view?usp=sharing
 layout: "layouts/resource.njk"
-tags: ["resource", "homepage"]
+tags: ["resource", "kin-engagement"]
 ---
 
-A visual tool to help youth identify and document important relationships in their lives.
+Diagram for youth to list people important to them to help identify and maintain connections.

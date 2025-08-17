@@ -1,9 +1,9 @@
 ---
-title: Oregon court reports
+title: Oregon shelter hearing benchbook
 filetype: pdf
 url: https://www.courts.oregon.gov/programs/jcip/Documents/Hearings-Shelter.pdf
 layout: "layouts/resource.njk"
-tags: ["resource"]
+tags: ["resource", "kin-engagement"]
 ---
 
-TK
+Court procedures to consider safe housing for youth and placement with kin caregivers.

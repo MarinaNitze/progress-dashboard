@@ -1,9 +1,9 @@
 ---
-title: Iowa's policy requirements
+title: Iowa child protective services assessment
 filetype: pdf
 url: https://hhs.iowa.gov/sites/default/files/18-B1.pdf
 layout: "layouts/resource.njk"
-tags: ["resource"]
+tags: ["resource", "supportive-relationships"]
 ---
 
-TK
+Policy manual for the state of Iowa, outlining legal requirements and procedures.
