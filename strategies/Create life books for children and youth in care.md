@@ -1,11 +1,14 @@
 ---
+layout: layouts/strategy.liquid
+templateEngineOverride: md,njk
 title: Create life books for children and youth in care
-order: 1
 tags:
   - strategy
   - supportive-relationships
-layout: layouts/strategy.liquid
-templateEngineOverride: md,njk
+order: 1
+resources:
+  - Life book templates
+  - Moment Garden
 ---
 
 Children's histories, relationships, and important memories can easily get lost as they move through the foster care system. You can help preserve these connections by capturing key milestones and relationships in a life book. Create and maintain life books that follow children wherever they go.
