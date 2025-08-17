@@ -1,13 +1,15 @@
 ---
-title: Start with small requests when contacting kin 
-order: 11
+layout: layouts/strategy.liquid
+templateEngineOverride: md,njk
+title: Start with small requests when contacting kin
 tags:
   - strategy
   - kin-engagement
-layout: layouts/strategy.liquid
-templateEngineOverride: md,njk
+order: 11
+resources:
+  - Relative notification letter
+  - Wisconsin kin engagement guide
 ---
-
 Kin connections may be permanently lost if an initial communication feels too overwhelming and demanding. Some connections may be learning they have a family member for the first time while simultaneously being asked to serve as a placement. 
 
 Staff may feel pressure to move immediately to the next kin connection if someone can't provide placement, but engaging newfound kin connections with smaller initial requests can help prevent losing important relationships.
@@ -24,9 +26,4 @@ Staff may feel pressure to move immediately to the next kin connection if someon
 
 **Michigan** explicitly asks identified kin to commit to staying in touch with youth on their Relative Notification Form.
 
-**Wisconsin** has developed suggested questions for talking to kin.
-
-## Related resources
-
-* [Michigan's Relative Notification Form](https://www.michigan.gov/mdhhs/-/media/Project/Websites/mdhhs/Doing-Business-with-MDHHS/Contract-and-Subrecipient-Resources/Foster-Care-Forms/DHS-0990.dot?rev=39bab7cbc17e41ea86e7d14669a0b732&hash=658359B04B5A81E4195C8614CDBBEED5)   
-* [Wisconsin's suggested questions for talking to kin](https://drive.google.com/file/d/1vhn78eupW25aIhfTGSVri1rh2y_0GEQ9/view)
+**Wisconsin** has developed suggested questions for talking to kin.[](https://drive.google.com/file/d/1vhn78eupW25aIhfTGSVri1rh2y_0GEQ9/view)
