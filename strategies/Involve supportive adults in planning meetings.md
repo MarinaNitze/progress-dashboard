@@ -1,13 +1,14 @@
 ---
+layout: layouts/strategy.liquid
+templateEngineOverride: md,njk
 title: Involve supportive adults in planning meetings
-order: 9
 tags:
   - strategy
   - supportive-relationships
-layout: layouts/strategy.liquid
-templateEngineOverride: md,njk
+order: 9
+resources:
+  - Youth circles
 ---
-
 Most youth leave foster care with fewer connections than they entered with. However, most supportive adults want to be more involved in supporting the youth in their lives. Keeping these supportive adults engaged and involved in case planning can keep youth from exiting care without connections. Invite supportive adults to planning meetings to keep these connections strong.
 
 ## How to do this
@@ -32,8 +33,4 @@ Most youth leave foster care with fewer connections than they entered with. Howe
 
 **Hawaii** develops youth circles for each child, which includes working with each youth to identify the supportive adults who will be invited to the circle.
 
-**New Hampshire** identifies up to 45 of a youth's supports and involves them in meetings to accomplish specific goals, such as buying a first car and attending holiday celebrations after aging out of care. As adults are identified, the agency sends those adults invitations and materials to support these goals.
-
-## Related resources
-
-* [Youth Circles](https://childwelfareplaybook.com/static/assets/HawaiiCircleBrochure.pdf)
+**New Hampshire** identifies up to 45 of a youth's supports and involves them in meetings to accomplish specific goals, such as buying a first car and attending holiday celebrations after aging out of care. As adults are identified, the agency sends those adults invitations and materials to support these goals.[](https://childwelfareplaybook.com/static/assets/HawaiiCircleBrochure.pdf)
