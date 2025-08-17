@@ -1,13 +1,18 @@
 ---
+layout: layouts/strategy.liquid
+templateEngineOverride: md,njk
 title: Document and track kin connections
-order: 5
 tags:
   - strategy
   - kin-engagement
-layout: layouts/strategy.liquid
-templateEngineOverride: md,njk
+order: 5
+resources:
+  - Finding and engaging relative and non-relative caregivers
+  - Washington State tribal engagement policy
+  - 30 Days to Family logic model [DEADLINK]
+  - Diligent search checklist
+  - Smartsheet for government
 ---
-
 Kin information often gets lost in case notes or scattered across different workers' files, leaving children and youth without access to potential placements and ongoing support.
 
 Use shared electronic lists and visual mapping tools to ensure comprehensive kin documentation. This helps find more placement options and enables the whole team to maintain important relationships.
@@ -32,12 +37,4 @@ Aim for comprehensive mapping. Some programs recommend identifying 150-200 peopl
 
 **Michigan**’s Diligent Search Checklist has many prompts for sourcing kin connections.
 
-Some agencies have been able to use Smartsheet to securely store and share kin contact information outside of their child welfare IT system (with the full blessing of their IT department).
-
-## Related resources
-
-* [Florida communication log template for finding kin connections](https://drive.google.com/file/d/1AmvqcgmzLc2ll0esj2JvFC3vWjKhMAxg/view?usp=drive_link)   
-* [Washington State tribal engagement policy](https://www.dcyf.wa.gov/tribal-relations/icw)   
-* [30 Days to Family Logic Model](https://forchildwelfare.org/wp-content/uploads/30-Days-to-Family-Logic-Model-2021-2.pdf)   
-* [Michigan's Diligent Search Checklist](https://drive.google.com/file/d/1CRv_CsTgsg8xZkOr3vJ1R-kCtPpB6XkE/view)   
-* [Smartsheet for government](https://www.smartsheet.com/solutions/federal-government)
+Some agencies have been able to use Smartsheet to securely store and share kin contact information outside of their child welfare IT system (with the full blessing of their IT department).[](https://www.smartsheet.com/solutions/federal-government)
