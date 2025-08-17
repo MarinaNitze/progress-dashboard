@@ -3,7 +3,7 @@ title: Family Album
 filetype: url
 url: http://www.family-album.com
 layout: "layouts/resource.njk"
-tags: ["resource", "no-meta"]
+tags: ["resource"]
 ---
 
 Free online photo sharing website
