@@ -1,13 +1,14 @@
 ---
+layout: layouts/strategy.liquid
+templateEngineOverride: md,njk
 title: Cite legal sources on licensing checklists
-order: 2
 tags:
   - strategy
   - caregiver-licensing
-layout: layouts/strategy.liquid
-templateEngineOverride: md,njk
+order: 2
+resources:
+  - Foster home licensing inspection checklist
 ---
-
 Licensing checklists often include requirements that seem arbitrary or outdated to families and staff. And when decision-makers can't see the legal source behind each requirement, it's hard to know which items can be updated and which require policy changes.
 
 Align licensing checklist items to specific statutes so everyone understands what's legally required and what might be changed.
@@ -22,8 +23,4 @@ Align licensing checklist items to specific statutes so everyone understands wha
 
 ## This strategy in action
 
-**Washington State** created a statute-aligned checklist that helps decision-makers understand the legal basis for each licensing requirement.
-
-## Related resources
-
-Washington State’s [statute aligned checklist](https://childwelfareplaybook.com/static/assets/10-183%20Foster%20Inspection%20Checklist.docx)
+**Washington State** created a statute-aligned checklist that helps decision-makers understand the legal basis for each licensing requirement.[](https://childwelfareplaybook.com/static/assets/10-183%20Foster%20Inspection%20Checklist.docx)
