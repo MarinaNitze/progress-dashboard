@@ -1,13 +1,19 @@
 ---
+layout: layouts/strategy.liquid
+templateEngineOverride: md,njk
 title: Make a plan to keep children and youth connected to their supportive adults
-order: 5
 tags:
   - strategy
   - supportive-relationships
-layout: layouts/strategy.liquid
-templateEngineOverride: md,njk
+order: 5
+resources:
+  - Heart map template
+  - Permanency pact
+  - Hawaii manual on maintaining connections
+  - Relative notification letter
+  - Wisconsin kin engagement guide
+  - Iowa child protective services assessment
 ---
-
 Long-term, consistent relationships with supportive adults are critical to a child or youth’s well-being. Supportive adults can provide emotional support, stability, and a sense of belonging, as well as practical support like transportation, tutoring, and advice. 
 
 But if a supportive adult can't serve as the caregiver, it requires more intention and effort to maintain the relationship. Create a plan to maintain connections so that children and youth have people they can rely on.
@@ -73,13 +79,4 @@ Make sure your plan includes resources or support to help supportive adults stay
 
 **Epic O'Hana in Hawaii** uses meetings to find and engage extended families. This includes creating concrete plans for how each person will remain involved with the youth.
 
-**Iowa's** policy asks workers to find out if people who can't take placements might still provide other support. This could include emails, phone calls, visits, or joining holiday gatherings.
-
-## Related resources
-
-* [Heart map template](https://www.childwelfareplaybook.com/static/assets/heartmap.pdf)  
-* [Permanency pact template](https://www.fosterclub.com/sites/default/files/Permanency%20Pact_0.pdf)  
-* [Maintaining connections manual](https://www.grandfamilies.org/Portals/0/Documents/Wikihow/Hawaii%20Maintaining%20Connections%20manual.pdf?ver=lrUOaC2XwUsJMdzVcHOW4g%3d%3d)  
-* [Michigan's relative notification form](https://www.michigan.gov/mdhhs/-/media/Project/Websites/mdhhs/Doing-Business-with-MDHHS/Contract-and-Subrecipient-Resources/Foster-Care-Forms/DHS-0990.dot?rev=39bab7cbc17e41ea86e7d14669a0b732&hash=658359B04B5A81E4195C8614CDBBEED5)  
-* [Wisconsin's family find and engagement process](https://drive.google.com/file/d/1vhn78eupW25aIhfTGSVri1rh2y_0GEQ9/view)  
-* [Iowa's policy requirements](https://hhs.iowa.gov/sites/default/files/18-B1.pdf)
+**Iowa's** policy asks workers to find out if people who can't take placements might still provide other support. This could include emails, phone calls, visits, or joining holiday gatherings.[](https://hhs.iowa.gov/sites/default/files/18-B1.pdf)
