@@ -1,13 +1,16 @@
 ---
-title: Use a digital app for youth-driven transition planning 
-order: 1
+layout: layouts/strategy.liquid
+templateEngineOverride: md,njk
+title: Use a digital app for youth-driven transition planning
 tags:
   - strategy
   - supporting-older-youth
-layout: layouts/strategy.liquid
-templateEngineOverride: md,njk
+order: 1
+resources:
+  - App Design Concept video
+  - App pilot proposal
+  - Pilot app technical considerations
 ---
-
 Caseworkers are usually the ones who drive transition planning. But traditional paper-based milestone planning doesn't give youth ownership of their goals, and youth may lose track of important resources and deadlines.
 
 A digital app can empower youth to define their own goals and collaborate with their support team to achieve them.
@@ -27,9 +30,3 @@ A digital app can empower youth to define their own goals and collaborate with t
 ## This strategy in action
 
 A detailed pilot proposal has been developed for a Glow Up app concept that includes all these features. The proposal includes app design concepts, technical considerations for security and privacy, and implementation guidance.
-
-## Related resources
-
-* [App Design Concept video](https://www.youtube.com/watch?v=ITpf-AtYv6E): Illustrates high-level examples of functionality  
-* [Pilot Proposal](https://www.aspentechpolicyhub.org/wp-content/uploads/Glow-Up-App-Proposal.pdf): Details pilot app features and success metrics  
-* [Technical Considerations](https://www.aspentechpolicyhub.org/wp-content/uploads/Technical-Considerations-2023.pdf): Recommendations for simple architecture with security and privacy
