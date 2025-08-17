@@ -1,7 +1,7 @@
 ---
 layout: "layouts/content.njk"
-title: Topics
-description: TK
+title: All topics
+description: The playbook provides strategies to prevent family separation and improve outcomes for children and youth. Each strategy includes guidance, examples, and resources for implementing it in your location.
 pagefind:
   type: Page
 tags:
@@ -11,14 +11,13 @@ tags:
 <div class="l-grid topic-grid">
 {%- for topic in collections.topics -%}
 {% unless topic.url == false %}
-
-<a href="{{ topic.url }}" class="topic-card" id="{{ topic.data.id }}">
-  {% if topic.data.icon %} {% icon topic.data.icon %}{% endif %}
-
-  <h2 class="h3">{{ topic.data.title }}</h2>
-
-  {{ topic.content }}
-</a>
+{%- include "components/topic-card.liquid",
+  url: topic.url,
+  id: topic.data.id,
+  icon: topic.data.icon,
+  title: topic.data.title,
+  summary: topic.data.summary
+-%}
 {% endunless %}
 
 {%- endfor -%}
