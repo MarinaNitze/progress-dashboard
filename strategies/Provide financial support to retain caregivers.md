@@ -1,13 +1,14 @@
 ---
+layout: layouts/strategy.liquid
+templateEngineOverride: md,njk
 title: Provide financial support to retain caregivers
-order: 7
 tags:
   - strategy
   - retention
-layout: layouts/strategy.liquid
-templateEngineOverride: md,njk
+order: 7
+resources:
+  - Treehouse store for clothing and other essentials
 ---
-
 Caregivers often leave the system feeling overextended and underappreciated, especially when basic maintenance payments don't cover the full costs of caring for children. Caregivers need regular breaks to avoid burnout and maintain their ability to provide quality care.
 
 Provide additional financial support through respite payments, activity stipends, and earning opportunities. This helps caregivers manage costs, take necessary breaks, and feel valued, which improves retention and enables caregivers to support children and youth with higher levels of need.
@@ -47,7 +48,3 @@ Hire current caregivers as co-trainers at trainings and orientations. Compensate
 **Colorado** has a mobile app (The Foster Family Business App) that provides discounts at local stores.
 
 **New York**, **Florida**, **Virginia**, **Washington**, and **Port Gamble S’Klallam Tribe** offer self-directed voucher payments to kinship caregivers for respite.
-
-### Related resources
-
-* [Treehouse funding resources for essentials and experiences](https://www.treehouseforkids.org/our-services/essentials-and-experiences/)  
