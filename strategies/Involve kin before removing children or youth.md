@@ -1,13 +1,15 @@
 ---
+layout: layouts/strategy.liquid
+templateEngineOverride: md,njk
 title: Involve kin before removing children or youth
-order: 6
 tags:
   - strategy
   - prevention
-layout: layouts/strategy.liquid
-templateEngineOverride: md,njk
+order: 6
+resources:
+  - "Podcast: Family finding in a public child welfare agency"
+  - Iowa release of information form
 ---
-
 Sometimes a family could stay together safely if they had more support, but the agency may not engage kin before it's necessary to remove the child or youth.
 
 Identify and engage kin early in your work with families to provide kin-based support and help families stay together.
@@ -28,9 +30,4 @@ Identify and engage kin early in your work with families to provide kin-based su
 
 **Outagamie County, Wisconsin** has developed effective strategies for engaging kin during intake processes.
 
-**Iowa** created a standardized release of information form. Parents fill it out to give the agency permission to share case information with kin. This makes it easier to have specific conversations about how kin can help.\*
-
-## Related resources
-
-* [Iowa's release of information form](https://hhs.iowa.gov/sites/default/files/470-2115.pdf)   
-* [Let's Have a Conversation podcast episode](https://open.spotify.com/episode/0GRYSP8UA21ZevmYMSSRHd)
+**Iowa** created a standardized release of information form. Parents fill it out to give the agency permission to share case information with kin. This makes it easier to have specific conversations about how kin can help.*[](https://open.spotify.com/episode/0GRYSP8UA21ZevmYMSSRHd)
