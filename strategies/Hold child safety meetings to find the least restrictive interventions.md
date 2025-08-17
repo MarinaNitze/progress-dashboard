@@ -1,13 +1,15 @@
 ---
+layout: layouts/strategy.liquid
+templateEngineOverride: md,njk
 title: Hold child safety meetings to find the least restrictive interventions
-order: 4
 tags:
   - strategy
   - prevention
-layout: layouts/strategy.liquid
-templateEngineOverride: md,njk
+order: 4
+resources:
+  - Child safety guidebook
+  - Safety plan template for families
 ---
-
 Even when there are safety concerns, it isn't always necessary to remove a child or youth from their home. 
 
 Hold child safety meetings that include the family, other supportive people, and skilled staff. This can often identify other interventions that keep children safe while keeping the family together.
@@ -24,9 +26,4 @@ Hold child safety meetings that include the family, other supportive people, and
 
 ## This strategy in action
 
-**Oklahoma** holds child safety meetings in any situation that might require a safety intervention. They include parents, children and youth (when appropriate), family supports, and agency staff. These meetings have helped Oklahoma serve more children through prevention services and safely reduce the number of children in out-of-home care.
-
-## Related resources
-
-* [Oklahoma's Child Safety Meeting guide](https://oklahoma.gov/content/dam/ok/en/okdhs/documents/okdhs-publication-library/14-41_CWSSafetyGuideBook_cws_10152020.pdf)   
-* [Safety Plan Template for Families](https://web.archive.org/web/20230615042836/https://sde.ok.gov/sites/default/files/OSDE_Safety%20Plan%203.pdf)
+**Oklahoma** holds child safety meetings in any situation that might require a safety intervention. They include parents, children and youth (when appropriate), family supports, and agency staff. These meetings have helped Oklahoma serve more children through prevention services and safely reduce the number of children in out-of-home care.[](https://web.archive.org/web/20230615042836/https://sde.ok.gov/sites/default/files/OSDE_Safety%20Plan%203.pdf)
