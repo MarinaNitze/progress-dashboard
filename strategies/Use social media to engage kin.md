@@ -1,13 +1,17 @@
 ---
+layout: layouts/strategy.liquid
+templateEngineOverride: md,njk
 title: Use social media to engage kin
-order: 12
 tags:
   - strategy
   - kin-engagement
-layout: layouts/strategy.liquid
-templateEngineOverride: md,njk
+order: 12
+resources:
+  - DC social media use policy
+  - Diligent search checklist
+  - A Second Chance, Inc.'s family finding approach
+  - "Kinship Support Network session: Using social media"
 ---
-
 Social media can help you identify kin that traditional search tactics might miss. Make social media searches part of your regular process for locating and connecting with kin.
 
 ## How to do this
@@ -28,11 +32,4 @@ Social media can help you identify kin that traditional search tactics might mis
 
 **Michigan** includes social media sites on its Diligent Search checklist. 
 
-**Virginia** central family-finding social media accounts are called "Virginia Family Finding 1" (and 2, and 3\) to protect worker privacy.
-
-## Related resources
-
-* [Washington DC's social media policy](https://cfsa.dc.gov/sites/default/files/dc/sites/cfsa/publication/attachments/Program_Policy_Appropriate_Use_Social_Media_FINAL_0.pdf)  
-* [Michigan's Diligent Search checklist](http://www.michigan.gov/documents/dhs/DHS-0991_480683_7.dot)  
-* [A Second Chance, Inc.'s family finding approach](https://www.asecondchance-kinship.com/programs-services/philadelphia/support-services/family-finding/)  
-* [Kin Mobilization Learning Collaborative’s Session \#19 on using social media](https://www.gksnetwork.org/resources/kin-mobilization-learning-collaborative/)
+**Virginia** central family-finding social media accounts are called "Virginia Family Finding 1" (and 2, and 3) to protect worker privacy.[](https://www.gksnetwork.org/resources/kin-mobilization-learning-collaborative/)
