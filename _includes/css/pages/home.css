@@ -10,6 +10,7 @@
   max-inline-size: unset;
   font-size: var(--font-xl-size);
   line-height: var(--font-xl-leading);
+  color: #fff;
 }
 
 .home-banner .l-wrapper {

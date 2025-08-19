@@ -2,8 +2,6 @@
 
 .nav {
   border-block-end: 1px solid #fff;
-  background: var(--c-blue);
-  padding-block: 1.5rem;
 }
 
 .nav ul {
@@ -34,7 +32,7 @@
 }
 
 .nav-logo img {
-  height: 2.38rem;
+  block-size: 4rem;
   margin-inline-end: 0.75rem;
 }
 
@@ -89,16 +87,16 @@
   display: flex;
   flex-direction: column;
   margin-block-start: 1rem;
-  color: #fff;
-  font-size: var(--font-xl-size);
-  line-height: var(--font-xl-leading);
+  font-weight: 700;
+  color: var(--c-blue);
+  font-family: var(--font-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .nav-mobile-menu a {
   display: flex;
   align-items: center;
-  font-size: var(--font-lg-size);
-  line-height: var(--font-lg-leading);
   padding: 0.5rem 1rem;
   gap: 0.5rem;
 }

@@ -7,6 +7,9 @@ layout: layouts/default.njk
     <h2>{{ title }}</h2>
     {% if description %}<p>{{ description }}</p>{% endif %}
   </div>
+    {%- if image -%}
+      <div class="page-banner-img" style="--background: url('{{ image }}')"></div>
+    {%- endif -%}
 </div>
 
 <div class="l-wrapper">

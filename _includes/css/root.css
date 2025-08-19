@@ -1,8 +1,8 @@
 :root {
     --c-base: rgb(51 50 64);
 
-    --c-primary: rgb(181 14 26);
-    --c-blue: rgb(18 116 253);
+    --c-primary: oklch(0.3723 0.1612 257.28);
+    --c-blue: var(--c-primary, #003993);
     --c-gray-200: rgb(229 231 235);
     --c-gray-300: rgb(39 39 39);
     --c-gray-900: rgb(217 217 217);

@@ -6,25 +6,44 @@
     background-position: right center;
     padding-block: calc(var(--font-base-leading) * 3);
     background-size: cover;
+    position: relative;
+    overflow: hidden;
 }
 
-.page-banner * {
-    margin-inline: auto;
+.page-banner::before {
+  content: "";
+  position: absolute;
+  inset: -5vw;
+  background: url("/images/header-bg.svg");
+  rotate: -6deg;
+}
+
+.page-banner-img {
+  position: absolute;
+  left: 30%;
+  top: 0;
+  bottom: 0;
+  right: -35%;
+  background: var(--background) center center no-repeat;
+  background-size: cover;
+  mask: url("/images/banners/mask.svg") no-repeat;
+  mask-size: 100%;
+  mask-position: 10% 20%;
+}
+
+.page-banner .l-wrapper {
+    position: relative;
+    z-index: 3;
 }
 
 .page-banner p {
     max-inline-size: calc(var(--t-measure) * 0.75);
     text-wrap: balance;
-    text-align: center;
+    background: rgb(255 255 255 / 0.5);
 }
 
 .page-banner h2 {
-  text-align: center;
-  padding: var(--t-paragraph);
-  background: var(--c-blue);
-  color: #fff;
-  border-radius: var(--radius-lg);
-  rotate: -1.5deg;
+  color: var(--c-blue);
 }
 
 .page-banner h1 {
