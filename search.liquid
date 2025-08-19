@@ -31,7 +31,6 @@ pageTypes:
     filterName: Page
     title: Pages
     iconName: cards-three
-
 ---
 
 <form id="search" class="search-form">
@@ -67,19 +66,19 @@ pageTypes:
   <form id="search-filters" class="search-filters">
     <fieldset class="search-type-filters l-cluster" id="search-type-filters">
       {%- for type in pageTypes -%}
-        <label for="type-{{ type.id }}" {% if type.id == "all" %}data-all-results="true"{% else %}hidden{% endif %}>
+        <label for="type-{{ type.id }}" {%- if type.id == "all" -%}data-all-results="true"{%- else -%}hidden{%- endif -%}>
           <span class='filter-label-name'>
-            <input type="radio" name="type-filter" id="type-{{ type.id }}" data-type-title="{{ type.title | downcase }}"data-type-filter="{{ type.filterName }}"{% if type.checked %} checked{% endif %}>
+            <input type="radio" name="type-filter" id="type-{{ type.id }}" data-type-title="{{ type.title | downcase }}"data-type-filter="{{ type.filterName }}"{%- if type.checked -%} checked{%- endif -%}>
             {% icon type.iconName %} {{ type.title }}
           </span>
-          <span class="search-counter"{% if type.id == "all" %} data-counter-all{% endif %}></span>
+          <span class="search-counter"{%- if type.id == "all" -%} data-counter-all{%- endif -%}></span>
         </label>
       {%- endfor -%}
     </fieldset>
     <fieldset id="search-topic-filters" class="search-topic-filters l-stack-basic">
       <h4>Filter by topic</h4>
       {%- for topic in collections.topics -%}
-        {% unless topic.url == false %}
+        {%- unless topic.url == false -%}
           <label for="{{ topic.data.title | slugify }}" class="filter-label" hidden>
             <span class="filter-label-name">
               <input type="checkbox" id="{{ topic.data.title | slugify }}" data-topic-filter="{{ topic.data.title }}" name="topic-filter">
@@ -87,12 +86,12 @@ pageTypes:
             </span>
               <span class="search-counter">0</span>
           </label>
-        {% endunless %}
+        {%- endunless -%}
       {%- endfor -%}
         <label for="no-topic" class="filter-label" hidden>
             <span class="filter-label-name">
               <input type="checkbox" id="no-topic" data-topic-filter="noTopic" name="topic-filter">
-              {% icon 'prohibit' %}No topic
+              {%- icon 'prohibit' -%}No topic
             </span>
               <span class="search-counter">0</span>
           </label>
