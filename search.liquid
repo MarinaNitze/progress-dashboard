@@ -69,7 +69,7 @@ pageTypes:
       {%- for type in pageTypes -%}
         <label for="type-{{ type.id }}" {% if type.id == "all" %}data-all-results="true"{% else %}hidden{% endif %}>
           <span class='filter-label-name'>
-            <input type="radio" name="type-filter" id="type-{{ type.id }}" data-type-filter="{{ type.filterName }}"{% if type.checked %} checked{% endif %}>
+            <input type="radio" name="type-filter" id="type-{{ type.id }}" data-type-title="{{ type.title | downcase }}"data-type-filter="{{ type.filterName }}"{% if type.checked %} checked{% endif %}>
             {% icon type.iconName %} {{ type.title }}
           </span>
           <span class="search-counter"{% if type.id == "all" %} data-counter-all{% endif %}></span>
